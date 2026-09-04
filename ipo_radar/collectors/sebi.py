@@ -48,12 +48,14 @@ def _kind_of(link_text: str, url: str = "") -> str:
     caption = (link_text or "").lower()
 
     if address.endswith(".pdf"):
-        # A direct document. The abridged summary lives at .../commondocs/...
-        if "abridged" in address:
-            return "abridged"
+        # Measured 4 Sep 2026: every PDF linked directly from SEBI's listing
+        # page turned out to be the abridged form — the ~15-page document whose
+        # page 3 reads "IN THE NATURE OF ABRIDGED PROSPECTUS". The full 500-page
+        # prospectus is not linked here. So a direct PDF is the abridged one
+        # unless it says otherwise.
         if "drhp" in address or "draft" in address:
             return "drhp"
-        return "pdf_other"
+        return "abridged"
 
     if "/filings/public-issues/" in address:
         # A SEBI detail page. Which document it belongs to is in the caption,
@@ -112,28 +114,62 @@ def list_filings(which: str = "rhp") -> list:
     return filings
 
 
-def _pdf_links_on(page_url: str) -> list:
+def pdfs_on_page(page_url: str) -> list:
     """
-    Open a SEBI detail page and collect the PDF links it holds.
+    Every PDF referenced anywhere on a SEBI detail page.
 
-    The full prospectus is not linked directly from the listing — the listing
-    points at a page, and the page points at the document.
+    Measured 4 Sep 2026: the 508-page prospectus is DISPLAYED on that page in a
+    document viewer rather than linked, so looking only at clickable links finds
+    the 16-page summary and misses the real thing. We search the whole page
+    source instead — links, embedded viewers, scripts, all of it.
     """
     session = plain_session()
     resp = session.get(page_url, timeout=TIMEOUT)
     if resp.status_code != 200:
         raise FetchError(f"SEBI detail page: HTTP {resp.status_code}")
 
-    soup = BeautifulSoup(resp.text, "html.parser")
-    found = []
+    html = resp.text
+    seen, found = set(), []
+
+    # 1. ordinary links
+    soup = BeautifulSoup(html, "html.parser")
     for anchor in soup.find_all("a", href=True):
-        href = anchor["href"]
-        if ".pdf" in href.lower():
-            found.append({
-                "url": urljoin(BASE, href),
-                "caption": " ".join(anchor.get_text().split())[:120],
-            })
+        if ".pdf" in anchor["href"].lower():
+            url = urljoin(BASE, anchor["href"])
+            if url not in seen:
+                seen.add(url)
+                found.append({"url": url, "how": "link",
+                              "caption": " ".join(anchor.get_text().split())[:100]})
+
+    # 2. embedded viewers
+    for tag, attribute in (("iframe", "src"), ("embed", "src"), ("object", "data")):
+        for element in soup.find_all(tag):
+            value = element.get(attribute, "")
+            if ".pdf" in value.lower():
+                url = urljoin(BASE, value)
+                if url not in seen:
+                    seen.add(url)
+                    found.append({"url": url, "how": tag, "caption": ""})
+
+    # 3. anything else in the page source — a viewer often takes its document
+    #    from a script, where no tag search will find it.
+    for match in re.findall(r"""[\"'\(]([^\"'\(\)\s]+\.pdf)""", html, re.I):
+        url = urljoin(BASE, match)
+        if url not in seen:
+            seen.add(url)
+            found.append({"url": url, "how": "source", "caption": ""})
+
     return found
+
+
+def detail_page_for(company_name: str, filings: list = None):
+    """The SEBI detail page for a company, if it has one."""
+    filings = filings if filings is not None else list_filings("rhp")
+    wanted = normalise(company_name)
+    for filing in filings:
+        if filing["normalised"] == wanted and filing["kind"] == "rhp_page":
+            return filing["url"]
+    return None
 
 
 def documents_for(company_name: str, filings: list = None) -> dict:
@@ -176,15 +212,24 @@ def documents_for(company_name: str, filings: list = None) -> dict:
             else:
                 # A detail page: follow it to find the document itself.
                 try:
-                    pdfs = _pdf_links_on(filing["url"])
-                    if pdfs:
-                        # Prefer a link that is not the abridged version.
-                        main = [p for p in pdfs
-                                if "abridged" not in p["caption"].lower()]
-                        chosen = (main or pdfs)[0]
-                        result["full"] = chosen["url"]
+                    pdfs = pdfs_on_page(filing["url"])
+                    result["candidates"] = pdfs
+                    notes.append(f"detail page offers {len(pdfs)} PDF(s): "
+                                 + ", ".join(f"{p['how']}:{p['url'].rsplit('/', 1)[-1][:40]}"
+                                             for p in pdfs[:4]))
+                    # Only take a link that is NOT the abridged form — we
+                    # already have that, and storing it twice under two names
+                    # is how the last version fooled itself.
+                    main = [p for p in pdfs
+                            if "abridged" not in p["caption"].lower()
+                            and "abridged" not in p["url"].lower()]
+                    if main:
+                        result["full"] = main[0]["url"]
+                        notes.append(f"full doc: {main[0]['caption'][:50]}")
+                    elif pdfs:
                         notes.append(
-                            f"full doc via detail page: {chosen['caption'][:50]}")
+                            "detail page only offers the abridged form — the "
+                            "full prospectus is not linked here")
                     else:
                         notes.append(
                             f"detail page had NO pdf links: {filing['url'][:90]}")

@@ -88,6 +88,44 @@ def read(pages: list) -> dict:
     return found
 
 
+# Ratios we have SEEN in these documents, with the three years they report.
+RATIO_PATTERNS = {
+    "ebitda": r"ebitda\s*\(?\d*\)?\s*([\d,\.]+)\s+([\d,\.]+)\s+([\d,\.]+)",
+    "roe_pct": r"roe\s*\(?\d*\)?\s*%?\s*([\d,\.]+)\s+([\d,\.]+)\s+([\d,\.]+)",
+    "roce_pct": r"roce\s*\(?\d*\)?\s*%?\s*([\d,\.]+)\s+([\d,\.]+)\s+([\d,\.]+)",
+    "revenue": r"revenue from operations\s*\(?\d*\)?\s*([\d,\.]+)\s+([\d,\.]+)\s+([\d,\.]+)",
+    "pat": r"profit after tax\s*\(?\d*\)?\s*([\d,\.]+)\s+([\d,\.]+)\s+([\d,\.]+)",
+}
+
+
+def _num(text):
+    try:
+        return float(str(text).replace(",", ""))
+    except (TypeError, ValueError):
+        return None
+
+
+def read_ratios(pages: list) -> dict:
+    """
+    Pull the headline financial figures out as numbers.
+
+    These documents print three years side by side, newest first:
+        ROE %   42.12   30.92   10.49
+    which is exactly what the growth and profitability factors need. Reported
+    as [newest, middle, oldest] with the raw line kept so the reading can be
+    checked against the document.
+    """
+    flat = re.sub(r"[ \t]+", " ", "\n".join(pages)).lower()
+    out = {}
+    for name, pattern in RATIO_PATTERNS.items():
+        match = re.search(pattern, flat)
+        if match:
+            values = [_num(g) for g in match.groups()]
+            if all(v is not None for v in values):
+                out[name] = {"years": values, "raw": match.group(0)[:80]}
+    return out
+
+
 def summarise(found: dict) -> str:
     if not found:
         return "no fields read"

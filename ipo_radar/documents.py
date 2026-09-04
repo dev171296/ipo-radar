@@ -63,3 +63,19 @@ def to_pages(pdf_bytes: bytes) -> list:
 def fetch_pages(url: str) -> list:
     """Download a prospectus and return its text, one entry per page."""
     return to_pages(download(url))
+
+
+# Where the line falls between the two documents. Measured: the summary form
+# runs 9-16 pages, the prospectus 508. Anything in between would be unusual.
+LONG_DOCUMENT_PAGES = 60
+
+
+def classify(pages: list) -> str:
+    """
+    Which document is this — the summary form or the full prospectus?
+
+    Decided by LENGTH, not by filename. SEBI names the summary "- AP_p.pdf"
+    with no word we could match on, and the prospectus is not named in a link
+    at all. Page count cannot be misspelled.
+    """
+    return "full" if len(pages) >= LONG_DOCUMENT_PAGES else "abridged"

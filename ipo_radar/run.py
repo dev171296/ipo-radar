@@ -126,57 +126,67 @@ def collect_prospectuses():
             continue
         print(f"      matched as: {found['matched_as']}")
 
-        for which in ("abridged", "full"):
-            url = found.get(which)
-            if not url or storage.has_sections(ipo_id, which):
+        # Download every PDF the detail page offers and decide what each one
+        # IS by its length, rather than trusting its name. The summary form runs
+        # 9-16 pages; the prospectus runs ~500.
+        candidates = found.get("candidates") or []
+        if found.get("abridged"):
+            candidates = [{"url": found["abridged"], "how": "listing"}] + candidates
+
+        seen_urls = set()
+        for candidate in candidates:
+            url = candidate["url"]
+            if url in seen_urls:
                 continue
+            seen_urls.add(url)
+
             try:
                 pages = documents.fetch_pages(url)
+            except Exception as exc:
+                print(f"      skipped {url.rsplit('/', 1)[-1][:44]}: "
+                      f"{type(exc).__name__} {str(exc)[:70]}")
+                continue
 
-                # The two documents are read differently: the abridged one is
-                # a form with labelled boxes; the full one has chapters.
-                if which == "abridged":
-                    found_sections = abridged.read(pages)
-                    if found_sections:
-                        print(f"      abridged: {len(pages)} pages -> "
-                              f"{len(found_sections)} fields")
-                        print(f"        {abridged.summarise(found_sections)}")
+            which = documents.classify(pages)
+            if storage.has_sections(ipo_id, which):
+                print(f"      already have the {which} document")
+                continue
+
+            meta = {"url": url, "total_pages": len(pages), "found_via": candidate["how"]}
+
+            if which == "abridged":
+                extracted = abridged.read(pages)
+                ratios = abridged.read_ratios(pages)
+                meta["keep_pages"] = pages
+                if ratios:
+                    meta["ratios"] = ratios
+                print(f"      SUMMARY FORM ({len(pages)} pages) -> "
+                      f"{len(extracted)} fields")
+                if extracted:
+                    print(f"        {abridged.summarise(extracted)}")
+                for name, body in sorted(ratios.items()):
+                    print(f"        {name}: {body['years']}")
+                if not ratios:
+                    print("        no financial ratios matched")
+            else:
+                extracted = sections.split(pages)
+                print(f"      FULL PROSPECTUS ({len(pages)} pages) -> "
+                      f"{len(extracted)} sections")
+                if extracted:
+                    print(f"        {sections.summarise(extracted)}")
                 else:
-                    found_sections = sections.split(pages)
-
-                meta = {"url": url, "total_pages": len(pages)}
-                # The abridged document is small, so keep it whole — we may
-                # want something from it we have not thought of yet.
-                if which == "abridged":
-                    meta["keep_pages"] = pages
-
-                if not found_sections:
-                    # Nothing recognised. Report the real layout instead of
-                    # guessing at it again.
-                    # Do not guess at the structure. Report it, so the next
-                    # version of the patterns is written from what is there.
                     shape = sections.describe(pages)
                     meta["structure_seen"] = shape
-                    print(f"      {which}: {len(pages)} pages -> NO sections matched")
-                    print(f"        starts: {shape['first_page_start'][:200]}")
-                    print(f"        {shape['heading_count']} heading-like lines:")
-                    for line in shape["heading_candidates"][:18]:
+                    print(f"        {shape['heading_count']} heading-like lines, "
+                          f"sample:")
+                    for line in shape["heading_candidates"][:12]:
                         print(f"          {line}")
-                elif which != "abridged":
-                    print(f"      {which}: {len(pages)} pages -> "
-                          f"{len(found_sections)} sections")
-                    print(f"        {sections.summarise(found_sections)}")
 
-                path = storage.save_sections(ipo_id, which, found_sections, meta)
-                storage.append_event(ipo_id, f"prospectus_{which}_read",
-                                     detail=f"{len(pages)} pages, "
-                                            f"{len(found_sections)} sections",
-                                     source="sebi")
-                done += 1
-            except Exception as exc:
-                print(f"      {which}: FAILED {type(exc).__name__}: {str(exc)[:110]}")
-                storage.append_event(ipo_id, f"prospectus_{which}_failed",
-                                     detail=str(exc)[:200], source="sebi", ok=False)
+            storage.save_sections(ipo_id, which, extracted, meta)
+            storage.append_event(ipo_id, f"{which}_read",
+                                 detail=f"{len(pages)} pages, {len(extracted)} parts",
+                                 source="sebi")
+            done += 1
 
     return done
 
