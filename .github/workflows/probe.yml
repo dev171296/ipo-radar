@@ -7,9 +7,9 @@ on:
       which:
         description: 'Which probe to run'
         required: true
-        default: '3'
+        default: '4'
         type: choice
-        options: ['2', '3']
+        options: ['2', '3', '4']
 
 jobs:
   probe:
