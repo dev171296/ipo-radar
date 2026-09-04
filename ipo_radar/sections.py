@@ -144,3 +144,29 @@ def summarise(found: dict) -> str:
     parts = [f"{name}(p{v['start_page']}-{v['end_page']})"
              for name, v in sorted(found.items(), key=lambda kv: kv[1]["start_page"])]
     return " ".join(parts)
+
+
+def describe(pages: list, max_lines: int = 40) -> dict:
+    """
+    What does this document actually look like?
+
+    Used when section-finding comes up empty. Rather than guessing again at
+    what the headings might be called, this reports the lines that LOOK like
+    headings, so the real structure can be read off a run log and the patterns
+    written from fact.
+    """
+    candidates = []
+    for page_number, text in enumerate(pages, start=1):
+        for line in (text or "").splitlines():
+            stripped = line.strip()
+            if 3 < len(stripped) <= 90 and _headingish(stripped):
+                candidates.append(f"p{page_number}: {stripped}")
+
+    first_page = (pages[0] if pages else "") or ""
+    return {
+        "total_pages": len(pages),
+        "total_chars": sum(len(p or "") for p in pages),
+        "heading_candidates": candidates[:max_lines],
+        "heading_count": len(candidates),
+        "first_page_start": first_page[:400].replace("\n", " | "),
+    }

@@ -142,6 +142,8 @@ def documents_for(company_name: str, filings: list = None) -> dict:
         return {"abridged": None, "full": None, "matched_as": None,
                 "notes": ["not found on SEBI's current filings page"]}
 
+    notes.append("matched " + str(len(mine)) + " filing(s): "
+                 + ", ".join(f"{f['kind']}:{f['caption'][:40]}" for f in mine[:4]))
     matched_as = mine[0]["company"]
     result = {"abridged": None, "full": None, "matched_as": matched_as, "notes": notes}
 
@@ -156,14 +158,19 @@ def documents_for(company_name: str, filings: list = None) -> dict:
                 try:
                     pdfs = _pdf_links_on(filing["url"])
                     if pdfs:
-                        # The biggest caption is usually the main document;
-                        # prefer one that does not say "abridged".
-                        main = [p for p in pdfs if "abridged" not in p["caption"].lower()]
+                        # Prefer a link that is not the abridged version.
+                        main = [p for p in pdfs
+                                if "abridged" not in p["caption"].lower()]
                         chosen = (main or pdfs)[0]
                         result["full"] = chosen["url"]
-                        notes.append(f"full doc via detail page: {chosen['caption'][:50]}")
+                        notes.append(
+                            f"full doc via detail page: {chosen['caption'][:50]}")
+                    else:
+                        notes.append(
+                            f"detail page had NO pdf links: {filing['url'][:90]}")
                 except Exception as exc:
-                    notes.append(f"detail page failed: {type(exc).__name__}")
+                    notes.append(
+                        f"detail page failed: {type(exc).__name__}: {str(exc)[:70]}")
 
     if not result["abridged"] and not result["full"]:
         notes.append("matched the company but found no PDF links")

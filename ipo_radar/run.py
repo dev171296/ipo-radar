@@ -100,6 +100,7 @@ def collect_prospectuses():
     todo = [r for r in records
             if not (storage.has_sections(r["id"], "abridged")
                     and storage.has_sections(r["id"], "full"))]
+    # Documents we already read are skipped. Delete data/docs/<id>/ to redo one.
     if not todo:
         print("    all prospectuses already fetched")
         return 0
@@ -132,12 +133,29 @@ def collect_prospectuses():
             try:
                 pages = documents.fetch_pages(url)
                 found_sections = sections.split(pages)
-                path = storage.save_sections(
-                    ipo_id, which, found_sections,
-                    {"url": url, "total_pages": len(pages)})
-                print(f"      {which}: {len(pages)} pages -> "
-                      f"{len(found_sections)} sections")
-                print(f"        {sections.summarise(found_sections)}")
+
+                meta = {"url": url, "total_pages": len(pages)}
+                # The abridged document is small, so keep it whole — we may
+                # want something from it we have not thought of yet.
+                if which == "abridged":
+                    meta["keep_pages"] = pages
+
+                if not found_sections:
+                    # Do not guess at the structure. Report it, so the next
+                    # version of the patterns is written from what is there.
+                    shape = sections.describe(pages)
+                    meta["structure_seen"] = shape
+                    print(f"      {which}: {len(pages)} pages -> NO sections matched")
+                    print(f"        starts: {shape['first_page_start'][:200]}")
+                    print(f"        {shape['heading_count']} heading-like lines:")
+                    for line in shape["heading_candidates"][:18]:
+                        print(f"          {line}")
+                else:
+                    print(f"      {which}: {len(pages)} pages -> "
+                          f"{len(found_sections)} sections")
+                    print(f"        {sections.summarise(found_sections)}")
+
+                path = storage.save_sections(ipo_id, which, found_sections, meta)
                 storage.append_event(ipo_id, f"prospectus_{which}_read",
                                      detail=f"{len(pages)} pages, "
                                             f"{len(found_sections)} sections",

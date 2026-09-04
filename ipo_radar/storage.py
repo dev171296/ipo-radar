@@ -138,6 +138,10 @@ def save_sections(ipo_id: str, which: str, sections: dict, meta: dict):
         "document": which,
         "fetched_at": now(),
         **meta,
+        # The abridged prospectus is only ~15 pages, so we keep it whole.
+        # A prospectus never changes once filed; re-downloading it to look at
+        # something we did not think to extract would be wasteful.
+        "full_text_pages": meta.pop("keep_pages", None),
         "sections": {
             name: {
                 "start_page": body["start_page"],
