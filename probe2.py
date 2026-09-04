@@ -59,7 +59,10 @@ def show_egress():
                         if "=" in line)
             print(f"  {label:9} ip={info.get('ip','?')} loc={info.get('loc','?')} warp={info.get('warp','?')}")
         except Exception as exc:
-            print(f"  {label:9} FAILED {type(exc).__name__}: {str(exc)[:90]}")
+            note = ""
+            if "SOCKS" in str(exc):
+                note = "  <-- OUR BUG: PySocks missing or wrong proxy scheme"
+            print(f"  {label:9} FAILED {type(exc).__name__}: {str(exc)[:90]}{note}")
 
 
 def looks_like_json(text):

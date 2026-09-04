@@ -49,7 +49,7 @@ jobs:
             sleep 2
           done
           sudo warp-cli --accept-tos status
-          echo "WARP_PROXY=socks5://127.0.0.1:40000" >> $GITHUB_ENV
+          echo "WARP_PROXY=socks5h://127.0.0.1:40000" >> $GITHUB_ENV
 
       - name: Run the probe
         env:
