@@ -3,12 +3,15 @@ Prices — the fallback ladder.
 
 Order, decided by measurement not preference:
 
-  1. BSE   — plain requests, worked first try, no impersonation needed
-  2. Yahoo — chart API called directly with a Chrome fingerprint
-  3. (a third rung can be added here later if both ever fail together)
+  1. NSE bhavcopy — the daily file NSE publishes for every stock. Two downloads
+     a day cover everything, including SME/Emerge companies that do not exist on
+     BSE at all. End-of-day only, which is exactly the cadence we want.
+  2. BSE quote    — live, per company. Useful when we want today's price before
+     the bhavcopy is published.
+  3. Yahoo chart  — last resort, called directly with a Chrome fingerprint.
 
-NSE is deliberately NOT a rung: its quote endpoint returns 403 even on a
-session where its IPO endpoints return 200.
+NSE's *live quote* page is deliberately NOT a rung: it returns 403 even on a
+session where NSE's other endpoints return 200. The bhavcopy is the way in.
 
 Two rules carried over from Devanshu's earlier project, both learned the hard way:
   - Never use the `yfinance` library. It breaks against curl_cffi and returns
@@ -20,6 +23,7 @@ The same company is named differently by each source, so a stock we track has
 to carry all three identifiers or the ladder cannot fall.
 """
 
+from . import bhavcopy
 from ..http import FetchError, chrome_session, get_json, plain_session
 
 BSE_QUOTE = ("https://api.bseindia.com/BseIndiaAPI/api/getScripHeaderData/w"
@@ -91,13 +95,45 @@ def from_yahoo(symbol: str, days: str = "5d") -> dict:
     return bar
 
 
+# ------------------------------------------------- rung 1: NSE daily file
+def from_bhavcopy(nse_symbol: str, allow_stale: bool = False) -> dict:
+    """
+    Look this company up in NSE's daily file.
+
+    The file is downloaded once per run and reused, so asking for a hundred
+    companies costs the same as asking for one.
+
+    Every bar carries the trading day it actually came from, plus a staleness
+    note. With allow_stale=False (the default) we refuse to hand back an older
+    day's price at all — better to record nothing and try again later than to
+    store Tuesday's close as if it were Wednesday's.
+    """
+    day, bars, staleness = bhavcopy.most_recent()
+
+    if staleness["is_stale"] and not allow_stale:
+        raise FetchError(
+            f"only {staleness['got_day']} available, wanted "
+            f"{staleness['wanted_day']} ({staleness['note']})")
+
+    bar = bars.get((nse_symbol or "").upper())
+    if not bar:
+        raise FetchError(f"{nse_symbol} not in the {day.isoformat()} file")
+
+    bar = dict(bar)
+    bar["date"] = day.isoformat()
+    bar["staleness"] = staleness
+    if not _sane(bar):
+        raise FetchError(f"bhavcopy row for {nse_symbol} failed the sanity check")
+    return bar
+
+
 # ---------------------------------------------------------------- the ladder
 def latest_price(ids: dict) -> dict:
     """
     Try each rung in order. First sane answer wins.
 
     `ids` carries the three names for one company, e.g.
-        {"bse_code": "500325", "yahoo": "RELIANCE.NS", "nse": "RELIANCE"}
+        {"nse": "RELIANCE", "bse_code": "500325", "yahoo": "RELIANCE.NS"}
 
     Returns the bar plus which rung answered and which rungs were tried,
     so the dashboard can always show where a number came from.
@@ -105,6 +141,7 @@ def latest_price(ids: dict) -> dict:
     attempts = []
 
     for label, fn, key in [
+        ("nse_bhavcopy", from_bhavcopy, "nse"),
         ("bse", from_bse, "bse_code"),
         ("yahoo", from_yahoo, "yahoo"),
     ]:

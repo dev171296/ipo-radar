@@ -63,6 +63,21 @@ def append_event(ipo_id: str, event: str, detail=None, source=None, ok=True):
         f.write(json.dumps(entry, ensure_ascii=False) + "\n")
 
 
+def already_have_trading_day(ipo_id: str, kind: str, trading_day: str) -> bool:
+    """
+    Have we already recorded this exact trading day?
+
+    We run four times a day but the price file only changes once a day. Without
+    this check the same closing price would be written four times, and a flat
+    day would look like four separate observations — which would quietly corrupt
+    anything that measures how prices move.
+    """
+    for line in read_history(ipo_id):
+        if line.get("kind") == kind and line.get("trading_day") == trading_day:
+            return True
+    return False
+
+
 def read_history(ipo_id: str) -> list:
     path = _path("history", f"{ipo_id}.jsonl")
     if not os.path.exists(path):

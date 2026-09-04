@@ -85,9 +85,21 @@ def check_price_ladder():
     the ladder still works today and tells us which rung answered.
     """
     print("\n[2] Price ladder self-test (Reliance)")
+    from .collectors import bhavcopy
+    print(f"    India time now: {bhavcopy.india_now():%Y-%m-%d %H:%M} IST")
+    print(f"    today's file expected yet? "
+          f"{'yes' if bhavcopy.todays_file_should_exist() else 'no — before 7pm IST'}")
+    print(f"    trading day we should be able to get: {bhavcopy.expected_day()}")
     try:
-        bar = prices.latest_price({"bse_code": "500325", "yahoo": "RELIANCE.NS"})
-        print(f"    answered by: {bar['source']}   close={bar['close']}")
+        bar = prices.latest_price({"nse": "RELIANCE",
+                                   "bse_code": "500325",
+                                   "yahoo": "RELIANCE.NS"})
+        print(f"    answered by: {bar['source']}   close={bar['close']}"
+              f"   volume={bar.get('volume')}   delivery%={bar.get('delivery_pct')}")
+        if bar.get("date"):
+            print(f"    price is for trading day: {bar['date']}")
+        if bar.get("staleness"):
+            print(f"    freshness: {bar['staleness']['note']}")
         for attempt in bar.get("attempts", []):
             print(f"      rung {attempt['rung']}: {attempt['result']}")
         return True
