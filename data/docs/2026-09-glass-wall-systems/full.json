@@ -1,0 +1,29 @@
+{
+  "ipo_id": "2026-09-glass-wall-systems",
+  "document": "full",
+  "fetched_at": "2026-09-04T19:37:55+00:00",
+  "url": "https://www.sebi.gov.in/sebi_data/commondocs/sep-2026/GLASS%20WALL%20SYSTEMS%20(INDIA)%20LIMITED%20-%20AP_p.pdf",
+  "total_pages": 13,
+  "structure_seen": {
+    "total_pages": 13,
+    "total_chars": 47037,
+    "heading_candidates": [
+      "p1: GLASS WALL SYSTEMS (INDIA) LIMITED",
+      "p1: CORPORATE IDENTITY NUMBER: U74999MH2010PLC207187",
+      "p1: REGISTERED AND",
+      "p2: ISSUER’S AND SELLING SHAREHOLDERS’ ABSOLUTE RESPONSIBILITY",
+      "p2: LISTING",
+      "p2: BOOK RUNNING LEAD MANAGERS",
+      "p3: IN THE NATURE OF ABRIDGED PROSPECTUS - MEMORANDUM CONTAINING SALIENT FEATURES",
+      "p3: OF THE RED HERRING PROSPECTUS",
+      "p8: EBITDA(2) 1,051.98 730.09 547.03",
+      "p8: (“ROCE”) (6)",
+      "p12: Nil N.A. N.A. N.A. N.A Nil",
+      "p12: Nil N.A. N.A. N.A. N.A Nil"
+    ],
+    "heading_count": 12,
+    "first_page_start": "1\r | GLASS WALL SYSTEMS (INDIA) LIMITED\r | CORPORATE IDENTITY NUMBER: U74999MH2010PLC207187\r | REGISTERED AND \r | CORPORATE OFFICE\r | CONTACT PERSON EMAIL AND TELEPHONE WEBSITE\r | 503-504, 5th Floor, A Wing, Marathon \r | Futurex, Mafatlal Mills Compound, \r | N.M. Joshi Marg, Lower Parel (East), \r | Mumbai – 400 013, Maharashtra, \r | India.\r | Sagar Lambole\r | Company Secretary \r | and Compliance \r | Officer\r | Email:\r | complian"
+  },
+  "full_text_pages": null,
+  "sections": {}
+}

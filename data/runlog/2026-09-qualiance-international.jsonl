@@ -1,3 +1,4 @@
 {"at": "2026-09-04T19:05:40+00:00", "event": "discovered", "ok": true, "detail": "Qualiance International Limited", "source": "nse"}
 {"at": "2026-09-04T19:27:32+00:00", "event": "prospectus_not_found", "ok": false, "source": "sebi"}
 {"at": "2026-09-04T19:31:07+00:00", "event": "prospectus_not_found", "ok": false, "source": "sebi"}
+{"at": "2026-09-04T19:38:04+00:00", "event": "prospectus_not_found", "ok": false, "source": "sebi"}

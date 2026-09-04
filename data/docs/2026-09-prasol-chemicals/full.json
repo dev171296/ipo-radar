@@ -1,0 +1,25 @@
+{
+  "ipo_id": "2026-09-prasol-chemicals",
+  "document": "full",
+  "fetched_at": "2026-09-04T19:38:04+00:00",
+  "url": "https://www.sebi.gov.in/sebi_data/commondocs/sep-2026/Prasol%20Chemicals%20Limited%20-%20AP_p.pdf",
+  "total_pages": 16,
+  "structure_seen": {
+    "total_pages": 16,
+    "total_chars": 51187,
+    "heading_candidates": [
+      "p1: PRASOL CHEMICALS LIMITED",
+      "p1: CORPORATE IDENTITY NUMBER: U99999MH1992PLC065026",
+      "p2: GENERAL RISKS",
+      "p2: ISSUER AND SELLING SHAREHOLDERS’ ABSOLUTE RESPONSIBILITY",
+      "p3: IN THE NATURE OF ABRIDGED PROSPECTUS - MEMORANDUM CONTAINING SALIENT",
+      "p3: FEATURES OF THE RED HERRING PROSPECTUS",
+      "p11: EBITDA(2) 1,393.20 877.66 605.28",
+      "p15: Nil NA NA NA NA Nil"
+    ],
+    "heading_count": 8,
+    "first_page_start": "PRASOL CHEMICALS LIMITED\r | CORPORATE IDENTITY NUMBER: U99999MH1992PLC065026\r | REGISTERED AND \r | CORPORATE OFFICE\r | CONTACT PERSON EMAIL TELEPHONE WEBSITE\r | Prasol House, Plot No A - 17/2/3, T. \r | T. C, Industrial Area, Khairne \r | M.I.D.C., Navi Mumbai, Thane, \r | Maharashtra – 400710, India\r | Kiran Rajendra Agrawal, Company \r | Secretary and Compliance Officer\r | investorservices@prasolchem.com +91 22 6195 2500"
+  },
+  "full_text_pages": null,
+  "sections": {}
+}
