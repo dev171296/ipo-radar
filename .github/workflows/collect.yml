@@ -1,14 +1,17 @@
 name: Collect
 
 on:
+  # The button in the Actions tab still works, any time you want it.
   workflow_dispatch:
-  # Schedule stays commented out until we have watched a few manual runs.
-  # Times are UTC; India is UTC+5:30, hence the :30 minutes.
-  # schedule:
-  #   - cron: '30 2 * * *'    # 08:00 IST
-  #   - cron: '30 5 * * *'    # 11:00 IST
-  #   - cron: '30 8 * * *'    # 14:00 IST
-  #   - cron: '30 13 * * *'   # 19:00 IST
+
+  # Four times a day, automatically.
+  # GitHub runs these on UTC time. India is 5 hours 30 minutes ahead, which is
+  # why every minute below is :30 rather than :00.
+  schedule:
+    - cron: '30 2 * * *'     # 08:00 IST — morning check
+    - cron: '30 5 * * *'     # 11:00 IST — mid-morning
+    - cron: '30 8 * * *'     # 14:00 IST — afternoon, before applications close
+    - cron: '30 13 * * *'    # 19:00 IST — evening, after the market settles
 
 concurrency:
   group: collect
