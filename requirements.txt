@@ -1,3 +1,2 @@
 requests==2.32.3
-PySocks==1.7.1
 curl_cffi==0.7.4
