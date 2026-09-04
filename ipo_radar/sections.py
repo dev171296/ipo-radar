@@ -155,12 +155,18 @@ def describe(pages: list, max_lines: int = 40) -> dict:
     headings, so the real structure can be read off a run log and the patterns
     written from fact.
     """
+    # Sample from EVERY page, not just the first. The last attempt showed
+    # eighteen lines that all came from page one, which told us nothing about
+    # how the rest of the document is arranged.
+    per_page = max(2, max_lines // max(1, len(pages)))
     candidates = []
     for page_number, text in enumerate(pages, start=1):
+        found_here = []
         for line in (text or "").splitlines():
             stripped = line.strip()
             if 3 < len(stripped) <= 90 and _headingish(stripped):
-                candidates.append(f"p{page_number}: {stripped}")
+                found_here.append(f"p{page_number}: {stripped}")
+        candidates.extend(found_here[:per_page])
 
     first_page = (pages[0] if pages else "") or ""
     return {

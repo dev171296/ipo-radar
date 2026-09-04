@@ -35,15 +35,34 @@ LISTING_PAGES = {
 BASE = "https://www.sebi.gov.in"
 
 
-def _kind_of(link_text: str) -> str:
-    """What sort of document is this link?"""
-    lowered = (link_text or "").lower()
-    if "abridged" in lowered:
-        return "abridged"
-    if "rhp" in lowered or "red herring" in lowered:
-        return "rhp"
-    if "drhp" in lowered or "draft" in lowered:
-        return "drhp"
+def _kind_of(link_text: str, url: str = "") -> str:
+    """
+    What sort of document is this link?
+
+    Judged by the WEB ADDRESS, not the caption. SEBI nests the abridged link
+    inside the RHP link on their listing page, so reading the caption of the
+    RHP link returns both captions stuck together — and the word "abridged"
+    in the second one made us misfile the first. Addresses do not nest.
+    """
+    address = (url or "").lower()
+    caption = (link_text or "").lower()
+
+    if address.endswith(".pdf"):
+        # A direct document. The abridged summary lives at .../commondocs/...
+        if "abridged" in address:
+            return "abridged"
+        if "drhp" in address or "draft" in address:
+            return "drhp"
+        return "pdf_other"
+
+    if "/filings/public-issues/" in address:
+        # A SEBI detail page. Which document it belongs to is in the caption,
+        # but only the part BEFORE any nested link matters, so take the start.
+        head = caption.split(" - ")[1] if " - " in caption else caption
+        if head.strip().startswith("drhp") or "draft" in head[:30]:
+            return "drhp_page"
+        return "rhp_page"
+
     return "other"
 
 
@@ -82,11 +101,12 @@ def list_filings(which: str = "rhp") -> list:
         company = _company_from(caption)
         if len(company) < 4:
             continue
+        url = urljoin(BASE, anchor["href"])
         filings.append({
             "company": company,
             "normalised": normalise(company),
-            "kind": _kind_of(caption),
-            "url": urljoin(BASE, anchor["href"]),
+            "kind": _kind_of(caption, url),
+            "url": url,
             "caption": caption,
         })
     return filings
@@ -148,9 +168,9 @@ def documents_for(company_name: str, filings: list = None) -> dict:
     result = {"abridged": None, "full": None, "matched_as": matched_as, "notes": notes}
 
     for filing in mine:
-        if filing["kind"] == "abridged" and filing["url"].lower().endswith(".pdf"):
+        if filing["kind"] == "abridged":
             result["abridged"] = filing["url"]
-        elif filing["kind"] == "rhp":
+        elif filing["kind"] in ("rhp_page", "pdf_other"):
             if filing["url"].lower().endswith(".pdf"):
                 result["full"] = filing["url"]
             else:

@@ -11,7 +11,7 @@ wrapped, and a failure is recorded as data rather than raised as a crash.
 import sys
 import traceback
 
-from . import documents, sections, storage
+from . import abridged, documents, sections, storage
 from .collectors import nse, prices, sebi
 from .identity import find_match, make_id, normalise
 
@@ -132,7 +132,17 @@ def collect_prospectuses():
                 continue
             try:
                 pages = documents.fetch_pages(url)
-                found_sections = sections.split(pages)
+
+                # The two documents are read differently: the abridged one is
+                # a form with labelled boxes; the full one has chapters.
+                if which == "abridged":
+                    found_sections = abridged.read(pages)
+                    if found_sections:
+                        print(f"      abridged: {len(pages)} pages -> "
+                              f"{len(found_sections)} fields")
+                        print(f"        {abridged.summarise(found_sections)}")
+                else:
+                    found_sections = sections.split(pages)
 
                 meta = {"url": url, "total_pages": len(pages)}
                 # The abridged document is small, so keep it whole — we may
@@ -141,6 +151,8 @@ def collect_prospectuses():
                     meta["keep_pages"] = pages
 
                 if not found_sections:
+                    # Nothing recognised. Report the real layout instead of
+                    # guessing at it again.
                     # Do not guess at the structure. Report it, so the next
                     # version of the patterns is written from what is there.
                     shape = sections.describe(pages)
@@ -150,7 +162,7 @@ def collect_prospectuses():
                     print(f"        {shape['heading_count']} heading-like lines:")
                     for line in shape["heading_candidates"][:18]:
                         print(f"          {line}")
-                else:
+                elif which != "abridged":
                     print(f"      {which}: {len(pages)} pages -> "
                           f"{len(found_sections)} sections")
                     print(f"        {sections.summarise(found_sections)}")
