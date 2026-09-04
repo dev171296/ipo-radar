@@ -1,0 +1,25 @@
+{
+  "id": "08-Sep--glass-wall-systems",
+  "aliases": [
+    "Glass Wall Systems (India) Limited"
+  ],
+  "first_seen": "2026-09-04T19:02:10+00:00",
+  "normalised_name": "glass wall systems",
+  "name": "Glass Wall Systems (India) Limited",
+  "symbol": "GLASSWALL",
+  "type": "mainboard",
+  "status": "upcoming",
+  "dates": {
+    "open": "08-Sep-2026",
+    "close": "10-Sep-2026"
+  },
+  "price_band": "Rs.172 to Rs.182",
+  "issue_size_shares": "23702094",
+  "also_on_bse": false,
+  "sources": {
+    "calendar": "nse",
+    "fetched_at": "2026-09-04T19:02:10+00:00"
+  },
+  "missing": [],
+  "rebuilt_at": "2026-09-04T19:02:10+00:00"
+}
