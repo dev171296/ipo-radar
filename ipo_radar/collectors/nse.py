@@ -10,6 +10,7 @@ guess, this collector keeps the whole raw response and reports which keys it
 saw, so the first real run tells us what exists.
 """
 
+from ..dates import to_iso
 from ..http import FetchError, get_json, nse_session
 
 REFERER = "https://www.nseindia.com/market-data/all-upcoming-issues-ipo"
@@ -22,6 +23,16 @@ def _clean(value):
     return value.strip() if isinstance(value, str) else value
 
 
+def _number(value):
+    """NSE sends numbers as text, sometimes with commas, sometimes as '-'."""
+    if value in (None, "", "-"):
+        return None
+    try:
+        return float(str(value).replace(",", "").strip())
+    except (TypeError, ValueError):
+        return None
+
+
 def _to_record(raw: dict, status: str) -> dict:
     """
     Turn one NSE row into our shape.
@@ -29,17 +40,39 @@ def _to_record(raw: dict, status: str) -> dict:
     `raw` is kept whole. Fields we don't understand yet are not lost.
     """
     name = _clean(raw.get("companyName") or raw.get("symbol") or "")
+
+    # NSE writes "08-Sep-2026"; we store "2026-09-08" so dates can be compared.
+    open_iso = to_iso(raw.get("issueStartDate"))
+    close_iso = to_iso(raw.get("issueEndDate"))
+
+    # Discovered on the first real run: subscription is in this same feed.
+    #   noOfTime          how many times the issue is subscribed
+    #   noOfsharesBid     shares people have applied for
+    #   noOfSharesOffered shares on offer
+    offered = _number(raw.get("noOfSharesOffered"))
+    bid = _number(raw.get("noOfsharesBid"))
+    times = _number(raw.get("noOfTime"))
+    if times is None and offered and bid:
+        times = round(bid / offered, 4)          # work it out if not given
+
     return {
         "name": name,
         "symbol": _clean(raw.get("symbol")),
         "type": "sme" if str(raw.get("series", "")).upper() == "SME" else "mainboard",
         "status": status,
         "dates": {
-            "open": _clean(raw.get("issueStartDate")),
-            "close": _clean(raw.get("issueEndDate")),
+            "open": open_iso,
+            "close": close_iso,
+            "open_as_given": _clean(raw.get("issueStartDate")),
+            "close_as_given": _clean(raw.get("issueEndDate")),
         },
         "price_band_text": _clean(raw.get("issuePrice")),
-        "issue_size_shares": _clean(raw.get("issueSize")),
+        "issue_size_shares": _number(raw.get("issueSize")),
+        "subscription": {
+            "times": times,
+            "shares_offered": offered,
+            "shares_bid": bid,
+        },
         "also_on_bse": str(raw.get("isBse", "")) == "1",
         "raw": raw,
         "source": "nse",

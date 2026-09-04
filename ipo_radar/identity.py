@@ -18,6 +18,8 @@ recomputing it later is how duplicates appear mid-window.
 
 import re
 
+from .dates import month_key
+
 # Words that carry no identity — they differ between sources for the same company.
 NOISE = [
     "limited", "ltd", "private", "pvt", "public", "company", "co",
@@ -38,14 +40,14 @@ def slug(name: str) -> str:
     return normalise(name).replace(" ", "-")
 
 
-def make_id(name: str, open_date: str) -> str:
+def make_id(name: str, open_date_iso: str) -> str:
     """
     A stable id, e.g. '2026-09-kanohar-electricals'.
 
     Built once at discovery from the name and the opening month, then frozen.
+    The date must already be in 2026-09-08 form — see dates.to_iso().
     """
-    month = (open_date or "unknown")[:7] if "-" in (open_date or "") else "undated"
-    return f"{month}-{slug(name)}"
+    return f"{month_key(open_date_iso)}-{slug(name)}"
 
 
 def same_ipo(a: dict, b: dict) -> bool:

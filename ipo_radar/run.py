@@ -47,7 +47,8 @@ def collect_ipos():
             new_count += 1
             storage.append_event(ipo_id, "discovered",
                                  detail=row["name"], source="nse")
-            print(f"    NEW  {ipo_id}  ({row['type']}, opens {row['dates'].get('open')})")
+            print(f"    NEW  {ipo_id}  ({row['type']}, "
+                  f"{row['dates'].get('open')} to {row['dates'].get('close')})")
 
         # Keep every spelling we have ever seen, so other sources can be matched later.
         aliases = set(record.get("aliases", []))
@@ -58,6 +59,10 @@ def collect_ipos():
         # The append-only truth: one line per observation, never overwritten.
         storage.append_history(ipo_id, {"kind": "nse_calendar", "data": row})
 
+        sub = (row.get("subscription") or {}).get("times")
+        if sub is not None:
+            print(f"         subscribed {sub}x")
+
         # The derived view: regenerated from what we just learned.
         record.update({
             "name": row["name"],
@@ -67,6 +72,7 @@ def collect_ipos():
             "dates": row["dates"],
             "price_band": row.get("price_band_text"),
             "issue_size_shares": row.get("issue_size_shares"),
+            "subscription": row.get("subscription"),
             "also_on_bse": row.get("also_on_bse"),
             "sources": {"calendar": "nse", "fetched_at": storage.now()},
             "missing": [],
