@@ -1,26 +1,57 @@
 name: Source probe
 
-# Manual only. Click "Run workflow" in the Actions tab.
-# No schedule yet — we are still finding out what works.
 on:
   workflow_dispatch:
+    inputs:
+      warp:
+        description: 'Route requests through Cloudflare WARP'
+        type: boolean
+        default: false
 
 jobs:
   probe:
     runs-on: ubuntu-latest
     steps:
-      - name: Get the code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Install Python
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
 
-      - name: Install libraries
-        run: pip install -r requirements.txt
+      - run: pip install -r requirements.txt
+
+      # WARP gives the runner a Cloudflare egress IP instead of its own
+      # datacenter IP. Allowed to fail — if it doesn't install, the probe
+      # simply runs direct and says so.
+      - name: Install and connect Cloudflare WARP
+        if: ${{ inputs.warp }}
+        continue-on-error: true
+        run: |
+          set -x
+          curl -fsSL https://pkg.cloudflareclient.com/pubkey.gpg \
+            | sudo gpg --yes --dearmor --output /usr/share/keyrings/cloudflare-warp-archive-keyring.gpg
+          # noble packages may not exist yet; jammy works on 24.04
+          CODENAME=$(lsb_release -cs)
+          echo "deb [signed-by=/usr/share/keyrings/cloudflare-warp-archive-keyring.gpg] https://pkg.cloudflareclient.com/ $CODENAME main" \
+            | sudo tee /etc/apt/sources.list.d/cloudflare-client.list
+          sudo apt-get update -qq || {
+            echo "deb [signed-by=/usr/share/keyrings/cloudflare-warp-archive-keyring.gpg] https://pkg.cloudflareclient.com/ jammy main" \
+              | sudo tee /etc/apt/sources.list.d/cloudflare-client.list
+            sudo apt-get update -qq
+          }
+          sudo apt-get install -y cloudflare-warp
+          sudo warp-cli --accept-tos registration new
+          sudo warp-cli --accept-tos mode proxy
+          sudo warp-cli --accept-tos proxy port 40000
+          sudo warp-cli --accept-tos connect
+          for i in $(seq 1 20); do
+            sudo warp-cli --accept-tos status | grep -qi connected && break
+            sleep 2
+          done
+          sudo warp-cli --accept-tos status
+          echo "WARP_PROXY=socks5://127.0.0.1:40000" >> $GITHUB_ENV
 
       - name: Run the probe
         env:
           IPOGURU_KEY: ${{ secrets.IPOGURU_KEY }}
-        run: python probe.py
+        run: python probe2.py
