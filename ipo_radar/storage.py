@@ -27,7 +27,8 @@ import os
 from datetime import datetime, timezone
 
 DATA = "data"
-DIRS = ["ipos", "history", "runlog", "predictions", "outcomes", "tracking", "corpus"]
+DIRS = ["ipos", "history", "runlog", "predictions", "outcomes",
+        "tracking", "corpus", "docs"]
 
 
 def now() -> str:
@@ -118,6 +119,43 @@ def all_records() -> list:
             with open(os.path.join(folder, name)) as f:
                 out.append(json.load(f))
     return out
+
+
+def save_sections(ipo_id: str, which: str, sections: dict, meta: dict):
+    """
+    Keep the extracted parts of a prospectus — never the PDF itself.
+
+    A full prospectus is 20-50 MB; three hundred a year would bury the repo.
+    We keep the sections we actually use, and the page numbers they came from
+    so anything quoted can be traced back to the document.
+
+    This lives under docs/ and is DERIVED — it can be deleted and re-fetched.
+    """
+    folder = os.path.join(DATA, "docs", ipo_id)
+    os.makedirs(folder, exist_ok=True)
+    payload = {
+        "ipo_id": ipo_id,
+        "document": which,
+        "fetched_at": now(),
+        **meta,
+        "sections": {
+            name: {
+                "start_page": body["start_page"],
+                "end_page": body["end_page"],
+                "chars": body["chars"],
+                "text": body["text"],
+            }
+            for name, body in sections.items()
+        },
+    }
+    with open(os.path.join(folder, f"{which}.json"), "w") as f:
+        json.dump(payload, f, indent=2, ensure_ascii=False)
+    return os.path.join("data", "docs", ipo_id, f"{which}.json")
+
+
+def has_sections(ipo_id: str, which: str) -> bool:
+    """Already fetched? Prospectuses never change, so we only do this once."""
+    return os.path.exists(os.path.join(DATA, "docs", ipo_id, f"{which}.json"))
 
 
 def rebuild_index(records: list):

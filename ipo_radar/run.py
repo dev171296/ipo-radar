@@ -11,8 +11,8 @@ wrapped, and a failure is recorded as data rather than raised as a crash.
 import sys
 import traceback
 
-from . import storage
-from .collectors import nse, prices
+from . import documents, sections, storage
+from .collectors import nse, prices, sebi
 from .identity import find_match, make_id, normalise
 
 
@@ -83,6 +83,74 @@ def collect_ipos():
     return new_count, updated_count
 
 
+def collect_prospectuses():
+    """
+    Find and read each IPO's prospectus.
+
+    Two documents per company:
+      abridged  ~30 pages, the regulator's mandated summary. Fast, reliable.
+      full      400-600 pages. Where litigation and related-party detail live.
+
+    A prospectus never changes once filed, so we do this once per IPO and skip
+    it forever after.
+    """
+    print("\n[2] SEBI — prospectuses")
+
+    records = storage.all_records()
+    todo = [r for r in records
+            if not (storage.has_sections(r["id"], "abridged")
+                    and storage.has_sections(r["id"], "full"))]
+    if not todo:
+        print("    all prospectuses already fetched")
+        return 0
+
+    try:
+        filings = sebi.list_filings("rhp")
+        print(f"    SEBI currently lists {len(filings)} documents")
+    except Exception as exc:
+        print(f"    could not read SEBI's listing: {type(exc).__name__}: {exc}")
+        return 0
+
+    done = 0
+    for record in todo:
+        ipo_id, name = record["id"], record.get("name", "")
+        print(f"\n    {name}")
+
+        found = sebi.documents_for(name, filings)
+        for note in found.get("notes", []):
+            print(f"      note: {note}")
+        if not found["abridged"] and not found["full"]:
+            print("      no documents found — will try again next run")
+            storage.append_event(ipo_id, "prospectus_not_found", source="sebi", ok=False)
+            continue
+        print(f"      matched as: {found['matched_as']}")
+
+        for which in ("abridged", "full"):
+            url = found.get(which)
+            if not url or storage.has_sections(ipo_id, which):
+                continue
+            try:
+                pages = documents.fetch_pages(url)
+                found_sections = sections.split(pages)
+                path = storage.save_sections(
+                    ipo_id, which, found_sections,
+                    {"url": url, "total_pages": len(pages)})
+                print(f"      {which}: {len(pages)} pages -> "
+                      f"{len(found_sections)} sections")
+                print(f"        {sections.summarise(found_sections)}")
+                storage.append_event(ipo_id, f"prospectus_{which}_read",
+                                     detail=f"{len(pages)} pages, "
+                                            f"{len(found_sections)} sections",
+                                     source="sebi")
+                done += 1
+            except Exception as exc:
+                print(f"      {which}: FAILED {type(exc).__name__}: {str(exc)[:110]}")
+                storage.append_event(ipo_id, f"prospectus_{which}_failed",
+                                     detail=str(exc)[:200], source="sebi", ok=False)
+
+    return done
+
+
 def check_price_ladder():
     """
     Exercise the fallback ladder on a known stock.
@@ -90,7 +158,7 @@ def check_price_ladder():
     We have no listed IPOs to track yet, so this is a live self-test: it proves
     the ladder still works today and tells us which rung answered.
     """
-    print("\n[2] Price ladder self-test (Reliance)")
+    print("\n[3] Price ladder self-test (Reliance)")
     from .collectors import bhavcopy
     print(f"    India time now: {bhavcopy.india_now():%Y-%m-%d %H:%M} IST")
     print(f"    today's file expected yet? "
@@ -127,10 +195,17 @@ def main():
         traceback.print_exc()
         new = updated = 0
 
+    try:
+        docs_done = collect_prospectuses()
+    except Exception:
+        traceback.print_exc()
+        docs_done = 0
+
     ladder_ok = check_price_ladder()
 
     print("\n" + "=" * 66)
     print(f"  {new} new IPOs, {updated} updated")
+    print(f"  {docs_done} prospectus documents read")
     print(f"  price ladder: {'ok' if ladder_ok else 'FAILED'}")
     print(f"  tracking {len(storage.all_records())} IPOs in total")
     print("=" * 66)
