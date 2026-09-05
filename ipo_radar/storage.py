@@ -142,15 +142,14 @@ def save_sections(ipo_id: str, which: str, sections: dict, meta: dict):
         # A prospectus never changes once filed; re-downloading it to look at
         # something we did not think to extract would be wasteful.
         "full_text_pages": meta.pop("keep_pages", None),
-        "sections": {
-            name: {
-                "start_page": body["start_page"],
-                "end_page": body["end_page"],
-                "chars": body["chars"],
-                "text": body["text"],
-            }
-            for name, body in sections.items()
-        },
+        # Store whatever the reader produced, as-is.
+        #
+        # The two documents are read differently and their results have
+        # different shapes: the form reader gives one page number per field,
+        # the chapter reader gives a start and an end. Insisting on one shape
+        # here made this crash the moment the form reader started working.
+        # The filing cabinet does not need to understand what it is filing.
+        "sections": {name: dict(body) for name, body in sections.items()},
     }
     with open(os.path.join(folder, f"{which}.json"), "w") as f:
         json.dump(payload, f, indent=2, ensure_ascii=False)

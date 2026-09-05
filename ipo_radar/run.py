@@ -182,11 +182,19 @@ def collect_prospectuses():
                     for line in shape["heading_candidates"][:12]:
                         print(f"          {line}")
 
-            storage.save_sections(ipo_id, which, extracted, meta)
-            storage.append_event(ipo_id, f"{which}_read",
-                                 detail=f"{len(pages)} pages, {len(extracted)} parts",
-                                 source="sebi")
-            done += 1
+            try:
+                storage.save_sections(ipo_id, which, extracted, meta)
+                storage.append_event(
+                    ipo_id, f"{which}_read",
+                    detail=f"{len(pages)} pages, {len(extracted)} parts",
+                    source="sebi")
+                done += 1
+            except Exception as exc:
+                # One awkward document must never abandon the other four
+                # companies. Record it and carry on.
+                print(f"      could not save: {type(exc).__name__}: {str(exc)[:90]}")
+                storage.append_event(ipo_id, f"{which}_save_failed",
+                                     detail=str(exc)[:200], source="sebi", ok=False)
 
     return done
 
