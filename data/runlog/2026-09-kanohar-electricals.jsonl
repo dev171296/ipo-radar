@@ -6,3 +6,5 @@
 {"at": "2026-09-05T10:56:16+00:00", "event": "abridged_read", "ok": true, "detail": "16 pages, 10 parts", "source": "sebi"}
 {"at": "2026-09-05T10:58:45+00:00", "event": "abridged_read", "ok": true, "detail": "16 pages, 10 parts", "source": "sebi"}
 {"at": "2026-09-05T11:01:24+00:00", "event": "abridged_read", "ok": true, "detail": "16 pages, 10 parts", "source": "sebi"}
+{"at": "2026-09-05T11:09:21+00:00", "event": "abridged_read", "ok": true, "detail": "16 pages, 10 parts", "source": "sebi"}
+{"at": "2026-09-05T11:10:22+00:00", "event": "full_read", "ok": true, "detail": "508 pages, 7 parts", "source": "sebi"}
