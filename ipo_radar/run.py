@@ -156,7 +156,8 @@ def collect_prospectuses():
 
             if which == "abridged":
                 extracted = abridged.read(pages)
-                ratios = abridged.read_ratios(pages)
+                financials_page = (extracted.get("financials") or {}).get("page")
+                ratios = abridged.read_ratios(pages, prefer_page=financials_page)
                 meta["keep_pages"] = pages
                 if ratios:
                     meta["ratios"] = ratios

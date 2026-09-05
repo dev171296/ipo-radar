@@ -88,24 +88,51 @@ def read(pages: list) -> dict:
     return found
 
 
-# Ratios we have SEEN in these documents, with the three years they report.
-RATIO_PATTERNS = {
-    "ebitda": r"ebitda\s*\(?\d*\)?\s*([\d,\.]+)\s+([\d,\.]+)\s+([\d,\.]+)",
-    "roe_pct": r"roe\s*\(?\d*\)?\s*%?\s*([\d,\.]+)\s+([\d,\.]+)\s+([\d,\.]+)",
-    "roce_pct": r"roce\s*\(?\d*\)?\s*%?\s*([\d,\.]+)\s+([\d,\.]+)\s+([\d,\.]+)",
-    "revenue": r"revenue from operations\s*\(?\d*\)?\s*([\d,\.]+)\s+([\d,\.]+)\s+([\d,\.]+)",
-    "pat": r"profit after tax\s*\(?\d*\)?\s*([\d,\.]+)\s+([\d,\.]+)\s+([\d,\.]+)",
+# Ratios we have SEEN in these documents. Each entry is the wording that
+# starts the line in the financial table. We match a LINE, not a blob of text,
+# because the same words also appear in prose ("revenue from operations grew
+# by 12% to ..."), and a blob match happily walks onto the next line and picks
+# up numbers that belong to a different row.
+RATIO_LABELS = {
+    "ebitda": r"ebitda",
+    "roe_pct": r"ro(?:e|nw)",
+    "roce_pct": r"roce",
+    "revenue": r"(?:total\s+)?revenue\s+from\s+operations",
+    "pat": r"(?:profit|loss)\s+after\s+tax|profit\s+for\s+the\s+(?:year|period)",
 }
+
+# A number as these tables print it: 4,569.71 / 1051.98 / (12.34) for negative.
+NUMBER = r"\(?-?\d[\d,]*(?:\.\d+)?\)?%?"
+
+# Noise that sits between the label and the first figure: footnote markers,
+# unit notes, and the odd stray bracket.
+_TRAILING_NOTE = re.compile(
+    r"^\s*(?:\(\d+\)|\*+|\#+|\(?(?:rs|inr|₹)[^)]{0,30}\)?|in\s+lakhs?|in\s+millions?"
+    r"|in\s+crores?|\(?%\)?|:|-|–)\s*", re.I)
 
 
 def _num(text):
+    text = str(text).strip().rstrip("%")
+    negative = text.startswith("(") and text.endswith(")")
+    text = text.strip("()").replace(",", "")
     try:
-        return float(str(text).replace(",", ""))
+        value = float(text)
     except (TypeError, ValueError):
         return None
+    return -value if negative else value
 
 
-def read_ratios(pages: list) -> dict:
+def _numbers_on(rest: str) -> list:
+    """The figures on one table row, after the label has been stripped off."""
+    previous = None
+    while rest != previous:
+        previous = rest
+        rest = _TRAILING_NOTE.sub("", rest)
+    values = [_num(token) for token in re.findall(NUMBER, rest)]
+    return [v for v in values if v is not None]
+
+
+def read_ratios(pages: list, prefer_page: int = None) -> dict:
     """
     Pull the headline financial figures out as numbers.
 
@@ -114,16 +141,45 @@ def read_ratios(pages: list) -> dict:
     which is exactly what the growth and profitability factors need. Reported
     as [newest, middle, oldest] with the raw line kept so the reading can be
     checked against the document.
+
+    Two rules keep us honest:
+      * we only accept a line that carries EXACTLY three figures — a table row
+        with three years and nothing else. A sentence, a two-year table or a
+        row with a footnote column is left alone rather than guessed at.
+      * if we know which page holds the financial table (prefer_page), we read
+        that page first and only widen the search if it yields nothing.
     """
-    flat = re.sub(r"[ \t]+", " ", "\n".join(pages)).lower()
-    out = {}
-    for name, pattern in RATIO_PATTERNS.items():
-        match = re.search(pattern, flat)
-        if match:
-            values = [_num(g) for g in match.groups()]
-            if all(v is not None for v in values):
-                out[name] = {"years": values, "raw": match.group(0)[:80]}
-    return out
+    def scan(page_numbers):
+        out = {}
+        for page_number in page_numbers:
+            for line in pages[page_number - 1].splitlines():
+                line = " ".join(line.split())
+                if not line:
+                    continue
+                lowered = line.lower()
+                for name, label in RATIO_LABELS.items():
+                    if name in out:
+                        continue
+                    match = re.match(rf"^{label}\b", lowered)
+                    if not match:
+                        continue
+                    values = _numbers_on(line[match.end():])
+                    if len(values) == 3:
+                        out[name] = {"years": values, "page": page_number,
+                                     "raw": line[:100]}
+        return out
+
+    all_pages = range(1, len(pages) + 1)
+    if prefer_page and 1 <= prefer_page <= len(pages):
+        nearby = [n for n in (prefer_page, prefer_page + 1, prefer_page - 1)
+                  if 1 <= n <= len(pages)]
+        found = scan(nearby)
+        if found:
+            rest = [n for n in all_pages if n not in nearby]
+            for name, body in scan(rest).items():
+                found.setdefault(name, body)
+            return found
+    return scan(all_pages)
 
 
 def summarise(found: dict) -> str:

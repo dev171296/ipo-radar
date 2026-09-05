@@ -135,7 +135,7 @@ def pdfs_on_page(page_url: str) -> list:
     soup = BeautifulSoup(html, "html.parser")
     for anchor in soup.find_all("a", href=True):
         if ".pdf" in anchor["href"].lower():
-            url = urljoin(BASE, anchor["href"])
+            url = urljoin(page_url, anchor["href"])
             if url not in seen:
                 seen.add(url)
                 found.append({"url": url, "how": "link",
@@ -146,7 +146,7 @@ def pdfs_on_page(page_url: str) -> list:
         for element in soup.find_all(tag):
             value = element.get(attribute, "")
             if ".pdf" in value.lower():
-                url = urljoin(BASE, value)
+                url = urljoin(page_url, value)
                 if url not in seen:
                     seen.add(url)
                     found.append({"url": url, "how": tag, "caption": ""})
@@ -154,7 +154,7 @@ def pdfs_on_page(page_url: str) -> list:
     # 3. anything else in the page source — a viewer often takes its document
     #    from a script, where no tag search will find it.
     for match in re.findall(r"""[\"'\(]([^\"'\(\)\s]+\.pdf)""", html, re.I):
-        url = urljoin(BASE, match)
+        url = urljoin(page_url, match)
         if url not in seen:
             seen.add(url)
             found.append({"url": url, "how": "source", "caption": ""})
