@@ -8,3 +8,4 @@
 {"at": "2026-09-05T11:00:42+00:00", "event": "abridged_read", "ok": true, "detail": "13 pages, 10 parts", "source": "sebi"}
 {"at": "2026-09-05T11:01:20+00:00", "event": "full_read", "ok": true, "detail": "571 pages, 6 parts", "source": "sebi"}
 {"at": "2026-09-05T11:08:55+00:00", "event": "abridged_read", "ok": true, "detail": "13 pages, 10 parts", "source": "sebi"}
+{"at": "2026-09-05T11:15:49+00:00", "event": "full_read", "ok": true, "detail": "571 pages, 6 parts", "source": "sebi"}
