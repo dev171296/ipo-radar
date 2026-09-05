@@ -18,7 +18,7 @@ and related-party detail the summary leaves out.
 """
 
 import re
-from urllib.parse import urljoin
+from urllib.parse import parse_qs, unquote, urljoin, urlparse
 
 from bs4 import BeautifulSoup
 
@@ -114,6 +114,31 @@ def list_filings(which: str = "rhp") -> list:
     return filings
 
 
+def _unwrap(url: str) -> str:
+    """
+    Some SEBI links point at a PDF VIEWER, not at a PDF:
+
+        https://www.sebi.gov.in/web/?file=https://www.sebi.gov.in/sebi_data/
+        attachdocs/sep-2026/1788414816085.pdf
+
+    That address answers with a web page (Mozilla's pdf.js) which then loads
+    the real document named in `file=`. Asking the viewer for a PDF gets HTML,
+    which is exactly what happened. So whenever a URL carries the document in a
+    query parameter, we take the document and drop the viewer. Repeated, in
+    case a viewer is ever wrapped in a viewer.
+    """
+    for _ in range(3):
+        query = parse_qs(urlparse(url).query)
+        inner = next((v[0] for k, v in query.items()
+                      if k.lower() in ("file", "url", "doc", "path") and v), None)
+        if not inner or ".pdf" not in inner.lower():
+            break
+        url = unquote(inner) if not inner.lower().startswith("http") else inner
+        if not url.lower().startswith("http"):
+            url = urljoin(BASE, url)
+    return url
+
+
 def pdfs_on_page(page_url: str) -> list:
     """
     Every PDF referenced anywhere on a SEBI detail page.
@@ -135,7 +160,7 @@ def pdfs_on_page(page_url: str) -> list:
     soup = BeautifulSoup(html, "html.parser")
     for anchor in soup.find_all("a", href=True):
         if ".pdf" in anchor["href"].lower():
-            url = urljoin(page_url, anchor["href"])
+            url = _unwrap(urljoin(page_url, anchor["href"]))
             if url not in seen:
                 seen.add(url)
                 found.append({"url": url, "how": "link", "source_page": page_url,
@@ -146,16 +171,16 @@ def pdfs_on_page(page_url: str) -> list:
         for element in soup.find_all(tag):
             value = element.get(attribute, "")
             if ".pdf" in value.lower():
-                url = urljoin(page_url, value)
+                url = _unwrap(urljoin(page_url, value))
                 if url not in seen:
                     seen.add(url)
-                    found.append({"url": url, "how": tag, "caption": "",
+                    found.append({"url": url, "how": tag, "caption": "embedded viewer",
                               "source_page": page_url})
 
     # 3. anything else in the page source — a viewer often takes its document
     #    from a script, where no tag search will find it.
     for match in re.findall(r"""[\"'\(]([^\"'\(\)\s]+\.pdf)""", html, re.I):
-        url = urljoin(page_url, match)
+        url = _unwrap(urljoin(page_url, match))
         if url not in seen:
             seen.add(url)
             found.append({"url": url, "how": "source", "caption": "",
