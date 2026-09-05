@@ -4,3 +4,4 @@
 {"at": "2026-09-04T19:38:00+00:00", "event": "prospectus_full_read", "ok": true, "detail": "9 pages, 0 sections", "source": "sebi"}
 {"at": "2026-09-05T10:49:14+00:00", "event": "abridged_read", "ok": true, "detail": "9 pages, 10 parts", "source": "sebi"}
 {"at": "2026-09-05T10:56:20+00:00", "event": "abridged_read", "ok": true, "detail": "9 pages, 10 parts", "source": "sebi"}
+{"at": "2026-09-05T10:58:49+00:00", "event": "abridged_read", "ok": true, "detail": "9 pages, 10 parts", "source": "sebi"}
