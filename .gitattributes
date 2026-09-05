@@ -1,0 +1,7 @@
+# How to combine two runs that both added to the same file.
+#
+# Our history and log files are append-only: each run adds lines at the end and
+# never touches what is already there. When two runs do that at once, the right
+# answer is to KEEP BOTH sets of lines — which is exactly what "union" means.
+# Without this, Git stops and asks a human, and there is no human at 8am.
+*.jsonl merge=union

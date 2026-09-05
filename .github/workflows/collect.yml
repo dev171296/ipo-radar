@@ -46,17 +46,24 @@ jobs:
           git diff --staged --quiet && { echo "nothing changed"; exit 0; }
           git commit -m "data: $(date -u '+%Y-%m-%d %H:%M') UTC"
 
-          # Another run (or you, from your Mac) may have saved something while
-          # this one was working. Take their changes first, put ours on top,
-          # then try again. Our files are append-only, so there is nothing to
-          # argue about — the two sets of changes simply stack.
+          # Another run may have saved while this one was working. Combine the
+          # two rather than choosing between them:
+          #   history and log files  -> keep BOTH sets of lines (.gitattributes)
+          #   index.json, ipos/*.json -> keep ours; they are rebuilt from history
+          #                              every run, so nothing is lost
           for attempt in 1 2 3; do
             if git push; then
               echo "saved on attempt $attempt"
               exit 0
             fi
-            echo "someone else saved first — catching up, attempt $attempt"
-            git pull --rebase --autostash origin main
+            echo "someone else saved first — merging, attempt $attempt"
+            git fetch origin main
+            git merge -X ours --no-edit origin/main || {
+              echo "merge still stuck — keeping our version of the derived files"
+              git checkout --ours -- data/ || true
+              git add data/
+              git commit --no-edit || true
+            }
             sleep 3
           done
           echo "could not save after 3 attempts"
