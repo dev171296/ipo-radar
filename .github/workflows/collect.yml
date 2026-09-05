@@ -24,6 +24,10 @@ jobs:
       contents: write           # needed to commit the data back
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Full history, so the save step below can rebase cleanly when two
+          # runs land close together.
+          fetch-depth: 0
 
       - uses: actions/setup-python@v5
         with:
@@ -39,5 +43,21 @@ jobs:
           git config user.name  "ipo-radar"
           git config user.email "ipo-radar@users.noreply.github.com"
           git add data/
-          git diff --staged --quiet || git commit -m "data: $(date -u '+%Y-%m-%d %H:%M') UTC"
-          git push
+          git diff --staged --quiet && { echo "nothing changed"; exit 0; }
+          git commit -m "data: $(date -u '+%Y-%m-%d %H:%M') UTC"
+
+          # Another run (or you, from your Mac) may have saved something while
+          # this one was working. Take their changes first, put ours on top,
+          # then try again. Our files are append-only, so there is nothing to
+          # argue about — the two sets of changes simply stack.
+          for attempt in 1 2 3; do
+            if git push; then
+              echo "saved on attempt $attempt"
+              exit 0
+            fi
+            echo "someone else saved first — catching up, attempt $attempt"
+            git pull --rebase --autostash origin main
+            sleep 3
+          done
+          echo "could not save after 3 attempts"
+          exit 1
