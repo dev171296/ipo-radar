@@ -138,7 +138,7 @@ def pdfs_on_page(page_url: str) -> list:
             url = urljoin(page_url, anchor["href"])
             if url not in seen:
                 seen.add(url)
-                found.append({"url": url, "how": "link",
+                found.append({"url": url, "how": "link", "source_page": page_url,
                               "caption": " ".join(anchor.get_text().split())[:100]})
 
     # 2. embedded viewers
@@ -149,7 +149,8 @@ def pdfs_on_page(page_url: str) -> list:
                 url = urljoin(page_url, value)
                 if url not in seen:
                     seen.add(url)
-                    found.append({"url": url, "how": tag, "caption": ""})
+                    found.append({"url": url, "how": tag, "caption": "",
+                              "source_page": page_url})
 
     # 3. anything else in the page source — a viewer often takes its document
     #    from a script, where no tag search will find it.
@@ -157,7 +158,8 @@ def pdfs_on_page(page_url: str) -> list:
         url = urljoin(page_url, match)
         if url not in seen:
             seen.add(url)
-            found.append({"url": url, "how": "source", "caption": ""})
+            found.append({"url": url, "how": "source", "caption": "",
+                          "source_page": page_url})
 
     return found
 
@@ -215,8 +217,7 @@ def documents_for(company_name: str, filings: list = None) -> dict:
                     pdfs = pdfs_on_page(filing["url"])
                     result["candidates"] = pdfs
                     notes.append(f"detail page offers {len(pdfs)} PDF(s): "
-                                 + ", ".join(f"{p['how']}:{p['url'].rsplit('/', 1)[-1][:40]}"
-                                             for p in pdfs[:4]))
+                                 + "; ".join(f"{p['how']} -> {p['url']}" for p in pdfs[:4]))
                     # Only take a link that is NOT the abridged form — we
                     # already have that, and storing it twice under two names
                     # is how the last version fooled itself.

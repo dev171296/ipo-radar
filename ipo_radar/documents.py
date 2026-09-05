@@ -22,20 +22,44 @@ from .http import FetchError, TIMEOUT, plain_session
 MAX_PDF_MB = 80          # anything larger is almost certainly not a prospectus
 
 
-def download(url: str) -> bytes:
-    """Fetch a PDF. SEBI serves these over an ordinary connection."""
+def download(url: str, referer: str = None) -> bytes:
+    """
+    Fetch a PDF.
+
+    Some SEBI documents are only served to a visitor who looks like they came
+    from the page that displays them, so when we know that page we visit it
+    first (which sets a cookie) and then name it as the Referer — exactly what
+    a browser does. Harmless when it isn't needed.
+
+    When the answer isn't a PDF we say what it actually was. Guessing at a
+    silent failure twice is enough.
+    """
     session = plain_session()
-    resp = session.get(url, timeout=90)
+    headers = {}
+    if referer:
+        headers["Referer"] = referer
+        try:
+            session.get(referer, timeout=TIMEOUT)
+        except Exception:
+            pass
+
+    resp = session.get(url, timeout=90, headers=headers)
     if resp.status_code != 200:
-        raise FetchError(f"PDF download failed: HTTP {resp.status_code}")
+        raise FetchError(f"HTTP {resp.status_code} for {url}")
 
     size_mb = len(resp.content) / 1_000_000
     if size_mb > MAX_PDF_MB:
         raise FetchError(f"PDF is {size_mb:.0f} MB — refusing, that isn't a prospectus")
+
+    if not resp.content[:5].startswith(b"%PDF"):
+        kind = resp.headers.get("content-type", "?")
+        opening = resp.content[:160].decode("utf-8", "replace").replace("\n", " ")
+        raise FetchError(
+            f"not a PDF | url={url} | type={kind} | {len(resp.content)} bytes "
+            f"| starts: {opening}")
+
     if len(resp.content) < 20_000:
         raise FetchError(f"only {len(resp.content)} bytes — probably an error page")
-    if not resp.content[:5].startswith(b"%PDF"):
-        raise FetchError("that file is not a PDF")
 
     return resp.content
 
@@ -60,9 +84,9 @@ def to_pages(pdf_bytes: bytes) -> list:
     return pages
 
 
-def fetch_pages(url: str) -> list:
+def fetch_pages(url: str, referer: str = None) -> list:
     """Download a prospectus and return its text, one entry per page."""
-    return to_pages(download(url))
+    return to_pages(download(url, referer=referer))
 
 
 # Where the line falls between the two documents. Measured: the summary form

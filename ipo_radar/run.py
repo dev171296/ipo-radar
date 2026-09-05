@@ -141,10 +141,11 @@ def collect_prospectuses():
             seen_urls.add(url)
 
             try:
-                pages = documents.fetch_pages(url)
+                pages = documents.fetch_pages(
+                    url, referer=candidate.get("source_page"))
             except Exception as exc:
                 print(f"      skipped {url.rsplit('/', 1)[-1][:44]}: "
-                      f"{type(exc).__name__} {str(exc)[:70]}")
+                      f"{type(exc).__name__} {str(exc)[:300]}")
                 continue
 
             which = documents.classify(pages)
