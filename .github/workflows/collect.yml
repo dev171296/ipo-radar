@@ -36,6 +36,8 @@ jobs:
       - run: pip install -r requirements.txt
 
       - name: Collect
+        env:
+          PYTHONUNBUFFERED: "1"   # print as it happens, not all at the end
         run: python -m ipo_radar.run
 
       - name: Save the data back to the repo

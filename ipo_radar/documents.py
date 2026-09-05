@@ -14,6 +14,7 @@ a year would bury the repository. We take the text we need and discard the rest.
 """
 
 import io
+import time
 
 import pypdfium2 as pdfium
 
@@ -22,46 +23,89 @@ from .http import FetchError, TIMEOUT, plain_session
 MAX_PDF_MB = 80          # anything larger is almost certainly not a prospectus
 
 
+DOWNLOAD_ATTEMPTS = 4
+
+
 def download(url: str, referer: str = None) -> bytes:
     """
-    Fetch a PDF.
+    Fetch a PDF, and keep going when the connection gives up halfway.
+
+    A prospectus is 10-30 MB and SEBI's server drops the connection partway
+    often enough that a single try is not good enough: measured 5 Sep 2026,
+    two of four downloads died at 6.2 MB of 9.6 MB and 2.4 MB of 12.3 MB.
+
+    So we stream the file, and if it breaks we ask for the REST of it — the
+    `Range` header, the same mechanism your browser's "resume download" uses.
+    If the server ignores that (answers 200 rather than 206) we simply start
+    the file again. Four goes, then we give up and try on the next run.
 
     Some SEBI documents are only served to a visitor who looks like they came
-    from the page that displays them, so when we know that page we visit it
-    first (which sets a cookie) and then name it as the Referer — exactly what
-    a browser does. Harmless when it isn't needed.
-
-    When the answer isn't a PDF we say what it actually was. Guessing at a
-    silent failure twice is enough.
+    from the page displaying them, so when we know that page we visit it first
+    and name it as the Referer — what a browser does. Harmless when not needed.
     """
     session = plain_session()
-    headers = {}
+    base_headers = {}
     if referer:
-        headers["Referer"] = referer
+        base_headers["Referer"] = referer
         try:
             session.get(referer, timeout=TIMEOUT)
         except Exception:
             pass
 
-    resp = session.get(url, timeout=90, headers=headers)
-    if resp.status_code != 200:
-        raise FetchError(f"HTTP {resp.status_code} for {url}")
+    body = b""
+    last_problem = None
 
-    size_mb = len(resp.content) / 1_000_000
-    if size_mb > MAX_PDF_MB:
-        raise FetchError(f"PDF is {size_mb:.0f} MB — refusing, that isn't a prospectus")
+    for attempt in range(1, DOWNLOAD_ATTEMPTS + 1):
+        headers = dict(base_headers)
+        if body:
+            headers["Range"] = f"bytes={len(body)}-"
 
-    if not resp.content[:5].startswith(b"%PDF"):
-        kind = resp.headers.get("content-type", "?")
-        opening = resp.content[:160].decode("utf-8", "replace").replace("\n", " ")
-        raise FetchError(
-            f"not a PDF | url={url} | type={kind} | {len(resp.content)} bytes "
-            f"| starts: {opening}")
+        try:
+            resp = session.get(url, timeout=180, headers=headers, stream=True)
 
-    if len(resp.content) < 20_000:
-        raise FetchError(f"only {len(resp.content)} bytes — probably an error page")
+            if resp.status_code not in (200, 206):
+                raise FetchError(f"HTTP {resp.status_code} for {url}")
+            if body and resp.status_code == 200:
+                body = b""            # server won't resume — start over
 
-    return resp.content
+            if not body and resp.status_code == 200:
+                first = next(resp.iter_content(chunk_size=8192), b"")
+                if not first.startswith(b"%PDF"):
+                    kind = resp.headers.get("content-type", "?")
+                    opening = first[:160].decode("utf-8", "replace").replace("\n", " ")
+                    raise FetchError(f"not a PDF | url={url} | type={kind} "
+                                     f"| starts: {opening}")
+                body += first
+
+            for chunk in resp.iter_content(chunk_size=1 << 16):
+                body += chunk
+                if len(body) / 1_000_000 > MAX_PDF_MB:
+                    raise FetchError(f"over {MAX_PDF_MB} MB — that isn't a prospectus")
+
+            expected = resp.headers.get("content-range", "").rsplit("/", 1)[-1]
+            if expected.isdigit() and len(body) < int(expected):
+                raise IOError(f"short: {len(body)} of {expected} bytes")
+
+            break                      # got the whole thing
+
+        except FetchError:
+            raise                      # a wrong file is not worth retrying
+        except Exception as exc:
+            last_problem = exc
+            if attempt == DOWNLOAD_ATTEMPTS:
+                raise FetchError(
+                    f"gave up after {attempt} tries with {len(body):,} bytes "
+                    f"of {url.rsplit('/', 1)[-1]}: {type(exc).__name__} {exc}")
+            print(f"        download broke at {len(body):,} bytes — "
+                  f"resuming (try {attempt + 1} of {DOWNLOAD_ATTEMPTS})")
+            time.sleep(2 * attempt)
+
+    if len(body) < 20_000:
+        raise FetchError(f"only {len(body)} bytes — probably an error page")
+    if not body.startswith(b"%PDF"):
+        raise FetchError(f"not a PDF: {url}")
+
+    return body
 
 
 def to_pages(pdf_bytes: bytes) -> list:
