@@ -8,7 +8,7 @@
   "name": "Pranav Constructions Limited",
   "symbol": "PRANAV",
   "type": "mainboard",
-  "status": "upcoming",
+  "status": "open",
   "dates": {
     "open": "2026-09-07",
     "close": "2026-09-09",
@@ -18,15 +18,15 @@
   "price_band": "Rs.118 to Rs.124",
   "issue_size_shares": 22463137.0,
   "subscription": {
-    "times": null,
-    "shares_offered": null,
-    "shares_bid": null
+    "times": 0.0,
+    "shares_offered": 0.0,
+    "shares_bid": 0.0
   },
   "also_on_bse": false,
   "sources": {
     "calendar": "nse",
-    "fetched_at": "2026-09-06T16:24:10+00:00"
+    "fetched_at": "2026-09-06T18:38:37+00:00"
   },
   "missing": [],
-  "rebuilt_at": "2026-09-06T16:24:10+00:00"
+  "rebuilt_at": "2026-09-06T18:38:37+00:00"
 }
