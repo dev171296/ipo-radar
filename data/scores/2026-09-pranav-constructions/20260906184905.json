@@ -1,0 +1,132 @@
+{
+ "ipo_id": "2026-09-pranav-constructions",
+ "name": "Pranav Constructions Limited",
+ "scored_at": "2026-09-06T18:49:05+00:00",
+ "built_from_bundle": "2026-09-06T18:49:05+00:00",
+ "fundamentals": {
+  "score": 76.2,
+  "withheld": null,
+  "points_earned": 27.44,
+  "points_assessed": 36,
+  "coverage_pct": 36,
+  "components": [
+   {
+    "component": "growth_quality",
+    "weight": 14,
+    "points": 11.2,
+    "basis": "revenue CAGR 30.46% a year"
+   },
+   {
+    "component": "profitability",
+    "weight": 12,
+    "points": 10.24,
+    "basis": "latest profit margin 9.37%, widening, ROE 33.78%"
+   },
+   {
+    "component": "filing_hygiene",
+    "weight": 10,
+    "points": 6.0,
+    "basis": "summary form read; 479-page prospectus read; all key fields found; 1 contradiction(s)"
+   }
+  ],
+  "not_assessed": [
+   {
+    "component": "valuation_vs_peers",
+    "weight": 18,
+    "why": "not built yet"
+   },
+   {
+    "component": "cash_flow_quality",
+    "weight": 14,
+    "why": "not built yet"
+   },
+   {
+    "component": "promoter_governance",
+    "weight": 12,
+    "why": "not built yet"
+   },
+   {
+    "component": "balance_sheet",
+    "weight": 10,
+    "why": "not built yet"
+   },
+   {
+    "component": "issue_structure",
+    "weight": 10,
+    "why": "the two sources disagree about the size of the issue"
+   }
+  ]
+ },
+ "demand": {
+  "score": 10.0,
+  "withheld": null,
+  "points_earned": 2.6,
+  "points_assessed": 26,
+  "coverage_pct": 26,
+  "components": [
+   {
+    "component": "subscription_level",
+    "weight": 26,
+    "points": 2.6,
+    "basis": "subscribed 0.0×"
+   }
+  ],
+  "not_assessed": [
+   {
+    "component": "subscription_velocity",
+    "weight": 14,
+    "why": "need at least two readings to see a rate"
+   },
+   {
+    "component": "gmp_level",
+    "weight": 12,
+    "why": "not built yet"
+   },
+   {
+    "component": "gmp_trend",
+    "weight": 10,
+    "why": "not built yet"
+   },
+   {
+    "component": "anchor_quality",
+    "weight": 12,
+    "why": "not built yet"
+   },
+   {
+    "component": "broker_conviction",
+    "weight": 10,
+    "why": "not built yet"
+   },
+   {
+    "component": "media_coverage",
+    "weight": 8,
+    "why": "not built yet"
+   },
+   {
+    "component": "retail_attention",
+    "weight": 8,
+    "why": "not built yet"
+   }
+  ]
+ },
+ "flags": [
+  {
+   "flag": "under-subscribed",
+   "detail": "0.0× — the issue did not fill",
+   "for_ai": "this usually overrides a good fundamental story"
+  }
+ ],
+ "vetoes": {
+  "triggered": [],
+  "not_tested": [
+   "qualified or adverse audit opinion — needs the prospectus chapters read",
+   "negative operating cash flow in all three years — needs the prospectus chapters read",
+   "SEBI or criminal proceedings against the promoters — needs the prospectus chapters read",
+   "more than half of revenue from one related party — needs the prospectus chapters read",
+   "receivables growing faster than sales — needs the prospectus chapters read"
+  ]
+ },
+ "listing_score_quant_only": 32.1,
+ "longterm_score_quant_only": 76.2,
+ "status": "quant only — the AI block has not been built, so these are not final verdicts"
+}

@@ -1,0 +1,124 @@
+{
+ "ipo_id": "2026-09-qualiance-international",
+ "name": "Qualiance International Limited",
+ "scored_at": "2026-09-06T18:49:05+00:00",
+ "built_from_bundle": "2026-09-06T18:49:05+00:00",
+ "fundamentals": {
+  "score": null,
+  "withheld": null,
+  "points_earned": 0.0,
+  "points_assessed": 0,
+  "coverage_pct": 0,
+  "components": [],
+  "not_assessed": [
+   {
+    "component": "valuation_vs_peers",
+    "weight": 18,
+    "why": "not built yet"
+   },
+   {
+    "component": "growth_quality",
+    "weight": 14,
+    "why": "no three-year revenue on file"
+   },
+   {
+    "component": "cash_flow_quality",
+    "weight": 14,
+    "why": "not built yet"
+   },
+   {
+    "component": "profitability",
+    "weight": 12,
+    "why": "no profit and revenue pair on file"
+   },
+   {
+    "component": "promoter_governance",
+    "weight": 12,
+    "why": "not built yet"
+   },
+   {
+    "component": "balance_sheet",
+    "weight": 10,
+    "why": "not built yet"
+   },
+   {
+    "component": "issue_structure",
+    "weight": 10,
+    "why": "fresh issue and total size not both readable"
+   },
+   {
+    "component": "filing_hygiene",
+    "weight": 10,
+    "why": "no documents on file — nothing to judge the paperwork by"
+   }
+  ]
+ },
+ "demand": {
+  "score": 75.0,
+  "withheld": null,
+  "points_earned": 19.5,
+  "points_assessed": 26,
+  "coverage_pct": 26,
+  "components": [
+   {
+    "component": "subscription_level",
+    "weight": 26,
+    "points": 19.5,
+    "basis": "subscribed 12.51×"
+   }
+  ],
+  "not_assessed": [
+   {
+    "component": "subscription_velocity",
+    "weight": 14,
+    "why": "need at least two readings to see a rate"
+   },
+   {
+    "component": "gmp_level",
+    "weight": 12,
+    "why": "not built yet"
+   },
+   {
+    "component": "gmp_trend",
+    "weight": 10,
+    "why": "not built yet"
+   },
+   {
+    "component": "anchor_quality",
+    "weight": 12,
+    "why": "not built yet"
+   },
+   {
+    "component": "broker_conviction",
+    "weight": 10,
+    "why": "not built yet"
+   },
+   {
+    "component": "media_coverage",
+    "weight": 8,
+    "why": "not built yet"
+   },
+   {
+    "component": "retail_attention",
+    "weight": 8,
+    "why": "not built yet"
+   }
+  ]
+ },
+ "flags": [],
+ "vetoes": {
+  "triggered": [],
+  "not_tested": [
+   "three years of profit not on file",
+   "three years of revenue not on file",
+   "qualified or adverse audit opinion — needs the prospectus chapters read",
+   "negative operating cash flow in all three years — needs the prospectus chapters read",
+   "SEBI or criminal proceedings against the promoters — needs the prospectus chapters read",
+   "more than half of revenue from one related party — needs the prospectus chapters read",
+   "receivables growing faster than sales — needs the prospectus chapters read"
+  ]
+ },
+ "listing_score_quant_only": null,
+ "longterm_score_quant_only": null,
+ "status": "quant only — the AI block has not been built, so these are not final verdicts"
+}

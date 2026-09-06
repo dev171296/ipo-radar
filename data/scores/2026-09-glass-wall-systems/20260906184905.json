@@ -1,0 +1,136 @@
+{
+ "ipo_id": "2026-09-glass-wall-systems",
+ "name": "Glass Wall Systems (India) Limited",
+ "scored_at": "2026-09-06T18:49:05+00:00",
+ "built_from_bundle": "2026-09-06T18:49:05+00:00",
+ "fundamentals": {
+  "score": 70.0,
+  "withheld": null,
+  "points_earned": 32.2,
+  "points_assessed": 46,
+  "coverage_pct": 46,
+  "components": [
+   {
+    "component": "growth_quality",
+    "weight": 14,
+    "points": 7.7,
+    "basis": "revenue CAGR 22.54% a year"
+   },
+   {
+    "component": "profitability",
+    "weight": 12,
+    "points": 12.0,
+    "basis": "latest profit margin 18.34%, widening"
+   },
+   {
+    "component": "issue_structure",
+    "weight": 10,
+    "points": 2.5,
+    "basis": "14% of the issue is fresh money to the company"
+   },
+   {
+    "component": "filing_hygiene",
+    "weight": 10,
+    "points": 10.0,
+    "basis": "summary form read; 571-page prospectus read; all key fields found; no contradictions"
+   }
+  ],
+  "not_assessed": [
+   {
+    "component": "valuation_vs_peers",
+    "weight": 18,
+    "why": "not built yet"
+   },
+   {
+    "component": "cash_flow_quality",
+    "weight": 14,
+    "why": "not built yet"
+   },
+   {
+    "component": "promoter_governance",
+    "weight": 12,
+    "why": "not built yet"
+   },
+   {
+    "component": "balance_sheet",
+    "weight": 10,
+    "why": "not built yet"
+   }
+  ]
+ },
+ "demand": {
+  "score": null,
+  "withheld": null,
+  "points_earned": 0.0,
+  "points_assessed": 0,
+  "coverage_pct": 0,
+  "components": [],
+  "not_assessed": [
+   {
+    "component": "subscription_level",
+    "weight": 26,
+    "why": "no subscription figure yet"
+   },
+   {
+    "component": "subscription_velocity",
+    "weight": 14,
+    "why": "need at least two readings to see a rate"
+   },
+   {
+    "component": "gmp_level",
+    "weight": 12,
+    "why": "not built yet"
+   },
+   {
+    "component": "gmp_trend",
+    "weight": 10,
+    "why": "not built yet"
+   },
+   {
+    "component": "anchor_quality",
+    "weight": 12,
+    "why": "not built yet"
+   },
+   {
+    "component": "broker_conviction",
+    "weight": 10,
+    "why": "not built yet"
+   },
+   {
+    "component": "media_coverage",
+    "weight": 8,
+    "why": "not built yet"
+   },
+   {
+    "component": "retail_attention",
+    "weight": 8,
+    "why": "not built yet"
+   }
+  ]
+ },
+ "flags": [
+  {
+   "flag": "growth concentrated in the year before the IPO",
+   "detail": "sales moved -9% then 64% — the good year is the one just before listing",
+   "for_ai": "look for one-off orders, related-party sales or a change in how revenue is recognised"
+  },
+  {
+   "flag": "mostly an exit for existing holders",
+   "detail": "only 14% of the money reaches the company",
+   "for_ai": "who is selling, and how much of their stake?"
+  }
+ ],
+ "vetoes": {
+  "triggered": [],
+  "not_tested": [
+   "qualified or adverse audit opinion — needs the prospectus chapters read",
+   "negative operating cash flow in all three years — needs the prospectus chapters read",
+   "SEBI or criminal proceedings against the promoters — needs the prospectus chapters read",
+   "more than half of revenue from one related party — needs the prospectus chapters read",
+   "receivables growing faster than sales — needs the prospectus chapters read"
+  ]
+ },
+ "listing_score_quant_only": null,
+ "longterm_score_quant_only": 70.0,
+ "status": "quant only — the AI block has not been built, so these are not final verdicts"
+}
