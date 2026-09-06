@@ -67,6 +67,62 @@ def _value(section, name):
 
 # ------------------------------------------------- F — the fundamentals block
 
+def cash_flow_quality(bundle, flags):
+    """
+    14 points. Did the profit arrive as money?
+
+    Reasoning: profit is an opinion, cash is a fact. A sale is booked when the
+    goods go out, whether or not the customer ever pays — so profit can climb for
+    years while the bank balance does not. The measure is **cash conversion**:
+    operating cash flow divided by EBITDA. Around 1.0 means the reported profit
+    turned into money. Well below it means the profit is sitting in someone
+    else's account, usually as unpaid invoices.
+
+    A negative latest year is capped hard regardless of the ratio: a business
+    that consumed cash in the year it chose to list is a different proposition
+    from one that merely converted poorly.
+    """
+    cash = bundle.get("cash") or {}
+    ratio = _value(cash, "conversion_vs_ebitda")
+    basis = "EBITDA"
+    if ratio is None:
+        ratio, basis = _value(cash, "conversion_vs_pat"), "profit after tax"
+    if ratio is None:
+        return None, "no cash flow statement read"
+
+    fraction = band(ratio, [(0, 0.0), (0.25, 0.15), (0.50, 0.35),
+                            (0.75, 0.60), (1.00, 0.85)], above=1.0)
+
+    flow = _value(cash, "operating_cash_flow") or []
+    if _value(cash, "negative_in_all_years"):
+        fraction = 0.0
+        flags.append({"flag": "cash was consumed every year",
+                      "detail": f"operating cash flow {flow}",
+                      "for_ai": "veto — how is the business funded?"})
+    elif _value(cash, "negative_in_latest_year"):
+        fraction = min(fraction, 0.15)
+        flags.append({
+            "flag": "the business consumed cash in its latest year",
+            "detail": f"operating cash flow {flow[0]} against a reported profit",
+            "for_ai": "where did the money go — receivables, inventory, or both?"})
+    elif ratio < 0.4:
+        flags.append({
+            "flag": "profit is not turning into cash",
+            "detail": f"only {ratio * 100:.0f}% of {basis} came through as cash",
+            "for_ai": "check receivables and inventory against the sales growth"})
+
+    share = _value(cash, "receivables_share_of_sales_growth")
+    if share and share > 0.5:
+        fraction = min(fraction, 0.5)
+        flags.append({
+            "flag": "sales growth is largely uncollected",
+            "detail": f"{share * 100:.0f}% of the increase in sales is money "
+                      f"customers have not paid",
+            "for_ai": "veto check — receivables growing faster than sales"})
+
+    return fraction, f"cash conversion {ratio:.2f}× of {basis}"
+
+
 def valuation_vs_peers(bundle, flags):
     """
     18 points, the heaviest thing in the fundamentals block. Is the price fair?
@@ -355,7 +411,7 @@ def subscription_velocity(bundle, flags):
 FUNDAMENTALS = [
     ("valuation_vs_peers", 18, valuation_vs_peers),
     ("growth_quality", 14, growth_quality),
-    ("cash_flow_quality", 14, None),       # needs the RHP financial statements
+    ("cash_flow_quality", 14, cash_flow_quality),
     ("profitability", 12, profitability),
     ("promoter_governance", 12, None),     # needs the promoter chapter read
     ("balance_sheet", 10, None),           # needs the RHP financial statements
@@ -461,11 +517,22 @@ def run_vetoes(bundle):
     else:
         untested.append("three years of revenue not on file")
 
+    cash = bundle.get("cash") or {}
+    if _value(cash, "operating_cash_flow"):
+        if _value(cash, "negative_in_all_years"):
+            triggered.append({"veto": "negative operating cash flow in all three years",
+                              "detail": _value(cash, "operating_cash_flow")})
+        share = _value(cash, "receivables_share_of_sales_growth")
+        if share and share > 1.0:
+            triggered.append({
+                "veto": "receivables growing faster than sales",
+                "detail": f"{share * 100:.0f}% of the sales increase is uncollected"})
+    else:
+        untested.append("operating cash flow — statement not read")
+
     for name in ("qualified or adverse audit opinion",
-                 "negative operating cash flow in all three years",
                  "SEBI or criminal proceedings against the promoters",
-                 "more than half of revenue from one related party",
-                 "receivables growing faster than sales"):
+                 "more than half of revenue from one related party"):
         untested.append(name + " — needs the prospectus chapters read")
 
     return {"triggered": triggered, "not_tested": untested}

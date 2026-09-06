@@ -27,7 +27,7 @@ import json
 import os
 import re
 
-from . import storage, valuation
+from . import cashflow, storage, valuation
 
 EVIDENCE = os.path.join(storage.DATA, "evidence")
 
@@ -51,6 +51,12 @@ def fact(value, source, page=None, raw=None, confidence="high", note=None):
     if note:
         body["note"] = note
     return body
+
+
+def _value(section, name):
+    """The plain value out of a fact, or None."""
+    body = (section or {}).get(name)
+    return body.get("value") if isinstance(body, dict) else None
 
 
 # ------------------------------------------------------------ small maths
@@ -169,6 +175,7 @@ def build(ipo_id: str) -> dict:
         "offer": {},
         "financials": {},
         "valuation": {},
+        "cash": {},
         "derived": {},
         "demand": {},
         "documents": {},
@@ -315,6 +322,41 @@ def build(ipo_id: str) -> dict:
     elif full:
         missing.append({"what": "valuation comparison",
                         "why": "no basis-for-price chapter found in the prospectus"})
+
+    # ---- does the profit arrive as money? -------------------------------
+    if full:
+        cash = cashflow.analyse(
+            (full.get("sections") or {}),
+            pat_years=_value(bundle["financials"], "pat"),
+            ebitda_years=_value(bundle["financials"], "ebitda"),
+            revenue_years=_value(bundle["financials"], "revenue"))
+        if cash.get("read"):
+            where = f"full prospectus ({cash['chapter']} chapter)"
+            bundle["cash"]["operating_cash_flow"] = fact(
+                cash["operating_cash_flow"], where, page=cash.get("page_hint"),
+                raw=cash.get("raw"), note="newest year first")
+            for name in ("conversion_vs_ebitda", "conversion_vs_pat"):
+                if cash.get(name) is not None:
+                    bundle["cash"][name] = fact(
+                        cash[name], "computed",
+                        note="1.0 means the reported profit arrived as cash")
+            if cash.get("free_cash_flow"):
+                bundle["cash"]["free_cash_flow"] = fact(
+                    cash["free_cash_flow"], "computed",
+                    note="operating cash flow after paying for equipment")
+            bundle["cash"]["negative_in_all_years"] = fact(
+                cash["negative_in_all_years"], "computed")
+            bundle["cash"]["negative_in_latest_year"] = fact(
+                cash["negative_in_latest"], "computed")
+            if cash.get("receivables_share_of_sales_growth") is not None:
+                bundle["cash"]["receivables_share_of_sales_growth"] = fact(
+                    cash["receivables_share_of_sales_growth"], "computed",
+                    note="how much of the extra sales is money not yet collected")
+            for note in cash.get("notes", []):
+                bundle["conflicts"].append({"what": "cash flow warning",
+                                            "means": note})
+        else:
+            missing.append({"what": "cash flow", "why": cash.get("why")})
 
     # ---- demand -----------------------------------------------------------
     series = _subscription_series(ipo_id)
