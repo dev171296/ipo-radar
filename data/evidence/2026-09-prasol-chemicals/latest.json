@@ -1,6 +1,6 @@
 {
  "ipo_id": "2026-09-prasol-chemicals",
- "built_at": "2026-09-05T11:26:50+00:00",
+ "built_at": "2026-09-06T18:38:39+00:00",
  "name": "Prasol Chemicals Limited",
  "symbol": "PRASOLCHEM",
  "type": "mainboard",
@@ -139,6 +139,41 @@
     "selling_shareholders"
    ],
    "read_at": "2026-09-05T11:11:02+00:00"
+  },
+  "full": {
+   "pages": 590,
+   "url": "https://www.sebi.gov.in/sebi_data/attachdocs/sep-2026/1788411848709.pdf",
+   "chapters": {
+    "capital_structure": [
+     115,
+     191
+    ],
+    "objects": [
+     192,
+     202
+    ],
+    "basis_for_price": [
+     203,
+     301
+    ],
+    "business": [
+     302,
+     365
+    ],
+    "promoters": [
+     366,
+     379
+    ],
+    "financials": [
+     380,
+     470
+    ],
+    "litigation": [
+     471,
+     590
+    ]
+   },
+   "read_at": "2026-09-05T11:16:31+00:00"
   }
  },
  "missing": [
@@ -173,10 +208,6 @@
   {
    "what": "retail attention",
    "why": "not collected yet"
-  },
-  {
-   "what": "full prospectus",
-   "why": "not downloaded yet — will retry next run"
   }
  ],
  "conflicts": []

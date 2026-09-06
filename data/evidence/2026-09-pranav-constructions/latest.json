@@ -1,10 +1,10 @@
 {
  "ipo_id": "2026-09-pranav-constructions",
- "built_at": "2026-09-05T11:26:50+00:00",
+ "built_at": "2026-09-06T18:38:39+00:00",
  "name": "Pranav Constructions Limited",
  "symbol": "PRANAV",
  "type": "mainboard",
- "status": "upcoming",
+ "status": "open",
  "offer": {
   "price_low": {
    "value": 118.0,
@@ -144,7 +144,25 @@
    "confidence": "high"
   }
  },
- "demand": {},
+ "demand": {
+  "subscription_times": {
+   "value": 0.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "note": "as at 2026-09-06T18:38:37+00:00"
+  },
+  "subscription_history": {
+   "value": [
+    {
+     "at": "2026-09-06T18:38:37+00:00",
+     "times": 0.0
+    }
+   ],
+   "source": "nse_calendar",
+   "confidence": "high",
+   "note": "every change we recorded"
+  }
+ },
  "documents": {
   "abridged": {
    "pages": 9,
@@ -192,10 +210,6 @@
   }
  },
  "missing": [
-  {
-   "what": "subscription",
-   "why": "the issue has not opened yet"
-  },
   {
    "what": "grey market premium",
    "why": "no free source built yet"

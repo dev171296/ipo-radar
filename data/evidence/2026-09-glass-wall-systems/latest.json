@@ -1,6 +1,6 @@
 {
  "ipo_id": "2026-09-glass-wall-systems",
- "built_at": "2026-09-05T11:26:50+00:00",
+ "built_at": "2026-09-06T18:38:39+00:00",
  "name": "Glass Wall Systems (India) Limited",
  "symbol": "GLASSWALL",
  "type": "mainboard",
@@ -138,6 +138,37 @@
     "selling_shareholders"
    ],
    "read_at": "2026-09-05T11:08:55+00:00"
+  },
+  "full": {
+   "pages": 571,
+   "url": "https://www.sebi.gov.in/sebi_data/attachdocs/sep-2026/1788414816085.pdf",
+   "chapters": {
+    "capital_structure": [
+     103,
+     125
+    ],
+    "objects": [
+     126,
+     141
+    ],
+    "basis_for_price": [
+     142,
+     219
+    ],
+    "business": [
+     220,
+     324
+    ],
+    "promoters": [
+     325,
+     435
+    ],
+    "litigation": [
+     436,
+     571
+    ]
+   },
+   "read_at": "2026-09-05T11:15:49+00:00"
   }
  },
  "missing": [
@@ -172,10 +203,6 @@
   {
    "what": "retail attention",
    "why": "not collected yet"
-  },
-  {
-   "what": "full prospectus",
-   "why": "not downloaded yet — will retry next run"
   }
  ],
  "conflicts": []
