@@ -67,6 +67,62 @@ def _value(section, name):
 
 # ------------------------------------------------- F — the fundamentals block
 
+def valuation_vs_peers(bundle, flags):
+    """
+    18 points, the heaviest thing in the fundamentals block. Is the price fair?
+
+    Reasoning: everything else in F asks whether this is a good business. This
+    asks what you are being charged for it, and a good business at a silly price
+    is a bad investment. The comparison is the multiple being asked (top of the
+    band ÷ latest earnings per share) against the peer group in the company's own
+    prospectus — its own chosen yardstick, so it cannot complain about the
+    comparison.
+
+    Two honesty adjustments:
+      * A discount scores well, but a discount measured against a yardstick we
+        could not verify (a stated average, or a single peer) is pulled back
+        toward neutral. A confident answer from a weak yardstick is worse than a
+        cautious one.
+      * A very large discount is flagged as well as rewarded. The market may be
+        pricing the peers, not this company, and the peer set is chosen by the
+        seller.
+    """
+    priced = bundle.get("valuation") or {}
+    ratio = _value(priced, "vs_benchmark")
+    if ratio is None:
+        return None, "no usable price comparison in the prospectus"
+
+    fraction = band(ratio, [(0.50, 1.00), (0.75, 0.90), (1.00, 0.75),
+                            (1.25, 0.50), (1.75, 0.30), (2.50, 0.15)], above=0.05)
+
+    verified = _value(priced, "peers_verified") or 0
+    if not verified:
+        # Shrink the answer toward the middle when the yardstick is weak.
+        fraction = 0.5 + (fraction - 0.5) * 0.7
+
+    asked = _value(priced, "pe_at_cap_price")
+    benchmark = _value(priced, "benchmark_pe")
+
+    if ratio < 0.5:
+        flags.append({
+            "flag": "priced far below its stated peer group",
+            "detail": f"{asked}× against {benchmark}× — a "
+                      f"{(1 - ratio) * 100:.0f}% discount",
+            "for_ai": "is the peer set fairly chosen, and are the peers "
+                      "themselves expensive rather than this being cheap?"})
+    elif ratio > 1.5:
+        flags.append({
+            "flag": "priced well above its stated peer group",
+            "detail": f"{asked}× against {benchmark}× — a "
+                      f"{(ratio - 1) * 100:.0f}% premium",
+            "for_ai": "what justifies the premium — growth, margins, scarcity?"})
+
+    note = f"{asked}× earnings vs {benchmark}×"
+    note += (f", from {verified} verified peer(s)" if verified
+             else ", against the document's stated average (unverified)")
+    return fraction, note
+
+
 def growth_quality(bundle, flags):
     """
     14 points. Is the business getting bigger, and did it get bigger honestly?
@@ -297,7 +353,7 @@ def subscription_velocity(bundle, flags):
 # ---------------------------------------------------------------- the blocks
 
 FUNDAMENTALS = [
-    ("valuation_vs_peers", 18, None),      # needs the peer table — not built yet
+    ("valuation_vs_peers", 18, valuation_vs_peers),
     ("growth_quality", 14, growth_quality),
     ("cash_flow_quality", 14, None),       # needs the RHP financial statements
     ("profitability", 12, profitability),

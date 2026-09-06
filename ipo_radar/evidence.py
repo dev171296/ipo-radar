@@ -27,7 +27,7 @@ import json
 import os
 import re
 
-from . import storage
+from . import storage, valuation
 
 EVIDENCE = os.path.join(storage.DATA, "evidence")
 
@@ -168,6 +168,7 @@ def build(ipo_id: str) -> dict:
         "status": record.get("status"),
         "offer": {},
         "financials": {},
+        "valuation": {},
         "derived": {},
         "demand": {},
         "documents": {},
@@ -275,6 +276,45 @@ def build(ipo_id: str) -> dict:
         elif abridged:
             missing.append({"what": name.replace("_pct", "").upper(),
                             "why": "this document does not print it"})
+
+    # ---- what the company is charging, in multiples ----------------------
+    chapter = ((full or {}).get("sections") or {}).get("basis_for_price")
+    if chapter and chapter.get("text"):
+        priced = valuation.analyse(chapter["text"], low, high)
+        page = chapter.get("start_page")
+        eps = priced.get("eps") or {}
+        if eps.get("read"):
+            bundle["valuation"]["eps_basic_latest"] = fact(
+                eps["basic_latest"], "full prospectus", page=page,
+                raw=f"fiscal {eps['latest_fiscal']}",
+                note=f"checked: our rows reproduce the document's own weighted "
+                     f"average of {eps['weighted_average_stated']}")
+            bundle["valuation"]["eps_weighted_average"] = fact(
+                eps.get("weighted_average_stated"), "full prospectus", page=page)
+        if priced.get("vs_benchmark"):
+            bundle["valuation"]["pe_at_cap_price"] = fact(
+                priced["company_pe_at_cap"], "computed", page=page,
+                note="top of the NSE price band divided by the latest basic EPS "
+                     "— the document itself leaves this blank, because the band "
+                     "was not fixed when it was filed")
+            bundle["valuation"]["benchmark_pe"] = fact(
+                priced["benchmark_pe"], "full prospectus", page=page,
+                confidence="high" if priced["peer_pe_verified_count"] else "low",
+                note=priced["benchmark_basis"])
+            bundle["valuation"]["vs_benchmark"] = fact(
+                priced["vs_benchmark"], "computed", page=page,
+                raw=priced["vs_benchmark_plain"])
+            bundle["valuation"]["peers_verified"] = fact(
+                priced["peer_pe_verified_count"], "full prospectus", page=page,
+                note=f"{priced['peer_count']} peer row(s) parsed")
+        for note in priced.get("notes", []):
+            missing.append({"what": "valuation comparison", "why": note})
+        if not priced.get("notes") and not priced.get("vs_benchmark"):
+            missing.append({"what": "valuation comparison",
+                            "why": "the price chapter gave no usable comparison"})
+    elif full:
+        missing.append({"what": "valuation comparison",
+                        "why": "no basis-for-price chapter found in the prospectus"})
 
     # ---- demand -----------------------------------------------------------
     series = _subscription_series(ipo_id)
