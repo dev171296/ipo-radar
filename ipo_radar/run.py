@@ -11,7 +11,7 @@ wrapped, and a failure is recorded as data rather than raised as a crash.
 import sys
 import traceback
 
-from . import abridged, documents, evidence, sections, storage
+from . import abridged, documents, evidence, scoring, sections, storage
 from .collectors import nse, prices, sebi
 from .identity import find_match, make_id, normalise
 
@@ -207,15 +207,28 @@ def build_evidence():
     every number carrying the document and page it came from. This is what the
     scorer and (later) both AI models will read. Nothing else.
     """
-    print("\n[3] Evidence bundles")
+    print("\n[3] Evidence bundles and quant scores")
     built = 0
     for record in storage.all_records():
         try:
             bundle = evidence.build(record["id"])
             evidence.save(bundle)
+            result = scoring.verdict(bundle)
+            scoring.save(result)
             built += 1
             print(f"    {record.get('name')}")
             print(f"      {evidence.summarise(bundle)}")
+            print(f"      SCORE  {scoring.summarise(result)}")
+            for part in result["fundamentals"]["components"]:
+                print(f"        F {part['component']}: {part['points']}/"
+                      f"{part['weight']} — {part['basis']}")
+            for part in result["demand"]["components"]:
+                print(f"        D {part['component']}: {part['points']}/"
+                      f"{part['weight']} — {part['basis']}")
+            for item in result["vetoes"]["triggered"]:
+                print(f"        VETO: {item['veto']}")
+            for item in result["flags"]:
+                print(f"        flag: {item['flag']} — {item['detail']}")
             for gap in bundle["missing"][:3]:
                 print(f"      missing: {gap['what']} — {gap['why']}")
             if len(bundle["missing"]) > 3:
@@ -287,7 +300,7 @@ def main():
     print("\n" + "=" * 66)
     print(f"  {new} new IPOs, {updated} updated")
     print(f"  {docs_done} prospectus documents read")
-    print(f"  {bundles} evidence bundles built")
+    print(f"  {bundles} evidence bundles built and scored")
     print(f"  price ladder: {'ok' if ladder_ok else 'FAILED'}")
     print(f"  tracking {len(storage.all_records())} IPOs in total")
     print("=" * 66)
