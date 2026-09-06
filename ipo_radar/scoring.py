@@ -35,6 +35,7 @@ import os
 import re
 
 from . import storage
+from .collectors.bhavcopy import india_now
 
 SCORES = os.path.join(storage.DATA, "scores")
 
@@ -234,20 +235,36 @@ def subscription_level(bundle, flags):
     26 points, the single heaviest component. How many times over was it bought?
 
     Reasoning: subscription is the one demand signal that is a fact rather than
-    an opinion — real money, committed, reported by the exchange. Under 1× means
-    the issue struggled to fill. The curve flattens above 15× because at that
-    point everyone already knows it is hot and the extra multiples add little.
+    an opinion — real money, committed, reported by the exchange. The curve
+    flattens above 15× because by then everyone knows it is hot and the extra
+    multiples add little.
+
+    **This is only scored once the issue has closed.** Indian IPOs fill from the
+    back: the retail portion largely arrives on the final afternoon, so a day-one
+    reading of 0.4× and a final reading of 0.4× mean completely different things
+    and cannot share a curve. Before the close the figure is still recorded and
+    still shown — it is simply not turned into points, and it is never called
+    under-subscribed. An issue on day one has not failed to fill; it has not
+    been given the chance.
     """
     times = _value(bundle.get("demand") or {}, "subscription_times")
     if times is None:
         return None, "no subscription figure yet"
+
+    close = _value(bundle.get("offer") or {}, "close_date")
+    today = india_now().date().isoformat()
+    if close and today <= close:
+        return None, (f"the issue is still open (closes {close}) and stands at "
+                      f"{times}× — most demand arrives on the last day, so this "
+                      f"is not scored yet")
+
     fraction = band(times, [(1, 0.10), (2, 0.30), (5, 0.50),
                             (15, 0.75), (50, 0.90)], above=1.0)
     if times < 1:
         flags.append({"flag": "under-subscribed",
-                      "detail": f"{times}× — the issue did not fill",
+                      "detail": f"closed at {times}× — the issue did not fill",
                       "for_ai": "this usually overrides a good fundamental story"})
-    return fraction, f"subscribed {times}×"
+    return fraction, f"closed subscribed {times}×"
 
 
 def subscription_velocity(bundle, flags):
@@ -263,6 +280,9 @@ def subscription_velocity(bundle, flags):
     history = _value(bundle.get("demand") or {}, "subscription_history") or []
     if len(history) < 2:
         return None, "need at least two readings to see a rate"
+    if len(history) < 3:
+        return None, (f"only {len(history)} readings so far — too few to call "
+                      f"the pace")
 
     first, last = history[0], history[-1]
     if not last["times"]:
