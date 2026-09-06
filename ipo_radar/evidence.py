@@ -27,7 +27,7 @@ import json
 import os
 import re
 
-from . import cashflow, storage, valuation
+from . import balance, cashflow, storage, valuation
 
 EVIDENCE = os.path.join(storage.DATA, "evidence")
 
@@ -176,14 +176,17 @@ def build(ipo_id: str) -> dict:
         "financials": {},
         "valuation": {},
         "cash": {},
+        "balance_sheet": {},
         "derived": {},
         "demand": {},
         "documents": {},
         "missing": [],
         "conflicts": [],
+        "observations": [],
     }
     missing = bundle["missing"]
     conflicts = bundle["conflicts"]
+    observations = bundle["observations"]
     nse = "nse_calendar"
 
     # ---- the offer itself -------------------------------------------------
@@ -353,10 +356,31 @@ def build(ipo_id: str) -> dict:
                     cash["receivables_share_of_sales_growth"], "computed",
                     note="how much of the extra sales is money not yet collected")
             for note in cash.get("notes", []):
-                bundle["conflicts"].append({"what": "cash flow warning",
-                                            "means": note})
+                observations.append({"from": "cash flow statement", "says": note})
         else:
             missing.append({"what": "cash flow", "why": cash.get("why")})
+
+    # ---- what it owes, and whether it can pay what falls due ------------
+    if full:
+        sheet = balance.analyse((full.get("sections") or {}),
+                                revenue_years=_value(bundle["financials"], "revenue"))
+        if sheet.get("read"):
+            where = f"full prospectus ({sheet['chapter']})"
+            for name, note in (
+                    ("debt_to_equity", "borrowings ÷ what the owners have in it"),
+                    ("current_ratio", "money due in within a year ÷ money due out"),
+                    ("receivable_days", "how long customers take to pay"),
+                    ("total_debt", "borrowings, newest year first"),
+                    ("net_worth", "the owners' stake, newest year first")):
+                if sheet.get(name) is not None:
+                    bundle["balance_sheet"][name] = fact(
+                        sheet[name], where, page=sheet.get("page_hint"),
+                        note=note + (f" — {sheet[name + '_source']}"
+                                     if sheet.get(name + "_source") else ""))
+            for note in sheet.get("notes", []):
+                observations.append({"from": "balance sheet", "says": note})
+        else:
+            missing.append({"what": "balance sheet", "why": sheet.get("why")})
 
     # ---- demand -----------------------------------------------------------
     series = _subscription_series(ipo_id)

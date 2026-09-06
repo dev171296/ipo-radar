@@ -67,6 +67,56 @@ def _value(section, name):
 
 # ------------------------------------------------- F — the fundamentals block
 
+def balance_sheet(bundle, flags):
+    """
+    10 points. Could it survive a bad year?
+
+    Reasoning: two questions, weighted equally. **Debt to equity** — under 0.5
+    the company is funded mainly by its owners; above 2 the lenders are in
+    charge and a slow year becomes a crisis rather than a disappointment.
+    **Current ratio** — below 1.0 it owes more in the next twelve months than it
+    expects to collect, and something has to give.
+
+    Scored over whichever of the two we could read, so a document that prints
+    one and not the other still counts for something.
+    """
+    sheet = bundle.get("balance_sheet") or {}
+    debt = _value(sheet, "debt_to_equity")
+    liquidity = _value(sheet, "current_ratio")
+    if not debt and not liquidity:
+        return None, "no debt or liquidity figure read"
+
+    parts, notes = [], []
+    if debt:
+        latest = debt[0]
+        parts.append(band(latest, [(0.25, 1.0), (0.50, 0.85), (1.00, 0.65),
+                                   (2.00, 0.35)], above=0.10))
+        notes.append(f"debt-to-equity {latest}")
+        if latest > 2:
+            flags.append({"flag": "heavily indebted",
+                          "detail": f"debt is {latest}× the owners' stake",
+                          "for_ai": "what are the repayment terms, and do the "
+                                    "issue proceeds repay any of it?"})
+    if liquidity:
+        latest = liquidity[0]
+        parts.append(band(latest, [(1.00, 0.10), (1.25, 0.40), (1.50, 0.70)],
+                          above=1.0))
+        notes.append(f"current ratio {latest}")
+        if latest < 1:
+            flags.append({
+                "flag": "owes more this year than it expects to collect",
+                "detail": f"current ratio {latest}",
+                "for_ai": "how is the shortfall funded?"})
+
+    days = _value(sheet, "receivable_days")
+    if days and days[0] > 120:
+        flags.append({"flag": "customers are slow to pay",
+                      "detail": f"{days[0]:.0f} days of sales sit uncollected",
+                      "for_ai": "who are the customers, and is any of it disputed?"})
+
+    return sum(parts) / len(parts), "; ".join(notes)
+
+
 def cash_flow_quality(bundle, flags):
     """
     14 points. Did the profit arrive as money?
@@ -310,6 +360,10 @@ def filing_hygiene(bundle, flags):
     """
     10 points. How complete and self-consistent is the paperwork?
 
+    Only a genuine CONTRADICTION between two sources costs points here. A
+    reader's observation ("borrowings changed sharply") is information, not a
+    fault in the paperwork, and is kept separately.
+
     Reasoning: this scores US as much as the company — a missing document is our
     gap, not their failing. But it is honest to show it, because a score built on
     half the paperwork should not look as confident as one built on all of it.
@@ -414,7 +468,7 @@ FUNDAMENTALS = [
     ("cash_flow_quality", 14, cash_flow_quality),
     ("profitability", 12, profitability),
     ("promoter_governance", 12, None),     # needs the promoter chapter read
-    ("balance_sheet", 10, None),           # needs the RHP financial statements
+    ("balance_sheet", 10, balance_sheet),
     ("issue_structure", 10, issue_structure),
     ("filing_hygiene", 10, filing_hygiene),
 ]
