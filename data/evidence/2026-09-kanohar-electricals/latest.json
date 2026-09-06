@@ -1,0 +1,249 @@
+{
+ "ipo_id": "2026-09-kanohar-electricals",
+ "built_at": "2026-09-05T11:26:50+00:00",
+ "name": "Kanohar Electricals Limited",
+ "symbol": "KANOHAR",
+ "type": "mainboard",
+ "status": "upcoming",
+ "offer": {
+  "price_low": {
+   "value": 601.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.601 to Rs.632"
+  },
+  "price_high": {
+   "value": 632.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.601 to Rs.632"
+  },
+  "issue_size_shares": {
+   "value": 16949595.0,
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "issue_size_rs_million": {
+   "value": 10712.14,
+   "source": "computed",
+   "confidence": "high",
+   "note": "shares × top of the price band"
+  },
+  "open_date": {
+   "value": "2026-09-08",
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "close_date": {
+   "value": "2026-09-10",
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "fresh_issue_rs_million": {
+   "value": 3000.0,
+   "source": "abridged prospectus",
+   "confidence": "low",
+   "page": 1,
+   "raw": "fresh issue size of the offer for sale total offer size eligibility and share reservation among qibs, niis and riis fresh issue and offer for sale up to [●] equity shares of face value of ₹ 2 (“equity",
+   "note": "read from a table flattened to text — verify before relying on it"
+  }
+ },
+ "financials": {
+  "revenue": {
+   "value": [
+    6538.39,
+    4506.12,
+    2766.9
+   ],
+   "source": "abridged prospectus",
+   "confidence": "high",
+   "page": 10,
+   "raw": "Revenue from operations (₹ million) 6,538.39 4,506.12 2,766.90"
+  },
+  "ebitda": {
+   "value": [
+    1804.16,
+    933.92,
+    310.72
+   ],
+   "source": "abridged prospectus",
+   "confidence": "high",
+   "page": 10,
+   "raw": "EBITDA(2) (₹ million) 1,804.16 933.92 310.72"
+  },
+  "pat": {
+   "value": [
+    1297.33,
+    651.18,
+    177.55
+   ],
+   "source": "abridged prospectus",
+   "confidence": "high",
+   "page": 10,
+   "raw": "Profit after tax for the year (₹ million) 1,297.33 651.18 177.55"
+  },
+  "roe_pct": {
+   "value": [
+    42.12,
+    30.92,
+    10.49
+   ],
+   "source": "abridged prospectus",
+   "confidence": "high",
+   "page": 11,
+   "raw": "ROE % 42.12 30.92 10.49"
+  },
+  "roce_pct": {
+   "value": [
+    70.13,
+    47.61,
+    16.69
+   ],
+   "source": "abridged prospectus",
+   "confidence": "high",
+   "page": 11,
+   "raw": "ROCE % 70.13 47.61 16.69"
+  }
+ },
+ "derived": {
+  "revenue_cagr_2y_pct": {
+   "value": 53.72,
+   "source": "computed",
+   "confidence": "high",
+   "note": "two years of compounding, newest over oldest"
+  },
+  "revenue_growth_latest_pct": {
+   "value": 45.1,
+   "source": "computed",
+   "confidence": "high"
+  },
+  "pat_cagr_2y_pct": {
+   "value": 170.31,
+   "source": "computed",
+   "confidence": "high"
+  },
+  "pat_margin_pct": {
+   "value": [
+    19.84,
+    14.45,
+    6.42
+   ],
+   "source": "computed",
+   "confidence": "high",
+   "note": "profit as a share of sales, newest first"
+  },
+  "ebitda_margin_pct": {
+   "value": [
+    27.59,
+    20.73,
+    11.23
+   ],
+   "source": "computed",
+   "confidence": "high"
+  },
+  "roe_pct_latest": {
+   "value": 42.12,
+   "source": "abridged prospectus",
+   "confidence": "high",
+   "page": 11
+  },
+  "roe_pct_direction": {
+   "value": "improving",
+   "source": "computed",
+   "confidence": "high"
+  },
+  "roce_pct_latest": {
+   "value": 70.13,
+   "source": "abridged prospectus",
+   "confidence": "high",
+   "page": 11
+  },
+  "roce_pct_direction": {
+   "value": "improving",
+   "source": "computed",
+   "confidence": "high"
+  }
+ },
+ "demand": {},
+ "documents": {
+  "abridged": {
+   "pages": 16,
+   "url": "https://www.sebi.gov.in/sebi_data/commondocs/sep-2026/Kanohar%20Electricals%20Limited%20-%20AP_p.pdf",
+   "fields": [
+    "cin",
+    "financials",
+    "lead_managers",
+    "objects",
+    "offer_details",
+    "price_band",
+    "promoters",
+    "registrar",
+    "reservation",
+    "risk_factors"
+   ],
+   "read_at": "2026-09-05T11:09:21+00:00"
+  },
+  "full": {
+   "pages": 508,
+   "url": "https://www.sebi.gov.in/sebi_data/attachdocs/sep-2026/1788412147324.pdf",
+   "chapters": {
+    "capital_structure": [
+     91,
+     134
+    ],
+    "objects": [
+     135,
+     153
+    ],
+    "basis_for_price": [
+     154,
+     247
+    ],
+    "business": [
+     248,
+     311
+    ],
+    "promoters": [
+     312,
+     413
+    ],
+    "related_party": [
+     414,
+     420
+    ],
+    "litigation": [
+     421,
+     508
+    ]
+   },
+   "read_at": "2026-09-05T11:10:22+00:00"
+  }
+ },
+ "missing": [
+  {
+   "what": "subscription",
+   "why": "the issue has not opened yet"
+  },
+  {
+   "what": "grey market premium",
+   "why": "no free source built yet"
+  },
+  {
+   "what": "anchor investor allotment",
+   "why": "not collected yet"
+  },
+  {
+   "what": "broker conviction",
+   "why": "not collected yet"
+  },
+  {
+   "what": "media coverage",
+   "why": "not collected yet"
+  },
+  {
+   "what": "retail attention",
+   "why": "not collected yet"
+  }
+ ],
+ "conflicts": []
+}

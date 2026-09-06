@@ -1,0 +1,183 @@
+{
+ "ipo_id": "2026-09-prasol-chemicals",
+ "built_at": "2026-09-05T11:26:50+00:00",
+ "name": "Prasol Chemicals Limited",
+ "symbol": "PRASOLCHEM",
+ "type": "mainboard",
+ "status": "upcoming",
+ "offer": {
+  "price_low": {
+   "value": 643.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.643 to Rs.676"
+  },
+  "price_high": {
+   "value": 676.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.643 to Rs.676"
+  },
+  "issue_size_shares": {
+   "value": 7776039.0,
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "issue_size_rs_million": {
+   "value": 5256.6,
+   "source": "computed",
+   "confidence": "high",
+   "note": "shares × top of the price band"
+  },
+  "open_date": {
+   "value": "2026-09-08",
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "close_date": {
+   "value": "2026-09-10",
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "fresh_issue_rs_million": {
+   "value": 800.0,
+   "source": "abridged prospectus",
+   "confidence": "low",
+   "page": 1,
+   "raw": "fresh issue size offer for sale size total offer size eligibility and share reservation fresh issue and offer for sale up to [●] equity shares of face value of ₹ 2 aggregating up to ₹ 800.00 million",
+   "note": "read from a table flattened to text — verify before relying on it"
+  }
+ },
+ "financials": {
+  "revenue": {
+   "value": [
+    12325.93,
+    10124.94,
+    8765.65
+   ],
+   "source": "abridged prospectus",
+   "confidence": "high",
+   "page": 11,
+   "raw": "Revenue from Operations 12,325.93 10,124.94 8,765.65"
+  },
+  "ebitda": {
+   "value": [
+    1393.2,
+    877.66,
+    605.28
+   ],
+   "source": "abridged prospectus",
+   "confidence": "high",
+   "page": 11,
+   "raw": "EBITDA(2) 1,393.20 877.66 605.28"
+  },
+  "pat": {
+   "value": [
+    831.24,
+    435.69,
+    181.31
+   ],
+   "source": "abridged prospectus",
+   "confidence": "high",
+   "page": 11,
+   "raw": "Profit for the year 831.24 435.69 181.31"
+  }
+ },
+ "derived": {
+  "revenue_cagr_2y_pct": {
+   "value": 18.58,
+   "source": "computed",
+   "confidence": "high",
+   "note": "two years of compounding, newest over oldest"
+  },
+  "revenue_growth_latest_pct": {
+   "value": 21.74,
+   "source": "computed",
+   "confidence": "high"
+  },
+  "pat_cagr_2y_pct": {
+   "value": 114.12,
+   "source": "computed",
+   "confidence": "high"
+  },
+  "pat_margin_pct": {
+   "value": [
+    6.74,
+    4.3,
+    2.07
+   ],
+   "source": "computed",
+   "confidence": "high",
+   "note": "profit as a share of sales, newest first"
+  },
+  "ebitda_margin_pct": {
+   "value": [
+    11.3,
+    8.67,
+    6.91
+   ],
+   "source": "computed",
+   "confidence": "high"
+  }
+ },
+ "demand": {},
+ "documents": {
+  "abridged": {
+   "pages": 16,
+   "url": "https://www.sebi.gov.in/sebi_data/commondocs/sep-2026/Prasol%20Chemicals%20Limited%20-%20AP_p.pdf",
+   "fields": [
+    "cin",
+    "financials",
+    "lead_managers",
+    "objects",
+    "offer_details",
+    "price_band",
+    "promoters",
+    "registrar",
+    "reservation",
+    "risk_factors",
+    "selling_shareholders"
+   ],
+   "read_at": "2026-09-05T11:11:02+00:00"
+  }
+ },
+ "missing": [
+  {
+   "what": "ROE",
+   "why": "this document does not print it"
+  },
+  {
+   "what": "ROCE",
+   "why": "this document does not print it"
+  },
+  {
+   "what": "subscription",
+   "why": "the issue has not opened yet"
+  },
+  {
+   "what": "grey market premium",
+   "why": "no free source built yet"
+  },
+  {
+   "what": "anchor investor allotment",
+   "why": "not collected yet"
+  },
+  {
+   "what": "broker conviction",
+   "why": "not collected yet"
+  },
+  {
+   "what": "media coverage",
+   "why": "not collected yet"
+  },
+  {
+   "what": "retail attention",
+   "why": "not collected yet"
+  },
+  {
+   "what": "full prospectus",
+   "why": "not downloaded yet — will retry next run"
+  }
+ ],
+ "conflicts": []
+}

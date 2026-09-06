@@ -1,0 +1,81 @@
+{
+ "ipo_id": "2026-09-qualiance-international",
+ "built_at": "2026-09-05T11:26:50+00:00",
+ "name": "Qualiance International Limited",
+ "symbol": "QUALIANCE",
+ "type": "sme",
+ "status": "open",
+ "offer": {
+  "open_date": {
+   "value": "2026-09-04",
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "close_date": {
+   "value": "2026-09-08",
+   "source": "nse_calendar",
+   "confidence": "high"
+  }
+ },
+ "financials": {},
+ "derived": {},
+ "demand": {
+  "subscription_times": {
+   "value": 12.51,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "note": "as at 2026-09-04T19:05:40+00:00"
+  },
+  "subscription_history": {
+   "value": [
+    {
+     "at": "2026-09-04T19:05:40+00:00",
+     "times": 12.51
+    }
+   ],
+   "source": "nse_calendar",
+   "confidence": "high",
+   "note": "every change we recorded"
+  }
+ },
+ "documents": {},
+ "missing": [
+  {
+   "what": "price band",
+   "why": "NSE gave no readable band"
+  },
+  {
+   "what": "issue size",
+   "why": "NSE did not report it"
+  },
+  {
+   "what": "three-year financials",
+   "why": "no abridged prospectus on file yet"
+  },
+  {
+   "what": "grey market premium",
+   "why": "no free source built yet"
+  },
+  {
+   "what": "anchor investor allotment",
+   "why": "not collected yet"
+  },
+  {
+   "what": "broker conviction",
+   "why": "not collected yet"
+  },
+  {
+   "what": "media coverage",
+   "why": "not collected yet"
+  },
+  {
+   "what": "retail attention",
+   "why": "not collected yet"
+  },
+  {
+   "what": "full prospectus",
+   "why": "not downloaded yet — will retry next run"
+  }
+ ],
+ "conflicts": []
+}

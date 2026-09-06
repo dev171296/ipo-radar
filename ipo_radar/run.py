@@ -11,7 +11,7 @@ wrapped, and a failure is recorded as data rather than raised as a crash.
 import sys
 import traceback
 
-from . import abridged, documents, sections, storage
+from . import abridged, documents, evidence, sections, storage
 from .collectors import nse, prices, sebi
 from .identity import find_match, make_id, normalise
 
@@ -201,6 +201,31 @@ def collect_prospectuses():
     return done
 
 
+def build_evidence():
+    """
+    Assemble one evidence bundle per IPO — everything we know, in one file,
+    every number carrying the document and page it came from. This is what the
+    scorer and (later) both AI models will read. Nothing else.
+    """
+    print("\n[3] Evidence bundles")
+    built = 0
+    for record in storage.all_records():
+        try:
+            bundle = evidence.build(record["id"])
+            evidence.save(bundle)
+            built += 1
+            print(f"    {record.get('name')}")
+            print(f"      {evidence.summarise(bundle)}")
+            for gap in bundle["missing"][:3]:
+                print(f"      missing: {gap['what']} — {gap['why']}")
+            if len(bundle["missing"]) > 3:
+                print(f"      ...and {len(bundle['missing']) - 3} more gap(s)")
+        except Exception as exc:
+            print(f"    {record.get('name')}: could not build — "
+                  f"{type(exc).__name__} {str(exc)[:90]}")
+    return built
+
+
 def check_price_ladder():
     """
     Exercise the fallback ladder on a known stock.
@@ -208,7 +233,7 @@ def check_price_ladder():
     We have no listed IPOs to track yet, so this is a live self-test: it proves
     the ladder still works today and tells us which rung answered.
     """
-    print("\n[3] Price ladder self-test (Reliance)")
+    print("\n[4] Price ladder self-test (Reliance)")
     from .collectors import bhavcopy
     print(f"    India time now: {bhavcopy.india_now():%Y-%m-%d %H:%M} IST")
     print(f"    today's file expected yet? "
@@ -251,11 +276,18 @@ def main():
         traceback.print_exc()
         docs_done = 0
 
+    try:
+        bundles = build_evidence()
+    except Exception:
+        traceback.print_exc()
+        bundles = 0
+
     ladder_ok = check_price_ladder()
 
     print("\n" + "=" * 66)
     print(f"  {new} new IPOs, {updated} updated")
     print(f"  {docs_done} prospectus documents read")
+    print(f"  {bundles} evidence bundles built")
     print(f"  price ladder: {'ok' if ladder_ok else 'FAILED'}")
     print(f"  tracking {len(storage.all_records())} IPOs in total")
     print("=" * 66)

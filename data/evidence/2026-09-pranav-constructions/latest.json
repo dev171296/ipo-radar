@@ -1,0 +1,228 @@
+{
+ "ipo_id": "2026-09-pranav-constructions",
+ "built_at": "2026-09-05T11:26:50+00:00",
+ "name": "Pranav Constructions Limited",
+ "symbol": "PRANAV",
+ "type": "mainboard",
+ "status": "upcoming",
+ "offer": {
+  "price_low": {
+   "value": 118.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.118 to Rs.124"
+  },
+  "price_high": {
+   "value": 124.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.118 to Rs.124"
+  },
+  "issue_size_shares": {
+   "value": 22463137.0,
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "issue_size_rs_million": {
+   "value": 2785.43,
+   "source": "computed",
+   "confidence": "high",
+   "note": "shares × top of the price band"
+  },
+  "open_date": {
+   "value": "2026-09-07",
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "close_date": {
+   "value": "2026-09-09",
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "fresh_issue_rs_million": {
+   "value": 3156.0,
+   "source": "abridged prospectus",
+   "confidence": "contradicted",
+   "page": 1,
+   "raw": "fresh issue size offer for sale size total offer size eligibility and share reservation among qibs, nibs and ribs fresh issue and offer for sale up to [●] equity shares of face value of ₹10 each aggre",
+   "note": "read from a table flattened to text — verify before relying on it"
+  }
+ },
+ "financials": {
+  "revenue": {
+   "value": [
+    7615.96,
+    6362.72,
+    4474.83
+   ],
+   "source": "abridged prospectus",
+   "confidence": "high",
+   "page": 5,
+   "raw": "Revenue from operations 7,615.96 6,362.72 4,474.83"
+  },
+  "pat": {
+   "value": [
+    713.24,
+    622.54,
+    396.17
+   ],
+   "source": "abridged prospectus",
+   "confidence": "high",
+   "page": 5,
+   "raw": "Profit after tax for the year 713.24 622.54 396.17"
+  },
+  "roe_pct": {
+   "value": [
+    33.78,
+    47.17,
+    64.93
+   ],
+   "source": "abridged prospectus",
+   "confidence": "high",
+   "page": 6,
+   "raw": "ROE(10) % 33.78 47.17 64.93"
+  },
+  "roce_pct": {
+   "value": [
+    24.34,
+    24.83,
+    28.62
+   ],
+   "source": "abridged prospectus",
+   "confidence": "high",
+   "page": 6,
+   "raw": "ROCE(11) % 24.34 24.83 28.62"
+  }
+ },
+ "derived": {
+  "revenue_cagr_2y_pct": {
+   "value": 30.46,
+   "source": "computed",
+   "confidence": "high",
+   "note": "two years of compounding, newest over oldest"
+  },
+  "revenue_growth_latest_pct": {
+   "value": 19.7,
+   "source": "computed",
+   "confidence": "high"
+  },
+  "pat_cagr_2y_pct": {
+   "value": 34.18,
+   "source": "computed",
+   "confidence": "high"
+  },
+  "pat_margin_pct": {
+   "value": [
+    9.37,
+    9.78,
+    8.85
+   ],
+   "source": "computed",
+   "confidence": "high",
+   "note": "profit as a share of sales, newest first"
+  },
+  "roe_pct_latest": {
+   "value": 33.78,
+   "source": "abridged prospectus",
+   "confidence": "high",
+   "page": 6
+  },
+  "roe_pct_direction": {
+   "value": "declining",
+   "source": "computed",
+   "confidence": "high"
+  },
+  "roce_pct_latest": {
+   "value": 24.34,
+   "source": "abridged prospectus",
+   "confidence": "high",
+   "page": 6
+  },
+  "roce_pct_direction": {
+   "value": "declining",
+   "source": "computed",
+   "confidence": "high"
+  }
+ },
+ "demand": {},
+ "documents": {
+  "abridged": {
+   "pages": 9,
+   "url": "https://www.sebi.gov.in/sebi_data/commondocs/sep-2026/PRANAV%20CONSTRUCTIONS%20LIMITED%20-%20AP_p.pdf",
+   "fields": [
+    "cin",
+    "financials",
+    "lead_managers",
+    "objects",
+    "offer_details",
+    "price_band",
+    "promoters",
+    "registrar",
+    "reservation",
+    "risk_factors"
+   ],
+   "read_at": "2026-09-05T11:10:26+00:00"
+  },
+  "full": {
+   "pages": 479,
+   "url": "https://www.sebi.gov.in/sebi_data/attachdocs/sep-2026/1788254751266.pdf",
+   "chapters": {
+    "capital_structure": [
+     80,
+     97
+    ],
+    "objects": [
+     98,
+     127
+    ],
+    "basis_for_price": [
+     128,
+     205
+    ],
+    "business": [
+     206,
+     390
+    ],
+    "litigation": [
+     391,
+     479
+    ]
+   },
+   "read_at": "2026-09-05T11:10:58+00:00"
+  }
+ },
+ "missing": [
+  {
+   "what": "subscription",
+   "why": "the issue has not opened yet"
+  },
+  {
+   "what": "grey market premium",
+   "why": "no free source built yet"
+  },
+  {
+   "what": "anchor investor allotment",
+   "why": "not collected yet"
+  },
+  {
+   "what": "broker conviction",
+   "why": "not collected yet"
+  },
+  {
+   "what": "media coverage",
+   "why": "not collected yet"
+  },
+  {
+   "what": "retail attention",
+   "why": "not collected yet"
+  }
+ ],
+ "conflicts": [
+  {
+   "what": "fresh issue is larger than the whole offer",
+   "fresh_issue_rs_million": 3156.0,
+   "issue_size_rs_million": 2785.43,
+   "means": "NSE's share count and the prospectus table do not agree; treat the offer split as unknown until checked by hand"
+  }
+ ]
+}
