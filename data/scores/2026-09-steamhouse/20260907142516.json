@@ -1,0 +1,131 @@
+{
+ "ipo_id": "2026-09-steamhouse",
+ "name": "Steamhouse India Limited",
+ "scored_at": "2026-09-07T14:25:16+00:00",
+ "built_from_bundle": "2026-09-07T14:25:16+00:00",
+ "fundamentals": {
+  "score": 81.8,
+  "withheld": null,
+  "points_earned": 47.45,
+  "points_assessed": 58,
+  "coverage_pct": 58,
+  "components": [
+   {
+    "component": "growth_quality",
+    "weight": 14,
+    "points": 11.2,
+    "basis": "revenue CAGR 29.8% a year"
+   },
+   {
+    "component": "cash_flow_quality",
+    "weight": 14,
+    "points": 14.0,
+    "basis": "cash conversion 1.20× of EBITDA"
+   },
+   {
+    "component": "balance_sheet",
+    "weight": 10,
+    "points": 2.25,
+    "basis": "debt-to-equity 1.57; current ratio 0.36"
+   },
+   {
+    "component": "issue_structure",
+    "weight": 10,
+    "points": 10.0,
+    "basis": "81% of the issue is fresh money to the company"
+   },
+   {
+    "component": "filing_hygiene",
+    "weight": 10,
+    "points": 10.0,
+    "basis": "summary form read; 661-page prospectus read; all key fields found; no contradictions"
+   }
+  ],
+  "not_assessed": [
+   {
+    "component": "valuation_vs_peers",
+    "weight": 18,
+    "why": "no usable price comparison in the prospectus"
+   },
+   {
+    "component": "profitability",
+    "weight": 12,
+    "why": "no profit and revenue pair on file"
+   },
+   {
+    "component": "promoter_governance",
+    "weight": 12,
+    "why": "not built yet"
+   }
+  ]
+ },
+ "demand": {
+  "score": null,
+  "withheld": null,
+  "points_earned": 0.0,
+  "points_assessed": 0,
+  "coverage_pct": 0,
+  "components": [],
+  "not_assessed": [
+   {
+    "component": "subscription_level",
+    "weight": 26,
+    "why": "no subscription figure yet"
+   },
+   {
+    "component": "subscription_velocity",
+    "weight": 14,
+    "why": "need at least two readings to see a rate"
+   },
+   {
+    "component": "gmp_level",
+    "weight": 12,
+    "why": "not built yet"
+   },
+   {
+    "component": "gmp_trend",
+    "weight": 10,
+    "why": "not built yet"
+   },
+   {
+    "component": "anchor_quality",
+    "weight": 12,
+    "why": "not built yet"
+   },
+   {
+    "component": "broker_conviction",
+    "weight": 10,
+    "why": "not built yet"
+   },
+   {
+    "component": "media_coverage",
+    "weight": 8,
+    "why": "not built yet"
+   },
+   {
+    "component": "retail_attention",
+    "weight": 8,
+    "why": "not built yet"
+   }
+  ]
+ },
+ "flags": [
+  {
+   "flag": "owes more this year than it expects to collect",
+   "detail": "current ratio 0.36",
+   "for_ai": "how is the shortfall funded?"
+  }
+ ],
+ "vetoes": {
+  "triggered": [],
+  "not_tested": [
+   "three years of profit not on file",
+   "qualified or adverse audit opinion — needs the prospectus chapters read",
+   "SEBI or criminal proceedings against the promoters — needs the prospectus chapters read",
+   "more than half of revenue from one related party — needs the prospectus chapters read"
+  ]
+ },
+ "listing_score_quant_only": null,
+ "longterm_score_quant_only": 81.8,
+ "status": "quant only — the AI block has not been built, so these are not final verdicts"
+}

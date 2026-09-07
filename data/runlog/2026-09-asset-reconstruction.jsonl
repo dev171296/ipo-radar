@@ -1,0 +1,3 @@
+{"at": "2026-09-07T14:22:42+00:00", "event": "discovered", "ok": true, "detail": "Asset Reconstruction Company (India) Limited", "source": "nse"}
+{"at": "2026-09-07T14:22:50+00:00", "event": "abridged_read", "ok": true, "detail": "11 pages, 10 parts", "source": "sebi"}
+{"at": "2026-09-07T14:23:26+00:00", "event": "full_read", "ok": true, "detail": "573 pages, 7 parts", "source": "sebi"}

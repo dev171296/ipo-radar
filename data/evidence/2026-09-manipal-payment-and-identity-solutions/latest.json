@@ -1,0 +1,275 @@
+{
+ "ipo_id": "2026-09-manipal-payment-and-identity-solutions",
+ "built_at": "2026-09-07T14:25:14+00:00",
+ "name": "Manipal Payment and Identity Solutions Limited",
+ "symbol": "MPIMANIPAL",
+ "type": "mainboard",
+ "status": "upcoming",
+ "offer": {
+  "price_low": {
+   "value": 322.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.322 to Rs.339"
+  },
+  "price_high": {
+   "value": 339.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.322 to Rs.339"
+  },
+  "issue_size_shares": {
+   "value": 24244673.0,
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "issue_size_rs_million": {
+   "value": 8218.94,
+   "source": "computed",
+   "confidence": "high",
+   "note": "shares × top of the price band"
+  },
+  "open_date": {
+   "value": "2026-09-09",
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "close_date": {
+   "value": "2026-09-11",
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "fresh_issue_rs_million": {
+   "value": 3200.0,
+   "source": "abridged prospectus",
+   "confidence": "low",
+   "page": 1,
+   "raw": "fresh issue size offer for sale size total offer size eligibility and reservations fresh issue and offer for sale up to [●] equity shares of face value of ₹ 2 each aggregating up to ₹ 3,200.00 million",
+   "note": "read from a table flattened to text — verify before relying on it"
+  }
+ },
+ "financials": {},
+ "valuation": {
+  "eps_basic_latest": {
+   "value": 11.53,
+   "source": "full prospectus",
+   "confidence": "high",
+   "page": 137,
+   "raw": "fiscal 2026",
+   "note": "checked: our rows reproduce the document's own weighted average of 12.32"
+  },
+  "eps_weighted_average": {
+   "value": 12.32,
+   "source": "full prospectus",
+   "confidence": "high",
+   "page": 137
+  },
+  "pe_at_cap_price": {
+   "value": 29.4,
+   "source": "computed",
+   "confidence": "high",
+   "page": 137,
+   "note": "top of the NSE price band divided by the latest basic EPS — the document itself leaves this blank, because the band was not fixed when it was filed"
+  },
+  "benchmark_pe": {
+   "value": 24.97,
+   "source": "full prospectus",
+   "confidence": "low",
+   "page": 137,
+   "note": "the average stated in the document"
+  },
+  "vs_benchmark": {
+   "value": 1.177,
+   "source": "computed",
+   "confidence": "high",
+   "page": 137,
+   "raw": "asking 29.4× earnings against 24.97× (the average stated in the document) — a 18% premium"
+  },
+  "peers_verified": {
+   "value": 0,
+   "source": "full prospectus",
+   "confidence": "high",
+   "page": 137,
+   "note": "0 peer row(s) parsed"
+  }
+ },
+ "cash": {
+  "operating_cash_flow": {
+   "value": [
+    2076.68,
+    2843.8,
+    3085.67
+   ],
+   "source": "full prospectus (promoters chapter)",
+   "confidence": "high",
+   "page": 343,
+   "raw": "Net cash flow (used in) / generated from operating activities (A) 2,076.68 2,843.80 3,085.67",
+   "note": "newest year first"
+  },
+  "free_cash_flow": {
+   "value": [
+    2142.07,
+    2899.26,
+    3108.94
+   ],
+   "source": "computed",
+   "confidence": "high",
+   "note": "operating cash flow after paying for equipment"
+  },
+  "negative_in_all_years": {
+   "value": false,
+   "source": "computed",
+   "confidence": "high"
+  },
+  "negative_in_latest_year": {
+   "value": false,
+   "source": "computed",
+   "confidence": "high"
+  }
+ },
+ "balance_sheet": {
+  "debt_to_equity": {
+   "value": [
+    0.0,
+    0.76,
+    1.11
+   ],
+   "source": "full prospectus (promoters)",
+   "confidence": "high",
+   "page": 343,
+   "note": "borrowings ÷ what the owners have in it — printed in the document"
+  },
+  "current_ratio": {
+   "value": [
+    2.9,
+    1.66,
+    4.76
+   ],
+   "source": "full prospectus (promoters)",
+   "confidence": "high",
+   "page": 343,
+   "note": "money due in within a year ÷ money due out — printed in the document"
+  },
+  "total_debt": {
+   "value": [
+    4.16,
+    1.57,
+    3.23
+   ],
+   "source": "full prospectus (promoters)",
+   "confidence": "high",
+   "page": 343,
+   "note": "borrowings, newest year first"
+  },
+  "net_worth": {
+   "value": [
+    7919.0,
+    3042.47,
+    896.12
+   ],
+   "source": "full prospectus (promoters)",
+   "confidence": "high",
+   "page": 343,
+   "note": "the owners' stake, newest year first"
+  }
+ },
+ "derived": {},
+ "demand": {},
+ "documents": {
+  "abridged": {
+   "pages": 12,
+   "url": "https://www.sebi.gov.in/sebi_data/commondocs/sep-2026/Manipal%20Payment%20&%20Identity%20Solutions%20Limited%20-%20AP_p.pdf",
+   "fields": [
+    "cin",
+    "financials",
+    "lead_managers",
+    "objects",
+    "offer_details",
+    "price_band",
+    "promoters",
+    "registrar",
+    "risk_factors"
+   ],
+   "read_at": "2026-09-07T14:23:30+00:00"
+  },
+  "full": {
+   "pages": 555,
+   "url": "https://www.sebi.gov.in/sebi_data/attachdocs/sep-2026/1788501782616.pdf",
+   "chapters": {
+    "capital_structure": [
+     93,
+     120
+    ],
+    "objects": [
+     121,
+     136
+    ],
+    "basis_for_price": [
+     137,
+     264
+    ],
+    "business": [
+     265,
+     342
+    ],
+    "promoters": [
+     343,
+     457
+    ],
+    "related_party": [
+     458,
+     464
+    ],
+    "litigation": [
+     465,
+     555
+    ]
+   },
+   "read_at": "2026-09-07T14:24:12+00:00"
+  }
+ },
+ "missing": [
+  {
+   "what": "three-year financials",
+   "why": "abridged prospectus read, but no three-figure rows matched"
+  },
+  {
+   "what": "ROE",
+   "why": "this document does not print it"
+  },
+  {
+   "what": "ROCE",
+   "why": "this document does not print it"
+  },
+  {
+   "what": "valuation comparison",
+   "why": "the highest and lowest industry P/E are the same figure — the company compares itself to a single peer, so this is one opinion, not a market"
+  },
+  {
+   "what": "subscription",
+   "why": "the issue has not opened yet"
+  },
+  {
+   "what": "grey market premium",
+   "why": "no free source built yet"
+  },
+  {
+   "what": "anchor investor allotment",
+   "why": "not collected yet"
+  },
+  {
+   "what": "broker conviction",
+   "why": "not collected yet"
+  },
+  {
+   "what": "media coverage",
+   "why": "not collected yet"
+  },
+  {
+   "what": "retail attention",
+   "why": "not collected yet"
+  }
+ ],
+ "conflicts": [],
+ "observations": []
+}

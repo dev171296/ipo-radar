@@ -1,0 +1,289 @@
+{
+ "ipo_id": "2026-09-steamhouse",
+ "built_at": "2026-09-07T14:25:16+00:00",
+ "name": "Steamhouse India Limited",
+ "symbol": "STEAMHOUSE",
+ "type": "mainboard",
+ "status": "upcoming",
+ "offer": {
+  "price_low": {
+   "value": 77.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.77 to Rs.81"
+  },
+  "price_high": {
+   "value": 81.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.77 to Rs.81"
+  },
+  "issue_size_shares": {
+   "value": 53766232.0,
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "issue_size_rs_million": {
+   "value": 4355.06,
+   "source": "computed",
+   "confidence": "high",
+   "note": "shares × top of the price band"
+  },
+  "open_date": {
+   "value": "2026-09-09",
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "close_date": {
+   "value": "2026-09-11",
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "fresh_issue_rs_million": {
+   "value": 3530.0,
+   "source": "abridged prospectus",
+   "confidence": "low",
+   "page": 1,
+   "raw": "fresh issue size** offer for sale size total offer size eligibility and share reservation among qibs, nibs & ribs fresh issue and offer for sale up to [●] equity shares of face value ₹2 each aggregati",
+   "note": "read from a table flattened to text — verify before relying on it"
+  }
+ },
+ "financials": {
+  "revenue": {
+   "value": [
+    4915.11,
+    3951.06,
+    2917.1
+   ],
+   "source": "abridged prospectus",
+   "confidence": "high",
+   "page": 9,
+   "raw": "Revenue from operations 4,915.11 3,951.06 2,917.10"
+  },
+  "ebitda": {
+   "value": [
+    834.89,
+    693.16,
+    684.06
+   ],
+   "source": "abridged prospectus",
+   "confidence": "high",
+   "page": 10,
+   "raw": "EBITDA (₹ millions) 834.89 693.16 684.06"
+  }
+ },
+ "valuation": {},
+ "cash": {
+  "operating_cash_flow": {
+   "value": [
+    1004.61,
+    1070.98,
+    210.16
+   ],
+   "source": "full prospectus (financials chapter)",
+   "confidence": "high",
+   "page": 399,
+   "raw": "Net cash flows generated from operating activities 1,004.61 1,070.98 210.16",
+   "note": "newest year first"
+  },
+  "conversion_vs_ebitda": {
+   "value": 1.203,
+   "source": "computed",
+   "confidence": "high",
+   "note": "1.0 means the reported profit arrived as cash"
+  },
+  "negative_in_all_years": {
+   "value": false,
+   "source": "computed",
+   "confidence": "high"
+  },
+  "negative_in_latest_year": {
+   "value": false,
+   "source": "computed",
+   "confidence": "high"
+  }
+ },
+ "balance_sheet": {
+  "debt_to_equity": {
+   "value": [
+    1.57,
+    1.63,
+    1.77
+   ],
+   "source": "full prospectus (financials)",
+   "confidence": "high",
+   "page": 399,
+   "note": "borrowings ÷ what the owners have in it — printed in the document"
+  },
+  "current_ratio": {
+   "value": [
+    0.36,
+    0.46,
+    0.67
+   ],
+   "source": "full prospectus (financials)",
+   "confidence": "high",
+   "page": 399,
+   "note": "money due in within a year ÷ money due out — computed from current assets ÷ liabilities"
+  },
+  "receivable_days": {
+   "value": [
+    29.2,
+    27.9,
+    28.8
+   ],
+   "source": "full prospectus (financials)",
+   "confidence": "high",
+   "page": 399,
+   "note": "how long customers take to pay"
+  },
+  "total_debt": {
+   "value": [
+    3353.27,
+    2714.9,
+    2298.09
+   ],
+   "source": "full prospectus (financials)",
+   "confidence": "high",
+   "page": 399,
+   "note": "borrowings, newest year first"
+  },
+  "net_worth": {
+   "value": [
+    1727.69,
+    1324.45,
+    1035.45
+   ],
+   "source": "full prospectus (financials)",
+   "confidence": "high",
+   "page": 399,
+   "note": "the owners' stake, newest year first"
+  }
+ },
+ "derived": {
+  "revenue_cagr_2y_pct": {
+   "value": 29.8,
+   "source": "computed",
+   "confidence": "high",
+   "note": "two years of compounding, newest over oldest"
+  },
+  "revenue_growth_latest_pct": {
+   "value": 24.4,
+   "source": "computed",
+   "confidence": "high"
+  },
+  "ebitda_margin_pct": {
+   "value": [
+    16.99,
+    17.54,
+    23.45
+   ],
+   "source": "computed",
+   "confidence": "high"
+  }
+ },
+ "demand": {},
+ "documents": {
+  "abridged": {
+   "pages": 15,
+   "url": "https://www.sebi.gov.in/sebi_data/commondocs/sep-2026/Steamhouse%20India%20Limited%20-%20AP_p.pdf",
+   "fields": [
+    "cin",
+    "financials",
+    "lead_managers",
+    "objects",
+    "offer_details",
+    "price_band",
+    "promoters",
+    "registrar",
+    "reservation",
+    "risk_factors"
+   ],
+   "read_at": "2026-09-07T14:24:16+00:00"
+  },
+  "full": {
+   "pages": 661,
+   "url": "https://www.sebi.gov.in/sebi_data/attachdocs/sep-2026/1788494159227.pdf",
+   "chapters": {
+    "basis_for_price": [
+     4,
+     104
+    ],
+    "capital_structure": [
+     105,
+     130
+    ],
+    "objects": [
+     131,
+     308
+    ],
+    "business": [
+     309,
+     390
+    ],
+    "promoters": [
+     391,
+     398
+    ],
+    "financials": [
+     399,
+     555
+    ],
+    "related_party": [
+     556,
+     560
+    ],
+    "litigation": [
+     561,
+     661
+    ]
+   },
+   "read_at": "2026-09-07T14:25:12+00:00"
+  }
+ },
+ "missing": [
+  {
+   "what": "ROE",
+   "why": "this document does not print it"
+  },
+  {
+   "what": "ROCE",
+   "why": "this document does not print it"
+  },
+  {
+   "what": "valuation comparison",
+   "why": "no earnings-per-share rows found"
+  },
+  {
+   "what": "subscription",
+   "why": "the issue has not opened yet"
+  },
+  {
+   "what": "grey market premium",
+   "why": "no free source built yet"
+  },
+  {
+   "what": "anchor investor allotment",
+   "why": "not collected yet"
+  },
+  {
+   "what": "broker conviction",
+   "why": "not collected yet"
+  },
+  {
+   "what": "media coverage",
+   "why": "not collected yet"
+  },
+  {
+   "what": "retail attention",
+   "why": "not collected yet"
+  }
+ ],
+ "conflicts": [],
+ "observations": [
+  {
+   "from": "balance sheet",
+   "says": "our own sum gives a debt-to-equity of 1.941 where the document prints 1.57 — using the document's figure"
+  }
+ ]
+}

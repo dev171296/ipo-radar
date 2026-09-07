@@ -1,0 +1,269 @@
+{
+ "ipo_id": "2026-09-asset-reconstruction",
+ "built_at": "2026-09-07T14:25:13+00:00",
+ "name": "Asset Reconstruction Company (India) Limited",
+ "symbol": "ARCIL",
+ "type": "mainboard",
+ "status": "upcoming",
+ "offer": {
+  "price_low": {
+   "value": 132.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.132 to Rs.139"
+  },
+  "price_high": {
+   "value": 139.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.132 to Rs.139"
+  },
+  "issue_size_shares": {
+   "value": 52731946.0,
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "issue_size_rs_million": {
+   "value": 7329.74,
+   "source": "computed",
+   "confidence": "high",
+   "note": "shares × top of the price band"
+  },
+  "open_date": {
+   "value": "2026-09-09",
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "close_date": {
+   "value": "2026-09-11",
+   "source": "nse_calendar",
+   "confidence": "high"
+  }
+ },
+ "financials": {
+  "ebitda": {
+   "value": [
+    5037.8,
+    4660.72,
+    4436.18
+   ],
+   "source": "abridged prospectus",
+   "confidence": "high",
+   "page": 7,
+   "raw": "EBITDA(7) 5,037.80 4,660.72 4,436.18"
+  },
+  "pat": {
+   "value": [
+    3516.88,
+    3295.08,
+    3304.63
+   ],
+   "source": "abridged prospectus",
+   "confidence": "high",
+   "page": 8,
+   "raw": "Profit After Tax Attributable to our Company ₹ Mn 3,516.88 3,295.08 3,304.63"
+  }
+ },
+ "valuation": {
+  "eps_basic_latest": {
+   "value": 10.82,
+   "source": "full prospectus",
+   "confidence": "high",
+   "page": 109,
+   "raw": "fiscal 2026",
+   "note": "checked: our rows reproduce the document's own weighted average of 10.49"
+  },
+  "eps_weighted_average": {
+   "value": 10.49,
+   "source": "full prospectus",
+   "confidence": "high",
+   "page": 109
+  }
+ },
+ "cash": {
+  "operating_cash_flow": {
+   "value": [
+    1535.76,
+    3201.99,
+    2034.82
+   ],
+   "source": "full prospectus (promoters chapter)",
+   "confidence": "high",
+   "page": 242,
+   "raw": "NET CASH GENERATED FROM OPERATING ACTIVITIES (A) 1,535.76 3,201.99 2,034.82",
+   "note": "newest year first"
+  },
+  "conversion_vs_ebitda": {
+   "value": 0.305,
+   "source": "computed",
+   "confidence": "high",
+   "note": "1.0 means the reported profit arrived as cash"
+  },
+  "conversion_vs_pat": {
+   "value": 0.437,
+   "source": "computed",
+   "confidence": "high",
+   "note": "1.0 means the reported profit arrived as cash"
+  },
+  "negative_in_all_years": {
+   "value": false,
+   "source": "computed",
+   "confidence": "high"
+  },
+  "negative_in_latest_year": {
+   "value": false,
+   "source": "computed",
+   "confidence": "high"
+  }
+ },
+ "balance_sheet": {
+  "debt_to_equity": {
+   "value": [
+    0.39,
+    0.11,
+    0.06
+   ],
+   "source": "full prospectus (promoters)",
+   "confidence": "high",
+   "page": 242,
+   "note": "borrowings ÷ what the owners have in it — printed in the document"
+  },
+  "total_debt": {
+   "value": [
+    16826.12,
+    4119.11,
+    1318.94
+   ],
+   "source": "full prospectus (promoters)",
+   "confidence": "high",
+   "page": 242,
+   "note": "borrowings, newest year first"
+  },
+  "net_worth": {
+   "value": [
+    30793.93,
+    27677.98,
+    24625.11
+   ],
+   "source": "full prospectus (promoters)",
+   "confidence": "high",
+   "page": 242,
+   "note": "the owners' stake, newest year first"
+  }
+ },
+ "derived": {
+  "pat_cagr_2y_pct": {
+   "value": 3.16,
+   "source": "computed",
+   "confidence": "high"
+  }
+ },
+ "demand": {},
+ "documents": {
+  "abridged": {
+   "pages": 11,
+   "url": "https://www.sebi.gov.in/sebi_data/commondocs/sep-2026/ASSET%20RECONSTRUCTION%20COMPANY%20-AP_p.pdf",
+   "fields": [
+    "cin",
+    "financials",
+    "lead_managers",
+    "objects",
+    "offer_details",
+    "price_band",
+    "promoters",
+    "registrar",
+    "reservation",
+    "risk_factors"
+   ],
+   "read_at": "2026-09-07T14:22:50+00:00"
+  },
+  "full": {
+   "pages": 573,
+   "url": "https://www.sebi.gov.in/sebi_data/attachdocs/sep-2026/1788331195841.pdf",
+   "chapters": {
+    "capital_structure": [
+     91,
+     106
+    ],
+    "objects": [
+     107,
+     108
+    ],
+    "basis_for_price": [
+     109,
+     174
+    ],
+    "business": [
+     175,
+     241
+    ],
+    "promoters": [
+     242,
+     432
+    ],
+    "related_party": [
+     433,
+     435
+    ],
+    "litigation": [
+     436,
+     573
+    ]
+   },
+   "read_at": "2026-09-07T14:23:26+00:00"
+  }
+ },
+ "missing": [
+  {
+   "what": "fresh issue vs offer for sale split",
+   "why": "could not be read from the offer details table"
+  },
+  {
+   "what": "ROE",
+   "why": "this document does not print it"
+  },
+  {
+   "what": "ROCE",
+   "why": "this document does not print it"
+  },
+  {
+   "what": "valuation comparison",
+   "why": "no peer comparison available in this chapter"
+  },
+  {
+   "what": "subscription",
+   "why": "the issue has not opened yet"
+  },
+  {
+   "what": "grey market premium",
+   "why": "no free source built yet"
+  },
+  {
+   "what": "anchor investor allotment",
+   "why": "not collected yet"
+  },
+  {
+   "what": "broker conviction",
+   "why": "not collected yet"
+  },
+  {
+   "what": "media coverage",
+   "why": "not collected yet"
+  },
+  {
+   "what": "retail attention",
+   "why": "not collected yet"
+  }
+ ],
+ "conflicts": [],
+ "observations": [
+  {
+   "from": "balance sheet",
+   "says": "borrowings changed sharply over the three years — debt-to-equity went 0.054 to 0.546"
+  },
+  {
+   "from": "balance sheet",
+   "says": "our own sum gives a debt-to-equity of 0.546 where the document prints 0.39 — using the document's figure"
+  }
+ ]
+}

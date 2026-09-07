@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-07T10:38:21+00:00",
-  "count": 7,
+  "generated_at": "2026-09-07T14:22:42+00:00",
+  "count": 10,
   "ipos": [
     {
       "id": "2026-09-glass-wall-systems",
@@ -28,6 +28,20 @@
         "close_as_given": "10-Sep-2026"
       },
       "price_band": "Rs.601 to Rs.632",
+      "missing": []
+    },
+    {
+      "id": "2026-09-lcc-projects",
+      "name": "LCC Projects Limited",
+      "type": "mainboard",
+      "status": "upcoming",
+      "dates": {
+        "open": "2026-09-09",
+        "close": "2026-09-11",
+        "open_as_given": "09-Sep-2026",
+        "close_as_given": "11-Sep-2026"
+      },
+      "price_band": "Rs.139 to Rs.146",
       "missing": []
     },
     {
@@ -87,8 +101,8 @@
       "missing": []
     },
     {
-      "id": "2026-09-lcc-projects",
-      "name": "LCC Projects Limited",
+      "id": "2026-09-steamhouse",
+      "name": "Steamhouse India Limited",
       "type": "mainboard",
       "status": "upcoming",
       "dates": {
@@ -97,7 +111,35 @@
         "open_as_given": "09-Sep-2026",
         "close_as_given": "11-Sep-2026"
       },
-      "price_band": "Rs.139 to Rs.146",
+      "price_band": "Rs.77 to Rs.81",
+      "missing": []
+    },
+    {
+      "id": "2026-09-manipal-payment-and-identity-solutions",
+      "name": "Manipal Payment and Identity Solutions Limited",
+      "type": "mainboard",
+      "status": "upcoming",
+      "dates": {
+        "open": "2026-09-09",
+        "close": "2026-09-11",
+        "open_as_given": "09-Sep-2026",
+        "close_as_given": "11-Sep-2026"
+      },
+      "price_band": "Rs.322 to Rs.339",
+      "missing": []
+    },
+    {
+      "id": "2026-09-asset-reconstruction",
+      "name": "Asset Reconstruction Company (India) Limited",
+      "type": "mainboard",
+      "status": "upcoming",
+      "dates": {
+        "open": "2026-09-09",
+        "close": "2026-09-11",
+        "open_as_given": "09-Sep-2026",
+        "close_as_given": "11-Sep-2026"
+      },
+      "price_band": "Rs.132 to Rs.139",
       "missing": []
     }
   ]
