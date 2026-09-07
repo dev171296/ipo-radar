@@ -1,0 +1,3 @@
+{"at": "2026-09-07T10:38:21+00:00", "event": "discovered", "ok": true, "detail": "LCC Projects Limited", "source": "nse"}
+{"at": "2026-09-07T10:38:28+00:00", "event": "abridged_read", "ok": true, "detail": "9 pages, 10 parts", "source": "sebi"}
+{"at": "2026-09-07T10:38:59+00:00", "event": "full_read", "ok": true, "detail": "486 pages, 6 parts", "source": "sebi"}

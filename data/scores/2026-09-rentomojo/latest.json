@@ -1,59 +1,57 @@
 {
- "ipo_id": "2026-09-prasol-chemicals",
- "name": "Prasol Chemicals Limited",
- "scored_at": "2026-09-07T10:39:38+00:00",
+ "ipo_id": "2026-09-rentomojo",
+ "name": "Rentomojo Limited",
+ "scored_at": "2026-09-07T10:39:39+00:00",
  "built_from_bundle": "2026-09-07T10:39:38+00:00",
  "fundamentals": {
-  "score": 64.3,
+  "score": 73.7,
   "withheld": null,
-  "points_earned": 56.61,
-  "points_assessed": 88,
-  "coverage_pct": 88,
+  "points_earned": 42.75,
+  "points_assessed": 58,
+  "coverage_pct": 58,
   "components": [
-   {
-    "component": "valuation_vs_peers",
-    "weight": 18,
-    "points": 12.15,
-    "basis": "47.17× earnings vs 61.74×, against the document's stated average (unverified)"
-   },
    {
     "component": "growth_quality",
     "weight": 14,
-    "points": 7.7,
-    "basis": "revenue CAGR 18.58% a year"
+    "points": 14.0,
+    "basis": "revenue CAGR 41.71% a year"
    },
    {
     "component": "cash_flow_quality",
     "weight": 14,
-    "points": 4.9,
-    "basis": "cash conversion 0.35× of EBITDA"
-   },
-   {
-    "component": "profitability",
-    "weight": 12,
-    "points": 9.36,
-    "basis": "latest profit margin 6.74%, widening"
+    "points": 14.0,
+    "basis": "cash conversion 1.06× of EBITDA"
    },
    {
     "component": "balance_sheet",
     "weight": 10,
-    "points": 10.0,
-    "basis": "debt-to-equity 0.245; current ratio 1.54"
+    "points": 3.75,
+    "basis": "debt-to-equity 0.634; current ratio 0.55"
    },
    {
     "component": "issue_structure",
     "weight": 10,
     "points": 2.5,
-    "basis": "15% of the issue is fresh money to the company"
+    "basis": "12% of the issue is fresh money to the company"
    },
    {
     "component": "filing_hygiene",
     "weight": 10,
-    "points": 10.0,
-    "basis": "summary form read; 590-page prospectus read; all key fields found; no contradictions"
+    "points": 8.5,
+    "basis": "summary form read; 436-page prospectus read; no contradictions"
    }
   ],
   "not_assessed": [
+   {
+    "component": "valuation_vs_peers",
+    "weight": 18,
+    "why": "no usable price comparison in the prospectus"
+   },
+   {
+    "component": "profitability",
+    "weight": 12,
+    "why": "no profit and revenue pair on file"
+   },
    {
     "component": "promoter_governance",
     "weight": 12,
@@ -113,25 +111,26 @@
  },
  "flags": [
   {
-   "flag": "profit is not turning into cash",
-   "detail": "only 36% of EBITDA came through as cash",
-   "for_ai": "check receivables and inventory against the sales growth"
+   "flag": "owes more this year than it expects to collect",
+   "detail": "current ratio 0.55",
+   "for_ai": "how is the shortfall funded?"
   },
   {
    "flag": "mostly an exit for existing holders",
-   "detail": "only 15% of the money reaches the company",
+   "detail": "only 12% of the money reaches the company",
    "for_ai": "who is selling, and how much of their stake?"
   }
  ],
  "vetoes": {
   "triggered": [],
   "not_tested": [
+   "three years of profit not on file",
    "qualified or adverse audit opinion — needs the prospectus chapters read",
    "SEBI or criminal proceedings against the promoters — needs the prospectus chapters read",
    "more than half of revenue from one related party — needs the prospectus chapters read"
   ]
  },
  "listing_score_quant_only": null,
- "longterm_score_quant_only": 64.3,
+ "longterm_score_quant_only": 73.7,
  "status": "quant only — the AI block has not been built, so these are not final verdicts"
 }

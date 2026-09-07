@@ -1,63 +1,61 @@
 {
- "ipo_id": "2026-09-prasol-chemicals",
- "name": "Prasol Chemicals Limited",
+ "ipo_id": "2026-09-lcc-projects",
+ "name": "LCC Projects Limited",
  "scored_at": "2026-09-07T10:39:38+00:00",
- "built_from_bundle": "2026-09-07T10:39:38+00:00",
+ "built_from_bundle": "2026-09-07T10:39:37+00:00",
  "fundamentals": {
-  "score": 64.3,
+  "score": 78.3,
   "withheld": null,
-  "points_earned": 56.61,
-  "points_assessed": 88,
-  "coverage_pct": 88,
+  "points_earned": 46.96,
+  "points_assessed": 60,
+  "coverage_pct": 60,
   "components": [
-   {
-    "component": "valuation_vs_peers",
-    "weight": 18,
-    "points": 12.15,
-    "basis": "47.17× earnings vs 61.74×, against the document's stated average (unverified)"
-   },
    {
     "component": "growth_quality",
     "weight": 14,
-    "points": 7.7,
-    "basis": "revenue CAGR 18.58% a year"
+    "points": 11.2,
+    "basis": "revenue CAGR 21.5% a year"
    },
    {
     "component": "cash_flow_quality",
     "weight": 14,
-    "points": 4.9,
-    "basis": "cash conversion 0.35× of EBITDA"
+    "points": 8.4,
+    "basis": "cash conversion 0.55× of profit after tax"
    },
    {
     "component": "profitability",
     "weight": 12,
     "points": 9.36,
-    "basis": "latest profit margin 6.74%, widening"
-   },
-   {
-    "component": "balance_sheet",
-    "weight": 10,
-    "points": 10.0,
-    "basis": "debt-to-equity 0.245; current ratio 1.54"
+    "basis": "latest profit margin 7.96%, widening"
    },
    {
     "component": "issue_structure",
     "weight": 10,
-    "points": 2.5,
-    "basis": "15% of the issue is fresh money to the company"
+    "points": 8.0,
+    "basis": "59% of the issue is fresh money to the company"
    },
    {
     "component": "filing_hygiene",
     "weight": 10,
     "points": 10.0,
-    "basis": "summary form read; 590-page prospectus read; all key fields found; no contradictions"
+    "basis": "summary form read; 486-page prospectus read; all key fields found; no contradictions"
    }
   ],
   "not_assessed": [
    {
+    "component": "valuation_vs_peers",
+    "weight": 18,
+    "why": "no usable price comparison in the prospectus"
+   },
+   {
     "component": "promoter_governance",
     "weight": 12,
     "why": "not built yet"
+   },
+   {
+    "component": "balance_sheet",
+    "weight": 10,
+    "why": "no debt or liquidity figure read"
    }
   ]
  },
@@ -111,18 +109,7 @@
    }
   ]
  },
- "flags": [
-  {
-   "flag": "profit is not turning into cash",
-   "detail": "only 36% of EBITDA came through as cash",
-   "for_ai": "check receivables and inventory against the sales growth"
-  },
-  {
-   "flag": "mostly an exit for existing holders",
-   "detail": "only 15% of the money reaches the company",
-   "for_ai": "who is selling, and how much of their stake?"
-  }
- ],
+ "flags": [],
  "vetoes": {
   "triggered": [],
   "not_tested": [
@@ -132,6 +119,6 @@
   ]
  },
  "listing_score_quant_only": null,
- "longterm_score_quant_only": 64.3,
+ "longterm_score_quant_only": 78.3,
  "status": "quant only — the AI block has not been built, so these are not final verdicts"
 }
