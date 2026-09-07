@@ -8,7 +8,7 @@
   "name": "Kanohar Electricals Limited",
   "symbol": "KANOHAR",
   "type": "mainboard",
-  "status": "upcoming",
+  "status": "open",
   "dates": {
     "open": "2026-09-08",
     "close": "2026-09-10",
@@ -18,15 +18,15 @@
   "price_band": "Rs.601 to Rs.632",
   "issue_size_shares": 11693326.0,
   "subscription": {
-    "times": null,
-    "shares_offered": null,
-    "shares_bid": null
+    "times": 0.0,
+    "shares_offered": 0.0,
+    "shares_bid": 0.0
   },
   "also_on_bse": false,
   "sources": {
     "calendar": "nse",
-    "fetched_at": "2026-09-07T18:21:01+00:00"
+    "fetched_at": "2026-09-07T19:43:40+00:00"
   },
   "missing": [],
-  "rebuilt_at": "2026-09-07T18:21:01+00:00"
+  "rebuilt_at": "2026-09-07T19:43:40+00:00"
 }

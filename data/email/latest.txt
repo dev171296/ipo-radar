@@ -1,37 +1,76 @@
-IPO RADAR — generated 2026-09-07 19:30 UTC
+IPO RADAR — generated 2026-09-07 19:43 UTC
 ============================================================
 
+Asset Reconstruction Company (India) Limited
+  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> APPLY
+  mainboard · 2026-09-09 to 2026-09-11 · Rs.132 to Rs.139
+  Fundamentals: 68.8 (34% assessed)   Demand: None (0% assessed)
+  * profit is not turning into cash: only 30% of EBITDA came through as cash
+
 Glass Wall Systems (India) Limited
-  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> APPLY SELECTIVELY
+  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> APPLY
   mainboard · 2026-09-08 to 2026-09-10 · Rs.172 to Rs.182
-  Fundamentals: 63.6 (78% assessed)   Demand: None (0% assessed)
+  Fundamentals: 67.7 (88% assessed)   Demand: None (0% assessed)
   * growth concentrated in the year before the IPO: sales moved -9% then 64% — the good year is the one just before listing
-  * mostly an exit for existing holders: only 14% of the money reaches the company
+  * mostly an exit for existing holders: only 20% of the money reaches the company
 
 Kanohar Electricals Limited
-  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> APPLY
+  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> STRONG APPLY
   mainboard · 2026-09-08 to 2026-09-10 · Rs.601 to Rs.632
-  Fundamentals: 78.3 (78% assessed)   Demand: None (0% assessed)
+  Fundamentals: 80.8 (88% assessed)   Demand: None (0% assessed)
   * priced far below its stated peer group: 36.26× against 103.03× — a 65% discount
   * profit is not turning into cash: only 14% of EBITDA came through as cash
+
+Karamtara Engineering Limited
+  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> STRONG APPLY
+  mainboard · 2026-09-09 to 2026-09-11 · Rs.241 to Rs.254
+  Fundamentals: 83.1 (58% assessed)   Demand: None (0% assessed)
+
+LCC Projects Limited
+  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> APPLY
+  mainboard · 2026-09-09 to 2026-09-11 · Rs.139 to Rs.146
+  Fundamentals: 78.3 (60% assessed)   Demand: None (0% assessed)
+
+Manipal Payment and Identity Solutions Limited
+  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> APPLY
+  mainboard · 2026-09-09 to 2026-09-11 · Rs.322 to Rs.339
+  Fundamentals: 67.7 (48% assessed)   Demand: None (0% assessed)
 
 Pranav Constructions Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> APPLY SELECTIVELY
   mainboard · 2026-09-07 to 2026-09-09 · Rs.118 to Rs.124
-  Fundamentals: 62.9 (68% assessed)   Demand: None (0% assessed)
+  Fundamentals: 59.6 (78% assessed)   Demand: None (14% assessed)
   * priced far below its stated peer group: 15.16× against 113.46× — a 87% discount
   * the business consumed cash in its latest year: operating cash flow -411.94 against a reported profit
 
 Prasol Chemicals Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> APPLY SELECTIVELY
   mainboard · 2026-09-08 to 2026-09-10 · Rs.643 to Rs.676
-  Fundamentals: 59.8 (78% assessed)   Demand: None (0% assessed)
+  Fundamentals: 64.3 (88% assessed)   Demand: None (0% assessed)
   * profit is not turning into cash: only 36% of EBITDA came through as cash
-  * mostly an exit for existing holders: only 15% of the money reaches the company
+  * mostly an exit for existing holders: only 22% of the money reaches the company
 
 Qualiance International Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
   sme · 2026-09-04 to 2026-09-08 · band not announced
+  Fundamentals: None (0% assessed)   Demand: None (14% assessed)
+
+Rentomojo Limited
+  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> APPLY
+  mainboard · 2026-09-09 to 2026-09-11 · Rs.384 to Rs.404
+  Fundamentals: 73.7 (58% assessed)   Demand: None (0% assessed)
+  * owes more this year than it expects to collect: current ratio 0.55
+  * mostly an exit for existing holders: only 12% of the money reaches the company
+
+Steamhouse India Limited
+  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> STRONG APPLY
+  mainboard · 2026-09-09 to 2026-09-11 · Rs.77 to Rs.81
+  Fundamentals: 81.8 (58% assessed)   Demand: None (0% assessed)
+  * owes more this year than it expects to collect: current ratio 0.36
+
+Vinod Texworld Limited
+  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
+  sme · 2026-09-09 to 2026-09-11 · Rs.94
   Fundamentals: None (0% assessed)   Demand: None (0% assessed)
 
 Dashboard: https://dev171296.github.io/ipo-radar/
