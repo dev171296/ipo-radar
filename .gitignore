@@ -8,3 +8,5 @@ venv/
 
 # prospectuses are read and discarded, never stored
 *.pdf
+# one-off preview I generated for you to look at, not part of the pipeline
+data/email/dashboard-preview.html

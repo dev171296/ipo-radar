@@ -8,12 +8,39 @@ Design rule: one dead source must never stop the run. Every collector is
 wrapped, and a failure is recorded as data rather than raised as a crash.
 """
 
+import json
+import os
 import sys
 import traceback
 
-from . import abridged, documents, evidence, scoring, sections, storage
+from . import (abridged, analysts, call, documents, evidence, publisher,
+               scoring, sections, storage)
 from .collectors import nse, prices, sebi
 from .identity import find_match, make_id, normalise
+
+
+DASHBOARD_URL = "https://dev171296.github.io/ipo-radar/"
+
+
+def _read_json(*parts):
+    path = os.path.join(*parts)
+    if not os.path.exists(path):
+        return None
+    try:
+        with open(path, encoding="utf-8") as handle:
+            return json.load(handle)
+    except (OSError, ValueError):
+        return None
+
+
+
+
+def _write_json(payload, *parts):
+    path = os.path.join(*parts)
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(path, "w", encoding="utf-8") as handle:
+        json.dump(payload, handle, indent=1, ensure_ascii=False)
+    return path
 
 
 def collect_ipos():
@@ -239,6 +266,128 @@ def build_evidence():
     return built
 
 
+def run_analysts():
+    """
+    The two AI analysts, on the evidence we have gathered.
+
+    Runs only where there is something to read and something new to say: an IPO
+    with a prospectus on file, whose evidence has changed since the last answer.
+    Both models get an identical brief and never see each other.
+    """
+    print("\n[4] AI analysts")
+    if not (os.environ.get("GEMINI_API_KEY") or os.environ.get("GROQ_API_KEY")):
+        print("    no AI keys set — skipping (the quant scores stand on their own)")
+        return 0
+
+    allowance = [analysts.GEMINI_CALLS_PER_RUN]
+    print(f"    Gemini allowance this run: {allowance[0]} call(s) "
+          f"({analysts.spent_today('gemini')} used so far today); "
+          f"Groq reads everything")
+
+    done = 0
+    for record in storage.all_records():
+        ipo_id = record["id"]
+        path = os.path.join(storage.DATA, "docs", ipo_id, "full.json")
+        if not os.path.exists(path):
+            continue
+        try:
+            with open(path, encoding="utf-8") as handle:
+                document = json.load(handle)
+            bundle = evidence.build(ipo_id)
+            score = scoring.verdict(bundle)
+            before = allowance[0]
+            results = analysts.analyse(bundle, document.get("sections") or {},
+                                       score, gemini_left=lambda: allowance[0])
+            if (results.get("gemini") or {}).get("model"):
+                allowance[0] -= 1
+            comparison = analysts.compare(results)
+            analysts.save(ipo_id, results, comparison)
+            done += 1
+
+            print(f"    {record.get('name')}")
+            print(f"      {analysts.summarise(results, comparison)}")
+            for name, result in results.items():
+                answer = (result or {}).get("answer")
+                if not answer:
+                    continue
+                for view in ("listing_view", "longterm_view"):
+                    body = answer.get(view) or {}
+                    print(f"        {name} {view}: {body.get('score')} — "
+                          f"{str(body.get('reasoning'))[:150]}")
+                checked = answer.get("citation_check") or {}
+                print(f"        {name} citations: "
+                      f"{checked.get('citations_verified')}/"
+                      f"{checked.get('claims_checked')} verified"
+                      + (f", {checked['citations_not_matching_what_we_sent']} "
+                         f"NOT in what we sent"
+                         if checked.get("citations_not_matching_what_we_sent")
+                         else ""))
+            skipped = (results.get("gemini") or {}).get("skipped")
+            if skipped:
+                print(f"        gemini: not asked — {skipped}")
+            elif results.get("_gemini_reason"):
+                print(f"        gemini asked because: {results['_gemini_reason']}")
+            for gap in comparison.get("disagreements", []):
+                print(f"        DISAGREEMENT on {gap['on']}: {gap['scores']} "
+                      f"({gap['gap']} apart)")
+        except Exception as exc:
+            print(f"    {record.get('name')}: analyst failed — "
+                  f"{type(exc).__name__} {str(exc)[:120]}")
+    return done
+
+
+def publish():
+    """
+    Build the digest and send it, if we have somewhere to send it.
+
+    The digest is written to data/email/latest.html on every run whether or not
+    it goes anywhere, so the formatting can be opened in a browser and checked
+    without spending an email.
+    """
+    print("\n[5] Digest")
+    companies = []
+    for record in storage.all_records():
+        ipo_id = record["id"]
+        comparison = _read_json(storage.DATA, "analysis", ipo_id,
+                                "comparison-latest.json")
+        score = _read_json(storage.DATA, "scores", ipo_id, "latest.json")
+        decision = call.decide(score, comparison)
+        _write_json(decision, storage.DATA, "calls", f"{ipo_id}.json")
+
+        companies.append({
+            "ipo": record,
+            "call": decision,
+            "score": score,
+            "bundle": _read_json(storage.DATA, "evidence", ipo_id, "latest.json"),
+            "ai": {
+                "groq": _read_json(storage.DATA, "analysis", ipo_id,
+                                   "groq-latest.json"),
+                "gemini": _read_json(storage.DATA, "analysis", ipo_id,
+                                     "gemini-latest.json"),
+                "comparison": comparison,
+            },
+        })
+
+    for entry in companies:
+        listing = (entry["call"]["listing"] or {})
+        longterm = (entry["call"]["longterm"] or {})
+        print(f"    {entry['ipo'].get('name')}: applying -> {listing['call']}"
+              f" ({listing.get('confidence')}), holding -> {longterm['call']}"
+              f" ({longterm.get('confidence')})")
+
+    subject, body, text = publisher.build(companies, DASHBOARD_URL)
+    print(f"    subject: {subject}")
+    path = publisher.save(subject, body, text)
+    print(f"    written to {path} ({len(body):,} bytes)")
+
+    outcome = publisher.send(subject, body, text)
+    if outcome.get("sent"):
+        print(f"    emailed to {outcome['to']}")
+    else:
+        print(f"    not emailed — {outcome.get('why')}")
+    return outcome.get("sent", False)
+
+
 def check_price_ladder():
     """
     Exercise the fallback ladder on a known stock.
@@ -246,7 +395,7 @@ def check_price_ladder():
     We have no listed IPOs to track yet, so this is a live self-test: it proves
     the ladder still works today and tells us which rung answered.
     """
-    print("\n[4] Price ladder self-test (Reliance)")
+    print("\n[6] Price ladder self-test (Reliance)")
     from .collectors import bhavcopy
     print(f"    India time now: {bhavcopy.india_now():%Y-%m-%d %H:%M} IST")
     print(f"    today's file expected yet? "
@@ -295,12 +444,26 @@ def main():
         traceback.print_exc()
         bundles = 0
 
+    try:
+        analysed = run_analysts()
+    except Exception:
+        traceback.print_exc()
+        analysed = 0
+
+    try:
+        emailed = publish()
+    except Exception:
+        traceback.print_exc()
+        emailed = False
+
     ladder_ok = check_price_ladder()
 
     print("\n" + "=" * 66)
     print(f"  {new} new IPOs, {updated} updated")
     print(f"  {docs_done} prospectus documents read")
     print(f"  {bundles} evidence bundles built and scored")
+    print(f"  {analysed} IPOs sent to the AI analysts")
+    print(f"  digest: {'emailed' if emailed else 'written to disk only'}")
     print(f"  price ladder: {'ok' if ladder_ok else 'FAILED'}")
     print(f"  tracking {len(storage.all_records())} IPOs in total")
     print("=" * 66)

@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IPO Radar</title>
+<style>
+  :root{
+    --bg:#f7f7f5; --card:#fff; --ink:#1c1b19; --muted:#6b6862; --line:#e3e0da;
+    --good:#1f7a4d; --warn:#a86400; --bad:#a32d22; --accent:#2f5fd0;
+    --chip:#f0eee9;
+    --groq:#1a6b8f; --groqbg:#eef6fa; --gem:#6b3fa0; --gembg:#f4f0fa;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#161513; --card:#1f1e1b; --ink:#eceae5; --muted:#9d9890; --line:#332f2a;
+      --good:#5dc08c; --warn:#e0a54a; --bad:#e58274; --accent:#7ba0f0; --chip:#2a2824;
+      --groq:#6fc0e0; --groqbg:#17262c; --gem:#b18ce0; --gembg:#241c33;
+    }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+       font:15px/1.55 ui-sans-serif,-apple-system,"Segoe UI",Roboto,sans-serif}
+  .wrap{max-width:1100px;margin:0 auto;padding:24px 18px 80px}
+  header{display:flex;flex-wrap:wrap;gap:12px;align-items:baseline;
+         justify-content:space-between;margin-bottom:6px}
+  h1{font-size:24px;margin:0;letter-spacing:-.02em}
+  .sub{color:var(--muted);font-size:13px}
+  .legend{margin:14px 0 22px;padding:12px 14px;background:var(--card);
+          border:1px solid var(--line);border-radius:10px;font-size:13px;color:var(--muted)}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;
+        padding:16px 18px;margin-bottom:14px}
+  .row{display:flex;flex-wrap:wrap;gap:14px;align-items:baseline;justify-content:space-between}
+  .name{font-size:17px;font-weight:600;letter-spacing:-.01em}
+  .chips{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 4px}
+  .chip{background:var(--chip);border-radius:999px;padding:2px 10px;font-size:12px;color:var(--muted)}
+  .scores{display:flex;flex-wrap:wrap;gap:22px;margin-top:12px}
+  .score{min-width:150px}
+  .score .n{font-size:26px;font-weight:650;letter-spacing:-.02em}
+  .score .n.na{font-size:15px;font-weight:500;color:var(--muted)}
+  .score .l{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+  .bar{height:5px;background:var(--chip);border-radius:3px;margin-top:6px;overflow:hidden}
+  .bar span{display:block;height:100%;background:var(--accent)}
+  .flag{margin-top:8px;font-size:13.5px;padding-left:14px;border-left:3px solid var(--warn)}
+  .flag b{font-weight:600}
+  .flag .q{color:var(--muted);font-style:italic}
+  .veto{border-left-color:var(--bad)}
+  details{margin-top:12px}
+  summary{cursor:pointer;font-size:13px;color:var(--accent);user-select:none}
+  summary::-webkit-details-marker{color:var(--muted)}
+  table{border-collapse:collapse;width:100%;font-size:13.5px;margin-top:10px}
+  th,td{text-align:left;padding:6px 10px 6px 0;border-bottom:1px solid var(--line);
+        vertical-align:top}
+  th{color:var(--muted);font-weight:500;font-size:12px;text-transform:uppercase;
+     letter-spacing:.05em}
+  td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
+  .src{color:var(--muted);font-size:12px}
+  .ai{border:1px solid var(--line);border-left-width:4px;border-radius:0 10px 10px 0;
+      padding:12px 14px;margin-top:12px}
+  .ai.groq{border-left-color:var(--groq);background:var(--groqbg)}
+  .ai.gem{border-left-color:var(--gem);background:var(--gembg)}
+  .ai.groq h4{color:var(--groq)} .ai.gem h4{color:var(--gem)}
+  .calls{display:flex;flex-wrap:wrap;gap:10px;margin:12px 0 4px}
+  .callbox{flex:1 1 240px;border:1px solid var(--line);border-radius:9px;overflow:hidden}
+  .callbox .top{padding:11px 14px;color:#fff}
+  .callbox .top .k{font-size:11px;letter-spacing:.09em;text-transform:uppercase;opacity:.85}
+  .callbox .top .v{font-size:18px;font-weight:700;line-height:1.25}
+  .callbox .why{padding:8px 14px;font-size:12.5px;color:var(--muted);line-height:1.5}
+  .pill{display:inline-block;border-radius:999px;padding:2px 10px;color:#fff;
+        font-size:12px;font-weight:700}
+  .ai h4{margin:0 0 6px;font-size:13px;letter-spacing:.04em;text-transform:uppercase;
+         color:var(--muted)}
+  .disagree{border-color:var(--warn)}
+  .ok{color:var(--good)} .no{color:var(--bad)} .mid{color:var(--warn)}
+  .empty{color:var(--muted);font-size:13.5px}
+  footer{margin-top:30px;color:var(--muted);font-size:12.5px}
+  code{background:var(--chip);padding:1px 5px;border-radius:4px;font-size:12.5px}
+  .scroll{overflow-x:auto}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>IPO Radar</h1>
+      <div class="sub" id="meta">loading…</div>
+    </div>
+    <div class="sub" id="counts"></div>
+  </header>
+
+  <div class="legend">
+    <b>Read the coverage before the score.</b> A score is worked out only over the parts
+    that could be assessed; anything missing is reported as missing, never as zero, and a
+    block assessed below 25% shows no score at all. Both headline verdicts are
+    <b>quant-only</b> until the AI block is folded in — they are readings, not advice.
+  </div>
+
+  <div id="list"></div>
+
+  <footer id="foot"></footer>
+</div>
+
+<script>
+const $ = (h) => { const d = document.createElement('div'); d.innerHTML = h; return d.firstElementChild; };
+const esc = (s) => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const num = (v) => (v === null || v === undefined) ? '—' : (typeof v === 'number' ? (Math.round(v*100)/100).toLocaleString('en-IN') : v);
+
+async function j(path){
+  try { const r = await fetch(path, {cache:'no-store'}); if(!r.ok) return null; return await r.json(); }
+  catch(e){ return null; }
+}
+
+function scoreBlock(label, block){
+  if(!block) return '';
+  const covered = block.coverage_pct ?? 0;
+  const value = block.score;
+  const shown = value === null || value === undefined
+    ? `<div class="n na">not scored</div>`
+    : `<div class="n">${value}</div>`;
+  return `<div class="score">
+      <div class="l">${label}</div>
+      ${shown}
+      <div class="bar"><span style="width:${covered}%"></span></div>
+      <div class="sub">${covered}% of this block assessed</div>
+    </div>`;
+}
+
+function componentsTable(block){
+  if(!block) return '';
+  const rows = (block.components||[]).map(c =>
+    `<tr><td>${esc(c.component.replace(/_/g,' '))}</td>
+         <td class="num">${c.points} / ${c.weight}</td>
+         <td class="src">${esc(c.basis)}</td></tr>`).join('');
+  const gaps = (block.not_assessed||[]).map(c =>
+    `<tr><td>${esc(c.component.replace(/_/g,' '))}</td>
+         <td class="num src">— / ${c.weight}</td>
+         <td class="src">${esc(c.why)}</td></tr>`).join('');
+  if(!rows && !gaps) return '';
+  return `<div class="scroll"><table>
+      <tr><th>component</th><th>points</th><th>on what basis</th></tr>
+      ${rows}${gaps}</table></div>`;
+}
+
+function factsTable(bundle){
+  const groups = ['offer','financials','derived','valuation','cash','balance_sheet','demand'];
+  let rows = '';
+  for(const g of groups){
+    const section = bundle[g]; if(!section) continue;
+    for(const [name, body] of Object.entries(section)){
+      if(!body || typeof body !== 'object') continue;
+      const where = [body.source, body.page ? 'page '+body.page : null]
+                      .filter(Boolean).join(', ');
+      rows += `<tr><td>${esc(name.replace(/_/g,' '))}</td>
+        <td class="num">${esc(Array.isArray(body.value) ? body.value.map(num).join('  ·  ') : num(body.value))}</td>
+        <td class="src">${esc(where)}${body.confidence && body.confidence!=='high' ? ' · <b>'+esc(body.confidence)+'</b>' : ''}${body.raw ? '<br>“'+esc(String(body.raw).slice(0,120))+'”' : ''}</td></tr>`;
+    }
+  }
+  return rows ? `<div class="scroll"><table>
+      <tr><th>fact</th><th>value</th><th>where it came from</th></tr>${rows}</table></div>`
+    : '<p class="empty">No facts gathered yet.</p>';
+}
+
+function aiCard(name, result, cls){
+  if(!result) return '';
+  if(result.skipped) return `<div class="ai ${cls}"><h4>${esc(name)}</h4>
+      <div class="empty">not asked — ${esc(result.skipped)}</div></div>`;
+  if(!result.ok) return `<div class="ai ${cls}"><h4>${esc(name)}</h4>
+      <div class="no">failed — ${esc(result.why)}</div></div>`;
+  const a = result.answer || {};
+  const c = a.citation_check || {};
+  const badge = c.claims_checked
+    ? `<span class="${c.citations_not_matching_what_we_sent ? 'mid' : 'ok'}">
+         ${c.citations_verified}/${c.claims_checked} citations verified${
+         c.citations_not_matching_what_we_sent ? ', '+c.citations_not_matching_what_we_sent+' not in what we sent' : ''}</span>`
+    : '';
+  const risks = (a.key_risks||[]).map(r =>
+    `<li>${esc(r.risk)} — <span class="src">${esc(r.why_it_matters)} ${
+      r.citation_verified ? '<span class="ok">'+esc(r.citation)+'</span>'
+                          : '<span class="no">'+esc(r.citation)+' (unverified)</span>'}</span></li>`).join('');
+  const answers = (a.answers||[]).map(r =>
+    `<li><b>${esc(r.question)}</b><br>${esc(r.answer)}
+      <span class="src">${r.citation_verified ? '<span class="ok">'+esc(r.citation)+'</span>'
+        : '<span class="no">'+esc(r.citation)+'</span>'}</span></li>`).join('');
+  return `<div class="ai ${cls}">
+    <h4>${esc(name)} · ${esc(result.model||'')} · confidence ${esc(a.confidence||'?')} ${badge}</h4>
+    <p><b>Listing ${num((a.listing_view||{}).score)}</b> — ${esc((a.listing_view||{}).reasoning)}</p>
+    <p><b>Long term ${num((a.longterm_view||{}).score)}</b> — ${esc((a.longterm_view||{}).reasoning)}</p>
+    ${a.governance ? `<p><b>Governance ${num(a.governance.score)}</b> — ${esc(a.governance.reasoning)}</p>`:''}
+    ${risks ? `<p class="l">Key risks</p><ul>${risks}</ul>`:''}
+    ${answers ? `<p class="l">Answers to the questions our scorer raised</p><ul>${answers}</ul>`:''}
+    ${a.what_would_change_my_mind ? `<p class="src">Would change its mind if: ${esc(a.what_would_change_my_mind)}</p>`:''}
+  </div>`;
+}
+
+function callBoxes(call){
+  if(!call) return '';
+  const box = (title, b) => !b ? '' : `<div class="callbox">
+      <div class="top" style="background:${b.colour}">
+        <div class="k">${esc(title)}</div><div class="v">${esc(b.call)}</div></div>
+      <div class="why">score ${num(b.score)} · confidence ${esc(b.confidence)}<br>${esc(b.why)}</div>
+    </div>`;
+  return `<div class="calls">
+      ${box('If you are deciding whether to apply', call.listing)}
+      ${box('If you intend to hold for years', call.longterm)}
+    </div>`;
+}
+
+function card(ipo, score, bundle, ai, call){
+  const f = score?.fundamentals, d = score?.demand;
+  const flags = (score?.flags||[]).map(x =>
+    `<div class="flag"><b>${esc(x.flag)}</b> — ${esc(x.detail)}
+      ${x.for_ai ? `<br><span class="q">to check: ${esc(x.for_ai)}</span>`:''}</div>`).join('');
+  const vetoes = (score?.vetoes?.triggered||[]).map(x =>
+    `<div class="flag veto"><b>HARD STOP: ${esc(x.veto)}</b> — ${esc(num(x.detail))}</div>`).join('');
+  const conflicts = (bundle?.conflicts||[]).map(x =>
+    `<div class="flag veto"><b>${esc(x.what)}</b> — ${esc(x.means)}</div>`).join('');
+  const observations = (bundle?.observations||[]).map(x =>
+    `<div class="flag"><b>${esc(x.from)}</b> — ${esc(x.says)}</div>`).join('');
+  const gaps = (bundle?.missing||[]).map(x =>
+    `<li>${esc(x.what)} — <span class="src">${esc(x.why)}</span></li>`).join('');
+
+  const disagreements = (ai?.comparison?.disagreements||[]).map(x =>
+    `<div class="ai disagree"><h4>models disagree on ${esc(x.on)} — ${x.gap} points apart</h4>
+      <div>${Object.entries(x.scores).map(([k,v])=>`${esc(k)}: <b>${v}</b>`).join(' · ')}</div>
+      <div class="src">${esc(x.means)}</div></div>`).join('');
+
+  return $(`<div class="card">
+    <div class="row">
+      <div class="name">${esc(ipo.name)}</div>
+      <div class="sub">${esc(ipo.dates?.open||'?')} → ${esc(ipo.dates?.close||'?')}</div>
+    </div>
+    <div class="chips">
+      <span class="chip">${esc(ipo.type||'')}</span>
+      <span class="chip">${esc(ipo.status||'')}</span>
+      ${ipo.price_band ? `<span class="chip">${esc(ipo.price_band)}</span>`:''}
+      ${bundle?.documents?.full ? `<span class="chip">prospectus ${bundle.documents.full.pages}p read</span>`:'<span class="chip">no prospectus yet</span>'}
+      ${bundle?.demand?.subscription_times ? `<span class="chip">${num(bundle.demand.subscription_times.value)}× subscribed</span>`:''}
+    </div>
+    ${callBoxes(call)}
+    <div class="scores">
+      ${scoreBlock('Fundamentals', f)}
+      ${scoreBlock('Demand', d)}
+    </div>
+    ${vetoes}${conflicts}${flags}${observations}
+    ${disagreements}
+    ${aiCard('Groq', ai?.groq, 'groq')}
+    ${aiCard('Gemini', ai?.gemini, 'gem')}
+    <details><summary>How the fundamentals score was built</summary>${componentsTable(f)}</details>
+    <details><summary>How the demand score was built</summary>${componentsTable(d)}</details>
+    <details><summary>Every fact, and where it came from</summary>${factsTable(bundle||{})}</details>
+    ${gaps ? `<details><summary>What we could not establish (${(bundle.missing||[]).length})</summary><ul>${gaps}</ul></details>`:''}
+  </div>`);
+}
+
+async function main(){
+  const index = await j('data/index.json');
+  const list = document.getElementById('list');
+  if(!index){ list.innerHTML = '<p class="empty">Could not read data/index.json.</p>'; return; }
+
+  document.getElementById('meta').textContent =
+    'last collector run ' + new Date(index.generated_at).toLocaleString('en-IN');
+  document.getElementById('counts').textContent = index.count + ' IPOs tracked';
+
+  const loaded = await Promise.all(index.ipos.map(async ipo => {
+    const [score, bundle, groq, gemini, comparison, call] = await Promise.all([
+      j(`data/scores/${ipo.id}/latest.json`),
+      j(`data/evidence/${ipo.id}/latest.json`),
+      j(`data/analysis/${ipo.id}/groq-latest.json`),
+      j(`data/analysis/${ipo.id}/gemini-latest.json`),
+      j(`data/analysis/${ipo.id}/comparison-latest.json`),
+      j(`data/calls/${ipo.id}.json`),
+    ]);
+    return {ipo, score, bundle, ai:{groq, gemini, comparison}, call};
+  }));
+
+  // Highest fundamentals first, unscored last — but the coverage figure beside
+  // each one is what says how much that ordering is worth.
+  loaded.sort((a,b) => (b.score?.fundamentals?.score ?? -1) - (a.score?.fundamentals?.score ?? -1));
+  loaded.forEach(x => list.appendChild(card(x.ipo, x.score, x.bundle, x.ai, x.call)));
+
+  document.getElementById('foot').innerHTML =
+    'Built from the files in this repository — every number on this page comes from '
+    + 'a document the collector fetched and parsed, and can be traced to its page. '
+    + 'Not investment advice.';
+}
+main();
+</script>
+</body>
+</html>

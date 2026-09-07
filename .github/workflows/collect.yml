@@ -38,6 +38,16 @@ jobs:
       - name: Collect
         env:
           PYTHONUNBUFFERED: "1"   # print as it happens, not all at the end
+          # The AI keys. GitHub decrypts these into the run and masks them in
+          # the log; they never appear in the repository, which is public.
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          # Email. The addresses live in Secrets rather than in the code
+          # because this repository is public and scrapers harvest addresses
+          # out of source files.
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          MAIL_TO: ${{ secrets.MAIL_TO }}
         run: python -m ipo_radar.run
 
       - name: Save the data back to the repo
