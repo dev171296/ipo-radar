@@ -1,6 +1,6 @@
 {
- "ipo_id": "2026-09-qualiance-international",
- "name": "Qualiance International Limited",
+ "ipo_id": "2026-09-vinod-texworld",
+ "name": "Vinod Texworld Limited",
  "scored_at": "2026-09-07T18:22:05+00:00",
  "built_from_bundle": "2026-09-07T18:22:05+00:00",
  "fundamentals": {
@@ -55,23 +55,21 @@
  },
  "demand": {
   "score": null,
-  "withheld": "only 14% of this block could be assessed — below the 25% floor, so no score is given",
-  "points_earned": 7.0,
-  "points_assessed": 14,
-  "coverage_pct": 14,
-  "components": [
-   {
-    "component": "subscription_velocity",
-    "weight": 14,
-    "points": 7.0,
-    "basis": "15% of final demand was already in at the first reading"
-   }
-  ],
+  "withheld": null,
+  "points_earned": 0.0,
+  "points_assessed": 0,
+  "coverage_pct": 0,
+  "components": [],
   "not_assessed": [
    {
     "component": "subscription_level",
     "weight": 26,
-    "why": "the issue is still open (closes 2026-09-08) and stands at 83.68× — most demand arrives on the last day, so this is not scored yet"
+    "why": "no subscription figure yet"
+   },
+   {
+    "component": "subscription_velocity",
+    "weight": 14,
+    "why": "need at least two readings to see a rate"
    },
    {
     "component": "gmp_level",

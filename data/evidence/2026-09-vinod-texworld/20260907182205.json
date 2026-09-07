@@ -1,18 +1,23 @@
 {
- "ipo_id": "2026-09-qualiance-international",
+ "ipo_id": "2026-09-vinod-texworld",
  "built_at": "2026-09-07T18:22:05+00:00",
- "name": "Qualiance International Limited",
- "symbol": "QUALIANCE",
+ "name": "Vinod Texworld Limited",
+ "symbol": "VINOD",
  "type": "sme",
- "status": "open",
+ "status": "upcoming",
  "offer": {
+  "issue_size_shares": {
+   "value": 4556400.0,
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
   "open_date": {
-   "value": "2026-09-04",
+   "value": "2026-09-09",
    "source": "nse_calendar",
    "confidence": "high"
   },
   "close_date": {
-   "value": "2026-09-08",
+   "value": "2026-09-11",
    "source": "nse_calendar",
    "confidence": "high"
   }
@@ -22,50 +27,20 @@
  "cash": {},
  "balance_sheet": {},
  "derived": {},
- "demand": {
-  "subscription_times": {
-   "value": 83.68,
-   "source": "nse_calendar",
-   "confidence": "high",
-   "note": "as at 2026-09-07T14:22:42+00:00"
-  },
-  "subscription_history": {
-   "value": [
-    {
-     "at": "2026-09-04T19:05:40+00:00",
-     "times": 12.51
-    },
-    {
-     "at": "2026-09-07T07:28:05+00:00",
-     "times": 49.85
-    },
-    {
-     "at": "2026-09-07T10:38:21+00:00",
-     "times": 74.34
-    },
-    {
-     "at": "2026-09-07T14:22:42+00:00",
-     "times": 83.68
-    }
-   ],
-   "source": "nse_calendar",
-   "confidence": "high",
-   "note": "every change we recorded"
-  }
- },
+ "demand": {},
  "documents": {},
  "missing": [
   {
    "what": "price band",
-   "why": "NSE gave no readable band"
-  },
-  {
-   "what": "issue size",
-   "why": "NSE did not report it"
+   "why": "not announced yet"
   },
   {
    "what": "three-year financials",
    "why": "no abridged prospectus on file yet"
+  },
+  {
+   "what": "subscription",
+   "why": "the issue has not opened yet"
   },
   {
    "what": "grey market premium",

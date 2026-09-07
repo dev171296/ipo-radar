@@ -1,30 +1,30 @@
 {
- "ipo_id": "2026-09-rentomojo",
- "built_at": "2026-09-07T18:22:05+00:00",
- "name": "Rentomojo Limited",
- "symbol": "RENTOMOJO",
+ "ipo_id": "2026-09-karamtara-engineering",
+ "built_at": "2026-09-07T18:22:03+00:00",
+ "name": "Karamtara Engineering Limited",
+ "symbol": "KARAMTARA",
  "type": "mainboard",
  "status": "upcoming",
  "offer": {
   "price_low": {
-   "value": 384.0,
+   "value": 241.0,
    "source": "nse_calendar",
    "confidence": "high",
-   "raw": "Rs.384 to Rs.404"
+   "raw": "Rs.241 to Rs.254"
   },
   "price_high": {
-   "value": 404.0,
+   "value": 254.0,
    "source": "nse_calendar",
    "confidence": "high",
-   "raw": "Rs.384 to Rs.404"
+   "raw": "Rs.241 to Rs.254"
   },
   "issue_size_shares": {
-   "value": 31274640.0,
+   "value": 36307052.0,
    "source": "nse_calendar",
    "confidence": "high"
   },
   "issue_size_rs_million": {
-   "value": 12634.95,
+   "value": 9221.99,
    "source": "computed",
    "confidence": "high",
    "note": "shares × top of the price band"
@@ -40,69 +40,69 @@
    "confidence": "high"
   },
   "fresh_issue_rs_million": {
-   "value": 1500.0,
+   "value": 6750.0,
    "source": "abridged prospectus",
    "confidence": "low",
    "page": 1,
-   "raw": "fresh issue size^^ offer for sale size total offer size^^ eligibility and reservation fresh issue and offer for sale fresh issue of up to [●] equity shares of face value of ₹1 each aggregating up to ₹",
+   "raw": "fresh issue size^ size of the offer for sale total offer size eligibility and reservation fresh issue and offer for sale fresh issue of up to [●] equity shares of face value of ₹10 each aggregating up",
    "note": "read from a table flattened to text — verify before relying on it"
   }
  },
  "financials": {
   "revenue": {
    "value": [
-    3869.88,
-    2659.59,
-    1927.01
+    43119.76,
+    31584.45,
+    24251.5
    ],
    "source": "abridged prospectus",
    "confidence": "high",
    "page": 8,
-   "raw": "Revenue from operations(2) 3,869.88 2,659.59 1,927.01"
+   "raw": "Revenue from operations 43,119.76 31,584.45 24,251.50"
   },
   "ebitda": {
    "value": [
-    1634.62,
-    1184.39,
-    781.52
+    4981.1,
+    3468.3,
+    2629.28
    ],
    "source": "abridged prospectus",
    "confidence": "high",
    "page": 8,
-   "raw": "EBITDA(3) 1,634.62 1,184.39 781.52"
+   "raw": "EBITDA 4,981.10 3,468.30 2,629.28"
   }
  },
  "valuation": {
   "eps_basic_latest": {
-   "value": 10.42,
+   "value": 7.83,
    "source": "full prospectus",
    "confidence": "high",
-   "page": 159,
+   "page": 134,
    "raw": "fiscal 2026",
-   "note": "checked: our rows reproduce the document's own weighted average of 7.07"
+   "note": "checked: our rows reproduce the document's own weighted average of 6.16"
   },
   "eps_weighted_average": {
-   "value": 7.07,
+   "value": 6.16,
    "source": "full prospectus",
    "confidence": "high",
-   "page": 159
+   "page": 134
   }
  },
  "cash": {
   "operating_cash_flow": {
    "value": [
-    1728.71,
-    1155.45,
-    915.72
+    6751.48,
+    1025.15,
+    400.23
    ],
    "source": "full prospectus (promoters chapter)",
    "confidence": "high",
-   "page": 264,
-   "raw": "Net cash from operating activities (A) 1,728.71 1,155.45 915.72",
+   "page": 326,
+   "raw": "Net Cash from/(used in) Operating Activities 6,751.48 1,025.15 400.23",
    "note": "newest year first"
   },
   "conversion_vs_ebitda": {
-   "value": 1.058,
+   "value": 1.355,
    "source": "computed",
    "confidence": "high",
    "note": "1.0 means the reported profit arrived as cash"
@@ -121,77 +121,66 @@
  "balance_sheet": {
   "debt_to_equity": {
    "value": [
-    0.634,
-    0.842,
-    1.055
+    0.844,
+    0.566,
+    0.919
    ],
-   "source": "full prospectus (promoters)",
+   "source": "full prospectus (basis_for_price, promoters)",
    "confidence": "high",
-   "page": 264,
+   "page": 134,
    "note": "borrowings ÷ what the owners have in it — computed from total debt ÷ net worth"
-  },
-  "current_ratio": {
-   "value": [
-    0.55,
-    0.53,
-    0.75
-   ],
-   "source": "full prospectus (promoters)",
-   "confidence": "high",
-   "page": 264,
-   "note": "money due in within a year ÷ money due out — computed from current assets ÷ liabilities"
   },
   "receivable_days": {
    "value": [
-    39.2,
-    42.2,
-    41.9
+    111.4,
+    108.0,
+    85.6
    ],
-   "source": "full prospectus (promoters)",
+   "source": "full prospectus (basis_for_price, promoters)",
    "confidence": "high",
-   "page": 264,
+   "page": 134,
    "note": "how long customers take to pay"
   },
   "total_debt": {
    "value": [
-    1875.9,
-    1545.82,
-    1472.21
+    10301.29,
+    5562.76,
+    5085.14
    ],
-   "source": "full prospectus (promoters)",
+   "source": "full prospectus (basis_for_price, promoters)",
    "confidence": "high",
-   "page": 264,
+   "page": 134,
    "note": "borrowings, newest year first"
   },
   "net_worth": {
    "value": [
-    2958.07,
-    1836.1,
-    1396.05
+    12199.17,
+    9831.86,
+    5534.38
    ],
-   "source": "full prospectus (promoters)",
+   "source": "full prospectus (basis_for_price, promoters)",
    "confidence": "high",
-   "page": 264,
+   "page": 134,
    "note": "the owners' stake, newest year first"
   }
  },
  "derived": {
   "revenue_cagr_2y_pct": {
-   "value": 41.71,
+   "value": 33.34,
    "source": "computed",
    "confidence": "high",
    "note": "two years of compounding, newest over oldest"
   },
   "revenue_growth_latest_pct": {
-   "value": 45.51,
+   "value": 36.52,
    "source": "computed",
    "confidence": "high"
   },
   "ebitda_margin_pct": {
    "value": [
-    42.24,
-    44.53,
-    40.56
+    11.55,
+    10.98,
+    10.84
    ],
    "source": "computed",
    "confidence": "high"
@@ -200,10 +189,9 @@
  "demand": {},
  "documents": {
   "abridged": {
-   "pages": 12,
-   "url": "https://www.sebi.gov.in/sebi_data/commondocs/sep-2026/RENTOMOJO%20LIMITED%20-%20AP_p.pdf",
+   "pages": 15,
+   "url": "https://www.sebi.gov.in/sebi_data/commondocs/sep-2026/Annexure%20II%20-%20Abridged%20Prospectus_p.pdf",
    "fields": [
-    "cin",
     "financials",
     "lead_managers",
     "objects",
@@ -211,40 +199,45 @@
     "price_band",
     "promoters",
     "registrar",
-    "risk_factors"
+    "risk_factors",
+    "selling_shareholders"
    ],
-   "read_at": "2026-09-07T10:39:03+00:00"
+   "read_at": "2026-09-07T18:21:06+00:00"
   },
   "full": {
-   "pages": 436,
-   "url": "https://www.sebi.gov.in/sebi_data/attachdocs/sep-2026/1788501645342.pdf",
+   "pages": 529,
+   "url": "https://www.sebi.gov.in/sebi_data/attachdocs/sep-2026/1788514905936.pdf",
    "chapters": {
     "capital_structure": [
-     92,
-     148
+     90,
+     116
     ],
     "objects": [
-     149,
-     158
+     117,
+     133
     ],
     "basis_for_price": [
-     159,
-     193
+     134,
+     258
     ],
     "business": [
-     194,
-     263
+     259,
+     325
     ],
     "promoters": [
-     264,
-     341
+     326,
+     395
+    ],
+    "related_party": [
+     396,
+     424
     ],
     "litigation": [
-     342,
-     436
+     425,
+     529
     ]
    },
-   "read_at": "2026-09-07T10:39:36+00:00"
+   "read_at": "2026-09-07T18:22:02+00:00"
   }
  },
  "missing": [
@@ -286,5 +279,10 @@
   }
  ],
  "conflicts": [],
- "observations": []
+ "observations": [
+  {
+   "from": "balance sheet",
+   "says": "customers are taking 111 days to pay, against 86 two years ago — the money is going out further"
+  }
+ ]
 }

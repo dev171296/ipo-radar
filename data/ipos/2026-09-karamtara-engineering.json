@@ -1,12 +1,12 @@
 {
-  "id": "2026-09-manipal-payment-and-identity-solutions",
+  "id": "2026-09-karamtara-engineering",
   "aliases": [
-    "Manipal Payment and Identity Solutions Limited"
+    "Karamtara Engineering Limited"
   ],
-  "first_seen": "2026-09-07T14:22:42+00:00",
-  "normalised_name": "manipal payment and identity solutions",
-  "name": "Manipal Payment and Identity Solutions Limited",
-  "symbol": "MPIMANIPAL",
+  "first_seen": "2026-09-07T18:21:01+00:00",
+  "normalised_name": "karamtara engineering",
+  "name": "Karamtara Engineering Limited",
+  "symbol": "KARAMTARA",
   "type": "mainboard",
   "status": "upcoming",
   "dates": {
@@ -15,8 +15,8 @@
     "open_as_given": "09-Sep-2026",
     "close_as_given": "11-Sep-2026"
   },
-  "price_band": "Rs.322 to Rs.339",
-  "issue_size_shares": 24244673.0,
+  "price_band": "Rs.241 to Rs.254",
+  "issue_size_shares": 36307052.0,
   "subscription": {
     "times": null,
     "shares_offered": null,

@@ -1,30 +1,51 @@
 {
- "ipo_id": "2026-09-qualiance-international",
- "name": "Qualiance International Limited",
- "scored_at": "2026-09-07T18:22:05+00:00",
- "built_from_bundle": "2026-09-07T18:22:05+00:00",
+ "ipo_id": "2026-09-karamtara-engineering",
+ "name": "Karamtara Engineering Limited",
+ "scored_at": "2026-09-07T18:22:03+00:00",
+ "built_from_bundle": "2026-09-07T18:22:03+00:00",
  "fundamentals": {
-  "score": null,
+  "score": 83.1,
   "withheld": null,
-  "points_earned": 0.0,
-  "points_assessed": 0,
-  "coverage_pct": 0,
-  "components": [],
+  "points_earned": 48.2,
+  "points_assessed": 58,
+  "coverage_pct": 58,
+  "components": [
+   {
+    "component": "growth_quality",
+    "weight": 14,
+    "points": 11.2,
+    "basis": "revenue CAGR 33.34% a year"
+   },
+   {
+    "component": "cash_flow_quality",
+    "weight": 14,
+    "points": 14.0,
+    "basis": "cash conversion 1.35× of EBITDA"
+   },
+   {
+    "component": "balance_sheet",
+    "weight": 10,
+    "points": 6.5,
+    "basis": "debt-to-equity 0.844"
+   },
+   {
+    "component": "issue_structure",
+    "weight": 10,
+    "points": 8.0,
+    "basis": "73% of the issue is fresh money to the company"
+   },
+   {
+    "component": "filing_hygiene",
+    "weight": 10,
+    "points": 8.5,
+    "basis": "summary form read; 529-page prospectus read; no contradictions"
+   }
+  ],
   "not_assessed": [
    {
     "component": "valuation_vs_peers",
     "weight": 18,
     "why": "no usable price comparison in the prospectus"
-   },
-   {
-    "component": "growth_quality",
-    "weight": 14,
-    "why": "no three-year revenue on file"
-   },
-   {
-    "component": "cash_flow_quality",
-    "weight": 14,
-    "why": "no cash flow statement read"
    },
    {
     "component": "profitability",
@@ -35,43 +56,26 @@
     "component": "promoter_governance",
     "weight": 12,
     "why": "not built yet"
-   },
-   {
-    "component": "balance_sheet",
-    "weight": 10,
-    "why": "no debt or liquidity figure read"
-   },
-   {
-    "component": "issue_structure",
-    "weight": 10,
-    "why": "fresh issue and total size not both readable"
-   },
-   {
-    "component": "filing_hygiene",
-    "weight": 10,
-    "why": "no documents on file — nothing to judge the paperwork by"
    }
   ]
  },
  "demand": {
   "score": null,
-  "withheld": "only 14% of this block could be assessed — below the 25% floor, so no score is given",
-  "points_earned": 7.0,
-  "points_assessed": 14,
-  "coverage_pct": 14,
-  "components": [
-   {
-    "component": "subscription_velocity",
-    "weight": 14,
-    "points": 7.0,
-    "basis": "15% of final demand was already in at the first reading"
-   }
-  ],
+  "withheld": null,
+  "points_earned": 0.0,
+  "points_assessed": 0,
+  "coverage_pct": 0,
+  "components": [],
   "not_assessed": [
    {
     "component": "subscription_level",
     "weight": 26,
-    "why": "the issue is still open (closes 2026-09-08) and stands at 83.68× — most demand arrives on the last day, so this is not scored yet"
+    "why": "no subscription figure yet"
+   },
+   {
+    "component": "subscription_velocity",
+    "weight": 14,
+    "why": "need at least two readings to see a rate"
    },
    {
     "component": "gmp_level",
@@ -110,14 +114,12 @@
   "triggered": [],
   "not_tested": [
    "three years of profit not on file",
-   "three years of revenue not on file",
-   "operating cash flow — statement not read",
    "qualified or adverse audit opinion — needs the prospectus chapters read",
    "SEBI or criminal proceedings against the promoters — needs the prospectus chapters read",
    "more than half of revenue from one related party — needs the prospectus chapters read"
   ]
  },
  "listing_score_quant_only": null,
- "longterm_score_quant_only": null,
+ "longterm_score_quant_only": 83.1,
  "status": "quant only — the AI block has not been built, so these are not final verdicts"
 }
