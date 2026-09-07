@@ -1,0 +1,16 @@
+{"at": "2026-09-07T19:50:40+00:00", "family": "groq", "model": "allam-2-7b", "ipo_id": "2026-09-asset-reconstruction"}
+{"at": "2026-09-07T19:50:43+00:00", "family": "gemini", "model": "gemini-flash-lite-latest", "ipo_id": "2026-09-asset-reconstruction"}
+{"at": "2026-09-07T19:50:47+00:00", "family": "groq", "model": "groq/compound-mini", "ipo_id": "2026-09-glass-wall-systems"}
+{"at": "2026-09-07T19:50:50+00:00", "family": "gemini", "model": "gemini-flash-lite-latest", "ipo_id": "2026-09-glass-wall-systems"}
+{"at": "2026-09-07T19:50:58+00:00", "family": "groq", "model": "groq/compound-mini", "ipo_id": "2026-09-kanohar-electricals"}
+{"at": "2026-09-07T19:51:01+00:00", "family": "gemini", "model": "gemini-flash-lite-latest", "ipo_id": "2026-09-kanohar-electricals"}
+{"at": "2026-09-07T19:51:03+00:00", "family": "groq", "model": "allam-2-7b", "ipo_id": "2026-09-karamtara-engineering"}
+{"at": "2026-09-07T19:51:05+00:00", "family": "gemini", "model": "gemini-flash-lite-latest", "ipo_id": "2026-09-karamtara-engineering"}
+{"at": "2026-09-07T19:51:12+00:00", "family": "groq", "model": "groq/compound-mini", "ipo_id": "2026-09-lcc-projects"}
+{"at": "2026-09-07T19:51:14+00:00", "family": "gemini", "model": "gemini-flash-lite-latest", "ipo_id": "2026-09-lcc-projects"}
+{"at": "2026-09-07T19:51:23+00:00", "family": "gemini", "model": "gemini-flash-lite-latest", "ipo_id": "2026-09-manipal-payment-and-identity-solutions"}
+{"at": "2026-09-07T19:51:31+00:00", "family": "gemini", "model": "gemini-flash-lite-latest", "ipo_id": "2026-09-pranav-constructions"}
+{"at": "2026-09-07T19:51:39+00:00", "family": "gemini", "model": "gemini-flash-lite-latest", "ipo_id": "2026-09-prasol-chemicals"}
+{"at": "2026-09-07T19:51:46+00:00", "family": "gemini", "model": "gemini-flash-lite-latest", "ipo_id": "2026-09-rentomojo"}
+{"at": "2026-09-07T19:51:48+00:00", "family": "groq", "model": "allam-2-7b", "ipo_id": "2026-09-steamhouse"}
+{"at": "2026-09-07T19:51:50+00:00", "family": "gemini", "model": "gemini-flash-lite-latest", "ipo_id": "2026-09-steamhouse"}

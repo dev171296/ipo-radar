@@ -1,0 +1,68 @@
+{
+ "ok": true,
+ "model": "gemini-flash-lite-latest",
+ "answered_at": "2026-09-07T19:51:46+00:00",
+ "evidence_fingerprint": "3e15a7198ebe21a9",
+ "prompt_chars": 8543,
+ "passages_supplied": {
+  "litigation": 8,
+  "governance": 8,
+  "business_quality": 8,
+  "risks": 7
+ },
+ "answer": {
+  "listing_view": {
+   "score": 40.0,
+   "reasoning": "Subscription levels, grey market premium, and broker sentiment are not available from the given extracts. Without these indicators of immediate demand, there is insufficient evidence to suggest a strong listing pop."
+  },
+  "longterm_view": {
+   "score": 45.0,
+   "reasoning": "The company shows revenue and EBITDA growth alongside positive operating cash flows. However, the current ratio below 1.0 indicates short-term liquidity pressure, and the business faces risks regarding financing arrangements and rental product demand."
+  },
+  "governance": {
+   "score": 30.0,
+   "reasoning": "The prospectus notes penalties and show cause notices issued by SEBI or stock exchanges against the promoter in the last five financial years."
+  },
+  "key_risks": [
+   {
+    "risk": "Promoter regulatory actions",
+    "why_it_matters": "SEBI or stock exchanges have issued penalties and show cause notices against the promoter.",
+    "citation": "[litigation, page 342]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Financing and covenant obligations",
+    "why_it_matters": "Inability to obtain further financing or meet obligations and financial covenants under financing arrangements could adversely affect operations.",
+    "citation": "[business, page 235]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Decline in rental demand",
+    "why_it_matters": "A decrease in demand for renting products may adversely affect the company's business and results of operations.",
+    "citation": "[business, page 209]",
+    "citation_verified": true
+   }
+  ],
+  "answers": [
+   {
+    "question": "how is the shortfall funded?",
+    "answer": "not answerable from what I was given",
+    "citation": "not answerable from what I was given",
+    "citation_verified": false
+   },
+   {
+    "question": "who is selling, and how much of their stake?",
+    "answer": "not answerable from what I was given",
+    "citation": "not answerable from what I was given",
+    "citation_verified": false
+   }
+  ],
+  "confidence": "low",
+  "what_would_change_my_mind": "Access to complete information regarding anchor investor allotment, subscription figures, grey market premium, and details on who is selling shares in the offer would alter this assessment.",
+  "citation_check": {
+   "claims_checked": 5,
+   "citations_verified": 3,
+   "citations_not_matching_what_we_sent": 0
+  }
+ }
+}

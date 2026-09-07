@@ -1,0 +1,68 @@
+{
+ "ok": true,
+ "model": "gemini-flash-lite-latest",
+ "answered_at": "2026-09-07T19:51:01+00:00",
+ "evidence_fingerprint": "9f3ed45a37fd78ba",
+ "prompt_chars": 9221,
+ "passages_supplied": {
+  "litigation": 8,
+  "governance": 8,
+  "business_quality": 8,
+  "risks": 7
+ },
+ "answer": {
+  "listing_view": {
+   "score": 40.0,
+   "reasoning": "Subscription data indicates virtually no demand as of the recorded timestamp, suggesting weak immediate market interest [DEMAND, subscription_times]. Although the price-to-earnings multiple is lower than the peer benchmark [VALUATION], the lack of momentum and information regarding grey market premiums or retail attention warrants caution."
+  },
+  "longterm_view": {
+   "score": 45.0,
+   "reasoning": "The company displays rapid top-line and bottom-line growth alongside improving return metrics [FINANCIALS]. However, high customer concentration—with the top 10 customers accounting for over 93% of revenue—creates substantial structural vulnerability for the long term [business, page 246]."
+  },
+  "governance": {
+   "score": 40.0,
+   "reasoning": "The prospectus highlights outstanding criminal proceedings, regulatory actions, and material proceedings against promoters and the company [litigation, page 420, 421]. Additionally, ongoing related-party transactions require close scrutiny [related_party, page 414]."
+  },
+  "key_risks": [
+   {
+    "risk": "High Customer Concentration",
+    "why_it_matters": "The top 10 customers account for over 93% of revenue, making the business heavily reliant on a handful of buyers [business, page 246].",
+    "citation": "[business, page 246]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Promoter and Company Proceedings",
+    "why_it_matters": "Outstanding criminal proceedings and regulatory actions against promoters and the company introduce legal and reputational risks [litigation, page 420, 421].",
+    "citation": "[litigation, page 420]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Raw Material Competition",
+    "why_it_matters": "Heightened competition for critical raw materials can adversely impact procurement timelines and operational results [business, page 256].",
+    "citation": "[business, page 256]",
+    "citation_verified": true
+   }
+  ],
+  "answers": [
+   {
+    "question": "1. is the peer set fairly chosen, and are the peers themselves expensive rather than this being cheap?",
+    "answer": "not answerable from what I was given",
+    "citation": "not answerable from what I was given",
+    "citation_verified": false
+   },
+   {
+    "question": "2. check receivables and inventory against the sales growth",
+    "answer": "not answerable from what I was given",
+    "citation": "not answerable from what I was given",
+    "citation_verified": false
+   }
+  ],
+  "confidence": "low",
+  "what_would_change_my_mind": "Clear evidence of customer diversification reducing top-client dependency, alongside a complete legal resolution or favorable outcome regarding outstanding promoter proceedings.",
+  "citation_check": {
+   "claims_checked": 5,
+   "citations_verified": 3,
+   "citations_not_matching_what_we_sent": 0
+  }
+ }
+}

@@ -1,0 +1,62 @@
+{
+ "ok": true,
+ "model": "gemini-flash-lite-latest",
+ "answered_at": "2026-09-07T19:50:43+00:00",
+ "evidence_fingerprint": "2dd62668a2c473f7",
+ "prompt_chars": 7848,
+ "passages_supplied": {
+  "litigation": 8,
+  "governance": 8,
+  "business_quality": 7,
+  "risks": 6
+ },
+ "answer": {
+  "listing_view": {
+   "score": 40.0,
+   "reasoning": "The issue has not opened yet, subscription and grey market data are unavailable, and the two-year profit CAGR is sluggish at 3.16% [derived figures]. Without speculative momentum indicators or institutional interest metrics, there is no fundamental catalyst for an immediate trading pop."
+  },
+  "longterm_view": {
+   "score": 35.0,
+   "reasoning": "While net worth is expanding, cash conversion is weak with operating cash flows covering only a fraction of EBITDA and PAT, and debt levels have increased sharply on the balance sheet [derived figures]. Stagnant profit growth over the past two years combined with operational risks across regulatory and personnel vectors suggests poor compounding capability [business, page 203]."
+  },
+  "governance": {
+   "score": 45.0,
+   "reasoning": "The prospectus notes promoter-related party disclosures [promoters, page 292] and past disciplinary scrutiny or regulatory exposure [litigation, page 447], though standard related-party frameworks exist [promoters, page 292]. Evidence regarding ultimate board independence and clean compliance records is thin."
+  },
+  "key_risks": [
+   {
+    "risk": "Regulatory and Legal Actions",
+    "why_it_matters": "Disciplinary actions, penalties, or criminal proceedings involving promoters or affiliated entities can disrupt business operations and damage market standing.",
+    "citation": "[litigation, page 447]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Key Personnel Retention",
+    "why_it_matters": "Inability to attract and retain qualified management and key personnel will directly impair the company's operational execution.",
+    "citation": "[business, page 203]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Refinancing and Debt Escalation",
+    "why_it_matters": "Significant reliance on debt and rising obligations can escalate financing costs and constrain future cash flows.",
+    "citation": "[business, page 200]",
+    "citation_verified": true
+   }
+  ],
+  "answers": [
+   {
+    "question": "check receivables and inventory against the sales growth",
+    "answer": "not answerable from what I was given",
+    "citation": "not answerable from what I was given",
+    "citation_verified": false
+   }
+  ],
+  "confidence": "medium",
+  "what_would_change_my_mind": "Proof of substantially higher cash conversion matching reported profits, acceleration of PAT growth well above the current 3.16% CAGR, and a clean regulatory record devoid of past disciplinary actions or penalties.",
+  "citation_check": {
+   "claims_checked": 4,
+   "citations_verified": 3,
+   "citations_not_matching_what_we_sent": 0
+  }
+ }
+}

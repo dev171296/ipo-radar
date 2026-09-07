@@ -1,0 +1,62 @@
+{
+ "ok": true,
+ "model": "gemini-flash-lite-latest",
+ "answered_at": "2026-09-07T19:51:14+00:00",
+ "evidence_fingerprint": "61d8d914fe7218e7",
+ "prompt_chars": 7274,
+ "passages_supplied": {
+  "litigation": 8,
+  "governance": 8,
+  "business_quality": 8,
+  "risks": 3
+ },
+ "answer": {
+  "listing_view": {
+   "score": 40.0,
+   "reasoning": "The issue has not opened yet, subscription and grey market data are not collected, and retail attention or broker conviction cannot be established from the provided text [not collected yet, not collected yet, not collected yet]."
+  },
+  "longterm_view": {
+   "score": 45.0,
+   "reasoning": "While revenue and profit have grown across the periods, cash conversion vs PAT is weak at 0.553 and income from the order book may be significantly less than estimated [business, page 200]."
+  },
+  "governance": {
+   "score": 50.0,
+   "reasoning": "There are mentions of related party transactions and disclosures under the Companies Act, but key balance sheet and debt figures are missing from the provided text [promoters, page 311, promoters, page 330]."
+  },
+  "key_risks": [
+   {
+    "risk": "Order Book Realization",
+    "why_it_matters": "Actual income may be significantly less than the estimates reflected in the order book.",
+    "citation": "[business, page 200]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Material Dependency",
+    "why_it_matters": "The company depends on certain regular construction materials required for project execution.",
+    "citation": "[business, page 203]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Intellectual Property",
+    "why_it_matters": "The company may not be able to adequately protect IP or may unintentionally infringe upon others.",
+    "citation": "[business, page 208]",
+    "citation_verified": true
+   }
+  ],
+  "answers": [
+   {
+    "question": "What is the cash conversion ratio?",
+    "answer": "0.553",
+    "citation": "not answerable from what I was given",
+    "citation_verified": false
+   }
+  ],
+  "confidence": "low",
+  "what_would_change_my_mind": "Access to complete balance sheet figures, verified debt levels, and actual post-issue subscription data would alter this view.",
+  "citation_check": {
+   "claims_checked": 4,
+   "citations_verified": 3,
+   "citations_not_matching_what_we_sent": 0
+  }
+ }
+}

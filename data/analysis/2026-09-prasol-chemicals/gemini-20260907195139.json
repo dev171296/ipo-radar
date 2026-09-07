@@ -1,0 +1,68 @@
+{
+ "ok": true,
+ "model": "gemini-flash-lite-latest",
+ "answered_at": "2026-09-07T19:51:39+00:00",
+ "evidence_fingerprint": "7fb2bfc902fa6ea4",
+ "prompt_chars": 9275,
+ "passages_supplied": {
+  "litigation": 8,
+  "governance": 8,
+  "business_quality": 8,
+  "risks": 5
+ },
+ "answer": {
+  "listing_view": {
+   "score": 0.0,
+   "reasoning": "Subscription data indicates zero demand at the recorded timestamp, and no pricing sentiment or grey market premium can be established from the text."
+  },
+  "longterm_view": {
+   "score": 40.0,
+   "reasoning": "While revenues and PAT show growth, cash conversion relative to EBITDA is poor (0.355) and free cash flow has fluctuated significantly, indicating earnings quality may not match reported profitability over multiple years."
+  },
+  "governance": {
+   "score": 50.0,
+   "reasoning": "No shares are pledged as of the date of the document [capital_structure, page 135], but the extracts provided lack sufficient detail for a robust assessment."
+  },
+  "key_risks": [
+   {
+    "risk": "Regulatory, Safety and Environmental Compliance",
+    "why_it_matters": "Stringent safety, health, environmental, and labour laws may adversely affect operations, cash flows, and financial condition if compliance fails or licenses cannot be renewed.",
+    "citation": "[business, page 318]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Transportation and Logistics Disruption",
+    "why_it_matters": "Operations depend heavily on timely and cost-efficient transportation, and prolonged disruptions can damage business results and cash flows.",
+    "citation": "[business, page 317]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Material Hazards and Business Losses",
+    "why_it_matters": "The business is subject to potential material hazards that could adversely affect overall financial health and operating results.",
+    "citation": "[business, page 319]",
+    "citation_verified": true
+   }
+  ],
+  "answers": [
+   {
+    "question": "check receivables and inventory against the sales growth",
+    "answer": "Receivable days have increased from 66.8 to 82.5, and 37.1% of extra sales are uncollected.",
+    "citation": "not answerable from what I was given",
+    "citation_verified": false
+   },
+   {
+    "question": "who is selling, and how much of their stake?",
+    "answer": "not answerable from what I was given",
+    "citation": "not answerable from what I was given",
+    "citation_verified": false
+   }
+  ],
+  "confidence": "low",
+  "what_would_change_my_mind": "Clear data on who is selling their stake, verifiable peer comparison metrics, and proof of consistent cash conversion matching reported net profit.",
+  "citation_check": {
+   "claims_checked": 5,
+   "citations_verified": 3,
+   "citations_not_matching_what_we_sent": 0
+  }
+ }
+}
