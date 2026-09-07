@@ -43,6 +43,25 @@ BANDS = [
 
 NO_CALL = ("NOT ENOUGH INFORMATION", "#6b6862")
 
+# Findings that a good average must not be allowed to bury.
+#
+# This exists because of a real case: Steamhouse scored 81.8 on fundamentals —
+# strong growth, excellent cash conversion, most of the money going into the
+# business — and came out as STRONG APPLY. But its current ratio was 0.36: it
+# owes nearly three times what it expects to collect within the year. Five good
+# components outvoted one that could sink the company. A weighted average is the
+# wrong tool for a condition that is fatal rather than merely bad, so any of
+# these caps the long-term call at "apply selectively" and says why.
+SERIOUS = {
+    "cash was consumed every year",
+    "the business consumed cash in its latest year",
+    "owes more this year than it expects to collect",
+    "sales growth is largely uncollected",
+    "heavily indebted",
+    "loss-making in every year shown",
+}
+SERIOUS_CEILING = 64          # the top of "apply selectively"
+
 # Below this share of the deciding weight, we do not call it at all.
 MINIMUM_WEIGHT = 0.50
 
@@ -75,6 +94,8 @@ def decide(score: dict, comparison: dict = None) -> dict:
     ai = (comparison or {}).get("ai_block") or {}
     vetoes = ((score or {}).get("vetoes") or {}).get("triggered") or []
     disagreements = (comparison or {}).get("disagreements") or []
+    serious = [flag.get("flag") for flag in (score or {}).get("flags", [])
+               if flag.get("flag") in SERIOUS]
 
     listing_score, listing_weight, listing_from = _weighted([
         (0.25, fundamentals, "our fundamentals"),
@@ -86,7 +107,7 @@ def decide(score: dict, comparison: dict = None) -> dict:
         (0.30, ai.get("longterm_view"), "the two AI readings"),
     ])
 
-    def wrap(name, value, weight, sources, ceiling=None):
+    def wrap(name, value, weight, sources, ceiling=None, capped_by=None):
         if value is None or weight < MINIMUM_WEIGHT:
             return {
                 "call": NO_CALL[0], "colour": NO_CALL[1], "score": value,
@@ -100,7 +121,7 @@ def decide(score: dict, comparison: dict = None) -> dict:
         notes = []
         if ceiling is not None and value > ceiling:
             capped = ceiling
-            notes.append(f"capped at {ceiling} by a hard stop")
+            notes.append(capped_by or f"capped at {ceiling}")
 
         label, colour = _band(capped)
         confidence = ("high" if weight >= 0.95 and not disagreements else
@@ -115,12 +136,23 @@ def decide(score: dict, comparison: dict = None) -> dict:
         return {"call": label, "colour": colour, "score": round(capped, 1),
                 "confidence": confidence, "why": why, "based_on": sources}
 
-    ceiling = 45 if vetoes else None
+    if vetoes:
+        ceiling, capped_by = 45, ("capped at 45 by a hard stop: "
+                                  + vetoes[0].get("veto", ""))
+    elif serious:
+        ceiling, capped_by = SERIOUS_CEILING, (
+            f"held to '{_band(SERIOUS_CEILING)[0].lower()}' because of one "
+            f"serious finding — {serious[0]} — which a good average must not "
+            f"be allowed to bury")
+    else:
+        ceiling, capped_by = None, None
+
     return {
         "listing": wrap("listing", listing_score, listing_weight, listing_from),
         "longterm": wrap("long-term", longterm_score, longterm_weight,
-                         longterm_from, ceiling=ceiling),
+                         longterm_from, ceiling=ceiling, capped_by=capped_by),
         "hard_stops": [v.get("veto") for v in vetoes],
+        "serious_findings": serious,
         "models_disagree": bool(disagreements),
     }
 

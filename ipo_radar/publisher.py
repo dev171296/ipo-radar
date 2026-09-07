@@ -32,6 +32,15 @@ from . import call as calls, storage
 
 OUT = os.path.join(storage.DATA, "email")
 
+# Gmail stops rendering at roughly 102 KB and hides the rest behind a "View
+# entire message" link — which means the part you most need could be the part
+# it hides. So the digest budgets itself: every IPO appears in the summary
+# table at the top, and the detailed write-ups are added in order of how much
+# they matter until the budget is used up. Measured 7 Sep 2026: 16 IPOs with
+# full detail came to 173 KB, well past the limit.
+GMAIL_CLIP_BYTES = 102_000
+BUDGET = 88_000            # leaves room for headers and the plain-text part
+
 INK = "#1c1b19"
 MUTED = "#6b6862"
 LINE = "#e3e0da"
@@ -413,6 +422,37 @@ def _overview(companies):
     return _table(rows)
 
 
+
+def _priority(entry):
+    """
+    Which write-ups earn the space, best first.
+
+    A decision you have to make in the next few days beats one you do not, and
+    an IPO we can actually say something about beats one we cannot. Sorting on
+    this rather than alphabetically means the truncation, when it happens,
+    removes the least useful thing rather than everything after "P".
+    """
+    ipo = entry.get("ipo") or {}
+    call = entry.get("call") or {}
+    score = ((entry.get("score") or {}).get("fundamentals") or {}).get("score")
+
+    has_call = 0 if (call.get("listing") or {}).get("call") not in (
+        None, "NOT ENOUGH INFORMATION") else 1
+    has_long_call = 0 if (call.get("longterm") or {}).get("call") not in (
+        None, "NOT ENOUGH INFORMATION") else 1
+    closing = (ipo.get("dates") or {}).get("close") or "9999-99-99"
+    urgent = 0 if closing <= _in_days(5) else 1
+    flagged = 0 if (call.get("hard_stops") or call.get("models_disagree")) else 1
+
+    return (has_call, urgent, has_long_call, flagged, -(score or 0),
+            ipo.get("name", ""))
+
+
+def _in_days(days):
+    from datetime import date, timedelta
+    return (date.today() + timedelta(days=days)).isoformat()
+
+
 # ------------------------------------------------------------ the message
 
 def build(companies, dashboard_url=None) -> tuple:
@@ -434,14 +474,33 @@ def build(companies, dashboard_url=None) -> tuple:
     subject = ("IPO Radar — " + "; ".join(headline[:3])
                if headline else f"IPO Radar — {len(companies)} tracked")
 
-    blocks = "".join(
-        company_block(c["ipo"], c.get("score"), c.get("bundle"),
-                      (c.get("ai") or {}).get("groq"),
-                      (c.get("ai") or {}).get("gemini"),
-                      (c.get("ai") or {}).get("comparison"),
-                      c.get("call"))
-        for c in companies)
     overview = _overview(companies)
+
+    # Detail in order of usefulness, until the budget runs out.
+    ordered = sorted(companies, key=_priority)
+    blocks, used, shown = [], len(overview), 0
+    for entry in ordered:
+        piece = company_block(entry["ipo"], entry.get("score"), entry.get("bundle"),
+                              (entry.get("ai") or {}).get("groq"),
+                              (entry.get("ai") or {}).get("gemini"),
+                              (entry.get("ai") or {}).get("comparison"),
+                              entry.get("call"))
+        if used + len(piece) > BUDGET and shown:
+            break
+        blocks.append(piece)
+        used += len(piece)
+        shown += 1
+
+    left_out = len(companies) - shown
+    if left_out > 0:
+        blocks.append(_para(
+            f"<b>{left_out} more IPO{'s' if left_out > 1 else ''}</b> "
+            f"{'are' if left_out > 1 else 'is'} in the table above but not "
+            f"written up here — this email would be cut off by Gmail past about "
+            f"100 KB, and a digest that hides its own ending is worse than a "
+            f"shorter one. The full detail for every IPO is always on the "
+            f"dashboard.", color=MUTED, size=13))
+    blocks = "".join(blocks)
 
     body = f"""<!doctype html>
 <html><head><meta charset="utf-8">
@@ -473,6 +532,14 @@ def build(companies, dashboard_url=None) -> tuple:
 </td></tr></table>
 </body></html>"""
 
+    if len(body) > GMAIL_CLIP_BYTES:
+        # Should not happen now, but if it ever does, say so in the email
+        # itself rather than letting Gmail silently swallow the end.
+        body = body.replace("</td></tr></table>\n</td></tr></table>",
+                            _para("This digest is unusually long and your mail "
+                                  "client may cut it short. Open the dashboard "
+                                  "for the complete picture.", color=BAD, size=13)
+                            + "</td></tr></table>\n</td></tr></table>", 1)
     return subject, body, plain_text(companies, when, dashboard_url)
 
 

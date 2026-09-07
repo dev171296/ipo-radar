@@ -45,13 +45,25 @@ ANALYSIS = os.path.join(storage.DATA, "analysis")
 
 # Free tiers, both. The first name that answers is used, so a model being
 # retired does not stop the run.
-MODELS = {
-    # Lite first: the same family, a fraction of the quota, and this is a
-    # reading-and-judging task rather than a hard reasoning one.
-    "gemini": ["gemini-2.5-flash-lite", "gemini-2.5-flash", "gemini-2.0-flash"],
-    "groq": ["llama-3.3-70b-versatile", "llama-3.1-70b-versatile",
-             "llama-3.1-8b-instant"],
+# Model names are NOT hardcoded, because hardcoding them failed: measured
+# 7 Sep 2026, every name in the previous version had been retired and both
+# providers answered HTTP 404 "this model is no longer available". A list
+# written today will rot the same way.
+#
+# So we ASK each provider what it currently offers, and choose from that. The
+# lists below are only a preference order — words we look for in the names that
+# come back, best first. An unknown future model whose name contains "flash"
+# will be picked up without anyone touching this file.
+PREFERENCES = {
+    "gemini": ["flash-lite", "flash", "pro"],
+    "groq": ["instant", "versatile", "llama"],
 }
+
+# Things that are not general chat models, whatever else their name says.
+NOT_CHAT = ("embedding", "aqa", "vision", "tts", "audio", "whisper", "guard",
+            "image", "imagen", "veo", "gemma", "learnlm")
+
+_discovered = {}
 
 TIMEOUT = 90
 
@@ -259,12 +271,71 @@ def build_prompt(bundle: dict, sections: dict, score: dict = None) -> tuple:
     return "\n".join(parts), passages
 
 
+
+def available_models(family: str, key: str) -> list:
+    """
+    What this provider will actually serve us today, best first.
+
+    Asked once per run and remembered, so we do not spend a request per IPO
+    finding out something that cannot change mid-run.
+    """
+    if family in _discovered:
+        return _discovered[family]
+
+    session = plain_session()
+    names = []
+    try:
+        if family == "gemini":
+            resp = session.get(
+                "https://generativelanguage.googleapis.com/v1beta/models",
+                headers={"x-goog-api-key": key}, timeout=30)
+            if resp.status_code == 200:
+                for model in resp.json().get("models", []):
+                    if "generateContent" not in (
+                            model.get("supportedGenerationMethods") or []):
+                        continue
+                    names.append(model["name"].split("/")[-1])
+        else:
+            resp = session.get("https://api.groq.com/openai/v1/models",
+                               headers={"Authorization": f"Bearer {key}"},
+                               timeout=30)
+            if resp.status_code == 200:
+                names = [m.get("id") for m in resp.json().get("data", [])
+                         if m.get("id")]
+    except Exception:
+        names = []
+
+    usable = [n for n in names
+              if not any(word in n.lower() for word in NOT_CHAT)]
+
+    def rank(name):
+        lowered = name.lower()
+        for position, word in enumerate(PREFERENCES.get(family, [])):
+            if word in lowered:
+                # Within the same preference, a longer name is usually the
+                # newer, more specific one — but a plain name beats a dated
+                # preview build, so previews sink.
+                return (position, "preview" in lowered or "exp" in lowered,
+                        -len(lowered))
+        return (99, True, 0)
+
+    usable.sort(key=rank)
+    _discovered[family] = usable
+    return usable
+
+
+def models_to_try(family: str, key: str) -> list:
+    """Discovered models first; if discovery itself failed, we have nothing."""
+    found = available_models(family, key)
+    return found[:4]
+
+
 # ------------------------------------------------------------ the models
 
 def ask_gemini(prompt: str, key: str) -> tuple:
     session = plain_session()
-    last = None
-    for model in MODELS["gemini"]:
+    last = "no usable model was offered by the provider"
+    for model in models_to_try("gemini", key):
         url = (f"https://generativelanguage.googleapis.com/v1beta/models/"
                f"{model}:generateContent")
         try:
@@ -292,8 +363,8 @@ def ask_gemini(prompt: str, key: str) -> tuple:
 
 def ask_groq(prompt: str, key: str) -> tuple:
     session = plain_session()
-    last = None
-    for model in MODELS["groq"]:
+    last = "no usable model was offered by the provider"
+    for model in models_to_try("groq", key):
         try:
             resp = session.post(
                 "https://api.groq.com/openai/v1/chat/completions", timeout=TIMEOUT,
