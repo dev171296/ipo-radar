@@ -26,7 +26,11 @@ import json
 import os
 from datetime import datetime, timezone
 
-DATA = "data"
+# Where everything is written. Overridable so a test run can be pointed at a
+# scratch directory instead: writing into the real data/ from a developer's
+# machine collides with what the scheduled run writes, and produces a merge
+# conflict every time. Set IPO_RADAR_DATA to try things safely.
+DATA = os.environ.get("IPO_RADAR_DATA", "data")
 DIRS = ["ipos", "history", "runlog", "predictions", "outcomes",
         "tracking", "corpus", "docs"]
 

@@ -10,18 +10,15 @@
   ]
  },
  "longterm": {
-  "call": "APPLY SELECTIVELY",
-  "colour": "#a86400",
-  "score": 64,
+  "call": "STRONG APPLY",
+  "colour": "#1f7a4d",
+  "score": 81.8,
   "confidence": "low",
-  "why": "built from our fundamentals — 60% of the deciding weight; held to 'apply selectively' because of one serious finding — owes more this year than it expects to collect — which a good average must not be allowed to bury",
+  "why": "built from our fundamentals — 60% of the deciding weight",
   "based_on": [
    "our fundamentals"
   ]
  },
  "hard_stops": [],
- "serious_findings": [
-  "owes more this year than it expects to collect"
- ],
  "models_disagree": false
 }

@@ -1,4 +1,4 @@
-IPO RADAR — generated 2026-09-07 19:47 UTC
+IPO RADAR — generated 2026-09-07 19:43 UTC
 ============================================================
 
 Asset Reconstruction Company (India) Limited
@@ -56,14 +56,14 @@ Qualiance International Limited
   Fundamentals: None (0% assessed)   Demand: None (14% assessed)
 
 Rentomojo Limited
-  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> APPLY SELECTIVELY
+  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> APPLY
   mainboard · 2026-09-09 to 2026-09-11 · Rs.384 to Rs.404
   Fundamentals: 73.7 (58% assessed)   Demand: None (0% assessed)
   * owes more this year than it expects to collect: current ratio 0.55
   * mostly an exit for existing holders: only 12% of the money reaches the company
 
 Steamhouse India Limited
-  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> APPLY SELECTIVELY
+  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> STRONG APPLY
   mainboard · 2026-09-09 to 2026-09-11 · Rs.77 to Rs.81
   Fundamentals: 81.8 (58% assessed)   Demand: None (0% assessed)
   * owes more this year than it expects to collect: current ratio 0.36

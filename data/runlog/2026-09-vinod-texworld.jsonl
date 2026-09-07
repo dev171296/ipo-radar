@@ -1,2 +1,3 @@
 {"at": "2026-09-07T18:21:01+00:00", "event": "discovered", "ok": true, "detail": "Vinod Texworld Limited", "source": "nse"}
 {"at": "2026-09-07T18:22:02+00:00", "event": "prospectus_not_found", "ok": false, "source": "sebi"}
+{"at": "2026-09-07T19:43:42+00:00", "event": "prospectus_not_found", "ok": false, "source": "sebi"}
