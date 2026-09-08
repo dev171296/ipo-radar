@@ -1,24 +1,22 @@
 {
  "listing": {
-  "call": "APPLY SELECTIVELY",
-  "colour": "#a86400",
-  "score": 64.0,
-  "confidence": "low",
-  "why": "built from our fundamentals, the two AI readings — 50% of the deciding weight",
+  "call": "NOT ENOUGH INFORMATION",
+  "colour": "#6b6862",
+  "score": 83.1,
+  "confidence": "none",
+  "why": "only 25% of what decides the listing call is available — no call is better than a guess dressed as one",
   "based_on": [
-   "our fundamentals",
-   "the two AI readings"
+   "our fundamentals"
   ]
  },
  "longterm": {
-  "call": "APPLY",
-  "colour": "#2f7d32",
-  "score": 72.1,
-  "confidence": "medium",
-  "why": "built from our fundamentals, the two AI readings — 90% of the deciding weight",
+  "call": "STRONG APPLY",
+  "colour": "#1f7a4d",
+  "score": 83.1,
+  "confidence": "low",
+  "why": "built from our fundamentals — 60% of the deciding weight",
   "based_on": [
-   "our fundamentals",
-   "the two AI readings"
+   "our fundamentals"
   ]
  },
  "hard_stops": [],
