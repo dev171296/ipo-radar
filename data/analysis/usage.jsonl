@@ -31,3 +31,13 @@
 {"at": "2026-09-08T09:59:02+00:00", "family": "gemini", "model": "gemini-flash-lite-latest", "ipo_id": "2026-09-pranav-constructions"}
 {"at": "2026-09-08T09:59:13+00:00", "family": "groq", "model": "groq/compound", "ipo_id": "2026-09-prasol-chemicals"}
 {"at": "2026-09-08T09:59:16+00:00", "family": "gemini", "model": "gemini-flash-lite-latest", "ipo_id": "2026-09-prasol-chemicals"}
+{"at": "2026-09-08T12:59:48+00:00", "family": "groq", "model": "groq/compound-mini", "ipo_id": "2026-09-glass-wall-systems"}
+{"at": "2026-09-08T12:59:51+00:00", "family": "gemini", "model": "gemini-flash-lite-latest", "ipo_id": "2026-09-glass-wall-systems"}
+{"at": "2026-09-08T12:59:57+00:00", "family": "groq", "model": "groq/compound-mini", "ipo_id": "2026-09-kanohar-electricals"}
+{"at": "2026-09-08T13:00:00+00:00", "family": "gemini", "model": "gemini-flash-lite-latest", "ipo_id": "2026-09-kanohar-electricals"}
+{"at": "2026-09-08T13:00:09+00:00", "family": "groq", "model": "qwen/qwen3.6-27b", "ipo_id": "2026-09-pranav-constructions"}
+{"at": "2026-09-08T13:00:12+00:00", "family": "gemini", "model": "gemini-flash-lite-latest", "ipo_id": "2026-09-pranav-constructions"}
+{"at": "2026-09-08T13:00:19+00:00", "family": "groq", "model": "groq/compound-mini", "ipo_id": "2026-09-prasol-chemicals"}
+{"at": "2026-09-08T13:03:04+00:00", "family": "gemini", "model": "gemini-3.5-flash-lite", "ipo_id": "2026-09-prasol-chemicals"}
+{"at": "2026-09-08T13:03:09+00:00", "family": "groq", "model": "groq/compound-mini", "ipo_id": "2026-09-steamhouse"}
+{"at": "2026-09-08T13:03:13+00:00", "family": "gemini", "model": "gemini-flash-lite-latest", "ipo_id": "2026-09-steamhouse"}
