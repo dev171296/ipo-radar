@@ -1,0 +1,62 @@
+{
+ "ok": true,
+ "model": "groq/compound-mini",
+ "answered_at": "2026-09-08T07:22:07+00:00",
+ "evidence_fingerprint": "2dd62668a2c473f7",
+ "prompt_chars": 7848,
+ "passages_supplied": {
+  "litigation": 8,
+  "governance": 8,
+  "business_quality": 7,
+  "risks": 6
+ },
+ "answer": {
+  "listing_view": {
+   "score": 45.0,
+   "reasoning": "The prospectus provides no data on subscription levels, anchor allocations, or market sentiment, making it impossible to gauge short‑term demand or pricing dynamics."
+  },
+  "longterm_view": {
+   "score": 58.0,
+   "reasoning": "Revenue has risen from ₹5,701 m to ₹7,530 m over three years and PAT is positive, but cash conversion is low (≈44% of PAT) and debt‑to‑equity has risen to 0.39, indicating modest growth with rising leverage."
+  },
+  "governance": {
+   "score": 62.0,
+   "reasoning": "Promoter shareholdings are partially pledged (see [promoters, page 273] and [promoters, page 332]), but no conflicts of interest are disclosed."
+  },
+  "key_risks": [
+   {
+    "risk": "Debt refinancing risk",
+    "why_it_matters": "Higher debt levels could increase financing costs and constrain cash flows.",
+    "citation": "[business, page 200]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Operational and regulatory risk",
+    "why_it_matters": "The business faces multiple regulatory and compliance exposures.",
+    "citation": "[business, page 199]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Competition risk",
+    "why_it_matters": "Intense competition could pressure margins and growth.",
+    "citation": "[business, page 202]",
+    "citation_verified": true
+   }
+  ],
+  "answers": [
+   {
+    "question": "check receivables and inventory against the sales growth",
+    "answer": "The prospectus does not disclose receivables or inventory balances, so a comparison with sales growth cannot be performed.",
+    "citation": "not answerable from what I was given",
+    "citation_verified": false
+   }
+  ],
+  "confidence": "low",
+  "what_would_change_my_mind": "If the prospectus included detailed receivables and inventory figures showing a consistent or improving turnover relative to revenue growth, the assessment could be revised.",
+  "citation_check": {
+   "claims_checked": 4,
+   "citations_verified": 3,
+   "citations_not_matching_what_we_sent": 0
+  }
+ }
+}

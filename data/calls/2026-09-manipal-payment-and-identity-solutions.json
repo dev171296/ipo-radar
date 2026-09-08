@@ -11,9 +11,9 @@
   ]
  },
  "longterm": {
-  "call": "APPLY SELECTIVELY",
-  "colour": "#a86400",
-  "score": 61.8,
+  "call": "APPLY",
+  "colour": "#2f7d32",
+  "score": 65.1,
   "confidence": "medium",
   "why": "built from our fundamentals, the two AI readings — 90% of the deciding weight",
   "based_on": [

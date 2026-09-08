@@ -1,0 +1,80 @@
+{
+ "ok": true,
+ "model": "groq/compound-mini",
+ "answered_at": "2026-09-08T07:22:46+00:00",
+ "evidence_fingerprint": "3e15a7198ebe21a9",
+ "prompt_chars": 8543,
+ "passages_supplied": {
+  "litigation": 8,
+  "governance": 8,
+  "business_quality": 8,
+  "risks": 7
+ },
+ "answer": {
+  "listing_view": {
+   "score": 55.0,
+   "reasoning": "The prospectus shows strong recent revenue growth (41.7% CAGR) and healthy EBITDA margins, which could attract investors, but the lack of any subscription or market interest data makes the near‑term demand outlook uncertain."
+  },
+  "longterm_view": {
+   "score": 60.0,
+   "reasoning": "Operating cash flow exceeds EBITDA (conversion 1.058) and margins are high, suggesting a viable business model, yet a low current ratio (~0.55) and rising debt‑to‑equity raise concerns about liquidity and financial resilience."
+  },
+  "governance": {
+   "score": 65.0,
+   "reasoning": "The prospectus repeatedly states no conflicts of interest with suppliers, lessors or related parties, indicating a clean governance narrative, though details are sparse."
+  },
+  "key_risks": [
+   {
+    "risk": "Demand slowdown",
+    "why_it_matters": "A decline in demand for rental products would directly hit revenue.",
+    "citation": "[business, page 209]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Financing constraints",
+    "why_it_matters": "Adverse financing terms could impair cash flows and ability to meet obligations.",
+    "citation": "[business, page 235]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Contractual disputes",
+    "why_it_matters": "Loss of key contracts could reduce revenue and cash flow.",
+    "citation": "[business, page 216]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Personnel dependence",
+    "why_it_matters": "Reliance on staff across 29 cities creates operational risk if talent is lost.",
+    "citation": "[business, page 221]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Inability to raise further funds",
+    "why_it_matters": "Failure to obtain additional financing could breach covenants and strain liquidity.",
+    "citation": "[business, page 235]",
+    "citation_verified": true
+   }
+  ],
+  "answers": [
+   {
+    "question": "how is the shortfall funded?",
+    "answer": "not answerable from what I was given",
+    "citation": "not answerable from what I was given",
+    "citation_verified": false
+   },
+   {
+    "question": "who is selling, and how much of their stake?",
+    "answer": "not answerable from what I was given",
+    "citation": "not answerable from what I was given",
+    "citation_verified": false
+   }
+  ],
+  "confidence": "low",
+  "what_would_change_my_mind": "If the prospectus disclosed the exact promoter shareholding being sold and the allocation of the fresh issue proceeds, or provided subscription and anchor investor data, the funding and selling‑stake assessment could be made definitively.",
+  "citation_check": {
+   "claims_checked": 7,
+   "citations_verified": 5,
+   "citations_not_matching_what_we_sent": 0
+  }
+ }
+}
