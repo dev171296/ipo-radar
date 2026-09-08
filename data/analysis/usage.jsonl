@@ -41,3 +41,15 @@
 {"at": "2026-09-08T13:03:04+00:00", "family": "gemini", "model": "gemini-3.5-flash-lite", "ipo_id": "2026-09-prasol-chemicals"}
 {"at": "2026-09-08T13:03:09+00:00", "family": "groq", "model": "groq/compound-mini", "ipo_id": "2026-09-steamhouse"}
 {"at": "2026-09-08T13:03:13+00:00", "family": "gemini", "model": "gemini-flash-lite-latest", "ipo_id": "2026-09-steamhouse"}
+{"at": "2026-09-08T17:23:13+00:00", "family": "groq", "model": "allam-2-7b", "ipo_id": "2026-09-asset-reconstruction"}
+{"at": "2026-09-08T17:23:15+00:00", "family": "gemini", "model": "gemini-flash-lite-latest", "ipo_id": "2026-09-asset-reconstruction"}
+{"at": "2026-09-08T17:23:22+00:00", "family": "groq", "model": "groq/compound", "ipo_id": "2026-09-karamtara-engineering"}
+{"at": "2026-09-08T17:23:24+00:00", "family": "gemini", "model": "gemini-flash-lite-latest", "ipo_id": "2026-09-karamtara-engineering"}
+{"at": "2026-09-08T17:23:29+00:00", "family": "groq", "model": "groq/compound", "ipo_id": "2026-09-lcc-projects"}
+{"at": "2026-09-08T17:23:31+00:00", "family": "gemini", "model": "gemini-flash-lite-latest", "ipo_id": "2026-09-lcc-projects"}
+{"at": "2026-09-08T17:23:37+00:00", "family": "groq", "model": "openai/gpt-oss-120b", "ipo_id": "2026-09-manipal-payment-and-identity-solutions"}
+{"at": "2026-09-08T17:23:39+00:00", "family": "gemini", "model": "gemini-flash-lite-latest", "ipo_id": "2026-09-manipal-payment-and-identity-solutions"}
+{"at": "2026-09-08T17:23:43+00:00", "family": "groq", "model": "qwen/qwen3.8-27b", "ipo_id": "2026-09-pranav-constructions"}
+{"at": "2026-09-08T17:23:46+00:00", "family": "groq", "model": "allam-2-7b", "ipo_id": "2026-09-rentomojo"}
+{"at": "2026-09-08T17:23:48+00:00", "family": "gemini", "model": "gemini-flash-lite-latest", "ipo_id": "2026-09-rentomojo"}
+{"at": "2026-09-08T17:23:57+00:00", "family": "gemini", "model": "gemini-flash-lite-latest", "ipo_id": "2026-09-veegaland-developers"}

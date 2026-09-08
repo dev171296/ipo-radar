@@ -1,0 +1,272 @@
+{
+ "ipo_id": "2026-09-veegaland-developers",
+ "built_at": "2026-09-08T17:23:11+00:00",
+ "name": "Veegaland Developers Limited",
+ "symbol": "VEEGALAND",
+ "type": "mainboard",
+ "status": "upcoming",
+ "offer": {
+  "price_low": {
+   "value": 130.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.130 to Rs.140"
+  },
+  "price_high": {
+   "value": 140.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.130 to Rs.140"
+  },
+  "issue_size_shares": {
+   "value": 16153846.0,
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "issue_size_rs_million": {
+   "value": 2261.54,
+   "source": "computed",
+   "confidence": "high",
+   "note": "shares × top of the price band"
+  },
+  "open_date": {
+   "value": "2026-09-10",
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "close_date": {
+   "value": "2026-09-15",
+   "source": "nse_calendar",
+   "confidence": "high"
+  }
+ },
+ "financials": {
+  "revenue": {
+   "value": [
+    25097.62,
+    19237.53,
+    11076.76
+   ],
+   "source": "abridged prospectus",
+   "confidence": "high",
+   "page": 6,
+   "raw": "Revenue from Operations 25,097.62 19,237.53 11,076.76"
+  },
+  "ebitda": {
+   "value": [
+    4264.22,
+    3377.35,
+    1672.23
+   ],
+   "source": "abridged prospectus",
+   "confidence": "high",
+   "page": 6,
+   "raw": "EBITDA (3) 4,264.22 3,377.35 1,672.23"
+  }
+ },
+ "valuation": {},
+ "cash": {
+  "operating_cash_flow": {
+   "value": [
+    -7425.95,
+    -4399.56,
+    882.73
+   ],
+   "source": "full prospectus (financials chapter)",
+   "confidence": "high",
+   "page": 308,
+   "raw": "Net Cash from/ (used in) Operating activities (A) (7,425.95) (4,399.56) 882.73",
+   "note": "newest year first"
+  },
+  "conversion_vs_ebitda": {
+   "value": -1.741,
+   "source": "computed",
+   "confidence": "high",
+   "note": "1.0 means the reported profit arrived as cash"
+  },
+  "negative_in_all_years": {
+   "value": false,
+   "source": "computed",
+   "confidence": "high"
+  },
+  "negative_in_latest_year": {
+   "value": true,
+   "source": "computed",
+   "confidence": "high"
+  }
+ },
+ "balance_sheet": {
+  "debt_to_equity": {
+   "value": [
+    2.7,
+    2.67,
+    1.12
+   ],
+   "source": "full prospectus (financials)",
+   "confidence": "high",
+   "page": 308,
+   "note": "borrowings ÷ what the owners have in it — printed in the document"
+  },
+  "current_ratio": {
+   "value": [
+    2.24,
+    2.12,
+    5.66
+   ],
+   "source": "full prospectus (financials)",
+   "confidence": "high",
+   "page": 308,
+   "note": "money due in within a year ÷ money due out — printed in the document"
+  },
+  "total_debt": {
+   "value": [
+    8558.9,
+    17696.99,
+    12022.65
+   ],
+   "source": "full prospectus (financials)",
+   "confidence": "high",
+   "page": 308,
+   "note": "borrowings, newest year first"
+  },
+  "net_worth": {
+   "value": [
+    26690.02,
+    6544.39,
+    4507.1
+   ],
+   "source": "full prospectus (financials)",
+   "confidence": "high",
+   "page": 308,
+   "note": "the owners' stake, newest year first"
+  }
+ },
+ "derived": {
+  "revenue_cagr_2y_pct": {
+   "value": 50.53,
+   "source": "computed",
+   "confidence": "high",
+   "note": "two years of compounding, newest over oldest"
+  },
+  "revenue_growth_latest_pct": {
+   "value": 30.46,
+   "source": "computed",
+   "confidence": "high"
+  },
+  "ebitda_margin_pct": {
+   "value": [
+    16.99,
+    17.56,
+    15.1
+   ],
+   "source": "computed",
+   "confidence": "high"
+  }
+ },
+ "demand": {},
+ "documents": {
+  "abridged": {
+   "pages": 9,
+   "url": "https://www.sebi.gov.in/sebi_data/commondocs/sep-2026/Veegaland%20Developers%20Ltd.%20-%20Abridged%20Prospectus_p.pdf",
+   "fields": [
+    "cin",
+    "financials",
+    "lead_managers",
+    "objects",
+    "price_band",
+    "promoters",
+    "registrar",
+    "risk_factors"
+   ],
+   "read_at": "2026-09-08T17:22:51+00:00"
+  },
+  "full": {
+   "pages": 534,
+   "url": "https://www.sebi.gov.in/sebi_data/attachdocs/sep-2026/1788239986820.pdf",
+   "chapters": {
+    "capital_structure": [
+     105,
+     131
+    ],
+    "objects": [
+     132,
+     228
+    ],
+    "business": [
+     229,
+     299
+    ],
+    "promoters": [
+     300,
+     307
+    ],
+    "financials": [
+     308,
+     423
+    ],
+    "related_party": [
+     424,
+     430
+    ],
+    "litigation": [
+     431,
+     534
+    ]
+   },
+   "read_at": "2026-09-08T17:23:06+00:00"
+  }
+ },
+ "missing": [
+  {
+   "what": "fresh issue vs offer for sale split",
+   "why": "could not be read from the offer details table"
+  },
+  {
+   "what": "ROE",
+   "why": "this document does not print it"
+  },
+  {
+   "what": "ROCE",
+   "why": "this document does not print it"
+  },
+  {
+   "what": "valuation comparison",
+   "why": "no basis-for-price chapter found in the prospectus"
+  },
+  {
+   "what": "subscription",
+   "why": "the issue has not opened yet"
+  },
+  {
+   "what": "grey market premium",
+   "why": "no free source built yet"
+  },
+  {
+   "what": "anchor investor allotment",
+   "why": "not collected yet"
+  },
+  {
+   "what": "broker conviction",
+   "why": "not collected yet"
+  },
+  {
+   "what": "media coverage",
+   "why": "not collected yet"
+  },
+  {
+   "what": "retail attention",
+   "why": "not collected yet"
+  }
+ ],
+ "conflicts": [],
+ "observations": [
+  {
+   "from": "balance sheet",
+   "says": "borrowings changed sharply over the three years — debt-to-equity went 2.667 to 0.321"
+  },
+  {
+   "from": "balance sheet",
+   "says": "our own sum gives a debt-to-equity of 0.321 where the document prints 2.7 — using the document's figure"
+  }
+ ]
+}
