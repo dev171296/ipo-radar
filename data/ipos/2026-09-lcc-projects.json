@@ -18,15 +18,15 @@
   "price_band": "Rs.139 to Rs.146",
   "issue_size_shares": 20927281.0,
   "subscription": {
-    "times": 0.3959313204615545,
+    "times": 0.9712266012961741,
     "shares_offered": 20927281.0,
-    "shares_bid": 8285766.0
+    "shares_bid": 20325132.0
   },
   "also_on_bse": false,
   "sources": {
     "calendar": "nse",
-    "fetched_at": "2026-09-09T07:30:23+00:00"
+    "fetched_at": "2026-09-09T10:01:43+00:00"
   },
   "missing": [],
-  "rebuilt_at": "2026-09-09T07:30:23+00:00"
+  "rebuilt_at": "2026-09-09T10:01:43+00:00"
 }

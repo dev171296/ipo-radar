@@ -1,0 +1,182 @@
+{
+ "ipo_id": "2026-09-manika-plastech",
+ "built_at": "2026-09-09T10:02:55+00:00",
+ "name": "Manika Plastech Limited",
+ "symbol": "MANIKA",
+ "type": "mainboard",
+ "status": "upcoming",
+ "offer": {
+  "price_low": {
+   "value": 40.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.40 to Rs.43"
+  },
+  "price_high": {
+   "value": 43.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.40 to Rs.43"
+  },
+  "issue_size_shares": {
+   "value": 30799418.0,
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "issue_size_rs_million": {
+   "value": 1324.37,
+   "source": "computed",
+   "confidence": "high",
+   "note": "shares × top of the price band"
+  },
+  "open_date": {
+   "value": "2026-09-11",
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "close_date": {
+   "value": "2026-09-16",
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "fresh_issue_rs_million": {
+   "value": 925.0,
+   "source": "abridged prospectus",
+   "confidence": "low",
+   "page": 1,
+   "raw": "fresh issue offer for sale offer size eligibility and share reservation among qibs, niis & riis fresh issue and offer for sale up to [●] equity shares of face value of ₹ 2/- each aggregating up to ₹ 9",
+   "note": "read from a table flattened to text — verify before relying on it"
+  }
+ },
+ "financials": {},
+ "valuation": {},
+ "cash": {
+  "operating_cash_flow": {
+   "value": [
+    99.22,
+    443.0,
+    368.0
+   ],
+   "source": "full prospectus (promoters chapter)",
+   "confidence": "high",
+   "page": 270,
+   "raw": "Net Cash generated from / (used in) Operating Activities (A) 99.22 443.00 368",
+   "note": "newest year first"
+  },
+  "negative_in_all_years": {
+   "value": false,
+   "source": "computed",
+   "confidence": "high"
+  },
+  "negative_in_latest_year": {
+   "value": false,
+   "source": "computed",
+   "confidence": "high"
+  }
+ },
+ "balance_sheet": {},
+ "derived": {},
+ "demand": {},
+ "documents": {
+  "abridged": {
+   "pages": 13,
+   "url": "https://www.sebi.gov.in/sebi_data/commondocs/sep-2026/Manika%20IPO%20-%20Abridged%20Prospectus_p.pdf",
+   "fields": [
+    "cin",
+    "financials",
+    "lead_managers",
+    "objects",
+    "offer_details",
+    "price_band",
+    "promoters",
+    "registrar",
+    "reservation",
+    "risk_factors"
+   ],
+   "read_at": "2026-09-09T10:01:48+00:00"
+  },
+  "full": {
+   "pages": 503,
+   "url": "https://www.sebi.gov.in/sebi_data/attachdocs/sep-2026/1788774340354.pdf",
+   "chapters": {
+    "capital_structure": [
+     93,
+     112
+    ],
+    "objects": [
+     113,
+     131
+    ],
+    "basis_for_price": [
+     132,
+     209
+    ],
+    "business": [
+     210,
+     269
+    ],
+    "promoters": [
+     270,
+     378
+    ],
+    "litigation": [
+     379,
+     475
+    ],
+    "related_party": [
+     476,
+     503
+    ]
+   },
+   "read_at": "2026-09-09T10:02:54+00:00"
+  }
+ },
+ "missing": [
+  {
+   "what": "three-year financials",
+   "why": "abridged prospectus read, but no three-figure rows matched"
+  },
+  {
+   "what": "ROE",
+   "why": "this document does not print it"
+  },
+  {
+   "what": "ROCE",
+   "why": "this document does not print it"
+  },
+  {
+   "what": "valuation comparison",
+   "why": "no earnings-per-share rows found"
+  },
+  {
+   "what": "balance sheet",
+   "why": "found the chapter but could not read a debt or liquidity figure from it"
+  },
+  {
+   "what": "subscription",
+   "why": "the issue has not opened yet"
+  },
+  {
+   "what": "grey market premium",
+   "why": "no free source built yet"
+  },
+  {
+   "what": "anchor investor allotment",
+   "why": "not collected yet"
+  },
+  {
+   "what": "broker conviction",
+   "why": "not collected yet"
+  },
+  {
+   "what": "media coverage",
+   "why": "not collected yet"
+  },
+  {
+   "what": "retail attention",
+   "why": "not collected yet"
+  }
+ ],
+ "conflicts": [],
+ "observations": []
+}
