@@ -1,27 +1,25 @@
 {
  "listing": {
-  "call": "WAIT FOR LISTING",
-  "colour": "#b25b1a",
-  "score": 49.0,
-  "confidence": "low",
-  "why": "built from our fundamentals, the two AI readings — 50% of the deciding weight; the two models disagree, which lowers confidence",
+  "call": "NOT ENOUGH INFORMATION",
+  "colour": "#6b6862",
+  "score": 75.4,
+  "confidence": "none",
+  "why": "only 25% of what decides the listing call is available — no call is better than a guess dressed as one",
   "based_on": [
-   "our fundamentals",
-   "the two AI readings"
+   "our fundamentals"
   ]
  },
  "longterm": {
   "call": "APPLY",
   "colour": "#2f7d32",
-  "score": 68.6,
+  "score": 75.4,
   "confidence": "low",
-  "why": "built from our fundamentals, the two AI readings — 90% of the deciding weight; the two models disagree, which lowers confidence",
+  "why": "built from our fundamentals — 60% of the deciding weight",
   "based_on": [
-   "our fundamentals",
-   "the two AI readings"
+   "our fundamentals"
   ]
  },
  "hard_stops": [],
  "serious_findings": [],
- "models_disagree": true
+ "models_disagree": false
 }

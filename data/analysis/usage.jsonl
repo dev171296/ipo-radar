@@ -110,3 +110,7 @@
 {"at": "2026-09-09T13:07:46+00:00", "family": "groq", "model": "openai/gpt-oss-120b", "ipo_id": "2026-09-steamhouse"}
 {"at": "2026-09-09T13:07:50+00:00", "family": "gemini", "model": "gemini-flash-lite-latest", "ipo_id": "2026-09-steamhouse"}
 {"at": "2026-09-09T13:07:54+00:00", "family": "groq", "model": "openai/gpt-oss-120b", "ipo_id": "2026-09-veegaland-developers"}
+{"at": "2026-09-09T17:14:39+00:00", "family": "groq", "model": "groq/compound-mini", "ipo_id": "2026-09-pranav-constructions"}
+{"at": "2026-09-09T17:14:42+00:00", "family": "gemini", "model": "gemini-flash-lite-latest", "ipo_id": "2026-09-pranav-constructions"}
+{"at": "2026-09-09T17:14:48+00:00", "family": "groq", "model": "groq/compound-mini", "ipo_id": "2026-09-veegaland-developers"}
+{"at": "2026-09-09T17:14:50+00:00", "family": "gemini", "model": "gemini-flash-lite-latest", "ipo_id": "2026-09-veegaland-developers"}

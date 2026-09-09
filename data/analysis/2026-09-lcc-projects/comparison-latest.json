@@ -1,22 +1,5 @@
 {
- "scores": {
-  "listing_view": {
-   "groq": 30.0,
-   "gemini": 40.0
-  },
-  "longterm_view": {
-   "groq": 45.0,
-   "gemini": 45.0
-  },
-  "governance": {
-   "groq": 40.0,
-   "gemini": 50.0
-  }
- },
+ "scores": {},
  "disagreements": [],
- "ai_block": {
-  "listing_view": 35.0,
-  "longterm_view": 45.0,
-  "governance": 45.0
- }
+ "ai_block": {}
 }
