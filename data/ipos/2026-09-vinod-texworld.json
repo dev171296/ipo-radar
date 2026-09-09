@@ -8,25 +8,25 @@
   "name": "Vinod Texworld Limited",
   "symbol": "VINOD",
   "type": "sme",
-  "status": "upcoming",
+  "status": "open",
   "dates": {
     "open": "2026-09-09",
     "close": "2026-09-11",
     "open_as_given": "09-Sep-2026",
     "close_as_given": "11-Sep-2026"
   },
-  "price_band": "Rs.94",
-  "issue_size_shares": 4556400.0,
+  "price_band": null,
+  "issue_size_shares": null,
   "subscription": {
-    "times": null,
-    "shares_offered": null,
-    "shares_bid": null
+    "times": 0.03,
+    "shares_offered": 4556400.0,
+    "shares_bid": 117600.0
   },
-  "also_on_bse": false,
+  "also_on_bse": true,
   "sources": {
     "calendar": "nse",
-    "fetched_at": "2026-09-08T17:22:44+00:00"
+    "fetched_at": "2026-09-09T07:30:23+00:00"
   },
   "missing": [],
-  "rebuilt_at": "2026-09-08T17:22:44+00:00"
+  "rebuilt_at": "2026-09-09T07:30:23+00:00"
 }

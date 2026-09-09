@@ -1,21 +1,21 @@
 {
  "listing": {
-  "call": "APPLY SELECTIVELY",
-  "colour": "#a86400",
-  "score": 60.8,
+  "call": "WAIT FOR LISTING",
+  "colour": "#b25b1a",
+  "score": 42.0,
   "confidence": "low",
-  "why": "built from our fundamentals, the two AI readings — 50% of the deciding weight; the two models disagree, which lowers confidence",
+  "why": "built from our fundamentals, the two AI readings — 50% of the deciding weight",
   "based_on": [
    "our fundamentals",
    "the two AI readings"
   ]
  },
  "longterm": {
-  "call": "APPLY",
-  "colour": "#2f7d32",
-  "score": 66.0,
-  "confidence": "low",
-  "why": "built from our fundamentals, the two AI readings — 90% of the deciding weight; the two models disagree, which lowers confidence",
+  "call": "APPLY SELECTIVELY",
+  "colour": "#a86400",
+  "score": 62.7,
+  "confidence": "medium",
+  "why": "built from our fundamentals, the two AI readings — 90% of the deciding weight",
   "based_on": [
    "our fundamentals",
    "the two AI readings"
@@ -23,5 +23,5 @@
  },
  "hard_stops": [],
  "serious_findings": [],
- "models_disagree": true
+ "models_disagree": false
 }

@@ -1,99 +1,99 @@
-IPO RADAR — generated 2026-09-08 17:23 UTC
+IPO RADAR — generated 2026-09-09 07:31 UTC
 ============================================================
 
 Asset Reconstruction Company (India) Limited
-  CALL: applying -> APPLY SELECTIVELY   |   holding -> APPLY SELECTIVELY
+  CALL: applying -> WAIT FOR LISTING   |   holding -> APPLY SELECTIVELY
   mainboard · 2026-09-09 to 2026-09-11 · Rs.132 to Rs.139
   Fundamentals: 68.8 (34% assessed)   Demand: None (0% assessed)
   groq: listing 45, long-term 58, confidence low
-  gemini: listing 40, long-term 35, confidence high
+  gemini: listing 5, long-term 35, confidence high
   * profit is not turning into cash: only 30% of EBITDA came through as cash
 
 Glass Wall Systems (India) Limited
-  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> APPLY
+  CALL: applying -> APPLY SELECTIVELY   |   holding -> APPLY SELECTIVELY
   mainboard · 2026-09-08 to 2026-09-10 · Rs.172 to Rs.182
   Fundamentals: 67.7 (88% assessed)   Demand: None (14% assessed)
   groq: listing 50, long-term 50, confidence low
-  gemini: listing 55, long-term 45, confidence low
+  gemini: listing 45, long-term 40, confidence medium
   * growth concentrated in the year before the IPO: sales moved -9% then 64% — the good year is the one just before listing
   * mostly an exit for existing holders: only 20% of the money reaches the company
 
 Kanohar Electricals Limited
-  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> STRONG APPLY
+  CALL: applying -> APPLY SELECTIVELY   |   holding -> APPLY
   mainboard · 2026-09-08 to 2026-09-10 · Rs.601 to Rs.632
   Fundamentals: 80.8 (88% assessed)   Demand: None (14% assessed)
-  groq: listing 50, long-term 50, confidence low
-  gemini: listing 45, long-term 40, confidence high
+  groq: listing 35, long-term 65, confidence medium
+  gemini: listing 45, long-term 35, confidence medium
+  !! models disagree on longterm_view by 30.0 points
+  !! models disagree on governance by 20.0 points
   * priced far below its stated peer group: 36.26× against 103.03× — a 65% discount
   * profit is not turning into cash: only 14% of EBITDA came through as cash
 
 Karamtara Engineering Limited
-  CALL: applying -> APPLY SELECTIVELY   |   holding -> APPLY
+  CALL: applying -> WAIT FOR LISTING   |   holding -> APPLY
   mainboard · 2026-09-09 to 2026-09-11 · Rs.241 to Rs.254
   Fundamentals: 75.4 (48% assessed)   Demand: None (0% assessed)
   groq: listing 55, long-term 60, confidence medium
-  gemini: listing 0, long-term 40, confidence high
-  !! models disagree on listing_view by 55.0 points
-  !! models disagree on longterm_view by 20.0 points
-  !! models disagree on governance by 30.0 points
+  gemini: listing 10, long-term 50, confidence medium
 
 LCC Projects Limited
-  CALL: applying -> APPLY   |   holding -> APPLY
+  CALL: applying -> WAIT FOR LISTING   |   holding -> APPLY
   mainboard · 2026-09-09 to 2026-09-11 · Rs.139 to Rs.146
   Fundamentals: 81.6 (60% assessed)   Demand: None (0% assessed)
   groq: listing 50, long-term 70, confidence medium
-  gemini: listing 40, long-term 45, confidence low
+  gemini: listing 10, long-term 45, confidence high
 
 Manipal Payment and Identity Solutions Limited
-  CALL: applying -> APPLY SELECTIVELY   |   holding -> APPLY
+  CALL: applying -> WAIT FOR LISTING   |   holding -> APPLY SELECTIVELY
   mainboard · 2026-09-09 to 2026-09-11 · Rs.322 to Rs.339
   Fundamentals: 74.0 (48% assessed)   Demand: None (0% assessed)
   groq: listing 45, long-term 55, confidence medium
-  gemini: listing 50, long-term 45, confidence high
-  !! models disagree on governance by 30.0 points
+  gemini: listing 10, long-term 40, confidence high
 
 Pranav Constructions Limited
-  CALL: applying -> APPLY SELECTIVELY   |   holding -> APPLY SELECTIVELY
+  CALL: applying -> APPLY   |   holding -> APPLY SELECTIVELY
   mainboard · 2026-09-07 to 2026-09-09 · Rs.118 to Rs.124
   Fundamentals: 59.6 (78% assessed)   Demand: None (14% assessed)
   groq: listing 65, long-term 40, confidence low
-  gemini: listing 65, long-term 40, confidence high
+  gemini: listing 75, long-term 40, confidence low
   * priced far below its stated peer group: 15.16× against 113.46× — a 87% discount
   * the business consumed cash in its latest year: operating cash flow -411.94 against a reported profit
 
 Prasol Chemicals Limited
-  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> APPLY SELECTIVELY
+  CALL: applying -> WAIT FOR LISTING   |   holding -> APPLY SELECTIVELY
   mainboard · 2026-09-08 to 2026-09-10 · Rs.643 to Rs.676
   Fundamentals: 64.3 (88% assessed)   Demand: None (14% assessed)
-  groq: listing 45, long-term 50, confidence low
-  gemini: listing 10, long-term 40, confidence high
+  groq: listing 15, long-term 65, confidence low
+  gemini: listing 10, long-term 45, confidence high
+  !! models disagree on longterm_view by 20.0 points
+  !! models disagree on governance by 20.0 points
   * profit is not turning into cash: only 36% of EBITDA came through as cash
   * mostly an exit for existing holders: only 22% of the money reaches the company
 
 Qualiance International Limited
-  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
+  CALL: applying -> APPLY   |   holding -> NOT ENOUGH INFORMATION
   sme · 2026-09-04 to 2026-09-08 · band not announced
-  Fundamentals: None (0% assessed)   Demand: None (14% assessed)
+  Fundamentals: None (0% assessed)   Demand: 73.8 (40% assessed)
 
 Rentomojo Limited
-  CALL: applying -> APPLY SELECTIVELY   |   holding -> APPLY SELECTIVELY
+  CALL: applying -> WAIT FOR LISTING   |   holding -> APPLY SELECTIVELY
   mainboard · 2026-09-09 to 2026-09-11 · Rs.384 to Rs.404
   Fundamentals: 73.7 (58% assessed)   Demand: None (0% assessed)
   groq: listing 55, long-term 60, confidence low
-  gemini: listing 40, long-term 60, confidence high
+  gemini: listing 10, long-term 40, confidence high
   * owes more this year than it expects to collect: current ratio 0.55
   * mostly an exit for existing holders: only 17% of the money reaches the company
 
 Steamhouse India Limited
-  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> APPLY SELECTIVELY
+  CALL: applying -> WAIT FOR LISTING   |   holding -> APPLY SELECTIVELY
   mainboard · 2026-09-09 to 2026-09-11 · Rs.77 to Rs.81
   Fundamentals: 69.7 (48% assessed)   Demand: None (0% assessed)
   groq: listing 45, long-term 55, confidence medium
-  gemini: listing 35, long-term 40, confidence high
+  gemini: listing 5, long-term 15, confidence high
   * owes more this year than it expects to collect: current ratio 0.36
 
 Veegaland Developers Limited
-  CALL: applying -> AVOID   |   holding -> WAIT FOR LISTING
+  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> APPLY SELECTIVELY
   mainboard · 2026-09-10 to 2026-09-15 · Rs.130 to Rs.140
   Fundamentals: 58.3 (48% assessed)   Demand: None (0% assessed)
   gemini: listing 10, long-term 25, confidence high
@@ -102,7 +102,7 @@ Veegaland Developers Limited
 
 Vinod Texworld Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
-  sme · 2026-09-09 to 2026-09-11 · Rs.94
+  sme · 2026-09-09 to 2026-09-11 · band not announced
   Fundamentals: None (0% assessed)   Demand: None (0% assessed)
 
 Dashboard: https://dev171296.github.io/ipo-radar/

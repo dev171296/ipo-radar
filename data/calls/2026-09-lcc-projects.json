@@ -1,8 +1,8 @@
 {
  "listing": {
-  "call": "APPLY",
-  "colour": "#2f7d32",
-  "score": 65.8,
+  "call": "WAIT FOR LISTING",
+  "colour": "#b25b1a",
+  "score": 45.8,
   "confidence": "low",
   "why": "built from our fundamentals, the two AI readings — 50% of the deciding weight",
   "based_on": [
@@ -13,7 +13,7 @@
  "longterm": {
   "call": "APPLY",
   "colour": "#2f7d32",
-  "score": 77.7,
+  "score": 69.4,
   "confidence": "medium",
   "why": "built from our fundamentals, the two AI readings — 90% of the deciding weight",
   "based_on": [

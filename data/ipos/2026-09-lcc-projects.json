@@ -8,7 +8,7 @@
   "name": "LCC Projects Limited",
   "symbol": "LCCPROJECT",
   "type": "mainboard",
-  "status": "upcoming",
+  "status": "open",
   "dates": {
     "open": "2026-09-09",
     "close": "2026-09-11",
@@ -18,15 +18,15 @@
   "price_band": "Rs.139 to Rs.146",
   "issue_size_shares": 20927281.0,
   "subscription": {
-    "times": null,
-    "shares_offered": null,
-    "shares_bid": null
+    "times": 0.3959313204615545,
+    "shares_offered": 20927281.0,
+    "shares_bid": 8285766.0
   },
   "also_on_bse": false,
   "sources": {
     "calendar": "nse",
-    "fetched_at": "2026-09-08T17:22:44+00:00"
+    "fetched_at": "2026-09-09T07:30:23+00:00"
   },
   "missing": [],
-  "rebuilt_at": "2026-09-08T17:22:44+00:00"
+  "rebuilt_at": "2026-09-09T07:30:23+00:00"
 }

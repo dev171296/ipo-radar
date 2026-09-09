@@ -1,8 +1,8 @@
 {
  "listing": {
-  "call": "APPLY SELECTIVELY",
-  "colour": "#a86400",
-  "score": 54.4,
+  "call": "WAIT FOR LISTING",
+  "colour": "#b25b1a",
+  "score": 36.9,
   "confidence": "low",
   "why": "built from our fundamentals, the two AI readings — 50% of the deciding weight",
   "based_on": [
