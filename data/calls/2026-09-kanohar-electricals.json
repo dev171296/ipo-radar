@@ -2,9 +2,9 @@
  "listing": {
   "call": "APPLY",
   "colour": "#2f7d32",
-  "score": 66.7,
+  "score": 72.9,
   "confidence": "low",
-  "why": "built from our fundamentals, the two AI readings — 50% of the deciding weight; the two models disagree, which lowers confidence",
+  "why": "built from our fundamentals, the two AI readings — 50% of the deciding weight",
   "based_on": [
    "our fundamentals",
    "the two AI readings"
@@ -13,9 +13,9 @@
  "longterm": {
   "call": "APPLY",
   "colour": "#2f7d32",
-  "score": 68.9,
-  "confidence": "low",
-  "why": "built from our fundamentals, the two AI readings — 90% of the deciding weight; the two models disagree, which lowers confidence",
+  "score": 67.2,
+  "confidence": "medium",
+  "why": "built from our fundamentals, the two AI readings — 90% of the deciding weight",
   "based_on": [
    "our fundamentals",
    "the two AI readings"
@@ -23,5 +23,5 @@
  },
  "hard_stops": [],
  "serious_findings": [],
- "models_disagree": true
+ "models_disagree": false
 }
