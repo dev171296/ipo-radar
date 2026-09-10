@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T17:14:27+00:00",
+  "generated_at": "2026-09-10T07:26:37+00:00",
   "count": 14,
   "ipos": [
     {
@@ -104,7 +104,7 @@
       "id": "2026-09-pranav-constructions",
       "name": "Pranav Constructions Limited",
       "type": "mainboard",
-      "status": "open",
+      "status": "upcoming",
       "dates": {
         "open": "2026-09-07",
         "close": "2026-09-09",
@@ -174,7 +174,7 @@
       "id": "2026-09-veegaland-developers",
       "name": "Veegaland Developers Limited",
       "type": "mainboard",
-      "status": "upcoming",
+      "status": "open",
       "dates": {
         "open": "2026-09-10",
         "close": "2026-09-15",

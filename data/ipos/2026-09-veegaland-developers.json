@@ -8,7 +8,7 @@
   "name": "Veegaland Developers Limited",
   "symbol": "VEEGALAND",
   "type": "mainboard",
-  "status": "upcoming",
+  "status": "open",
   "dates": {
     "open": "2026-09-10",
     "close": "2026-09-15",
@@ -18,15 +18,15 @@
   "price_band": "Rs.130 to Rs.140",
   "issue_size_shares": 11307692.0,
   "subscription": {
-    "times": null,
-    "shares_offered": null,
-    "shares_bid": null
+    "times": 0.21422346841424403,
+    "shares_offered": 11307692.0,
+    "shares_bid": 2422373.0
   },
   "also_on_bse": false,
   "sources": {
     "calendar": "nse",
-    "fetched_at": "2026-09-09T17:14:26+00:00"
+    "fetched_at": "2026-09-10T07:26:37+00:00"
   },
   "missing": [],
-  "rebuilt_at": "2026-09-09T17:14:26+00:00"
+  "rebuilt_at": "2026-09-10T07:26:37+00:00"
 }

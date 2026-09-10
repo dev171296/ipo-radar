@@ -2,20 +2,21 @@
  "listing": {
   "call": "APPLY",
   "colour": "#2f7d32",
-  "score": 68.0,
-  "confidence": "low",
-  "why": "built from our fundamentals, the two AI readings — 50% of the deciding weight; the two models disagree, which lowers confidence",
+  "score": 73.0,
+  "confidence": "high",
+  "why": "built from our fundamentals, market demand, the two AI readings",
   "based_on": [
    "our fundamentals",
+   "market demand",
    "the two AI readings"
   ]
  },
  "longterm": {
   "call": "APPLY SELECTIVELY",
   "colour": "#a86400",
-  "score": 52.9,
-  "confidence": "low",
-  "why": "built from our fundamentals, the two AI readings — 90% of the deciding weight; the two models disagree, which lowers confidence",
+  "score": 53.1,
+  "confidence": "medium",
+  "why": "built from our fundamentals, the two AI readings — 90% of the deciding weight",
   "based_on": [
    "our fundamentals",
    "the two AI readings"
@@ -25,5 +26,5 @@
  "serious_findings": [
   "the business consumed cash in its latest year"
  ],
- "models_disagree": true
+ "models_disagree": false
 }
