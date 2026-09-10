@@ -1,0 +1,3 @@
+{"at": "2026-09-10T17:06:41+00:00", "event": "discovered", "ok": true, "detail": "Hero Motors Limited", "source": "nse"}
+{"at": "2026-09-10T17:06:49+00:00", "event": "abridged_read", "ok": true, "detail": "14 pages, 9 parts", "source": "sebi"}
+{"at": "2026-09-10T17:07:28+00:00", "event": "full_read", "ok": true, "detail": "582 pages, 7 parts", "source": "sebi"}

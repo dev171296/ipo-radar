@@ -1,22 +1,5 @@
 {
- "scores": {
-  "listing_view": {
-   "groq": 70.0
-  },
-  "longterm_view": {
-   "groq": 45.0
-  },
-  "governance": {
-   "groq": 65.0
-  }
- },
+ "scores": {},
  "disagreements": [],
- "ai_block": {
-  "listing_view": 70.0,
-  "listing_view_note": "only one model answered",
-  "longterm_view": 45.0,
-  "longterm_view_note": "only one model answered",
-  "governance": 65.0,
-  "governance_note": "only one model answered"
- }
+ "ai_block": {}
 }

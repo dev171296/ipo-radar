@@ -1,0 +1,328 @@
+{
+ "ipo_id": "2026-09-hero-motors",
+ "built_at": "2026-09-10T17:07:28+00:00",
+ "name": "Hero Motors Limited",
+ "symbol": "HEROMOTORS",
+ "type": "mainboard",
+ "status": "upcoming",
+ "offer": {
+  "price_low": {
+   "value": 79.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.79 to Rs.84"
+  },
+  "price_high": {
+   "value": 84.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.79 to Rs.84"
+  },
+  "issue_size_shares": {
+   "value": 126582278.0,
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "issue_size_rs_million": {
+   "value": 10632.91,
+   "source": "computed",
+   "confidence": "high",
+   "note": "shares × top of the price band"
+  },
+  "open_date": {
+   "value": "2026-09-16",
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "close_date": {
+   "value": "2026-09-17",
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "fresh_issue_rs_million": {
+   "value": 6000.0,
+   "source": "abridged prospectus",
+   "confidence": "low",
+   "page": 1,
+   "raw": "fresh issue size offer for sale size total offer size eligibility and reservation fresh issue and offer for sale fresh issue of up to [●] equity shares of face value of ₹10 each aggregating up to ₹6,0",
+   "note": "read from a table flattened to text — verify before relying on it"
+  }
+ },
+ "financials": {
+  "revenue": {
+   "value": [
+    11883.51,
+    10895.93,
+    10643.86
+   ],
+   "source": "abridged prospectus",
+   "confidence": "high",
+   "page": 9,
+   "raw": "Revenue from operations 11,883.51 10,895.93 10,643.86"
+  },
+  "ebitda": {
+   "value": [
+    1477.82,
+    1140.04,
+    862.76
+   ],
+   "source": "abridged prospectus",
+   "confidence": "high",
+   "page": 9,
+   "raw": "EBITDA(3) 1,477.82 1,140.04 862.76"
+  }
+ },
+ "valuation": {
+  "eps_basic_latest": {
+   "value": 1.15,
+   "source": "full prospectus",
+   "confidence": "high",
+   "page": 131,
+   "raw": "fiscal 2026",
+   "note": "checked: our rows reproduce the document's own weighted average of 0.86"
+  },
+  "eps_weighted_average": {
+   "value": 0.86,
+   "source": "full prospectus",
+   "confidence": "high",
+   "page": 131
+  },
+  "pe_at_cap_price": {
+   "value": 73.04,
+   "source": "computed",
+   "confidence": "high",
+   "page": 131,
+   "note": "top of the NSE price band divided by the latest basic EPS — the document itself leaves this blank, because the band was not fixed when it was filed"
+  },
+  "benchmark_pe": {
+   "value": 50.2,
+   "source": "full prospectus",
+   "confidence": "low",
+   "page": 131,
+   "note": "the average stated in the document"
+  },
+  "vs_benchmark": {
+   "value": 1.455,
+   "source": "computed",
+   "confidence": "high",
+   "page": 131,
+   "raw": "asking 73.04× earnings against 50.2× (the average stated in the document) — a 45% premium"
+  },
+  "peers_verified": {
+   "value": 0,
+   "source": "full prospectus",
+   "confidence": "high",
+   "page": 131,
+   "note": "0 peer row(s) parsed"
+  }
+ },
+ "cash": {
+  "operating_cash_flow": {
+   "value": [
+    1440.42,
+    483.43,
+    1319.66
+   ],
+   "source": "full prospectus (promoters chapter)",
+   "confidence": "high",
+   "page": 341,
+   "raw": "Net cash generated from operating activities (A) 1,440.42 483.43 1,319.66",
+   "note": "newest year first"
+  },
+  "conversion_vs_ebitda": {
+   "value": 0.975,
+   "source": "computed",
+   "confidence": "high",
+   "note": "1.0 means the reported profit arrived as cash"
+  },
+  "free_cash_flow": {
+   "value": [
+    1463.24,
+    506.25,
+    1342.48
+   ],
+   "source": "computed",
+   "confidence": "high",
+   "note": "operating cash flow after paying for equipment"
+  },
+  "negative_in_all_years": {
+   "value": false,
+   "source": "computed",
+   "confidence": "high"
+  },
+  "negative_in_latest_year": {
+   "value": false,
+   "source": "computed",
+   "confidence": "high"
+  }
+ },
+ "balance_sheet": {
+  "debt_to_equity": {
+   "value": [
+    0.978,
+    1.013,
+    0.891
+   ],
+   "source": "full prospectus (promoters)",
+   "confidence": "high",
+   "page": 341,
+   "note": "borrowings ÷ what the owners have in it — computed from total debt ÷ net worth"
+  },
+  "current_ratio": {
+   "value": [
+    0.94,
+    1.0,
+    1.09
+   ],
+   "source": "full prospectus (promoters)",
+   "confidence": "high",
+   "page": 341,
+   "note": "money due in within a year ÷ money due out — computed from current assets ÷ liabilities"
+  },
+  "receivable_days": {
+   "value": [
+    77.7,
+    67.8,
+    66.8
+   ],
+   "source": "full prospectus (promoters)",
+   "confidence": "high",
+   "page": 341,
+   "note": "how long customers take to pay"
+  },
+  "total_debt": {
+   "value": [
+    4706.17,
+    4316.39,
+    3339.91
+   ],
+   "source": "full prospectus (promoters)",
+   "confidence": "high",
+   "page": 341,
+   "note": "borrowings, newest year first"
+  },
+  "net_worth": {
+   "value": [
+    4810.08,
+    4260.08,
+    3748.16
+   ],
+   "source": "full prospectus (promoters)",
+   "confidence": "high",
+   "page": 341,
+   "note": "the owners' stake, newest year first"
+  }
+ },
+ "derived": {
+  "revenue_cagr_2y_pct": {
+   "value": 5.66,
+   "source": "computed",
+   "confidence": "high",
+   "note": "two years of compounding, newest over oldest"
+  },
+  "revenue_growth_latest_pct": {
+   "value": 9.06,
+   "source": "computed",
+   "confidence": "high"
+  },
+  "ebitda_margin_pct": {
+   "value": [
+    12.44,
+    10.46,
+    8.11
+   ],
+   "source": "computed",
+   "confidence": "high"
+  }
+ },
+ "demand": {},
+ "documents": {
+  "abridged": {
+   "pages": 14,
+   "url": "https://www.sebi.gov.in/sebi_data/commondocs/sep-2026/HERO%20MOTORS%20LIMITED%20-%20AP_p.pdf",
+   "fields": [
+    "cin",
+    "financials",
+    "lead_managers",
+    "objects",
+    "offer_details",
+    "price_band",
+    "promoters",
+    "registrar",
+    "risk_factors"
+   ],
+   "read_at": "2026-09-10T17:06:49+00:00"
+  },
+  "full": {
+   "pages": 582,
+   "url": "https://www.sebi.gov.in/sebi_data/attachdocs/sep-2026/1789013295445.pdf",
+   "chapters": {
+    "capital_structure": [
+     89,
+     118
+    ],
+    "objects": [
+     119,
+     130
+    ],
+    "basis_for_price": [
+     131,
+     257
+    ],
+    "business": [
+     258,
+     340
+    ],
+    "promoters": [
+     341,
+     480
+    ],
+    "related_party": [
+     481,
+     483
+    ],
+    "litigation": [
+     484,
+     582
+    ]
+   },
+   "read_at": "2026-09-10T17:07:28+00:00"
+  }
+ },
+ "missing": [
+  {
+   "what": "ROE",
+   "why": "this document does not print it"
+  },
+  {
+   "what": "ROCE",
+   "why": "this document does not print it"
+  },
+  {
+   "what": "subscription",
+   "why": "the issue has not opened yet"
+  },
+  {
+   "what": "grey market premium",
+   "why": "no free source built yet"
+  },
+  {
+   "what": "anchor investor allotment",
+   "why": "not collected yet"
+  },
+  {
+   "what": "broker conviction",
+   "why": "not collected yet"
+  },
+  {
+   "what": "media coverage",
+   "why": "not collected yet"
+  },
+  {
+   "what": "retail attention",
+   "why": "not collected yet"
+  }
+ ],
+ "conflicts": [],
+ "observations": []
+}

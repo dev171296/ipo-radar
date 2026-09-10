@@ -1,0 +1,132 @@
+{
+ "ipo_id": "2026-09-hero-motors",
+ "name": "Hero Motors Limited",
+ "scored_at": "2026-09-10T17:07:29+00:00",
+ "built_from_bundle": "2026-09-10T17:07:28+00:00",
+ "fundamentals": {
+  "score": 56.4,
+  "withheld": null,
+  "points_earned": 42.83,
+  "points_assessed": 76,
+  "coverage_pct": 76,
+  "components": [
+   {
+    "component": "valuation_vs_peers",
+    "weight": 18,
+    "points": 6.48,
+    "basis": "73.04× earnings vs 50.2×, against the document's stated average (unverified)"
+   },
+   {
+    "component": "growth_quality",
+    "weight": 14,
+    "points": 4.2,
+    "basis": "revenue CAGR 5.66% a year"
+   },
+   {
+    "component": "cash_flow_quality",
+    "weight": 14,
+    "points": 11.9,
+    "basis": "cash conversion 0.97× of EBITDA"
+   },
+   {
+    "component": "balance_sheet",
+    "weight": 10,
+    "points": 3.75,
+    "basis": "debt-to-equity 0.978; current ratio 0.94"
+   },
+   {
+    "component": "issue_structure",
+    "weight": 10,
+    "points": 8.0,
+    "basis": "56% of the issue is fresh money to the company"
+   },
+   {
+    "component": "filing_hygiene",
+    "weight": 10,
+    "points": 8.5,
+    "basis": "summary form read; 582-page prospectus read; no contradictions"
+   }
+  ],
+  "not_assessed": [
+   {
+    "component": "profitability",
+    "weight": 12,
+    "why": "no profit and revenue pair on file"
+   },
+   {
+    "component": "promoter_governance",
+    "weight": 12,
+    "why": "not built yet"
+   }
+  ]
+ },
+ "demand": {
+  "score": null,
+  "withheld": null,
+  "points_earned": 0.0,
+  "points_assessed": 0,
+  "coverage_pct": 0,
+  "components": [],
+  "not_assessed": [
+   {
+    "component": "subscription_level",
+    "weight": 26,
+    "why": "no subscription figure yet"
+   },
+   {
+    "component": "subscription_velocity",
+    "weight": 14,
+    "why": "need at least two readings to see a rate"
+   },
+   {
+    "component": "gmp_level",
+    "weight": 12,
+    "why": "not built yet"
+   },
+   {
+    "component": "gmp_trend",
+    "weight": 10,
+    "why": "not built yet"
+   },
+   {
+    "component": "anchor_quality",
+    "weight": 12,
+    "why": "not built yet"
+   },
+   {
+    "component": "broker_conviction",
+    "weight": 10,
+    "why": "not built yet"
+   },
+   {
+    "component": "media_coverage",
+    "weight": 8,
+    "why": "not built yet"
+   },
+   {
+    "component": "retail_attention",
+    "weight": 8,
+    "why": "not built yet"
+   }
+  ]
+ },
+ "flags": [
+  {
+   "flag": "owes more this year than it expects to collect",
+   "detail": "current ratio 0.94",
+   "for_ai": "how is the shortfall funded?"
+  }
+ ],
+ "vetoes": {
+  "triggered": [],
+  "not_tested": [
+   "three years of profit not on file",
+   "qualified or adverse audit opinion — needs the prospectus chapters read",
+   "SEBI or criminal proceedings against the promoters — needs the prospectus chapters read",
+   "more than half of revenue from one related party — needs the prospectus chapters read"
+  ]
+ },
+ "listing_score_quant_only": null,
+ "longterm_score_quant_only": 56.4,
+ "status": "quant only — the AI block has not been built, so these are not final verdicts"
+}
