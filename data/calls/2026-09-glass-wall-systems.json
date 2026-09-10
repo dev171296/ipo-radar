@@ -2,9 +2,9 @@
  "listing": {
   "call": "APPLY",
   "colour": "#2f7d32",
-  "score": 66.3,
+  "score": 67.6,
   "confidence": "low",
-  "why": "built from our fundamentals, the two AI readings — 50% of the deciding weight",
+  "why": "built from our fundamentals, the two AI readings — 50% of the deciding weight; the two models disagree, which lowers confidence",
   "based_on": [
    "our fundamentals",
    "the two AI readings"
@@ -14,8 +14,8 @@
   "call": "APPLY SELECTIVELY",
   "colour": "#a86400",
   "score": 63.5,
-  "confidence": "medium",
-  "why": "built from our fundamentals, the two AI readings — 90% of the deciding weight",
+  "confidence": "low",
+  "why": "built from our fundamentals, the two AI readings — 90% of the deciding weight; the two models disagree, which lowers confidence",
   "based_on": [
    "our fundamentals",
    "the two AI readings"
@@ -23,5 +23,5 @@
  },
  "hard_stops": [],
  "serious_findings": [],
- "models_disagree": false
+ "models_disagree": true
 }
