@@ -1,0 +1,74 @@
+{
+ "ok": true,
+ "model": "groq/compound-mini",
+ "answered_at": "2026-09-11T17:07:41+00:00",
+ "evidence_fingerprint": "b81873f3b56276e5",
+ "prompt_chars": 7535,
+ "passages_supplied": {
+  "litigation": 8,
+  "governance": 8,
+  "business_quality": 8,
+  "risks": 1
+ },
+ "answer": {
+  "listing_view": {
+   "score": 30.0,
+   "reasoning": "The prospectus provides no data on subscription levels, anchor allocations, or market sentiment, so any view on first‑day demand or pricing is speculative."
+  },
+  "longterm_view": {
+   "score": 45.0,
+   "reasoning": "Revenue has grown >100% CAGR but operating cash flow is negative and debt/equity is high, indicating growth may not be sustainable without clearer cash conversion."
+  },
+  "governance": {
+   "score": 65.0,
+   "reasoning": "The prospectus lists extensive related‑party disclosures and no noted violations, suggesting adequate governance, though no deeper assessment is possible."
+  },
+  "key_risks": [
+   {
+    "risk": "Proprietary information leakage",
+    "why_it_matters": "Loss of proprietary data could damage competitive advantage and earnings.",
+    "citation": "[business, page 308]",
+    "citation_verified": true
+   }
+  ],
+  "answers": [
+   {
+    "question": "check whether the growth is organic and repeatable",
+    "answer": "The prospectus shows revenue rising from ₹1,209.79 m to ₹5,169.49 m (CAGR 106.71%) but provides no discussion of the drivers, making it impossible to judge if growth is organic or repeatable.",
+    "citation": "not answerable from what I was given",
+    "citation_verified": false
+   },
+   {
+    "question": "veto check — is this explained in the RHP?",
+    "answer": "There is no mention of a veto clause or its explanation in the extracted sections of the Red Herring Prospectus.",
+    "citation": "not answerable from what I was given",
+    "citation_verified": false
+   },
+   {
+    "question": "where did the money go — receivables, inventory, or both?",
+    "answer": "Operating cash flow is negative while receivable days have risen to 49.2 and receivables represent 16.9% of incremental sales, indicating cash is tied up in receivables; inventory details are not disclosed.",
+    "citation": "[business, page 283]; [business, page 292]; derived data (receivables_share_of_sales_growth 0.169, receivable_days 49.2) – not directly cited in prospectus extracts",
+    "citation_verified": true
+   },
+   {
+    "question": "what are the repayment terms, and do the issue proceeds repay any of it?",
+    "answer": "The prospectus excerpts do not contain any debt repayment schedule or use‑of‑proceeds details, so this cannot be determined.",
+    "citation": "not answerable from what I was given",
+    "citation_verified": false
+   },
+   {
+    "question": "Our reading triggered a hard stop: revenue more than tripled in two years without explanation. Is there an explanation in the document?",
+    "answer": "No explanation of the revenue surge is present in the provided excerpts; the only revenue figures are listed without accompanying narrative.",
+    "citation": "[business, page 283]; [business, page 292]",
+    "citation_verified": true
+   }
+  ],
+  "confidence": "low",
+  "what_would_change_my_mind": "If the prospectus included a detailed management discussion on revenue drivers, cash‑flow reconciliation, and a debt repayment schedule, the assessment of growth sustainability and financial risk would be clearer.",
+  "citation_check": {
+   "claims_checked": 6,
+   "citations_verified": 3,
+   "citations_not_matching_what_we_sent": 0
+  }
+ }
+}

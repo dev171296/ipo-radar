@@ -241,3 +241,10 @@
 {"at": "2026-09-11T13:03:13+00:00", "family": "gemini", "model": "gemini-flash-lite-latest", "ipo_id": "2026-09-steamhouse"}
 {"at": "2026-09-11T13:03:15+00:00", "family": "groq", "model": "allam-2-7b", "ipo_id": "2026-09-veegaland-developers"}
 {"at": "2026-09-11T13:03:17+00:00", "family": "gemini", "model": "gemini-flash-lite-latest", "ipo_id": "2026-09-veegaland-developers"}
+{"at": "2026-09-11T17:07:17+00:00", "family": "groq", "model": "groq/compound-mini", "ipo_id": "2026-09-asset-reconstruction"}
+{"at": "2026-09-11T17:07:23+00:00", "family": "groq", "model": "groq/compound-mini", "ipo_id": "2026-09-jindal-supreme"}
+{"at": "2026-09-11T17:07:30+00:00", "family": "groq", "model": "openai/gpt-oss-20b", "ipo_id": "2026-09-rentomojo"}
+{"at": "2026-09-11T17:07:35+00:00", "family": "gemini", "model": "gemini-flash-lite-latest", "ipo_id": "2026-09-rentomojo"}
+{"at": "2026-09-11T17:07:41+00:00", "family": "groq", "model": "groq/compound-mini", "ipo_id": "2026-09-sonaselection"}
+{"at": "2026-09-11T17:07:43+00:00", "family": "groq", "model": "qwen/qwen3.8-27b", "ipo_id": "2026-09-ss-retail"}
+{"at": "2026-09-11T17:07:49+00:00", "family": "groq", "model": "openai/gpt-oss-20b", "ipo_id": "2026-09-veegaland-developers"}
