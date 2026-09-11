@@ -1,0 +1,22 @@
+{
+ "scores": {
+  "listing_view": {
+   "gemini": 50.0
+  },
+  "longterm_view": {
+   "gemini": 45.0
+  },
+  "governance": {
+   "gemini": 40.0
+  }
+ },
+ "disagreements": [],
+ "ai_block": {
+  "listing_view": 50.0,
+  "listing_view_note": "only one model answered",
+  "longterm_view": 45.0,
+  "longterm_view_note": "only one model answered",
+  "governance": 40.0,
+  "governance_note": "only one model answered"
+ }
+}

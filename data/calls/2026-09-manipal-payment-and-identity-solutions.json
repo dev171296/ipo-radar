@@ -2,7 +2,7 @@
  "listing": {
   "call": "WAIT FOR LISTING",
   "colour": "#b25b1a",
-  "score": 43.2,
+  "score": 47.0,
   "confidence": "low",
   "why": "built from our fundamentals, the two AI readings — 50% of the deciding weight; the two models disagree, which lowers confidence",
   "based_on": [

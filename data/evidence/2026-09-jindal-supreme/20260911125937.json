@@ -1,0 +1,218 @@
+{
+ "ipo_id": "2026-09-jindal-supreme",
+ "built_at": "2026-09-11T12:59:37+00:00",
+ "name": "Jindal Supreme (India) Limited",
+ "symbol": "JSIPL",
+ "type": "mainboard",
+ "status": "upcoming",
+ "offer": {
+  "price_low": {
+   "value": 88.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.88 to Rs.93"
+  },
+  "price_high": {
+   "value": 93.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.88 to Rs.93"
+  },
+  "issue_size_shares": {
+   "value": 13428000.0,
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "issue_size_rs_million": {
+   "value": 1248.8,
+   "source": "computed",
+   "confidence": "high",
+   "note": "shares × top of the price band"
+  },
+  "open_date": {
+   "value": "2026-09-16",
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "close_date": {
+   "value": "2026-09-18",
+   "source": "nse_calendar",
+   "confidence": "high"
+  }
+ },
+ "financials": {},
+ "valuation": {
+  "eps_basic_latest": {
+   "value": 5.59,
+   "source": "full prospectus",
+   "confidence": "high",
+   "page": 106,
+   "raw": "fiscal 2026",
+   "note": "checked: our rows reproduce the document's own weighted average of 5.34"
+  },
+  "eps_weighted_average": {
+   "value": 5.34,
+   "source": "full prospectus",
+   "confidence": "high",
+   "page": 106
+  }
+ },
+ "cash": {
+  "operating_cash_flow": {
+   "value": [
+    3245.15,
+    -568.73,
+    573.0
+   ],
+   "source": "full prospectus (promoters chapter)",
+   "confidence": "high",
+   "page": 222,
+   "raw": "Net cash earned from/ (used in) operating activities D=(A+B+C) 3,245.15 -568.73 573",
+   "note": "newest year first"
+  },
+  "negative_in_all_years": {
+   "value": false,
+   "source": "computed",
+   "confidence": "high"
+  },
+  "negative_in_latest_year": {
+   "value": false,
+   "source": "computed",
+   "confidence": "high"
+  }
+ },
+ "balance_sheet": {
+  "current_ratio": {
+   "value": [
+    1.21,
+    5.75,
+    1.2
+   ],
+   "source": "full prospectus (promoters)",
+   "confidence": "high",
+   "page": 222,
+   "note": "money due in within a year ÷ money due out — computed from current assets ÷ liabilities"
+  },
+  "total_debt": {
+   "value": [
+    9246.07,
+    7409.92,
+    1836.15
+   ],
+   "source": "full prospectus (promoters)",
+   "confidence": "high",
+   "page": 222,
+   "note": "borrowings, newest year first"
+  },
+  "net_worth": {
+   "value": [
+    4107.67,
+    -6.86,
+    4100.81
+   ],
+   "source": "full prospectus (promoters)",
+   "confidence": "high",
+   "page": 222,
+   "note": "the owners' stake, newest year first"
+  }
+ },
+ "derived": {},
+ "demand": {},
+ "documents": {
+  "abridged": {
+   "pages": 12,
+   "url": "https://www.sebi.gov.in/sebi_data/commondocs/sep-2026/Jindal%20Supreme%20(India)%20Limited%20-%20AP_p.PDF",
+   "fields": [
+    "cin",
+    "financials",
+    "lead_managers",
+    "objects",
+    "price_band",
+    "promoters",
+    "registrar",
+    "reservation",
+    "risk_factors"
+   ],
+   "read_at": "2026-09-11T12:56:52+00:00"
+  },
+  "full": {
+   "pages": 400,
+   "url": "https://www.sebi.gov.in/sebi_data/attachdocs/sep-2026/1788843844738.PDF",
+   "chapters": {
+    "capital_structure": [
+     78,
+     96
+    ],
+    "objects": [
+     97,
+     105
+    ],
+    "basis_for_price": [
+     106,
+     165
+    ],
+    "business": [
+     166,
+     221
+    ],
+    "promoters": [
+     222,
+     317
+    ],
+    "litigation": [
+     318,
+     400
+    ]
+   },
+   "read_at": "2026-09-11T12:57:23+00:00"
+  }
+ },
+ "missing": [
+  {
+   "what": "fresh issue vs offer for sale split",
+   "why": "could not be read from the offer details table"
+  },
+  {
+   "what": "three-year financials",
+   "why": "abridged prospectus read, but no three-figure rows matched"
+  },
+  {
+   "what": "ROE",
+   "why": "this document does not print it"
+  },
+  {
+   "what": "ROCE",
+   "why": "this document does not print it"
+  },
+  {
+   "what": "valuation comparison",
+   "why": "no peer comparison available in this chapter"
+  },
+  {
+   "what": "subscription",
+   "why": "the issue has not opened yet"
+  },
+  {
+   "what": "grey market premium",
+   "why": "no free source built yet"
+  },
+  {
+   "what": "anchor investor allotment",
+   "why": "not collected yet"
+  },
+  {
+   "what": "broker conviction",
+   "why": "not collected yet"
+  },
+  {
+   "what": "media coverage",
+   "why": "not collected yet"
+  },
+  {
+   "what": "retail attention",
+   "why": "not collected yet"
+  }
+ ],
+ "conflicts": [],
+ "observations": []
+}
