@@ -11,9 +11,9 @@
   "status": "upcoming",
   "dates": {
     "open": "2026-09-16",
-    "close": "2026-09-17",
+    "close": "2026-09-18",
     "open_as_given": "16-Sep-2026",
-    "close_as_given": "17-Sep-2026"
+    "close_as_given": "18-Sep-2026"
   },
   "price_band": "Rs.79 to Rs.84",
   "issue_size_shares": 126582278.0,
@@ -25,8 +25,8 @@
   "also_on_bse": false,
   "sources": {
     "calendar": "nse",
-    "fetched_at": "2026-09-10T17:06:41+00:00"
+    "fetched_at": "2026-09-11T07:24:39+00:00"
   },
   "missing": [],
-  "rebuilt_at": "2026-09-10T17:06:41+00:00"
+  "rebuilt_at": "2026-09-11T07:24:39+00:00"
 }
