@@ -1,32 +1,5 @@
 {
- "scores": {
-  "listing_view": {
-   "groq": 60.0,
-   "gemini": 60.0
-  },
-  "longterm_view": {
-   "groq": 55.0,
-   "gemini": 35.0
-  },
-  "governance": {
-   "groq": 30.0,
-   "gemini": 25.0
-  }
- },
- "disagreements": [
-  {
-   "on": "longterm_view",
-   "gap": 20.0,
-   "scores": {
-    "groq": 55.0,
-    "gemini": 35.0
-   },
-   "means": "the models read the same evidence differently — treat this verdict as uncertain, and read both reasonings rather than the average"
-  }
- ],
- "ai_block": {
-  "listing_view": 60.0,
-  "longterm_view": 45.0,
-  "governance": 27.5
- }
+ "scores": {},
+ "disagreements": [],
+ "ai_block": {}
 }

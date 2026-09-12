@@ -1,8 +1,8 @@
-IPO RADAR — generated 2026-09-12 07:18 UTC
+IPO RADAR — generated 2026-09-12 09:31 UTC
 ============================================================
 
 Asset Reconstruction Company (India) Limited
-  CALL: applying -> APPLY SELECTIVELY   |   holding -> APPLY SELECTIVELY
+  CALL: applying -> APPLY SELECTIVELY   |   holding -> APPLY
   mainboard · 2026-09-09 to 2026-09-11 · Rs.132 to Rs.139
   Fundamentals: 68.8 (34% assessed)   Demand: 57.5 (40% assessed)
   groq: listing 50, long-term 55, confidence low
@@ -48,13 +48,12 @@ Karamtara Engineering Limited
   Fundamentals: 75.4 (48% assessed)   Demand: 67.2 (40% assessed)
   groq: listing 50, long-term 50, confidence low
   gemini: listing 65, long-term 45, confidence low
-  !! models disagree on governance by 20.0 points
 
 LCC Projects Limited
   CALL: applying -> APPLY   |   holding -> APPLY
   mainboard · 2026-09-09 to 2026-09-11 · Rs.139 to Rs.146
   Fundamentals: 81.6 (60% assessed)   Demand: 67.2 (40% assessed)
-  groq: listing 30, long-term 55, confidence medium
+  groq: listing 50, long-term 50, confidence low
   gemini: listing 65, long-term 45, confidence medium
 
 Manika Plastech Limited
@@ -70,7 +69,6 @@ Manipal Payment and Identity Solutions Limited
   Fundamentals: 74.0 (48% assessed)   Demand: 15.2 (40% assessed)
   groq: listing 25, long-term 55, confidence medium
   gemini: listing 10, long-term 40, confidence high
-  !! models disagree on governance by 25.0 points
   * under-subscribed: closed at 0.8719568481139119× — the issue did not fill
 
 Pranav Constructions Limited
@@ -100,7 +98,7 @@ Rentomojo Limited
   CALL: applying -> APPLY   |   holding -> APPLY SELECTIVELY
   mainboard · 2026-09-09 to 2026-09-11 · Rs.384 to Rs.404
   Fundamentals: 73.7 (58% assessed)   Demand: 73.8 (40% assessed)
-  groq: listing 50, long-term 50, confidence low
+  groq: listing 70, long-term 60, confidence medium
   gemini: listing 75, long-term 40, confidence high
   * owes more this year than it expects to collect: current ratio 0.55
   * mostly an exit for existing holders: only 17% of the money reaches the company
@@ -130,7 +128,6 @@ Steamhouse India Limited
   Fundamentals: 69.7 (48% assessed)   Demand: 67.2 (40% assessed)
   groq: listing 60, long-term 55, confidence medium
   gemini: listing 60, long-term 35, confidence high
-  !! models disagree on longterm_view by 20.0 points
   * owes more this year than it expects to collect: current ratio 0.36
 
 Veegaland Developers Limited

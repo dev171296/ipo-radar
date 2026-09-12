@@ -260,3 +260,5 @@
 {"at": "2026-09-12T07:18:23+00:00", "family": "gemini", "model": "gemini-flash-lite-latest", "ipo_id": "2026-09-rentomojo"}
 {"at": "2026-09-12T07:18:26+00:00", "family": "groq", "model": "openai/gpt-oss-20b", "ipo_id": "2026-09-steamhouse"}
 {"at": "2026-09-12T07:18:30+00:00", "family": "gemini", "model": "gemini-flash-lite-latest", "ipo_id": "2026-09-steamhouse"}
+{"at": "2026-09-12T09:31:45+00:00", "family": "groq", "model": "openai/gpt-oss-20b", "ipo_id": "2026-09-lcc-projects"}
+{"at": "2026-09-12T09:31:50+00:00", "family": "groq", "model": "openai/gpt-oss-20b", "ipo_id": "2026-09-rentomojo"}

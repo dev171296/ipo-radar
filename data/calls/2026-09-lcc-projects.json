@@ -2,7 +2,7 @@
  "listing": {
   "call": "APPLY",
   "colour": "#2f7d32",
-  "score": 70.2,
+  "score": 66.5,
   "confidence": "high",
   "why": "built from our fundamentals, market demand, the two AI readings",
   "based_on": [
@@ -14,7 +14,7 @@
  "longterm": {
   "call": "APPLY",
   "colour": "#2f7d32",
-  "score": 69.4,
+  "score": 71.1,
   "confidence": "medium",
   "why": "built from our fundamentals, the two AI readings — 90% of the deciding weight",
   "based_on": [
