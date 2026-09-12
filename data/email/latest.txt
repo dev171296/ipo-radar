@@ -1,4 +1,4 @@
-IPO RADAR — generated 2026-09-12 09:31 UTC
+IPO RADAR — generated 2026-09-12 12:18 UTC
 ============================================================
 
 Asset Reconstruction Company (India) Limited
@@ -50,7 +50,7 @@ Karamtara Engineering Limited
   gemini: listing 65, long-term 45, confidence low
 
 LCC Projects Limited
-  CALL: applying -> APPLY   |   holding -> APPLY
+  CALL: applying -> APPLY   |   holding -> STRONG APPLY
   mainboard · 2026-09-09 to 2026-09-11 · Rs.139 to Rs.146
   Fundamentals: 81.6 (60% assessed)   Demand: 67.2 (40% assessed)
   groq: listing 50, long-term 50, confidence low
