@@ -268,3 +268,6 @@
 {"at": "2026-09-15T07:58:49+00:00", "family": "gemini", "model": "gemini-flash-lite-latest", "ipo_id": "2026-09-national-stock-exchange-of"}
 {"at": "2026-09-15T07:58:59+00:00", "family": "groq", "model": "allam-2-7b", "ipo_id": "2026-09-veegaland-developers"}
 {"at": "2026-09-15T07:59:01+00:00", "family": "gemini", "model": "gemini-flash-lite-latest", "ipo_id": "2026-09-veegaland-developers"}
+{"at": "2026-09-15T10:19:22+00:00", "family": "groq", "model": "allam-2-7b", "ipo_id": "2026-09-manika-plastech"}
+{"at": "2026-09-15T10:19:24+00:00", "family": "gemini", "model": "gemini-flash-lite-latest", "ipo_id": "2026-09-manika-plastech"}
+{"at": "2026-09-15T10:19:44+00:00", "family": "gemini", "model": "gemini-flash-lite-latest", "ipo_id": "2026-09-veegaland-developers"}

@@ -1,4 +1,4 @@
-IPO RADAR — generated 2026-09-15 07:59 UTC
+IPO RADAR — generated 2026-09-15 10:19 UTC
 ============================================================
 
 Asset Reconstruction Company (India) Limited
@@ -66,9 +66,7 @@ Manika Plastech Limited
   mainboard · 2026-09-11 to 2026-09-16 · Rs.40 to Rs.43
   Fundamentals: None (20% assessed)   Demand: None (14% assessed)
   groq: listing 60, long-term 50, confidence medium
-  gemini: listing 45, long-term 30, confidence low
-  !! models disagree on longterm_view by 20.0 points
-  !! models disagree on governance by 20.0 points
+  gemini: listing 45, long-term 40, confidence low
 
 Manipal Payment and Identity Solutions Limited
   CALL: applying -> AVOID   |   holding -> APPLY
@@ -84,8 +82,6 @@ National Stock Exchange of India Limited
   Fundamentals: None (24% assessed)   Demand: None (0% assessed)
   groq: listing 35, long-term 55, confidence low
   gemini: listing 40, long-term 35, confidence high
-  !! models disagree on longterm_view by 20.0 points
-  !! models disagree on governance by 45.0 points
 
 Pranav Constructions Limited
   CALL: applying -> APPLY   |   holding -> APPLY SELECTIVELY
@@ -147,11 +143,11 @@ Steamhouse India Limited
   * owes more this year than it expects to collect: current ratio 0.36
 
 Veegaland Developers Limited
-  CALL: applying -> WAIT FOR LISTING   |   holding -> WAIT FOR LISTING
+  CALL: applying -> APPLY SELECTIVELY   |   holding -> APPLY SELECTIVELY
   mainboard · 2026-09-10 to 2026-09-15 · Rs.130 to Rs.140
   Fundamentals: 58.3 (48% assessed)   Demand: None (14% assessed)
   groq: listing 80, long-term 45, confidence medium
-  gemini: listing 35, long-term 30, confidence high
+  gemini: listing 65, long-term 35, confidence low
   * the business consumed cash in its latest year: operating cash flow -7425.95 against a reported profit
   * heavily indebted: debt is 2.7× the owners' stake
 
