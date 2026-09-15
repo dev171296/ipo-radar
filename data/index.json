@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T13:46:52+00:00",
+  "generated_at": "2026-09-15T17:44:38+00:00",
   "count": 21,
   "ipos": [
     {
@@ -227,6 +227,20 @@
       "missing": []
     },
     {
+      "id": "2026-09-spectraa-technology-solutions",
+      "name": "SpectraA Technology Solutions Limited",
+      "type": "sme",
+      "status": "upcoming",
+      "dates": {
+        "open": "2026-09-17",
+        "close": "2026-09-21",
+        "open_as_given": "17-Sep-2026",
+        "close_as_given": "21-Sep-2026"
+      },
+      "price_band": "Rs.112 to Rs.118",
+      "missing": []
+    },
+    {
       "id": "2026-09-ss-retail",
       "name": "SS Retail Limited",
       "type": "mainboard",
@@ -280,20 +294,6 @@
         "close_as_given": "11-Sep-2026"
       },
       "price_band": null,
-      "missing": []
-    },
-    {
-      "id": "2026-09-spectraa-technology-solutions",
-      "name": "SpectraA Technology Solutions Limited",
-      "type": "sme",
-      "status": "upcoming",
-      "dates": {
-        "open": "2026-09-17",
-        "close": "2026-09-21",
-        "open_as_given": "17-Sep-2026",
-        "close_as_given": "21-Sep-2026"
-      },
-      "price_band": "Rs.112 to Rs.118",
       "missing": []
     }
   ]
