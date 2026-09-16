@@ -291,3 +291,11 @@
 {"at": "2026-09-16T07:50:43+00:00", "family": "gemini", "model": "gemini-flash-lite-latest", "ipo_id": "2026-09-ss-retail"}
 {"at": "2026-09-16T07:50:46+00:00", "family": "groq", "model": "openai/gpt-oss-120b", "ipo_id": "2026-09-veegaland-developers"}
 {"at": "2026-09-16T07:50:49+00:00", "family": "gemini", "model": "gemini-flash-lite-latest", "ipo_id": "2026-09-veegaland-developers"}
+{"at": "2026-09-16T10:13:13+00:00", "family": "groq", "model": "openai/gpt-oss-120b", "ipo_id": "2026-09-hero-motors"}
+{"at": "2026-09-16T10:13:15+00:00", "family": "gemini", "model": "gemini-flash-lite-latest", "ipo_id": "2026-09-hero-motors"}
+{"at": "2026-09-16T10:13:18+00:00", "family": "groq", "model": "openai/gpt-oss-120b", "ipo_id": "2026-09-jindal-supreme"}
+{"at": "2026-09-16T10:13:20+00:00", "family": "gemini", "model": "gemini-flash-lite-latest", "ipo_id": "2026-09-jindal-supreme"}
+{"at": "2026-09-16T10:13:25+00:00", "family": "groq", "model": "openai/gpt-oss-120b", "ipo_id": "2026-09-manika-plastech"}
+{"at": "2026-09-16T10:13:27+00:00", "family": "gemini", "model": "gemini-flash-lite-latest", "ipo_id": "2026-09-manika-plastech"}
+{"at": "2026-09-16T10:13:34+00:00", "family": "groq", "model": "qwen/qwen3.8-27b", "ipo_id": "2026-09-ss-retail"}
+{"at": "2026-09-16T10:13:37+00:00", "family": "gemini", "model": "gemini-flash-lite-latest", "ipo_id": "2026-09-ss-retail"}

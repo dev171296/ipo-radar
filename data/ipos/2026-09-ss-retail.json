@@ -18,15 +18,15 @@
   "price_band": "Rs.403 to Rs.424",
   "issue_size_shares": 8793884.0,
   "subscription": {
-    "times": 0.5145235029254422,
+    "times": 0.798499275178067,
     "shares_offered": 8793884.0,
-    "shares_bid": 4524660.0
+    "shares_bid": 7021910.0
   },
   "also_on_bse": false,
   "sources": {
     "calendar": "nse",
-    "fetched_at": "2026-09-16T07:50:07+00:00"
+    "fetched_at": "2026-09-16T10:13:01+00:00"
   },
   "missing": [],
-  "rebuilt_at": "2026-09-16T07:50:07+00:00"
+  "rebuilt_at": "2026-09-16T10:13:01+00:00"
 }
