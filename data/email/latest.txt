@@ -1,4 +1,4 @@
-IPO RADAR — generated 2026-09-16 13:40 UTC
+IPO RADAR — generated 2026-09-16 17:42 UTC
 ============================================================
 
 Asset Reconstruction Company (India) Limited
@@ -19,13 +19,11 @@ Glass Wall Systems (India) Limited
   * mostly an exit for existing holders: only 20% of the money reaches the company
 
 Hero Motors Limited
-  CALL: applying -> WAIT FOR LISTING   |   holding -> APPLY SELECTIVELY
+  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> APPLY SELECTIVELY
   mainboard · 2026-09-16 to 2026-09-18 · Rs.79 to Rs.84
   Fundamentals: 59.0 (76% assessed)   Demand: None (14% assessed)
   groq: listing 50, long-term 50, confidence low
   gemini: listing 20, long-term 40, confidence high
-  !! models disagree on listing_view by 30.0 points
-  !! models disagree on governance by 25.0 points
   * owes more this year than it expects to collect: current ratio 0.94
 
 Jindal Supreme (India) Limited
@@ -82,8 +80,8 @@ National Stock Exchange of India Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
   mainboard · 2026-09-17 to 2026-09-21 · Rs.1700 to Rs.1785
   Fundamentals: None (24% assessed)   Demand: None (0% assessed)
-  groq: listing 35, long-term 55, confidence low
-  gemini: listing 40, long-term 35, confidence high
+  groq: listing 45, long-term 60, confidence medium
+  gemini: listing 40, long-term 45, confidence high
 
 Pranav Constructions Limited
   CALL: applying -> APPLY   |   holding -> APPLY SELECTIVELY
@@ -118,7 +116,7 @@ Rentomojo Limited
   * mostly an exit for existing holders: only 17% of the money reaches the company
 
 Sonaselection India Limited
-  CALL: applying -> WAIT FOR LISTING   |   holding -> WAIT FOR LISTING
+  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> WAIT FOR LISTING
   mainboard · 2026-09-17 to 2026-09-21 · Rs.94 to Rs.99
   Fundamentals: 50.8 (48% assessed)   Demand: None (0% assessed)
   groq: listing 50, long-term 40, confidence low
@@ -134,14 +132,11 @@ SpectraA Technology Solutions Limited
   Fundamentals: None (0% assessed)   Demand: None (0% assessed)
 
 SS Retail Limited
-  CALL: applying -> APPLY SELECTIVELY   |   holding -> APPLY
+  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> APPLY
   mainboard · 2026-09-16 to 2026-09-18 · Rs.403 to Rs.424
   Fundamentals: 78.7 (58% assessed)   Demand: None (14% assessed)
   groq: listing 35, long-term 65, confidence medium
   gemini: listing 15, long-term 40, confidence high
-  !! models disagree on listing_view by 20.0 points
-  !! models disagree on longterm_view by 25.0 points
-  !! models disagree on governance by 30.0 points
   * profit is not turning into cash: only 26% of EBITDA came through as cash
 
 Steamhouse India Limited
