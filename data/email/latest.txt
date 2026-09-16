@@ -1,4 +1,4 @@
-IPO RADAR — generated 2026-09-15 17:45 UTC
+IPO RADAR — generated 2026-09-16 07:50 UTC
 ============================================================
 
 Asset Reconstruction Company (India) Limited
@@ -19,19 +19,22 @@ Glass Wall Systems (India) Limited
   * mostly an exit for existing holders: only 20% of the money reaches the company
 
 Hero Motors Limited
-  CALL: applying -> APPLY SELECTIVELY   |   holding -> APPLY SELECTIVELY
+  CALL: applying -> WAIT FOR LISTING   |   holding -> APPLY SELECTIVELY
   mainboard · 2026-09-16 to 2026-09-18 · Rs.79 to Rs.84
   Fundamentals: 59.0 (76% assessed)   Demand: None (0% assessed)
-  groq: listing 50, long-term 50, confidence low
-  gemini: listing 40, long-term 45, confidence low
+  groq: listing 50, long-term 40, confidence low
+  gemini: listing 10, long-term 40, confidence high
+  !! models disagree on listing_view by 40.0 points
   * owes more this year than it expects to collect: current ratio 0.94
 
 Jindal Supreme (India) Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
   mainboard · 2026-09-16 to 2026-09-18 · Rs.88 to Rs.93
   Fundamentals: None (20% assessed)   Demand: None (0% assessed)
-  groq: listing 60, long-term 45, confidence medium
-  gemini: listing 40, long-term 35, confidence high
+  groq: listing 55, long-term 60, confidence medium
+  gemini: listing 45, long-term 40, confidence low
+  !! models disagree on longterm_view by 20.0 points
+  !! models disagree on governance by 20.0 points
 
 Kanohar Electricals Limited
   CALL: applying -> APPLY   |   holding -> STRONG APPLY
@@ -66,7 +69,7 @@ Manika Plastech Limited
   mainboard · 2026-09-11 to 2026-09-16 · Rs.40 to Rs.43
   Fundamentals: None (20% assessed)   Demand: None (14% assessed)
   groq: listing 40, long-term 45, confidence low
-  gemini: listing 60, long-term 45, confidence low
+  gemini: listing 60, long-term 40, confidence low
 
 Manipal Payment and Identity Solutions Limited
   CALL: applying -> AVOID   |   holding -> APPLY
@@ -135,8 +138,9 @@ SS Retail Limited
   CALL: applying -> APPLY SELECTIVELY   |   holding -> APPLY
   mainboard · 2026-09-16 to 2026-09-18 · Rs.403 to Rs.424
   Fundamentals: 78.7 (58% assessed)   Demand: None (0% assessed)
-  groq: listing 40, long-term 45, confidence medium
-  gemini: listing 40, long-term 45, confidence low
+  groq: listing 50, long-term 55, confidence medium
+  gemini: listing 15, long-term 40, confidence medium
+  !! models disagree on listing_view by 35.0 points
   * profit is not turning into cash: only 26% of EBITDA came through as cash
 
 Steamhouse India Limited
@@ -148,11 +152,12 @@ Steamhouse India Limited
   * owes more this year than it expects to collect: current ratio 0.36
 
 Veegaland Developers Limited
-  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> APPLY SELECTIVELY
+  CALL: applying -> APPLY SELECTIVELY   |   holding -> APPLY SELECTIVELY
   mainboard · 2026-09-10 to 2026-09-15 · Rs.130 to Rs.140
-  Fundamentals: 58.3 (48% assessed)   Demand: None (14% assessed)
-  groq: listing 70, long-term 55, confidence low
-  gemini: listing 60, long-term 30, confidence high
+  Fundamentals: 58.3 (48% assessed)   Demand: 57.5 (40% assessed)
+  groq: listing 78, long-term 44, confidence low
+  gemini: listing 45, long-term 30, confidence high
+  !! models disagree on listing_view by 33.0 points
   * the business consumed cash in its latest year: operating cash flow -7425.95 against a reported profit
   * heavily indebted: debt is 2.7× the owners' stake
 
