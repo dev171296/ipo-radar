@@ -1,4 +1,4 @@
-IPO RADAR — generated 2026-09-17 13:42 UTC
+IPO RADAR — generated 2026-09-17 17:43 UTC
 ============================================================
 
 Asset Reconstruction Company (India) Limited
@@ -27,7 +27,7 @@ Hero Motors Limited
   CALL: applying -> WAIT FOR LISTING   |   holding -> APPLY SELECTIVELY
   mainboard · 2026-09-16 to 2026-09-18 · Rs.79 to Rs.84
   Fundamentals: 59.0 (76% assessed)   Demand: None (14% assessed)
-  groq: listing 50, long-term 60, confidence medium
+  groq: listing 35, long-term 55, confidence low
   gemini: listing 35, long-term 40, confidence high
   * owes more this year than it expects to collect: current ratio 0.94
 
@@ -37,7 +37,6 @@ Jindal Supreme (India) Limited
   Fundamentals: None (20% assessed)   Demand: None (14% assessed)
   groq: listing 50, long-term 50, confidence low
   gemini: listing 65, long-term 35, confidence high
-  !! models disagree on governance by 30.0 points
 
 Kanohar Electricals Limited
   CALL: applying -> APPLY   |   holding -> STRONG APPLY
@@ -86,7 +85,7 @@ National Stock Exchange of India Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
   mainboard · 2026-09-17 to 2026-09-21 · Rs.1700 to Rs.1785
   Fundamentals: None (24% assessed)   Demand: None (14% assessed)
-  groq: listing 30, long-term 55, confidence medium
+  groq: listing 30, long-term 35, confidence low
   gemini: listing 10, long-term 25, confidence high
 
 Pranav Constructions Limited
@@ -122,14 +121,11 @@ Rentomojo Limited
   * mostly an exit for existing holders: only 17% of the money reaches the company
 
 Sonaselection India Limited
-  CALL: applying -> WAIT FOR LISTING   |   holding -> WAIT FOR LISTING
+  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> WAIT FOR LISTING
   mainboard · 2026-09-17 to 2026-09-21 · Rs.94 to Rs.99
   Fundamentals: 50.8 (48% assessed)   Demand: None (14% assessed)
   groq: listing 30, long-term 50, confidence medium
   gemini: listing 10, long-term 15, confidence high
-  !! models disagree on listing_view by 20.0 points
-  !! models disagree on longterm_view by 35.0 points
-  !! models disagree on governance by 20.0 points
   * very high revenue growth: 106.71% a year — scored just below the band beneath it, because a pre-IPO surge is as often a reason for the timing as a sign of quality
   * revenue more than tripled in two years: 1209.79 to 5169.49
   * the business consumed cash in its latest year: operating cash flow -109.89 against a reported profit
@@ -144,7 +140,7 @@ SS Retail Limited
   CALL: applying -> APPLY SELECTIVELY   |   holding -> APPLY
   mainboard · 2026-09-16 to 2026-09-18 · Rs.403 to Rs.424
   Fundamentals: 78.7 (58% assessed)   Demand: None (14% assessed)
-  groq: listing 45, long-term 65, confidence low
+  groq: listing 45, long-term 60, confidence medium
   gemini: listing 45, long-term 40, confidence low
   * profit is not turning into cash: only 26% of EBITDA came through as cash
 
