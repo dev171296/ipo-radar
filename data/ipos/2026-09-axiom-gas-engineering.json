@@ -1,0 +1,32 @@
+{
+  "id": "2026-09-axiom-gas-engineering",
+  "aliases": [
+    "Axiom Gas Engineering Limited"
+  ],
+  "first_seen": "2026-09-17T07:54:41+00:00",
+  "normalised_name": "axiom gas engineering",
+  "name": "Axiom Gas Engineering Limited",
+  "symbol": "AXIOMGAS",
+  "type": "sme",
+  "status": "upcoming",
+  "dates": {
+    "open": "2026-09-18",
+    "close": "2026-09-22",
+    "open_as_given": "18-Sep-2026",
+    "close_as_given": "22-Sep-2026"
+  },
+  "price_band": "Rs.51 to Rs.54",
+  "issue_size_shares": 9398000.0,
+  "subscription": {
+    "times": null,
+    "shares_offered": null,
+    "shares_bid": null
+  },
+  "also_on_bse": false,
+  "sources": {
+    "calendar": "nse",
+    "fetched_at": "2026-09-17T07:54:41+00:00"
+  },
+  "missing": [],
+  "rebuilt_at": "2026-09-17T07:54:41+00:00"
+}

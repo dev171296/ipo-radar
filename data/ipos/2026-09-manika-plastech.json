@@ -8,7 +8,7 @@
   "name": "Manika Plastech Limited",
   "symbol": "MANIKA",
   "type": "mainboard",
-  "status": "open",
+  "status": "upcoming",
   "dates": {
     "open": "2026-09-11",
     "close": "2026-09-16",
@@ -18,15 +18,15 @@
   "price_band": "Rs.40 to Rs.43",
   "issue_size_shares": 21386919.0,
   "subscription": {
-    "times": 22.211098288631476,
-    "shares_offered": 21386919.0,
-    "shares_bid": 475026960.0
+    "times": null,
+    "shares_offered": null,
+    "shares_bid": null
   },
   "also_on_bse": false,
   "sources": {
     "calendar": "nse",
-    "fetched_at": "2026-09-16T17:42:26+00:00"
+    "fetched_at": "2026-09-17T07:54:41+00:00"
   },
   "missing": [],
-  "rebuilt_at": "2026-09-16T17:42:26+00:00"
+  "rebuilt_at": "2026-09-17T07:54:41+00:00"
 }
