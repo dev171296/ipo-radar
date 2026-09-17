@@ -2,20 +2,23 @@
  "listing": {
   "call": "APPLY",
   "colour": "#2f7d32",
-  "score": 67.2,
-  "confidence": "low",
-  "why": "built from market demand — 50% of the deciding weight",
+  "score": 66.5,
+  "confidence": "medium",
+  "why": "built from market demand, the two AI readings — 75% of the deciding weight",
   "based_on": [
-   "market demand"
+   "market demand",
+   "the two AI readings"
   ]
  },
  "longterm": {
   "call": "NOT ENOUGH INFORMATION",
   "colour": "#6b6862",
-  "score": null,
+  "score": 40.0,
   "confidence": "none",
-  "why": "only 0% of what decides the long-term call is available — no call is better than a guess dressed as one",
-  "based_on": []
+  "why": "only 30% of what decides the long-term call is available — no call is better than a guess dressed as one",
+  "based_on": [
+   "the two AI readings"
+  ]
  },
  "hard_stops": [],
  "serious_findings": [],
