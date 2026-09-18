@@ -345,3 +345,13 @@
 {"at": "2026-09-17T17:43:21+00:00", "family": "groq", "model": "qwen/qwen3.8-27b", "ipo_id": "2026-09-hero-motors"}
 {"at": "2026-09-17T17:43:29+00:00", "family": "groq", "model": "groq/compound-mini", "ipo_id": "2026-09-national-stock-exchange-of"}
 {"at": "2026-09-17T17:43:33+00:00", "family": "groq", "model": "qwen/qwen3.8-27b", "ipo_id": "2026-09-ss-retail"}
+{"at": "2026-09-18T07:33:11+00:00", "family": "groq", "model": "openai/gpt-oss-20b", "ipo_id": "2026-09-hero-motors"}
+{"at": "2026-09-18T07:33:14+00:00", "family": "gemini", "model": "gemini-flash-lite-latest", "ipo_id": "2026-09-hero-motors"}
+{"at": "2026-09-18T07:33:16+00:00", "family": "groq", "model": "openai/gpt-oss-20b", "ipo_id": "2026-09-jindal-supreme"}
+{"at": "2026-09-18T07:33:18+00:00", "family": "gemini", "model": "gemini-flash-lite-latest", "ipo_id": "2026-09-jindal-supreme"}
+{"at": "2026-09-18T07:33:23+00:00", "family": "groq", "model": "allam-2-7b", "ipo_id": "2026-09-national-stock-exchange-of"}
+{"at": "2026-09-18T07:33:25+00:00", "family": "gemini", "model": "gemini-flash-lite-latest", "ipo_id": "2026-09-national-stock-exchange-of"}
+{"at": "2026-09-18T07:33:30+00:00", "family": "groq", "model": "openai/gpt-oss-120b", "ipo_id": "2026-09-sonaselection"}
+{"at": "2026-09-18T07:33:33+00:00", "family": "gemini", "model": "gemini-flash-lite-latest", "ipo_id": "2026-09-sonaselection"}
+{"at": "2026-09-18T07:33:35+00:00", "family": "groq", "model": "openai/gpt-oss-20b", "ipo_id": "2026-09-ss-retail"}
+{"at": "2026-09-18T07:33:38+00:00", "family": "gemini", "model": "gemini-flash-lite-latest", "ipo_id": "2026-09-ss-retail"}
