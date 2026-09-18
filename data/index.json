@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T13:05:01+00:00",
+  "generated_at": "2026-09-18T17:09:49+00:00",
   "count": 24,
   "ipos": [
     {
@@ -171,6 +171,20 @@
       "missing": []
     },
     {
+      "id": "2026-09-pooja-logistics",
+      "name": "Pooja Logistics Limited",
+      "type": "sme",
+      "status": "upcoming",
+      "dates": {
+        "open": "2026-09-23",
+        "close": "2026-09-25",
+        "open_as_given": "23-Sep-2026",
+        "close_as_given": "25-Sep-2026"
+      },
+      "price_band": "Rs.109 to Rs.115",
+      "missing": []
+    },
+    {
       "id": "2026-09-pranav-constructions",
       "name": "Pranav Constructions Limited",
       "type": "mainboard",
@@ -283,6 +297,20 @@
       "missing": []
     },
     {
+      "id": "2026-09-varmora-granito",
+      "name": "Varmora Granito Limited",
+      "type": "mainboard",
+      "status": "upcoming",
+      "dates": {
+        "open": "2026-09-22",
+        "close": "2026-09-24",
+        "open_as_given": "22-Sep-2026",
+        "close_as_given": "24-Sep-2026"
+      },
+      "price_band": "Rs.140 to Rs.148",
+      "missing": []
+    },
+    {
       "id": "2026-09-veegaland-developers",
       "name": "Veegaland Developers Limited",
       "type": "mainboard",
@@ -308,34 +336,6 @@
         "close_as_given": "11-Sep-2026"
       },
       "price_band": null,
-      "missing": []
-    },
-    {
-      "id": "2026-09-varmora-granito",
-      "name": "Varmora Granito Limited",
-      "type": "mainboard",
-      "status": "upcoming",
-      "dates": {
-        "open": "2026-09-22",
-        "close": "2026-09-24",
-        "open_as_given": "22-Sep-2026",
-        "close_as_given": "24-Sep-2026"
-      },
-      "price_band": "Rs.140 to Rs.148",
-      "missing": []
-    },
-    {
-      "id": "2026-09-pooja-logistics",
-      "name": "Pooja Logistics Limited",
-      "type": "sme",
-      "status": "upcoming",
-      "dates": {
-        "open": "2026-09-23",
-        "close": "2026-09-25",
-        "open_as_given": "23-Sep-2026",
-        "close_as_given": "25-Sep-2026"
-      },
-      "price_band": "Rs.109 to Rs.115",
       "missing": []
     }
   ]

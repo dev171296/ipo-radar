@@ -375,3 +375,5 @@
 {"at": "2026-09-18T13:05:49+00:00", "family": "gemini", "model": "gemini-flash-lite-latest", "ipo_id": "2026-09-sonaselection"}
 {"at": "2026-09-18T13:05:53+00:00", "family": "groq", "model": "groq/compound-mini", "ipo_id": "2026-09-ss-retail"}
 {"at": "2026-09-18T13:05:56+00:00", "family": "gemini", "model": "gemini-flash-lite-latest", "ipo_id": "2026-09-ss-retail"}
+{"at": "2026-09-18T17:10:06+00:00", "family": "groq", "model": "qwen/qwen3.8-27b", "ipo_id": "2026-09-national-stock-exchange-of"}
+{"at": "2026-09-18T17:10:09+00:00", "family": "gemini", "model": "gemini-flash-lite-latest", "ipo_id": "2026-09-national-stock-exchange-of"}
