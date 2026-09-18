@@ -1,4 +1,4 @@
-IPO RADAR — generated 2026-09-18 09:59 UTC
+IPO RADAR — generated 2026-09-18 13:05 UTC
 ============================================================
 
 Asset Reconstruction Company (India) Limited
@@ -12,7 +12,7 @@ Asset Reconstruction Company (India) Limited
 Axiom Gas Engineering Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
   sme · 2026-09-18 to 2026-09-22 · band not announced
-  Fundamentals: None (0% assessed)   Demand: None (0% assessed)
+  Fundamentals: None (0% assessed)   Demand: None (14% assessed)
 
 Glass Wall Systems (India) Limited
   CALL: applying -> APPLY   |   holding -> APPLY
@@ -27,8 +27,10 @@ Hero Motors Limited
   CALL: applying -> APPLY SELECTIVELY   |   holding -> APPLY SELECTIVELY
   mainboard · 2026-09-16 to 2026-09-18 · Rs.79 to Rs.84
   Fundamentals: 59.0 (76% assessed)   Demand: None (14% assessed)
-  groq: listing 50, long-term 50, confidence medium
-  gemini: listing 45, long-term 38, confidence high
+  groq: listing 80, long-term 55, confidence medium
+  gemini: listing 45, long-term 35, confidence high
+  !! models disagree on listing_view by 35.0 points
+  !! models disagree on longterm_view by 20.0 points
   !! models disagree on governance by 30.0 points
   * owes more this year than it expects to collect: current ratio 0.94
 
@@ -36,9 +38,10 @@ Jindal Supreme (India) Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
   mainboard · 2026-09-16 to 2026-09-18 · Rs.88 to Rs.93
   Fundamentals: None (20% assessed)   Demand: None (14% assessed)
-  groq: listing 50, long-term 50, confidence low
-  gemini: listing 85, long-term 40, confidence medium
-  !! models disagree on listing_view by 35.0 points
+  groq: listing 50, long-term 50, confidence medium
+  gemini: listing 90, long-term 35, confidence medium
+  !! models disagree on listing_view by 40.0 points
+  !! models disagree on governance by 30.0 points
 
 Kanohar Electricals Limited
   CALL: applying -> APPLY   |   holding -> STRONG APPLY
@@ -87,8 +90,15 @@ National Stock Exchange of India Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
   mainboard · 2026-09-17 to 2026-09-21 · Rs.1700 to Rs.1785
   Fundamentals: None (24% assessed)   Demand: None (14% assessed)
-  groq: listing 30, long-term 35, confidence low
+  groq: listing 30, long-term 25, confidence low
   gemini: listing 10, long-term 25, confidence high
+  !! models disagree on listing_view by 20.0 points
+  !! models disagree on governance by 20.0 points
+
+Pooja Logistics Limited
+  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
+  sme · 2026-09-23 to 2026-09-25 · Rs.109 to Rs.115
+  Fundamentals: None (0% assessed)   Demand: None (0% assessed)
 
 Pranav Constructions Limited
   CALL: applying -> APPLY   |   holding -> APPLY SELECTIVELY
@@ -126,11 +136,11 @@ Sonaselection India Limited
   CALL: applying -> WAIT FOR LISTING   |   holding -> WAIT FOR LISTING
   mainboard · 2026-09-17 to 2026-09-21 · Rs.94 to Rs.99
   Fundamentals: 50.8 (48% assessed)   Demand: None (14% assessed)
-  groq: listing 55, long-term 45, confidence medium
-  gemini: listing 10, long-term 20, confidence high
-  !! models disagree on listing_view by 45.0 points
-  !! models disagree on longterm_view by 25.0 points
-  !! models disagree on governance by 30.0 points
+  groq: listing 50, long-term 50, confidence low
+  gemini: listing 10, long-term 15, confidence high
+  !! models disagree on listing_view by 40.0 points
+  !! models disagree on longterm_view by 35.0 points
+  !! models disagree on governance by 40.0 points
   * very high revenue growth: 106.71% a year — scored just below the band beneath it, because a pre-IPO surge is as often a reason for the timing as a sign of quality
   * revenue more than tripled in two years: 1209.79 to 5169.49
   * the business consumed cash in its latest year: operating cash flow -109.89 against a reported profit
@@ -145,9 +155,9 @@ SS Retail Limited
   CALL: applying -> APPLY   |   holding -> APPLY
   mainboard · 2026-09-16 to 2026-09-18 · Rs.403 to Rs.424
   Fundamentals: 78.7 (58% assessed)   Demand: None (14% assessed)
-  groq: listing 55, long-term 55, confidence medium
-  gemini: listing 75, long-term 40, confidence low
-  !! models disagree on listing_view by 20.0 points
+  groq: listing 45, long-term 40, confidence low
+  gemini: listing 75, long-term 45, confidence low
+  !! models disagree on listing_view by 30.0 points
   !! models disagree on governance by 20.0 points
   * profit is not turning into cash: only 26% of EBITDA came through as cash
 
@@ -158,6 +168,11 @@ Steamhouse India Limited
   groq: listing 60, long-term 55, confidence medium
   gemini: listing 60, long-term 35, confidence high
   * owes more this year than it expects to collect: current ratio 0.36
+
+Varmora Granito Limited
+  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
+  mainboard · 2026-09-22 to 2026-09-24 · Rs.140 to Rs.148
+  Fundamentals: None (0% assessed)   Demand: None (0% assessed)
 
 Veegaland Developers Limited
   CALL: applying -> APPLY SELECTIVELY   |   holding -> APPLY SELECTIVELY
