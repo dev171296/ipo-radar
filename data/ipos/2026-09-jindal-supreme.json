@@ -8,7 +8,7 @@
   "name": "Jindal Supreme (India) Limited",
   "symbol": "JSIPL",
   "type": "mainboard",
-  "status": "open",
+  "status": "upcoming",
   "dates": {
     "open": "2026-09-16",
     "close": "2026-09-18",
@@ -18,15 +18,15 @@
   "price_band": "Rs.88 to Rs.93",
   "issue_size_shares": 9399600.0,
   "subscription": {
-    "times": 125.10088471849866,
-    "shares_offered": 9399600.0,
-    "shares_bid": 1175898276.0
+    "times": null,
+    "shares_offered": null,
+    "shares_bid": null
   },
   "also_on_bse": false,
   "sources": {
     "calendar": "nse",
-    "fetched_at": "2026-09-18T17:09:49+00:00"
+    "fetched_at": "2026-09-19T07:28:27+00:00"
   },
   "missing": [],
-  "rebuilt_at": "2026-09-18T17:09:49+00:00"
+  "rebuilt_at": "2026-09-19T07:28:27+00:00"
 }

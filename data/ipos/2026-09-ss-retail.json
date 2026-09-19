@@ -8,7 +8,7 @@
   "name": "SS Retail Limited",
   "symbol": "SSRETAIL",
   "type": "mainboard",
-  "status": "open",
+  "status": "upcoming",
   "dates": {
     "open": "2026-09-16",
     "close": "2026-09-18",
@@ -18,15 +18,15 @@
   "price_band": "Rs.403 to Rs.424",
   "issue_size_shares": 8793884.0,
   "subscription": {
-    "times": 71.33152597873703,
-    "shares_offered": 8793884.0,
-    "shares_bid": 627281165.0
+    "times": null,
+    "shares_offered": null,
+    "shares_bid": null
   },
   "also_on_bse": false,
   "sources": {
     "calendar": "nse",
-    "fetched_at": "2026-09-18T17:09:49+00:00"
+    "fetched_at": "2026-09-19T07:28:27+00:00"
   },
   "missing": [],
-  "rebuilt_at": "2026-09-18T17:09:49+00:00"
+  "rebuilt_at": "2026-09-19T07:28:27+00:00"
 }

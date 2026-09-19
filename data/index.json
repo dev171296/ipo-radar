@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T17:09:49+00:00",
+  "generated_at": "2026-09-19T07:28:27+00:00",
   "count": 24,
   "ipos": [
     {
@@ -48,7 +48,7 @@
       "id": "2026-09-hero-motors",
       "name": "Hero Motors Limited",
       "type": "mainboard",
-      "status": "open",
+      "status": "upcoming",
       "dates": {
         "open": "2026-09-16",
         "close": "2026-09-18",
@@ -62,7 +62,7 @@
       "id": "2026-09-jindal-supreme",
       "name": "Jindal Supreme (India) Limited",
       "type": "mainboard",
-      "status": "open",
+      "status": "upcoming",
       "dates": {
         "open": "2026-09-16",
         "close": "2026-09-18",
@@ -272,7 +272,7 @@
       "id": "2026-09-ss-retail",
       "name": "SS Retail Limited",
       "type": "mainboard",
-      "status": "open",
+      "status": "upcoming",
       "dates": {
         "open": "2026-09-16",
         "close": "2026-09-18",
