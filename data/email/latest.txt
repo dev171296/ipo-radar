@@ -1,4 +1,4 @@
-IPO RADAR — generated 2026-09-19 07:29 UTC
+IPO RADAR — generated 2026-09-19 09:41 UTC
 ============================================================
 
 Asset Reconstruction Company (India) Limited
@@ -37,7 +37,6 @@ Jindal Supreme (India) Limited
   Fundamentals: None (20% assessed)   Demand: 73.8 (40% assessed)
   groq: listing 55, long-term 50, confidence low
   gemini: listing 90, long-term 40, confidence medium
-  !! models disagree on listing_view by 35.0 points
 
 Kanohar Electricals Limited
   CALL: applying -> APPLY   |   holding -> STRONG APPLY
@@ -148,8 +147,6 @@ SS Retail Limited
   Fundamentals: 78.7 (58% assessed)   Demand: 73.8 (40% assessed)
   groq: listing 45, long-term 55, confidence low
   gemini: listing 75, long-term 40, confidence medium
-  !! models disagree on listing_view by 30.0 points
-  !! models disagree on governance by 20.0 points
   * profit is not turning into cash: only 26% of EBITDA came through as cash
 
 Steamhouse India Limited
