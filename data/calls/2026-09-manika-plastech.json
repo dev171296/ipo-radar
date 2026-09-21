@@ -1,8 +1,8 @@
 {
  "listing": {
-  "call": "APPLY SELECTIVELY",
-  "colour": "#a86400",
-  "score": 59.8,
+  "call": "APPLY",
+  "colour": "#2f7d32",
+  "score": 68.6,
   "confidence": "medium",
   "why": "built from market demand, the two AI readings — 75% of the deciding weight",
   "based_on": [
@@ -13,7 +13,7 @@
  "longterm": {
   "call": "NOT ENOUGH INFORMATION",
   "colour": "#6b6862",
-  "score": 58.0,
+  "score": 42.5,
   "confidence": "none",
   "why": "only 30% of what decides the long-term call is available — no call is better than a guess dressed as one",
   "based_on": [

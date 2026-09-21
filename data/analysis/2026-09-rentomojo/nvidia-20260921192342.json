@@ -1,0 +1,74 @@
+{
+ "ok": true,
+ "model": "moonshotai/kimi-k3",
+ "answered_at": "2026-09-21T19:23:42+00:00",
+ "evidence_fingerprint": "9020ab262ff9f5cb",
+ "prompt_chars": 9456,
+ "passages_supplied": {
+  "litigation": 8,
+  "governance": 8,
+  "business_quality": 8,
+  "risks": 7
+ },
+ "answer": {
+  "listing_view": {
+   "score": 78.0,
+   "reasoning": "Subscription ran to ~55x by close with a violent final-day spike (2x to 42x between morning samplings on 2026-09-11), which signals strong demand and a likely listing pop. The offer is ~83% secondary (fresh issue ₹1,500m of ₹8,796m), so demand is being met largely by existing holders selling — that caps how much of the enthusiasm is about the company's future rather than an exit. Score reflects strong demand tempered by seller-heavy structure."
+  },
+  "longterm_view": {
+   "score": 62.0,
+   "reasoning": "Revenue compounding ~42% with EBITDA margins in the 40-45% band and operating cash flow exceeding EBITDA (conversion 1.06) is a genuinely good operating profile, and leverage is falling (debt/equity 1.06 to 0.63). But at ₹404 the weighted-average EPS of 7.07 implies ~57x earnings, the current ratio is 0.55 (short-term liabilities nearly twice short-term assets), and the model depends on continued financing for an asset-heavy rental fleet — the prospectus itself flags inability to obtain further financing as a risk [business, page 235]."
+  },
+  "governance": {
+   "score": 55.0,
+   "reasoning": "The extracts show the company asserting no conflict of interest with suppliers/lessors [promoters, page 264] and disclosing related-party transactions under Ind AS 24 [promoters, page 302], plus some promoter-linked criminal proceedings it characterises as harassment [litigation, page 342]. The extracts are too fragmentary to judge governance properly; a heavy OFS is itself a mild negative signal."
+  },
+  "key_risks": [
+   {
+    "risk": "Demand dependence on rental model",
+    "why_it_matters": "The prospectus itself says a decline in demand for renting products would adversely affect the business — the entire subscription-driven model rests on this consumer preference persisting.",
+    "citation": "[business, page 209]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Financing/refinancing dependence",
+    "why_it_matters": "An asset-heavy rental fleet needs continuous capital; the document flags inability to obtain further financing or meet covenants as a risk, and total debt is ₹1,876m against thin liquidity (current ratio 0.55).",
+    "citation": "[business, page 235]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Competition from traditional selling models",
+    "why_it_matters": "The prospectus acknowledges competition from traditional selling business models, which could compress the 42-45% EBITDA margins if rental pricing is undercut.",
+    "citation": "[business, page 220]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Promoter litigation",
+    "why_it_matters": "There are criminal proceedings involving the promoter that the company dismisses as harassment — even if true, this is an unresolved overhang the extracts do not quantify.",
+    "citation": "[litigation, page 342]",
+    "citation_verified": true
+   }
+  ],
+  "answers": [
+   {
+    "question": "how is the shortfall funded?",
+    "answer": "not answerable from what I was given",
+    "citation": "not answerable from what I was given",
+    "citation_verified": false
+   },
+   {
+    "question": "who is selling, and how much of their stake?",
+    "answer": "The extracts do not name the selling shareholders. What the figures establish is that the sale is large relative to the raise: the fresh issue is ₹1,500m out of a total issue of ₹8,796m, so roughly ₹7,296m (~83%) is an offer for sale by existing holders. Naming them or their percentage stakes is not possible from what I was given.",
+    "citation": "not answerable from what I was given",
+    "citation_verified": false
+   }
+  ],
+  "confidence": "medium",
+  "what_would_change_my_mind": "An anchor investor list and the identity/percentage of selling shareholders would sharpen both views — a promoter dumping most of their stake would cut my long-term score materially, while continued gearing-down and evidence ROE/ROCE (not printed here) supports the valuation would raise it.",
+  "citation_check": {
+   "claims_checked": 6,
+   "citations_verified": 4,
+   "citations_not_matching_what_we_sent": 0
+  }
+ }
+}

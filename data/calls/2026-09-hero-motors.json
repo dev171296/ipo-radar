@@ -2,27 +2,29 @@
  "listing": {
   "call": "APPLY SELECTIVELY",
   "colour": "#a86400",
-  "score": 53.0,
-  "confidence": "medium",
-  "why": "built from our fundamentals, market demand — 75% of the deciding weight",
+  "score": 55.2,
+  "confidence": "low",
+  "why": "built from our fundamentals, market demand, the two AI readings; the two models disagree, which lowers confidence",
   "based_on": [
    "our fundamentals",
-   "market demand"
+   "market demand",
+   "the two AI readings"
   ]
  },
  "longterm": {
   "call": "APPLY SELECTIVELY",
   "colour": "#a86400",
-  "score": 59.0,
+  "score": 52.7,
   "confidence": "low",
-  "why": "built from our fundamentals — 60% of the deciding weight",
+  "why": "built from our fundamentals, the two AI readings — 90% of the deciding weight; the two models disagree, which lowers confidence",
   "based_on": [
-   "our fundamentals"
+   "our fundamentals",
+   "the two AI readings"
   ]
  },
  "hard_stops": [],
  "serious_findings": [
   "owes more this year than it expects to collect"
  ],
- "models_disagree": false
+ "models_disagree": true
 }

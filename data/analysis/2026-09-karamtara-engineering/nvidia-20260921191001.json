@@ -1,0 +1,92 @@
+{
+ "ok": true,
+ "model": "moonshotai/kimi-k3",
+ "answered_at": "2026-09-21T19:10:01+00:00",
+ "evidence_fingerprint": "f70311212f0e4fd7",
+ "prompt_chars": 8490,
+ "passages_supplied": {
+  "litigation": 8,
+  "governance": 8,
+  "business_quality": 8,
+  "risks": 1
+ },
+ "answer": {
+  "listing_view": {
+   "score": 72.0,
+   "reasoning": "The issue was subscribed 37.5x at last recording, with the bulk of demand arriving on the final day (2.4x on day two to 37.5x), which typically indicates strong last-day institutional/HNI momentum and supports a positive listing. But subscription is the only demand signal I have — there is no grey market premium, no anchor book data, and no breakdown by category, so I cannot rule out levered HNI money that evaporates after listing. There is also an unresolved contradiction between the stated fresh issue and total offer size, which undermines trust in the offer structure itself."
+  },
+  "longterm_view": {
+   "score": 48.0,
+   "reasoning": "Revenue has compounded at ~33% with EBITDA margins stable around 11%, and the latest year's operating cash flow (₹6,751m) actually exceeded EBITDA, which is genuinely encouraging. However, receivable days have stretched from 86 to 111, total debt has nearly doubled to ₹10,301m against net worth of ₹12,199m, and the prospectus extracts given to me are raw-material-and-process boilerplate with nothing on order book, customers, or competitive position — I cannot underwrite durability on this."
+  },
+  "governance": {
+   "score": 55.0,
+   "reasoning": "The extracts show only standard disclosure language: no SEBI/exchange penalties against promoters are recorded, related-party transactions and promoter-group entities are disclosed by cross-reference, and no off-market promoter guarantees are stated. That is the absence of a red flag, not evidence of quality — the extracts are fragments and I have seen nothing on auditor qualifications, promoter pledging, or related-party magnitudes."
+  },
+  "key_risks": [
+   {
+    "risk": "Receivable cycle deteriorating",
+    "why_it_matters": "Customers taking 111 days to pay versus 86 two years earlier means the reported growth is increasingly funded by the company's own balance sheet, and one bad debtor cycle would hit both cash flow and the enlarged debt load.",
+    "citation": "[business, page 276]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Offer structure contradiction",
+    "why_it_matters": "The fresh issue (₹6,750m) exceeds the computed total offer (₹6,455m), so I cannot verify how much money goes to the company versus selling shareholders — and if it is mostly an exit, the listing pop benefits the seller, not new investors.",
+    "citation": "[litigation, page 453]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Concentrated last-day subscription",
+    "why_it_matters": "Demand jumping from 2.4x to 37.5x in the final hours is consistent with leveraged last-day bidding that may not translate into aftermarket holding, raising post-listing volatility risk.",
+    "citation": "[litigation, page 453]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Regulatory/compliance exposure disclosed only generically",
+    "why_it_matters": "The litigation chapter references criminal proceedings sections and claims related to direct and indirect taxes, but the extracts do not quantify them, so material contingent liabilities cannot be ruled out.",
+    "citation": "[litigation, page 425]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Leverage rising into the IPO",
+    "why_it_matters": "Debt rose from ₹5,085m to ₹10,301m over two years while receivables lengthened, so the business is consuming capital faster than the 11% EBITDA margin comfortably supports without the IPO proceeds.",
+    "citation": "[business, page 276]",
+    "citation_verified": true
+   }
+  ],
+  "answers": [
+   {
+    "question": "Is the demand real enough to support the listing?",
+    "answer": "Probably yes for the listing itself — 37.5x subscription is substantial — but with no GMP, no anchor data, and no category-wise split, I cannot distinguish durable demand from flipping money.",
+    "citation": "not answerable from what I was given",
+    "citation_verified": false
+   },
+   {
+    "question": "Is reported profit converting to cash?",
+    "answer": "Yes, unusually well in the latest year: operating cash flow of ₹6,751m exceeded EBITDA of ₹4,981m (conversion 1.36x), and no year was negative.",
+    "citation": "[business, page 276]",
+    "citation_verified": true
+   },
+   {
+    "question": "Are there governance red flags?",
+    "answer": "None visible in the extracts — no SEBI/exchange penalties on promoters, related-party dealings disclosed by cross-reference, and no promoter guarantees to third parties on the shares — but the extracts are fragments, so this is absence of evidence, not evidence of absence.",
+    "citation": "[promoters, page 324]",
+    "citation_verified": true
+   },
+   {
+    "question": "Is the valuation reasonable?",
+    "answer": "Not answerable: at ₹241–254 the price implies roughly 31–41x the weighted EPS of 6.16, but no peer comparison, ROE, or ROCE is available in what I was given, so I cannot judge whether that multiple is earned.",
+    "citation": "not answerable from what I was given",
+    "citation_verified": false
+   }
+  ],
+  "confidence": "low",
+  "what_would_change_my_mind": "Category-wise subscription data (QIB vs HNI vs retail), anchor investor quality, resolution of the fresh-issue versus offer-size contradiction, and disclosure of order book and customer concentration would each move my view materially in either direction.",
+  "citation_check": {
+   "claims_checked": 9,
+   "citations_verified": 7,
+   "citations_not_matching_what_we_sent": 0
+  }
+ }
+}

@@ -1,0 +1,80 @@
+{
+ "ok": true,
+ "model": "moonshotai/kimi-k3",
+ "answered_at": "2026-09-21T19:30:04+00:00",
+ "evidence_fingerprint": "1d680f0617636ab4",
+ "prompt_chars": 9027,
+ "passages_supplied": {
+  "litigation": 8,
+  "governance": 8,
+  "business_quality": 8,
+  "risks": 6
+ },
+ "answer": {
+  "listing_view": {
+   "score": 72.0,
+   "reasoning": "Subscription built slowly (only ~0.9x by day 2) then exploded to ~10.6x on the final day, the classic HNI/QIB-heavy last-day pattern that usually translates into a strong listing rather than retail conviction. Nothing in what I was given (no GMP, no anchor data, no basis-for-price chapter) lets me test whether the ₹130–140 band is priced to leave money on the table, so this score is driven purely by observed demand and is fragile."
+  },
+  "longterm_view": {
+   "score": 45.0,
+   "reasoning": "The P&L looks excellent — ~50% two-year revenue CAGR with stable ~17% EBITDA margins and a contracted order book of ₹9,094 crore against ~₹2,510 crore annual revenue [business, page 230] — but this is a real estate developer whose reported profits are not arriving as cash: operating cash flow was negative in the latest two years (-₹743 crore and -₹440 crore) against positive reported EBITDA, and the balance sheet shows borrowings swinging violently (₹1,203 crore → ₹1,770 crore → ₹856 crore). Earnings growth funded by balance-sheet expansion rather than cash conversion is the oldest real estate story there is."
+  },
+  "governance": {
+   "score": 35.0,
+   "reasoning": "The company discloses ongoing related-party transactions with no assurance they will stop [capital_structure, page 105], and there is litigation involving promoters including a petitioner seeking to initiate criminal contempt proceedings [litigation, page 432]. A disclosure that share pledges exist [capital_structure, page 108] adds to the caution, though the extract is too thin to quantify it."
+  },
+  "key_risks": [
+   {
+    "risk": "Profits are not converting to cash",
+    "why_it_matters": "Operating cash flow was negative in the two most recent years despite rising EBITDA, meaning the reported growth is being consumed by the working capital cycle; if the cycle turns, equity holders fund the gap.",
+    "citation": "[business, page 230]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Promoter litigation",
+    "why_it_matters": "There is an attempt to initiate criminal contempt proceedings in litigation involving promoters, which is a reputational and continuity overhang a buyer cannot price from the prospectus alone.",
+    "citation": "[litigation, page 432]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Ongoing related-party transactions",
+    "why_it_matters": "The company flags it will continue entering related-party transactions with no assurance on terms, which in a developer can quietly shift value out of the listed entity.",
+    "citation": "[capital_structure, page 105]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Volatile, heavy borrowings",
+    "why_it_matters": "Debt swung from ₹1,203 crore to ₹1,770 crore to ₹856 crore across three years with debt-to-equity printed at 2.7 recently, so liquidity depends on continued refinancing and project collections.",
+    "citation": "[business, page 228]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Key-person and insurance gaps the company itself flags",
+    "why_it_matters": "The prospectus admits possible insufficient insurance coverage (Risk Factor 41) and dependence on promoter/KMP retention — boilerplate, but marked as material by the issuer itself.",
+    "citation": "[business, page 253]",
+    "citation_verified": true
+   }
+  ],
+  "answers": [
+   {
+    "question": "where did the money go — receivables, inventory, or both?",
+    "answer": "The figures prove the cash left the business (operating cash flow of -₹743 crore and -₹440 crore in the latest two years against positive EBITDA), but neither the extracts nor the figures break out whether it went into receivables, inventory/WIP, or both. The business extract says collections are phased per RERA construction schedules, which is consistent with a long cash cycle, but that is a mechanism, not a destination. The split between receivables and inventory is genuinely not answerable from what I was given.",
+    "citation": "[business, page 228]",
+    "citation_verified": true
+   },
+   {
+    "question": "what are the repayment terms, and do the issue proceeds repay any of it?",
+    "answer": "Not answerable from what I was given. There are total debt levels in the figures and a 'Shares pledged' heading in the extracts, but nothing on repayment terms, maturity profile, cost of debt, or the objects of the issue, so I cannot say whether IPO proceeds go to debt repayment.",
+    "citation": "not answerable from what I was given",
+    "citation_verified": false
+   }
+  ],
+  "confidence": "low",
+  "what_would_change_my_mind": "A cash-flow statement showing which working-capital line absorbed the ₹1,100+ crore, and the objects-of-the-issue chapter — if proceeds meaningfully deleverage rather than fund new land, the long-term view improves materially. Conversely, confirmation that the OFS component is large and the fresh issue small would push the listing view down, since I'd then read the 10.6x subscription as exit liquidity for sellers.",
+  "citation_check": {
+   "claims_checked": 7,
+   "citations_verified": 6,
+   "citations_not_matching_what_we_sent": 0
+  }
+ }
+}

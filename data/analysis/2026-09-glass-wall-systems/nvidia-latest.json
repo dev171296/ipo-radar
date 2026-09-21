@@ -1,0 +1,74 @@
+{
+ "ok": true,
+ "model": "moonshotai/kimi-k3",
+ "answered_at": "2026-09-21T19:00:39+00:00",
+ "evidence_fingerprint": "7220739c869121c9",
+ "prompt_chars": 11081,
+ "passages_supplied": {
+  "litigation": 8,
+  "governance": 8,
+  "business_quality": 8,
+  "risks": 7
+ },
+ "answer": {
+  "listing_view": {
+   "score": 78.0,
+   "reasoning": "Subscription closed at ~56.6×, with most of the book (0 to 42×) arriving on the final day — classic Indian book-closing behaviour that signals heat but not necessarily durable demand. Pricing at ~18.4× latest basic EPS against the document's own stated benchmark of 16.5× is a modest premium, so a pop is plausible; the absence of anchor/GMP data means this score leans almost entirely on the subscription tape."
+  },
+  "longterm_view": {
+   "score": 58.0,
+   "reasoning": "Growth is real (revenue +64% latest year, EBITDA margin ~23%) and the balance sheet is nearly debt-free with improving operating cash flow, but roughly a third of incremental sales is uncollected receivables and receivable days have stretched to 87. Facades/fenestration is project-based, competitive and manpower-intensive per the company's own risk factors, and I have no ROE/ROCE or capacity-utilisation data to confirm the quality of the compounding."
+  },
+  "governance": {
+   "score": 62.0,
+   "reasoning": "No promoter disciplinary action in five years and tax litigation appears resolved in the company's favour, but title deeds for ₹318m of pledged property are not with the company, bank guarantees were historically backed by promoter personal guarantees, and ESOP fair value to KMP runs through related-party disclosures."
+  },
+  "key_risks": [
+   {
+    "risk": "Receivables absorbing the growth",
+    "why_it_matters": "31% of incremental revenue is money not yet collected and receivable days rose to 87, so the reported profit growth is partly a working-capital build that could reverse.",
+    "citation": "[business, page 224]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Supplier concentration",
+    "why_it_matters": "The company states it depends on a limited number of suppliers with no long-term contracts, so input disruption hits margins directly in a raw-material-heavy cost base (~₹2.2bn of ₹4.6bn revenue).",
+    "citation": "[business, page 278]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Pledged property without title deeds in hand",
+    "why_it_matters": "₹318m of immovable property is pledged with banks and the deeds are not with the company, which weakens control over a real asset base.",
+    "citation": "[promoters, page 391]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Order-book-based growth claims are self-reported",
+    "why_it_matters": "The equity story rests on order-book figures as of July 2026 that cannot be independently verified from the extracts, and capacity utilisation cannot even be estimated by the company itself.",
+    "citation": "[business, page 275]",
+    "citation_verified": true
+   }
+  ],
+  "answers": [
+   {
+    "question": "look for one-off orders, related-party sales or a change in how revenue is recognised",
+    "answer": "Nothing in the extracts shows a recognition-policy change or a flagged one-off order, and the related-party disclosures shown cover ESOP fair value and historical guarantees rather than sales. However, the financial pattern — receivables growing to 87 days with 31% of incremental sales uncollected — is consistent with either a large recent project win or loosening credit terms, and neither can be distinguished from what I was given.",
+    "citation": "[business, page 228]",
+    "citation_verified": true
+   },
+   {
+    "question": "who is selling, and how much of their stake?",
+    "answer": "The offer is ₹2,995m total against a ₹600m fresh issue, so roughly 80% (₹2,395m, ~13.2m shares at ₹182) is an offer for sale by existing holders — but the extracts given to me do not name the selling shareholders or their stakes, and the fresh-issue figure comes from a flattened table I cannot independently verify.",
+    "citation": "not answerable from what I was given",
+    "citation_verified": false
+   }
+  ],
+  "confidence": "low",
+  "what_would_change_my_mind": "Named selling shareholders with their pre/post stakes, audited ROE/ROCE, and segment-wise capacity utilisation would let me judge whether this is a founder cash-out at top margins or a genuine growth raise. Evidence that the 87-day receivables reflect a single milestone project rather than systemic stretching would materially raise my long-term view.",
+  "citation_check": {
+   "claims_checked": 6,
+   "citations_verified": 5,
+   "citations_not_matching_what_we_sent": 0
+  }
+ }
+}

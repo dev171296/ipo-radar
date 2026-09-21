@@ -1,0 +1,86 @@
+{
+ "ok": true,
+ "model": "moonshotai/kimi-k3",
+ "answered_at": "2026-09-21T19:11:52+00:00",
+ "evidence_fingerprint": "1c3d07fe661f73c3",
+ "prompt_chars": 7955,
+ "passages_supplied": {
+  "litigation": 8,
+  "governance": 8,
+  "business_quality": 8,
+  "risks": 3
+ },
+ "answer": {
+  "listing_view": {
+   "score": 78.0,
+   "reasoning": "Subscription went from ~1x on day one morning to ~34.7x by close of day three, with almost all of it arriving on the final day — that pattern signals strong listing pop potential but is largely window-dressing style demand, not a verdict on fundamentals. At ₹146 the implied P/E on weighted-average EPS (~8.68) is roughly 17x, not absurdly priced for 53% PAT growth, which leaves room for a first-day premium."
+  },
+  "longterm_view": {
+   "score": 55.0,
+   "reasoning": "Revenue growing ~21.5% CAGR with PAT margins expanding from 5% to ~8% and an order book of ₹79.5bn versus ₹36bn revenue (≈2.2 years of cover) is a decent EPC profile. But operating cash flow converted only 55% of PAT cumulatively — ₹2.1bn of cash against ₹6.3bn of three-year profit — and working capital stress is the classic killer of Indian EPC stories; the prospectus itself flags that order book revenue 'may be significantly less than estimates' [business, page 200]. Top-10 customer concentration tables are referenced but I was not given the numbers, so the quality of that revenue cannot be verified."
+  },
+  "governance": {
+   "score": 60.0,
+   "reasoning": "No material SEBI findings are disclosed [litigation, page 396] and promoters have given no material third-party guarantees [promoters, page 252], but the prospectus discloses an extensive related-party transaction footprint [promoters, page 317, page 332] with no figures given to me, so related-party risk is real but unquantifiable."
+  },
+  "key_risks": [
+   {
+    "risk": "Weak cash conversion",
+    "why_it_matters": "Only 55 paise of every ₹1 of reported profit arrived as cash, meaning earnings quality depends on receivables being collected from (likely government) clients.",
+    "citation": "[not in extracts; derived from operating cash flow vs PAT figures provided]",
+    "citation_verified": false
+   },
+   {
+    "risk": "Order book may overstate future revenue",
+    "why_it_matters": "The company itself warns recognized income may be significantly less than order book estimates, so the ₹79.5bn backlog is not bankable revenue.",
+    "citation": "[business, page 200]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Related-party transactions",
+    "why_it_matters": "Entities influenced by KMP transact with the company; without the values I cannot tell whether this is arm's-length or value extraction.",
+    "citation": "[promoters, page 317]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Customer concentration",
+    "why_it_matters": "Top-ten customer tables exist for all three years, implying concentration disclosures — in EPC this usually means state government dependence, but the figures were not provided.",
+    "citation": "[business, page 206]",
+    "citation_verified": true
+   }
+  ],
+  "answers": [
+   {
+    "question": "Is the IPO likely to pop on listing?",
+    "answer": "Probably yes — 34.7x subscription with heavy final-day demand is consistent with a strong debut, though such demand largely reflects momentum/leveraged bidding rather than fundamental conviction.",
+    "citation": "not answerable from a cited passage; based on subscription data provided",
+    "citation_verified": false
+   },
+   {
+    "question": "Are reported profits backed by cash?",
+    "answer": "Only partially — operating cash flow over three years (₹1,584m + ₹236m + ₹294m) covers barely a third of cumulative PAT, with two of three years below ₹300m.",
+    "citation": "not answerable from a cited passage; derived from figures provided",
+    "citation_verified": false
+   },
+   {
+    "question": "Is the valuation reasonable?",
+    "answer": "Not answerable from what I was given — no peer comparison exists in the extracts and ROE/ROCE are not printed, so I cannot benchmark 17x weighted-earnings.",
+    "citation": "not answerable from what I was given",
+    "citation_verified": false
+   },
+   {
+    "question": "Does the order book support the growth story?",
+    "answer": "Yes on paper — ₹79.5bn order book against ₹36bn latest-year revenue gives ~2.2 years of cover and it has grown each year.",
+    "citation": "[business, page 187]",
+    "citation_verified": true
+   }
+  ],
+  "confidence": "medium",
+  "what_would_change_my_mind": "On the long term: evidence that receivables convert (sustained OCF/PAT near 1.0) or that top-customer concentration is diversified; on the listing: anchor book quality and grey-market data would either confirm or deflate the subscription-driven optimism.",
+  "citation_check": {
+   "claims_checked": 8,
+   "citations_verified": 4,
+   "citations_not_matching_what_we_sent": 1
+  }
+ }
+}

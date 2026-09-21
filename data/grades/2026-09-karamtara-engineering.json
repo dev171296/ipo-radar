@@ -1,0 +1,115 @@
+{
+ "ipo_id": "2026-09-karamtara-engineering",
+ "name": "Karamtara Engineering Limited",
+ "symbol": "KARAMTARA",
+ "graded_at": "2026-09-21T19:30:10+00:00",
+ "status": "listed",
+ "listed_on": "2026-09-17",
+ "issue_price": 254.0,
+ "issue_price_note": "top of the price band — the price nearly every Indian IPO is finally set at",
+ "listing_open": 320.0,
+ "listing_close": 352.0,
+ "listing_gain_pct": 25.98,
+ "listing_day_close_pct": 38.58,
+ "checkpoints": {
+  "1 week": {
+   "due": "2026-09-24"
+  },
+  "1 month": {
+   "due": "2026-10-17"
+  },
+  "3 months": {
+   "due": "2026-12-17"
+  },
+  "6 months": {
+   "due": "2027-03-18"
+  },
+  "12 months": {
+   "due": "2027-09-17"
+  }
+ },
+ "predictions": {
+  "cutoff_utc": "20260917034500",
+  "score_taken_at": "20260916174231",
+  "fundamentals": 75.4,
+  "call": {
+   "listing": {
+    "call": "APPLY",
+    "colour": "#2f7d32",
+    "score": 69.9,
+    "confidence": "medium",
+    "why": "built from our fundamentals, market demand — 75% of the deciding weight",
+    "based_on": [
+     "our fundamentals",
+     "market demand"
+    ]
+   },
+   "longterm": {
+    "call": "APPLY",
+    "colour": "#2f7d32",
+    "score": 75.4,
+    "confidence": "low",
+    "why": "built from our fundamentals — 60% of the deciding weight",
+    "based_on": [
+     "our fundamentals"
+    ]
+   },
+   "hard_stops": [],
+   "serious_findings": [],
+   "models_disagree": false
+  },
+  "models": {
+   "groq": {
+    "model": "openai/gpt-oss-20b",
+    "answered_at": "20260912071806",
+    "listing_view": 50.0,
+    "longterm_view": 50.0,
+    "unsuitable_model": false
+   },
+   "gemini": {
+    "model": "gemini-flash-lite-latest",
+    "answered_at": "20260912071806",
+    "listing_view": 65.0,
+    "longterm_view": 45.0,
+    "unsuitable_model": false
+   }
+  }
+ },
+ "marks": {
+  "our_call": {
+   "listing": {
+    "said": "APPLY",
+    "right": true
+   },
+   "holding": {
+    "said": "APPLY",
+    "right": null,
+    "due": "2026-12-17"
+   }
+  },
+  "groq": {
+   "model": "openai/gpt-oss-20b",
+   "unsuitable_model": false,
+   "listing": {
+    "said": 50.0,
+    "right": null
+   },
+   "holding": {
+    "said": 50.0,
+    "right": null
+   }
+  },
+  "gemini": {
+   "model": "gemini-flash-lite-latest",
+   "unsuitable_model": false,
+   "listing": {
+    "said": 65.0,
+    "right": true
+   },
+   "holding": {
+    "said": 45.0,
+    "right": null
+   }
+  }
+ }
+}

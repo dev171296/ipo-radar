@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T18:12:43+00:00",
+  "generated_at": "2026-09-21T18:46:21+00:00",
   "count": 29,
   "ipos": [
     {
@@ -216,7 +216,7 @@
       "id": "2026-09-national-stock-exchange-of",
       "name": "National Stock Exchange of India Limited",
       "type": "mainboard",
-      "status": "open",
+      "status": "upcoming",
       "dates": {
         "open": "2026-09-17",
         "close": "2026-09-21",
@@ -300,7 +300,7 @@
       "id": "2026-09-sonaselection",
       "name": "Sonaselection India Limited",
       "type": "mainboard",
-      "status": "open",
+      "status": "upcoming",
       "dates": {
         "open": "2026-09-17",
         "close": "2026-09-21",
@@ -370,7 +370,7 @@
       "id": "2026-09-varmora-granito",
       "name": "Varmora Granito Limited",
       "type": "mainboard",
-      "status": "upcoming",
+      "status": "open",
       "dates": {
         "open": "2026-09-22",
         "close": "2026-09-24",

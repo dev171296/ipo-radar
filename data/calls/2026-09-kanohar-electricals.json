@@ -2,22 +2,24 @@
  "listing": {
   "call": "APPLY",
   "colour": "#2f7d32",
-  "score": 76.1,
-  "confidence": "medium",
-  "why": "built from our fundamentals, market demand — 75% of the deciding weight",
+  "score": 76.6,
+  "confidence": "high",
+  "why": "built from our fundamentals, market demand, the two AI readings",
   "based_on": [
    "our fundamentals",
-   "market demand"
+   "market demand",
+   "the two AI readings"
   ]
  },
  "longterm": {
-  "call": "STRONG APPLY",
-  "colour": "#1f7a4d",
-  "score": 80.8,
-  "confidence": "low",
-  "why": "built from our fundamentals — 60% of the deciding weight",
+  "call": "APPLY",
+  "colour": "#2f7d32",
+  "score": 67.9,
+  "confidence": "medium",
+  "why": "built from our fundamentals, the two AI readings — 90% of the deciding weight",
   "based_on": [
-   "our fundamentals"
+   "our fundamentals",
+   "the two AI readings"
   ]
  },
  "hard_stops": [],
