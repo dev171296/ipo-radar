@@ -1,0 +1,115 @@
+{
+ "ipo_id": "2026-09-manipal-payment-and-identity-solutions",
+ "name": "Manipal Payment and Identity Solutions Limited",
+ "symbol": "MPIMANIPAL",
+ "graded_at": "2026-09-21T20:17:41+00:00",
+ "status": "listed",
+ "listed_on": "2026-09-17",
+ "issue_price": 339.0,
+ "issue_price_note": "top of the price band — the price nearly every Indian IPO is finally set at",
+ "listing_open": 330.0,
+ "listing_close": 345.15,
+ "listing_gain_pct": -2.65,
+ "listing_day_close_pct": 1.81,
+ "checkpoints": {
+  "1 week": {
+   "due": "2026-09-24"
+  },
+  "1 month": {
+   "due": "2026-10-17"
+  },
+  "3 months": {
+   "due": "2026-12-17"
+  },
+  "6 months": {
+   "due": "2027-03-18"
+  },
+  "12 months": {
+   "due": "2027-09-17"
+  }
+ },
+ "predictions": {
+  "cutoff_utc": "20260917034500",
+  "score_taken_at": "20260916174233",
+  "fundamentals": 74.0,
+  "call": {
+   "listing": {
+    "call": "AVOID",
+    "colour": "#a32d22",
+    "score": 34.8,
+    "confidence": "medium",
+    "why": "built from our fundamentals, market demand — 75% of the deciding weight",
+    "based_on": [
+     "our fundamentals",
+     "market demand"
+    ]
+   },
+   "longterm": {
+    "call": "APPLY",
+    "colour": "#2f7d32",
+    "score": 74.0,
+    "confidence": "low",
+    "why": "built from our fundamentals — 60% of the deciding weight",
+    "based_on": [
+     "our fundamentals"
+    ]
+   },
+   "hard_stops": [],
+   "serious_findings": [],
+   "models_disagree": false
+  },
+  "models": {
+   "groq": {
+    "model": "qwen/qwen3.8-27b",
+    "answered_at": "20260912071815",
+    "listing_view": 25.0,
+    "longterm_view": 55.0,
+    "unsuitable_model": false
+   },
+   "gemini": {
+    "model": "gemini-flash-lite-latest",
+    "answered_at": "20260912071815",
+    "listing_view": 10.0,
+    "longterm_view": 40.0,
+    "unsuitable_model": false
+   }
+  }
+ },
+ "marks": {
+  "our_call": {
+   "listing": {
+    "said": "AVOID",
+    "right": true
+   },
+   "holding": {
+    "said": "APPLY",
+    "right": null,
+    "due": "2026-12-17"
+   }
+  },
+  "groq": {
+   "model": "qwen/qwen3.8-27b",
+   "unsuitable_model": false,
+   "listing": {
+    "said": 25.0,
+    "right": true
+   },
+   "holding": {
+    "said": 55.0,
+    "right": null
+   }
+  },
+  "gemini": {
+   "model": "gemini-flash-lite-latest",
+   "unsuitable_model": false,
+   "listing": {
+    "said": 10.0,
+    "right": true
+   },
+   "holding": {
+    "said": 40.0,
+    "right": null
+   }
+  }
+ }
+}

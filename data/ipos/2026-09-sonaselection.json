@@ -8,7 +8,7 @@
   "name": "Sonaselection India Limited",
   "symbol": "SONA",
   "type": "mainboard",
-  "status": "open",
+  "status": "upcoming",
   "dates": {
     "open": "2026-09-17",
     "close": "2026-09-21",
@@ -18,15 +18,15 @@
   "price_band": "Rs.94 to Rs.99",
   "issue_size_shares": 10010000.0,
   "subscription": {
-    "times": 1.455944055944056,
-    "shares_offered": 10010000.0,
-    "shares_bid": 14574000.0
+    "times": null,
+    "shares_offered": null,
+    "shares_bid": null
   },
   "also_on_bse": false,
   "sources": {
     "calendar": "nse",
-    "fetched_at": "2026-09-21T18:12:43+00:00"
+    "fetched_at": "2026-09-21T19:30:33+00:00"
   },
   "missing": [],
-  "rebuilt_at": "2026-09-21T18:12:43+00:00"
+  "rebuilt_at": "2026-09-21T19:30:33+00:00"
 }

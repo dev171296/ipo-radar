@@ -1,0 +1,74 @@
+{
+ "ok": true,
+ "model": "moonshotai/kimi-k3",
+ "answered_at": "2026-09-21T19:56:04+00:00",
+ "evidence_fingerprint": "a0c759414d92b5a2",
+ "prompt_chars": 10376,
+ "passages_supplied": {
+  "litigation": 8,
+  "governance": 8,
+  "business_quality": 8,
+  "risks": 7
+ },
+ "answer": {
+  "listing_view": {
+   "score": 78.0,
+   "reasoning": "Subscription reached ~69.5x by the close of day three, with the curve steepening sharply on the final day (17x to 69.5x), which signals strong end-of-issue demand. At 36x earnings versus a seller-chosen peer median of 103x, the pricing leaves room for a pop, though much of that gap reflects the peer set being expensive in absolute terms rather than this issue being objectively cheap. Absent GMP and anchor data, this rests on subscription momentum and relative pricing alone."
+  },
+  "longterm_view": {
+   "score": 48.0,
+   "reasoning": "Growth and returns look exceptional (revenue CAGR ~54%, ROCE 70%), but profitability has not converted to cash: latest-year operating cash flow was only about 14% of EBITDA, and FY2024 operating cash flow was negative. Top-10 customers supply 93-95% of revenue [business, page 246], so the margin expansion story depends on a handful of buyers. High returns plus weak cash conversion plus extreme customer concentration is exactly the profile that can unwind quickly."
+  },
+  "governance": {
+   "score": 55.0,
+   "reasoning": "The extracts show standard conflict-of-interest declarations and a pointer to ongoing related-party transactions flagged as a risk factor [related_party, page 414], but the actual Note 40 detail is not provided. Boilerplate from the seller is weak evidence; nothing verified adverse, nothing verified reassuring."
+  },
+  "key_risks": [
+   {
+    "risk": "Profit not arriving as cash",
+    "why_it_matters": "Operating cash flow was only ~14% of EBITDA in the latest year and negative in FY2024, so reported earnings quality is poor and growth is being funded from somewhere other than operations.",
+    "citation": "not answerable from what I was given",
+    "citation_verified": false
+   },
+   {
+    "risk": "Extreme customer concentration",
+    "why_it_matters": "Top 10 customers contributed 93.16%, 93.88% and 95.43% of revenue across the three fiscals; losing one or two would directly hit the growth and margin story [business, page 246].",
+    "citation": "[business, page 246]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Raw material competition squeezing margins",
+    "why_it_matters": "The company itself flags heightened competition for critical raw materials affecting procurement, which threatens the recently expanded 27.6% EBITDA margin [business, page 256].",
+    "citation": "[business, page 256]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Working capital drag from receivables",
+    "why_it_matters": "Receivable days of 115-158 mean cash is locked up for 4-5 months, explaining the weak cash conversion and likely the need for IPO proceeds.",
+    "citation": "not answerable from what I was given",
+    "citation_verified": false
+   }
+  ],
+  "answers": [
+   {
+    "question": "is the peer set fairly chosen, and are the peers themselves expensive rather than this being cheap?",
+    "answer": "The peer set is the seller's own selection and is skewed toward richly valued names (Hitachi Energy 159x, Schneider 155x, CG Power 115x); only Transformers & Rectifiers (32x) trades near the issue's 36x. So the apparent 0.35x discount to the median is largely a statement that the peer group itself is expensive, not proof that this issue is cheap; the most comparable-sounding peer by P/E prices it almost identically to Kanohar.",
+    "citation": "not answerable from what I was given",
+    "citation_verified": false
+   },
+   {
+    "question": "check receivables and inventory against the sales growth",
+    "answer": "Revenue grew ~45% in the latest year while receivable days improved from 157.8 to 117.7, so receivables grew slower than sales — that part is not a red flag against the growth. But at 117 days collections are still very slow and cash conversion is only ~14% of EBITDA, so the working-capital burden of this growth is heavy; inventory data was not provided, so that leg cannot be checked.",
+    "citation": "not answerable from what I was given",
+    "citation_verified": false
+   }
+  ],
+  "confidence": "medium",
+  "what_would_change_my_mind": "Evidence that operating cash flow tracks EBITDA over a full cycle (e.g., the Note 40 disclosures plus cash flow detail showing collections catching up) would upgrade the long-term view; conversely, disclosure that the fresh-issue proceeds are substantially funding working capital or related-party balances would confirm the earnings-quality concern.",
+  "citation_check": {
+   "claims_checked": 6,
+   "citations_verified": 2,
+   "citations_not_matching_what_we_sent": 0
+  }
+ }
+}

@@ -1,0 +1,67 @@
+{
+ "ok": true,
+ "model": "moonshotai/kimi-k3",
+ "answered_at": "2026-09-21T19:53:27+00:00",
+ "evidence_fingerprint": "f3f914fe7be7353b",
+ "prompt_chars": 7247,
+ "passages_supplied": {
+  "litigation": 8,
+  "governance": 8,
+  "business_quality": 8,
+  "risks": 1
+ },
+ "answer": {
+  "listing_view": {
+   "score": 82.0,
+   "reasoning": "The book built from ~2.5x on day one to 125x by close, which signals aggressive demand against a very small offer of roughly ₹874 million [subscription_history data]. At ₹93 the price is about 16.6x the latest basic EPS of 5.59, not obviously stretched, so a listing pop is plausible; the main caveat is that I have no anchor-investor or grey-market data against which to cross-check this demand."
+  },
+  "longterm_view": {
+   "score": 42.0,
+   "reasoning": "The balance sheet worries me: borrowings rose from ₹1,836 million to ₹9,246 million over three periods while operating cash flow swung from +₹3,245 million to -₹569 million and net worth shows a negative value (-₹6.86 million) in the middle year, which suggests either a loss-making year or restructuring the extracts do not explain [VERIFIED FIGURES]. Customer concentration is very high, with the top customers accounting for roughly 80% of revenue in the latest periods [business, page 166]. Thin, price-taker steel fabrication economics plus heavy leverage is a poor long-term combination."
+  },
+  "governance": {
+   "score": 55.0,
+   "reasoning": "No criminal litigation against the company or promoters, no promoter share pledging, and 100% promoter-group holding disclosed [litigation, page 318] [capital_structure, page 78]. However, the SEBI order dated May 31, 2023 and an income-tax Section 221(1) show-cause notice referenced on the litigation page are not explained in the extracts given, so the governance picture is incomplete rather than clean."
+  },
+  "key_risks": [
+   {
+    "risk": "Customer concentration",
+    "why_it_matters": "Top customers supply ~73-80% of revenue, so losing one key account could remove a large share of the business overnight.",
+    "citation": "business, page 166",
+    "citation_verified": true
+   },
+   {
+    "risk": "Leverage surge with weak cash conversion",
+    "why_it_matters": "Debt rose roughly five-fold while operating cash flow turned negative in one of the three periods, meaning the business is funding itself with borrowed money, not earnings.",
+    "citation": "VERIFIED FIGURES, balance sheet and cash flow",
+    "citation_verified": false
+   },
+   {
+    "risk": "Unexplained negative net worth in the middle year",
+    "why_it_matters": "A negative owners' stake (-₹6.86 million) in one recent period implies heavy losses or restructuring that the provided extracts never explain — a material disclosure gap.",
+    "citation": "VERIFIED FIGURES, net_worth",
+    "citation_verified": false
+   },
+   {
+    "risk": "Regulatory show-cause notices",
+    "why_it_matters": "An income-tax Section 221 show-cause notice and a SEBI order of May 2023 are referenced but their outcomes are not shown in the extracts, leaving open-ended contingent liability.",
+    "citation": "litigation, page 318",
+    "citation_verified": true
+   },
+   {
+    "risk": "No fresh issue / OFS split available",
+    "why_it_matters": "If the offer is largely an exit by existing holders, proceeds may not fund growth, which would materially worsen the investment case — and I cannot verify this either way.",
+    "citation": "not answerable from what I was given",
+    "citation_verified": false
+   }
+  ],
+  "answers": [],
+  "confidence": "low",
+  "what_would_change_my_mind": "The fresh issue vs offer-for-sale split, audited three-year profit and loss (explaining the negative net-worth year), customer concentration trend, and ROCE would let me distinguish 'levered but growing fabricator' from 'levered shell being exited'. Anchor investor details and the peer valuation comparison would sharpen the listing view.",
+  "citation_check": {
+   "claims_checked": 5,
+   "citations_verified": 2,
+   "citations_not_matching_what_we_sent": 2
+  }
+ }
+}

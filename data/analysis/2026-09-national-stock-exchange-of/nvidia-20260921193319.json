@@ -1,0 +1,86 @@
+{
+ "ok": true,
+ "model": "moonshotai/kimi-k3",
+ "answered_at": "2026-09-21T19:33:19+00:00",
+ "evidence_fingerprint": "726b92d70192895c",
+ "prompt_chars": 8845,
+ "passages_supplied": {
+  "litigation": 8,
+  "governance": 8,
+  "business_quality": 8,
+  "risks": 8
+ },
+ "answer": {
+  "listing_view": {
+   "score": 48.0,
+   "reasoning": "Subscription reached only ~1.67x by the morning of the final day and ~3.8x near close, which is lukewarm for an Indian mainboard IPO of this size, though the late-day acceleration suggests some institutional demand arriving at the end. With no GMP, anchor, or retail data, the only demand evidence in hand points to a tepid-to-moderate debut against a ₹158 billion issue."
+  },
+  "longterm_view": {
+   "score": 45.0,
+   "reasoning": "The prospectus itself claims 5.98% revenue CAGR from Fiscal 2024 to Fiscal 2026 [business, page 205], which is slow for the valuation implied by EPS of ~41-42 and a price of 1,700-1,785 (roughly 40x earnings); the sharper contraction implied by the supplied year-on-year figures (-61% latest year) sits uneasily against the document's own five-period table [business, page 206] and cannot be fully reconciled from these extracts. The business has real franchise features (no concentrated customer/supplier dependence [business, page 380], core trading infrastructure [business, page 230]) but a persistent history of SEBI enforcement actions caps the score."
+  },
+  "governance": {
+   "score": 35.0,
+   "reasoning": "The company has been subject to repeated SEBI enforcement: an adjudication notice, a ₹60 million penalty [litigation, page 448], and non-monetary Whole-Time Member directions [litigation, page 458], with a risk factor conceding a pattern of regulatory action [litigation, page 459]. For a market-infrastructure institution this history is a genuine negative, not boilerplate."
+  },
+  "key_risks": [
+   {
+    "risk": "Regulatory history with SEBI",
+    "why_it_matters": "A stock exchange whose own regulator has repeatedly taken enforcement action against it carries a structural credibility discount and uncertainty over future directions.",
+    "citation": "[litigation, page 458]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Penalties and criminal-complaint litigation",
+    "why_it_matters": "A ₹60 million penalty and pending matters involving alleged misuse of client funds and sought criminal complaints create contingent liabilities and reputational overhang.",
+    "citation": "[litigation, page 448]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Negative operating cash flow in recent years",
+    "why_it_matters": "Operating cash flow of -₹56.67 million and -₹111.02 million in the two latest years, against +₹367.37 million earlier, contradicts a premium-priced 'cash-generative franchise' narrative.",
+    "citation": "[business, page 205]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Dependence on trading members",
+    "why_it_matters": "Loss of trading-member services or inability to onboard new members would directly hit the core transaction-revenue engine.",
+    "citation": "[business, page 431]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Unverified internal operating metrics",
+    "why_it_matters": "The company warns its tracked metrics and non-GAAP measures may be inaccurate, so the growth story cannot be taken at face value.",
+    "citation": "[business, page 418]",
+    "citation_verified": true
+   }
+  ],
+  "answers": [
+   {
+    "question": "listing_view score",
+    "answer": "48 — subscription of ~3.8x by close with most demand arriving only on the final day indicates a mildly positive but unenthusiastic reception; no GMP or anchor data exists in the extracts to upgrade that.",
+    "citation": "not answerable from what I was given",
+    "citation_verified": false
+   },
+   {
+    "question": "longterm_view score",
+    "answer": "45 — the franchise (deep order-book trading infrastructure, no customer concentration) is real, but the prospectus's own claimed ~5.98% revenue CAGR and negative recent operating cash flow do not justify a ~40x earnings price, and SEBI enforcement history adds a persistent governance discount.",
+    "citation": "[business, page 205]",
+    "citation_verified": true
+   },
+   {
+    "question": "governance score",
+    "answer": "35 — repeated SEBI enforcement actions (adjudication notice, penalty, WTM directions) against the company itself are documented in its own litigation chapter.",
+    "citation": "[litigation, page 448]",
+    "citation_verified": true
+   }
+  ],
+  "confidence": "low",
+  "what_would_change_my_mind": "Reading the full audited financial statements to reconcile the divergent revenue trajectories, plus the offer-for-sale versus fresh-issue split, ROE/ROCE, and peer valuation data would materially firm up the long-term view; anchor-investor composition and GMP would firm up the listing view.",
+  "citation_check": {
+   "claims_checked": 8,
+   "citations_verified": 7,
+   "citations_not_matching_what_we_sent": 0
+  }
+ }
+}

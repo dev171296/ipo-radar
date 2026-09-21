@@ -1,18 +1,19 @@
 {
  "listing": {
-  "call": "NOT ENOUGH INFORMATION",
-  "colour": "#6b6862",
-  "score": 35.0,
-  "confidence": "none",
-  "why": "only 25% of what decides the listing call is available — no call is better than a guess dressed as one",
+  "call": "WAIT FOR LISTING",
+  "colour": "#b25b1a",
+  "score": 41.3,
+  "confidence": "low",
+  "why": "built from market demand, the two AI readings — 75% of the deciding weight; the two models disagree, which lowers confidence",
   "based_on": [
+   "market demand",
    "the two AI readings"
   ]
  },
  "longterm": {
   "call": "NOT ENOUGH INFORMATION",
   "colour": "#6b6862",
-  "score": 40.0,
+  "score": 42.5,
   "confidence": "none",
   "why": "only 30% of what decides the long-term call is available — no call is better than a guess dressed as one",
   "based_on": [
@@ -21,5 +22,5 @@
  },
  "hard_stops": [],
  "serious_findings": [],
- "models_disagree": false
+ "models_disagree": true
 }

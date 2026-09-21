@@ -1,0 +1,115 @@
+{
+ "ipo_id": "2026-09-prasol-chemicals",
+ "name": "Prasol Chemicals Limited",
+ "symbol": "PRASOLCHEM",
+ "graded_at": "2026-09-21T20:17:40+00:00",
+ "status": "listed",
+ "listed_on": "2026-09-16",
+ "issue_price": 676.0,
+ "issue_price_note": "top of the price band — the price nearly every Indian IPO is finally set at",
+ "listing_open": 610.0,
+ "listing_close": 671.0,
+ "listing_gain_pct": -9.76,
+ "listing_day_close_pct": -0.74,
+ "checkpoints": {
+  "1 week": {
+   "due": "2026-09-23"
+  },
+  "1 month": {
+   "due": "2026-10-16"
+  },
+  "3 months": {
+   "due": "2026-12-16"
+  },
+  "6 months": {
+   "due": "2027-03-17"
+  },
+  "12 months": {
+   "due": "2027-09-16"
+  }
+ },
+ "predictions": {
+  "cutoff_utc": "20260916034500",
+  "score_taken_at": "20260915174443",
+  "fundamentals": 64.3,
+  "call": {
+   "listing": {
+    "call": "WAIT FOR LISTING",
+    "colour": "#b25b1a",
+    "score": 40.3,
+    "confidence": "medium",
+    "why": "built from our fundamentals, market demand — 75% of the deciding weight",
+    "based_on": [
+     "our fundamentals",
+     "market demand"
+    ]
+   },
+   "longterm": {
+    "call": "APPLY SELECTIVELY",
+    "colour": "#a86400",
+    "score": 64.3,
+    "confidence": "low",
+    "why": "built from our fundamentals — 60% of the deciding weight",
+    "based_on": [
+     "our fundamentals"
+    ]
+   },
+   "hard_stops": [],
+   "serious_findings": [],
+   "models_disagree": false
+  },
+  "models": {
+   "groq": {
+    "model": "qwen/qwen3.8-27b",
+    "answered_at": "20260911072554",
+    "listing_view": 35.0,
+    "longterm_view": 62.0,
+    "unsuitable_model": false
+   },
+   "gemini": {
+    "model": "gemini-flash-lite-latest",
+    "answered_at": "20260911072554",
+    "listing_view": 10.0,
+    "longterm_view": 40.0,
+    "unsuitable_model": false
+   }
+  }
+ },
+ "marks": {
+  "our_call": {
+   "listing": {
+    "said": "WAIT FOR LISTING",
+    "right": true
+   },
+   "holding": {
+    "said": "APPLY SELECTIVELY",
+    "right": null,
+    "due": "2026-12-16"
+   }
+  },
+  "groq": {
+   "model": "qwen/qwen3.8-27b",
+   "unsuitable_model": false,
+   "listing": {
+    "said": 35.0,
+    "right": true
+   },
+   "holding": {
+    "said": 62.0,
+    "right": null
+   }
+  },
+  "gemini": {
+   "model": "gemini-flash-lite-latest",
+   "unsuitable_model": false,
+   "listing": {
+    "said": 10.0,
+    "right": true
+   },
+   "holding": {
+    "said": 40.0,
+    "right": null
+   }
+  }
+ }
+}

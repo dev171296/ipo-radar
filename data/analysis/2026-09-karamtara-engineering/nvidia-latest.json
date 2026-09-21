@@ -1,0 +1,68 @@
+{
+ "ok": true,
+ "model": "moonshotai/kimi-k3",
+ "answered_at": "2026-09-21T19:58:25+00:00",
+ "evidence_fingerprint": "f70311212f0e4fd7",
+ "prompt_chars": 8490,
+ "passages_supplied": {
+  "litigation": 8,
+  "governance": 8,
+  "business_quality": 8,
+  "risks": 1
+ },
+ "answer": {
+  "listing_view": {
+   "score": 72.0,
+   "reasoning": "Demand went from under 1x on day one to 37.5x by close, with the bulk arriving on the final morning — classic retail pile-in that usually produces a listing pop, but also means the book is crowded with flippers, not holders. The whole offer at ~₹6455m (with the fresh-issue-vs-total contradiction unresolved) is not large enough to absorb that much speculative demand without volatility on day one."
+  },
+  "longterm_view": {
+   "score": 55.0,
+   "reasoning": "Revenue compounding at ~33% with EBITDA margins edging up to ~11.6% and the latest year's profit actually arriving as cash (OCF ₹6751m vs EBITDA ₹4981m) is a genuinely decent operating record for a steel/solar-component manufacturer [business, page 270]. But at 254/7.83 ≈ 32x earnings against ~10-12% margins, rising receivables (86 to 111 days) and debt that nearly doubled to ₹10,301m, the price already pays for the growth continuing; there is no peer or ROE/ROCE data in what I was given to test whether 32x is justified."
+  },
+  "governance": {
+   "score": 55.0,
+   "reasoning": "Nothing damning in the extracts: no SEBI/exchange penalties against promoters [litigation, page 425], and stated no conflicts with key suppliers or lessors [promoters, page 324]. But these are boilerplate comfort statements from the seller's own document, related-party transactions exist and are merely cross-referenced [promoters, page 324], and the unresolved mismatch between the fresh issue and the offer size is a disclosure inconsistency the prospectus itself should have made unambiguous."
+  },
+  "key_risks": [
+   {
+    "risk": "Working capital is stretching",
+    "why_it_matters": "Receivables at 111 days (up from 86) mean reported growth is increasingly tied up in unpaid invoices; the strong latest-year OCF may be one good collection year, not a trend, and debt rose to fund the gap.",
+    "citation": "[business, page 276]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Leverage rising into a cyclical, commodity-input business",
+    "why_it_matters": "Debt-to-equity went from 0.57 to 0.84 with total debt roughly doubling; the company processes steel raw materials [business, page 271], so margins of ~11% leave thin cover if input prices or the solar/steel cycle turn.",
+    "citation": "[business, page 271]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Offer structure unverifiable",
+    "why_it_matters": "The fresh issue (₹6750m) exceeds the computed offer size (₹6455m) — I cannot tell how much money goes to the company versus selling shareholders, and an OFS-heavy offer changes the entire thesis.",
+    "citation": "[litigation, page 453]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Valuation priced for flawless execution",
+    "why_it_matters": "~32x trailing basic EPS with no peer comparison available means there is no anchor; if growth normalises from 36% toward market rates, the multiple has far to fall.",
+    "citation": "[business, page 285]",
+    "citation_verified": true
+   }
+  ],
+  "answers": [
+   {
+    "question": "No specific question was posed beyond the listing/long-term/governance assessment",
+    "answer": "Answered via the view scores above; on the data contradiction, I would trust the shares-times-price arithmetic (₹6455m) over the flattened fresh-issue table figure until the prospectus table is checked by hand, because flattened tables are a known corruption source.",
+    "citation": "not answerable from what I was given",
+    "citation_verified": false
+   }
+  ],
+  "confidence": "medium",
+  "what_would_change_my_mind": "Confirmation that the offer is mostly an OFS (or proof the fresh issue figures reconcile) would move the governance and listing scores hard. Conversely, two or three more years of OCF matching EBITDA while receivable days fall back below 90 would push the long-term view up meaningfully.",
+  "citation_check": {
+   "claims_checked": 5,
+   "citations_verified": 4,
+   "citations_not_matching_what_we_sent": 0
+  }
+ }
+}

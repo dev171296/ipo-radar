@@ -1,0 +1,312 @@
+{
+ "built_at": "2026-09-21T20:17:45+00:00",
+ "listed_ipos": 11,
+ "base_rate_pct": 73,
+ "average_listing_gain_pct": 12.5,
+ "predictors": {
+  "Our call (rules + both AIs)": {
+   "listing_graded": 11,
+   "listing_right": 10,
+   "no_view": 0,
+   "avg_gain_when_yes": 16.6,
+   "avg_gain_when_no": -6.2,
+   "holding_graded": 0,
+   "holding_right": 0,
+   "listing_hit_rate_pct": 91
+  },
+  "Groq": {
+   "listing_graded": 7,
+   "listing_right": 6,
+   "no_view": 3,
+   "avg_gain_when_yes": 13.2,
+   "avg_gain_when_no": -1.3,
+   "holding_graded": 0,
+   "holding_right": 0,
+   "listing_hit_rate_pct": 86
+  },
+  "Groq — unsuitable models (labelled, kept)": {
+   "listing_graded": 1,
+   "listing_right": 1,
+   "no_view": 0,
+   "avg_gain_when_yes": 33.1,
+   "avg_gain_when_no": null,
+   "holding_graded": 0,
+   "holding_right": 0,
+   "listing_hit_rate_pct": 100
+  },
+  "Gemini (retired)": {
+   "listing_graded": 11,
+   "listing_right": 9,
+   "no_view": 0,
+   "avg_gain_when_yes": 17.5,
+   "avg_gain_when_no": -0.8,
+   "holding_graded": 0,
+   "holding_right": 0,
+   "listing_hit_rate_pct": 82
+  }
+ },
+ "long_term_note": "graded 3 months after listing, against the Nifty 50",
+ "per_ipo": [
+  {
+   "ipo_id": "2026-09-qualiance-international",
+   "name": "Qualiance International Limited",
+   "status": "listed, but no issue price to measure against",
+   "listed_on": "2026-09-11",
+   "listing_gain_pct": null,
+   "our_listing_call": null,
+   "right": null
+  },
+  {
+   "ipo_id": "2026-09-pranav-constructions",
+   "name": "Pranav Constructions Limited",
+   "status": "listed",
+   "listed_on": "2026-09-15",
+   "listing_gain_pct": 33.06,
+   "our_listing_call": "APPLY",
+   "right": true
+  },
+  {
+   "ipo_id": "2026-09-glass-wall-systems",
+   "name": "Glass Wall Systems (India) Limited",
+   "status": "listed",
+   "listed_on": "2026-09-16",
+   "listing_gain_pct": 6.59,
+   "our_listing_call": "APPLY",
+   "right": true
+  },
+  {
+   "ipo_id": "2026-09-kanohar-electricals",
+   "name": "Kanohar Electricals Limited",
+   "status": "listed",
+   "listed_on": "2026-09-16",
+   "listing_gain_pct": 8.47,
+   "our_listing_call": "APPLY",
+   "right": true
+  },
+  {
+   "ipo_id": "2026-09-prasol-chemicals",
+   "name": "Prasol Chemicals Limited",
+   "status": "listed",
+   "listed_on": "2026-09-16",
+   "listing_gain_pct": -9.76,
+   "our_listing_call": "WAIT FOR LISTING",
+   "right": true
+  },
+  {
+   "ipo_id": "2026-09-asset-reconstruction",
+   "name": "Asset Reconstruction Company (India) Limited",
+   "status": "listed",
+   "listed_on": "2026-09-17",
+   "listing_gain_pct": 0.0,
+   "our_listing_call": "APPLY SELECTIVELY",
+   "right": false
+  },
+  {
+   "ipo_id": "2026-09-karamtara-engineering",
+   "name": "Karamtara Engineering Limited",
+   "status": "listed",
+   "listed_on": "2026-09-17",
+   "listing_gain_pct": 25.98,
+   "our_listing_call": "APPLY",
+   "right": true
+  },
+  {
+   "ipo_id": "2026-09-lcc-projects",
+   "name": "LCC Projects Limited",
+   "status": "listed",
+   "listed_on": "2026-09-17",
+   "listing_gain_pct": 29.45,
+   "our_listing_call": "APPLY",
+   "right": true
+  },
+  {
+   "ipo_id": "2026-09-manipal-payment-and-identity-solutions",
+   "name": "Manipal Payment and Identity Solutions Limited",
+   "status": "listed",
+   "listed_on": "2026-09-17",
+   "listing_gain_pct": -2.65,
+   "our_listing_call": "AVOID",
+   "right": true
+  },
+  {
+   "ipo_id": "2026-09-rentomojo",
+   "name": "Rentomojo Limited",
+   "status": "listed",
+   "listed_on": "2026-09-17",
+   "listing_gain_pct": 19.42,
+   "our_listing_call": "APPLY",
+   "right": true
+  },
+  {
+   "ipo_id": "2026-09-steamhouse",
+   "name": "Steamhouse India Limited",
+   "status": "listed",
+   "listed_on": "2026-09-17",
+   "listing_gain_pct": 16.67,
+   "our_listing_call": "APPLY",
+   "right": true
+  },
+  {
+   "ipo_id": "2026-09-vinod-texworld",
+   "name": "Vinod Texworld Limited",
+   "status": "listed, but no issue price to measure against",
+   "listed_on": "2026-09-17",
+   "listing_gain_pct": null,
+   "our_listing_call": null,
+   "right": null
+  },
+  {
+   "ipo_id": "2026-09-veegaland-developers",
+   "name": "Veegaland Developers Limited",
+   "status": "listed",
+   "listed_on": "2026-09-18",
+   "listing_gain_pct": 10.0,
+   "our_listing_call": "APPLY SELECTIVELY",
+   "right": true
+  },
+  {
+   "ipo_id": "2026-09-manika-plastech",
+   "name": "Manika Plastech Limited",
+   "status": "not listed yet",
+   "listed_on": null,
+   "listing_gain_pct": null,
+   "our_listing_call": null,
+   "right": null
+  },
+  {
+   "ipo_id": "2026-09-hero-motors",
+   "name": "Hero Motors Limited",
+   "status": "not listed yet",
+   "listed_on": null,
+   "listing_gain_pct": null,
+   "our_listing_call": null,
+   "right": null
+  },
+  {
+   "ipo_id": "2026-09-jindal-supreme",
+   "name": "Jindal Supreme (India) Limited",
+   "status": "not listed yet",
+   "listed_on": null,
+   "listing_gain_pct": null,
+   "our_listing_call": null,
+   "right": null
+  },
+  {
+   "ipo_id": "2026-09-ss-retail",
+   "name": "SS Retail Limited",
+   "status": "not listed yet",
+   "listed_on": null,
+   "listing_gain_pct": null,
+   "our_listing_call": null,
+   "right": null
+  },
+  {
+   "ipo_id": "2026-09-kheria-autocomp",
+   "name": "Kheria Autocomp Limited",
+   "status": "issue still open",
+   "listed_on": null,
+   "listing_gain_pct": null,
+   "our_listing_call": null,
+   "right": null
+  },
+  {
+   "ipo_id": "2026-09-national-stock-exchange-of",
+   "name": "National Stock Exchange of India Limited",
+   "status": "issue still open",
+   "listed_on": null,
+   "listing_gain_pct": null,
+   "our_listing_call": null,
+   "right": null
+  },
+  {
+   "ipo_id": "2026-09-sonaselection",
+   "name": "Sonaselection India Limited",
+   "status": "issue still open",
+   "listed_on": null,
+   "listing_gain_pct": null,
+   "our_listing_call": null,
+   "right": null
+  },
+  {
+   "ipo_id": "2026-09-spectraa-technology-solutions",
+   "name": "SpectraA Technology Solutions Limited",
+   "status": "issue still open",
+   "listed_on": null,
+   "listing_gain_pct": null,
+   "our_listing_call": null,
+   "right": null
+  },
+  {
+   "ipo_id": "2026-09-axiom-gas-engineering",
+   "name": "Axiom Gas Engineering Limited",
+   "status": "issue still open",
+   "listed_on": null,
+   "listing_gain_pct": null,
+   "our_listing_call": null,
+   "right": null
+  },
+  {
+   "ipo_id": "2026-09-varmora-granito",
+   "name": "Varmora Granito Limited",
+   "status": "issue still open",
+   "listed_on": null,
+   "listing_gain_pct": null,
+   "our_listing_call": null,
+   "right": null
+  },
+  {
+   "ipo_id": "2026-09-adroit-industries",
+   "name": "Adroit Industries (India) Limited",
+   "status": "issue still open",
+   "listed_on": null,
+   "listing_gain_pct": null,
+   "our_listing_call": null,
+   "right": null
+  },
+  {
+   "ipo_id": "2026-09-armee-infotech",
+   "name": "ArMee Infotech Limited",
+   "status": "issue still open",
+   "listed_on": null,
+   "listing_gain_pct": null,
+   "our_listing_call": null,
+   "right": null
+  },
+  {
+   "ipo_id": "2026-09-coreintegra-consulting-services",
+   "name": "Coreintegra Consulting Services Limited",
+   "status": "issue still open",
+   "listed_on": null,
+   "listing_gain_pct": null,
+   "our_listing_call": null,
+   "right": null
+  },
+  {
+   "ipo_id": "2026-09-elevate-campuses",
+   "name": "Elevate Campuses Limited",
+   "status": "issue still open",
+   "listed_on": null,
+   "listing_gain_pct": null,
+   "our_listing_call": null,
+   "right": null
+  },
+  {
+   "ipo_id": "2026-09-pooja-logistics",
+   "name": "Pooja Logistics Limited",
+   "status": "issue still open",
+   "listed_on": null,
+   "listing_gain_pct": null,
+   "our_listing_call": null,
+   "right": null
+  },
+  {
+   "ipo_id": "2026-09-swastika-infra",
+   "name": "Swastika Infra Limited",
+   "status": "issue still open",
+   "listed_on": null,
+   "listing_gain_pct": null,
+   "our_listing_call": null,
+   "right": null
+  }
+ ]
+}

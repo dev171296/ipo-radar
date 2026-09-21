@@ -1,0 +1,117 @@
+{
+ "ipo_id": "2026-09-rentomojo",
+ "name": "Rentomojo Limited",
+ "symbol": "RENTOMOJO",
+ "graded_at": "2026-09-21T20:17:41+00:00",
+ "status": "listed",
+ "listed_on": "2026-09-17",
+ "issue_price": 404.0,
+ "issue_price_note": "top of the price band — the price nearly every Indian IPO is finally set at",
+ "listing_open": 482.45,
+ "listing_close": 534.25,
+ "listing_gain_pct": 19.42,
+ "listing_day_close_pct": 32.24,
+ "checkpoints": {
+  "1 week": {
+   "due": "2026-09-24"
+  },
+  "1 month": {
+   "due": "2026-10-17"
+  },
+  "3 months": {
+   "due": "2026-12-17"
+  },
+  "6 months": {
+   "due": "2027-03-18"
+  },
+  "12 months": {
+   "due": "2027-09-17"
+  }
+ },
+ "predictions": {
+  "cutoff_utc": "20260917034500",
+  "score_taken_at": "20260916174235",
+  "fundamentals": 73.7,
+  "call": {
+   "listing": {
+    "call": "APPLY",
+    "colour": "#2f7d32",
+    "score": 73.8,
+    "confidence": "medium",
+    "why": "built from our fundamentals, market demand — 75% of the deciding weight",
+    "based_on": [
+     "our fundamentals",
+     "market demand"
+    ]
+   },
+   "longterm": {
+    "call": "APPLY SELECTIVELY",
+    "colour": "#a86400",
+    "score": 64,
+    "confidence": "low",
+    "why": "built from our fundamentals — 60% of the deciding weight; held to 'apply selectively' because of one serious finding — owes more this year than it expects to collect — which a good average must not be allowed to bury",
+    "based_on": [
+     "our fundamentals"
+    ]
+   },
+   "hard_stops": [],
+   "serious_findings": [
+    "owes more this year than it expects to collect"
+   ],
+   "models_disagree": false
+  },
+  "models": {
+   "groq": {
+    "model": "openai/gpt-oss-20b",
+    "answered_at": "20260912093150",
+    "listing_view": 70.0,
+    "longterm_view": 60.0,
+    "unsuitable_model": false
+   },
+   "gemini": {
+    "model": "gemini-flash-lite-latest",
+    "answered_at": "20260912071823",
+    "listing_view": 75.0,
+    "longterm_view": 40.0,
+    "unsuitable_model": false
+   }
+  }
+ },
+ "marks": {
+  "our_call": {
+   "listing": {
+    "said": "APPLY",
+    "right": true
+   },
+   "holding": {
+    "said": "APPLY SELECTIVELY",
+    "right": null,
+    "due": "2026-12-17"
+   }
+  },
+  "groq": {
+   "model": "openai/gpt-oss-20b",
+   "unsuitable_model": false,
+   "listing": {
+    "said": 70.0,
+    "right": true
+   },
+   "holding": {
+    "said": 60.0,
+    "right": null
+   }
+  },
+  "gemini": {
+   "model": "gemini-flash-lite-latest",
+   "unsuitable_model": false,
+   "listing": {
+    "said": 75.0,
+    "right": true
+   },
+   "holding": {
+    "said": 40.0,
+    "right": null
+   }
+  }
+ }
+}

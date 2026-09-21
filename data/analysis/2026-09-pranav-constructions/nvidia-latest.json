@@ -1,0 +1,74 @@
+{
+ "ok": true,
+ "model": "moonshotai/kimi-k3",
+ "answered_at": "2026-09-21T20:08:21+00:00",
+ "evidence_fingerprint": "f88fdc89b568f338",
+ "prompt_chars": 10949,
+ "passages_supplied": {
+  "litigation": 8,
+  "governance": 8,
+  "business_quality": 8,
+  "risks": 8
+ },
+ "answer": {
+  "listing_view": {
+   "score": 82.0,
+   "reasoning": "Subscription hit ~87x with the bulk of demand arriving on the final day (from ~12x to ~87x between 2026-09-08 and 2026-09-09), which signals strong momentum into listing. The offer is priced at ~15x latest EPS against a stated benchmark average of 113x, so sellers have left optical room for a pop — though that benchmark number itself is not credible (see below)."
+  },
+  "longterm_view": {
+   "score": 38.0,
+   "reasoning": "Growth is real (~30% revenue CAGR, PAT up 34% CAGR against a 9-10% margin wall [business, page 379]), but the profits are not converting to cash: operating cash flow was -₹412m and -₹926m in the two latest years against PAT of ₹713m and ₹623m, while debt rose to ₹2,656m and leverage stayed above 1x. ROCE and ROE are both structurally declining as the equity base inflates, and this is a single-region (MCGM) real estate developer dependent on a limited number of contractors and suppliers [business, page 386] — thin-to-negative cash conversion in a cyclical, leveraged, concentrated business is the classic profile that destroys retail-holder value after the listing pop."
+  },
+  "governance": {
+   "score": 55.0,
+   "reasoning": "Nothing damning in the extracts: no promoter pledging as of the RHP [capital_structure, page 84] and no disclosed supplier conflicts [business, page 243]. But there is also nothing affirmatively reassuring — no detail on related-party transactions, litigation outcomes, or independent director strength was given, and the unresolved contradiction between NSE's share count and the prospectus table on offer split is sloppy at minimum."
+  },
+  "key_risks": [
+   {
+    "risk": "Profit is paper, not cash",
+    "why_it_matters": "Two consecutive years of deeply negative operating cash flow against reported PAT means earnings depend on revenue recognition in real estate contracts, and the business is being funded by ever-rising debt (₹1,043m to ₹2,656m in two years).",
+    "citation": "[business, page 358]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Single-market concentration",
+    "why_it_matters": "The company operates only in the MCGM region, so a Mumbai real-estate downturn or regulatory shift hits the entire revenue base at once.",
+    "citation": "[business, page 227]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Supplier and contractor dependence",
+    "why_it_matters": "The company itself flags reliance on a limited number of contractors and suppliers, so execution delays or cost shocks transmit directly to margins that are already under 10%.",
+    "citation": "[business, page 386]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Offer construction is unresolved",
+    "why_it_matters": "The fresh-issue figure exceeds the stated total offer size, meaning what proportion of proceeds goes to the company versus selling shareholders cannot currently be established — if it is heavily an exit, the listing price is set by sellers cashing out.",
+    "citation": "[capital_structure, page 86]",
+    "citation_verified": true
+   }
+  ],
+  "answers": [
+   {
+    "question": "is the peer set fairly chosen, and are the peers themselves expensive rather than this being cheap?",
+    "answer": "Cannot be verified on the merits — zero peer rows were parsed, so I cannot check whether the 113x benchmark is a fair set. What I can say is that a 113x industry-average P/E is itself an absurd number for real estate developers, which signals either frothy peers, tiny-loss-making peers inflating the mean, or a cherry-picked set; the 'cheap at 15x' framing is therefore likely true only relative to an inflated or distorted benchmark, not evidence of absolute cheapness for a leveraged, cash-flow-negative developer. Naming the actual peer list with their individual P/Es and cash conversion would settle this.",
+    "citation": "not answerable from what I was given",
+    "citation_verified": false
+   },
+   {
+    "question": "where did the money go — receivables, inventory, or both?",
+    "answer": "Not receivables — receivable days actually improved sharply from 61 to 30 days over two years. So the cash drain is almost entirely inventory/unsold projects and work-in-progress (the extracts confirm a redevelopment/real-estate development model dependent on project timelines), though the extracts given contain no direct inventory figures, so I cannot state this with full confidence.",
+    "citation": "[business, page 363]",
+    "citation_verified": true
+   }
+  ],
+  "confidence": "medium",
+  "what_would_change_my_mind": "On the long term: disclosure that the negative operating cash flow is driven by late-stage projects close to handover (i.e., cash arrives within 1-2 years), and a fresh-issue-dominant offer split with proceeds genuinely funding growth rather than exit. On valuation: a peer list of comparable Mumbai developers trading at genuinely high multiples with positive cash conversion, which would make 15x a real discount rather than a framing device.",
+  "citation_check": {
+   "claims_checked": 6,
+   "citations_verified": 5,
+   "citations_not_matching_what_we_sent": 0
+  }
+ }
+}

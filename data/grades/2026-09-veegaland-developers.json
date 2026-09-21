@@ -1,0 +1,118 @@
+{
+ "ipo_id": "2026-09-veegaland-developers",
+ "name": "Veegaland Developers Limited",
+ "symbol": "VEEGALAND",
+ "graded_at": "2026-09-21T20:17:41+00:00",
+ "status": "listed",
+ "listed_on": "2026-09-18",
+ "issue_price": 140.0,
+ "issue_price_note": "top of the price band — the price nearly every Indian IPO is finally set at",
+ "listing_open": 154.0,
+ "listing_close": 146.3,
+ "listing_gain_pct": 10.0,
+ "listing_day_close_pct": 4.5,
+ "checkpoints": {
+  "1 week": {
+   "due": "2026-09-25"
+  },
+  "1 month": {
+   "due": "2026-10-18"
+  },
+  "3 months": {
+   "due": "2026-12-18"
+  },
+  "6 months": {
+   "due": "2027-03-19"
+  },
+  "12 months": {
+   "due": "2027-09-18"
+  }
+ },
+ "predictions": {
+  "cutoff_utc": "20260918034500",
+  "score_taken_at": "20260917174318",
+  "fundamentals": 58.3,
+  "call": {
+   "listing": {
+    "call": "APPLY SELECTIVELY",
+    "colour": "#a86400",
+    "score": 57.8,
+    "confidence": "medium",
+    "why": "built from our fundamentals, market demand — 75% of the deciding weight",
+    "based_on": [
+     "our fundamentals",
+     "market demand"
+    ]
+   },
+   "longterm": {
+    "call": "APPLY SELECTIVELY",
+    "colour": "#a86400",
+    "score": 58.3,
+    "confidence": "low",
+    "why": "built from our fundamentals — 60% of the deciding weight",
+    "based_on": [
+     "our fundamentals"
+    ]
+   },
+   "hard_stops": [],
+   "serious_findings": [
+    "the business consumed cash in its latest year",
+    "heavily indebted"
+   ],
+   "models_disagree": false
+  },
+  "models": {
+   "groq": {
+    "model": "openai/gpt-oss-120b",
+    "answered_at": "20260916075049",
+    "listing_view": 78.0,
+    "longterm_view": 44.0,
+    "unsuitable_model": false
+   },
+   "gemini": {
+    "model": "gemini-flash-lite-latest",
+    "answered_at": "20260916075049",
+    "listing_view": 45.0,
+    "longterm_view": 30.0,
+    "unsuitable_model": false
+   }
+  }
+ },
+ "marks": {
+  "our_call": {
+   "listing": {
+    "said": "APPLY SELECTIVELY",
+    "right": true
+   },
+   "holding": {
+    "said": "APPLY SELECTIVELY",
+    "right": null,
+    "due": "2026-12-18"
+   }
+  },
+  "groq": {
+   "model": "openai/gpt-oss-120b",
+   "unsuitable_model": false,
+   "listing": {
+    "said": 78.0,
+    "right": true
+   },
+   "holding": {
+    "said": 44.0,
+    "right": null
+   }
+  },
+  "gemini": {
+   "model": "gemini-flash-lite-latest",
+   "unsuitable_model": false,
+   "listing": {
+    "said": 45.0,
+    "right": false
+   },
+   "holding": {
+    "said": 30.0,
+    "right": null
+   }
+  }
+ }
+}
