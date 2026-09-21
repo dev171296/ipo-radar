@@ -275,14 +275,11 @@ def run_analysts():
     Both models get an identical brief and never see each other.
     """
     print("\n[4] AI analysts")
-    if not (os.environ.get("GEMINI_API_KEY") or os.environ.get("GROQ_API_KEY")):
+    if not any(os.environ.get(analysts.KEY_NAMES[n]) for n in analysts.ANALYSTS):
         print("    no AI keys set — skipping (the quant scores stand on their own)")
         return 0
 
-    allowance = [analysts.GEMINI_CALLS_PER_RUN]
-    print(f"    Gemini allowance this run: {allowance[0]} call(s) "
-          f"({analysts.spent_today('gemini')} used so far today); "
-          f"Groq reads everything")
+    print(f"    analysts: {', '.join(analysts.ANALYSTS)}; both read everything")
 
     done = 0
     for record in storage.all_records():
@@ -295,11 +292,8 @@ def run_analysts():
                 document = json.load(handle)
             bundle = evidence.build(ipo_id)
             score = scoring.verdict(bundle)
-            before = allowance[0]
             results = analysts.analyse(bundle, document.get("sections") or {},
-                                       score, gemini_left=lambda: allowance[0])
-            if (results.get("gemini") or {}).get("model"):
-                allowance[0] -= 1
+                                       score)
             comparison = analysts.compare(results)
             analysts.save(ipo_id, results, comparison)
             done += 1
@@ -322,11 +316,9 @@ def run_analysts():
                          f"NOT in what we sent"
                          if checked.get("citations_not_matching_what_we_sent")
                          else ""))
-            skipped = (results.get("gemini") or {}).get("skipped")
+            skipped = (results.get("nvidia") or {}).get("skipped")
             if skipped:
-                print(f"        gemini: not asked — {skipped}")
-            elif results.get("_gemini_reason"):
-                print(f"        gemini asked because: {results['_gemini_reason']}")
+                print(f"        second analyst: not asked — {skipped}")
             for gap in comparison.get("disagreements", []):
                 print(f"        DISAGREEMENT on {gap['on']}: {gap['scores']} "
                       f"({gap['gap']} apart)")
@@ -362,8 +354,8 @@ def publish():
             "ai": {
                 "groq": _read_json(storage.DATA, "analysis", ipo_id,
                                    "groq-latest.json"),
-                "gemini": _read_json(storage.DATA, "analysis", ipo_id,
-                                     "gemini-latest.json"),
+                "nvidia": _read_json(storage.DATA, "analysis", ipo_id,
+                                     "nvidia-latest.json"),
                 "comparison": comparison,
             },
         })

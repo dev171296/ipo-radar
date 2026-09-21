@@ -244,7 +244,7 @@ function card(ipo, score, bundle, ai, call){
     ${vetoes}${conflicts}${flags}${observations}
     ${disagreements}
     ${aiCard('Groq', ai?.groq, 'groq')}
-    ${aiCard('Gemini', ai?.gemini, 'gem')}
+    ${aiCard('NVIDIA', ai?.second, 'gem')}
     <details><summary>How the fundamentals score was built</summary>${componentsTable(f)}</details>
     <details><summary>How the demand score was built</summary>${componentsTable(d)}</details>
     <details><summary>Every fact, and where it came from</summary>${factsTable(bundle||{})}</details>
@@ -262,15 +262,15 @@ async function main(){
   document.getElementById('counts').textContent = index.count + ' IPOs tracked';
 
   const loaded = await Promise.all(index.ipos.map(async ipo => {
-    const [score, bundle, groq, gemini, comparison, call] = await Promise.all([
+    const [score, bundle, groq, second, comparison, call] = await Promise.all([
       j(`data/scores/${ipo.id}/latest.json`),
       j(`data/evidence/${ipo.id}/latest.json`),
       j(`data/analysis/${ipo.id}/groq-latest.json`),
-      j(`data/analysis/${ipo.id}/gemini-latest.json`),
+      j(`data/analysis/${ipo.id}/nvidia-latest.json`),
       j(`data/analysis/${ipo.id}/comparison-latest.json`),
       j(`data/calls/${ipo.id}.json`),
     ]);
-    return {ipo, score, bundle, ai:{groq, gemini, comparison}, call};
+    return {ipo, score, bundle, ai:{groq, second, comparison}, call};
   }));
 
   // Highest fundamentals first, unscored last — but the coverage figure beside

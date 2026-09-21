@@ -56,12 +56,41 @@ ANALYSIS = os.path.join(storage.DATA, "analysis")
 # will be picked up without anyone touching this file.
 PREFERENCES = {
     "gemini": ["flash-lite", "flash", "pro"],
-    "groq": ["instant", "versatile", "llama"],
+    "groq": ["llama", "qwen", "kimi", "gpt-oss", "instant", "versatile"],
+    # NVIDIA hosts many models behind one OpenAI-compatible endpoint, so we
+    # name the one we want rather than letting a preference word choose. It can
+    # be changed without touching code by setting NVIDIA_MODEL.
+    "nvidia": ["gemma", "llama", "qwen", "nemotron"],
 }
+
+# First choice and fallback, in that order. Kimi K3 is a far stronger reader;
+# Gemma is smaller and quicker, and steps in if K3 times out or the free
+# endpoint is busy. Either can be overridden with a secret of the same name.
+NVIDIA_MODEL = os.environ.get("NVIDIA_MODEL", "moonshotai/kimi-k3")
+NVIDIA_FALLBACK = os.environ.get("NVIDIA_FALLBACK", "google/gemma-4-31b-it")
+
+# How hard Kimi thinks before answering: low / high / max. NVIDIA's sample uses
+# "max". We use "low": the brief is ~2,500 tokens of already-verified figures
+# and page-cited passages, the heavy lifting is done before the model sees it,
+# and "max" on a 2.8-trillion-parameter model across ~29 IPOs would take a very
+# long time on a free endpoint. Raise it with NVIDIA_REASONING_EFFORT if the
+# answers ever look shallow.
+NVIDIA_REASONING_EFFORT = os.environ.get("NVIDIA_REASONING_EFFORT", "low")
+
+# Wall-clock ceiling for one answer. A thinking model can pause for a long time
+# between bursts of output, so this is a total, not a per-chunk limit.
+NVIDIA_MAX_SECONDS = int(os.environ.get("NVIDIA_MAX_SECONDS", "300"))
 
 # Things that are not general chat models, whatever else their name says.
 NOT_CHAT = ("embedding", "aqa", "vision", "tts", "audio", "whisper", "guard",
-            "image", "imagen", "veo", "gemma", "learnlm")
+            "image", "imagen", "veo", "gemma", "learnlm",
+            # "compound" models are agentic systems that can SEARCH THE WEB.
+            # That breaks the rule this whole project rests on: both models must
+            # see the same evidence and nothing else, or their disagreement
+            # means nothing and their claims cannot be checked against a page.
+            # Run #32 picked groq/compound-mini and it promptly asserted a cash
+            # flow figure that contradicts the document.
+            "compound")
 
 _discovered = {}
 
@@ -220,6 +249,10 @@ def _facts_for_prompt(bundle: dict) -> str:
     dump("VALUATION", bundle.get("valuation"))
     dump("CASH", bundle.get("cash"))
     dump("BALANCE SHEET", bundle.get("balance_sheet"))
+    if bundle.get("observations"):
+        lines.append("\nNOTED WHILE READING THE STATEMENTS")
+        for item in bundle["observations"]:
+            lines.append(f"  - {item.get('from')}: {item.get('says')}")
     dump("DEMAND", bundle.get("demand"))
 
     if bundle.get("conflicts"):
@@ -264,6 +297,9 @@ def build_prompt(bundle: dict, sections: dict, score: dict = None) -> tuple:
     parts = [INSTRUCTIONS, "\n=== VERIFIED FIGURES ===", _facts_for_prompt(bundle)]
     if questions:
         parts.append("\n=== QUESTIONS YOU MUST ANSWER ===")
+        parts.append("  Answer from the figures above as well as the extracts "
+                     "below — the figures are evidence too. Only say a question "
+                     "is unanswerable if neither contains what you need.")
         parts.extend(f"  {n}. {q}" for n, q in enumerate(questions, 1))
     parts.append("\n=== EXTRACTS FROM THE PROSPECTUS (your only source) ===")
     parts.append(retrieval.as_text(passages))
@@ -295,6 +331,13 @@ def available_models(family: str, key: str) -> list:
                             model.get("supportedGenerationMethods") or []):
                         continue
                     names.append(model["name"].split("/")[-1])
+        elif family == "nvidia":
+            resp = session.get("https://integrate.api.nvidia.com/v1/models",
+                               headers={"Authorization": f"Bearer {key}"},
+                               timeout=30)
+            if resp.status_code == 200:
+                names = [m.get("id") for m in resp.json().get("data", [])
+                         if m.get("id")]
         else:
             resp = session.get("https://api.groq.com/openai/v1/models",
                                headers={"Authorization": f"Bearer {key}"},
@@ -325,7 +368,19 @@ def available_models(family: str, key: str) -> list:
 
 
 def models_to_try(family: str, key: str) -> list:
-    """Discovered models first; if discovery itself failed, we have nothing."""
+    """
+    Discovered models, best first.
+
+    For NVIDIA we PIN the model rather than guessing: their catalogue holds
+    hundreds, most of them unsuited to reading a prospectus, and the one we want
+    was chosen deliberately. It still goes through discovery so that if it is
+    ever withdrawn we fall back to something rather than failing outright.
+    """
+    if family == "nvidia":
+        # Only the two models we chose, in order. NVIDIA's catalogue holds
+        # hundreds and most are unsuited to this; guessing among them is how
+        # we once ended up analysing IPOs with an Arabic-language model.
+        return [m for m in (NVIDIA_MODEL, NVIDIA_FALLBACK) if m]
     found = available_models(family, key)
     return found[:4]
 
@@ -386,8 +441,129 @@ def ask_groq(prompt: str, key: str) -> tuple:
     raise FetchError(f"Groq: {last}")
 
 
-ASKERS = {"gemini": ask_gemini, "groq": ask_groq}
-KEY_NAMES = {"gemini": "GEMINI_API_KEY", "groq": "GROQ_API_KEY"}
+
+def _nvidia_payload(model: str, prompt: str) -> dict:
+    """
+    The request body, which differs by model family.
+
+    Kimi K3 always reasons and takes a `reasoning_effort` setting; the sample
+    runs it at temperature 1, which is what Moonshot recommends for its
+    reasoning models, with a fixed seed so the same brief gives the same answer
+    on a re-run. Gemma instead takes `enable_thinking`, which we switch off.
+    """
+    body = {"model": model,
+            "messages": [{"role": "user", "content": prompt}],
+            "stream": True}
+    if "kimi" in model.lower():
+        body.update({"max_tokens": 16384,          # reasoning spends tokens too
+                     "temperature": 1,
+                     "seed": 0,
+                     "reasoning_effort": NVIDIA_REASONING_EFFORT})
+    else:
+        body.update({"max_tokens": 4096,
+                     "temperature": 0.2,
+                     "top_p": 0.95,
+                     "chat_template_kwargs": {"enable_thinking": False}})
+    return body
+
+
+THINKING = re.compile(r"<think>.*?</think>", re.S | re.I)
+
+
+def _read_stream(resp) -> tuple:
+    """
+    Reassemble a streamed answer, keeping the conclusion and discarding the
+    working.
+
+    The server sends the reply a few words at a time, each as a line starting
+    `data: {...}`. A reasoning model sends two kinds of text: its thinking, in a
+    field called `reasoning_content`, and its answer, in `content`. We keep only
+    the answer — the thinking is often longer than the answer and would sit in
+    front of the JSON we have to read. Any thinking that arrives wrapped in
+    <think> tags inside the answer itself is stripped as well.
+    """
+    import time
+    started = time.monotonic()
+    answer, thought = [], 0
+    for raw in resp.iter_lines():
+        if time.monotonic() - started > NVIDIA_MAX_SECONDS:
+            raise FetchError(f"still answering after {NVIDIA_MAX_SECONDS}s")
+        if not raw:
+            continue
+        line = raw.decode("utf-8", "replace") if isinstance(raw, bytes) else raw
+        if not line.startswith("data:"):
+            continue
+        data = line[5:].strip()
+        if data == "[DONE]":
+            break
+        try:
+            chunk = json.loads(data)
+        except ValueError:
+            continue
+        for choice in chunk.get("choices") or []:
+            delta = choice.get("delta") or {}
+            if delta.get("content"):
+                answer.append(delta["content"])
+            if delta.get("reasoning_content") or delta.get("reasoning"):
+                thought += len(delta.get("reasoning_content")
+                               or delta.get("reasoning") or "")
+    text = THINKING.sub("", "".join(answer)).strip()
+    return text, thought
+
+
+def ask_nvidia(prompt: str, key: str) -> tuple:
+    """
+    NVIDIA's model catalogue, over its OpenAI-compatible endpoint.
+
+    Streamed, as in NVIDIA's own sample — and for a reason that matters more
+    here than it does there. A thinking model can spend minutes before its first
+    word of answer. Held open silently, a connection that long tends to be cut
+    by something in between; streamed, bytes keep flowing and it survives.
+
+    Tries Kimi K3 first, then the fallback.
+    """
+    session = plain_session()
+    last = "no usable model"
+    for model in models_to_try("nvidia", key):
+        try:
+            resp = session.post(
+                "https://integrate.api.nvidia.com/v1/chat/completions",
+                timeout=(20, 180),       # connect, then max silence between chunks
+                stream=True,
+                headers={"Authorization": f"Bearer {key}",
+                         "Accept": "text/event-stream",
+                         "Content-Type": "application/json"},
+                json=_nvidia_payload(model, prompt))
+        except Exception as exc:
+            last = f"{model}: {type(exc).__name__}: {exc}"
+            continue
+        if resp.status_code != 200:
+            last = f"{model}: HTTP {resp.status_code}: {resp.text[:200]}"
+            continue
+        try:
+            text, thought = _read_stream(resp)
+        except Exception as exc:
+            last = f"{model}: {type(exc).__name__}: {str(exc)[:160]}"
+            continue
+        finally:
+            resp.close()
+        if not text:
+            last = (f"{model}: answered with reasoning only "
+                    f"({thought} characters) and no final answer")
+            continue
+        return text, model
+    raise FetchError(f"NVIDIA: {last}")
+
+
+ASKERS = {"gemini": ask_gemini, "groq": ask_groq, "nvidia": ask_nvidia}
+KEY_NAMES = {"gemini": "GEMINI_API_KEY", "groq": "GROQ_API_KEY",
+             "nvidia": "NVIDIA_API_KEY"}
+
+# The two analysts in use. Gemini's code is kept and still works — swapping
+# back is a one-word change — but the second seat now belongs to the model
+# NVIDIA hosts, which is a different family from Groq's and so more likely to
+# disagree in a useful way.
+ANALYSTS = ("groq", "nvidia")
 
 
 # --------------------------------------------------------- reading the reply
@@ -454,6 +630,14 @@ def check_citations(answer: dict, passages: dict) -> dict:
 
 # ------------------------------------------------------------------ running
 
+# Bump this whenever the prompt, the model choice or the checking rules change.
+# The fingerprint below decides whether an IPO is re-asked, and it used to cover
+# only the EVIDENCE — so improving the analyst left every old answer in place,
+# because the evidence had not moved. Including this version means a better
+# analyst re-reads everything once, then goes quiet again.
+ANALYST_VERSION = "2026-09-21-kimi-k3-no-web-peer-names"
+
+
 def fingerprint(bundle: dict) -> str:
     """
     A short signature of what we know, ignoring when we knew it.
@@ -464,6 +648,7 @@ def fingerprint(bundle: dict) -> str:
     """
     material = {key: value for key, value in bundle.items()
                 if key not in ("built_at",)}
+    material["_analyst_version"] = ANALYST_VERSION
     return hashlib.sha256(
         json.dumps(material, sort_keys=True, default=str).encode()
     ).hexdigest()[:16]
@@ -481,7 +666,7 @@ def already_done(ipo_id: str, model: str, signature: str) -> bool:
 
 
 def analyse(bundle: dict, sections: dict, score: dict = None,
-            which=("groq", "gemini"), gemini_left=None) -> dict:
+            which=ANALYSTS, gemini_left=None) -> dict:
     """
     Ask the models the same question, separately, and record the answers.
 
@@ -544,6 +729,30 @@ def analyse(bundle: dict, sections: dict, score: dict = None,
     return results
 
 
+# A model whose citations mostly fail to match the pages we sent is not a
+# second opinion; it is a confident stranger. Below this share of verified
+# claims its scores are shown but kept out of the average that feeds the call.
+RELIABLE_ENOUGH = 0.5
+
+
+def reliability(result: dict) -> dict:
+    checked = ((result or {}).get("answer") or {}).get("citation_check") or {}
+    claims = checked.get("claims_checked") or 0
+    verified = checked.get("citations_verified") or 0
+    invented = checked.get("citations_not_matching_what_we_sent") or 0
+    if claims < 2:
+        return {"share": None, "trusted": True,
+                "why": "too few claims to judge"}
+    share = verified / claims
+    return {
+        "share": round(share, 2),
+        "trusted": share >= RELIABLE_ENOUGH and invented == 0,
+        "why": (f"{verified} of {claims} citations matched the pages we sent"
+                + (f", and {invented} pointed at pages we never sent"
+                   if invented else "")),
+    }
+
+
 def compare(results: dict) -> dict:
     """
     Where the two models disagree — reported, never averaged away.
@@ -551,32 +760,48 @@ def compare(results: dict) -> dict:
     Two models agreeing is weak evidence: they are both trained to be
     agreeable. Two models disagreeing is strong evidence that the question is
     genuinely open, and that is worth more to you than a tidy single number.
+
+    A model that failed its citation check is shown in full but excluded from
+    the average that feeds the call. Checking a model's sources and then
+    letting an unsourced answer count anyway would make the check decoration.
     """
-    scores = {}
+    scores, trust = {}, {}
     for name, result in results.items():
         if name.startswith("_"):
             continue
+        trust[name] = reliability(result)
         answer = (result or {}).get("answer") or {}
         for view in ("listing_view", "longterm_view", "governance"):
             value = (answer.get(view) or {}).get("score")
             if value is not None:
                 scores.setdefault(view, {})[name] = value
 
-    out = {"scores": scores, "disagreements": [], "ai_block": {}}
+    out = {"scores": scores, "reliability": trust,
+           "disagreements": [], "ai_block": {}, "excluded": []}
+
+    usable = {name for name, body in trust.items() if body["trusted"]}
+    for name, body in trust.items():
+        if name not in usable:
+            out["excluded"].append({"model": name, "why": body["why"]})
+
     for view, by_model in scores.items():
         values = list(by_model.values())
+        counted = [v for name, v in by_model.items() if name in usable]
+
+        if counted:
+            out["ai_block"][view] = round(sum(counted) / len(counted), 1)
+            if len(counted) < len(values):
+                out["ai_block"][view + "_note"] = (
+                    "one model was left out of this average — its citations "
+                    "did not check out")
         if len(values) == 2:
             gap = abs(values[0] - values[1])
-            out["ai_block"][view] = round(sum(values) / 2, 1)
             if gap > 15:
                 out["disagreements"].append({
                     "on": view, "gap": round(gap, 1), "scores": by_model,
                     "means": "the models read the same evidence differently — "
                              "treat this verdict as uncertain, and read both "
                              "reasonings rather than the average"})
-        elif values:
-            out["ai_block"][view] = values[0]
-            out["ai_block"][view + "_note"] = "only one model answered"
     return out
 
 
@@ -614,6 +839,8 @@ def summarise(results: dict, comparison: dict) -> str:
                          f"confidence {answer.get('confidence')}")
         else:
             parts.append(f"{name}: FAILED — {result.get('why')}")
+    for item in comparison.get("excluded", []):
+        parts.append(f"{item['model']} EXCLUDED from the average ({item['why']})")
     if comparison.get("disagreements"):
         parts.append(f"{len(comparison['disagreements'])} DISAGREEMENT(S)")
     return " | ".join(parts)

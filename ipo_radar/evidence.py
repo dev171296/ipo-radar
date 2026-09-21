@@ -317,6 +317,16 @@ def build(ipo_id: str) -> dict:
             bundle["valuation"]["peers_verified"] = fact(
                 priced["peer_pe_verified_count"], "full prospectus", page=page,
                 note=f"{priced['peer_count']} peer row(s) parsed")
+            # The peer NAMES matter as much as the median. Asked whether the
+            # peer set is fairly chosen, both models answered "not answerable
+            # from what I was given" — correctly, because we had sent them a
+            # number and no names. Now they get the companies themselves.
+            named = [f"{p['name']} (P/E {p.get('pe')})" for p in priced["peers"]
+                     if p.get("name") and p.get("pe")]
+            if named:
+                bundle["valuation"]["peer_companies"] = fact(
+                    named, "full prospectus", page=page,
+                    note="the companies the seller chose to compare itself to")
         for note in priced.get("notes", []):
             missing.append({"what": "valuation comparison", "why": note})
         if not priced.get("notes") and not priced.get("vs_benchmark"):

@@ -52,8 +52,9 @@ BAD = "#a32d22"
 # alike are easy to blur together; these cannot be.
 GROQ = "#1a6b8f"          # teal
 GROQ_BG = "#eef6fa"
-GEMINI = "#6b3fa0"        # violet
-GEMINI_BG = "#f4f0fa"
+SECOND = "#6b3fa0"        # violet
+SECOND_BG = "#f4f0fa"
+SECOND_NAME = "NVIDIA"
 FONT = ("-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,"
         "Arial,sans-serif")
 
@@ -184,7 +185,7 @@ def _model_column(result):
     }
 
 
-def _comparison_table(groq, gemini):
+def _comparison_table(groq, second):
     """
     The two models side by side.
 
@@ -200,11 +201,11 @@ def _comparison_table(groq, gemini):
 
     rows = [f"<tr>{_head('')}"
             f"{coloured_head('Groq', GROQ, GROQ_BG)}"
-            f"{coloured_head('Gemini', GEMINI, GEMINI_BG)}</tr>"]
+            f"{coloured_head(SECOND_NAME, SECOND, SECOND_BG)}</tr>"]
 
     def line(label, key, formatter=_n):
         left = groq.get(key) if groq and groq["state"] == "ok" else None
-        right = gemini.get(key) if gemini and gemini["state"] == "ok" else None
+        right = second.get(key) if second and second["state"] == "ok" else None
         def tinted(value, colour, background):
             return (f'<td style="padding:8px 10px;border-bottom:1px solid {LINE};'
                     f'background:{background};font-family:{FONT};font-size:14px;'
@@ -213,7 +214,7 @@ def _comparison_table(groq, gemini):
 
         return (f"<tr>{_cell(e(label), width='38%')}"
                 f"{tinted(left, GROQ, GROQ_BG)}"
-                f"{tinted(right, GEMINI, GEMINI_BG)}</tr>")
+                f"{tinted(right, SECOND, SECOND_BG)}</tr>")
 
     rows.append(line("Model used", "model"))
     rows.append(line("Listing view (0–100)", "listing"))
@@ -310,10 +311,10 @@ def _quant_table(score):
     return _table(rows)
 
 
-def company_block(ipo, score, bundle, groq_result, gemini_result, comparison,
+def company_block(ipo, score, bundle, groq_result, second_result, comparison,
                   call=None):
     groq = _model_column(groq_result)
-    gemini = _model_column(gemini_result)
+    second = _model_column(second_result)
 
     dates = (ipo.get("dates") or {})
     facts = [f"{e(ipo.get('type', ''))} issue",
@@ -356,7 +357,7 @@ def company_block(ipo, score, bundle, groq_result, gemini_result, comparison,
         parts.append(_bullets(flags))
 
     parts.append(_para("<b>The two analysts, side by side</b>"))
-    parts.append(_comparison_table(groq, gemini))
+    parts.append(_comparison_table(groq, second))
 
     for gap in (comparison or {}).get("disagreements", []):
         scores = ", ".join(f"{e(k)} {v}" for k, v in (gap.get("scores") or {}).items())
@@ -366,7 +367,7 @@ def company_block(ipo, score, bundle, groq_result, gemini_result, comparison,
             f"{scores}. {e(gap.get('means'))}", WARN))
 
     parts.append(_model_detail("Groq", groq, GROQ, GROQ_BG))
-    parts.append(_model_detail("Gemini", gemini, GEMINI, GEMINI_BG))
+    parts.append(_model_detail(SECOND_NAME, second, SECOND, SECOND_BG))
 
     gaps = [f"{e(item['what'])} — {e(item['why'])}"
             for item in (bundle or {}).get("missing", [])[:6]]
@@ -482,7 +483,7 @@ def build(companies, dashboard_url=None) -> tuple:
     for entry in ordered:
         piece = company_block(entry["ipo"], entry.get("score"), entry.get("bundle"),
                               (entry.get("ai") or {}).get("groq"),
-                              (entry.get("ai") or {}).get("gemini"),
+                              (entry.get("ai") or {}).get("nvidia"),
                               (entry.get("ai") or {}).get("comparison"),
                               entry.get("call"))
         if used + len(piece) > BUDGET and shown:
@@ -562,7 +563,7 @@ def plain_text(companies, when, dashboard_url=None) -> str:
                      f"({fundamentals.get('coverage_pct', 0)}% assessed)   "
                      f"Demand: {demand.get('score', 'not scored')} "
                      f"({demand.get('coverage_pct', 0)}% assessed)")
-        for name in ("groq", "gemini"):
+        for name in ("groq", "nvidia"):
             column = _model_column(((entry.get("ai") or {}).get(name)))
             if not column:
                 continue
