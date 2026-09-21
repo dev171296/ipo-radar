@@ -43,6 +43,27 @@ def _write_json(payload, *parts):
     return path
 
 
+# How long the AI step may keep STARTING new IPOs. GitHub stops any run at six
+# hours, and everything gathered is saved only at the end of a run — so a run
+# that simply kept going would lose all of its own work. Four hours leaves room
+# for the email, the dashboard files and the save. Anything not reached is
+# picked up by the next run; finished IPOs are never re-asked.
+ANALYST_BUDGET_MINUTES = int(os.environ.get("ANALYST_BUDGET_MINUTES", "240"))
+
+
+def _analysis_order(record):
+    """
+    Most urgent first, so a run cut short by the time allowance has spent its
+    time where it matters: issues still open and closing soonest, then issues
+    yet to open, then issues that have already closed.
+    """
+    from datetime import date
+    close = (record.get("dates") or {}).get("close") or "9999-12-31"
+    today = date.today().isoformat()
+    finished = 1 if close < today else 0
+    return (finished, close if not finished else "", record.get("name", ""))
+
+
 def collect_ipos():
     """Fetch from NSE and fold the results into our store."""
     print("\n[1] NSE — IPO calendar")
@@ -280,10 +301,17 @@ def run_analysts():
         return 0
 
     print(f"    analysts: {', '.join(analysts.ANALYSTS)}; both read everything")
+    print(f"    time allowed for analysis this run: {ANALYST_BUDGET_MINUTES} min")
 
-    done = 0
-    for record in storage.all_records():
+    import time
+    started = time.monotonic()
+    done, deferred = 0, []
+    for record in sorted(storage.all_records(), key=_analysis_order):
         ipo_id = record["id"]
+        spent = (time.monotonic() - started) / 60
+        if spent > ANALYST_BUDGET_MINUTES:
+            deferred.append(record.get("name"))
+            continue
         path = os.path.join(storage.DATA, "docs", ipo_id, "full.json")
         if not os.path.exists(path):
             continue
@@ -325,6 +353,16 @@ def run_analysts():
         except Exception as exc:
             print(f"    {record.get('name')}: analyst failed — "
                   f"{type(exc).__name__} {str(exc)[:120]}")
+        finally:
+            if analysts.LAST_NVIDIA_NOTES:
+                for note in analysts.LAST_NVIDIA_NOTES:
+                    print(f"        nvidia: {note}")
+                analysts.LAST_NVIDIA_NOTES[:] = []
+
+    if deferred:
+        print(f"    time allowance used — {len(deferred)} IPO(s) left for the next "
+              f"run, which will pick them up where this one stopped: "
+              f"{', '.join(deferred[:8])}{' …' if len(deferred) > 8 else ''}")
     return done
 
 

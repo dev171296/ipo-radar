@@ -381,47 +381,95 @@ def company_block(ipo, score, bundle, groq_result, second_result, comparison,
 
 
 
-def _overview(companies):
+def _button(url, label):
     """
-    Every call on one screen, before any of the detail.
+    A link that looks like a button in every mail client.
 
-    This is the part you read on a phone at a traffic light. Nothing here is a
-    number without a word beside it, because "72" tells you nothing on its own.
+    Built as a coloured table cell around the link rather than a styled <a>
+    alone, because Outlook ignores padding on links — this is the standard
+    "bulletproof button" pattern for exactly that reason.
+    """
+    return (f'<table role="presentation" cellpadding="0" cellspacing="0" border="0" '
+            f'style="margin:14px 0 4px;"><tr>'
+            f'<td style="background:#2f5fd0;border-radius:7px;">'
+            f'<a href="{e(url)}" target="_blank" style="display:inline-block;'
+            f'padding:10px 18px;font-family:{FONT};font-size:14px;font-weight:600;'
+            f'color:#ffffff;text-decoration:none;">{e(label)}</a></td></tr></table>')
+
+
+def _overview(companies, dashboard_url=None):
+    """
+    Every IPO on one screen, before any of the detail.
+
+    Four columns and no more, because this is read on a phone. Everything else
+    a row needs — issue type, price band, subscription, the one thing to worry
+    about — sits in small text under the company name rather than in more
+    columns that would force sideways scrolling. Each name links to that
+    company's section on the dashboard.
+
+    Ordered the same way as the write-ups below it: decisions due soonest first.
     """
     rows = [f"<tr>{_head('Company')}{_head('Closes', 'center')}"
             f"{_head('If applying', 'center')}{_head('If holding', 'center')}</tr>"]
 
-    for entry in companies:
+    def pill(body):
+        if not body:
+            return _cell("—", align="center")
+        label = body.get("call", "—")
+        if label == "NOT ENOUGH INFORMATION":
+            label = "NOT ENOUGH INFO"
+        return (f'<td style="padding:8px 6px;border-bottom:1px solid {LINE};'
+                f'text-align:center;vertical-align:top;font-family:{FONT};">'
+                f'<span style="display:inline-block;background:'
+                f'{body.get("colour", MUTED)};color:#ffffff;border-radius:999px;'
+                f'padding:3px 9px;font-size:11px;font-weight:700;'
+                f'white-space:nowrap;">{e(label)}</span>'
+                f'<div style="font-size:11px;color:{MUTED};padding-top:3px;">'
+                f'{e(_n(body.get("score")))}</div></td>')
+
+    for entry in sorted(companies, key=_priority):
+        ipo = entry["ipo"]
         call = entry.get("call") or {}
-        listing = call.get("listing") or {}
-        longterm = call.get("longterm") or {}
+        bundle = entry.get("bundle") or {}
 
-        def pill(body):
-            if not body:
-                return _cell("—", align="center")
-            return (f'<td style="padding:8px 10px;border-bottom:1px solid {LINE};'
-                    f'text-align:center;font-family:{FONT};">'
-                    f'<span style="display:inline-block;background:'
-                    f'{body.get("colour", MUTED)};color:#ffffff;border-radius:999px;'
-                    f'padding:3px 11px;font-size:12px;font-weight:700;'
-                    f'white-space:nowrap;">{e(body.get("call", "—"))}</span>'
-                    f'<div style="font-size:11px;color:{MUTED};padding-top:3px;">'
-                    f'{e(_n(body.get("score")))}</div></td>')
+        name = e(ipo.get("name", ""))
+        if dashboard_url:
+            name = (f'<a href="{e(dashboard_url)}#{e(ipo.get("id", ""))}" '
+                    f'style="color:{INK};text-decoration:none;font-weight:600;">'
+                    f'{name}</a>')
+        else:
+            name = f"<b>{name}</b>"
 
-        closes = (entry["ipo"].get("dates") or {}).get("close") or "—"
-        name = e(entry["ipo"].get("name", ""))
-        if (call.get("hard_stops") or []):
-            name += (f'<br><span style="color:{BAD};font-size:12px;">hard stop: '
-                     f'{e(call["hard_stops"][0])}</span>')
-        if call.get("models_disagree"):
-            name += (f'<br><span style="color:{WARN};font-size:12px;">'
-                     f'the two models disagree</span>')
+        facts = [ipo.get("type") or ""]
+        if ipo.get("price_band"):
+            facts.append(ipo["price_band"])
+        times = ((bundle.get("demand") or {}).get("subscription_times") or {}).get("value")
+        if times is not None:
+            facts.append(f"{_n(times)}× subscribed")
+        detail = (f'<div style="font-size:12px;color:{MUTED};font-weight:400;'
+                  f'padding-top:2px;">{e(" · ".join(f for f in facts if f))}</div>')
 
-        rows.append(f"<tr>{_cell(name, width='46%')}"
+        warning = ""
+        if call.get("hard_stops"):
+            warning = f"hard stop: {call['hard_stops'][0]}"
+            colour = BAD
+        elif call.get("serious_findings"):
+            warning = call["serious_findings"][0]
+            colour = BAD
+        elif call.get("models_disagree"):
+            warning = "the two AI models disagree"
+            colour = WARN
+        if warning:
+            detail += (f'<div style="font-size:12px;color:{colour};'
+                       f'padding-top:2px;">{e(warning)}</div>')
+
+        closes = (ipo.get("dates") or {}).get("close") or "—"
+        rows.append(f'<tr><td style="padding:8px 10px;border-bottom:1px solid {LINE};'
+                    f'vertical-align:top;font-family:{FONT};font-size:14px;'
+                    f'line-height:1.4;color:{INK};width:48%;">{name}{detail}</td>'
                     f"{_cell(e(closes), align='center', color=MUTED)}"
-                    f"{pill(listing)}{pill(longterm)}</tr>")
+                    f"{pill(call.get('listing'))}{pill(call.get('longterm'))}</tr>")
     return _table(rows)
-
 
 
 def _priority(entry):
@@ -442,11 +490,22 @@ def _priority(entry):
     has_long_call = 0 if (call.get("longterm") or {}).get("call") not in (
         None, "NOT ENOUGH INFORMATION") else 1
     closing = (ipo.get("dates") or {}).get("close") or "9999-99-99"
-    urgent = 0 if closing <= _in_days(5) else 1
+    today = _in_days(0)
+    # Three bands: still open and closing within five days (decide now), still
+    # to come, and already closed. An issue that closed last week is history —
+    # its "should I apply?" answer no longer matters, so it goes to the bottom.
+    # An earlier version counted past dates as "closing soon" and put finished
+    # IPOs at the top.
+    if closing < today:
+        urgent = 2
+    elif closing <= _in_days(5):
+        urgent = 0
+    else:
+        urgent = 1
     flagged = 0 if (call.get("hard_stops") or call.get("models_disagree")) else 1
 
-    return (has_call, urgent, has_long_call, flagged, -(score or 0),
-            ipo.get("name", ""))
+    return (urgent, has_call, closing if urgent < 2 else "", has_long_call,
+            flagged, -(score or 0), ipo.get("name", ""))
 
 
 def _in_days(days):
@@ -475,7 +534,7 @@ def build(companies, dashboard_url=None) -> tuple:
     subject = ("IPO Radar — " + "; ".join(headline[:3])
                if headline else f"IPO Radar — {len(companies)} tracked")
 
-    overview = _overview(companies)
+    overview = _overview(companies, dashboard_url)
 
     # Detail in order of usefulness, until the budget runs out.
     ordered = sorted(companies, key=_priority)
@@ -522,10 +581,15 @@ def build(companies, dashboard_url=None) -> tuple:
          "missing is reported as missing, never counted as zero. The two AI readings "
          "are shown separately and never averaged — where they disagree, that "
          "disagreement is the finding.", color=MUTED, size=13)}
+  {_button(dashboard_url, "Open the full dashboard") if dashboard_url else ""}
+  <h2 style="margin:22px 0 0;font-family:{FONT};font-size:15px;letter-spacing:.06em;
+             text-transform:uppercase;color:{MUTED};">At a glance</h2>
   {overview}
+  <h2 style="margin:30px 0 0;padding-top:14px;border-top:2px solid {LINE};
+             font-family:{FONT};font-size:15px;letter-spacing:.06em;
+             text-transform:uppercase;color:{MUTED};">The detail</h2>
   {blocks}
-  {_para(("Dashboard: <a href='" + e(dashboard_url) + "' style='color:#2f5fd0;'>"
-          + e(dashboard_url) + "</a>") if dashboard_url else "", size=13)}
+  {_button(dashboard_url, "See every IPO in full on the dashboard") if dashboard_url else ""}
   {_para("Every number here comes from a document this system fetched and parsed "
          "itself, and can be traced to a page. This is not investment advice.",
          color=MUTED, size=12)}
@@ -546,7 +610,19 @@ def build(companies, dashboard_url=None) -> tuple:
 
 def plain_text(companies, when, dashboard_url=None) -> str:
     """The text-only version. Sent alongside, always."""
-    lines = [f"IPO RADAR — generated {when} UTC", "=" * 60, ""]
+    lines = [f"IPO RADAR — generated {when} UTC", "=" * 60]
+    if dashboard_url:
+        lines.append(f"Full dashboard: {dashboard_url}")
+    lines += ["", "AT A GLANCE", "-" * 60,
+              f"{'Company':<34}{'Closes':<12}{'Applying':<18}Holding"]
+    for entry in sorted(companies, key=_priority):
+        call = entry.get("call") or {}
+        short = lambda view: ((call.get(view) or {}).get("call") or "—").replace(
+            "NOT ENOUGH INFORMATION", "not enough info")
+        lines.append(f"{entry['ipo'].get('name', '')[:32]:<34}"
+                     f"{((entry['ipo'].get('dates') or {}).get('close') or '—'):<12}"
+                     f"{short('listing'):<18}{short('longterm')}")
+    lines += ["", "THE DETAIL", "-" * 60, ""]
     for entry in companies:
         ipo, score = entry["ipo"], entry.get("score") or {}
         fundamentals = score.get("fundamentals") or {}

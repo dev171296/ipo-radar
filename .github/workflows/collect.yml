@@ -20,6 +20,10 @@ concurrency:
 jobs:
   collect:
     runs-on: ubuntu-latest
+    # GitHub's own ceiling is 360. Ours is lower so that, if something ever
+    # hangs, the run is stopped by us with time to spare rather than by GitHub
+    # mid-save. The AI step stops starting new work at 240 minutes.
+    timeout-minutes: 330
     permissions:
       contents: write           # needed to commit the data back
     steps:

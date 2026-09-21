@@ -69,17 +69,27 @@ PREFERENCES = {
 NVIDIA_MODEL = os.environ.get("NVIDIA_MODEL", "moonshotai/kimi-k3")
 NVIDIA_FALLBACK = os.environ.get("NVIDIA_FALLBACK", "google/gemma-4-31b-it")
 
-# How hard Kimi thinks before answering: low / high / max. NVIDIA's sample uses
-# "max". We use "low": the brief is ~2,500 tokens of already-verified figures
-# and page-cited passages, the heavy lifting is done before the model sees it,
-# and "max" on a 2.8-trillion-parameter model across ~29 IPOs would take a very
-# long time on a free endpoint. Raise it with NVIDIA_REASONING_EFFORT if the
-# answers ever look shallow.
-NVIDIA_REASONING_EFFORT = os.environ.get("NVIDIA_REASONING_EFFORT", "low")
+# How hard Kimi thinks before answering: low / high / max.
+#
+# MAX. Decided 21 Sep 2026: there is no real-time requirement — the digest goes
+# out a few times a day — and the stated priority is answer quality and
+# accuracy over speed. So Kimi gets its deepest reasoning and plenty of time.
+NVIDIA_REASONING_EFFORT = os.environ.get("NVIDIA_REASONING_EFFORT", "max")
 
-# Wall-clock ceiling for one answer. A thinking model can pause for a long time
-# between bursts of output, so this is a total, not a per-chunk limit.
-NVIDIA_MAX_SECONDS = int(os.environ.get("NVIDIA_MAX_SECONDS", "300"))
+# If the deepest setting spends its whole token allowance thinking and never
+# reaches an answer, we ask Kimi once more at this lighter setting before giving
+# up on it. That keeps the answer coming from the stronger model wherever
+# possible, rather than dropping straight to the fallback.
+NVIDIA_RETRY_EFFORT = os.environ.get("NVIDIA_RETRY_EFFORT", "high")
+
+# How long one answer may take, start to finish: 15 minutes. Past this, the
+# fallback model takes over.
+NVIDIA_MAX_SECONDS = int(os.environ.get("NVIDIA_MAX_SECONDS", "900"))
+
+# How long the stream may go completely silent. Kimi sends its thinking as it
+# goes, so a long silence means the connection has died rather than the model
+# being busy.
+NVIDIA_SILENCE_SECONDS = int(os.environ.get("NVIDIA_SILENCE_SECONDS", "300"))
 
 # Things that are not general chat models, whatever else their name says.
 NOT_CHAT = ("embedding", "aqa", "vision", "tts", "audio", "whisper", "guard",
@@ -442,7 +452,7 @@ def ask_groq(prompt: str, key: str) -> tuple:
 
 
 
-def _nvidia_payload(model: str, prompt: str) -> dict:
+def _nvidia_payload(model: str, prompt: str, effort: str = None) -> dict:
     """
     The request body, which differs by model family.
 
@@ -458,7 +468,7 @@ def _nvidia_payload(model: str, prompt: str) -> dict:
         body.update({"max_tokens": 16384,          # reasoning spends tokens too
                      "temperature": 1,
                      "seed": 0,
-                     "reasoning_effort": NVIDIA_REASONING_EFFORT})
+                     "reasoning_effort": effort or NVIDIA_REASONING_EFFORT})
     else:
         body.update({"max_tokens": 4096,
                      "temperature": 0.2,
@@ -511,48 +521,76 @@ def _read_stream(resp) -> tuple:
     return text, thought
 
 
+# What happened on the last NVIDIA call, in full, for the run log.
+LAST_NVIDIA_NOTES = []
+
+
+def _one_nvidia_call(session, key, model, prompt, effort=None) -> tuple:
+    """One attempt. Returns (text, thought_chars) or raises."""
+    resp = session.post(
+        "https://integrate.api.nvidia.com/v1/chat/completions",
+        timeout=(30, NVIDIA_SILENCE_SECONDS),
+        stream=True,
+        headers={"Authorization": f"Bearer {key}",
+                 "Accept": "text/event-stream",
+                 "Content-Type": "application/json"},
+        json=_nvidia_payload(model, prompt, effort))
+    try:
+        if resp.status_code != 200:
+            raise FetchError(f"HTTP {resp.status_code}: {resp.text[:200]}")
+        return _read_stream(resp)
+    finally:
+        resp.close()
+
+
 def ask_nvidia(prompt: str, key: str) -> tuple:
     """
     NVIDIA's model catalogue, over its OpenAI-compatible endpoint.
 
-    Streamed, as in NVIDIA's own sample — and for a reason that matters more
-    here than it does there. A thinking model can spend minutes before its first
-    word of answer. Held open silently, a connection that long tends to be cut
-    by something in between; streamed, bytes keep flowing and it survives.
+    The ladder, in order, and why each step exists:
 
-    Tries Kimi K3 first, then the fallback.
+      1. Kimi K3 at maximum reasoning, with up to 15 minutes. The best answer
+         we can get, and quality is the stated priority.
+      2. Kimi K3 again at "high", ONLY if step 1 thought for so long that it ran
+         out of room before writing an answer. Same strong model, a little less
+         deliberation — better than giving up on it.
+      3. Gemma, if Kimi timed out, errored, or the free endpoint was busy.
+
+    Streamed, as in NVIDIA's own sample, because a thinking model can work for
+    minutes before its first word of answer; a connection held open silently
+    for that long tends to be cut by something in between.
     """
     session = plain_session()
-    last = "no usable model"
+    notes, short = [], []
     for model in models_to_try("nvidia", key):
-        try:
-            resp = session.post(
-                "https://integrate.api.nvidia.com/v1/chat/completions",
-                timeout=(20, 180),       # connect, then max silence between chunks
-                stream=True,
-                headers={"Authorization": f"Bearer {key}",
-                         "Accept": "text/event-stream",
-                         "Content-Type": "application/json"},
-                json=_nvidia_payload(model, prompt))
-        except Exception as exc:
-            last = f"{model}: {type(exc).__name__}: {exc}"
-            continue
-        if resp.status_code != 200:
-            last = f"{model}: HTTP {resp.status_code}: {resp.text[:200]}"
-            continue
-        try:
-            text, thought = _read_stream(resp)
-        except Exception as exc:
-            last = f"{model}: {type(exc).__name__}: {str(exc)[:160]}"
-            continue
-        finally:
-            resp.close()
-        if not text:
-            last = (f"{model}: answered with reasoning only "
-                    f"({thought} characters) and no final answer")
-            continue
-        return text, model
-    raise FetchError(f"NVIDIA: {last}")
+        efforts = ([None, NVIDIA_RETRY_EFFORT] if "kimi" in model.lower()
+                   else [None])
+        for effort in efforts:
+            label = f"{model}" + (f" at {effort}" if effort else "")
+            try:
+                text, thought = _one_nvidia_call(session, key, model, prompt, effort)
+            except Exception as exc:
+                kind = ("timed out" if "Timeout" in type(exc).__name__
+                        or "still answering" in str(exc) else "failed")
+                notes.append(f"{label}: {type(exc).__name__} {str(exc)[:140]}")
+                short.append(f"{model.split('/')[-1]} {kind}")
+                break                       # a timeout or error: go to fallback
+            if text:
+                LAST_NVIDIA_NOTES[:] = notes
+                # The label that appears in the email and on the dashboard.
+                # Kept short, but honest about anything that went differently:
+                # "kimi-k3 (retried at high)" or "gemma-4-31b-it (fallback:
+                # kimi-k3 timed out)". The full detail goes to the run log.
+                if effort:
+                    return text, f"{model} (retried at {effort})"
+                if short:
+                    return text, f"{model} (fallback: {'; '.join(short)})"
+                return text, model
+            notes.append(f"{label}: reasoned for {thought:,} characters and "
+                         f"ran out of room before answering")
+            short.append(f"{model.split('/')[-1]} ran out of room")
+    LAST_NVIDIA_NOTES[:] = notes
+    raise FetchError("NVIDIA: " + " | ".join(notes)[:600])
 
 
 ASKERS = {"gemini": ask_gemini, "groq": ask_groq, "nvidia": ask_nvidia}
@@ -635,7 +673,7 @@ def check_citations(answer: dict, passages: dict) -> dict:
 # only the EVIDENCE — so improving the analyst left every old answer in place,
 # because the evidence had not moved. Including this version means a better
 # analyst re-reads everything once, then goes quiet again.
-ANALYST_VERSION = "2026-09-21-kimi-k3-no-web-peer-names"
+ANALYST_VERSION = "2026-09-21-kimi-k3-max-no-web-peer-names"
 
 
 def fingerprint(bundle: dict) -> str:
