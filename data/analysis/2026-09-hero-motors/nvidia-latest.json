@@ -1,0 +1,68 @@
+{
+ "ok": true,
+ "model": "moonshotai/kimi-k3",
+ "answered_at": "2026-09-21T19:02:31+00:00",
+ "evidence_fingerprint": "ac93435c66dfbef2",
+ "prompt_chars": 10018,
+ "passages_supplied": {
+  "litigation": 8,
+  "governance": 8,
+  "business_quality": 8,
+  "risks": 7
+ },
+ "answer": {
+  "listing_view": {
+   "score": 62.0,
+   "reasoning": "Subscription built to ~4x by the final day, which indicates decent demand momentum into the close, but it is not a blowout for an IPO priced at ~73x earnings against a 50x peer average stated in the document itself. With no grey market, anchor or broker data given, the demand signal is the only hard evidence, and 4x is supportive but not euphoric."
+  },
+  "longterm_view": {
+   "score": 40.0,
+   "reasoning": "Revenue growth of ~6% CAGR over two years with EBITDA margins of only 8-12% and leverage around 1x equity is a modest industrial profile being offered at 73x latest basic EPS, 1.46x even the document's own benchmark P/E. Cash conversion is genuinely good (~0.97 of EBITDA arrives as cash and free cash flow is positive all three years), but a sub-1 current ratio, rising receivable days, and dependence on a limited supplier base leave little room for error at this price."
+  },
+  "governance": {
+   "score": 38.0,
+   "reasoning": "A criminal case instituted by the UP Pollution Control Board against a Promoter is disclosed, related-party loans and guarantees feature in the group's financial assets, and 1,000,000 promoter ESOP shares are pledged to a lender. None of these is disqualifying, but together they are a meaningful discount flag, and the extracts give no offsetting evidence of related-party balances beyond a nil loss allowance."
+  },
+  "key_risks": [
+   {
+    "risk": "Promoter litigation",
+    "why_it_matters": "A criminal case by the UP Pollution Control Board against Promoter Pankaj is disclosed, and environmental enforcement can escalate into plant-level disruption; the extracts cut off before the outcome or quantum is shown.",
+    "citation": "[litigation, page 483]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Supplier concentration",
+    "why_it_matters": "The company itself flags dependence on a limited set of suppliers for critical raw materials, which in a 12% EBITDA margin business leaves no cushion against input cost or supply shocks.",
+    "citation": "[business, page 284]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Related-party funding web",
+    "why_it_matters": "Group financial assets include loans to related parties and guarantees, and promoter shares are pledged, so minority shareholders are exposed to capital being used outside the listed business.",
+    "citation": "[promoters, page 422]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Fuel/energy cost exposure",
+    "why_it_matters": "The prospectus flags rising fuel source costs hitting production costs, directly threatening the thin 8-12% margins evidenced in the financials.",
+    "citation": "[business, page 285]",
+    "citation_verified": true
+   }
+  ],
+  "answers": [
+   {
+    "question": "how is the shortfall funded?",
+    "answer": "The extracts and figures do not state this. What the figures do show is a current ratio of 0.94 (current liabilities exceed current assets), total debt of ₹4,706 million against net worth of ₹4,810 million, and operating cash flow of ₹1,440 million in the latest year; the ₹6,000 million fresh issue is the obvious candidate to plug any working-capital gap, but no extract confirms the objects of the issue, so the mechanism cannot be established from what I was given.",
+    "citation": "not answerable from what I was given",
+    "citation_verified": false
+   }
+  ],
+  "confidence": "medium",
+  "what_would_change_my_mind": "Evidence that the EV segment (12% of revenue) is compounding fast enough to re-rate the mix, plus the stated objects of the issue showing the fresh ₹6,000 million deleveraging the balance sheet rather than funding promoters or related parties, would lift my long-term view; conversely, confirmation that IPO proceeds merely cover working capital would push it lower.",
+  "citation_check": {
+   "claims_checked": 5,
+   "citations_verified": 4,
+   "citations_not_matching_what_we_sent": 0
+  }
+ }
+}

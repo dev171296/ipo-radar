@@ -1,0 +1,68 @@
+{
+ "ok": true,
+ "model": "moonshotai/kimi-k3",
+ "answered_at": "2026-09-21T18:57:29+00:00",
+ "evidence_fingerprint": "e7d0ab0e4497d7fc",
+ "prompt_chars": 8964,
+ "passages_supplied": {
+  "litigation": 8,
+  "governance": 8,
+  "business_quality": 7,
+  "risks": 6
+ },
+ "answer": {
+  "listing_view": {
+   "score": 78.0,
+   "reasoning": "Subscription went from ~0.6x on day two to 12.15x on the final day, with nearly all demand arriving in the last hours — typical of QIB-led institutional interest and a strong listing signal. At 12.8x latest EPS (139/10.82), pricing is not aggressive by Indian mainboard standards. The absence of GMP and anchor data is a gap, but the late demand surge alone supports an above-average debut."
+  },
+  "longterm_view": {
+   "score": 47.0,
+   "reasoning": "PAT is essentially flat (~3% CAGR over two years) while borrowings exploded from ~₹1,319mn to ~₹16,826mn — leverage rose roughly 10x to produce almost no incremental profit, and even the document's own printed debt-to-equity doesn't reconcile with ours (0.39 vs 0.546). Cash conversion is weak (OCF/PAT ~0.44; ~0.31 vs EBITDA), meaning a large share of reported profit never arrived as cash. For an ARC, where earnings are only as good as recoveries actually collected, that combination is a genuine orange flag."
+  },
+  "governance": {
+   "score": 55.0,
+   "reasoning": "Promoter shares are partially pledged in all three years shown [promoters, page 273], [promoters, page 332], and the litigation extracts show the company reporting no criminal cases against it [litigation, page 434] — the SBI cheque-dishonour cases appear to be by SBI, not against the issuer. Pledging keeps this below neutral; nothing rises to a red flag."
+  },
+  "key_risks": [
+   {
+    "risk": "Debt-funded growth with flat profits",
+    "why_it_matters": "Borrowings grew ~12x in three years while PAT grew ~3%, so each rupee of new leverage is earning little; the document itself flags refinancing-cost risk [business, page 200].",
+    "citation": "[business, page 200]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Poor cash conversion of reported profit",
+    "why_it_matters": "Only ~31-44% of reported profit showed up as operating cash, and in an asset-reconstruction business cash recovery is the business model; the prospectus admits cash flows may be adversely affected [business, page 204].",
+    "citation": "[business, page 204]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Promoter share pledging",
+    "why_it_matters": "Promoters have partially pledged shares in each of the last three years, creating potential forced-sale pressure and signalling tight promoter finances [promoters, page 273].",
+    "citation": "[promoters, page 273]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Inconsistent debt-to-equity disclosure",
+    "why_it_matters": "Our computation (0.546) does not match the figure printed in the document (0.39); unexplained balance-sheet mismatches in a filing are a disclosure-quality concern.",
+    "citation": "[business, page 199]",
+    "citation_verified": true
+   }
+  ],
+  "answers": [
+   {
+    "question": "check receivables and inventory against the sales growth",
+    "answer": "Not answerable — no receivables, inventory, or debtor-days figures were provided. What I can say: revenue grew only modestly (₹5,964mn to ₹7,530mn on the business page series, ~26% over two years) while borrowings grew ~12x, so whatever drove the balance-sheet expansion, it was not sales growth. Receivables data would be needed to say whether the top line is cash-backed.",
+    "citation": "[business, page 180]",
+    "citation_verified": true
+   }
+  ],
+  "confidence": "low",
+  "what_would_change_my_mind": "Receivables/ageing data and security-receipt cash-flow detail showing recoveries actually collected would resolve the cash-conversion worry; a clear fresh-issue vs OFS split and ROE/ROCE disclosure would tell me whether the leverage is funding accretive acquisitions or papering over weak returns.",
+  "citation_check": {
+   "claims_checked": 5,
+   "citations_verified": 5,
+   "citations_not_matching_what_we_sent": 0
+  }
+ }
+}

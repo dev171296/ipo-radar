@@ -1,10 +1,10 @@
 {
  "scores": {
   "listing_view": {
-   "groq": 40.0
+   "groq": 45.0
   },
   "longterm_view": {
-   "groq": 55.0
+   "groq": 62.0
   },
   "governance": {
    "groq": 35.0

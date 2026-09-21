@@ -1,0 +1,418 @@
+{
+ "ipo_id": "2026-09-prasol-chemicals",
+ "built_at": "2026-09-21T18:46:36+00:00",
+ "name": "Prasol Chemicals Limited",
+ "symbol": "PRASOLCHEM",
+ "type": "mainboard",
+ "status": "upcoming",
+ "offer": {
+  "price_low": {
+   "value": 643.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.643 to Rs.676"
+  },
+  "price_high": {
+   "value": 676.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.643 to Rs.676"
+  },
+  "issue_size_shares": {
+   "value": 5443229.0,
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "issue_size_rs_million": {
+   "value": 3679.62,
+   "source": "computed",
+   "confidence": "high",
+   "note": "shares × top of the price band"
+  },
+  "open_date": {
+   "value": "2026-09-08",
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "close_date": {
+   "value": "2026-09-10",
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "fresh_issue_rs_million": {
+   "value": 800.0,
+   "source": "abridged prospectus",
+   "confidence": "low",
+   "page": 1,
+   "raw": "fresh issue size offer for sale size total offer size eligibility and share reservation fresh issue and offer for sale up to [●] equity shares of face value of ₹ 2 aggregating up to ₹ 800.00 million",
+   "note": "read from a table flattened to text — verify before relying on it"
+  }
+ },
+ "financials": {
+  "revenue": {
+   "value": [
+    12325.93,
+    10124.94,
+    8765.65
+   ],
+   "source": "abridged prospectus",
+   "confidence": "high",
+   "page": 11,
+   "raw": "Revenue from Operations 12,325.93 10,124.94 8,765.65"
+  },
+  "ebitda": {
+   "value": [
+    1393.2,
+    877.66,
+    605.28
+   ],
+   "source": "abridged prospectus",
+   "confidence": "high",
+   "page": 11,
+   "raw": "EBITDA(2) 1,393.20 877.66 605.28"
+  },
+  "pat": {
+   "value": [
+    831.24,
+    435.69,
+    181.31
+   ],
+   "source": "abridged prospectus",
+   "confidence": "high",
+   "page": 11,
+   "raw": "Profit for the year 831.24 435.69 181.31"
+  }
+ },
+ "valuation": {
+  "eps_basic_latest": {
+   "value": 14.33,
+   "source": "full prospectus",
+   "confidence": "high",
+   "page": 203,
+   "raw": "fiscal 2026",
+   "note": "checked: our rows reproduce the document's own weighted average of 10.19"
+  },
+  "eps_weighted_average": {
+   "value": 10.19,
+   "source": "full prospectus",
+   "confidence": "high",
+   "page": 203
+  },
+  "pe_at_cap_price": {
+   "value": 47.17,
+   "source": "computed",
+   "confidence": "high",
+   "page": 203,
+   "note": "top of the NSE price band divided by the latest basic EPS — the document itself leaves this blank, because the band was not fixed when it was filed"
+  },
+  "benchmark_pe": {
+   "value": 61.74,
+   "source": "full prospectus",
+   "confidence": "low",
+   "page": 203,
+   "note": "the average stated in the document"
+  },
+  "vs_benchmark": {
+   "value": 0.764,
+   "source": "computed",
+   "confidence": "high",
+   "page": 203,
+   "raw": "asking 47.17× earnings against 61.74× (the average stated in the document) — a 24% discount"
+  },
+  "peers_verified": {
+   "value": 0,
+   "source": "full prospectus",
+   "confidence": "high",
+   "page": 203,
+   "note": "0 peer row(s) parsed"
+  }
+ },
+ "cash": {
+  "operating_cash_flow": {
+   "value": [
+    494.7,
+    222.6,
+    1156.06
+   ],
+   "source": "full prospectus (financials chapter)",
+   "confidence": "high",
+   "page": 380,
+   "raw": "Net cash generated from operating activities 494.70 222.60 1,156.06",
+   "note": "newest year first"
+  },
+  "conversion_vs_ebitda": {
+   "value": 0.355,
+   "source": "computed",
+   "confidence": "high",
+   "note": "1.0 means the reported profit arrived as cash"
+  },
+  "conversion_vs_pat": {
+   "value": 0.595,
+   "source": "computed",
+   "confidence": "high",
+   "note": "1.0 means the reported profit arrived as cash"
+  },
+  "free_cash_flow": {
+   "value": [
+    104.71,
+    -3.22,
+    964.68
+   ],
+   "source": "computed",
+   "confidence": "high",
+   "note": "operating cash flow after paying for equipment"
+  },
+  "negative_in_all_years": {
+   "value": false,
+   "source": "computed",
+   "confidence": "high"
+  },
+  "negative_in_latest_year": {
+   "value": false,
+   "source": "computed",
+   "confidence": "high"
+  },
+  "receivables_share_of_sales_growth": {
+   "value": 0.371,
+   "source": "computed",
+   "confidence": "high",
+   "note": "how much of the extra sales is money not yet collected"
+  }
+ },
+ "balance_sheet": {
+  "debt_to_equity": {
+   "value": [
+    0.245,
+    0.275,
+    0.252
+   ],
+   "source": "full prospectus (financials)",
+   "confidence": "high",
+   "page": 380,
+   "note": "borrowings ÷ what the owners have in it — computed from total debt ÷ net worth"
+  },
+  "current_ratio": {
+   "value": [
+    1.54,
+    1.34,
+    1.19
+   ],
+   "source": "full prospectus (financials)",
+   "confidence": "high",
+   "page": 380,
+   "note": "money due in within a year ÷ money due out — computed from current assets ÷ liabilities"
+  },
+  "receivable_days": {
+   "value": [
+    82.5,
+    71.1,
+    66.8
+   ],
+   "source": "full prospectus (financials)",
+   "confidence": "high",
+   "page": 380,
+   "note": "how long customers take to pay"
+  },
+  "total_debt": {
+   "value": [
+    1100.64,
+    1010.52,
+    820.68
+   ],
+   "source": "full prospectus (financials)",
+   "confidence": "high",
+   "page": 380,
+   "note": "borrowings, newest year first"
+  },
+  "net_worth": {
+   "value": [
+    4485.05,
+    3674.7,
+    3258.35
+   ],
+   "source": "full prospectus (financials)",
+   "confidence": "high",
+   "page": 380,
+   "note": "the owners' stake, newest year first"
+  }
+ },
+ "derived": {
+  "revenue_cagr_2y_pct": {
+   "value": 18.58,
+   "source": "computed",
+   "confidence": "high",
+   "note": "two years of compounding, newest over oldest"
+  },
+  "revenue_growth_latest_pct": {
+   "value": 21.74,
+   "source": "computed",
+   "confidence": "high"
+  },
+  "pat_cagr_2y_pct": {
+   "value": 114.12,
+   "source": "computed",
+   "confidence": "high"
+  },
+  "pat_margin_pct": {
+   "value": [
+    6.74,
+    4.3,
+    2.07
+   ],
+   "source": "computed",
+   "confidence": "high",
+   "note": "profit as a share of sales, newest first"
+  },
+  "ebitda_margin_pct": {
+   "value": [
+    11.3,
+    8.67,
+    6.91
+   ],
+   "source": "computed",
+   "confidence": "high"
+  }
+ },
+ "demand": {
+  "subscription_times": {
+   "value": 1.5246817651801898,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "note": "as at 2026-09-10T13:02:08+00:00"
+  },
+  "subscription_history": {
+   "value": [
+    {
+     "at": "2026-09-07T19:43:40+00:00",
+     "times": 0.0
+    },
+    {
+     "at": "2026-09-08T07:21:56+00:00",
+     "times": 0.15270825460402274
+    },
+    {
+     "at": "2026-09-08T09:58:37+00:00",
+     "times": 0.21789713421941279
+    },
+    {
+     "at": "2026-09-08T12:59:38+00:00",
+     "times": 0.25976529739976034
+    },
+    {
+     "at": "2026-09-09T07:30:23+00:00",
+     "times": 0.3723999118905341
+    },
+    {
+     "at": "2026-09-09T10:01:43+00:00",
+     "times": 0.40557838003876007
+    },
+    {
+     "at": "2026-09-09T13:05:18+00:00",
+     "times": 0.4482993458478414
+    },
+    {
+     "at": "2026-09-10T07:26:37+00:00",
+     "times": 0.9719888691069216
+    },
+    {
+     "at": "2026-09-10T09:58:03+00:00",
+     "times": 1.349352011462314
+    },
+    {
+     "at": "2026-09-10T13:02:08+00:00",
+     "times": 1.5246817651801898
+    }
+   ],
+   "source": "nse_calendar",
+   "confidence": "high",
+   "note": "every change we recorded"
+  }
+ },
+ "documents": {
+  "abridged": {
+   "pages": 16,
+   "url": "https://www.sebi.gov.in/sebi_data/commondocs/sep-2026/Prasol%20Chemicals%20Limited%20-%20AP_p.pdf",
+   "fields": [
+    "cin",
+    "financials",
+    "lead_managers",
+    "objects",
+    "offer_details",
+    "price_band",
+    "promoters",
+    "registrar",
+    "reservation",
+    "risk_factors",
+    "selling_shareholders"
+   ],
+   "read_at": "2026-09-05T11:11:02+00:00"
+  },
+  "full": {
+   "pages": 590,
+   "url": "https://www.sebi.gov.in/sebi_data/attachdocs/sep-2026/1788411848709.pdf",
+   "chapters": {
+    "capital_structure": [
+     115,
+     191
+    ],
+    "objects": [
+     192,
+     202
+    ],
+    "basis_for_price": [
+     203,
+     301
+    ],
+    "business": [
+     302,
+     365
+    ],
+    "promoters": [
+     366,
+     379
+    ],
+    "financials": [
+     380,
+     470
+    ],
+    "litigation": [
+     471,
+     590
+    ]
+   },
+   "read_at": "2026-09-05T11:16:31+00:00"
+  }
+ },
+ "missing": [
+  {
+   "what": "ROE",
+   "why": "this document does not print it"
+  },
+  {
+   "what": "ROCE",
+   "why": "this document does not print it"
+  },
+  {
+   "what": "grey market premium",
+   "why": "no free source built yet"
+  },
+  {
+   "what": "anchor investor allotment",
+   "why": "not collected yet"
+  },
+  {
+   "what": "broker conviction",
+   "why": "not collected yet"
+  },
+  {
+   "what": "media coverage",
+   "why": "not collected yet"
+  },
+  {
+   "what": "retail attention",
+   "why": "not collected yet"
+  }
+ ],
+ "conflicts": [],
+ "observations": []
+}

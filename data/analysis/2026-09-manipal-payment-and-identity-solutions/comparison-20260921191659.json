@@ -1,0 +1,59 @@
+{
+ "scores": {
+  "listing_view": {
+   "groq": 15.0,
+   "nvidia": 30.0
+  },
+  "longterm_view": {
+   "groq": 65.0,
+   "nvidia": 45.0
+  },
+  "governance": {
+   "groq": 70.0,
+   "nvidia": 35.0
+  }
+ },
+ "reliability": {
+  "groq": {
+   "share": 0.75,
+   "trusted": false,
+   "why": "3 of 4 citations matched the pages we sent, and 1 pointed at pages we never sent"
+  },
+  "nvidia": {
+   "share": 0.8,
+   "trusted": false,
+   "why": "4 of 5 citations matched the pages we sent, and 1 pointed at pages we never sent"
+  }
+ },
+ "disagreements": [
+  {
+   "on": "longterm_view",
+   "gap": 20.0,
+   "scores": {
+    "groq": 65.0,
+    "nvidia": 45.0
+   },
+   "means": "the models read the same evidence differently — treat this verdict as uncertain, and read both reasonings rather than the average"
+  },
+  {
+   "on": "governance",
+   "gap": 35.0,
+   "scores": {
+    "groq": 70.0,
+    "nvidia": 35.0
+   },
+   "means": "the models read the same evidence differently — treat this verdict as uncertain, and read both reasonings rather than the average"
+  }
+ ],
+ "ai_block": {},
+ "excluded": [
+  {
+   "model": "groq",
+   "why": "3 of 4 citations matched the pages we sent, and 1 pointed at pages we never sent"
+  },
+  {
+   "model": "nvidia",
+   "why": "4 of 5 citations matched the pages we sent, and 1 pointed at pages we never sent"
+  }
+ ]
+}

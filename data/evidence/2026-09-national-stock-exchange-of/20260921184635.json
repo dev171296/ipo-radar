@@ -1,0 +1,253 @@
+{
+ "ipo_id": "2026-09-national-stock-exchange-of",
+ "built_at": "2026-09-21T18:46:35+00:00",
+ "name": "National Stock Exchange of India Limited",
+ "symbol": "NSE",
+ "type": "mainboard",
+ "status": "upcoming",
+ "offer": {
+  "price_low": {
+   "value": 1700.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.1700 to Rs.1785"
+  },
+  "price_high": {
+   "value": 1785.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.1700 to Rs.1785"
+  },
+  "issue_size_shares": {
+   "value": 88642911.0,
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "issue_size_rs_million": {
+   "value": 158227.6,
+   "source": "computed",
+   "confidence": "high",
+   "note": "shares × top of the price band"
+  },
+  "open_date": {
+   "value": "2026-09-17",
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "close_date": {
+   "value": "2026-09-21",
+   "source": "nse_calendar",
+   "confidence": "high"
+  }
+ },
+ "financials": {
+  "revenue": {
+   "value": [
+    66013.09,
+    171406.78,
+    147800.11
+   ],
+   "source": "abridged prospectus",
+   "confidence": "high",
+   "page": 10,
+   "raw": "Revenue from operations(16) ₹ million 45,604.10 40,322.38 166,013.09 171,406.78 147,800.11"
+  }
+ },
+ "valuation": {
+  "eps_basic_latest": {
+   "value": 41.62,
+   "source": "full prospectus",
+   "confidence": "high",
+   "page": 136,
+   "raw": "fiscal 2026",
+   "note": "checked: our rows reproduce the document's own weighted average of 42.82"
+  },
+  "eps_weighted_average": {
+   "value": 42.82,
+   "source": "full prospectus",
+   "confidence": "high",
+   "page": 136
+  }
+ },
+ "cash": {
+  "operating_cash_flow": {
+   "value": [
+    -56.67,
+    -111.02,
+    367.37
+   ],
+   "source": "full prospectus (business chapter)",
+   "confidence": "high",
+   "page": 207,
+   "raw": "Net cash inflow/(outflow) from operating activities (56.67) (111.02) (367.37",
+   "note": "newest year first"
+  },
+  "negative_in_all_years": {
+   "value": false,
+   "source": "computed",
+   "confidence": "high"
+  },
+  "negative_in_latest_year": {
+   "value": true,
+   "source": "computed",
+   "confidence": "high"
+  }
+ },
+ "balance_sheet": {},
+ "derived": {
+  "revenue_cagr_2y_pct": {
+   "value": -33.17,
+   "source": "computed",
+   "confidence": "high",
+   "note": "two years of compounding, newest over oldest"
+  },
+  "revenue_growth_latest_pct": {
+   "value": -61.49,
+   "source": "computed",
+   "confidence": "high"
+  }
+ },
+ "demand": {
+  "subscription_times": {
+   "value": 3.8002494751103106,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "note": "as at 2026-09-21T15:15:59+00:00"
+  },
+  "subscription_history": {
+   "value": [
+    {
+     "at": "2026-09-17T07:54:41+00:00",
+     "times": 0.18749230832457656
+    },
+    {
+     "at": "2026-09-17T10:17:33+00:00",
+     "times": 0.25275207850518355
+    },
+    {
+     "at": "2026-09-17T13:42:04+00:00",
+     "times": 0.2896917498569062
+    },
+    {
+     "at": "2026-09-18T07:32:57+00:00",
+     "times": 0.4439636690180448
+    },
+    {
+     "at": "2026-09-18T09:58:54+00:00",
+     "times": 0.5084627241088687
+    },
+    {
+     "at": "2026-09-18T13:05:01+00:00",
+     "times": 0.6014190576390254
+    },
+    {
+     "at": "2026-09-18T17:09:49+00:00",
+     "times": 0.6040483034227069
+    },
+    {
+     "at": "2026-09-21T08:07:21+00:00",
+     "times": 1.6712823882780654
+    },
+    {
+     "at": "2026-09-21T10:59:21+00:00",
+     "times": 3.756969578763044
+    },
+    {
+     "at": "2026-09-21T15:15:59+00:00",
+     "times": 3.8002494751103106
+    }
+   ],
+   "source": "nse_calendar",
+   "confidence": "high",
+   "note": "every change we recorded"
+  }
+ },
+ "documents": {
+  "abridged": {
+   "pages": 21,
+   "url": "https://www.sebi.gov.in/sebi_data/commondocs/sep-2026/NATIONAL%20STOCK%20EXCHANGE%20OF%20INDIA%20LIMITED%20-%20AP_p.pdf",
+   "fields": [
+    "cin",
+    "financials",
+    "lead_managers",
+    "objects",
+    "offer_details",
+    "price_band",
+    "registrar",
+    "risk_factors"
+   ],
+   "read_at": "2026-09-15T07:57:19+00:00"
+  },
+  "full": {
+   "pages": 668,
+   "url": "https://www.sebi.gov.in/sebi_data/attachdocs/sep-2026/1789108351258.pdf",
+   "chapters": {
+    "capital_structure": [
+     118,
+     132
+    ],
+    "objects": [
+     133,
+     135
+    ],
+    "basis_for_price": [
+     136,
+     206
+    ],
+    "business": [
+     207,
+     444
+    ],
+    "litigation": [
+     445,
+     668
+    ]
+   },
+   "read_at": "2026-09-15T07:58:19+00:00"
+  }
+ },
+ "missing": [
+  {
+   "what": "fresh issue vs offer for sale split",
+   "why": "could not be read from the offer details table"
+  },
+  {
+   "what": "ROE",
+   "why": "this document does not print it"
+  },
+  {
+   "what": "ROCE",
+   "why": "this document does not print it"
+  },
+  {
+   "what": "valuation comparison",
+   "why": "no peer comparison available in this chapter"
+  },
+  {
+   "what": "balance sheet",
+   "why": "found the chapter but could not read a debt or liquidity figure from it"
+  },
+  {
+   "what": "grey market premium",
+   "why": "no free source built yet"
+  },
+  {
+   "what": "anchor investor allotment",
+   "why": "not collected yet"
+  },
+  {
+   "what": "broker conviction",
+   "why": "not collected yet"
+  },
+  {
+   "what": "media coverage",
+   "why": "not collected yet"
+  },
+  {
+   "what": "retail attention",
+   "why": "not collected yet"
+  }
+ ],
+ "conflicts": [],
+ "observations": []
+}

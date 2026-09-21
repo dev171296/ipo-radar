@@ -1,0 +1,429 @@
+{
+ "ipo_id": "2026-09-kanohar-electricals",
+ "built_at": "2026-09-21T18:46:33+00:00",
+ "name": "Kanohar Electricals Limited",
+ "symbol": "KANOHAR",
+ "type": "mainboard",
+ "status": "upcoming",
+ "offer": {
+  "price_low": {
+   "value": 601.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.601 to Rs.632"
+  },
+  "price_high": {
+   "value": 632.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.601 to Rs.632"
+  },
+  "issue_size_shares": {
+   "value": 11693326.0,
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "issue_size_rs_million": {
+   "value": 7390.18,
+   "source": "computed",
+   "confidence": "high",
+   "note": "shares × top of the price band"
+  },
+  "open_date": {
+   "value": "2026-09-08",
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "close_date": {
+   "value": "2026-09-10",
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "fresh_issue_rs_million": {
+   "value": 3000.0,
+   "source": "abridged prospectus",
+   "confidence": "low",
+   "page": 1,
+   "raw": "fresh issue size of the offer for sale total offer size eligibility and share reservation among qibs, niis and riis fresh issue and offer for sale up to [●] equity shares of face value of ₹ 2 (“equity",
+   "note": "read from a table flattened to text — verify before relying on it"
+  }
+ },
+ "financials": {
+  "revenue": {
+   "value": [
+    6538.39,
+    4506.12,
+    2766.9
+   ],
+   "source": "abridged prospectus",
+   "confidence": "high",
+   "page": 10,
+   "raw": "Revenue from operations (₹ million) 6,538.39 4,506.12 2,766.90"
+  },
+  "ebitda": {
+   "value": [
+    1804.16,
+    933.92,
+    310.72
+   ],
+   "source": "abridged prospectus",
+   "confidence": "high",
+   "page": 10,
+   "raw": "EBITDA(2) (₹ million) 1,804.16 933.92 310.72"
+  },
+  "pat": {
+   "value": [
+    1297.33,
+    651.18,
+    177.55
+   ],
+   "source": "abridged prospectus",
+   "confidence": "high",
+   "page": 10,
+   "raw": "Profit after tax for the year (₹ million) 1,297.33 651.18 177.55"
+  },
+  "roe_pct": {
+   "value": [
+    42.12,
+    30.92,
+    10.49
+   ],
+   "source": "abridged prospectus",
+   "confidence": "high",
+   "page": 11,
+   "raw": "ROE % 42.12 30.92 10.49"
+  },
+  "roce_pct": {
+   "value": [
+    70.13,
+    47.61,
+    16.69
+   ],
+   "source": "abridged prospectus",
+   "confidence": "high",
+   "page": 11,
+   "raw": "ROCE % 70.13 47.61 16.69"
+  }
+ },
+ "valuation": {
+  "eps_basic_latest": {
+   "value": 17.43,
+   "source": "full prospectus",
+   "confidence": "high",
+   "page": 154,
+   "raw": "fiscal 2026",
+   "note": "checked: our rows reproduce the document's own weighted average of 12.03"
+  },
+  "eps_weighted_average": {
+   "value": 12.03,
+   "source": "full prospectus",
+   "confidence": "high",
+   "page": 154
+  },
+  "pe_at_cap_price": {
+   "value": 36.26,
+   "source": "computed",
+   "confidence": "high",
+   "page": 154,
+   "note": "top of the NSE price band divided by the latest basic EPS — the document itself leaves this blank, because the band was not fixed when it was filed"
+  },
+  "benchmark_pe": {
+   "value": 103.03,
+   "source": "full prospectus",
+   "confidence": "high",
+   "page": 154,
+   "note": "median of the verified peer table"
+  },
+  "vs_benchmark": {
+   "value": 0.352,
+   "source": "computed",
+   "confidence": "high",
+   "page": 154,
+   "raw": "asking 36.26× earnings against 103.03× (median of the verified peer table) — a 65% discount"
+  },
+  "peers_verified": {
+   "value": 6,
+   "source": "full prospectus",
+   "confidence": "high",
+   "page": 154,
+   "note": "6 peer row(s) parsed"
+  },
+  "peer_companies": {
+   "value": [
+    "Hitachi Energy India Limited (P/E 159.55)",
+    "Bharat Heavy Electricals Limited (P/E 91.3)",
+    "Schneider Electric Infrastructure Limited (P/E 155.12)",
+    "CG Power and Industrial Solutions Limited (P/E 114.77)",
+    "Transformers & Rectifiers (India) Limited (P/E 32.19)",
+    "GE Vernova T&D India Limited (P/E 89.37)"
+   ],
+   "source": "full prospectus",
+   "confidence": "high",
+   "page": 154,
+   "note": "the companies the seller chose to compare itself to"
+  }
+ },
+ "cash": {
+  "operating_cash_flow": {
+   "value": [
+    258.42,
+    793.82,
+    -163.18
+   ],
+   "source": "full prospectus (promoters chapter)",
+   "confidence": "high",
+   "page": 312,
+   "raw": "Net cash flow generated from / (used in) operating activities 258.42 793.82 (163.18)",
+   "note": "newest year first"
+  },
+  "conversion_vs_ebitda": {
+   "value": 0.143,
+   "source": "computed",
+   "confidence": "high",
+   "note": "1.0 means the reported profit arrived as cash"
+  },
+  "conversion_vs_pat": {
+   "value": 0.199,
+   "source": "computed",
+   "confidence": "high",
+   "note": "1.0 means the reported profit arrived as cash"
+  },
+  "negative_in_all_years": {
+   "value": false,
+   "source": "computed",
+   "confidence": "high"
+  },
+  "negative_in_latest_year": {
+   "value": false,
+   "source": "computed",
+   "confidence": "high"
+  }
+ },
+ "balance_sheet": {
+  "current_ratio": {
+   "value": [
+    2.7,
+    2.38,
+    3.29
+   ],
+   "source": "full prospectus (objects, promoters)",
+   "confidence": "high",
+   "page": 312,
+   "note": "money due in within a year ÷ money due out — computed from current assets ÷ liabilities"
+  },
+  "receivable_days": {
+   "value": [
+    117.7,
+    157.8,
+    114.8
+   ],
+   "source": "full prospectus (objects, promoters)",
+   "confidence": "high",
+   "page": 312,
+   "note": "how long customers take to pay"
+  },
+  "net_worth": {
+   "value": [
+    3728.42,
+    2431.32,
+    1781.2
+   ],
+   "source": "full prospectus (objects, promoters)",
+   "confidence": "high",
+   "page": 312,
+   "note": "the owners' stake, newest year first"
+  }
+ },
+ "derived": {
+  "revenue_cagr_2y_pct": {
+   "value": 53.72,
+   "source": "computed",
+   "confidence": "high",
+   "note": "two years of compounding, newest over oldest"
+  },
+  "revenue_growth_latest_pct": {
+   "value": 45.1,
+   "source": "computed",
+   "confidence": "high"
+  },
+  "pat_cagr_2y_pct": {
+   "value": 170.31,
+   "source": "computed",
+   "confidence": "high"
+  },
+  "pat_margin_pct": {
+   "value": [
+    19.84,
+    14.45,
+    6.42
+   ],
+   "source": "computed",
+   "confidence": "high",
+   "note": "profit as a share of sales, newest first"
+  },
+  "ebitda_margin_pct": {
+   "value": [
+    27.59,
+    20.73,
+    11.23
+   ],
+   "source": "computed",
+   "confidence": "high"
+  },
+  "roe_pct_latest": {
+   "value": 42.12,
+   "source": "abridged prospectus",
+   "confidence": "high",
+   "page": 11
+  },
+  "roe_pct_direction": {
+   "value": "improving",
+   "source": "computed",
+   "confidence": "high"
+  },
+  "roce_pct_latest": {
+   "value": 70.13,
+   "source": "abridged prospectus",
+   "confidence": "high",
+   "page": 11
+  },
+  "roce_pct_direction": {
+   "value": "improving",
+   "source": "computed",
+   "confidence": "high"
+  }
+ },
+ "demand": {
+  "subscription_times": {
+   "value": 69.53480737644705,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "note": "as at 2026-09-10T13:02:08+00:00"
+  },
+  "subscription_history": {
+   "value": [
+    {
+     "at": "2026-09-07T19:43:40+00:00",
+     "times": 0.0
+    },
+    {
+     "at": "2026-09-08T07:21:56+00:00",
+     "times": 0.945715615899189
+    },
+    {
+     "at": "2026-09-08T09:58:37+00:00",
+     "times": 1.6334678431098217
+    },
+    {
+     "at": "2026-09-08T12:59:38+00:00",
+     "times": 2.0479283652914493
+    },
+    {
+     "at": "2026-09-09T07:30:23+00:00",
+     "times": 4.427588010459984
+    },
+    {
+     "at": "2026-09-09T10:01:43+00:00",
+     "times": 5.996611229345697
+    },
+    {
+     "at": "2026-09-09T13:05:18+00:00",
+     "times": 8.198017484503554
+    },
+    {
+     "at": "2026-09-10T07:26:37+00:00",
+     "times": 16.98151253116521
+    },
+    {
+     "at": "2026-09-10T09:58:03+00:00",
+     "times": 58.568275270868185
+    },
+    {
+     "at": "2026-09-10T13:02:08+00:00",
+     "times": 69.53480737644705
+    }
+   ],
+   "source": "nse_calendar",
+   "confidence": "high",
+   "note": "every change we recorded"
+  }
+ },
+ "documents": {
+  "abridged": {
+   "pages": 16,
+   "url": "https://www.sebi.gov.in/sebi_data/commondocs/sep-2026/Kanohar%20Electricals%20Limited%20-%20AP_p.pdf",
+   "fields": [
+    "cin",
+    "financials",
+    "lead_managers",
+    "objects",
+    "offer_details",
+    "price_band",
+    "promoters",
+    "registrar",
+    "reservation",
+    "risk_factors"
+   ],
+   "read_at": "2026-09-05T11:09:21+00:00"
+  },
+  "full": {
+   "pages": 508,
+   "url": "https://www.sebi.gov.in/sebi_data/attachdocs/sep-2026/1788412147324.pdf",
+   "chapters": {
+    "capital_structure": [
+     91,
+     134
+    ],
+    "objects": [
+     135,
+     153
+    ],
+    "basis_for_price": [
+     154,
+     247
+    ],
+    "business": [
+     248,
+     311
+    ],
+    "promoters": [
+     312,
+     413
+    ],
+    "related_party": [
+     414,
+     420
+    ],
+    "litigation": [
+     421,
+     508
+    ]
+   },
+   "read_at": "2026-09-05T11:10:22+00:00"
+  }
+ },
+ "missing": [
+  {
+   "what": "grey market premium",
+   "why": "no free source built yet"
+  },
+  {
+   "what": "anchor investor allotment",
+   "why": "not collected yet"
+  },
+  {
+   "what": "broker conviction",
+   "why": "not collected yet"
+  },
+  {
+   "what": "media coverage",
+   "why": "not collected yet"
+  },
+  {
+   "what": "retail attention",
+   "why": "not collected yet"
+  }
+ ],
+ "conflicts": [],
+ "observations": []
+}

@@ -106,8 +106,15 @@ NUMBER = r"\(?-?\d[\d,]*(?:\.\d+)?\)?%?"
 
 # Noise that sits between the label and the first figure: footnote markers,
 # unit notes, and the odd stray bracket.
+#
+# The unit part may NOT contain digits. Measured 21 Sep 2026: NSE's own row
+# "Revenue from operations(16) ₹ million 45,604.10 40,322.38 166,013.09 ..."
+# let this swallow 30 characters — the label, two whole figures and the "1" of
+# 166,013 — leaving exactly three numbers that passed every check. Revenue of
+# ₹166,013 million went into the bundle as ₹66,013 million. Kimi caught it from
+# the prospectus text; our own checks did not.
 _TRAILING_NOTE = re.compile(
-    r"^\s*(?:\(\d+\)|\*+|\#+|\(?(?:rs|inr|₹)[^)]{0,30}\)?|in\s+lakhs?|in\s+millions?"
+    r"^\s*(?:\(\d+\)|\*+|\#+|\(?(?:rs|inr|₹)[^)\d]{0,30}\)?|in\s+lakhs?|in\s+millions?"
     r"|in\s+crores?|\(?%\)?|:|-|–)\s*", re.I)
 
 

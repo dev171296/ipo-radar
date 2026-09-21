@@ -1,0 +1,340 @@
+{
+ "ipo_id": "2026-09-rentomojo",
+ "built_at": "2026-09-21T18:46:37+00:00",
+ "name": "Rentomojo Limited",
+ "symbol": "RENTOMOJO",
+ "type": "mainboard",
+ "status": "upcoming",
+ "offer": {
+  "price_low": {
+   "value": 384.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.384 to Rs.404"
+  },
+  "price_high": {
+   "value": 404.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.384 to Rs.404"
+  },
+  "issue_size_shares": {
+   "value": 21772311.0,
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "issue_size_rs_million": {
+   "value": 8796.01,
+   "source": "computed",
+   "confidence": "high",
+   "note": "shares × top of the price band"
+  },
+  "open_date": {
+   "value": "2026-09-09",
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "close_date": {
+   "value": "2026-09-11",
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "fresh_issue_rs_million": {
+   "value": 1500.0,
+   "source": "abridged prospectus",
+   "confidence": "low",
+   "page": 1,
+   "raw": "fresh issue size^^ offer for sale size total offer size^^ eligibility and reservation fresh issue and offer for sale fresh issue of up to [●] equity shares of face value of ₹1 each aggregating up to ₹",
+   "note": "read from a table flattened to text — verify before relying on it"
+  }
+ },
+ "financials": {
+  "revenue": {
+   "value": [
+    3869.88,
+    2659.59,
+    1927.01
+   ],
+   "source": "abridged prospectus",
+   "confidence": "high",
+   "page": 8,
+   "raw": "Revenue from operations(2) 3,869.88 2,659.59 1,927.01"
+  },
+  "ebitda": {
+   "value": [
+    1634.62,
+    1184.39,
+    781.52
+   ],
+   "source": "abridged prospectus",
+   "confidence": "high",
+   "page": 8,
+   "raw": "EBITDA(3) 1,634.62 1,184.39 781.52"
+  }
+ },
+ "valuation": {
+  "eps_basic_latest": {
+   "value": 10.42,
+   "source": "full prospectus",
+   "confidence": "high",
+   "page": 159,
+   "raw": "fiscal 2026",
+   "note": "checked: our rows reproduce the document's own weighted average of 7.07"
+  },
+  "eps_weighted_average": {
+   "value": 7.07,
+   "source": "full prospectus",
+   "confidence": "high",
+   "page": 159
+  }
+ },
+ "cash": {
+  "operating_cash_flow": {
+   "value": [
+    1728.71,
+    1155.45,
+    915.72
+   ],
+   "source": "full prospectus (promoters chapter)",
+   "confidence": "high",
+   "page": 264,
+   "raw": "Net cash from operating activities (A) 1,728.71 1,155.45 915.72",
+   "note": "newest year first"
+  },
+  "conversion_vs_ebitda": {
+   "value": 1.058,
+   "source": "computed",
+   "confidence": "high",
+   "note": "1.0 means the reported profit arrived as cash"
+  },
+  "negative_in_all_years": {
+   "value": false,
+   "source": "computed",
+   "confidence": "high"
+  },
+  "negative_in_latest_year": {
+   "value": false,
+   "source": "computed",
+   "confidence": "high"
+  }
+ },
+ "balance_sheet": {
+  "debt_to_equity": {
+   "value": [
+    0.634,
+    0.842,
+    1.055
+   ],
+   "source": "full prospectus (promoters)",
+   "confidence": "high",
+   "page": 264,
+   "note": "borrowings ÷ what the owners have in it — computed from total debt ÷ net worth"
+  },
+  "current_ratio": {
+   "value": [
+    0.55,
+    0.53,
+    0.75
+   ],
+   "source": "full prospectus (promoters)",
+   "confidence": "high",
+   "page": 264,
+   "note": "money due in within a year ÷ money due out — computed from current assets ÷ liabilities"
+  },
+  "receivable_days": {
+   "value": [
+    39.2,
+    42.2,
+    41.9
+   ],
+   "source": "full prospectus (promoters)",
+   "confidence": "high",
+   "page": 264,
+   "note": "how long customers take to pay"
+  },
+  "total_debt": {
+   "value": [
+    1875.9,
+    1545.82,
+    1472.21
+   ],
+   "source": "full prospectus (promoters)",
+   "confidence": "high",
+   "page": 264,
+   "note": "borrowings, newest year first"
+  },
+  "net_worth": {
+   "value": [
+    2958.07,
+    1836.1,
+    1396.05
+   ],
+   "source": "full prospectus (promoters)",
+   "confidence": "high",
+   "page": 264,
+   "note": "the owners' stake, newest year first"
+  }
+ },
+ "derived": {
+  "revenue_cagr_2y_pct": {
+   "value": 41.71,
+   "source": "computed",
+   "confidence": "high",
+   "note": "two years of compounding, newest over oldest"
+  },
+  "revenue_growth_latest_pct": {
+   "value": 45.51,
+   "source": "computed",
+   "confidence": "high"
+  },
+  "ebitda_margin_pct": {
+   "value": [
+    42.24,
+    44.53,
+    40.56
+   ],
+   "source": "computed",
+   "confidence": "high"
+  }
+ },
+ "demand": {
+  "subscription_times": {
+   "value": 55.18070621901368,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "note": "as at 2026-09-11T17:07:05+00:00"
+  },
+  "subscription_history": {
+   "value": [
+    {
+     "at": "2026-09-09T07:30:23+00:00",
+     "times": 0.46482327943965157
+    },
+    {
+     "at": "2026-09-09T10:01:43+00:00",
+     "times": 0.7047556412362472
+    },
+    {
+     "at": "2026-09-09T13:05:18+00:00",
+     "times": 0.9950668994210123
+    },
+    {
+     "at": "2026-09-10T07:26:37+00:00",
+     "times": 2.0714571824736474
+    },
+    {
+     "at": "2026-09-10T09:58:03+00:00",
+     "times": 2.6679538520279267
+    },
+    {
+     "at": "2026-09-10T13:02:08+00:00",
+     "times": 3.3707126909954575
+    },
+    {
+     "at": "2026-09-11T07:24:39+00:00",
+     "times": 9.32176974690468
+    },
+    {
+     "at": "2026-09-11T09:55:54+00:00",
+     "times": 42.749775988410235
+    },
+    {
+     "at": "2026-09-11T12:56:40+00:00",
+     "times": 55.180704519607495
+    },
+    {
+     "at": "2026-09-11T17:07:05+00:00",
+     "times": 55.18070621901368
+    }
+   ],
+   "source": "nse_calendar",
+   "confidence": "high",
+   "note": "every change we recorded"
+  }
+ },
+ "documents": {
+  "abridged": {
+   "pages": 12,
+   "url": "https://www.sebi.gov.in/sebi_data/commondocs/sep-2026/RENTOMOJO%20LIMITED%20-%20AP_p.pdf",
+   "fields": [
+    "cin",
+    "financials",
+    "lead_managers",
+    "objects",
+    "offer_details",
+    "price_band",
+    "promoters",
+    "registrar",
+    "risk_factors"
+   ],
+   "read_at": "2026-09-07T10:39:03+00:00"
+  },
+  "full": {
+   "pages": 436,
+   "url": "https://www.sebi.gov.in/sebi_data/attachdocs/sep-2026/1788501645342.pdf",
+   "chapters": {
+    "capital_structure": [
+     92,
+     148
+    ],
+    "objects": [
+     149,
+     158
+    ],
+    "basis_for_price": [
+     159,
+     193
+    ],
+    "business": [
+     194,
+     263
+    ],
+    "promoters": [
+     264,
+     341
+    ],
+    "litigation": [
+     342,
+     436
+    ]
+   },
+   "read_at": "2026-09-07T10:39:36+00:00"
+  }
+ },
+ "missing": [
+  {
+   "what": "ROE",
+   "why": "this document does not print it"
+  },
+  {
+   "what": "ROCE",
+   "why": "this document does not print it"
+  },
+  {
+   "what": "valuation comparison",
+   "why": "no peer comparison available in this chapter"
+  },
+  {
+   "what": "grey market premium",
+   "why": "no free source built yet"
+  },
+  {
+   "what": "anchor investor allotment",
+   "why": "not collected yet"
+  },
+  {
+   "what": "broker conviction",
+   "why": "not collected yet"
+  },
+  {
+   "what": "media coverage",
+   "why": "not collected yet"
+  },
+  {
+   "what": "retail attention",
+   "why": "not collected yet"
+  }
+ ],
+ "conflicts": [],
+ "observations": []
+}

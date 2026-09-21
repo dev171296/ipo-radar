@@ -1,0 +1,127 @@
+{
+ "ipo_id": "2026-09-lcc-projects",
+ "name": "LCC Projects Limited",
+ "scored_at": "2026-09-21T18:46:34+00:00",
+ "built_from_bundle": "2026-09-21T18:46:34+00:00",
+ "fundamentals": {
+  "score": 81.6,
+  "withheld": null,
+  "points_earned": 48.96,
+  "points_assessed": 60,
+  "coverage_pct": 60,
+  "components": [
+   {
+    "component": "growth_quality",
+    "weight": 14,
+    "points": 11.2,
+    "basis": "revenue CAGR 21.5% a year"
+   },
+   {
+    "component": "cash_flow_quality",
+    "weight": 14,
+    "points": 8.4,
+    "basis": "cash conversion 0.55× of profit after tax"
+   },
+   {
+    "component": "profitability",
+    "weight": 12,
+    "points": 9.36,
+    "basis": "latest profit margin 7.96%, widening"
+   },
+   {
+    "component": "issue_structure",
+    "weight": 10,
+    "points": 10.0,
+    "basis": "84% of the issue is fresh money to the company"
+   },
+   {
+    "component": "filing_hygiene",
+    "weight": 10,
+    "points": 10.0,
+    "basis": "summary form read; 486-page prospectus read; all key fields found; no contradictions"
+   }
+  ],
+  "not_assessed": [
+   {
+    "component": "valuation_vs_peers",
+    "weight": 18,
+    "why": "no usable price comparison in the prospectus"
+   },
+   {
+    "component": "promoter_governance",
+    "weight": 12,
+    "why": "not built yet"
+   },
+   {
+    "component": "balance_sheet",
+    "weight": 10,
+    "why": "no debt or liquidity figure read"
+   }
+  ]
+ },
+ "demand": {
+  "score": 67.2,
+  "withheld": null,
+  "points_earned": 26.9,
+  "points_assessed": 40,
+  "coverage_pct": 40,
+  "components": [
+   {
+    "component": "subscription_level",
+    "weight": 26,
+    "points": 23.4,
+    "basis": "closed subscribed 34.7254476107049×"
+   },
+   {
+    "component": "subscription_velocity",
+    "weight": 14,
+    "points": 3.5,
+    "basis": "1% of final demand was already in at the first reading"
+   }
+  ],
+  "not_assessed": [
+   {
+    "component": "gmp_level",
+    "weight": 12,
+    "why": "not built yet"
+   },
+   {
+    "component": "gmp_trend",
+    "weight": 10,
+    "why": "not built yet"
+   },
+   {
+    "component": "anchor_quality",
+    "weight": 12,
+    "why": "not built yet"
+   },
+   {
+    "component": "broker_conviction",
+    "weight": 10,
+    "why": "not built yet"
+   },
+   {
+    "component": "media_coverage",
+    "weight": 8,
+    "why": "not built yet"
+   },
+   {
+    "component": "retail_attention",
+    "weight": 8,
+    "why": "not built yet"
+   }
+  ]
+ },
+ "flags": [],
+ "vetoes": {
+  "triggered": [],
+  "not_tested": [
+   "qualified or adverse audit opinion — needs the prospectus chapters read",
+   "SEBI or criminal proceedings against the promoters — needs the prospectus chapters read",
+   "more than half of revenue from one related party — needs the prospectus chapters read"
+  ]
+ },
+ "listing_score_quant_only": 72.0,
+ "longterm_score_quant_only": 81.6,
+ "status": "quant only — the AI block has not been built, so these are not final verdicts"
+}

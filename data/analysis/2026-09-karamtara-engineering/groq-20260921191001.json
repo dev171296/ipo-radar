@@ -1,0 +1,74 @@
+{
+ "ok": true,
+ "model": "qwen/qwen3.8-27b",
+ "answered_at": "2026-09-21T19:07:05+00:00",
+ "evidence_fingerprint": "f70311212f0e4fd7",
+ "prompt_chars": 8490,
+ "passages_supplied": {
+  "litigation": 8,
+  "governance": 8,
+  "business_quality": 8,
+  "risks": 1
+ },
+ "answer": {
+  "listing_view": {
+   "score": 75.0,
+   "reasoning": "The subscription history shows a dramatic acceleration from 0.58x to 37.53x in the final hours, indicating strong retail/institutional demand that typically supports a positive listing pop. However, the data contains a critical contradiction where the fresh issue size exceeds the total offer size, which introduces uncertainty about the actual float and potential oversubscription mechanics."
+  },
+  "longterm_view": {
+   "score": 65.0,
+   "reasoning": "The business demonstrates strong top-line growth (33% CAGR) and improving EBITDA margins, with operating cash flow significantly exceeding EBITDA in the latest year. However, the rising receivable days (111 days) and high debt-to-equity ratio (0.84) suggest that growth is being funded by customer credit and leverage, which poses a sustainability risk if payment cycles lengthen further."
+  },
+  "governance": {
+   "score": 60.0,
+   "reasoning": "The prospectus explicitly states there are no SEBI penalties or disciplinary actions against promoters, which is a positive baseline. However, the provided extracts are largely boilerplate regarding related party transactions and do not offer deep insight into board independence or specific promoter conduct beyond the absence of regulatory strikes."
+  },
+  "key_risks": [
+   {
+    "risk": "Receivables buildup",
+    "why_it_matters": "Receivable days have increased from 85.6 to 111.4, indicating that the company is financing its growth through customer credit, which strains working capital.",
+    "citation": "[balance sheet, page N/A]",
+    "citation_verified": false
+   },
+   {
+    "risk": "Data inconsistency in offer structure",
+    "why_it_matters": "The fresh issue amount is larger than the total issue size, suggesting a fundamental error in the provided figures or prospectus table, which undermines confidence in the valuation metrics.",
+    "citation": "[verified figures, N/A]",
+    "citation_verified": false
+   },
+   {
+    "risk": "Leverage",
+    "why_it_matters": "Debt-to-equity has risen to 0.844, and total debt has nearly doubled in two years, increasing financial risk if revenue growth slows.",
+    "citation": "[balance sheet, page N/A]",
+    "citation_verified": false
+   }
+  ],
+  "answers": [
+   {
+    "question": "Is the company profitable?",
+    "answer": "Yes, the company is profitable with an EBITDA of ₹4,981.1 million in the latest year and a positive EPS of 7.83.",
+    "citation": "[financials, N/A]",
+    "citation_verified": false
+   },
+   {
+    "question": "What is the subscription status?",
+    "answer": "The IPO is 37.53 times subscribed as of the last recorded timestamp.",
+    "citation": "[demand, N/A]",
+    "citation_verified": false
+   },
+   {
+    "question": "Are there any regulatory penalties?",
+    "answer": "No, the prospectus states there are no disciplinary actions or penalties imposed by SEBI or stock exchanges against the promoters.",
+    "citation": "[litigation, page 425]",
+    "citation_verified": true
+   }
+  ],
+  "confidence": "medium",
+  "what_would_change_my_mind": "If the contradiction in the offer size is resolved in favor of a larger free float, the listing view would improve; if the receivable days continue to rise beyond 120 days, the long-term view would deteriorate significantly due to cash flow strain.",
+  "citation_check": {
+   "claims_checked": 6,
+   "citations_verified": 1,
+   "citations_not_matching_what_we_sent": 5
+  }
+ }
+}

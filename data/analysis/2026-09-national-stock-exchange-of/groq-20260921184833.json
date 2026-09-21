@@ -1,0 +1,68 @@
+{
+ "ok": true,
+ "model": "qwen/qwen3.8-27b",
+ "answered_at": "2026-09-21T18:46:42+00:00",
+ "evidence_fingerprint": "726b92d70192895c",
+ "prompt_chars": 8845,
+ "passages_supplied": {
+  "litigation": 8,
+  "governance": 8,
+  "business_quality": 8,
+  "risks": 8
+ },
+ "answer": {
+  "listing_view": {
+   "score": 65.0,
+   "reasoning": "The subscription data shows a strong acceleration in the final hours, reaching 3.8x, which suggests decent demand despite the massive issue size. However, the revenue figures provided in the prompt are internally inconsistent with the prospectus extract (which shows growth, not the -61% decline in the prompt), creating uncertainty about the true financial baseline for pricing."
+  },
+  "longterm_view": {
+   "score": 55.0,
+   "reasoning": "The business is a dominant exchange with a robust revenue base (₹166,013.09 million in FY24 per prospectus), but the prompt's derived metrics suggest a severe revenue collapse that contradicts the document. Without a clear balance sheet or peer comparison, the long-term valuation is difficult to anchor, and the regulatory overhang from SEBI adds risk."
+  },
+  "governance": {
+   "score": 60.0,
+   "reasoning": "The company has faced regulatory scrutiny, including a SEBI penalty and show cause notices, indicating some governance friction. However, the shareholding pattern is disclosed, and the company operates under strict SEBI regulations, which provides a baseline of compliance."
+  },
+  "key_risks": [
+   {
+    "risk": "Regulatory Enforcement",
+    "why_it_matters": "SEBI has previously levied penalties and issued show cause notices, which could lead to further financial or operational restrictions.",
+    "citation": "[litigation, page 448]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Data Integrity/Consistency",
+    "why_it_matters": "The provided financial figures show a 61% revenue drop, while the prospectus extract shows growth, making it impossible to verify the true financial health from the given data.",
+    "citation": "[business, page 205]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Competition",
+    "why_it_matters": "The company faces competition from other trading venues in and outside India, which could erode its market share and revenue.",
+    "citation": "[business, page 234]",
+    "citation_verified": true
+   }
+  ],
+  "answers": [
+   {
+    "question": "What is the revenue growth trend?",
+    "answer": "The prospectus states revenue grew at a CAGR of 5.98% from FY24 to FY25, but the provided figures show a decline. The document's own statement is the only verifiable source here.",
+    "citation": "[business, page 205]",
+    "citation_verified": true
+   },
+   {
+    "question": "Is there a significant regulatory risk?",
+    "answer": "Yes, SEBI has issued show cause notices and levied penalties, indicating ongoing regulatory scrutiny.",
+    "citation": "[litigation, page 448]",
+    "citation_verified": true
+   }
+  ],
+  "confidence": "low",
+  "what_would_change_my_mind": "Clarification on the discrepancy between the provided revenue figures and the prospectus extract, and access to the balance sheet to assess liquidity and debt.",
+  "citation_check": {
+   "claims_checked": 5,
+   "citations_verified": 5,
+   "citations_not_matching_what_we_sent": 0
+  }
+ }
+}

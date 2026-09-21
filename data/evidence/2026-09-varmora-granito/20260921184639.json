@@ -1,0 +1,100 @@
+{
+ "ipo_id": "2026-09-varmora-granito",
+ "built_at": "2026-09-21T18:46:39+00:00",
+ "name": "Varmora Granito Limited",
+ "symbol": "VARMORA",
+ "type": "mainboard",
+ "status": "open",
+ "offer": {
+  "price_low": {
+   "value": 140.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.140 to Rs.148"
+  },
+  "price_high": {
+   "value": 148.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.140 to Rs.148"
+  },
+  "issue_size_shares": {
+   "value": 33902899.0,
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "issue_size_rs_million": {
+   "value": 5017.63,
+   "source": "computed",
+   "confidence": "high",
+   "note": "shares × top of the price band"
+  },
+  "open_date": {
+   "value": "2026-09-22",
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "close_date": {
+   "value": "2026-09-24",
+   "source": "nse_calendar",
+   "confidence": "high"
+  }
+ },
+ "financials": {},
+ "valuation": {},
+ "cash": {},
+ "balance_sheet": {},
+ "derived": {},
+ "demand": {
+  "subscription_times": {
+   "value": 0.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "note": "as at 2026-09-21T18:46:21+00:00"
+  },
+  "subscription_history": {
+   "value": [
+    {
+     "at": "2026-09-21T18:46:21+00:00",
+     "times": 0.0
+    }
+   ],
+   "source": "nse_calendar",
+   "confidence": "high",
+   "note": "every change we recorded"
+  }
+ },
+ "documents": {},
+ "missing": [
+  {
+   "what": "three-year financials",
+   "why": "no abridged prospectus on file yet"
+  },
+  {
+   "what": "grey market premium",
+   "why": "no free source built yet"
+  },
+  {
+   "what": "anchor investor allotment",
+   "why": "not collected yet"
+  },
+  {
+   "what": "broker conviction",
+   "why": "not collected yet"
+  },
+  {
+   "what": "media coverage",
+   "why": "not collected yet"
+  },
+  {
+   "what": "retail attention",
+   "why": "not collected yet"
+  },
+  {
+   "what": "full prospectus",
+   "why": "not downloaded yet — will retry next run"
+  }
+ ],
+ "conflicts": [],
+ "observations": []
+}

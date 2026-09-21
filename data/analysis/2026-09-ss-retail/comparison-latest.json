@@ -16,10 +16,13 @@
    "trusted": false,
    "why": "1 of 4 citations matched the pages we sent, and 3 pointed at pages we never sent"
   },
-  "nvidia": {
-   "share": null,
-   "trusted": true,
-   "why": "too few claims to judge"
+  "longterm_view": {
+   "groq": 65.0,
+   "nvidia": 62.0
+  },
+  "governance": {
+   "groq": 70.0,
+   "nvidia": 40.0
   }
  },
  "disagreements": [],

@@ -17,9 +17,9 @@
    "why": "4 of 6 citations matched the pages we sent"
   },
   "nvidia": {
-   "share": null,
-   "trusted": true,
-   "why": "too few claims to judge"
+   "share": 0.5,
+   "trusted": false,
+   "why": "4 of 8 citations matched the pages we sent, and 1 pointed at pages we never sent"
   }
  },
  "disagreements": [],

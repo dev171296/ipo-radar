@@ -1,0 +1,62 @@
+{
+ "ok": true,
+ "model": "qwen/qwen3.8-27b",
+ "answered_at": "2026-09-21T18:55:30+00:00",
+ "evidence_fingerprint": "e7d0ab0e4497d7fc",
+ "prompt_chars": 8964,
+ "passages_supplied": {
+  "litigation": 8,
+  "governance": 8,
+  "business_quality": 7,
+  "risks": 6
+ },
+ "answer": {
+  "listing_view": {
+   "score": 65.0,
+   "reasoning": "The subscription data shows a strong late-day surge to 12.15x, indicating decent demand, but the early days were weak (0.1x to 0.6x), suggesting retail interest was not immediate. The price band is narrow, and without GMP or anchor data, the pricing appears standard for an ARC, likely driven by institutional appetite rather than retail frenzy."
+  },
+  "longterm_view": {
+   "score": 45.0,
+   "reasoning": "The business is an Asset Reconstruction Company, a sector with inherent cyclicality and recovery risks. While PAT is stable, the sharp increase in debt-to-equity (from 0.06 to 0.39) signals aggressive leverage for acquisitions, which increases financial risk. The low cash conversion (0.305 vs EBITDA) suggests significant non-cash items or working capital drag, making the quality of earnings questionable."
+  },
+  "governance": {
+   "score": 50.0,
+   "reasoning": "The prospectus notes partial pledging of promoter shares across all three years, which is a common but concerning signal of promoter liquidity needs. There is no specific disclosure of severe governance failures, but the lack of detailed ROE/ROCE metrics and the standard nature of the disclosures provide no strong positive or negative signal."
+  },
+  "key_risks": [
+   {
+    "risk": "Rising Leverage",
+    "why_it_matters": "Debt-to-equity ratio has increased significantly from 0.06 to 0.39, indicating higher financial risk and interest burden.",
+    "citation": "[balance sheet, page N/A]",
+    "citation_verified": false
+   },
+   {
+    "risk": "Low Cash Conversion",
+    "why_it_matters": "Operating cash flow is only 30.5% of EBITDA, suggesting profits are not translating into cash, which could strain liquidity.",
+    "citation": "[cash, page N/A]",
+    "citation_verified": false
+   },
+   {
+    "risk": "Litigation Exposure",
+    "why_it_matters": "The company faces various civil and criminal litigations, including fraud and deficiency of service claims, which could result in financial penalties or reputational damage.",
+    "citation": "[litigation, page 436]",
+    "citation_verified": true
+   }
+  ],
+  "answers": [
+   {
+    "question": "check receivables and inventory against the sales growth",
+    "answer": "Not answerable from what I was given. The provided extracts and figures do not include specific line items for receivables or inventory, nor do they provide a detailed breakdown of sales growth components to perform this specific working capital analysis.",
+    "citation": "not answerable from what I was given",
+    "citation_verified": false
+   }
+  ],
+  "confidence": "low",
+  "what_would_change_my_mind": "If the prospectus disclosed a high percentage of fresh issue (rather than OFS) and provided a clear explanation for the low cash conversion (e.g., one-time tax payments), my view on the long-term quality would improve. Conversely, if the debt increase was funded by short-term borrowings, the risk profile would worsen significantly.",
+  "citation_check": {
+   "claims_checked": 4,
+   "citations_verified": 1,
+   "citations_not_matching_what_we_sent": 2
+  }
+ }
+}

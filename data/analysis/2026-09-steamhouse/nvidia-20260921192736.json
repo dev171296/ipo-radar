@@ -1,0 +1,74 @@
+{
+ "ok": true,
+ "model": "moonshotai/kimi-k3",
+ "answered_at": "2026-09-21T19:27:36+00:00",
+ "evidence_fingerprint": "418e6a290c76ef72",
+ "prompt_chars": 10067,
+ "passages_supplied": {
+  "litigation": 8,
+  "governance": 8,
+  "business_quality": 8,
+  "risks": 7
+ },
+ "answer": {
+  "listing_view": {
+   "score": 78.0,
+   "reasoning": "Demand built late but exploded on the final day to roughly 17.9x subscription (from ~1.28x on 2026-09-10 to 17.9x by 2026-09-11), which typically signals a hot listing regardless of fundamentals. I cannot verify the offer structure — the fresh issue figure exceeds the total issue size and the sources conflict — so pricing comfort is unverifiable; the score rests almost entirely on observed demand."
+  },
+  "longterm_view": {
+   "score": 38.0,
+   "reasoning": "Revenue is compounding at ~30% with 90.72% repeat orders and healthy cash conversion (~1.2x EBITDA), which is genuinely good. But EBITDA margin has compressed from 23.45% to 16.99%, leverage is high (debt/equity 1.57-1.77, and my own sum of the balance sheet gives 1.94 against the document's printed 1.57), the current ratio is a thin 0.36, and coal is a primary fuel — margin at the mercy of fuel costs they don't control."
+  },
+  "governance": {
+   "score": 25.0,
+   "reasoning": "76% of total paid-up capital was pledged by the promoter against the company's debentures, with release confirmed only by email and conditional on full repayment, plus a SEBI rejection of an exemption application and a GPCB show cause notice."
+  },
+  "key_risks": [
+   {
+    "risk": "Promoter share pledge overhang",
+    "why_it_matters": "76% of paid-up capital was pledged to debenture trustees and must be re-pledged if the Ascertis debt is not fully repaid — a forced-sale or control risk hanging over minority investors.",
+    "citation": "[capital_structure, page 118]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Margin compression",
+    "why_it_matters": "EBITDA margin fell from 23.45% to 16.99% over two years while coal — a volatile input — is the primary fuel, so the growth is being bought at deteriorating unit economics.",
+    "citation": "[business, page 320]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Leverage and liquidity strain",
+    "why_it_matters": "Debt-to-equity is 1.57-1.77 (and my own calculation suggests 1.94), with a current ratio of just 0.36, meaning short-term liabilities are nearly three times short-term assets.",
+    "citation": "[business, page 309]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Customer concentration",
+    "why_it_matters": "The top ten customers are 47.87% of revenue, so losing one or two contracts materially dents the growth story.",
+    "citation": "[business, page 328]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Regulatory friction",
+    "why_it_matters": "SEBI rejected an exemption application and the Gujarat Pollution Control Board issued a show cause notice — not disqualifying, but a pattern worth noting given the waste-fuel operations.",
+    "citation": "[litigation, page 582]",
+    "citation_verified": true
+   }
+  ],
+  "answers": [
+   {
+    "question": "how is the shortfall funded?",
+    "answer": "Not answerable from the extracts — no passage on working capital funding was provided. The figures alone show a current ratio of 0.36 with debt rising from ₹2,298m to ₹3,353m, which is consistent with the gap being bridged by short-term borrowing, but I have no prospectus passage confirming this and will not assert it.",
+    "citation": "not answerable from what I was given",
+    "citation_verified": false
+   }
+  ],
+  "confidence": "medium",
+  "what_would_change_my_mind": "Confirmation from the objects-of-issue chapter that fresh proceeds substantially deleverage the balance sheet, and evidence that the pledge-release email reflects actual, unconditional release rather than a conditional arrangement, would lift both scores; conversely, verification that the fresh-issue inconsistency reflects aggressive pricing or an unresolved pledge would push me lower.",
+  "citation_check": {
+   "claims_checked": 6,
+   "citations_verified": 5,
+   "citations_not_matching_what_we_sent": 0
+  }
+ }
+}

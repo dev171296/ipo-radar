@@ -41,6 +41,12 @@
     "why_it_matters": "Dependence on a limited set of suppliers for critical raw materials creates supply chain risks that could adversely affect production and costs.",
     "citation": "[business, page 284]",
     "citation_verified": true
+   },
+   {
+    "risk": "Leverage",
+    "why_it_matters": "A debt-to-equity ratio of 0.978 indicates significant leverage, which increases financial risk in a rising interest rate environment.",
+    "citation": "[balance_sheet, page N/A]",
+    "citation_verified": false
    }
   ],
   "answers": [
