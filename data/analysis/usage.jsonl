@@ -399,3 +399,10 @@
 {"at": "2026-09-21T15:19:28+00:00", "family": "gemini", "model": "gemini-flash-lite-latest", "ipo_id": "2026-09-national-stock-exchange-of"}
 {"at": "2026-09-21T15:19:35+00:00", "family": "groq", "model": "groq/compound-mini", "ipo_id": "2026-09-sonaselection"}
 {"at": "2026-09-21T15:19:38+00:00", "family": "gemini", "model": "gemini-flash-lite-latest", "ipo_id": "2026-09-sonaselection"}
+{"at": "2026-09-21T18:13:03+00:00", "family": "groq", "model": "qwen/qwen3.8-27b", "ipo_id": "2026-09-national-stock-exchange-of"}
+{"at": "2026-09-21T18:13:08+00:00", "family": "groq", "model": "openai/gpt-oss-120b", "ipo_id": "2026-09-sonaselection"}
+{"at": "2026-09-21T18:13:13+00:00", "family": "groq", "model": "openai/gpt-oss-120b", "ipo_id": "2026-09-adroit-industries"}
+{"at": "2026-09-21T18:13:15+00:00", "family": "groq", "model": "openai/gpt-oss-20b", "ipo_id": "2026-09-swastika-infra"}
+{"at": "2026-09-21T18:13:19+00:00", "family": "groq", "model": "openai/gpt-oss-20b", "ipo_id": "2026-09-asset-reconstruction"}
+{"at": "2026-09-21T18:13:22+00:00", "family": "groq", "model": "qwen/qwen3.8-27b", "ipo_id": "2026-09-hero-motors"}
+{"at": "2026-09-21T18:13:29+00:00", "family": "groq", "model": "openai/gpt-oss-120b", "ipo_id": "2026-09-manika-plastech"}

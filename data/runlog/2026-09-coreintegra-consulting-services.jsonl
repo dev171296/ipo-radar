@@ -1,3 +1,4 @@
 {"at": "2026-09-21T10:59:21+00:00", "event": "discovered", "ok": true, "detail": "Coreintegra Consulting Services Limited", "source": "nse"}
 {"at": "2026-09-21T10:59:22+00:00", "event": "prospectus_not_found", "ok": false, "source": "sebi"}
 {"at": "2026-09-21T15:17:12+00:00", "event": "prospectus_not_found", "ok": false, "source": "sebi"}
+{"at": "2026-09-21T18:12:52+00:00", "event": "prospectus_not_found", "ok": false, "source": "sebi"}

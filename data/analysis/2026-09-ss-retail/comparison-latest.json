@@ -1,5 +1,18 @@
 {
  "scores": {},
+ "reliability": {
+  "groq": {
+   "share": null,
+   "trusted": true,
+   "why": "too few claims to judge"
+  },
+  "nvidia": {
+   "share": null,
+   "trusted": true,
+   "why": "too few claims to judge"
+  }
+ },
  "disagreements": [],
- "ai_block": {}
+ "ai_block": {},
+ "excluded": []
 }
