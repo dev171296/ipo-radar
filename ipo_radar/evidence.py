@@ -242,7 +242,20 @@ def build(ipo_id: str) -> dict:
         offer["fresh_issue_rs_million"]["confidence"] = "contradicted"
 
     # ---- the financials ---------------------------------------------------
+    # Re-read the figures from the saved pages every time, rather than trusting
+    # the reading stored when the document was first fetched. That way a fix to
+    # the reader corrects every company already on file, instead of only the
+    # ones fetched after the fix — which is how NSE's misread revenue would
+    # otherwise have stayed in the bundle for good.
     ratios = (abridged or {}).get("ratios") or {}
+    if abridged and abridged.get("keep_pages"):
+        from . import abridged as abridged_reader
+        pages = abridged["keep_pages"]
+        page = ((abridged.get("sections") or {}).get("financials") or {}).get("page")
+        try:
+            ratios = abridged_reader.read_ratios(pages, prefer_page=page)
+        except Exception:
+            pass                       # keep the stored reading if re-reading fails
     if not abridged:
         missing.append({"what": "three-year financials",
                         "why": "no abridged prospectus on file yet"})

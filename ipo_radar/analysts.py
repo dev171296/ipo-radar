@@ -732,6 +732,11 @@ def fingerprint(bundle: dict) -> str:
     material = {key: value for key, value in bundle.items()
                 if key not in ("built_at",)}
     material["_analyst_version"] = ANALYST_VERSION
+    # The mode is part of what the answer IS: a "test" answer is not a
+    # "quality" answer. Without this, switching ANALYST_MODE to quality would
+    # change nothing for IPOs already analysed in test mode, because their
+    # evidence had not moved. With it, the switch re-reads everything once.
+    material["_analyst_mode"] = ANALYST_MODE
     return hashlib.sha256(
         json.dumps(material, sort_keys=True, default=str).encode()
     ).hexdigest()[:16]
