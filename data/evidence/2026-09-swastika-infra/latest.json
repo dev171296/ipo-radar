@@ -1,0 +1,315 @@
+{
+ "ipo_id": "2026-09-swastika-infra",
+ "built_at": "2026-09-21T11:00:26+00:00",
+ "name": "Swastika Infra Limited",
+ "symbol": "SWASTIKAIN",
+ "type": "mainboard",
+ "status": "upcoming",
+ "offer": {
+  "price_low": {
+   "value": 175.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.175 to Rs.185"
+  },
+  "price_high": {
+   "value": 185.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.175 to Rs.185"
+  },
+  "issue_size_shares": {
+   "value": 9092857.0,
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "issue_size_rs_million": {
+   "value": 1682.18,
+   "source": "computed",
+   "confidence": "high",
+   "note": "shares × top of the price band"
+  },
+  "open_date": {
+   "value": "2026-09-23",
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "close_date": {
+   "value": "2026-09-25",
+   "source": "nse_calendar",
+   "confidence": "high"
+  }
+ },
+ "financials": {
+  "ebitda": {
+   "value": [
+    7084.55,
+    4388.76,
+    2370.96
+   ],
+   "source": "abridged prospectus",
+   "confidence": "high",
+   "page": 6,
+   "raw": "EBITDA 7,084.55 4,388.76 2,370.96"
+  },
+  "pat": {
+   "value": [
+    4142.8,
+    2744.55,
+    1398.21
+   ],
+   "source": "abridged prospectus",
+   "confidence": "high",
+   "page": 7,
+   "raw": "Profit after tax 4,142.80 2,744.55 1,398.21"
+  },
+  "revenue": {
+   "value": [
+    48782.3,
+    33904.31,
+    18827.89
+   ],
+   "source": "abridged prospectus",
+   "confidence": "high",
+   "page": 7,
+   "raw": "Revenue From Operations from EPC Contracts (₹ in lakhs) 48,782.30 33,904.31 18,827.89"
+  }
+ },
+ "valuation": {
+  "eps_basic_latest": {
+   "value": 15.7,
+   "source": "full prospectus",
+   "confidence": "high",
+   "page": 125,
+   "raw": "fiscal 2026",
+   "note": "checked: our rows reproduce the document's own weighted average of 12.49"
+  },
+  "eps_weighted_average": {
+   "value": 12.49,
+   "source": "full prospectus",
+   "confidence": "high",
+   "page": 125
+  }
+ },
+ "cash": {
+  "operating_cash_flow": {
+   "value": [
+    -965.21,
+    -7653.52,
+    -334.25
+   ],
+   "source": "full prospectus (financials chapter)",
+   "confidence": "high",
+   "page": 267,
+   "raw": "Net Cash from Operating Activities (A) -965.21 -7,653.52 -334.25",
+   "note": "newest year first"
+  },
+  "conversion_vs_ebitda": {
+   "value": -0.136,
+   "source": "computed",
+   "confidence": "high",
+   "note": "1.0 means the reported profit arrived as cash"
+  },
+  "conversion_vs_pat": {
+   "value": -0.233,
+   "source": "computed",
+   "confidence": "high",
+   "note": "1.0 means the reported profit arrived as cash"
+  },
+  "free_cash_flow": {
+   "value": [
+    -1521.92,
+    -7713.05,
+    -433.1
+   ],
+   "source": "computed",
+   "confidence": "high",
+   "note": "operating cash flow after paying for equipment"
+  },
+  "negative_in_all_years": {
+   "value": true,
+   "source": "computed",
+   "confidence": "high"
+  },
+  "negative_in_latest_year": {
+   "value": true,
+   "source": "computed",
+   "confidence": "high"
+  },
+  "receivables_share_of_sales_growth": {
+   "value": 0.296,
+   "source": "computed",
+   "confidence": "high",
+   "note": "how much of the extra sales is money not yet collected"
+  }
+ },
+ "balance_sheet": {
+  "current_ratio": {
+   "value": [
+    1.55,
+    1.39,
+    1.47
+   ],
+   "source": "full prospectus (business, financials, objects)",
+   "confidence": "high",
+   "page": 267,
+   "note": "money due in within a year ÷ money due out — printed in the document"
+  },
+  "total_debt": {
+   "value": [
+    232.3,
+    -14.31,
+    -143.1
+   ],
+   "source": "full prospectus (business, financials, objects)",
+   "confidence": "high",
+   "page": 267,
+   "note": "borrowings, newest year first"
+  },
+  "net_worth": {
+   "value": [
+    15677.82,
+    7701.73,
+    4956.95
+   ],
+   "source": "full prospectus (business, financials, objects)",
+   "confidence": "high",
+   "page": 267,
+   "note": "the owners' stake, newest year first"
+  }
+ },
+ "derived": {
+  "revenue_cagr_2y_pct": {
+   "value": 60.96,
+   "source": "computed",
+   "confidence": "high",
+   "note": "two years of compounding, newest over oldest"
+  },
+  "revenue_growth_latest_pct": {
+   "value": 43.88,
+   "source": "computed",
+   "confidence": "high"
+  },
+  "pat_cagr_2y_pct": {
+   "value": 72.13,
+   "source": "computed",
+   "confidence": "high"
+  },
+  "pat_margin_pct": {
+   "value": [
+    8.49,
+    8.09,
+    7.43
+   ],
+   "source": "computed",
+   "confidence": "high",
+   "note": "profit as a share of sales, newest first"
+  },
+  "ebitda_margin_pct": {
+   "value": [
+    14.52,
+    12.94,
+    12.59
+   ],
+   "source": "computed",
+   "confidence": "high"
+  }
+ },
+ "demand": {},
+ "documents": {
+  "abridged": {
+   "pages": 11,
+   "url": "https://www.sebi.gov.in/sebi_data/commondocs/sep-2026/Swastika%20Infra%20Ltd%20-%20AP_p.pdf",
+   "fields": [
+    "cin",
+    "financials",
+    "lead_managers",
+    "objects",
+    "price_band",
+    "promoters",
+    "registrar",
+    "risk_factors"
+   ],
+   "read_at": "2026-09-21T10:59:28+00:00"
+  },
+  "full": {
+   "pages": 460,
+   "url": "https://www.sebi.gov.in/sebi_data/attachdocs/sep-2026/1789707439481.pdf",
+   "chapters": {
+    "capital_structure": [
+     99,
+     113
+    ],
+    "objects": [
+     114,
+     124
+    ],
+    "basis_for_price": [
+     125,
+     200
+    ],
+    "business": [
+     201,
+     258
+    ],
+    "promoters": [
+     259,
+     266
+    ],
+    "financials": [
+     267,
+     349
+    ],
+    "litigation": [
+     350,
+     460
+    ]
+   },
+   "read_at": "2026-09-21T11:00:21+00:00"
+  }
+ },
+ "missing": [
+  {
+   "what": "fresh issue vs offer for sale split",
+   "why": "could not be read from the offer details table"
+  },
+  {
+   "what": "ROE",
+   "why": "this document does not print it"
+  },
+  {
+   "what": "ROCE",
+   "why": "this document does not print it"
+  },
+  {
+   "what": "valuation comparison",
+   "why": "no peer comparison available in this chapter"
+  },
+  {
+   "what": "subscription",
+   "why": "the issue has not opened yet"
+  },
+  {
+   "what": "grey market premium",
+   "why": "no free source built yet"
+  },
+  {
+   "what": "anchor investor allotment",
+   "why": "not collected yet"
+  },
+  {
+   "what": "broker conviction",
+   "why": "not collected yet"
+  },
+  {
+   "what": "media coverage",
+   "why": "not collected yet"
+  },
+  {
+   "what": "retail attention",
+   "why": "not collected yet"
+  }
+ ],
+ "conflicts": [],
+ "observations": []
+}

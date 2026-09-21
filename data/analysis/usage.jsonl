@@ -387,3 +387,9 @@
 {"at": "2026-09-21T08:07:46+00:00", "family": "gemini", "model": "gemini-flash-lite-latest", "ipo_id": "2026-09-national-stock-exchange-of"}
 {"at": "2026-09-21T08:07:53+00:00", "family": "groq", "model": "groq/compound", "ipo_id": "2026-09-sonaselection"}
 {"at": "2026-09-21T08:07:56+00:00", "family": "gemini", "model": "gemini-flash-lite-latest", "ipo_id": "2026-09-sonaselection"}
+{"at": "2026-09-21T11:00:32+00:00", "family": "groq", "model": "allam-2-7b", "ipo_id": "2026-09-national-stock-exchange-of"}
+{"at": "2026-09-21T11:00:34+00:00", "family": "gemini", "model": "gemini-flash-lite-latest", "ipo_id": "2026-09-national-stock-exchange-of"}
+{"at": "2026-09-21T11:00:38+00:00", "family": "groq", "model": "openai/gpt-oss-20b", "ipo_id": "2026-09-sonaselection"}
+{"at": "2026-09-21T11:00:40+00:00", "family": "gemini", "model": "gemini-flash-lite-latest", "ipo_id": "2026-09-sonaselection"}
+{"at": "2026-09-21T11:00:43+00:00", "family": "groq", "model": "openai/gpt-oss-20b", "ipo_id": "2026-09-swastika-infra"}
+{"at": "2026-09-21T11:00:45+00:00", "family": "gemini", "model": "gemini-flash-lite-latest", "ipo_id": "2026-09-swastika-infra"}

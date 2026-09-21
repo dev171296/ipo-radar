@@ -1,4 +1,4 @@
-IPO RADAR — generated 2026-09-21 08:07 UTC
+IPO RADAR — generated 2026-09-21 11:00 UTC
 ============================================================
 
 Asset Reconstruction Company (India) Limited
@@ -13,6 +13,16 @@ Axiom Gas Engineering Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
   sme · 2026-09-18 to 2026-09-22 · band not announced
   Fundamentals: None (0% assessed)   Demand: None (14% assessed)
+
+Coreintegra Consulting Services Limited
+  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
+  sme · 2026-09-23 to 2026-09-25 · Rs.74 to Rs.78
+  Fundamentals: None (0% assessed)   Demand: None (0% assessed)
+
+Elevate Campuses Limited
+  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
+  mainboard · 2026-09-23 to 2026-09-25 · Rs.343 to Rs.362
+  Fundamentals: None (0% assessed)   Demand: None (0% assessed)
 
 Glass Wall Systems (India) Limited
   CALL: applying -> APPLY   |   holding -> APPLY
@@ -86,8 +96,7 @@ National Stock Exchange of India Limited
   mainboard · 2026-09-17 to 2026-09-21 · Rs.1700 to Rs.1785
   Fundamentals: None (24% assessed)   Demand: None (14% assessed)
   groq: listing 50, long-term 55, confidence low
-  gemini: listing 35, long-term 30, confidence high
-  !! models disagree on longterm_view by 25.0 points
+  gemini: listing 35, long-term 40, confidence high
 
 Pooja Logistics Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
@@ -127,13 +136,14 @@ Rentomojo Limited
   * mostly an exit for existing holders: only 17% of the money reaches the company
 
 Sonaselection India Limited
-  CALL: applying -> WAIT FOR LISTING   |   holding -> WAIT FOR LISTING
+  CALL: applying -> APPLY SELECTIVELY   |   holding -> WAIT FOR LISTING
   mainboard · 2026-09-17 to 2026-09-21 · Rs.94 to Rs.99
   Fundamentals: 50.8 (48% assessed)   Demand: None (14% assessed)
-  groq: listing 70, long-term 60, confidence medium
-  gemini: listing 15, long-term 10, confidence high
-  !! models disagree on listing_view by 55.0 points
-  !! models disagree on longterm_view by 50.0 points
+  groq: listing 70, long-term 45, confidence low
+  gemini: listing 35, long-term 15, confidence high
+  !! models disagree on listing_view by 35.0 points
+  !! models disagree on longterm_view by 30.0 points
+  !! models disagree on governance by 35.0 points
   * very high revenue growth: 106.71% a year — scored just below the band beneath it, because a pre-IPO surge is as often a reason for the timing as a sign of quality
   * revenue more than tripled in two years: 1209.79 to 5169.49
   * the business consumed cash in its latest year: operating cash flow -109.89 against a reported profit
@@ -159,6 +169,17 @@ Steamhouse India Limited
   groq: listing 60, long-term 55, confidence medium
   gemini: listing 60, long-term 35, confidence high
   * owes more this year than it expects to collect: current ratio 0.36
+
+Swastika Infra Limited
+  CALL: applying -> APPLY SELECTIVELY   |   holding -> WAIT FOR LISTING
+  mainboard · 2026-09-23 to 2026-09-25 · Rs.175 to Rs.185
+  Fundamentals: 66.3 (60% assessed)   Demand: None (0% assessed)
+  groq: listing 50, long-term 55, confidence low
+  gemini: listing 35, long-term 25, confidence high
+  !! models disagree on longterm_view by 30.0 points
+  !! models disagree on governance by 20.0 points
+  * very high revenue growth: 60.96% a year — scored just below the band beneath it, because a pre-IPO surge is as often a reason for the timing as a sign of quality
+  * cash was consumed every year: operating cash flow [-965.21, -7653.52, -334.25]
 
 Varmora Granito Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
