@@ -111,7 +111,7 @@ def _download(url: str, segment: str):
     return _parse(resp.text, segment)
 
 
-def for_date(day: date):
+def for_date(day: date, quiet: bool = False):
     """
     Prices for one day: {SYMBOL: bar}, covering mainboard and SME together.
 
@@ -130,14 +130,16 @@ def for_date(day: date):
             bars, columns = _download(url, segment)
             combined.update(bars)
             notes.append(f"{segment}: {len(bars)} stocks")
-            print(f"      {segment} columns: {', '.join(columns)}")
+            if not quiet:
+                print(f"      {segment} columns: {', '.join(columns)}")
         except Exception as exc:
             notes.append(f"{segment}: {type(exc).__name__} {str(exc)[:70]}")
 
     if not combined:
         raise FetchError(f"no bhavcopy for {key} — {'; '.join(notes)}")
 
-    print(f"      {key}: {'; '.join(notes)}")
+    if not quiet:
+        print(f"      {key}: {'; '.join(notes)}")
     _cache[key] = combined
     return combined
 

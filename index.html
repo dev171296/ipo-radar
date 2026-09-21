@@ -106,6 +106,15 @@
     <b>quant-only</b> until the AI block is folded in — they are readings, not advice.
   </div>
 
+  <div class="glance" id="track" style="display:none">
+    <h2>Track record</h2>
+    <div class="scroll"><table id="trackTable">
+      <tr><th>Who made the call</th><th style="text-align:center">Listing calls right</th>
+          <th style="text-align:center">Avg listing gain: said yes / said no</th></tr>
+    </table></div>
+    <p class="sub" id="trackNote"></p>
+  </div>
+
   <div class="glance">
     <h2>At a glance</h2>
     <div class="scroll"><table id="glance">
@@ -307,6 +316,28 @@ async function main(){
   loaded.sort((a,b) => { const A=rank(a), B=rank(b);
     for(let i=0;i<A.length;i++){ if(A[i]<B[i]) return -1; if(A[i]>B[i]) return 1; }
     return 0; });
+
+  // Track record: how the calls did once each IPO listed. The base rate sits
+  // beside it on purpose — in a hot market "apply to everything" is right most
+  // of the time, and a hit rate means nothing unless it beats that.
+  const board = await j('data/grades/scoreboard.json');
+  if(board && board.listed_ipos){
+    const tt = document.getElementById('trackTable');
+    for(const [name, r] of Object.entries(board.predictors || {})){
+      if(!r.listing_graded) continue;
+      const tr = document.createElement('tr');
+      tr.innerHTML = `<td>${esc(name)}</td>
+        <td style="text-align:center">${r.listing_right} of ${r.listing_graded}${
+          r.listing_hit_rate_pct != null ? ' ('+r.listing_hit_rate_pct+'%)' : ''}</td>
+        <td style="text-align:center" class="src">${num(r.avg_gain_when_yes)}% / ${num(r.avg_gain_when_no)}%</td>`;
+      tt.appendChild(tr);
+    }
+    document.getElementById('trackNote').textContent =
+      `${board.listed_ipos} IPO(s) have listed. Saying "apply" to every one would have been right `
+      + `${board.base_rate_pct}% of the time (average listing gain ${board.average_listing_gain_pct}%). `
+      + `A useful call beats that. Holding calls are graded after three months, against the Nifty 50.`;
+    document.getElementById('track').style.display = '';
+  }
 
   const glance = document.getElementById('glance');
   const pill = b => !b ? '—' : `<span class="pill" style="background:${b.colour}">${

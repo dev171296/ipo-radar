@@ -39,7 +39,7 @@ OUT = os.path.join(storage.DATA, "email")
 # they matter until the budget is used up. Measured 7 Sep 2026: 16 IPOs with
 # full detail came to 173 KB, well past the limit.
 GMAIL_CLIP_BYTES = 102_000
-BUDGET = 88_000            # leaves room for headers and the plain-text part
+BUDGET = 80_000            # leaves room for the header, footer and track record
 
 INK = "#1c1b19"
 MUTED = "#6b6862"
@@ -472,6 +472,43 @@ def _overview(companies, dashboard_url=None):
     return _table(rows)
 
 
+
+def _track_record(board):
+    """
+    How the calls have done so far, in one small table.
+
+    Beside every hit rate sits the base rate — how often saying "apply" to
+    everything would have been right. In a hot market where most IPOs list at a
+    gain, a 60% hit rate can be worse than doing nothing, and the table must
+    make that visible rather than let a percentage flatter us.
+    """
+    if not board or not board.get("listed_ipos"):
+        return ""
+    rows = [f"<tr>{_head('Who made the call')}{_head('Right', 'center')}"
+            f"{_head('Avg gain: said yes / said no', 'center')}</tr>"]
+    for name, row in board.get("predictors", {}).items():
+        if not row.get("listing_graded"):
+            continue
+        rate = row.get("listing_hit_rate_pct")
+        right = f"{row['listing_right']} of {row['listing_graded']}"
+        if rate is not None:
+            right += f" ({rate}%)"
+        yes, no = row.get("avg_gain_when_yes"), row.get("avg_gain_when_no")
+        spread = f"{_n(yes)}% / {_n(no)}%" if yes is not None or no is not None else "—"
+        rows.append(f"<tr>{_cell(e(name), width='46%')}"
+                    f"{_cell(e(right), align='center')}"
+                    f"{_cell(e(spread), align='center', color=MUTED)}</tr>")
+    note = (f"{board['listed_ipos']} IPO(s) have listed. Saying \"apply\" to every "
+            f"one would have been right {board.get('base_rate_pct')}% of the time "
+            f"(average listing gain {board.get('average_listing_gain_pct')}%). A "
+            f"useful call beats that, and shows a clear gap between the IPOs it "
+            f"liked and the ones it didn't. Holding calls are graded after three "
+            f"months, against the Nifty 50.")
+    return (f'<h2 style="margin:26px 0 0;font-family:{FONT};font-size:15px;'
+            f'letter-spacing:.06em;text-transform:uppercase;color:{MUTED};">'
+            f'Track record</h2>' + _table(rows) + _para(e(note), color=MUTED, size=12))
+
+
 def _priority(entry):
     """
     Which write-ups earn the space, best first.
@@ -515,7 +552,7 @@ def _in_days(days):
 
 # ------------------------------------------------------------ the message
 
-def build(companies, dashboard_url=None) -> tuple:
+def build(companies, dashboard_url=None, scoreboard=None) -> tuple:
     """Returns (subject, html, plain_text)."""
     when = storage.now()[:16].replace("T", " ")
     live = [c for c in companies if c["ipo"].get("status") != "closed"]
@@ -538,7 +575,8 @@ def build(companies, dashboard_url=None) -> tuple:
 
     # Detail in order of usefulness, until the budget runs out.
     ordered = sorted(companies, key=_priority)
-    blocks, used, shown = [], len(overview), 0
+    record = _track_record(scoreboard)
+    blocks, used, shown = [], len(overview) + len(record), 0
     for entry in ordered:
         piece = company_block(entry["ipo"], entry.get("score"), entry.get("bundle"),
                               (entry.get("ai") or {}).get("groq"),
@@ -585,6 +623,7 @@ def build(companies, dashboard_url=None) -> tuple:
   <h2 style="margin:22px 0 0;font-family:{FONT};font-size:15px;letter-spacing:.06em;
              text-transform:uppercase;color:{MUTED};">At a glance</h2>
   {overview}
+  {record}
   <h2 style="margin:30px 0 0;padding-top:14px;border-top:2px solid {LINE};
              font-family:{FONT};font-size:15px;letter-spacing:.06em;
              text-transform:uppercase;color:{MUTED};">The detail</h2>

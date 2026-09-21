@@ -69,27 +69,44 @@ PREFERENCES = {
 NVIDIA_MODEL = os.environ.get("NVIDIA_MODEL", "moonshotai/kimi-k3")
 NVIDIA_FALLBACK = os.environ.get("NVIDIA_FALLBACK", "google/gemma-4-31b-it")
 
-# How hard Kimi thinks before answering: low / high / max.
+# ONE SWITCH for how hard and how long Kimi works: ANALYST_MODE.
 #
-# MAX. Decided 21 Sep 2026: there is no real-time requirement — the digest goes
-# out a few times a day — and the stated priority is answer quality and
-# accuracy over speed. So Kimi gets its deepest reasoning and plenty of time.
-NVIDIA_REASONING_EFFORT = os.environ.get("NVIDIA_REASONING_EFFORT", "max")
+#   test     — quick. Light reasoning, short time limits. For getting the whole
+#              pipeline working end to end without waiting hours per run.
+#   quality  — deepest reasoning and generous time. The goal once "test" has
+#              run cleanly (decided 21 Sep 2026: quality over speed, no
+#              real-time requirement).
+#
+# Switch it in GitHub → Settings → Secrets and variables → Actions → the
+# "Variables" tab → ANALYST_MODE = quality. No code change needed. Each
+# individual setting below can still be overridden on its own if ever needed.
+MODES = {
+    #            effort   retry    per answer  silence  whole run
+    "test":    ("low",   "",       180,        90,      45),
+    "quality": ("max",   "high",   900,        300,     240),
+}
+ANALYST_MODE = (os.environ.get("ANALYST_MODE") or "test").strip().lower()
+if ANALYST_MODE not in MODES:
+    ANALYST_MODE = "test"
+_effort, _retry, _answer, _silence, _run = MODES[ANALYST_MODE]
 
-# If the deepest setting spends its whole token allowance thinking and never
-# reaches an answer, we ask Kimi once more at this lighter setting before giving
-# up on it. That keeps the answer coming from the stronger model wherever
-# possible, rather than dropping straight to the fallback.
-NVIDIA_RETRY_EFFORT = os.environ.get("NVIDIA_RETRY_EFFORT", "high")
+# How hard Kimi thinks before answering: low / high / max.
+NVIDIA_REASONING_EFFORT = os.environ.get("NVIDIA_REASONING_EFFORT") or _effort
 
-# How long one answer may take, start to finish: 15 minutes. Past this, the
+# If that setting spends its whole allowance thinking and never reaches an
+# answer, ask Kimi once more at this lighter setting before giving up on it.
+# Empty means no second try (in test mode "low" is already the lightest).
+NVIDIA_RETRY_EFFORT = os.environ.get("NVIDIA_RETRY_EFFORT", _retry)
+
+# How long one answer may take, start to finish, in seconds. Past this the
 # fallback model takes over.
-NVIDIA_MAX_SECONDS = int(os.environ.get("NVIDIA_MAX_SECONDS", "900"))
+NVIDIA_MAX_SECONDS = int(os.environ.get("NVIDIA_MAX_SECONDS") or _answer)
 
-# How long the stream may go completely silent. Kimi sends its thinking as it
-# goes, so a long silence means the connection has died rather than the model
-# being busy.
-NVIDIA_SILENCE_SECONDS = int(os.environ.get("NVIDIA_SILENCE_SECONDS", "300"))
+# How long the stream may go completely silent before we call it dead.
+NVIDIA_SILENCE_SECONDS = int(os.environ.get("NVIDIA_SILENCE_SECONDS") or _silence)
+
+# How long, in minutes, the whole AI step may keep starting new IPOs.
+ANALYST_BUDGET_MINUTES = int(os.environ.get("ANALYST_BUDGET_MINUTES") or _run)
 
 # Things that are not general chat models, whatever else their name says.
 NOT_CHAT = ("embedding", "aqa", "vision", "tts", "audio", "whisper", "guard",
@@ -591,8 +608,8 @@ def ask_nvidia(prompt: str, key: str) -> tuple:
     session = plain_session()
     notes, short = [], []
     for model in models_to_try("nvidia", key):
-        efforts = ([None, NVIDIA_RETRY_EFFORT] if "kimi" in model.lower()
-                   else [None])
+        efforts = ([None, NVIDIA_RETRY_EFFORT]
+                   if "kimi" in model.lower() and NVIDIA_RETRY_EFFORT else [None])
         for effort in efforts:
             label = f"{model}" + (f" at {effort}" if effort else "")
             try:
@@ -701,7 +718,7 @@ def check_citations(answer: dict, passages: dict) -> dict:
 # only the EVIDENCE — so improving the analyst left every old answer in place,
 # because the evidence had not moved. Including this version means a better
 # analyst re-reads everything once, then goes quiet again.
-ANALYST_VERSION = "2026-09-21-kimi-k3-max-no-web-peer-names"
+ANALYST_VERSION = "2026-09-21-kimi-k3-no-web-peer-names"
 
 
 def fingerprint(bundle: dict) -> str:

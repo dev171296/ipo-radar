@@ -13,7 +13,7 @@ import os
 import sys
 import traceback
 
-from . import (abridged, analysts, call, documents, evidence, publisher,
+from . import (abridged, analysts, call, documents, evidence, grading, publisher,
                scoring, sections, storage)
 from .collectors import nse, prices, sebi
 from .identity import find_match, make_id, normalise
@@ -48,7 +48,7 @@ def _write_json(payload, *parts):
 # that simply kept going would lose all of its own work. Four hours leaves room
 # for the email, the dashboard files and the save. Anything not reached is
 # picked up by the next run; finished IPOs are never re-asked.
-ANALYST_BUDGET_MINUTES = int(os.environ.get("ANALYST_BUDGET_MINUTES", "240"))
+ANALYST_BUDGET_MINUTES = analysts.ANALYST_BUDGET_MINUTES   # set by ANALYST_MODE
 
 
 def _analysis_order(record):
@@ -306,7 +306,10 @@ def run_analysts():
     for name in analysts.ANALYSTS:
         print(f"    key check: "
               f"{analysts.key_problem(name, os.environ.get(analysts.KEY_NAMES[name]))}")
-    print(f"    time allowed for analysis this run: {ANALYST_BUDGET_MINUTES} min")
+    print(f"    mode: {analysts.ANALYST_MODE} — Kimi effort "
+          f"{analysts.NVIDIA_REASONING_EFFORT}, up to "
+          f"{analysts.NVIDIA_MAX_SECONDS // 60} min per answer, "
+          f"{ANALYST_BUDGET_MINUTES} min for the whole AI step")
 
     import time
     started = time.monotonic()
@@ -371,6 +374,28 @@ def run_analysts():
     return done
 
 
+def grade_predictions():
+    """
+    Check the calls we made against what the market then did.
+
+    Only IPOs that have listed can be graded, and only answers written before
+    trading began on listing day count. See grading.py for the rules.
+    """
+    print("\n[4b] Track record — calls against what actually happened")
+    board = grading.run()
+    print(f"    {board['listed_ipos']} IPO(s) have listed so far"
+          + (f"; average listing gain {board['average_listing_gain_pct']}%, "
+             f"and saying 'apply' to every one would have been right "
+             f"{board['base_rate_pct']}% of the time"
+             if board['listed_ipos'] else ""))
+    for name, row in board["predictors"].items():
+        print(f"      {name}: {row['listing_right']} of {row['listing_graded']} "
+              f"listing calls right"
+              + (f" ({row['listing_hit_rate_pct']}%)" if row.get('listing_hit_rate_pct') is not None else "")
+              + f"; no view on {row['no_view']}")
+    return board
+
+
 def publish():
     """
     Build the digest and send it, if we have somewhere to send it.
@@ -410,7 +435,9 @@ def publish():
               f" ({listing.get('confidence')}), holding -> {longterm['call']}"
               f" ({longterm.get('confidence')})")
 
-    subject, body, text = publisher.build(companies, DASHBOARD_URL)
+    subject, body, text = publisher.build(
+        companies, DASHBOARD_URL,
+        scoreboard=_read_json(storage.DATA, "grades", "scoreboard.json"))
     print(f"    subject: {subject}")
     path = publisher.save(subject, body, text)
     print(f"    written to {path} ({len(body):,} bytes)")
@@ -484,6 +511,11 @@ def main():
     except Exception:
         traceback.print_exc()
         analysed = 0
+
+    try:
+        grade_predictions()
+    except Exception:
+        traceback.print_exc()
 
     try:
         emailed = publish()
