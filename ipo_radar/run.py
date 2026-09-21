@@ -301,6 +301,11 @@ def run_analysts():
         return 0
 
     print(f"    analysts: {', '.join(analysts.ANALYSTS)}; both read everything")
+    # A one-line health check per key — its length and shape, never its value —
+    # so a rejected key can be diagnosed from the log alone.
+    for name in analysts.ANALYSTS:
+        print(f"    key check: "
+              f"{analysts.key_problem(name, os.environ.get(analysts.KEY_NAMES[name]))}")
     print(f"    time allowed for analysis this run: {ANALYST_BUDGET_MINUTES} min")
 
     import time

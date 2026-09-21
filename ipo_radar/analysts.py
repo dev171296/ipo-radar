@@ -427,29 +427,52 @@ def ask_gemini(prompt: str, key: str) -> tuple:
 
 
 def ask_groq(prompt: str, key: str) -> tuple:
+    """
+    Groq, sticking with ONE model wherever it can.
+
+    Measured 21 Sep 2026: one run used three different Groq models across
+    different IPOs. That quietly breaks the comparison — "Groq's view" must mean
+    the same reader every time, or its track record means nothing. The cause was
+    the free tier's rate limit: when a model answered HTTP 429 ("too many
+    requests, slow down") we jumped to the next model instead of waiting.
+
+    Now a 429 means wait — for as long as Groq asks, up to a minute — and try the
+    SAME model again, up to three times. Only a model that is genuinely broken
+    or gone moves us on to the next.
+    """
+    import time
     session = plain_session()
     last = "no usable model was offered by the provider"
     for model in models_to_try("groq", key):
-        try:
-            resp = session.post(
-                "https://api.groq.com/openai/v1/chat/completions", timeout=TIMEOUT,
-                headers={"Authorization": f"Bearer {key}",
-                         "Content-Type": "application/json"},
-                json={"model": model, "temperature": 0.2,
-                      "messages": [{"role": "user", "content": prompt}]})
-        except Exception as exc:
-            last = f"{type(exc).__name__}: {exc}"
-            continue
-        if resp.status_code != 200:
-            last = f"HTTP {resp.status_code}: {resp.text[:200]}"
-            continue
-        body = resp.json()
-        try:
-            return body["choices"][0]["message"]["content"], model
-        except (KeyError, IndexError):
-            last = f"unexpected shape: {json.dumps(body)[:200]}"
+        for attempt in range(1, 4):
+            try:
+                resp = session.post(
+                    "https://api.groq.com/openai/v1/chat/completions",
+                    timeout=TIMEOUT,
+                    headers={"Authorization": f"Bearer {key}",
+                             "Content-Type": "application/json"},
+                    json={"model": model, "temperature": 0.2,
+                          "messages": [{"role": "user", "content": prompt}]})
+            except Exception as exc:
+                last = f"{model}: {type(exc).__name__}: {exc}"
+                break
+            if resp.status_code == 429 and attempt < 3:
+                try:
+                    wait = float(resp.headers.get("retry-after") or 20)
+                except ValueError:
+                    wait = 20
+                time.sleep(min(max(wait, 5), 60))
+                continue
+            if resp.status_code != 200:
+                last = f"{model}: HTTP {resp.status_code}: {resp.text[:200]}"
+                break
+            body = resp.json()
+            try:
+                return body["choices"][0]["message"]["content"], model
+            except (KeyError, IndexError):
+                last = f"{model}: unexpected shape: {json.dumps(body)[:200]}"
+                break
     raise FetchError(f"Groq: {last}")
-
 
 
 def _nvidia_payload(model: str, prompt: str, effort: str = None) -> dict:
@@ -537,6 +560,11 @@ def _one_nvidia_call(session, key, model, prompt, effort=None) -> tuple:
         json=_nvidia_payload(model, prompt, effort))
     try:
         if resp.status_code != 200:
+            if resp.status_code in (401, 403):
+                raise FetchError(
+                    f"HTTP {resp.status_code} — NVIDIA rejected the key. Check "
+                    f"that NVIDIA_API_KEY in GitHub Secrets is the NEW key, "
+                    f"complete, and still active at build.nvidia.com")
             raise FetchError(f"HTTP {resp.status_code}: {resp.text[:200]}")
         return _read_stream(resp)
     finally:
@@ -703,6 +731,36 @@ def already_done(ipo_id: str, model: str, signature: str) -> bool:
         return False
 
 
+def clean_key(raw):
+    """
+    An API key as it should be, whatever happened when it was pasted.
+
+    Copying a key from a web page easily brings along a trailing space or line
+    break, surrounding quote marks, or the word "Bearer" from an example.
+    Measured 21 Sep 2026: NVIDIA answered HTTP 401 Unauthorized on every call,
+    and a pasting slip is the commonest cause. The key itself never contains
+    spaces or quotes, so removing them cannot damage a correct one.
+    """
+    key = (raw or "").strip().strip('"').strip("'").strip()
+    if key.lower().startswith("bearer "):
+        key = key[7:].strip()
+    return "".join(key.split())
+
+
+def key_problem(name: str, raw: str):
+    """What looks wrong with a key, in plain words, without revealing it."""
+    key = clean_key(raw)
+    if not key:
+        return f"{KEY_NAMES[name]} is empty"
+    notes = []
+    if key != (raw or ""):
+        notes.append("had extra spaces, quotes or 'Bearer' around it (removed)")
+    if name == "nvidia" and not key.startswith("nvapi-"):
+        notes.append("does not start with 'nvapi-' as NVIDIA keys do")
+    return f"{KEY_NAMES[name]}: {len(key)} characters" + (
+        f", {'; '.join(notes)}" if notes else ", looks well-formed")
+
+
 def analyse(bundle: dict, sections: dict, score: dict = None,
             which=ANALYSTS, gemini_left=None) -> dict:
     """
@@ -731,7 +789,7 @@ def analyse(bundle: dict, sections: dict, score: dict = None,
                                  "skipped": "this run's Gemini allowance is spent"}
                 continue
             results.setdefault("_gemini_reason", why)
-        key = os.environ.get(KEY_NAMES[name])
+        key = clean_key(os.environ.get(KEY_NAMES[name]))
         if not key:
             results[name] = {"ok": False, "why": f"{KEY_NAMES[name]} is not set"}
             continue
