@@ -1,53 +1,18 @@
 {
- "scores": {
-  "listing_view": {
-   "groq": 35.0,
-   "nvidia": 32.0
-  },
-  "longterm_view": {
-   "groq": 45.0,
-   "nvidia": 28.0
-  },
-  "governance": {
-   "groq": 50.0,
-   "nvidia": 55.0
-  }
- },
+ "scores": {},
  "reliability": {
   "groq": {
-   "share": 0.33,
-   "trusted": false,
-   "why": "2 of 6 citations matched the pages we sent, and 3 pointed at pages we never sent"
+   "share": null,
+   "trusted": true,
+   "why": "too few claims to judge"
   },
   "nvidia": {
-   "share": 0.86,
+   "share": null,
    "trusted": true,
-   "why": "6 of 7 citations matched the pages we sent"
+   "why": "too few claims to judge"
   }
  },
- "disagreements": [
-  {
-   "on": "longterm_view",
-   "gap": 17.0,
-   "scores": {
-    "groq": 45.0,
-    "nvidia": 28.0
-   },
-   "means": "the models read the same evidence differently — treat this verdict as uncertain, and read both reasonings rather than the average"
-  }
- ],
- "ai_block": {
-  "listing_view": 32.0,
-  "listing_view_note": "one model was left out of this average — its citations did not check out",
-  "longterm_view": 28.0,
-  "longterm_view_note": "one model was left out of this average — its citations did not check out",
-  "governance": 55.0,
-  "governance_note": "one model was left out of this average — its citations did not check out"
- },
- "excluded": [
-  {
-   "model": "groq",
-   "why": "2 of 6 citations matched the pages we sent, and 3 pointed at pages we never sent"
-  }
- ]
+ "disagreements": [],
+ "ai_block": {},
+ "excluded": []
 }

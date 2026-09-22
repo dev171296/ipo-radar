@@ -1,40 +1,18 @@
 {
- "scores": {
-  "listing_view": {
-   "groq": 75.0,
-   "nvidia": 72.0
-  },
-  "longterm_view": {
-   "groq": 60.0,
-   "nvidia": 48.0
-  },
-  "governance": {
-   "groq": 55.0,
-   "nvidia": 55.0
-  }
- },
+ "scores": {},
  "reliability": {
   "groq": {
-   "share": 0.17,
-   "trusted": false,
-   "why": "1 of 6 citations matched the pages we sent, and 5 pointed at pages we never sent"
+   "share": null,
+   "trusted": true,
+   "why": "too few claims to judge"
   },
   "nvidia": {
-   "share": 0.6,
-   "trusted": false,
-   "why": "3 of 5 citations matched the pages we sent, and 1 pointed at pages we never sent"
+   "share": null,
+   "trusted": true,
+   "why": "too few claims to judge"
   }
  },
  "disagreements": [],
  "ai_block": {},
- "excluded": [
-  {
-   "model": "groq",
-   "why": "1 of 6 citations matched the pages we sent, and 5 pointed at pages we never sent"
-  },
-  {
-   "model": "nvidia",
-   "why": "3 of 5 citations matched the pages we sent, and 1 pointed at pages we never sent"
-  }
- ]
+ "excluded": []
 }

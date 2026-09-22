@@ -1,36 +1,36 @@
-IPO RADAR — generated 2026-09-22 08:21 UTC
+IPO RADAR — generated 2026-09-22 10:15 UTC
 ============================================================
 Full dashboard: https://dev171296.github.io/ipo-radar/
 
 AT A GLANCE
 ------------------------------------------------------------
 Company                           Closes      Applying          Holding
-Swastika Infra Limited            2026-09-25  WAIT FOR LISTING  WAIT FOR LISTING
-Adroit Industries (India) Limite  2026-09-25  APPLY SELECTIVELY APPLY SELECTIVELY
 Axiom Gas Engineering Limited     2026-09-22  not enough info   not enough info
 Varmora Granito Limited           2026-09-24  not enough info   not enough info
+Swastika Infra Limited            2026-09-25  not enough info   WAIT FOR LISTING
+Adroit Industries (India) Limite  2026-09-25  not enough info   APPLY
 ArMee Infotech Limited            2026-09-25  not enough info   not enough info
 Coreintegra Consulting Services   2026-09-25  not enough info   not enough info
 Elevate Campuses Limited          2026-09-25  not enough info   not enough info
 Pooja Logistics Limited           2026-09-25  not enough info   not enough info
 Bench Mark Infotech Services Lim  2026-09-29  not enough info   not enough info
-Kanohar Electricals Limited       2026-09-10  APPLY             APPLY
-SS Retail Limited                 2026-09-18  APPLY             APPLY
-Manipal Payment and Identity Sol  2026-09-11  AVOID             APPLY
-Hero Motors Limited               2026-09-18  APPLY SELECTIVELY APPLY SELECTIVELY
-Veegaland Developers Limited      2026-09-15  APPLY SELECTIVELY APPLY SELECTIVELY
 Sonaselection India Limited       2026-09-21  WAIT FOR LISTING  WAIT FOR LISTING
+Kanohar Electricals Limited       2026-09-10  APPLY             STRONG APPLY
+SS Retail Limited                 2026-09-18  APPLY             APPLY
 LCC Projects Limited              2026-09-11  APPLY             APPLY
 Karamtara Engineering Limited     2026-09-11  APPLY             APPLY
+Manipal Payment and Identity Sol  2026-09-11  AVOID             APPLY
 Rentomojo Limited                 2026-09-11  APPLY             APPLY SELECTIVELY
-Asset Reconstruction Company (In  2026-09-11  APPLY SELECTIVELY APPLY SELECTIVELY
+Asset Reconstruction Company (In  2026-09-11  APPLY SELECTIVELY APPLY
 Steamhouse India Limited          2026-09-11  APPLY             APPLY SELECTIVELY
 Glass Wall Systems (India) Limit  2026-09-10  APPLY             APPLY
 Prasol Chemicals Limited          2026-09-10  WAIT FOR LISTING  APPLY SELECTIVELY
 Pranav Constructions Limited      2026-09-09  APPLY             APPLY SELECTIVELY
+Hero Motors Limited               2026-09-18  APPLY SELECTIVELY APPLY SELECTIVELY
+Veegaland Developers Limited      2026-09-15  APPLY SELECTIVELY APPLY SELECTIVELY
 Jindal Supreme (India) Limited    2026-09-18  APPLY             not enough info
-Manika Plastech Limited           2026-09-16  APPLY SELECTIVELY not enough info
 Kheria Autocomp Limited           2026-09-21  WAIT FOR LISTING  not enough info
+Manika Plastech Limited           2026-09-16  APPLY             not enough info
 National Stock Exchange of India  2026-09-21  WAIT FOR LISTING  not enough info
 Qualiance International Limited   2026-09-08  APPLY             not enough info
 SpectraA Technology Solutions Li  2026-09-21  APPLY             not enough info
@@ -40,7 +40,7 @@ THE DETAIL
 ------------------------------------------------------------
 
 Adroit Industries (India) Limited
-  CALL: applying -> APPLY SELECTIVELY   |   holding -> APPLY SELECTIVELY
+  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> APPLY
   mainboard · 2026-09-23 to 2026-09-25 · Rs.126 to Rs.134
   Fundamentals: 70.5 (48% assessed)   Demand: None (0% assessed)
   groq: listing 45, long-term 62, confidence low
@@ -52,7 +52,7 @@ ArMee Infotech Limited
   Fundamentals: None (0% assessed)   Demand: None (0% assessed)
 
 Asset Reconstruction Company (India) Limited
-  CALL: applying -> APPLY SELECTIVELY   |   holding -> APPLY SELECTIVELY
+  CALL: applying -> APPLY SELECTIVELY   |   holding -> APPLY
   mainboard · 2026-09-09 to 2026-09-11 · Rs.132 to Rs.139
   Fundamentals: 71.8 (60% assessed)   Demand: 57.5 (40% assessed)
   groq: listing 65, long-term 55, confidence medium
@@ -94,8 +94,6 @@ Hero Motors Limited
   Fundamentals: 59.0 (76% assessed)   Demand: 50.0 (40% assessed)
   groq: listing 35, long-term 45, confidence medium
   nvidia: listing 62, long-term 42, confidence medium
-  !! models disagree on listing_view by 27.0 points
-  !! models disagree on governance by 20.0 points
   * owes more this year than it expects to collect: current ratio 0.94
 
 Jindal Supreme (India) Limited
@@ -104,15 +102,13 @@ Jindal Supreme (India) Limited
   Fundamentals: None (20% assessed)   Demand: 73.8 (40% assessed)
   groq: listing 40, long-term 35, confidence low
   nvidia: listing 82, long-term 38, confidence low
-  !! models disagree on listing_view by 42.0 points
 
 Kanohar Electricals Limited
-  CALL: applying -> APPLY   |   holding -> APPLY
+  CALL: applying -> APPLY   |   holding -> STRONG APPLY
   mainboard · 2026-09-08 to 2026-09-10 · Rs.601 to Rs.632
   Fundamentals: 80.8 (88% assessed)   Demand: 73.8 (40% assessed)
   groq: listing 85, long-term 60, confidence medium
   nvidia: listing 82, long-term 42, confidence medium
-  !! models disagree on longterm_view by 18.0 points
   * priced far below its stated peer group: 36.26× against 103.03× — a 65% discount
   * profit is not turning into cash: only 14% of EBITDA came through as cash
 
@@ -137,12 +133,11 @@ LCC Projects Limited
   * profit is not turning into cash: only 30% of EBITDA came through as cash
 
 Manika Plastech Limited
-  CALL: applying -> APPLY SELECTIVELY   |   holding -> NOT ENOUGH INFORMATION
+  CALL: applying -> APPLY   |   holding -> NOT ENOUGH INFORMATION
   mainboard · 2026-09-11 to 2026-09-16 · Rs.40 to Rs.43
   Fundamentals: None (20% assessed)   Demand: 67.2 (40% assessed)
   groq: listing 30, long-term 45, confidence low
   nvidia: listing 78, long-term 45, confidence low
-  !! models disagree on listing_view by 48.0 points
 
 Manipal Payment and Identity Solutions Limited
   CALL: applying -> AVOID   |   holding -> APPLY
@@ -150,8 +145,6 @@ Manipal Payment and Identity Solutions Limited
   Fundamentals: 74.0 (48% assessed)   Demand: 15.2 (40% assessed)
   groq: listing 15, long-term 65, confidence medium
   nvidia: listing 32, long-term 52, confidence medium
-  !! models disagree on listing_view by 17.0 points
-  !! models disagree on governance by 42.0 points
   * under-subscribed: closed at 0.8719568481139119× — the issue did not fill
 
 National Stock Exchange of India Limited
@@ -220,7 +213,6 @@ SS Retail Limited
   Fundamentals: 78.7 (58% assessed)   Demand: 73.8 (40% assessed)
   groq: listing 85, long-term 65, confidence medium
   nvidia: listing 82, long-term 42, confidence low
-  !! models disagree on longterm_view by 23.0 points
   * profit is not turning into cash: only 26% of EBITDA came through as cash
 
 Steamhouse India Limited
@@ -232,19 +224,18 @@ Steamhouse India Limited
   * owes more this year than it expects to collect: current ratio 0.36
 
 Swastika Infra Limited
-  CALL: applying -> WAIT FOR LISTING   |   holding -> WAIT FOR LISTING
+  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> WAIT FOR LISTING
   mainboard · 2026-09-23 to 2026-09-25 · Rs.175 to Rs.185
   Fundamentals: 66.3 (60% assessed)   Demand: None (0% assessed)
   groq: listing 35, long-term 45, confidence low
   nvidia: listing 32, long-term 28, confidence medium
-  !! models disagree on longterm_view by 17.0 points
   * very high revenue growth: 60.96% a year — scored just below the band beneath it, because a pre-IPO surge is as often a reason for the timing as a sign of quality
   * cash was consumed every year: operating cash flow [-965.21, -7653.52, -334.25]
 
 Varmora Granito Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
   mainboard · 2026-09-22 to 2026-09-24 · Rs.140 to Rs.148
-  Fundamentals: None (0% assessed)   Demand: None (0% assessed)
+  Fundamentals: None (0% assessed)   Demand: None (14% assessed)
 
 Veegaland Developers Limited
   CALL: applying -> APPLY SELECTIVELY   |   holding -> APPLY SELECTIVELY
@@ -252,8 +243,6 @@ Veegaland Developers Limited
   Fundamentals: 58.3 (48% assessed)   Demand: 57.5 (40% assessed)
   groq: listing 35, long-term 40, confidence low
   nvidia: listing 52, long-term 40, confidence low
-  !! models disagree on listing_view by 17.0 points
-  !! models disagree on governance by 20.0 points
   * the business consumed cash in its latest year: operating cash flow -7425.95 against a reported profit
   * heavily indebted: debt is 2.7× the owners' stake
 
