@@ -2,9 +2,9 @@
  "listing": {
   "call": "APPLY",
   "colour": "#2f7d32",
-  "score": 76.6,
-  "confidence": "high",
-  "why": "built from our fundamentals, market demand, the two AI readings",
+  "score": 77.6,
+  "confidence": "low",
+  "why": "built from our fundamentals, market demand, the two AI readings; the two models disagree, which lowers confidence",
   "based_on": [
    "our fundamentals",
    "market demand",
@@ -15,8 +15,8 @@
   "call": "APPLY",
   "colour": "#2f7d32",
   "score": 67.9,
-  "confidence": "medium",
-  "why": "built from our fundamentals, the two AI readings — 90% of the deciding weight",
+  "confidence": "low",
+  "why": "built from our fundamentals, the two AI readings — 90% of the deciding weight; the two models disagree, which lowers confidence",
   "based_on": [
    "our fundamentals",
    "the two AI readings"
@@ -24,5 +24,5 @@
  },
  "hard_stops": [],
  "serious_findings": [],
- "models_disagree": false
+ "models_disagree": true
 }

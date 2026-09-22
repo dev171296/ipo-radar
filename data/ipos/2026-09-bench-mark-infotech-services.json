@@ -1,0 +1,32 @@
+{
+  "id": "2026-09-bench-mark-infotech-services",
+  "aliases": [
+    "Bench Mark Infotech Services Limited"
+  ],
+  "first_seen": "2026-09-22T07:52:20+00:00",
+  "normalised_name": "bench mark infotech services",
+  "name": "Bench Mark Infotech Services Limited",
+  "symbol": "BMISL",
+  "type": "sme",
+  "status": "upcoming",
+  "dates": {
+    "open": "2026-09-25",
+    "close": "2026-09-29",
+    "open_as_given": "25-Sep-2026",
+    "close_as_given": "29-Sep-2026"
+  },
+  "price_band": "Rs.104 to Rs.110",
+  "issue_size_shares": 3858000.0,
+  "subscription": {
+    "times": null,
+    "shares_offered": null,
+    "shares_bid": null
+  },
+  "also_on_bse": false,
+  "sources": {
+    "calendar": "nse",
+    "fetched_at": "2026-09-22T07:52:20+00:00"
+  },
+  "missing": [],
+  "rebuilt_at": "2026-09-22T07:52:20+00:00"
+}

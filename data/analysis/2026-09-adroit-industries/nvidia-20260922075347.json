@@ -1,0 +1,74 @@
+{
+ "ok": true,
+ "model": "moonshotai/kimi-k3",
+ "answered_at": "2026-09-22T07:53:47+00:00",
+ "evidence_fingerprint": "c1c66068039443fa",
+ "prompt_chars": 8521,
+ "passages_supplied": {
+  "litigation": 8,
+  "governance": 8,
+  "business_quality": 8,
+  "risks": 8
+ },
+ "answer": {
+  "listing_view": {
+   "score": 45.0,
+   "reasoning": "There is no demand-side evidence at all: no subscription data, no grey market premium, no anchor book, and the issue has not opened yet. On fundamentals alone the handle is modest — a ~₹1.5bn issue from a company growing revenue at ~6% a year is not the profile that typically generates retail frenzy, but that is inference, not evidence; the honest position is no view."
+  },
+  "longterm_view": {
+   "score": 52.0,
+   "reasoning": "The operating picture is genuinely decent — EBITDA margins improving from ~24% to ~28% while debt-to-equity has been cut from 0.93 to 0.41 and free cash flow is positive in all three years. But revenue growth of ~4.5% in the latest year, receivables stretching out to 118 days, and cash conversion of only 0.76 of EBITDA mean earnings quality is mediocre; this is a steady, slow-growing industrial, not a compounding story."
+  },
+  "governance": {
+   "score": 55.0,
+   "reasoning": "No SEBI or exchange disciplinary action against promoters is disclosed and the company states it has no loans to promoters or dealings with struck-off companies [promoters, page 446] [litigation, page 489]. However, promoters and directors have given personal guarantees for company borrowings [promoters, page 417], related-party transaction notes span multiple pages [promoters, pages 426-448], and there was an income-tax penalty later deleted on appeal [litigation, page 491] — none disqualifying, but the extract set is too thin to score confidently."
+  },
+  "key_risks": [
+   {
+    "risk": "Customer concentration not disclosed",
+    "why_it_matters": "The prospectus itself says names and contributions of the top ten customers are not separately disclosed, so dependence on a handful of buyers cannot be assessed at all.",
+    "citation": "[business, page 334]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Rising receivable days and weak cash conversion",
+    "why_it_matters": "Customers taking 118 days to pay while only ~76% of EBITDA arrives as cash means reported profit is increasingly tied up in the balance sheet, which can force renewed borrowing if it worsens.",
+    "citation": "[business, page 305]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Customer and distributor relationship risk",
+    "why_it_matters": "The risk factors flag that cessation of orders or disruption in distributor relationships could materially hurt results, and with undisclosed customer concentration this risk is unquantifiable.",
+    "citation": "[business, page 333]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Personal guarantees by directors on borrowings",
+    "why_it_matters": "Lenders requiring promoter/director guarantees signals the company's standalone credit is not sufficient on its own, a mild governance and credit-quality flag.",
+    "citation": "[promoters, page 417]",
+    "citation_verified": true
+   }
+  ],
+  "answers": [
+   {
+    "question": "Is this IPO attractive at listing?",
+    "answer": "Not answerable with confidence — there is no demand, subscription, pricing-peer or anchor data in what I was given; fundamentals alone give no basis for a listing-day call.",
+    "citation": "not answerable from what I was given",
+    "citation_verified": false
+   },
+   {
+    "question": "Is the underlying business worth owning long term?",
+    "answer": "It is a profitable, de-leveraging, cash-generative industrial with improving margins but low single-digit growth, stretching receivables and undisclosed customer concentration — acceptable quality, not obviously mispriced either way, and no valuation data exists in what was provided to judge whether the price compensates for the slow growth.",
+    "citation": "[business, page 305]",
+    "citation_verified": true
+   }
+  ],
+  "confidence": "low",
+  "what_would_change_my_mind": "Evidence either way on valuation (EPS, P/E versus listed peers), the fresh-issue/OFS split, and top-customer concentration would move me materially — as would subscription and anchor data once the issue opens.",
+  "citation_check": {
+   "claims_checked": 6,
+   "citations_verified": 5,
+   "citations_not_matching_what_we_sent": 0
+  }
+ }
+}

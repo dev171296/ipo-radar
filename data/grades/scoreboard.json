@@ -1,28 +1,28 @@
 {
- "built_at": "2026-09-21T20:17:45+00:00",
- "listed_ipos": 11,
- "base_rate_pct": 73,
- "average_listing_gain_pct": 12.5,
+ "built_at": "2026-09-22T08:21:27+00:00",
+ "listed_ipos": 12,
+ "base_rate_pct": 67,
+ "average_listing_gain_pct": 11.4,
  "predictors": {
   "Our call (rules + both AIs)": {
-   "listing_graded": 11,
+   "listing_graded": 12,
    "listing_right": 10,
    "no_view": 0,
-   "avg_gain_when_yes": 16.6,
+   "avg_gain_when_yes": 15.0,
    "avg_gain_when_no": -6.2,
    "holding_graded": 0,
    "holding_right": 0,
-   "listing_hit_rate_pct": 91
+   "listing_hit_rate_pct": 83
   },
   "Groq": {
-   "listing_graded": 7,
+   "listing_graded": 8,
    "listing_right": 6,
    "no_view": 3,
-   "avg_gain_when_yes": 13.2,
+   "avg_gain_when_yes": 10.5,
    "avg_gain_when_no": -1.3,
    "holding_graded": 0,
    "holding_right": 0,
-   "listing_hit_rate_pct": 86
+   "listing_hit_rate_pct": 75
   },
   "Groq — unsuitable models (labelled, kept)": {
    "listing_graded": 1,
@@ -35,14 +35,14 @@
    "listing_hit_rate_pct": 100
   },
   "Gemini (retired)": {
-   "listing_graded": 11,
+   "listing_graded": 12,
    "listing_right": 9,
    "no_view": 0,
-   "avg_gain_when_yes": 17.5,
+   "avg_gain_when_yes": 15.5,
    "avg_gain_when_no": -0.8,
    "holding_graded": 0,
    "holding_right": 0,
-   "listing_hit_rate_pct": 82
+   "listing_hit_rate_pct": 75
   }
  },
  "long_term_note": "graded 3 months after listing, against the Nifty 50",
@@ -167,11 +167,11 @@
   {
    "ipo_id": "2026-09-manika-plastech",
    "name": "Manika Plastech Limited",
-   "status": "not listed yet",
-   "listed_on": null,
-   "listing_gain_pct": null,
-   "our_listing_call": null,
-   "right": null
+   "status": "listed",
+   "listed_on": "2026-09-21",
+   "listing_gain_pct": 0.0,
+   "our_listing_call": "APPLY",
+   "right": false
   },
   {
    "ipo_id": "2026-09-hero-motors",
@@ -203,7 +203,7 @@
   {
    "ipo_id": "2026-09-kheria-autocomp",
    "name": "Kheria Autocomp Limited",
-   "status": "issue still open",
+   "status": "not listed yet",
    "listed_on": null,
    "listing_gain_pct": null,
    "our_listing_call": null,
@@ -212,7 +212,7 @@
   {
    "ipo_id": "2026-09-national-stock-exchange-of",
    "name": "National Stock Exchange of India Limited",
-   "status": "issue still open",
+   "status": "not listed yet",
    "listed_on": null,
    "listing_gain_pct": null,
    "our_listing_call": null,
@@ -221,7 +221,7 @@
   {
    "ipo_id": "2026-09-sonaselection",
    "name": "Sonaselection India Limited",
-   "status": "issue still open",
+   "status": "not listed yet",
    "listed_on": null,
    "listing_gain_pct": null,
    "our_listing_call": null,
@@ -230,7 +230,7 @@
   {
    "ipo_id": "2026-09-spectraa-technology-solutions",
    "name": "SpectraA Technology Solutions Limited",
-   "status": "issue still open",
+   "status": "not listed yet",
    "listed_on": null,
    "listing_gain_pct": null,
    "our_listing_call": null,
@@ -302,6 +302,15 @@
   {
    "ipo_id": "2026-09-swastika-infra",
    "name": "Swastika Infra Limited",
+   "status": "issue still open",
+   "listed_on": null,
+   "listing_gain_pct": null,
+   "our_listing_call": null,
+   "right": null
+  },
+  {
+   "ipo_id": "2026-09-bench-mark-infotech-services",
+   "name": "Bench Mark Infotech Services Limited",
    "status": "issue still open",
    "listed_on": null,
    "listing_gain_pct": null,

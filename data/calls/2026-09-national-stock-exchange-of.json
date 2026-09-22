@@ -2,9 +2,9 @@
  "listing": {
   "call": "WAIT FOR LISTING",
   "colour": "#b25b1a",
-  "score": 41.3,
-  "confidence": "low",
-  "why": "built from market demand, the two AI readings — 75% of the deciding weight; the two models disagree, which lowers confidence",
+  "score": 38.0,
+  "confidence": "medium",
+  "why": "built from market demand, the two AI readings — 75% of the deciding weight",
   "based_on": [
    "market demand",
    "the two AI readings"
@@ -13,7 +13,7 @@
  "longterm": {
   "call": "NOT ENOUGH INFORMATION",
   "colour": "#6b6862",
-  "score": 42.5,
+  "score": 47.5,
   "confidence": "none",
   "why": "only 30% of what decides the long-term call is available — no call is better than a guess dressed as one",
   "based_on": [
@@ -22,5 +22,5 @@
  },
  "hard_stops": [],
  "serious_findings": [],
- "models_disagree": true
+ "models_disagree": false
 }

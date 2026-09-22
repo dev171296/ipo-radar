@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-21T19:30:33+00:00",
-  "count": 29,
+  "generated_at": "2026-09-22T07:52:20+00:00",
+  "count": 30,
   "ipos": [
     {
       "id": "2026-09-adroit-industries",
@@ -406,6 +406,20 @@
         "close_as_given": "11-Sep-2026"
       },
       "price_band": null,
+      "missing": []
+    },
+    {
+      "id": "2026-09-bench-mark-infotech-services",
+      "name": "Bench Mark Infotech Services Limited",
+      "type": "sme",
+      "status": "upcoming",
+      "dates": {
+        "open": "2026-09-25",
+        "close": "2026-09-29",
+        "open_as_given": "25-Sep-2026",
+        "close_as_given": "29-Sep-2026"
+      },
+      "price_band": "Rs.104 to Rs.110",
       "missing": []
     }
   ]

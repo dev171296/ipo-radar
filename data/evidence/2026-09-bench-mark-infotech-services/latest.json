@@ -1,0 +1,86 @@
+{
+ "ipo_id": "2026-09-bench-mark-infotech-services",
+ "built_at": "2026-09-22T07:52:24+00:00",
+ "name": "Bench Mark Infotech Services Limited",
+ "symbol": "BMISL",
+ "type": "sme",
+ "status": "upcoming",
+ "offer": {
+  "price_low": {
+   "value": 104.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.104 to Rs.110"
+  },
+  "price_high": {
+   "value": 110.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.104 to Rs.110"
+  },
+  "issue_size_shares": {
+   "value": 3858000.0,
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "issue_size_rs_million": {
+   "value": 424.38,
+   "source": "computed",
+   "confidence": "high",
+   "note": "shares × top of the price band"
+  },
+  "open_date": {
+   "value": "2026-09-25",
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "close_date": {
+   "value": "2026-09-29",
+   "source": "nse_calendar",
+   "confidence": "high"
+  }
+ },
+ "financials": {},
+ "valuation": {},
+ "cash": {},
+ "balance_sheet": {},
+ "derived": {},
+ "demand": {},
+ "documents": {},
+ "missing": [
+  {
+   "what": "three-year financials",
+   "why": "no abridged prospectus on file yet"
+  },
+  {
+   "what": "subscription",
+   "why": "the issue has not opened yet"
+  },
+  {
+   "what": "grey market premium",
+   "why": "no free source built yet"
+  },
+  {
+   "what": "anchor investor allotment",
+   "why": "not collected yet"
+  },
+  {
+   "what": "broker conviction",
+   "why": "not collected yet"
+  },
+  {
+   "what": "media coverage",
+   "why": "not collected yet"
+  },
+  {
+   "what": "retail attention",
+   "why": "not collected yet"
+  },
+  {
+   "what": "full prospectus",
+   "why": "not downloaded yet — will retry next run"
+  }
+ ],
+ "conflicts": [],
+ "observations": []
+}

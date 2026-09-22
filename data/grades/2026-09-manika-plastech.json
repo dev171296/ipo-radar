@@ -2,6 +2,111 @@
  "ipo_id": "2026-09-manika-plastech",
  "name": "Manika Plastech Limited",
  "symbol": "MANIKA",
- "graded_at": "2026-09-21T20:17:43+00:00",
- "status": "not listed yet"
+ "graded_at": "2026-09-22T08:21:24+00:00",
+ "status": "listed",
+ "listed_on": "2026-09-21",
+ "issue_price": 43.0,
+ "issue_price_note": "top of the price band — the price nearly every Indian IPO is finally set at",
+ "listing_open": 43.0,
+ "listing_close": 43.14,
+ "listing_gain_pct": 0.0,
+ "listing_day_close_pct": 0.33,
+ "checkpoints": {
+  "1 week": {
+   "due": "2026-09-28"
+  },
+  "1 month": {
+   "due": "2026-10-21"
+  },
+  "3 months": {
+   "due": "2026-12-21"
+  },
+  "6 months": {
+   "due": "2027-03-22"
+  },
+  "12 months": {
+   "due": "2027-09-21"
+  }
+ },
+ "predictions": {
+  "cutoff_utc": "20260921034500",
+  "score_taken_at": "20260920165646",
+  "fundamentals": null,
+  "call": {
+   "listing": {
+    "call": "APPLY",
+    "colour": "#2f7d32",
+    "score": 67.2,
+    "confidence": "low",
+    "why": "built from market demand — 50% of the deciding weight",
+    "based_on": [
+     "market demand"
+    ]
+   },
+   "longterm": {
+    "call": "NOT ENOUGH INFORMATION",
+    "colour": "#6b6862",
+    "score": null,
+    "confidence": "none",
+    "why": "only 0% of what decides the long-term call is available — no call is better than a guess dressed as one",
+    "based_on": []
+   },
+   "hard_stops": [],
+   "serious_findings": [],
+   "models_disagree": false
+  },
+  "models": {
+   "groq": {
+    "model": "qwen/qwen3.8-27b",
+    "answered_at": "20260917134233",
+    "listing_view": 65.0,
+    "longterm_view": 40.0,
+    "unsuitable_model": false
+   },
+   "gemini": {
+    "model": "gemini-flash-lite-latest",
+    "answered_at": "20260917075509",
+    "listing_view": 65.0,
+    "longterm_view": 40.0,
+    "unsuitable_model": false
+   }
+  }
+ },
+ "marks": {
+  "our_call": {
+   "listing": {
+    "said": "APPLY",
+    "right": false
+   },
+   "holding": {
+    "said": "NOT ENOUGH INFORMATION",
+    "right": null,
+    "due": "2026-12-21"
+   }
+  },
+  "groq": {
+   "model": "qwen/qwen3.8-27b",
+   "unsuitable_model": false,
+   "listing": {
+    "said": 65.0,
+    "right": false
+   },
+   "holding": {
+    "said": 40.0,
+    "right": null
+   }
+  },
+  "gemini": {
+   "model": "gemini-flash-lite-latest",
+   "unsuitable_model": false,
+   "listing": {
+    "said": 65.0,
+    "right": false
+   },
+   "holding": {
+    "said": 40.0,
+    "right": null
+   }
+  }
+ }
 }
