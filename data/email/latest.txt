@@ -1,14 +1,14 @@
-IPO RADAR — generated 2026-09-22 13:41 UTC
+IPO RADAR — generated 2026-09-22 17:45 UTC
 ============================================================
 Full dashboard: https://dev171296.github.io/ipo-radar/
 
 AT A GLANCE
 ------------------------------------------------------------
 Company                           Closes      Applying          Holding
-Adroit Industries (India) Limite  2026-09-25  APPLY SELECTIVELY APPLY
+Swastika Infra Limited            2026-09-25  APPLY SELECTIVELY WAIT FOR LISTING
 Axiom Gas Engineering Limited     2026-09-22  not enough info   not enough info
 Varmora Granito Limited           2026-09-24  not enough info   not enough info
-Swastika Infra Limited            2026-09-25  not enough info   WAIT FOR LISTING
+Adroit Industries (India) Limite  2026-09-25  not enough info   APPLY
 ArMee Infotech Limited            2026-09-25  not enough info   not enough info
 Coreintegra Consulting Services   2026-09-25  not enough info   not enough info
 Elevate Campuses Limited          2026-09-25  not enough info   not enough info
@@ -42,7 +42,7 @@ THE DETAIL
 ------------------------------------------------------------
 
 Adroit Industries (India) Limited
-  CALL: applying -> APPLY SELECTIVELY   |   holding -> APPLY
+  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> APPLY
   mainboard · 2026-09-23 to 2026-09-25 · Rs.126 to Rs.134
   Fundamentals: 70.5 (48% assessed)   Demand: None (0% assessed)
   groq: listing 45, long-term 55, confidence low
@@ -238,11 +238,11 @@ Steamhouse India Limited
   * owes more this year than it expects to collect: current ratio 0.36
 
 Swastika Infra Limited
-  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> WAIT FOR LISTING
+  CALL: applying -> APPLY SELECTIVELY   |   holding -> WAIT FOR LISTING
   mainboard · 2026-09-23 to 2026-09-25 · Rs.175 to Rs.185
   Fundamentals: 66.3 (60% assessed)   Demand: None (0% assessed)
-  groq: listing 35, long-term 45, confidence low
-  nvidia: listing 32, long-term 28, confidence medium
+  groq: listing 35, long-term 40, confidence low
+  nvidia: listing 45, long-term 30, confidence medium
   * very high revenue growth: 60.96% a year — scored just below the band beneath it, because a pre-IPO surge is as often a reason for the timing as a sign of quality
   * cash was consumed every year: operating cash flow [-965.21, -7653.52, -334.25]
 
