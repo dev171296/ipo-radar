@@ -1,0 +1,3 @@
+{"at": "2026-09-22T13:34:53+00:00", "event": "discovered", "ok": true, "detail": "Moneyview Limited", "source": "nse"}
+{"at": "2026-09-22T13:35:00+00:00", "event": "abridged_read", "ok": true, "detail": "14 pages, 8 parts", "source": "sebi"}
+{"at": "2026-09-22T13:36:20+00:00", "event": "full_read", "ok": true, "detail": "537 pages, 6 parts", "source": "sebi"}

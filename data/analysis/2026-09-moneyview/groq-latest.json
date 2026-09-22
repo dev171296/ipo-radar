@@ -1,0 +1,80 @@
+{
+ "ok": true,
+ "model": "qwen/qwen3.8-27b",
+ "answered_at": "2026-09-22T13:38:59+00:00",
+ "evidence_fingerprint": "53d2ce13a80874e1",
+ "prompt_chars": 7043,
+ "passages_supplied": {
+  "litigation": 8,
+  "governance": 8,
+  "business_quality": 6,
+  "risks": 3
+ },
+ "answer": {
+  "listing_view": {
+   "score": 45.0,
+   "reasoning": "The evidence is thin regarding demand, as the issue has not yet opened and no subscription or GMP data is available. While the price band is narrow (32-34), the absence of anchor investor details and broker conviction metrics prevents a confident assessment of initial trading momentum."
+  },
+  "longterm_view": {
+   "score": 40.0,
+   "reasoning": "The business faces intense competition from full-stack digital lending platforms, and recent financials show a significant swing to negative operating cash flow in the middle year of the provided series. The lack of balance sheet data (debt/liquidity) and ROE/ROCE metrics makes it impossible to verify the sustainability of the business model over the long term."
+  },
+  "governance": {
+   "score": 55.0,
+   "reasoning": "The prospectus states that no loans or advances in the nature of loans have been granted to promoters or related parties, which is a positive indicator. However, the shareholding of a deceased promoter member is still pending transfer, and the presence of corporate guarantees for subsidiary facilities introduces complexity."
+  },
+  "key_risks": [
+   {
+    "risk": "Intense Competition",
+    "why_it_matters": "The company explicitly states it faces intense competition from full-stack digital lending platforms and may fail to compete successfully.",
+    "citation": "[business, page 247]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Cash Flow Volatility",
+    "why_it_matters": "Operating cash flow swung from positive to significantly negative (-5426.44) in the middle year of the provided data, indicating potential instability in cash generation.",
+    "citation": "[cash, page N/A]",
+    "citation_verified": false
+   },
+   {
+    "risk": "Regulatory/Litigation",
+    "why_it_matters": "There is an ongoing legal challenge regarding a show cause notice from the Directorate of Enforcement, which could have financial or operational implications.",
+    "citation": "[litigation, page 433]",
+    "citation_verified": true
+   }
+  ],
+  "answers": [
+   {
+    "question": "What is the split between fresh issue and offer for sale?",
+    "answer": "Not answerable from what I was given",
+    "citation": "not answerable from what I was given",
+    "citation_verified": false
+   },
+   {
+    "question": "What is the company's Return on Equity (ROE)?",
+    "answer": "Not answerable from what I was given",
+    "citation": "not answerable from what I was given",
+    "citation_verified": false
+   },
+   {
+    "question": "What is the current debt level or liquidity position?",
+    "answer": "Not answerable from what I was given",
+    "citation": "not answerable from what I was given",
+    "citation_verified": false
+   },
+   {
+    "question": "Who are the anchor investors?",
+    "answer": "Not answerable from what I was given",
+    "citation": "not answerable from what I was given",
+    "citation_verified": false
+   }
+  ],
+  "confidence": "low",
+  "what_would_change_my_mind": "Providing the balance sheet to assess leverage and liquidity, or the three-year financial statements to verify the trend in profitability and cash flow stability, would significantly alter the long-term view.",
+  "citation_check": {
+   "claims_checked": 7,
+   "citations_verified": 2,
+   "citations_not_matching_what_we_sent": 1
+  }
+ }
+}

@@ -1,0 +1,197 @@
+{
+ "ipo_id": "2026-09-moneyview",
+ "built_at": "2026-09-22T13:36:25+00:00",
+ "name": "Moneyview Limited",
+ "symbol": "MONEYVIEW",
+ "type": "mainboard",
+ "status": "upcoming",
+ "offer": {
+  "price_low": {
+   "value": 32.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.32 to Rs.34"
+  },
+  "price_high": {
+   "value": 34.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.32 to Rs.34"
+  },
+  "issue_size_shares": {
+   "value": 334869200.0,
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "issue_size_rs_million": {
+   "value": 11385.55,
+   "source": "computed",
+   "confidence": "high",
+   "note": "shares × top of the price band"
+  },
+  "open_date": {
+   "value": "2026-09-24",
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "close_date": {
+   "value": "2026-09-28",
+   "source": "nse_calendar",
+   "confidence": "high"
+  }
+ },
+ "financials": {},
+ "valuation": {
+  "eps_basic_latest": {
+   "value": 1.6,
+   "source": "full prospectus",
+   "confidence": "high",
+   "page": 148,
+   "raw": "fiscal 2026",
+   "note": "checked: our rows reproduce the document's own weighted average of 1.53"
+  },
+  "eps_weighted_average": {
+   "value": 1.53,
+   "source": "full prospectus",
+   "confidence": "high",
+   "page": 148
+  }
+ },
+ "cash": {
+  "operating_cash_flow": {
+   "value": [
+    1171.15,
+    -5426.44,
+    9509.02
+   ],
+   "source": "full prospectus (promoters chapter)",
+   "confidence": "high",
+   "page": 310,
+   "raw": "Net cash flow generated from/ (used in) operating activities (A) 1,171.15 (5,426.44) (9,509.02",
+   "note": "newest year first"
+  },
+  "free_cash_flow": {
+   "value": [
+    1132.83,
+    -5428.89,
+    9567.2
+   ],
+   "source": "computed",
+   "confidence": "high",
+   "note": "operating cash flow after paying for equipment"
+  },
+  "negative_in_all_years": {
+   "value": false,
+   "source": "computed",
+   "confidence": "high"
+  },
+  "negative_in_latest_year": {
+   "value": false,
+   "source": "computed",
+   "confidence": "high"
+  }
+ },
+ "balance_sheet": {},
+ "derived": {},
+ "demand": {},
+ "documents": {
+  "abridged": {
+   "pages": 14,
+   "url": "https://www.sebi.gov.in/sebi_data/commondocs/sep-2026/Moneyview%20Limited%20-%20Abridged%20Prospectus_p.pdf",
+   "fields": [
+    "cin",
+    "financials",
+    "lead_managers",
+    "objects",
+    "price_band",
+    "promoters",
+    "registrar",
+    "risk_factors"
+   ],
+   "read_at": "2026-09-22T13:35:00+00:00"
+  },
+  "full": {
+   "pages": 537,
+   "url": "https://www.sebi.gov.in/sebi_data/attachdocs/sep-2026/1789975400167.pdf",
+   "chapters": {
+    "capital_structure": [
+     112,
+     138
+    ],
+    "objects": [
+     139,
+     147
+    ],
+    "basis_for_price": [
+     148,
+     211
+    ],
+    "business": [
+     212,
+     309
+    ],
+    "promoters": [
+     310,
+     432
+    ],
+    "litigation": [
+     433,
+     537
+    ]
+   },
+   "read_at": "2026-09-22T13:36:20+00:00"
+  }
+ },
+ "missing": [
+  {
+   "what": "fresh issue vs offer for sale split",
+   "why": "could not be read from the offer details table"
+  },
+  {
+   "what": "three-year financials",
+   "why": "abridged prospectus read, but no three-figure rows matched"
+  },
+  {
+   "what": "ROE",
+   "why": "this document does not print it"
+  },
+  {
+   "what": "ROCE",
+   "why": "this document does not print it"
+  },
+  {
+   "what": "valuation comparison",
+   "why": "no peer comparison available in this chapter"
+  },
+  {
+   "what": "balance sheet",
+   "why": "found the chapter but could not read a debt or liquidity figure from it"
+  },
+  {
+   "what": "subscription",
+   "why": "the issue has not opened yet"
+  },
+  {
+   "what": "grey market premium",
+   "why": "no free source built yet"
+  },
+  {
+   "what": "anchor investor allotment",
+   "why": "not collected yet"
+  },
+  {
+   "what": "broker conviction",
+   "why": "not collected yet"
+  },
+  {
+   "what": "media coverage",
+   "why": "not collected yet"
+  },
+  {
+   "what": "retail attention",
+   "why": "not collected yet"
+  }
+ ],
+ "conflicts": [],
+ "observations": []
+}

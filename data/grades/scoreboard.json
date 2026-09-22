@@ -1,5 +1,5 @@
 {
- "built_at": "2026-09-22T10:15:38+00:00",
+ "built_at": "2026-09-22T13:41:10+00:00",
  "listed_ipos": 12,
  "base_rate_pct": 67,
  "average_listing_gain_pct": 11.4,
@@ -309,8 +309,26 @@
    "right": null
   },
   {
+   "ipo_id": "2026-09-moneyview",
+   "name": "Moneyview Limited",
+   "status": "issue still open",
+   "listed_on": null,
+   "listing_gain_pct": null,
+   "our_listing_call": null,
+   "right": null
+  },
+  {
    "ipo_id": "2026-09-bench-mark-infotech-services",
    "name": "Bench Mark Infotech Services Limited",
+   "status": "issue still open",
+   "listed_on": null,
+   "listing_gain_pct": null,
+   "our_listing_call": null,
+   "right": null
+  },
+  {
+   "ipo_id": "2026-09-himalayan-solar",
+   "name": "Himalayan Solar Limited",
    "status": "issue still open",
    "listed_on": null,
    "listing_gain_pct": null,
