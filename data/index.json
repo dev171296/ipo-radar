@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-22T17:43:13+00:00",
-  "count": 32,
+  "generated_at": "2026-09-23T07:53:57+00:00",
+  "count": 33,
   "ipos": [
     {
       "id": "2026-09-adroit-industries",
       "name": "Adroit Industries (India) Limited",
       "type": "mainboard",
-      "status": "upcoming",
+      "status": "open",
       "dates": {
         "open": "2026-09-23",
         "close": "2026-09-25",
@@ -20,7 +20,7 @@
       "id": "2026-09-armee-infotech",
       "name": "ArMee Infotech Limited",
       "type": "mainboard",
-      "status": "upcoming",
+      "status": "open",
       "dates": {
         "open": "2026-09-23",
         "close": "2026-09-25",
@@ -76,21 +76,21 @@
       "id": "2026-09-coreintegra-consulting-services",
       "name": "Coreintegra Consulting Services Limited",
       "type": "sme",
-      "status": "upcoming",
+      "status": "open",
       "dates": {
         "open": "2026-09-23",
         "close": "2026-09-25",
         "open_as_given": "23-Sep-2026",
         "close_as_given": "25-Sep-2026"
       },
-      "price_band": "Rs.74 to Rs.78",
+      "price_band": null,
       "missing": []
     },
     {
       "id": "2026-09-elevate-campuses",
       "name": "Elevate Campuses Limited",
       "type": "mainboard",
-      "status": "upcoming",
+      "status": "open",
       "dates": {
         "open": "2026-09-23",
         "close": "2026-09-25",
@@ -272,14 +272,14 @@
       "id": "2026-09-pooja-logistics",
       "name": "Pooja Logistics Limited",
       "type": "sme",
-      "status": "upcoming",
+      "status": "open",
       "dates": {
         "open": "2026-09-23",
         "close": "2026-09-25",
         "open_as_given": "23-Sep-2026",
         "close_as_given": "25-Sep-2026"
       },
-      "price_band": "Rs.109 to Rs.115",
+      "price_band": null,
       "missing": []
     },
     {
@@ -398,7 +398,7 @@
       "id": "2026-09-swastika-infra",
       "name": "Swastika Infra Limited",
       "type": "mainboard",
-      "status": "upcoming",
+      "status": "open",
       "dates": {
         "open": "2026-09-23",
         "close": "2026-09-25",
@@ -448,6 +448,20 @@
         "close_as_given": "11-Sep-2026"
       },
       "price_band": null,
+      "missing": []
+    },
+    {
+      "id": "2026-09-a-one-steels",
+      "name": "A-One Steels India Limited",
+      "type": "mainboard",
+      "status": "upcoming",
+      "dates": {
+        "open": "2026-09-24",
+        "close": "2026-09-28",
+        "open_as_given": "24-Sep-2026",
+        "close_as_given": "28-Sep-2026"
+      },
+      "price_band": "Rs.385 to Rs.405",
       "missing": []
     }
   ]

@@ -1,5 +1,5 @@
 {
- "built_at": "2026-09-22T17:45:19+00:00",
+ "built_at": "2026-09-23T08:02:10+00:00",
  "listed_ipos": 12,
  "base_rate_pct": 67,
  "average_listing_gain_pct": 11.4,
@@ -239,7 +239,7 @@
   {
    "ipo_id": "2026-09-axiom-gas-engineering",
    "name": "Axiom Gas Engineering Limited",
-   "status": "issue still open",
+   "status": "not listed yet",
    "listed_on": null,
    "listing_gain_pct": null,
    "our_listing_call": null,
@@ -302,6 +302,15 @@
   {
    "ipo_id": "2026-09-swastika-infra",
    "name": "Swastika Infra Limited",
+   "status": "issue still open",
+   "listed_on": null,
+   "listing_gain_pct": null,
+   "our_listing_call": null,
+   "right": null
+  },
+  {
+   "ipo_id": "2026-09-a-one-steels",
+   "name": "A-One Steels India Limited",
    "status": "issue still open",
    "listed_on": null,
    "listing_gain_pct": null,

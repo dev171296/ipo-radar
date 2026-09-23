@@ -1,0 +1,68 @@
+{
+ "ok": true,
+ "model": "qwen/qwen3.8-27b",
+ "answered_at": "2026-09-23T08:00:51+00:00",
+ "evidence_fingerprint": "938090d067100cba",
+ "prompt_chars": 9207,
+ "passages_supplied": {
+  "litigation": 8,
+  "governance": 8,
+  "business_quality": 8,
+  "risks": 2
+ },
+ "answer": {
+  "listing_view": {
+   "score": 35.0,
+   "reasoning": "The IPO is priced at a significant discount to the stated benchmark PE of 45.2x (trading at ~21.9x), which suggests potential demand if the market accepts the valuation logic. However, the absence of any peer data, subscription metrics, or grey market premium makes it impossible to gauge actual investor appetite, leaving the listing pop entirely speculative."
+  },
+  "longterm_view": {
+   "score": 45.0,
+   "reasoning": "While revenue and EBITDA margins show improvement, the business is weighed down by a high debt load (D/E ~1.17) and deteriorating working capital efficiency, with receivable days rising to 58.5 days. The low cash conversion ratio (0.21x EBITDA) indicates that reported profits are not translating into cash, raising concerns about the quality of earnings and future debt servicing capacity."
+  },
+  "governance": {
+   "score": 40.0,
+   "reasoning": "The prospectus reveals a pattern of regulatory non-compliance, including a show cause notice for failing to establish a Vigil Mechanism for three consecutive years and multiple tax and GST disputes. These issues suggest weak internal controls and a history of friction with regulatory bodies, which is a red flag for minority shareholders."
+  },
+  "key_risks": [
+   {
+    "risk": "High Debt Load",
+    "why_it_matters": "With total debt of ₹10,109.38 million and a D/E ratio of 1.17, the company faces significant interest burden and refinancing risk, especially given the low cash conversion.",
+    "citation": "[balance_sheet, page N/A]",
+    "citation_verified": false
+   },
+   {
+    "risk": "Deteriorating Working Capital",
+    "why_it_matters": "Receivable days have increased to 58.5 days, indicating slower collections which ties up cash and increases reliance on external borrowing.",
+    "citation": "[balance_sheet, page N/A]",
+    "citation_verified": false
+   },
+   {
+    "risk": "Regulatory Non-Compliance",
+    "why_it_matters": "The company has faced notices for non-disclosure of the Vigil Mechanism and multiple tax/GST disputes, signaling potential governance weaknesses and legal liabilities.",
+    "citation": "[litigation, page 627]",
+    "citation_verified": true
+   }
+  ],
+  "answers": [
+   {
+    "question": "is the peer set fairly chosen, and are the peers themselves expensive rather than this being cheap?",
+    "answer": "Not answerable from what I was given",
+    "citation": "not answerable from what I was given",
+    "citation_verified": false
+   },
+   {
+    "question": "check receivables and inventory against the sales growth",
+    "answer": "Receivable days have increased from 46.1 to 58.5 days over the three-year period, while revenue grew at a CAGR of 4.02%. This indicates that receivables are growing faster than sales, suggesting a deterioration in collection efficiency and working capital management. Inventory data is not provided in the verified figures, so a full comparison cannot be made.",
+    "citation": "[balance_sheet, page N/A]",
+    "citation_verified": false
+   }
+  ],
+  "confidence": "low",
+  "what_would_change_my_mind": "Evidence of strong cash flow generation in the next quarter or a significant reduction in debt would improve the long-term view. Confirmation of a robust peer set with higher valuations would support the listing price.",
+  "citation_check": {
+   "claims_checked": 5,
+   "citations_verified": 1,
+   "citations_not_matching_what_we_sent": 3
+  }
+ }
+}

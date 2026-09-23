@@ -1,0 +1,74 @@
+{
+ "ok": true,
+ "model": "qwen/qwen3.8-27b",
+ "answered_at": "2026-09-23T07:58:25+00:00",
+ "evidence_fingerprint": "8593503f4be384bb",
+ "prompt_chars": 8738,
+ "passages_supplied": {
+  "litigation": 8,
+  "governance": 8,
+  "business_quality": 8,
+  "risks": 5
+ },
+ "answer": {
+  "listing_view": {
+   "score": 15.0,
+   "reasoning": "The subscription level of 0.28x at the start of the offer indicates severe lack of initial demand, suggesting the price band is likely too high for the current market sentiment. With no anchor investor data or GMP available to counterbalance this weak opening signal, the probability of a listing pop is low and the risk of trading below issue price is high."
+  },
+  "longterm_view": {
+   "score": 35.0,
+   "reasoning": "While revenue growth is positive, the EBITDA margin has compressed significantly from 7.01% to 5.42%, indicating deteriorating operational efficiency or pricing power. The balance sheet is fragile, with a current ratio of 0.14 and a sharp spike in debt-to-equity to 0.96, suggesting the company is leveraging aggressively to fund operations rather than having a strong cash generation profile."
+  },
+  "governance": {
+   "score": 40.0,
+   "reasoning": "The prospectus discloses substantial related party transactions and guarantees, with bank guarantees increasing from ₹4024.28 Lakhs to ₹7,453.38 Lakhs over two years. While no material regulatory penalties are reported, the heavy reliance on related party structures and the lack of transparency on the specific nature of these transactions warrant caution."
+  },
+  "key_risks": [
+   {
+    "risk": "Liquidity Crisis",
+    "why_it_matters": "A current ratio of 0.14 means the company has only 14 paise in current assets for every rupee of current liabilities, creating a high risk of default on short-term obligations.",
+    "citation": "[derived, balance sheet]",
+    "citation_verified": false
+   },
+   {
+    "risk": "Margin Erosion",
+    "why_it_matters": "EBITDA margins have fallen from 7.01% to 5.42% over two years, suggesting that revenue growth is not translating into proportional profitability, possibly due to cost inflation or competitive pricing pressure.",
+    "citation": "[derived, financials]",
+    "citation_verified": false
+   },
+   {
+    "risk": "Debt Spike",
+    "why_it_matters": "Total debt has increased nearly 6x from ₹2,725.65 million to ₹17,436.07 million, significantly increasing financial leverage and interest burden.",
+    "citation": "[derived, balance sheet]",
+    "citation_verified": false
+   },
+   {
+    "risk": "Client Concentration",
+    "why_it_matters": "Significant revenue is derived from Government/PSU clients, which can lead to payment delays and revenue volatility due to policy changes or budget cycles.",
+    "citation": "[business, page 214]",
+    "citation_verified": true
+   }
+  ],
+  "answers": [
+   {
+    "question": "is the peer set fairly chosen, and are the peers themselves expensive rather than this being cheap?",
+    "answer": "Not answerable from what I was given. The data indicates 'peers_verified: 0', meaning no peer rows were parsed, so I cannot assess the fairness of the peer selection or their relative valuations.",
+    "citation": "not answerable from what I was given",
+    "citation_verified": false
+   },
+   {
+    "question": "how is the shortfall funded?",
+    "answer": "The prospectus does not explicitly state how the working capital shortfall (implied by the low current ratio) is funded, but the significant increase in total debt from ₹2,725.65 million to ₹17,436.07 million suggests that the shortfall is primarily funded through increased borrowings.",
+    "citation": "[derived, balance sheet]",
+    "citation_verified": false
+   }
+  ],
+  "confidence": "low",
+  "what_would_change_my_mind": "Evidence of a strong anchor investor allotment or a significant GMP would change the listing view. A detailed cash flow statement showing positive operating cash flow despite the low current ratio would change the long-term view.",
+  "citation_check": {
+   "claims_checked": 6,
+   "citations_verified": 1,
+   "citations_not_matching_what_we_sent": 4
+  }
+ }
+}

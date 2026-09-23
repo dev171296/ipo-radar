@@ -1,0 +1,80 @@
+{
+ "ok": true,
+ "model": "moonshotai/kimi-k3",
+ "answered_at": "2026-09-23T07:59:22+00:00",
+ "evidence_fingerprint": "8593503f4be384bb",
+ "prompt_chars": 8738,
+ "passages_supplied": {
+  "litigation": 8,
+  "governance": 8,
+  "business_quality": 8,
+  "risks": 5
+ },
+ "answer": {
+  "listing_view": {
+   "score": 30.0,
+   "reasoning": "Subscription of ~0.28 times on the first day, with no anchor, GMP or retail data collected, indicates weak early demand for a mainboard issue priced at barely a third of its claimed peer average (19.6x vs 70.6x), which itself is a signal the market does not believe the comparison. Thin demand plus no OFS/fresh-issue visibility means I cannot confirm whether this is a seller-heavy flotation, but what I can see reads like an overpriced or mistrusted offer, not a hot one."
+  },
+  "longterm_view": {
+   "score": 38.0,
+   "reasoning": "Revenue compounded at ~17% over two years, but the latest year's growth slowed to 6.3% and EBITDA margin collapsed back to 5.4% after a one-off 7% year, so profitability is cyclical rather than compounding. The balance sheet is the real problem: current ratio of 0.14 and debt quadrupled to ₹17.4bn in one year while net worth grew far slower — a business funded by promises to pay later, concentrated in Government/PSU projects with PBG dependence it itself flags as a risk [business, page 212][business, page 214]."
+  },
+  "governance": {
+   "score": 40.0,
+   "reasoning": "Related-party guarantees outstanding rose from ~₹40.2 crore to ~₹74.5 crore in two years, and the company leans on a board-set materiality policy to scope its litigation disclosures — boilerplate 'no material SEBI action' language rather than demonstrated cleanliness [promoters, page 329][litigation, page 387]."
+  },
+  "key_risks": [
+   {
+    "risk": "Liquidity/leverage strain",
+    "why_it_matters": "A 0.14 current ratio with total debt up 3.6x in a year means the company is structurally reliant on rolling short-term funding, and any receivable delay from PSU clients bites immediately.",
+    "citation": "[business, page 212]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Margin/security dependence for performance bank guarantees",
+    "why_it_matters": "The company admits inability to maintain PBG margins could stop it winning new orders — the debt spike is likely collateral-funded, linking growth directly to its worst balance-sheet year.",
+    "citation": "[business, page 212]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Government/PSU customer concentration",
+    "why_it_matters": "A significant share of projects are Government/PSU, so receivable cycles and budget delays sit outside the company's control and directly feed the working-capital strain already visible.",
+    "citation": "[business, page 214]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Rising related-party guarantees",
+    "why_it_matters": "Guarantees nearly doubled in the latest year, expanding off-balance-sheet exposure to promoter-linked entities just as leverage peaked.",
+    "citation": "[promoters, page 329]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Margin volatility",
+    "why_it_matters": "EBITDA margin swung from 7.0% to 4.5% to 5.4%, so the 'cheap' 19.6x P/E may rest on a trough-margin year that could repeat.",
+    "citation": "[business, page 226]",
+    "citation_verified": true
+   }
+  ],
+  "answers": [
+   {
+    "question": "is the peer set fairly chosen, and are the peers themselves expensive rather than this being cheap?",
+    "answer": "Not answerable properly: zero peer rows were parsed, so I can only see a stated benchmark average P/E of 70.63 against the company's own 19.6x — a 3.6x discount that large usually means either the peers are expensive, the member selection flatters the average, or the market would discount this issuer's balance sheet anyway. The document itself leaves the band-to-EPS multiple blank (filed pre-pricing), and I cannot test fairness without the composition of that benchmark.",
+    "citation": "not answerable from what I was given",
+    "citation_verified": false
+   },
+   {
+    "question": "how is the shortfall funded?",
+    "answer": "I cannot tell directly — there is no cash flow statement and no objects-of-issue extract covering a funding shortfall. What the figures do show is that the company closed the latest year with ₹17.4bn of borrowings against a 0.14 current ratio, so in practice any shortfall is being funded by short-term borrowings and stretched working capital, not internal accruals I can evidence. The PBG-margin risk disclosure reinforces that funding headroom is tied to banks' willingness to extend security.",
+    "citation": "[business, page 212]",
+    "citation_verified": true
+   }
+  ],
+  "confidence": "low",
+  "what_would_change_my_mind": "A cash flow statement showing operating cash conversion and the fresh-issue vs OFS split: if proceeds demonstrably deleverage the balance sheet and cash generation matches EBITDA, the 19.6x multiple and rising order book could justify a materially higher long-term score.",
+  "citation_check": {
+   "claims_checked": 7,
+   "citations_verified": 6,
+   "citations_not_matching_what_we_sent": 0
+  }
+ }
+}

@@ -1,0 +1,368 @@
+{
+ "ipo_id": "2026-09-a-one-steels",
+ "built_at": "2026-09-23T07:56:39+00:00",
+ "name": "A-One Steels India Limited",
+ "symbol": "AONESTEELS",
+ "type": "mainboard",
+ "status": "upcoming",
+ "offer": {
+  "price_low": {
+   "value": 385.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.385 to Rs.405"
+  },
+  "price_high": {
+   "value": 405.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.385 to Rs.405"
+  },
+  "issue_size_shares": {
+   "value": 10525168.0,
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "issue_size_rs_million": {
+   "value": 4262.69,
+   "source": "computed",
+   "confidence": "high",
+   "note": "shares × top of the price band"
+  },
+  "open_date": {
+   "value": "2026-09-24",
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "close_date": {
+   "value": "2026-09-28",
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "fresh_issue_rs_million": {
+   "value": 3550.0,
+   "source": "abridged prospectus",
+   "confidence": "low",
+   "page": 1,
+   "raw": "fresh issue size offer for sale size total offer size eligibility and reservations fresh issue and offer for sale up to [●] equity shares of face value of ₹10 each aggregating up to ₹35,500 lakh",
+   "note": "read from a table flattened to text — verify before relying on it"
+  }
+ },
+ "financials": {
+  "revenue": {
+   "value": [
+    414856.74,
+    354178.09,
+    383421.25
+   ],
+   "source": "abridged prospectus",
+   "confidence": "high",
+   "page": 9,
+   "raw": "Revenue from Operations 4,14,856.74 3,54,178.09 3,83,421.25"
+  },
+  "pat": {
+   "value": [
+    12740.82,
+    771.05,
+    3891.37
+   ],
+   "source": "abridged prospectus",
+   "confidence": "high",
+   "page": 9,
+   "raw": "Profit for the period/year 12,740.82 771.05 3,891.37"
+  },
+  "ebitda": {
+   "value": [
+    30363.64,
+    17405.54,
+    17218.8
+   ],
+   "source": "abridged prospectus",
+   "confidence": "high",
+   "page": 9,
+   "raw": "EBITDA (4) 30,363.64 17,405.54 17,218.80"
+  },
+  "roce_pct": {
+   "value": [
+    12.86,
+    7.03,
+    8.67
+   ],
+   "source": "abridged prospectus",
+   "confidence": "high",
+   "page": 9,
+   "raw": "ROCE (%) (14) 12.86 7.03 8.67"
+  }
+ },
+ "valuation": {
+  "eps_basic_latest": {
+   "value": 18.47,
+   "source": "full prospectus",
+   "confidence": "high",
+   "page": 219,
+   "raw": "fiscal 2026",
+   "note": "checked: our rows reproduce the document's own weighted average of 10.76"
+  },
+  "eps_weighted_average": {
+   "value": 10.76,
+   "source": "full prospectus",
+   "confidence": "high",
+   "page": 219
+  },
+  "pe_at_cap_price": {
+   "value": 21.93,
+   "source": "computed",
+   "confidence": "high",
+   "page": 219,
+   "note": "top of the NSE price band divided by the latest basic EPS — the document itself leaves this blank, because the band was not fixed when it was filed"
+  },
+  "benchmark_pe": {
+   "value": 45.2,
+   "source": "full prospectus",
+   "confidence": "low",
+   "page": 219,
+   "note": "the average stated in the document"
+  },
+  "vs_benchmark": {
+   "value": 0.485,
+   "source": "computed",
+   "confidence": "high",
+   "page": 219,
+   "raw": "asking 21.93× earnings against 45.2× (the average stated in the document) — a 51% discount"
+  },
+  "peers_verified": {
+   "value": 0,
+   "source": "full prospectus",
+   "confidence": "high",
+   "page": 219,
+   "note": "0 peer row(s) parsed"
+  }
+ },
+ "cash": {
+  "operating_cash_flow": {
+   "value": [
+    6279.56,
+    10896.34,
+    32539.75
+   ],
+   "source": "full prospectus (promoters chapter)",
+   "confidence": "high",
+   "page": 452,
+   "raw": "Net cash flow generated from/(used in) operating activities (A) 6,279.56 10,896.34 32,539.75",
+   "note": "newest year first"
+  },
+  "conversion_vs_ebitda": {
+   "value": 0.207,
+   "source": "computed",
+   "confidence": "high",
+   "note": "1.0 means the reported profit arrived as cash"
+  },
+  "conversion_vs_pat": {
+   "value": 0.493,
+   "source": "computed",
+   "confidence": "high",
+   "note": "1.0 means the reported profit arrived as cash"
+  },
+  "negative_in_all_years": {
+   "value": false,
+   "source": "computed",
+   "confidence": "high"
+  },
+  "negative_in_latest_year": {
+   "value": false,
+   "source": "computed",
+   "confidence": "high"
+  }
+ },
+ "balance_sheet": {
+  "debt_to_equity": {
+   "value": [
+    1.17,
+    1.34,
+    2.34
+   ],
+   "source": "full prospectus (basis_for_price, promoters)",
+   "confidence": "high",
+   "page": 219,
+   "note": "borrowings ÷ what the owners have in it — printed in the document"
+  },
+  "current_ratio": {
+   "value": [
+    1.34,
+    1.27,
+    1.13
+   ],
+   "source": "full prospectus (basis_for_price, promoters)",
+   "confidence": "high",
+   "page": 219,
+   "note": "money due in within a year ÷ money due out — printed in the document"
+  },
+  "receivable_days": {
+   "value": [
+    58.5,
+    45.1,
+    46.1
+   ],
+   "source": "full prospectus (basis_for_price, promoters)",
+   "confidence": "high",
+   "page": 219,
+   "note": "how long customers take to pay"
+  },
+  "total_debt": {
+   "value": [
+    101093.76,
+    96366.89,
+    104252.88
+   ],
+   "source": "full prospectus (basis_for_price, promoters)",
+   "confidence": "high",
+   "page": 219,
+   "note": "borrowings, newest year first"
+  },
+  "net_worth": {
+   "value": [
+    81952.16,
+    67663.1,
+    42179.07
+   ],
+   "source": "full prospectus (basis_for_price, promoters)",
+   "confidence": "high",
+   "page": 219,
+   "note": "the owners' stake, newest year first"
+  }
+ },
+ "derived": {
+  "revenue_cagr_2y_pct": {
+   "value": 4.02,
+   "source": "computed",
+   "confidence": "high",
+   "note": "two years of compounding, newest over oldest"
+  },
+  "revenue_growth_latest_pct": {
+   "value": 17.13,
+   "source": "computed",
+   "confidence": "high"
+  },
+  "pat_cagr_2y_pct": {
+   "value": 80.95,
+   "source": "computed",
+   "confidence": "high"
+  },
+  "pat_margin_pct": {
+   "value": [
+    3.07,
+    0.22,
+    1.01
+   ],
+   "source": "computed",
+   "confidence": "high",
+   "note": "profit as a share of sales, newest first"
+  },
+  "ebitda_margin_pct": {
+   "value": [
+    7.32,
+    4.91,
+    4.49
+   ],
+   "source": "computed",
+   "confidence": "high"
+  },
+  "roce_pct_latest": {
+   "value": 12.86,
+   "source": "abridged prospectus",
+   "confidence": "high",
+   "page": 9
+  },
+  "roce_pct_direction": {
+   "value": "improving",
+   "source": "computed",
+   "confidence": "high"
+  }
+ },
+ "demand": {},
+ "documents": {
+  "abridged": {
+   "pages": 13,
+   "url": "https://www.sebi.gov.in/sebi_data/commondocs/sep-2026/A%20One%20Steel%20Limited_p.pdf",
+   "fields": [
+    "cin",
+    "financials",
+    "lead_managers",
+    "objects",
+    "offer_details",
+    "price_band",
+    "promoters",
+    "registrar",
+    "risk_factors"
+   ],
+   "read_at": "2026-09-23T07:54:04+00:00"
+  },
+  "full": {
+   "pages": 807,
+   "url": "https://www.sebi.gov.in/sebi_data/attachdocs/sep-2026/1790051681404.pdf",
+   "chapters": {
+    "capital_structure": [
+     186,
+     209
+    ],
+    "objects": [
+     210,
+     218
+    ],
+    "basis_for_price": [
+     219,
+     326
+    ],
+    "business": [
+     327,
+     451
+    ],
+    "promoters": [
+     452,
+     598
+    ],
+    "related_party": [
+     599,
+     624
+    ],
+    "litigation": [
+     625,
+     807
+    ]
+   },
+   "read_at": "2026-09-23T07:54:46+00:00"
+  }
+ },
+ "missing": [
+  {
+   "what": "ROE",
+   "why": "this document does not print it"
+  },
+  {
+   "what": "subscription",
+   "why": "the issue has not opened yet"
+  },
+  {
+   "what": "grey market premium",
+   "why": "no free source built yet"
+  },
+  {
+   "what": "anchor investor allotment",
+   "why": "not collected yet"
+  },
+  {
+   "what": "broker conviction",
+   "why": "not collected yet"
+  },
+  {
+   "what": "media coverage",
+   "why": "not collected yet"
+  },
+  {
+   "what": "retail attention",
+   "why": "not collected yet"
+  }
+ ],
+ "conflicts": [],
+ "observations": []
+}

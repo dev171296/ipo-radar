@@ -1,0 +1,137 @@
+{
+ "ipo_id": "2026-09-a-one-steels",
+ "name": "A-One Steels India Limited",
+ "scored_at": "2026-09-23T07:56:40+00:00",
+ "built_from_bundle": "2026-09-23T07:56:39+00:00",
+ "fundamentals": {
+  "score": 58.9,
+  "withheld": null,
+  "points_earned": 51.83,
+  "points_assessed": 88,
+  "coverage_pct": 88,
+  "components": [
+   {
+    "component": "valuation_vs_peers",
+    "weight": 18,
+    "points": 15.3,
+    "basis": "21.93× earnings vs 45.2×, against the document's stated average (unverified)"
+   },
+   {
+    "component": "growth_quality",
+    "weight": 14,
+    "points": 4.2,
+    "basis": "revenue CAGR 4.02% a year"
+   },
+   {
+    "component": "cash_flow_quality",
+    "weight": 14,
+    "points": 2.1,
+    "basis": "cash conversion 0.21× of EBITDA"
+   },
+   {
+    "component": "profitability",
+    "weight": 12,
+    "points": 6.48,
+    "basis": "latest profit margin 3.07%, widening"
+   },
+   {
+    "component": "balance_sheet",
+    "weight": 10,
+    "points": 5.25,
+    "basis": "debt-to-equity 1.17; current ratio 1.34"
+   },
+   {
+    "component": "issue_structure",
+    "weight": 10,
+    "points": 10.0,
+    "basis": "83% of the issue is fresh money to the company"
+   },
+   {
+    "component": "filing_hygiene",
+    "weight": 10,
+    "points": 8.5,
+    "basis": "summary form read; 807-page prospectus read; no contradictions"
+   }
+  ],
+  "not_assessed": [
+   {
+    "component": "promoter_governance",
+    "weight": 12,
+    "why": "not built yet"
+   }
+  ]
+ },
+ "demand": {
+  "score": null,
+  "withheld": null,
+  "points_earned": 0.0,
+  "points_assessed": 0,
+  "coverage_pct": 0,
+  "components": [],
+  "not_assessed": [
+   {
+    "component": "subscription_level",
+    "weight": 26,
+    "why": "no subscription figure yet"
+   },
+   {
+    "component": "subscription_velocity",
+    "weight": 14,
+    "why": "need at least two readings to see a rate"
+   },
+   {
+    "component": "gmp_level",
+    "weight": 12,
+    "why": "not built yet"
+   },
+   {
+    "component": "gmp_trend",
+    "weight": 10,
+    "why": "not built yet"
+   },
+   {
+    "component": "anchor_quality",
+    "weight": 12,
+    "why": "not built yet"
+   },
+   {
+    "component": "broker_conviction",
+    "weight": 10,
+    "why": "not built yet"
+   },
+   {
+    "component": "media_coverage",
+    "weight": 8,
+    "why": "not built yet"
+   },
+   {
+    "component": "retail_attention",
+    "weight": 8,
+    "why": "not built yet"
+   }
+  ]
+ },
+ "flags": [
+  {
+   "flag": "priced far below its stated peer group",
+   "detail": "21.93× against 45.2× — a 52% discount",
+   "for_ai": "is the peer set fairly chosen, and are the peers themselves expensive rather than this being cheap?"
+  },
+  {
+   "flag": "profit is not turning into cash",
+   "detail": "only 21% of EBITDA came through as cash",
+   "for_ai": "check receivables and inventory against the sales growth"
+  }
+ ],
+ "vetoes": {
+  "triggered": [],
+  "not_tested": [
+   "qualified or adverse audit opinion — needs the prospectus chapters read",
+   "SEBI or criminal proceedings against the promoters — needs the prospectus chapters read",
+   "more than half of revenue from one related party — needs the prospectus chapters read"
+  ]
+ },
+ "listing_score_quant_only": null,
+ "longterm_score_quant_only": 58.9,
+ "status": "quant only — the AI block has not been built, so these are not final verdicts"
+}

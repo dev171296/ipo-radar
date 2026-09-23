@@ -1,21 +1,29 @@
 {
  "listing": {
-  "call": "NOT ENOUGH INFORMATION",
-  "colour": "#6b6862",
-  "score": null,
-  "confidence": "none",
-  "why": "only 0% of what decides the listing call is available — no call is better than a guess dressed as one",
-  "based_on": []
+  "call": "WAIT FOR LISTING",
+  "colour": "#b25b1a",
+  "score": 48.9,
+  "confidence": "low",
+  "why": "built from our fundamentals, the two AI readings — 50% of the deciding weight",
+  "based_on": [
+   "our fundamentals",
+   "the two AI readings"
+  ]
  },
  "longterm": {
-  "call": "NOT ENOUGH INFORMATION",
-  "colour": "#6b6862",
-  "score": null,
-  "confidence": "none",
-  "why": "only 0% of what decides the long-term call is available — no call is better than a guess dressed as one",
-  "based_on": []
+  "call": "APPLY SELECTIVELY",
+  "colour": "#a86400",
+  "score": 57.9,
+  "confidence": "medium",
+  "why": "built from our fundamentals, the two AI readings — 90% of the deciding weight",
+  "based_on": [
+   "our fundamentals",
+   "the two AI readings"
+  ]
  },
  "hard_stops": [],
- "serious_findings": [],
+ "serious_findings": [
+  "owes more this year than it expects to collect"
+ ],
  "models_disagree": false
 }
