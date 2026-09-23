@@ -1,50 +1,18 @@
 {
- "scores": {
-  "listing_view": {
-   "groq": 15.0,
-   "nvidia": 48.0
-  },
-  "longterm_view": {
-   "groq": 35.0,
-   "nvidia": 38.0
-  },
-  "governance": {
-   "groq": 60.0,
-   "nvidia": 45.0
-  }
- },
+ "scores": {},
  "reliability": {
   "groq": {
-   "share": 0.0,
-   "trusted": false,
-   "why": "0 of 6 citations matched the pages we sent, and 4 pointed at pages we never sent"
+   "share": null,
+   "trusted": true,
+   "why": "too few claims to judge"
   },
   "nvidia": {
-   "share": 0.33,
-   "trusted": false,
-   "why": "2 of 6 citations matched the pages we sent, and 3 pointed at pages we never sent"
+   "share": null,
+   "trusted": true,
+   "why": "too few claims to judge"
   }
  },
- "disagreements": [
-  {
-   "on": "listing_view",
-   "gap": 33.0,
-   "scores": {
-    "groq": 15.0,
-    "nvidia": 48.0
-   },
-   "means": "the models read the same evidence differently — treat this verdict as uncertain, and read both reasonings rather than the average"
-  }
- ],
+ "disagreements": [],
  "ai_block": {},
- "excluded": [
-  {
-   "model": "groq",
-   "why": "0 of 6 citations matched the pages we sent, and 4 pointed at pages we never sent"
-  },
-  {
-   "model": "nvidia",
-   "why": "2 of 6 citations matched the pages we sent, and 3 pointed at pages we never sent"
-  }
- ]
+ "excluded": []
 }

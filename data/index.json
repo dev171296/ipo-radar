@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T13:47:02+00:00",
+  "generated_at": "2026-09-23T17:55:37+00:00",
   "count": 38,
   "ipos": [
     {
@@ -14,6 +14,20 @@
         "close_as_given": "28-Sep-2026"
       },
       "price_band": "Rs.385 to Rs.405",
+      "missing": []
+    },
+    {
+      "id": "2026-09-acevector",
+      "name": "AceVector Limited",
+      "type": "mainboard",
+      "status": "upcoming",
+      "dates": {
+        "open": "2026-09-25",
+        "close": "2026-09-29",
+        "open_as_given": "25-Sep-2026",
+        "close_as_given": "29-Sep-2026"
+      },
+      "price_band": "Rs.30 to Rs.32",
       "missing": []
     },
     {
@@ -115,6 +129,20 @@
       "missing": []
     },
     {
+      "id": "2026-09-german-green-steel-and-power",
+      "name": "German Green Steel and Power Limited",
+      "type": "mainboard",
+      "status": "upcoming",
+      "dates": {
+        "open": "2026-09-25",
+        "close": "2026-09-29",
+        "open_as_given": "25-Sep-2026",
+        "close_as_given": "29-Sep-2026"
+      },
+      "price_band": "Rs.132 to Rs.139",
+      "missing": []
+    },
+    {
       "id": "2026-09-glass-wall-systems",
       "name": "Glass Wall Systems (India) Limited",
       "type": "mainboard",
@@ -126,6 +154,20 @@
         "close_as_given": "10-Sep-2026"
       },
       "price_band": "Rs.172 to Rs.182",
+      "missing": []
+    },
+    {
+      "id": "2026-09-green-asia-impex",
+      "name": "Green Asia Impex Limited",
+      "type": "sme",
+      "status": "upcoming",
+      "dates": {
+        "open": "2026-09-24",
+        "close": "2026-09-28",
+        "open_as_given": "24-Sep-2026",
+        "close_as_given": "28-Sep-2026"
+      },
+      "price_band": "Rs.85 to Rs.90",
       "missing": []
     },
     {
@@ -283,6 +325,20 @@
       "missing": []
     },
     {
+      "id": "2026-09-orient-cables",
+      "name": "Orient Cables (India) Limited",
+      "type": "mainboard",
+      "status": "upcoming",
+      "dates": {
+        "open": "2026-09-25",
+        "close": "2026-09-29",
+        "open_as_given": "25-Sep-2026",
+        "close_as_given": "29-Sep-2026"
+      },
+      "price_band": "Rs.258 to Rs.272",
+      "missing": []
+    },
+    {
       "id": "2026-09-pooja-logistics",
       "name": "Pooja Logistics Limited",
       "type": "sme",
@@ -350,6 +406,20 @@
         "close_as_given": "11-Sep-2026"
       },
       "price_band": "Rs.384 to Rs.404",
+      "missing": []
+    },
+    {
+      "id": "2026-09-runwal-enterprises",
+      "name": "Runwal Enterprises Limited",
+      "type": "mainboard",
+      "status": "upcoming",
+      "dates": {
+        "open": "2026-09-25",
+        "close": "2026-09-29",
+        "open_as_given": "25-Sep-2026",
+        "close_as_given": "29-Sep-2026"
+      },
+      "price_band": "Rs.290 to Rs.302",
       "missing": []
     },
     {
@@ -462,76 +532,6 @@
         "close_as_given": "11-Sep-2026"
       },
       "price_band": null,
-      "missing": []
-    },
-    {
-      "id": "2026-09-runwal-enterprises",
-      "name": "Runwal Enterprises Limited",
-      "type": "mainboard",
-      "status": "upcoming",
-      "dates": {
-        "open": "2026-09-25",
-        "close": "2026-09-29",
-        "open_as_given": "25-Sep-2026",
-        "close_as_given": "29-Sep-2026"
-      },
-      "price_band": "Rs.290 to Rs.302",
-      "missing": []
-    },
-    {
-      "id": "2026-09-acevector",
-      "name": "AceVector Limited",
-      "type": "mainboard",
-      "status": "upcoming",
-      "dates": {
-        "open": "2026-09-25",
-        "close": "2026-09-29",
-        "open_as_given": "25-Sep-2026",
-        "close_as_given": "29-Sep-2026"
-      },
-      "price_band": "Rs.30 to Rs.32",
-      "missing": []
-    },
-    {
-      "id": "2026-09-orient-cables",
-      "name": "Orient Cables (India) Limited",
-      "type": "mainboard",
-      "status": "upcoming",
-      "dates": {
-        "open": "2026-09-25",
-        "close": "2026-09-29",
-        "open_as_given": "25-Sep-2026",
-        "close_as_given": "29-Sep-2026"
-      },
-      "price_band": "Rs.258 to Rs.272",
-      "missing": []
-    },
-    {
-      "id": "2026-09-german-green-steel-and-power",
-      "name": "German Green Steel and Power Limited",
-      "type": "mainboard",
-      "status": "upcoming",
-      "dates": {
-        "open": "2026-09-25",
-        "close": "2026-09-29",
-        "open_as_given": "25-Sep-2026",
-        "close_as_given": "29-Sep-2026"
-      },
-      "price_band": "Rs.132 to Rs.139",
-      "missing": []
-    },
-    {
-      "id": "2026-09-green-asia-impex",
-      "name": "Green Asia Impex Limited",
-      "type": "sme",
-      "status": "upcoming",
-      "dates": {
-        "open": "2026-09-24",
-        "close": "2026-09-28",
-        "open_as_given": "24-Sep-2026",
-        "close_as_given": "28-Sep-2026"
-      },
-      "price_band": "Rs.85 to Rs.90",
       "missing": []
     }
   ]

@@ -1,23 +1,23 @@
-IPO RADAR — generated 2026-09-23 14:01 UTC
+IPO RADAR — generated 2026-09-23 17:58 UTC
 ============================================================
 Full dashboard: https://dev171296.github.io/ipo-radar/
 
 AT A GLANCE
 ------------------------------------------------------------
 Company                           Closes      Applying          Holding
-Adroit Industries (India) Limite  2026-09-25  APPLY SELECTIVELY APPLY SELECTIVELY
 Varmora Granito Limited           2026-09-24  not enough info   not enough info
-ArMee Infotech Limited            2026-09-25  not enough info   APPLY SELECTIVELY
 Swastika Infra Limited            2026-09-25  not enough info   WAIT FOR LISTING
+Adroit Industries (India) Limite  2026-09-25  not enough info   APPLY
+ArMee Infotech Limited            2026-09-25  not enough info   APPLY SELECTIVELY
 Coreintegra Consulting Services   2026-09-25  not enough info   not enough info
 Elevate Campuses Limited          2026-09-25  not enough info   not enough info
 Pooja Logistics Limited           2026-09-25  not enough info   not enough info
-A-One Steels India Limited        2026-09-28  not enough info   APPLY SELECTIVELY
+A-One Steels India Limited        2026-09-28  not enough info   WAIT FOR LISTING
 Green Asia Impex Limited          2026-09-28  not enough info   not enough info
 Moneyview Limited                 2026-09-28  not enough info   not enough info
-AceVector Limited                 2026-09-29  APPLY SELECTIVELY WAIT FOR LISTING
-German Green Steel and Power Lim  2026-09-29  APPLY SELECTIVELY APPLY SELECTIVELY
+AceVector Limited                 2026-09-29  not enough info   WAIT FOR LISTING
 Orient Cables (India) Limited     2026-09-29  not enough info   STRONG APPLY
+German Green Steel and Power Lim  2026-09-29  not enough info   APPLY SELECTIVELY
 Bench Mark Infotech Services Lim  2026-09-29  not enough info   not enough info
 Himalayan Solar Limited           2026-09-29  not enough info   not enough info
 Runwal Enterprises Limited        2026-09-29  not enough info   not enough info
@@ -48,29 +48,27 @@ THE DETAIL
 ------------------------------------------------------------
 
 A-One Steels India Limited
-  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> APPLY SELECTIVELY
+  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> WAIT FOR LISTING
   mainboard · 2026-09-24 to 2026-09-28 · Rs.385 to Rs.405
-  Fundamentals: 58.9 (88% assessed)   Demand: None (0% assessed)
+  Fundamentals: 48.5 (78% assessed)   Demand: None (0% assessed)
   groq: listing 35, long-term 45, confidence low
-  nvidia: listing 48, long-term 38, confidence low
+  nvidia: listing 35, long-term 40, confidence medium
   * priced far below its stated peer group: 21.93× against 45.2× — a 52% discount
   * profit is not turning into cash: only 21% of EBITDA came through as cash
 
 AceVector Limited
-  CALL: applying -> APPLY SELECTIVELY   |   holding -> WAIT FOR LISTING
+  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> WAIT FOR LISTING
   mainboard · 2026-09-25 to 2026-09-29 · Rs.30 to Rs.32
   Fundamentals: 71.2 (34% assessed)   Demand: None (0% assessed)
   groq: listing 35, long-term 45, confidence medium
   nvidia: listing 45, long-term 38, confidence low
 
 Adroit Industries (India) Limited
-  CALL: applying -> APPLY SELECTIVELY   |   holding -> APPLY SELECTIVELY
+  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> APPLY
   mainboard · 2026-09-23 to 2026-09-25 · Rs.126 to Rs.134
   Fundamentals: 70.5 (48% assessed)   Demand: None (14% assessed)
   groq: listing 42, long-term 58, confidence low
   nvidia: listing 45, long-term 40, confidence low
-  !! models disagree on longterm_view by 18.0 points
-  !! models disagree on governance by 20.0 points
 
 ArMee Infotech Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> APPLY SELECTIVELY
@@ -78,7 +76,6 @@ ArMee Infotech Limited
   Fundamentals: 67.8 (52% assessed)   Demand: None (14% assessed)
   groq: listing 15, long-term 35, confidence high
   nvidia: listing 48, long-term 38, confidence low
-  !! models disagree on listing_view by 33.0 points
   * priced far below its stated peer group: 19.57× against 70.63× — a 72% discount
   * owes more this year than it expects to collect: current ratio 0.14
 
@@ -111,7 +108,7 @@ Elevate Campuses Limited
   Fundamentals: None (0% assessed)   Demand: None (14% assessed)
 
 German Green Steel and Power Limited
-  CALL: applying -> APPLY SELECTIVELY   |   holding -> APPLY SELECTIVELY
+  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> APPLY SELECTIVELY
   mainboard · 2026-09-25 to 2026-09-29 · Rs.132 to Rs.139
   Fundamentals: 79.4 (44% assessed)   Demand: None (0% assessed)
   groq: listing 45, long-term 62, confidence low
@@ -200,8 +197,8 @@ Moneyview Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
   mainboard · 2026-09-24 to 2026-09-28 · Rs.32 to Rs.34
   Fundamentals: None (10% assessed)   Demand: None (0% assessed)
-  groq: listing 45, long-term 40, confidence low
-  nvidia: listing 45, long-term 40, confidence low
+  groq: listing 40, long-term 45, confidence low
+  nvidia: listing 50, long-term 42, confidence low
 
 National Stock Exchange of India Limited
   CALL: applying -> WAIT FOR LISTING   |   holding -> NOT ENOUGH INFORMATION

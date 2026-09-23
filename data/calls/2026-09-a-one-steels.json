@@ -2,7 +2,7 @@
  "listing": {
   "call": "NOT ENOUGH INFORMATION",
   "colour": "#6b6862",
-  "score": 58.9,
+  "score": 48.5,
   "confidence": "none",
   "why": "only 25% of what decides the listing call is available — no call is better than a guess dressed as one",
   "based_on": [
@@ -10,9 +10,9 @@
   ]
  },
  "longterm": {
-  "call": "APPLY SELECTIVELY",
-  "colour": "#a86400",
-  "score": 58.9,
+  "call": "WAIT FOR LISTING",
+  "colour": "#b25b1a",
+  "score": 48.5,
   "confidence": "low",
   "why": "built from our fundamentals — 60% of the deciding weight",
   "based_on": [

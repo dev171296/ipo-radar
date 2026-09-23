@@ -1,2 +1,3 @@
 {"at": "2026-09-23T13:47:02+00:00", "event": "discovered", "ok": true, "detail": "Runwal Enterprises Limited", "source": "nse"}
 {"at": "2026-09-23T13:49:56+00:00", "event": "prospectus_not_found", "ok": false, "source": "sebi"}
+{"at": "2026-09-23T17:55:39+00:00", "event": "prospectus_not_found", "ok": false, "source": "sebi"}
