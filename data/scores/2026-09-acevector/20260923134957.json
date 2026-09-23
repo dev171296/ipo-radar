@@ -1,0 +1,132 @@
+{
+ "ipo_id": "2026-09-acevector",
+ "name": "AceVector Limited",
+ "scored_at": "2026-09-23T13:49:57+00:00",
+ "built_from_bundle": "2026-09-23T13:49:57+00:00",
+ "fundamentals": {
+  "score": 71.2,
+  "withheld": null,
+  "points_earned": 24.2,
+  "points_assessed": 34,
+  "coverage_pct": 34,
+  "components": [
+   {
+    "component": "growth_quality",
+    "weight": 14,
+    "points": 7.7,
+    "basis": "revenue CAGR 15.93% a year"
+   },
+   {
+    "component": "issue_structure",
+    "weight": 10,
+    "points": 8.0,
+    "basis": "65% of the issue is fresh money to the company"
+   },
+   {
+    "component": "filing_hygiene",
+    "weight": 10,
+    "points": 8.5,
+    "basis": "summary form read; 575-page prospectus read; no contradictions"
+   }
+  ],
+  "not_assessed": [
+   {
+    "component": "valuation_vs_peers",
+    "weight": 18,
+    "why": "no usable price comparison in the prospectus"
+   },
+   {
+    "component": "cash_flow_quality",
+    "weight": 14,
+    "why": "no cash flow statement read"
+   },
+   {
+    "component": "profitability",
+    "weight": 12,
+    "why": "no profit and revenue pair on file"
+   },
+   {
+    "component": "promoter_governance",
+    "weight": 12,
+    "why": "not built yet"
+   },
+   {
+    "component": "balance_sheet",
+    "weight": 10,
+    "why": "no debt or liquidity figure read"
+   }
+  ]
+ },
+ "demand": {
+  "score": null,
+  "withheld": null,
+  "points_earned": 0.0,
+  "points_assessed": 0,
+  "coverage_pct": 0,
+  "components": [],
+  "not_assessed": [
+   {
+    "component": "subscription_level",
+    "weight": 26,
+    "why": "no subscription figure yet"
+   },
+   {
+    "component": "subscription_velocity",
+    "weight": 14,
+    "why": "need at least two readings to see a rate"
+   },
+   {
+    "component": "gmp_level",
+    "weight": 12,
+    "why": "not built yet"
+   },
+   {
+    "component": "gmp_trend",
+    "weight": 10,
+    "why": "not built yet"
+   },
+   {
+    "component": "anchor_quality",
+    "weight": 12,
+    "why": "not built yet"
+   },
+   {
+    "component": "broker_conviction",
+    "weight": 10,
+    "why": "not built yet"
+   },
+   {
+    "component": "media_coverage",
+    "weight": 8,
+    "why": "not built yet"
+   },
+   {
+    "component": "retail_attention",
+    "weight": 8,
+    "why": "not built yet"
+   }
+  ]
+ },
+ "flags": [],
+ "vetoes": {
+  "triggered": [
+   {
+    "veto": "negative operating cash flow in all three years",
+    "detail": [
+     -17.97,
+     -273.47,
+     -548.45
+    ]
+   }
+  ],
+  "not_tested": [
+   "three years of profit not on file",
+   "qualified or adverse audit opinion — needs the prospectus chapters read",
+   "SEBI or criminal proceedings against the promoters — needs the prospectus chapters read",
+   "more than half of revenue from one related party — needs the prospectus chapters read"
+  ]
+ },
+ "listing_score_quant_only": null,
+ "longterm_score_quant_only": 45.0,
+ "status": "quant only — the AI block has not been built, so these are not final verdicts"
+}

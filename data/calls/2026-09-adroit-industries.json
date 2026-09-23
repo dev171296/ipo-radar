@@ -2,7 +2,7 @@
  "listing": {
   "call": "APPLY SELECTIVELY",
   "colour": "#a86400",
-  "score": 61.0,
+  "score": 57.8,
   "confidence": "low",
   "why": "built from our fundamentals, the two AI readings — 50% of the deciding weight; the two models disagree, which lowers confidence",
   "based_on": [
@@ -11,9 +11,9 @@
   ]
  },
  "longterm": {
-  "call": "APPLY",
-  "colour": "#2f7d32",
-  "score": 65.8,
+  "call": "APPLY SELECTIVELY",
+  "colour": "#a86400",
+  "score": 60.3,
   "confidence": "low",
   "why": "built from our fundamentals, the two AI readings — 90% of the deciding weight; the two models disagree, which lowers confidence",
   "based_on": [

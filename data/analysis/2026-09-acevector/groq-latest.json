@@ -1,0 +1,62 @@
+{
+ "ok": true,
+ "model": "qwen/qwen3.8-27b",
+ "answered_at": "2026-09-23T13:56:18+00:00",
+ "evidence_fingerprint": "aadaaa59bd9edbd5",
+ "prompt_chars": 7843,
+ "passages_supplied": {
+  "litigation": 8,
+  "governance": 8,
+  "business_quality": 8,
+  "risks": 3
+ },
+ "answer": {
+  "listing_view": {
+   "score": 35.0,
+   "reasoning": "The listing view is weak because the prospectus reveals criminal proceedings against the Promoters and Directors, which is a severe red flag for investor confidence [litigation, page 477]. Additionally, the company has negative operating cash flow in all three years, suggesting the business is not yet self-sustaining, which dampens demand for a mainboard listing [verified figures]."
+  },
+  "longterm_view": {
+   "score": 45.0,
+   "reasoning": "While revenue growth is strong at ~16% CAGR with a 29% jump in the latest year, the business model relies on leased premises and does not own inventory, indicating asset-light operations that may face margin pressure [business, page 244]. The persistent negative operating cash flow over three years suggests that the current growth is not translating into cash generation, raising doubts about long-term sustainability without further capital infusion [verified figures]."
+  },
+  "governance": {
+   "score": 20.0,
+   "reasoning": "Governance is critically compromised by the explicit mention of criminal proceedings against the Promoters and Directors, Kunal Bahl and Rohit Kumar Bansal [litigation, page 477]. This legal exposure poses a significant risk to the stability and integrity of the company's leadership."
+  },
+  "key_risks": [
+   {
+    "risk": "Criminal proceedings against Promoters",
+    "why_it_matters": "Legal issues involving key leadership can lead to management distraction, regulatory scrutiny, and potential loss of control or reputation.",
+    "citation": "[litigation, page 477]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Persistent negative operating cash flow",
+    "why_it_matters": "Negative cash flow in all three years indicates the company is burning cash to grow, which may require further dilution or debt if growth slows.",
+    "citation": "[verified figures]",
+    "citation_verified": false
+   },
+   {
+    "risk": "Asset-light operational dependency",
+    "why_it_matters": "Operating entirely out of leased premises and not owning inventory exposes the company to lease costs and supply chain dependencies without asset backing.",
+    "citation": "[business, page 253]",
+    "citation_verified": true
+   }
+  ],
+  "answers": [
+   {
+    "question": "Our reading triggered a hard stop: negative operating cash flow in all three years. Is there an explanation in the document?",
+    "answer": "The provided extracts do not contain a specific explanation for the negative operating cash flow. The document mentions revenue growth and business model details (SaaS revenue, logistics), but no passage explicitly attributes the cash burn to specific factors like working capital cycles, capex, or strategic investments.",
+    "citation": "not answerable from what I was given",
+    "citation_verified": false
+   }
+  ],
+  "confidence": "medium",
+  "what_would_change_my_mind": "If the prospectus provided a clear, credible explanation for the cash burn (e.g., significant prepayments for logistics expansion that are expected to yield returns) and details on the criminal proceedings showing they are minor or resolved, the governance and long-term scores would improve.",
+  "citation_check": {
+   "claims_checked": 4,
+   "citations_verified": 2,
+   "citations_not_matching_what_we_sent": 1
+  }
+ }
+}

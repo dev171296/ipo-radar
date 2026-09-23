@@ -1,0 +1,62 @@
+{
+ "ok": true,
+ "model": "moonshotai/kimi-k3",
+ "answered_at": "2026-09-23T13:58:00+00:00",
+ "evidence_fingerprint": "aadaaa59bd9edbd5",
+ "prompt_chars": 7843,
+ "passages_supplied": {
+  "litigation": 8,
+  "governance": 8,
+  "business_quality": 8,
+  "risks": 3
+ },
+ "answer": {
+  "listing_view": {
+   "score": 45.0,
+   "reasoning": "Revenue momentum (29.2% latest-year growth) and a fast-growing SaaS line (₹1,036M to ₹2,043M over two years [business, page 228]) give bankers a good story to sell, and the tiny ₹32 price band suggests a retail-accessible listing. But I have zero demand-side data — no subscription, anchor, GMP or broker inputs were collected — so anything above or below 'slightly cautious' would be invented."
+  },
+  "longterm_view": {
+   "score": 38.0,
+   "reasoning": "The business has never generated a rupee of operating cash: -548, -273, -18 across three years, and the improvement of the burn is the best thing about it. Asset-light claims (no inventory [business, page 244], all-leased premises [business, page 253]) make persistent cash burn worse, not better — there is no capex story to hide behind. My view is wrong if FY2027 turns OCF positive and SaaS keeps compounding near the ~40% pace implied by [business, page 228]."
+  },
+  "governance": {
+   "score": 30.0,
+   "reasoning": "There are criminal proceedings against Promoters/Directors Kunal Bahl and Rohit Kumar Bansal per the company's own litigation chapter [litigation, page 477]; the extract cuts off before the nature or severity is shown, which is itself a red flag, not an exoneration. The boilerplate on arm's-length related-party dealings [promoters, page 370] does not offset that."
+  },
+  "key_risks": [
+   {
+    "risk": "Persistent negative operating cash flow",
+    "why_it_matters": "Three consecutive years of cash burn (-548, -273, -18 ₹M) means the listing proceeds are funding operations, and no extract given to me explains why this changes.",
+    "citation": "[business, page 235]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Criminal proceedings against Promoters",
+    "why_it_matters": "The prospectus itself directs readers to criminal proceedings against the two promoter-directors, and the extract provided truncates before disclosing substance, so the risk is real but unquantifiable from what I was given.",
+    "citation": "[litigation, page 477]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Related-party and conflict disclosures are self-certified",
+    "why_it_matters": "Claims of no conflict of interest and arm's-length terms are the company's own assertions [promoters, page 294], [promoters, page 370], with no third-party corroboration in the extracts.",
+    "citation": "[promoters, page 294]",
+    "citation_verified": true
+   }
+  ],
+  "answers": [
+   {
+    "question": "Our reading triggered a hard stop: negative operating cash flow in all three years. Is there an explanation in the document?",
+    "answer": "Not in what I was given. No extract addresses why operating cash flow was negative in FY2024 (-548.45), FY2025 (-273.47) or FY2026 (-17.97), and no cash-flow chapter extract was provided at all. The only circumstantial context: the company claims an inventory-free, no-owned-premises model [business, page 244], [business, page 253], which removes the usual capex/working-capital excuses and makes the burn harder to explain away; the trajectory is improving sharply, but improving burn is still burn. Treat the hard stop as unresolved on this evidence.",
+    "citation": "not answerable from what I was given",
+    "citation_verified": false
+   }
+  ],
+  "confidence": "low",
+  "what_would_change_my_mind": "A cash-flow-statement extract showing working-capital timing (e.g., receivable build) rather than genuine losses behind the negative OCF, plus the full text of the promoter criminal proceedings [litigation, page 477], would move both scores meaningfully — up if benign, down sharply if not.",
+  "citation_check": {
+   "claims_checked": 4,
+   "citations_verified": 3,
+   "citations_not_matching_what_we_sent": 0
+  }
+ }
+}

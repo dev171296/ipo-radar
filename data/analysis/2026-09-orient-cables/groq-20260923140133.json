@@ -1,0 +1,62 @@
+{
+ "ok": true,
+ "model": "qwen/qwen3.8-27b",
+ "answered_at": "2026-09-23T14:00:05+00:00",
+ "evidence_fingerprint": "3fc7122925d2b475",
+ "prompt_chars": 7978,
+ "passages_supplied": {
+  "litigation": 8,
+  "governance": 8,
+  "business_quality": 8,
+  "risks": 1
+ },
+ "answer": {
+  "listing_view": {
+   "score": 35.0,
+   "reasoning": "The evidence for listing demand is non-existent as the issue has not opened, subscription data is missing, and there is no grey market premium or broker conviction data. The valuation is high relative to the benchmark (51.61x vs 128.11x is a misinterpretation of 'vs_benchmark' 0.403 which implies it is cheaper, but the absolute PE of 51.61x on latest EPS is significant), and without demand metrics, the pricing risk remains unquantified."
+  },
+  "longterm_view": {
+   "score": 45.0,
+   "reasoning": "The business shows strong customer retention (9+ years) and vertical integration, but the financial evidence is thin and concerning: free cash flow was negative in the latest year (-996.88 million) and operating cash flow was negative in the two prior years. The absence of ROE, ROCE, and balance sheet data prevents a full assessment of capital efficiency and leverage, making a confident long-term view impossible."
+  },
+  "governance": {
+   "score": 60.0,
+   "reasoning": "There are no reported criminal proceedings or SEBI disciplinary actions against promoters, which is a positive baseline. However, the presence of margin money pledged against borrowings and the lack of detailed related-party transaction breakdowns in the provided extracts limit a deeper assessment of promoter integrity and conflict management."
+  },
+  "key_risks": [
+   {
+    "risk": "Negative Free Cash Flow",
+    "why_it_matters": "The company burned nearly Rs. 1 billion in free cash flow in the latest year, indicating potential liquidity stress or heavy capex that may not be generating immediate returns.",
+    "citation": "[verified figures, cash]",
+    "citation_verified": false
+   },
+   {
+    "risk": "Valuation Premium",
+    "why_it_matters": "At 51.61x latest EPS, the stock is priced for significant growth, which is risky given the lack of visible ROE/ROCE metrics to confirm capital efficiency.",
+    "citation": "[verified figures, valuation]",
+    "citation_verified": false
+   },
+   {
+    "risk": "Data Opacity",
+    "why_it_matters": "The absence of balance sheet details, ROE, and ROCE in the provided extracts prevents verification of financial health beyond cash flow, creating a blind spot for fundamental analysis.",
+    "citation": "[verified figures, what we could not establish]",
+    "citation_verified": false
+   }
+  ],
+  "answers": [
+   {
+    "question": "is the peer set fairly chosen, and are the peers themselves expensive rather than this being cheap?",
+    "answer": "Not answerable from what I was given. The verified figures state that 0 peer rows were parsed, and the extracts do not contain a peer comparison table or discussion of peer selection criteria.",
+    "citation": "not answerable from what I was given",
+    "citation_verified": false
+   }
+  ],
+  "confidence": "low",
+  "what_would_change_my_mind": "Providing the actual peer comparison table with P/E ratios and the missing balance sheet/ROE data would allow for a proper valuation and financial health assessment.",
+  "citation_check": {
+   "claims_checked": 4,
+   "citations_verified": 0,
+   "citations_not_matching_what_we_sent": 3
+  }
+ }
+}

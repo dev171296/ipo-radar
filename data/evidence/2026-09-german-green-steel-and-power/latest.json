@@ -1,0 +1,258 @@
+{
+ "ipo_id": "2026-09-german-green-steel-and-power",
+ "built_at": "2026-09-23T13:49:58+00:00",
+ "name": "German Green Steel and Power Limited",
+ "symbol": "GERMAN",
+ "type": "mainboard",
+ "status": "upcoming",
+ "offer": {
+  "price_low": {
+   "value": 132.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.132 to Rs.139"
+  },
+  "price_high": {
+   "value": 139.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.132 to Rs.139"
+  },
+  "issue_size_shares": {
+   "value": 22969696.0,
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "issue_size_rs_million": {
+   "value": 3192.79,
+   "source": "computed",
+   "confidence": "high",
+   "note": "shares × top of the price band"
+  },
+  "open_date": {
+   "value": "2026-09-25",
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "close_date": {
+   "value": "2026-09-29",
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "fresh_issue_rs_million": {
+   "value": 2900.0,
+   "source": "abridged prospectus",
+   "confidence": "low",
+   "page": 1,
+   "raw": "fresh issue size^ offer for sale size total offer size eligibility and share reservation among qibs, nibs and riis fresh issue and offer for sale up to [●] equity shares of face value of ₹10 each aggr",
+   "note": "read from a table flattened to text — verify before relying on it"
+  }
+ },
+ "financials": {
+  "revenue": {
+   "value": [
+    167898.17,
+    150757.13,
+    112978.18
+   ],
+   "source": "abridged prospectus",
+   "confidence": "high",
+   "page": 8,
+   "raw": "Revenue from operations(2) 1,67,898.17 1,50,757.13 1,12,978.18"
+  }
+ },
+ "valuation": {},
+ "cash": {
+  "operating_cash_flow": {
+   "value": [
+    14080.4,
+    7442.88,
+    2835.54
+   ],
+   "source": "full prospectus (risk_factors chapter)",
+   "confidence": "high",
+   "page": 28,
+   "raw": "Net Cash Flow generated from Operating Activities (A) 14,080.40 7,442.88 2,835.54",
+   "note": "newest year first"
+  },
+  "negative_in_all_years": {
+   "value": false,
+   "source": "computed",
+   "confidence": "high"
+  },
+  "negative_in_latest_year": {
+   "value": false,
+   "source": "computed",
+   "confidence": "high"
+  }
+ },
+ "balance_sheet": {
+  "debt_to_equity": {
+   "value": [
+    0.79,
+    1.18,
+    1.13
+   ],
+   "source": "full prospectus (basis_for_price, promoters, related_party, risk_factors)",
+   "confidence": "high",
+   "page": 181,
+   "note": "borrowings ÷ what the owners have in it — printed in the document"
+  },
+  "current_ratio": {
+   "value": [
+    0.97,
+    1.03,
+    1.06
+   ],
+   "source": "full prospectus (basis_for_price, promoters, related_party, risk_factors)",
+   "confidence": "high",
+   "page": 181,
+   "note": "money due in within a year ÷ money due out — computed from current assets ÷ liabilities"
+  },
+  "receivable_days": {
+   "value": [
+    35.5,
+    36.3,
+    28.5
+   ],
+   "source": "full prospectus (basis_for_price, promoters, related_party, risk_factors)",
+   "confidence": "high",
+   "page": 181,
+   "note": "how long customers take to pay"
+  },
+  "total_debt": {
+   "value": [
+    33436.55,
+    34785.88,
+    19839.01
+   ],
+   "source": "full prospectus (basis_for_price, promoters, related_party, risk_factors)",
+   "confidence": "high",
+   "page": 181,
+   "note": "borrowings, newest year first"
+  },
+  "net_worth": {
+   "value": [
+    42369.59,
+    29391.32,
+    17606.16
+   ],
+   "source": "full prospectus (basis_for_price, promoters, related_party, risk_factors)",
+   "confidence": "high",
+   "page": 181,
+   "note": "the owners' stake, newest year first"
+  }
+ },
+ "derived": {
+  "revenue_cagr_2y_pct": {
+   "value": 21.91,
+   "source": "computed",
+   "confidence": "high",
+   "note": "two years of compounding, newest over oldest"
+  },
+  "revenue_growth_latest_pct": {
+   "value": 11.37,
+   "source": "computed",
+   "confidence": "high"
+  }
+ },
+ "demand": {},
+ "documents": {
+  "abridged": {
+   "pages": 13,
+   "url": "https://www.sebi.gov.in/sebi_data/commondocs/sep-2026/German%20Green%20Steel%20and%20Power%20Ltd.%20-%20Abridged%20Prospectus_p.pdf",
+   "fields": [
+    "cin",
+    "financials",
+    "lead_managers",
+    "objects",
+    "offer_details",
+    "price_band",
+    "promoters",
+    "registrar",
+    "reservation",
+    "risk_factors"
+   ],
+   "read_at": "2026-09-23T13:48:04+00:00"
+  },
+  "full": {
+   "pages": 601,
+   "url": "https://www.sebi.gov.in/sebi_data/attachdocs/sep-2026/1790052525734.pdf",
+   "chapters": {
+    "risk_factors": [
+     28,
+     105
+    ],
+    "capital_structure": [
+     106,
+     140
+    ],
+    "objects": [
+     141,
+     180
+    ],
+    "basis_for_price": [
+     181,
+     300
+    ],
+    "business": [
+     301,
+     373
+    ],
+    "promoters": [
+     374,
+     457
+    ],
+    "related_party": [
+     458,
+     482
+    ],
+    "litigation": [
+     483,
+     601
+    ]
+   },
+   "read_at": "2026-09-23T13:48:44+00:00"
+  }
+ },
+ "missing": [
+  {
+   "what": "ROE",
+   "why": "this document does not print it"
+  },
+  {
+   "what": "ROCE",
+   "why": "this document does not print it"
+  },
+  {
+   "what": "valuation comparison",
+   "why": "our rows give a weighted average of 13.50 but the document prints 12.57 — the table was not read correctly"
+  },
+  {
+   "what": "subscription",
+   "why": "the issue has not opened yet"
+  },
+  {
+   "what": "grey market premium",
+   "why": "no free source built yet"
+  },
+  {
+   "what": "anchor investor allotment",
+   "why": "not collected yet"
+  },
+  {
+   "what": "broker conviction",
+   "why": "not collected yet"
+  },
+  {
+   "what": "media coverage",
+   "why": "not collected yet"
+  },
+  {
+   "what": "retail attention",
+   "why": "not collected yet"
+  }
+ ],
+ "conflicts": [],
+ "observations": []
+}

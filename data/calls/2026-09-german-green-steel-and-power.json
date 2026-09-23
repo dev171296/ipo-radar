@@ -1,0 +1,29 @@
+{
+ "listing": {
+  "call": "APPLY SELECTIVELY",
+  "colour": "#a86400",
+  "score": 62.2,
+  "confidence": "low",
+  "why": "built from our fundamentals, the two AI readings — 50% of the deciding weight",
+  "based_on": [
+   "our fundamentals",
+   "the two AI readings"
+  ]
+ },
+ "longterm": {
+  "call": "APPLY SELECTIVELY",
+  "colour": "#a86400",
+  "score": 64,
+  "confidence": "medium",
+  "why": "built from our fundamentals, the two AI readings — 90% of the deciding weight; held to 'apply selectively' because of one serious finding — owes more this year than it expects to collect — which a good average must not be allowed to bury",
+  "based_on": [
+   "our fundamentals",
+   "the two AI readings"
+  ]
+ },
+ "hard_stops": [],
+ "serious_findings": [
+  "owes more this year than it expects to collect"
+ ],
+ "models_disagree": false
+}
