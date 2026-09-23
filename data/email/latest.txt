@@ -1,4 +1,4 @@
-IPO RADAR — generated 2026-09-23 08:02 UTC
+IPO RADAR — generated 2026-09-23 10:21 UTC
 ============================================================
 Full dashboard: https://dev171296.github.io/ipo-radar/
 
@@ -7,12 +7,12 @@ AT A GLANCE
 Company                           Closes      Applying          Holding
 Adroit Industries (India) Limite  2026-09-25  APPLY SELECTIVELY APPLY
 ArMee Infotech Limited            2026-09-25  WAIT FOR LISTING  APPLY SELECTIVELY
-A-One Steels India Limited        2026-09-28  APPLY SELECTIVELY APPLY SELECTIVELY
 Varmora Granito Limited           2026-09-24  not enough info   not enough info
 Swastika Infra Limited            2026-09-25  not enough info   WAIT FOR LISTING
 Coreintegra Consulting Services   2026-09-25  not enough info   not enough info
 Elevate Campuses Limited          2026-09-25  not enough info   not enough info
 Pooja Logistics Limited           2026-09-25  not enough info   not enough info
+A-One Steels India Limited        2026-09-28  not enough info   APPLY SELECTIVELY
 Moneyview Limited                 2026-09-28  not enough info   not enough info
 Bench Mark Infotech Services Lim  2026-09-29  not enough info   not enough info
 Himalayan Solar Limited           2026-09-29  not enough info   not enough info
@@ -43,7 +43,7 @@ THE DETAIL
 ------------------------------------------------------------
 
 A-One Steels India Limited
-  CALL: applying -> APPLY SELECTIVELY   |   holding -> APPLY SELECTIVELY
+  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> APPLY SELECTIVELY
   mainboard · 2026-09-24 to 2026-09-28 · Rs.385 to Rs.405
   Fundamentals: 58.9 (88% assessed)   Demand: None (0% assessed)
   groq: listing 35, long-term 45, confidence low
@@ -55,15 +55,16 @@ Adroit Industries (India) Limited
   CALL: applying -> APPLY SELECTIVELY   |   holding -> APPLY
   mainboard · 2026-09-23 to 2026-09-25 · Rs.126 to Rs.134
   Fundamentals: 70.5 (48% assessed)   Demand: None (0% assessed)
-  groq: listing 62, long-term 57, confidence medium
-  nvidia: listing 52, long-term 56, confidence medium
+  groq: listing 35, long-term 55, confidence low
+  nvidia: listing 68, long-term 58, confidence low
+  !! models disagree on listing_view by 33.0 points
 
 ArMee Infotech Limited
   CALL: applying -> WAIT FOR LISTING   |   holding -> APPLY SELECTIVELY
   mainboard · 2026-09-23 to 2026-09-25 · Rs.350 to Rs.375
   Fundamentals: 67.8 (52% assessed)   Demand: None (0% assessed)
-  groq: listing 15, long-term 35, confidence low
-  nvidia: listing 30, long-term 38, confidence low
+  groq: listing 15, long-term 35, confidence medium
+  nvidia: listing 30, long-term 32, confidence low
   * priced far below its stated peer group: 19.57× against 70.63× — a 72% discount
   * owes more this year than it expects to collect: current ratio 0.14
 
@@ -255,8 +256,8 @@ Swastika Infra Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> WAIT FOR LISTING
   mainboard · 2026-09-23 to 2026-09-25 · Rs.175 to Rs.185
   Fundamentals: 66.3 (60% assessed)   Demand: None (0% assessed)
-  groq: listing 15, long-term 40, confidence low
-  nvidia: listing 22, long-term 32, confidence medium
+  groq: listing 20, long-term 35, confidence low
+  nvidia: listing 30, long-term 20, confidence medium
   * very high revenue growth: 60.96% a year — scored just below the band beneath it, because a pre-IPO surge is as often a reason for the timing as a sign of quality
   * cash was consumed every year: operating cash flow [-965.21, -7653.52, -334.25]
 
