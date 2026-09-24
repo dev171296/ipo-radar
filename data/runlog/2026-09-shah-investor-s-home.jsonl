@@ -1,0 +1,3 @@
+{"at": "2026-09-24T13:42:30+00:00", "event": "discovered", "ok": true, "detail": "Shah Investor's Home Limited", "source": "nse"}
+{"at": "2026-09-24T13:42:35+00:00", "event": "abridged_read", "ok": true, "detail": "11 pages, 8 parts", "source": "sebi"}
+{"at": "2026-09-24T13:43:18+00:00", "event": "full_read", "ok": true, "detail": "715 pages, 5 parts", "source": "sebi"}

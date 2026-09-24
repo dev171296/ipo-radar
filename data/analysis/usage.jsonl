@@ -570,3 +570,17 @@
 {"at": "2026-09-24T10:30:22+00:00", "family": "nvidia", "model": "moonshotai/kimi-k3", "ipo_id": "2026-09-a-one-steels"}
 {"at": "2026-09-24T10:30:25+00:00", "family": "groq", "model": "qwen/qwen3.8-27b", "ipo_id": "2026-09-moneyview"}
 {"at": "2026-09-24T10:31:57+00:00", "family": "nvidia", "model": "moonshotai/kimi-k3", "ipo_id": "2026-09-moneyview"}
+{"at": "2026-09-24T13:43:29+00:00", "family": "groq", "model": "qwen/qwen3.8-27b", "ipo_id": "2026-09-varmora-granito"}
+{"at": "2026-09-24T13:44:48+00:00", "family": "nvidia", "model": "moonshotai/kimi-k3", "ipo_id": "2026-09-varmora-granito"}
+{"at": "2026-09-24T13:44:51+00:00", "family": "groq", "model": "qwen/qwen3.8-27b", "ipo_id": "2026-09-adroit-industries"}
+{"at": "2026-09-24T13:45:50+00:00", "family": "nvidia", "model": "moonshotai/kimi-k3", "ipo_id": "2026-09-adroit-industries"}
+{"at": "2026-09-24T13:45:52+00:00", "family": "groq", "model": "qwen/qwen3.8-27b", "ipo_id": "2026-09-armee-infotech"}
+{"at": "2026-09-24T13:47:03+00:00", "family": "nvidia", "model": "moonshotai/kimi-k3", "ipo_id": "2026-09-armee-infotech"}
+{"at": "2026-09-24T13:47:06+00:00", "family": "groq", "model": "qwen/qwen3.8-27b", "ipo_id": "2026-09-swastika-infra"}
+{"at": "2026-09-24T13:48:26+00:00", "family": "nvidia", "model": "moonshotai/kimi-k3", "ipo_id": "2026-09-swastika-infra"}
+{"at": "2026-09-24T13:48:29+00:00", "family": "groq", "model": "qwen/qwen3.8-27b", "ipo_id": "2026-09-a-one-steels"}
+{"at": "2026-09-24T13:49:47+00:00", "family": "nvidia", "model": "moonshotai/kimi-k3", "ipo_id": "2026-09-a-one-steels"}
+{"at": "2026-09-24T13:50:29+00:00", "family": "groq", "model": "qwen/qwen3.8-27b", "ipo_id": "2026-09-moneyview"}
+{"at": "2026-09-24T13:52:05+00:00", "family": "nvidia", "model": "moonshotai/kimi-k3", "ipo_id": "2026-09-moneyview"}
+{"at": "2026-09-24T13:52:51+00:00", "family": "groq", "model": "openai/gpt-oss-120b", "ipo_id": "2026-09-shah-investor-s-home"}
+{"at": "2026-09-24T13:54:41+00:00", "family": "nvidia", "model": "moonshotai/kimi-k3", "ipo_id": "2026-09-shah-investor-s-home"}

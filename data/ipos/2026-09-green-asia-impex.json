@@ -20,13 +20,13 @@
   "subscription": {
     "times": 0.01,
     "shares_offered": 7057600.0,
-    "shares_bid": 67200.0
+    "shares_bid": 86400.0
   },
   "also_on_bse": true,
   "sources": {
     "calendar": "nse",
-    "fetched_at": "2026-09-24T10:22:45+00:00"
+    "fetched_at": "2026-09-24T13:42:31+00:00"
   },
   "missing": [],
-  "rebuilt_at": "2026-09-24T10:22:45+00:00"
+  "rebuilt_at": "2026-09-24T13:42:31+00:00"
 }

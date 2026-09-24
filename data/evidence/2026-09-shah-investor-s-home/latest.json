@@ -1,0 +1,328 @@
+{
+ "ipo_id": "2026-09-shah-investor-s-home",
+ "built_at": "2026-09-24T13:43:24+00:00",
+ "name": "Shah Investor's Home Limited",
+ "symbol": "SHAHINVEST",
+ "type": "mainboard",
+ "status": "upcoming",
+ "offer": {
+  "price_low": {
+   "value": 159.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.159 to Rs.167"
+  },
+  "price_high": {
+   "value": 167.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.159 to Rs.167"
+  },
+  "issue_size_shares": {
+   "value": 5399200.0,
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "issue_size_rs_million": {
+   "value": 901.67,
+   "source": "computed",
+   "confidence": "high",
+   "note": "shares × top of the price band"
+  },
+  "open_date": {
+   "value": "2026-09-28",
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "close_date": {
+   "value": "2026-09-30",
+   "source": "nse_calendar",
+   "confidence": "high"
+  }
+ },
+ "financials": {
+  "revenue": {
+   "value": [
+    7147.67,
+    9427.39,
+    7782.36
+   ],
+   "source": "abridged prospectus",
+   "confidence": "high",
+   "page": 6,
+   "raw": "Revenue from operations 7,147.67 9,427.39 7,782.36"
+  },
+  "ebitda": {
+   "value": [
+    2161.59,
+    3531.31,
+    2512.97
+   ],
+   "source": "abridged prospectus",
+   "confidence": "high",
+   "page": 6,
+   "raw": "EBITDA 2,161.59 3,531.31 2,512.97"
+  },
+  "pat": {
+   "value": [
+    1320.22,
+    2338.5,
+    1793.38
+   ],
+   "source": "abridged prospectus",
+   "confidence": "high",
+   "page": 7,
+   "raw": "Profit After Tax (₹ in lakhs) 1,320.22 2,338.50 1,793.38"
+  },
+  "roe_pct": {
+   "value": [
+    7.59,
+    14.68,
+    13.38
+   ],
+   "source": "abridged prospectus",
+   "confidence": "high",
+   "page": 7,
+   "raw": "RoE (%) 7.59% 14.68% 13.38%"
+  },
+  "roce_pct": {
+   "value": [
+    10.61,
+    20.35,
+    16.77
+   ],
+   "source": "abridged prospectus",
+   "confidence": "high",
+   "page": 7,
+   "raw": "RoCE (%) 10.61% 20.35% 16.77%"
+  }
+ },
+ "valuation": {},
+ "cash": {
+  "operating_cash_flow": {
+   "value": [
+    -1970.37,
+    -3186.22,
+    11019.42
+   ],
+   "source": "full prospectus (promoters chapter)",
+   "confidence": "high",
+   "page": 506,
+   "raw": "Net cash generated from/ (used in) operating activities (1,970.37) (3,186.22) 11,019.42",
+   "note": "newest year first"
+  },
+  "conversion_vs_ebitda": {
+   "value": -0.912,
+   "source": "computed",
+   "confidence": "high",
+   "note": "1.0 means the reported profit arrived as cash"
+  },
+  "conversion_vs_pat": {
+   "value": -1.492,
+   "source": "computed",
+   "confidence": "high",
+   "note": "1.0 means the reported profit arrived as cash"
+  },
+  "negative_in_all_years": {
+   "value": false,
+   "source": "computed",
+   "confidence": "high"
+  },
+  "negative_in_latest_year": {
+   "value": true,
+   "source": "computed",
+   "confidence": "high"
+  }
+ },
+ "balance_sheet": {
+  "debt_to_equity": {
+   "value": [
+    0.1,
+    0.03,
+    0.02
+   ],
+   "source": "full prospectus (objects, promoters)",
+   "confidence": "high",
+   "page": 359,
+   "note": "borrowings ÷ what the owners have in it — printed in the document"
+  },
+  "current_ratio": {
+   "value": [
+    1.61,
+    1.32,
+    1.28
+   ],
+   "source": "full prospectus (objects, promoters)",
+   "confidence": "high",
+   "page": 359,
+   "note": "money due in within a year ÷ money due out — computed from current assets ÷ liabilities"
+  },
+  "receivable_days": {
+   "value": [
+    137.2,
+    65.2,
+    35.3
+   ],
+   "source": "full prospectus (objects, promoters)",
+   "confidence": "high",
+   "page": 359,
+   "note": "how long customers take to pay"
+  },
+  "net_worth": {
+   "value": [
+    17970.66,
+    16808.98,
+    15054.13
+   ],
+   "source": "full prospectus (objects, promoters)",
+   "confidence": "high",
+   "page": 359,
+   "note": "the owners' stake, newest year first"
+  }
+ },
+ "derived": {
+  "revenue_cagr_2y_pct": {
+   "value": -4.16,
+   "source": "computed",
+   "confidence": "high",
+   "note": "two years of compounding, newest over oldest"
+  },
+  "revenue_growth_latest_pct": {
+   "value": -24.18,
+   "source": "computed",
+   "confidence": "high"
+  },
+  "pat_cagr_2y_pct": {
+   "value": -14.2,
+   "source": "computed",
+   "confidence": "high"
+  },
+  "pat_margin_pct": {
+   "value": [
+    18.47,
+    24.81,
+    23.04
+   ],
+   "source": "computed",
+   "confidence": "high",
+   "note": "profit as a share of sales, newest first"
+  },
+  "ebitda_margin_pct": {
+   "value": [
+    30.24,
+    37.46,
+    32.29
+   ],
+   "source": "computed",
+   "confidence": "high"
+  },
+  "roe_pct_latest": {
+   "value": 7.59,
+   "source": "abridged prospectus",
+   "confidence": "high",
+   "page": 7
+  },
+  "roe_pct_direction": {
+   "value": "declining",
+   "source": "computed",
+   "confidence": "high"
+  },
+  "roce_pct_latest": {
+   "value": 10.61,
+   "source": "abridged prospectus",
+   "confidence": "high",
+   "page": 7
+  },
+  "roce_pct_direction": {
+   "value": "declining",
+   "source": "computed",
+   "confidence": "high"
+  }
+ },
+ "demand": {},
+ "documents": {
+  "abridged": {
+   "pages": 11,
+   "url": "https://www.sebi.gov.in/sebi_data/commondocs/sep-2026/SIHL_Abrigde%20Prospectus_p.pdf",
+   "fields": [
+    "cin",
+    "financials",
+    "lead_managers",
+    "objects",
+    "price_band",
+    "promoters",
+    "registrar",
+    "risk_factors"
+   ],
+   "read_at": "2026-09-24T13:42:35+00:00"
+  },
+  "full": {
+   "pages": 715,
+   "url": "https://www.sebi.gov.in/sebi_data/attachdocs/sep-2026/1790140810519.pdf",
+   "chapters": {
+    "capital_structure": [
+     103,
+     358
+    ],
+    "objects": [
+     359,
+     438
+    ],
+    "business": [
+     439,
+     505
+    ],
+    "promoters": [
+     506,
+     609
+    ],
+    "litigation": [
+     610,
+     715
+    ]
+   },
+   "read_at": "2026-09-24T13:43:18+00:00"
+  }
+ },
+ "missing": [
+  {
+   "what": "fresh issue vs offer for sale split",
+   "why": "could not be read from the offer details table"
+  },
+  {
+   "what": "valuation comparison",
+   "why": "no basis-for-price chapter found in the prospectus"
+  },
+  {
+   "what": "subscription",
+   "why": "the issue has not opened yet"
+  },
+  {
+   "what": "grey market premium",
+   "why": "no free source built yet"
+  },
+  {
+   "what": "anchor investor allotment",
+   "why": "not collected yet"
+  },
+  {
+   "what": "broker conviction",
+   "why": "not collected yet"
+  },
+  {
+   "what": "media coverage",
+   "why": "not collected yet"
+  },
+  {
+   "what": "retail attention",
+   "why": "not collected yet"
+  }
+ ],
+ "conflicts": [],
+ "observations": [
+  {
+   "from": "balance sheet",
+   "says": "customers are taking 137 days to pay, against 35 two years ago — the money is going out further"
+  }
+ ]
+}
