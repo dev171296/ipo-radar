@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-24T13:42:31+00:00",
-  "count": 39,
+  "generated_at": "2026-09-24T17:55:32+00:00",
+  "count": 40,
   "ipos": [
     {
       "id": "2026-09-a-one-steels",
@@ -423,6 +423,20 @@
       "missing": []
     },
     {
+      "id": "2026-09-shah-investor-s-home",
+      "name": "Shah Investor's Home Limited",
+      "type": "mainboard",
+      "status": "upcoming",
+      "dates": {
+        "open": "2026-09-28",
+        "close": "2026-09-30",
+        "open_as_given": "28-Sep-2026",
+        "close_as_given": "30-Sep-2026"
+      },
+      "price_band": "Rs.159 to Rs.167",
+      "missing": []
+    },
+    {
       "id": "2026-09-sonaselection",
       "name": "Sonaselection India Limited",
       "type": "mainboard",
@@ -535,8 +549,8 @@
       "missing": []
     },
     {
-      "id": "2026-09-shah-investor-s-home",
-      "name": "Shah Investor's Home Limited",
+      "id": "2026-09-srit",
+      "name": "Srit India Limited",
       "type": "mainboard",
       "status": "upcoming",
       "dates": {
@@ -545,7 +559,7 @@
         "open_as_given": "28-Sep-2026",
         "close_as_given": "30-Sep-2026"
       },
-      "price_band": "Rs.159 to Rs.167",
+      "price_band": "Rs.123 to Rs.130",
       "missing": []
     }
   ]

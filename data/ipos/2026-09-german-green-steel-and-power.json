@@ -16,7 +16,7 @@
     "close_as_given": "29-Sep-2026"
   },
   "price_band": "Rs.132 to Rs.139",
-  "issue_size_shares": 22969696.0,
+  "issue_size_shares": 16062879.0,
   "subscription": {
     "times": null,
     "shares_offered": null,
@@ -25,8 +25,8 @@
   "also_on_bse": false,
   "sources": {
     "calendar": "nse",
-    "fetched_at": "2026-09-24T13:42:30+00:00"
+    "fetched_at": "2026-09-24T17:55:32+00:00"
   },
   "missing": [],
-  "rebuilt_at": "2026-09-24T13:42:30+00:00"
+  "rebuilt_at": "2026-09-24T17:55:32+00:00"
 }
