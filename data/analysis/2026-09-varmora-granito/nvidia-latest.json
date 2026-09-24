@@ -1,0 +1,80 @@
+{
+ "ok": true,
+ "model": "moonshotai/kimi-k3",
+ "answered_at": "2026-09-24T07:47:38+00:00",
+ "evidence_fingerprint": "a7a68d683e9fd0ca",
+ "prompt_chars": 8732,
+ "passages_supplied": {
+  "litigation": 8,
+  "governance": 8,
+  "business_quality": 8,
+  "risks": 2
+ },
+ "answer": {
+  "listing_view": {
+   "score": 38.0,
+   "reasoning": "Subscription stood at only ~0.33x on the morning of the final day, which historically signals a weak debut unless a last-day QIB surge materialises. The price is also being asked at ~48x earnings, above the document's own stated peer P/Es of 8.5–30.5, leaving little margin of safety for flip buyers."
+  },
+  "longterm_view": {
+   "score": 42.0,
+   "reasoning": "Revenue has grown just 2.65% over two years [business, page 212] and PAT margins hover around 2–4%, which is commodity-tile economics, not a compounding story. Positives are improving cash conversion, a current ratio near 1.7 and deleveraging (debt-to-equity down from 0.68 to 0.44), but at 48x earnings the price already pays for growth the numbers do not show."
+  },
+  "governance": {
+   "score": 45.0,
+   "reasoning": "Promoter shares are pledged to 360 ONE Prime as security for a loan to a promoter-linked entity, Varmora International [capital_structure, page 109], which is a real red flag — promoter leverage funded against listed shares can force sales in a falling market. There are also disclosed criminal proceedings against promoters and the company [litigation, page 437-438], with materiality not assessable from the extracts given."
+  },
+  "key_risks": [
+   {
+    "risk": "Promoter share pledge for a related-entity loan",
+    "why_it_matters": "Pledged promoter shares create forced-selling risk and indicate the promoter group is itself cash-strained, misaligned with new minority shareholders.",
+    "citation": "[capital_structure, page 109]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Stagnant, low-margin revenue",
+    "why_it_matters": "A 2.65% two-year revenue CAGR with ~3.6% PAT margin cannot support a ~48x P/E without a sharp, unexplained step-up in profitability.",
+    "citation": "[business, page 212]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Pending criminal proceedings",
+    "why_it_matters": "Criminal cases against the company and promoters are disclosed, and from these extracts I cannot gauge their severity — an unresolved overhang for listing sentiment.",
+    "citation": "[litigation, page 437]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Supplier and input dependence",
+    "why_it_matters": "Dependence on top-10 suppliers for key raw materials in a thin-margin business means input disruption passes straight to profit.",
+    "citation": "[business, page 241]",
+    "citation_verified": true
+   }
+  ],
+  "answers": [
+   {
+    "question": "Is the pricing fair relative to peers?",
+    "answer": "No. The cap price implies ~48x the latest basic EPS against the seller's own chosen peer P/Es of 30.5 (Kajaria), 19.8 (Somany), 8.5 (Orient Bell) and 0.7 (Asian Granito); the document itself left its own P/E blank.",
+    "citation": "[business, page 212]",
+    "citation_verified": true
+   },
+   {
+    "question": "Is demand for the offer strong?",
+    "answer": "The evidence points the other way: subscription reached only ~0.33x by the morning of the closing day. Whether QIB money arrives late is not established from what I was given.",
+    "citation": "not answerable from what I was given",
+    "citation_verified": false
+   },
+   {
+    "question": "Are reported profits backed by cash?",
+    "answer": "Yes, in the latest year operating cash flow was more than four times PAT, though the prior two years were much weaker — collection risk persists with receivables around 92 days.",
+    "citation": "[business, page 212]",
+    "citation_verified": true
+   }
+  ],
+  "confidence": "medium",
+  "what_would_change_my_mind": "A strong close-of-day QIB subscription well above 1x would soften the listing view, and evidence that the promoter pledge has been released or that the criminal proceedings are trivial would lift the governance score. Separately, proof that capacity additions from the fresh issue translate into margin-accretive revenue growth — not just volumes — would justify the multiple.",
+  "citation_check": {
+   "claims_checked": 7,
+   "citations_verified": 6,
+   "citations_not_matching_what_we_sent": 0
+  }
+ }
+}

@@ -1,0 +1,68 @@
+{
+ "ok": true,
+ "model": "qwen/qwen3.8-27b",
+ "answered_at": "2026-09-24T07:46:34+00:00",
+ "evidence_fingerprint": "a7a68d683e9fd0ca",
+ "prompt_chars": 8732,
+ "passages_supplied": {
+  "litigation": 8,
+  "governance": 8,
+  "business_quality": 8,
+  "risks": 2
+ },
+ "answer": {
+  "listing_view": {
+   "score": 15.0,
+   "reasoning": "The IPO is severely undersubscribed at 0.33x as of the final data point, indicating a complete lack of institutional or retail demand. This suggests the price band is likely too high for the market, making a listing pop highly unlikely and a post-listing discount probable."
+  },
+  "longterm_view": {
+   "score": 35.0,
+   "reasoning": "The business shows stagnant revenue growth (2.65% CAGR) and thin margins (3.64%), which is concerning for a capital-intensive industry. While cash flow conversion is strong, the valuation at 48x P/E is significantly higher than the 47x benchmark and far above most peers, offering no margin of safety for long-term investors."
+  },
+  "governance": {
+   "score": 40.0,
+   "reasoning": "The prospectus explicitly states there are no conflicts of interest with suppliers and no material guarantees given by promoters. However, the presence of pledged shares for a subsidiary loan and the lack of specific ROE/ROCE disclosures limit the depth of the governance assessment."
+  },
+  "key_risks": [
+   {
+    "risk": "Valuation Premium",
+    "why_it_matters": "The company is priced at 48.05x P/E, which is above the 47.12x benchmark and significantly higher than peers like Somany (19.8x) and Orient Bell (8.46x).",
+    "citation": "[valuation, page N/A]",
+    "citation_verified": false
+   },
+   {
+    "risk": "Low Demand",
+    "why_it_matters": "Subscription at 0.33x indicates the market does not value the company at the offered price, creating immediate downside risk upon listing.",
+    "citation": "[demand, page N/A]",
+    "citation_verified": false
+   },
+   {
+    "risk": "Stagnant Growth",
+    "why_it_matters": "Revenue CAGR of 2.65% over two years suggests the company is not capturing significant market share or facing structural headwinds.",
+    "citation": "[business, page 212]",
+    "citation_verified": true
+   }
+  ],
+  "answers": [
+   {
+    "question": "Is the company profitable?",
+    "answer": "Yes, the company reported a PAT of ₹550.93 million in the latest fiscal year, with a margin of 3.64%.",
+    "citation": "[financials, page N/A]",
+    "citation_verified": false
+   },
+   {
+    "question": "What is the current debt situation?",
+    "answer": "The company has a debt-to-equity ratio of 0.442, indicating moderate leverage, with total debt of ₹3,579.48 million.",
+    "citation": "[balance_sheet, page N/A]",
+    "citation_verified": false
+   }
+  ],
+  "confidence": "high",
+  "what_would_change_my_mind": "A significant jump in subscription levels (above 1x) or a reduction in the price band to align with peer valuations (below 30x P/E) would alter the listing and long-term outlook.",
+  "citation_check": {
+   "claims_checked": 5,
+   "citations_verified": 1,
+   "citations_not_matching_what_we_sent": 4
+  }
+ }
+}

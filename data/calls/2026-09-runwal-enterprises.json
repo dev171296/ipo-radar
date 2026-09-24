@@ -1,21 +1,32 @@
 {
  "listing": {
-  "call": "NOT ENOUGH INFORMATION",
-  "colour": "#6b6862",
-  "score": null,
-  "confidence": "none",
-  "why": "only 0% of what decides the listing call is available — no call is better than a guess dressed as one",
-  "based_on": []
+  "call": "APPLY SELECTIVELY",
+  "colour": "#a86400",
+  "score": 56.1,
+  "confidence": "low",
+  "why": "built from our fundamentals, the two AI readings — 50% of the deciding weight; the two models disagree, which lowers confidence",
+  "based_on": [
+   "our fundamentals",
+   "the two AI readings"
+  ]
  },
  "longterm": {
-  "call": "NOT ENOUGH INFORMATION",
-  "colour": "#6b6862",
-  "score": null,
-  "confidence": "none",
-  "why": "only 0% of what decides the long-term call is available — no call is better than a guess dressed as one",
-  "based_on": []
+  "call": "WAIT FOR LISTING",
+  "colour": "#b25b1a",
+  "score": 44.2,
+  "confidence": "low",
+  "why": "built from our fundamentals, the two AI readings — 90% of the deciding weight; the two models disagree, which lowers confidence",
+  "based_on": [
+   "our fundamentals",
+   "the two AI readings"
+  ]
  },
- "hard_stops": [],
- "serious_findings": [],
- "models_disagree": false
+ "hard_stops": [
+  "negative operating cash flow in all three years"
+ ],
+ "serious_findings": [
+  "cash was consumed every year",
+  "heavily indebted"
+ ],
+ "models_disagree": true
 }

@@ -8,7 +8,7 @@
   "name": "Moneyview Limited",
   "symbol": "MONEYVIEW",
   "type": "mainboard",
-  "status": "upcoming",
+  "status": "open",
   "dates": {
     "open": "2026-09-24",
     "close": "2026-09-28",
@@ -18,15 +18,15 @@
   "price_band": "Rs.32 to Rs.34",
   "issue_size_shares": 232524175.0,
   "subscription": {
-    "times": null,
-    "shares_offered": null,
-    "shares_bid": null
+    "times": 0.5347929865787073,
+    "shares_offered": 232524175.0,
+    "shares_bid": 124352298.0
   },
   "also_on_bse": false,
   "sources": {
     "calendar": "nse",
-    "fetched_at": "2026-09-23T17:55:37+00:00"
+    "fetched_at": "2026-09-24T07:44:17+00:00"
   },
   "missing": [],
-  "rebuilt_at": "2026-09-23T17:55:37+00:00"
+  "rebuilt_at": "2026-09-24T07:44:17+00:00"
 }

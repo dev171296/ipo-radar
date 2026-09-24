@@ -8,7 +8,7 @@
   "name": "A-One Steels India Limited",
   "symbol": "AONESTEELS",
   "type": "mainboard",
-  "status": "upcoming",
+  "status": "open",
   "dates": {
     "open": "2026-09-24",
     "close": "2026-09-28",
@@ -18,15 +18,15 @@
   "price_band": "Rs.385 to Rs.405",
   "issue_size_shares": 7384934.0,
   "subscription": {
-    "times": null,
-    "shares_offered": null,
-    "shares_bid": null
+    "times": 0.19171532203266814,
+    "shares_offered": 7384934.0,
+    "shares_bid": 1415805.0
   },
   "also_on_bse": false,
   "sources": {
     "calendar": "nse",
-    "fetched_at": "2026-09-23T17:55:37+00:00"
+    "fetched_at": "2026-09-24T07:44:17+00:00"
   },
   "missing": [],
-  "rebuilt_at": "2026-09-23T17:55:37+00:00"
+  "rebuilt_at": "2026-09-24T07:44:17+00:00"
 }

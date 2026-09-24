@@ -1,3 +1,5 @@
 {"at": "2026-09-23T13:47:02+00:00", "event": "discovered", "ok": true, "detail": "Runwal Enterprises Limited", "source": "nse"}
 {"at": "2026-09-23T13:49:56+00:00", "event": "prospectus_not_found", "ok": false, "source": "sebi"}
 {"at": "2026-09-23T17:55:39+00:00", "event": "prospectus_not_found", "ok": false, "source": "sebi"}
+{"at": "2026-09-24T07:44:29+00:00", "event": "abridged_read", "ok": true, "detail": "10 pages, 9 parts", "source": "sebi"}
+{"at": "2026-09-24T07:45:33+00:00", "event": "full_read", "ok": true, "detail": "611 pages, 7 parts", "source": "sebi"}

@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-23T17:55:37+00:00",
+  "generated_at": "2026-09-24T07:44:17+00:00",
   "count": 38,
   "ipos": [
     {
       "id": "2026-09-a-one-steels",
       "name": "A-One Steels India Limited",
       "type": "mainboard",
-      "status": "upcoming",
+      "status": "open",
       "dates": {
         "open": "2026-09-24",
         "close": "2026-09-28",
@@ -160,14 +160,14 @@
       "id": "2026-09-green-asia-impex",
       "name": "Green Asia Impex Limited",
       "type": "sme",
-      "status": "upcoming",
+      "status": "open",
       "dates": {
         "open": "2026-09-24",
         "close": "2026-09-28",
         "open_as_given": "24-Sep-2026",
         "close_as_given": "28-Sep-2026"
       },
-      "price_band": "Rs.85 to Rs.90",
+      "price_band": null,
       "missing": []
     },
     {
@@ -300,7 +300,7 @@
       "id": "2026-09-moneyview",
       "name": "Moneyview Limited",
       "type": "mainboard",
-      "status": "upcoming",
+      "status": "open",
       "dates": {
         "open": "2026-09-24",
         "close": "2026-09-28",

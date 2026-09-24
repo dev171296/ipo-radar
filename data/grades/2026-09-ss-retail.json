@@ -2,6 +2,133 @@
  "ipo_id": "2026-09-ss-retail",
  "name": "SS Retail Limited",
  "symbol": "SSRETAIL",
- "graded_at": "2026-09-23T17:58:18+00:00",
- "status": "not listed yet"
+ "graded_at": "2026-09-24T07:55:06+00:00",
+ "status": "listed",
+ "listed_on": "2026-09-23",
+ "issue_price": 424.0,
+ "issue_price_note": "top of the price band — the price nearly every Indian IPO is finally set at",
+ "listing_open": 624.0,
+ "listing_close": 748.8,
+ "listing_gain_pct": 47.17,
+ "listing_day_close_pct": 76.6,
+ "checkpoints": {
+  "1 week": {
+   "due": "2026-09-30"
+  },
+  "1 month": {
+   "due": "2026-10-23"
+  },
+  "3 months": {
+   "due": "2026-12-23"
+  },
+  "6 months": {
+   "due": "2027-03-24"
+  },
+  "12 months": {
+   "due": "2027-09-23"
+  }
+ },
+ "predictions": {
+  "cutoff_utc": "20260923034500",
+  "score_taken_at": "20260922174322",
+  "fundamentals": 78.7,
+  "call": {
+   "listing": {
+    "call": "APPLY",
+    "colour": "#2f7d32",
+    "score": 75.4,
+    "confidence": "medium",
+    "why": "built from our fundamentals, market demand — 75% of the deciding weight",
+    "based_on": [
+     "our fundamentals",
+     "market demand"
+    ]
+   },
+   "longterm": {
+    "call": "APPLY",
+    "colour": "#2f7d32",
+    "score": 78.7,
+    "confidence": "low",
+    "why": "built from our fundamentals — 60% of the deciding weight",
+    "based_on": [
+     "our fundamentals"
+    ]
+   },
+   "hard_stops": [],
+   "serious_findings": [],
+   "models_disagree": false
+  },
+  "models": {
+   "groq": {
+    "model": "qwen/qwen3.8-27b",
+    "answered_at": "20260922081520",
+    "listing_view": 85.0,
+    "longterm_view": 65.0,
+    "unsuitable_model": false
+   },
+   "nvidia": {
+    "model": "moonshotai/kimi-k3",
+    "answered_at": "20260922081520",
+    "listing_view": 82.0,
+    "longterm_view": 42.0,
+    "unsuitable_model": false
+   },
+   "gemini": {
+    "model": "gemini-flash-lite-latest",
+    "answered_at": "20260919072908",
+    "listing_view": 75.0,
+    "longterm_view": 40.0,
+    "unsuitable_model": false
+   }
+  }
+ },
+ "marks": {
+  "our_call": {
+   "listing": {
+    "said": "APPLY",
+    "right": true
+   },
+   "holding": {
+    "said": "APPLY",
+    "right": null,
+    "due": "2026-12-23"
+   }
+  },
+  "groq": {
+   "model": "qwen/qwen3.8-27b",
+   "unsuitable_model": false,
+   "listing": {
+    "said": 85.0,
+    "right": true
+   },
+   "holding": {
+    "said": 65.0,
+    "right": null
+   }
+  },
+  "nvidia": {
+   "model": "moonshotai/kimi-k3",
+   "unsuitable_model": false,
+   "listing": {
+    "said": 82.0,
+    "right": true
+   },
+   "holding": {
+    "said": 42.0,
+    "right": null
+   }
+  },
+  "gemini": {
+   "model": "gemini-flash-lite-latest",
+   "unsuitable_model": false,
+   "listing": {
+    "said": 75.0,
+    "right": true
+   },
+   "holding": {
+    "said": 40.0,
+    "right": null
+   }
+  }
+ }
 }

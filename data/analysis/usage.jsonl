@@ -544,3 +544,17 @@
 {"at": "2026-09-23T17:57:00+00:00", "family": "nvidia", "model": "moonshotai/kimi-k3", "ipo_id": "2026-09-a-one-steels"}
 {"at": "2026-09-23T17:57:02+00:00", "family": "groq", "model": "qwen/qwen3.8-27b", "ipo_id": "2026-09-moneyview"}
 {"at": "2026-09-23T17:58:07+00:00", "family": "nvidia", "model": "moonshotai/kimi-k3", "ipo_id": "2026-09-moneyview"}
+{"at": "2026-09-24T07:46:34+00:00", "family": "groq", "model": "qwen/qwen3.8-27b", "ipo_id": "2026-09-varmora-granito"}
+{"at": "2026-09-24T07:47:38+00:00", "family": "nvidia", "model": "moonshotai/kimi-k3", "ipo_id": "2026-09-varmora-granito"}
+{"at": "2026-09-24T07:47:40+00:00", "family": "groq", "model": "qwen/qwen3.8-27b", "ipo_id": "2026-09-adroit-industries"}
+{"at": "2026-09-24T07:48:49+00:00", "family": "nvidia", "model": "moonshotai/kimi-k3", "ipo_id": "2026-09-adroit-industries"}
+{"at": "2026-09-24T07:48:52+00:00", "family": "groq", "model": "qwen/qwen3.8-27b", "ipo_id": "2026-09-armee-infotech"}
+{"at": "2026-09-24T07:49:55+00:00", "family": "nvidia", "model": "moonshotai/kimi-k3", "ipo_id": "2026-09-armee-infotech"}
+{"at": "2026-09-24T07:49:57+00:00", "family": "groq", "model": "qwen/qwen3.8-27b", "ipo_id": "2026-09-swastika-infra"}
+{"at": "2026-09-24T07:51:00+00:00", "family": "nvidia", "model": "moonshotai/kimi-k3", "ipo_id": "2026-09-swastika-infra"}
+{"at": "2026-09-24T07:51:04+00:00", "family": "groq", "model": "qwen/qwen3.8-27b", "ipo_id": "2026-09-a-one-steels"}
+{"at": "2026-09-24T07:52:25+00:00", "family": "nvidia", "model": "moonshotai/kimi-k3", "ipo_id": "2026-09-a-one-steels"}
+{"at": "2026-09-24T07:52:28+00:00", "family": "groq", "model": "qwen/qwen3.8-27b", "ipo_id": "2026-09-moneyview"}
+{"at": "2026-09-24T07:53:59+00:00", "family": "nvidia", "model": "moonshotai/kimi-k3", "ipo_id": "2026-09-moneyview"}
+{"at": "2026-09-24T07:54:04+00:00", "family": "groq", "model": "qwen/qwen3.8-27b", "ipo_id": "2026-09-runwal-enterprises"}
+{"at": "2026-09-24T07:54:55+00:00", "family": "nvidia", "model": "moonshotai/kimi-k3", "ipo_id": "2026-09-runwal-enterprises"}
