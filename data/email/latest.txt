@@ -1,22 +1,22 @@
-IPO RADAR — generated 2026-09-25 14:25 UTC
+IPO RADAR — generated 2026-09-25 18:03 UTC
 ============================================================
 Full dashboard: https://dev171296.github.io/ipo-radar/
 
 AT A GLANCE
 ------------------------------------------------------------
 Company                           Closes      Applying          Holding
-A-One Steels India Limited        2026-09-28  WAIT FOR LISTING  WAIT FOR LISTING
-Runwal Enterprises Limited        2026-09-29  AVOID             WAIT FOR LISTING
-Orient Cables (India) Limited     2026-09-29  APPLY             APPLY
-German Green Steel and Power Lim  2026-09-29  APPLY SELECTIVELY APPLY SELECTIVELY
 Swastika Infra Limited            2026-09-25  not enough info   WAIT FOR LISTING
 Adroit Industries (India) Limite  2026-09-25  not enough info   APPLY
 ArMee Infotech Limited            2026-09-25  not enough info   APPLY SELECTIVELY
 Coreintegra Consulting Services   2026-09-25  not enough info   not enough info
 Elevate Campuses Limited          2026-09-25  not enough info   not enough info
 Pooja Logistics Limited           2026-09-25  not enough info   not enough info
-Moneyview Limited                 2026-09-28  not enough info   not enough info
+A-One Steels India Limited        2026-09-28  not enough info   WAIT FOR LISTING
 Green Asia Impex Limited          2026-09-28  not enough info   not enough info
+Moneyview Limited                 2026-09-28  not enough info   not enough info
+Runwal Enterprises Limited        2026-09-29  not enough info   WAIT FOR LISTING
+Orient Cables (India) Limited     2026-09-29  not enough info   STRONG APPLY
+German Green Steel and Power Lim  2026-09-29  not enough info   APPLY SELECTIVELY
 AceVector Limited                 2026-09-29  not enough info   not enough info
 Bench Mark Infotech Services Lim  2026-09-29  not enough info   not enough info
 Himalayan Solar Limited           2026-09-29  not enough info   not enough info
@@ -50,7 +50,7 @@ THE DETAIL
 ------------------------------------------------------------
 
 A-One Steels India Limited
-  CALL: applying -> WAIT FOR LISTING   |   holding -> WAIT FOR LISTING
+  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> WAIT FOR LISTING
   mainboard · 2026-09-24 to 2026-09-28 · Rs.385 to Rs.405
   Fundamentals: 48.5 (78% assessed)   Demand: None (14% assessed)
   groq: listing 25, long-term 40, confidence low
@@ -70,7 +70,7 @@ Adroit Industries (India) Limited
   mainboard · 2026-09-23 to 2026-09-25 · Rs.126 to Rs.134
   Fundamentals: 70.5 (48% assessed)   Demand: None (14% assessed)
   groq: listing 85, long-term 45, confidence medium
-  nvidia: listing 85, long-term 58, confidence medium
+  nvidia: listing 85, long-term 45, confidence medium
 
 ArMee Infotech Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> APPLY SELECTIVELY
@@ -110,7 +110,7 @@ Elevate Campuses Limited
   Fundamentals: None (0% assessed)   Demand: None (14% assessed)
 
 German Green Steel and Power Limited
-  CALL: applying -> APPLY SELECTIVELY   |   holding -> APPLY SELECTIVELY
+  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> APPLY SELECTIVELY
   mainboard · 2026-09-25 to 2026-09-29 · Rs.132 to Rs.139
   Fundamentals: 61.6 (34% assessed)   Demand: None (14% assessed)
   groq: listing 35, long-term 55, confidence low
@@ -201,7 +201,6 @@ Moneyview Limited
   Fundamentals: None (10% assessed)   Demand: None (14% assessed)
   groq: listing 42, long-term 35, confidence low
   nvidia: listing 68, long-term 38, confidence low
-  !! models disagree on listing_view by 26.0 points
 
 National Stock Exchange of India Limited
   CALL: applying -> WAIT FOR LISTING   |   holding -> NOT ENOUGH INFORMATION
@@ -211,7 +210,7 @@ National Stock Exchange of India Limited
   nvidia: listing 38, long-term 55, confidence low
 
 Orient Cables (India) Limited
-  CALL: applying -> APPLY   |   holding -> APPLY
+  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> STRONG APPLY
   mainboard · 2026-09-25 to 2026-09-29 · Rs.258 to Rs.272
   Fundamentals: 88.9 (38% assessed)   Demand: None (14% assessed)
   groq: listing 35, long-term 45, confidence low
@@ -256,7 +255,7 @@ Rentomojo Limited
   * mostly an exit for existing holders: only 17% of the money reaches the company
 
 Runwal Enterprises Limited
-  CALL: applying -> AVOID   |   holding -> WAIT FOR LISTING
+  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> WAIT FOR LISTING
   mainboard · 2026-09-25 to 2026-09-29 · Rs.290 to Rs.302
   Fundamentals: 50.3 (78% assessed)   Demand: None (14% assessed)
   groq: listing 15, long-term 20, confidence low
@@ -317,7 +316,6 @@ Swastika Infra Limited
   Fundamentals: 66.3 (60% assessed)   Demand: None (14% assessed)
   groq: listing 35, long-term 40, confidence low
   nvidia: listing 68, long-term 33, confidence medium
-  !! models disagree on listing_view by 33.0 points
   * very high revenue growth: 60.96% a year — scored just below the band beneath it, because a pre-IPO surge is as often a reason for the timing as a sign of quality
   * cash was consumed every year: operating cash flow [-965.21, -7653.52, -334.25]
 

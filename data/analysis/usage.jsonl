@@ -649,3 +649,4 @@
 {"at": "2026-09-25T14:20:25+00:00", "family": "nvidia", "model": "moonshotai/kimi-k3", "ipo_id": "2026-09-runwal-enterprises"}
 {"at": "2026-09-25T14:21:08+00:00", "family": "groq", "model": "qwen/qwen3.8-27b", "ipo_id": "2026-09-shah-investor-s-home"}
 {"at": "2026-09-25T14:25:11+00:00", "family": "nvidia", "model": "google/gemma-4-31b-it (fallback: kimi-k3 timed out)", "ipo_id": "2026-09-shah-investor-s-home"}
+{"at": "2026-09-25T18:03:19+00:00", "family": "nvidia", "model": "google/gemma-4-31b-it (fallback: kimi-k3 ran out of room)", "ipo_id": "2026-09-adroit-industries"}
