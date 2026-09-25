@@ -3,8 +3,8 @@
   "call": "AVOID",
   "colour": "#a32d22",
   "score": 33.2,
-  "confidence": "low",
-  "why": "built from our fundamentals, market demand — 75% of the deciding weight; the two models disagree, which lowers confidence",
+  "confidence": "medium",
+  "why": "built from our fundamentals, market demand — 75% of the deciding weight",
   "based_on": [
    "our fundamentals",
    "market demand"
@@ -15,12 +15,12 @@
   "colour": "#2f7d32",
   "score": 69.2,
   "confidence": "low",
-  "why": "built from our fundamentals — 60% of the deciding weight; the two models disagree, which lowers confidence",
+  "why": "built from our fundamentals — 60% of the deciding weight",
   "based_on": [
    "our fundamentals"
   ]
  },
  "hard_stops": [],
  "serious_findings": [],
- "models_disagree": true
+ "models_disagree": false
 }
