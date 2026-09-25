@@ -2,7 +2,7 @@
  "ipo_id": "2026-09-manipal-payment-and-identity-solutions",
  "name": "Manipal Payment and Identity Solutions Limited",
  "symbol": "MPIMANIPAL",
- "graded_at": "2026-09-24T18:03:48+00:00",
+ "graded_at": "2026-09-25T08:16:32+00:00",
  "status": "listed",
  "listed_on": "2026-09-17",
  "issue_price": 339.0,
@@ -13,7 +13,11 @@
  "listing_day_close_pct": 1.81,
  "checkpoints": {
   "1 week": {
-   "due": "2026-09-24"
+   "date": "2026-09-24",
+   "close": 359.95,
+   "return_pct": 6.18,
+   "nifty_pct": -0.89,
+   "vs_nifty_pct": 7.07
   },
   "1 month": {
    "due": "2026-10-17"

@@ -592,3 +592,23 @@
 {"at": "2026-09-24T18:01:16+00:00", "family": "nvidia", "model": "moonshotai/kimi-k3", "ipo_id": "2026-09-orient-cables"}
 {"at": "2026-09-24T18:01:20+00:00", "family": "groq", "model": "qwen/qwen3.8-27b", "ipo_id": "2026-09-runwal-enterprises"}
 {"at": "2026-09-24T18:03:37+00:00", "family": "nvidia", "model": "moonshotai/kimi-k3", "ipo_id": "2026-09-runwal-enterprises"}
+{"at": "2026-09-25T08:04:54+00:00", "family": "groq", "model": "qwen/qwen3.8-27b", "ipo_id": "2026-09-adroit-industries"}
+{"at": "2026-09-25T08:06:11+00:00", "family": "nvidia", "model": "google/gemma-4-31b-it (fallback: kimi-k3 ran out of room)", "ipo_id": "2026-09-adroit-industries"}
+{"at": "2026-09-25T08:06:55+00:00", "family": "groq", "model": "openai/gpt-oss-120b", "ipo_id": "2026-09-armee-infotech"}
+{"at": "2026-09-25T08:08:09+00:00", "family": "nvidia", "model": "moonshotai/kimi-k3", "ipo_id": "2026-09-armee-infotech"}
+{"at": "2026-09-25T08:08:32+00:00", "family": "groq", "model": "qwen/qwen3.8-27b", "ipo_id": "2026-09-swastika-infra"}
+{"at": "2026-09-25T08:09:38+00:00", "family": "nvidia", "model": "moonshotai/kimi-k3", "ipo_id": "2026-09-swastika-infra"}
+{"at": "2026-09-25T08:09:41+00:00", "family": "groq", "model": "qwen/qwen3.8-27b", "ipo_id": "2026-09-a-one-steels"}
+{"at": "2026-09-25T08:10:38+00:00", "family": "nvidia", "model": "moonshotai/kimi-k3", "ipo_id": "2026-09-a-one-steels"}
+{"at": "2026-09-25T08:10:41+00:00", "family": "groq", "model": "qwen/qwen3.8-27b", "ipo_id": "2026-09-moneyview"}
+{"at": "2026-09-25T08:11:23+00:00", "family": "nvidia", "model": "moonshotai/kimi-k3", "ipo_id": "2026-09-moneyview"}
+{"at": "2026-09-25T08:11:26+00:00", "family": "groq", "model": "qwen/qwen3.8-27b", "ipo_id": "2026-09-acevector"}
+{"at": "2026-09-25T08:12:07+00:00", "family": "nvidia", "model": "moonshotai/kimi-k3", "ipo_id": "2026-09-acevector"}
+{"at": "2026-09-25T08:12:09+00:00", "family": "groq", "model": "qwen/qwen3.8-27b", "ipo_id": "2026-09-german-green-steel-and-power"}
+{"at": "2026-09-25T08:12:58+00:00", "family": "nvidia", "model": "moonshotai/kimi-k3", "ipo_id": "2026-09-german-green-steel-and-power"}
+{"at": "2026-09-25T08:13:00+00:00", "family": "groq", "model": "qwen/qwen3.8-27b", "ipo_id": "2026-09-orient-cables"}
+{"at": "2026-09-25T08:14:02+00:00", "family": "nvidia", "model": "moonshotai/kimi-k3", "ipo_id": "2026-09-orient-cables"}
+{"at": "2026-09-25T08:14:04+00:00", "family": "groq", "model": "qwen/qwen3.8-27b", "ipo_id": "2026-09-runwal-enterprises"}
+{"at": "2026-09-25T08:15:20+00:00", "family": "nvidia", "model": "moonshotai/kimi-k3", "ipo_id": "2026-09-runwal-enterprises"}
+{"at": "2026-09-25T08:15:32+00:00", "family": "groq", "model": "qwen/qwen3.8-27b", "ipo_id": "2026-09-varmora-granito"}
+{"at": "2026-09-25T08:16:30+00:00", "family": "nvidia", "model": "moonshotai/kimi-k3", "ipo_id": "2026-09-varmora-granito"}

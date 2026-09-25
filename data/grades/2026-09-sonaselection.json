@@ -2,6 +2,138 @@
  "ipo_id": "2026-09-sonaselection",
  "name": "Sonaselection India Limited",
  "symbol": "SONA",
- "graded_at": "2026-09-24T18:03:48+00:00",
- "status": "not listed yet"
+ "graded_at": "2026-09-25T08:16:32+00:00",
+ "status": "listed",
+ "listed_on": "2026-09-24",
+ "issue_price": 99.0,
+ "issue_price_note": "top of the price band — the price nearly every Indian IPO is finally set at",
+ "listing_open": 102.31,
+ "listing_close": 107.42,
+ "listing_gain_pct": 3.34,
+ "listing_day_close_pct": 8.51,
+ "checkpoints": {
+  "1 week": {
+   "due": "2026-10-01"
+  },
+  "1 month": {
+   "due": "2026-10-24"
+  },
+  "3 months": {
+   "due": "2026-12-24"
+  },
+  "6 months": {
+   "due": "2027-03-25"
+  },
+  "12 months": {
+   "due": "2027-09-24"
+  }
+ },
+ "predictions": {
+  "cutoff_utc": "20260924034500",
+  "score_taken_at": "20260923175548",
+  "fundamentals": 50.8,
+  "call": {
+   "listing": {
+    "call": "WAIT FOR LISTING",
+    "colour": "#b25b1a",
+    "score": 41.6,
+    "confidence": "medium",
+    "why": "built from our fundamentals, market demand — 75% of the deciding weight",
+    "based_on": [
+     "our fundamentals",
+     "market demand"
+    ]
+   },
+   "longterm": {
+    "call": "WAIT FOR LISTING",
+    "colour": "#b25b1a",
+    "score": 45,
+    "confidence": "low",
+    "why": "built from our fundamentals — 60% of the deciding weight; capped at 45 by a hard stop: revenue more than tripled in two years without explanation",
+    "based_on": [
+     "our fundamentals"
+    ]
+   },
+   "hard_stops": [
+    "revenue more than tripled in two years without explanation"
+   ],
+   "serious_findings": [
+    "the business consumed cash in its latest year",
+    "heavily indebted"
+   ],
+   "models_disagree": false
+  },
+  "models": {
+   "groq": {
+    "model": "qwen/qwen3.8-27b",
+    "answered_at": "20260922081640",
+    "listing_view": 35.0,
+    "longterm_view": 40.0,
+    "unsuitable_model": false
+   },
+   "nvidia": {
+    "model": "moonshotai/kimi-k3",
+    "answered_at": "20260922081640",
+    "listing_view": 35.0,
+    "longterm_view": 42.0,
+    "unsuitable_model": false
+   },
+   "gemini": {
+    "model": "gemini-flash-lite-latest",
+    "answered_at": "20260921151938",
+    "listing_view": 35.0,
+    "longterm_view": 20.0,
+    "unsuitable_model": false
+   }
+  }
+ },
+ "marks": {
+  "our_call": {
+   "listing": {
+    "said": "WAIT FOR LISTING",
+    "right": false
+   },
+   "holding": {
+    "said": "WAIT FOR LISTING",
+    "right": null,
+    "due": "2026-12-24"
+   }
+  },
+  "groq": {
+   "model": "qwen/qwen3.8-27b",
+   "unsuitable_model": false,
+   "listing": {
+    "said": 35.0,
+    "right": false
+   },
+   "holding": {
+    "said": 40.0,
+    "right": null
+   }
+  },
+  "nvidia": {
+   "model": "moonshotai/kimi-k3",
+   "unsuitable_model": false,
+   "listing": {
+    "said": 35.0,
+    "right": false
+   },
+   "holding": {
+    "said": 42.0,
+    "right": null
+   }
+  },
+  "gemini": {
+   "model": "gemini-flash-lite-latest",
+   "unsuitable_model": false,
+   "listing": {
+    "said": 35.0,
+    "right": false
+   },
+   "holding": {
+    "said": 20.0,
+    "right": null
+   }
+  }
+ }
 }

@@ -1,28 +1,28 @@
-IPO RADAR — generated 2026-09-24 18:03 UTC
+IPO RADAR — generated 2026-09-25 08:16 UTC
 ============================================================
 Full dashboard: https://dev171296.github.io/ipo-radar/
 
 AT A GLANCE
 ------------------------------------------------------------
 Company                           Closes      Applying          Holding
-Runwal Enterprises Limited        2026-09-29  APPLY SELECTIVELY WAIT FOR LISTING
-Orient Cables (India) Limited     2026-09-29  APPLY             APPLY
+Swastika Infra Limited            2026-09-25  APPLY SELECTIVELY WAIT FOR LISTING
+ArMee Infotech Limited            2026-09-25  APPLY SELECTIVELY APPLY SELECTIVELY
+A-One Steels India Limited        2026-09-28  WAIT FOR LISTING  WAIT FOR LISTING
 German Green Steel and Power Lim  2026-09-29  WAIT FOR LISTING  APPLY SELECTIVELY
-Varmora Granito Limited           2026-09-24  not enough info   APPLY
-Swastika Infra Limited            2026-09-25  not enough info   WAIT FOR LISTING
+Runwal Enterprises Limited        2026-09-29  WAIT FOR LISTING  WAIT FOR LISTING
 Adroit Industries (India) Limite  2026-09-25  not enough info   APPLY
-ArMee Infotech Limited            2026-09-25  not enough info   APPLY SELECTIVELY
 Coreintegra Consulting Services   2026-09-25  not enough info   not enough info
 Elevate Campuses Limited          2026-09-25  not enough info   not enough info
 Pooja Logistics Limited           2026-09-25  not enough info   not enough info
-A-One Steels India Limited        2026-09-28  not enough info   WAIT FOR LISTING
 Green Asia Impex Limited          2026-09-28  not enough info   not enough info
 Moneyview Limited                 2026-09-28  not enough info   not enough info
+Orient Cables (India) Limited     2026-09-29  not enough info   STRONG APPLY
 AceVector Limited                 2026-09-29  not enough info   not enough info
 Bench Mark Infotech Services Lim  2026-09-29  not enough info   not enough info
 Himalayan Solar Limited           2026-09-29  not enough info   not enough info
 Shah Investor's Home Limited      2026-09-30  not enough info   WAIT FOR LISTING
 Srit India Limited                2026-09-30  not enough info   not enough info
+Varmora Granito Limited           2026-09-24  AVOID             APPLY
 Sonaselection India Limited       2026-09-21  WAIT FOR LISTING  WAIT FOR LISTING
 Kanohar Electricals Limited       2026-09-10  APPLY             STRONG APPLY
 SS Retail Limited                 2026-09-18  APPLY             APPLY
@@ -50,11 +50,11 @@ THE DETAIL
 ------------------------------------------------------------
 
 A-One Steels India Limited
-  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> WAIT FOR LISTING
+  CALL: applying -> WAIT FOR LISTING   |   holding -> WAIT FOR LISTING
   mainboard · 2026-09-24 to 2026-09-28 · Rs.385 to Rs.405
   Fundamentals: 48.5 (78% assessed)   Demand: None (14% assessed)
-  groq: listing 15, long-term 45, confidence low
-  nvidia: listing 38, long-term 42, confidence medium
+  groq: listing 25, long-term 45, confidence low
+  nvidia: listing 35, long-term 45, confidence medium
   * priced far below its stated peer group: 21.93× against 45.2× — a 52% discount
   * profit is not turning into cash: only 21% of EBITDA came through as cash
 
@@ -62,23 +62,24 @@ AceVector Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
   mainboard · 2026-09-25 to 2026-09-29 · Rs.30 to Rs.32
   Fundamentals: None (24% assessed)   Demand: None (0% assessed)
-  groq: listing 25, long-term 40, confidence low
-  nvidia: listing 45, long-term 38, confidence low
-  !! models disagree on listing_view by 20.0 points
+  groq: listing 15, long-term 30, confidence low
+  nvidia: listing 22, long-term 42, confidence low
 
 Adroit Industries (India) Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> APPLY
   mainboard · 2026-09-23 to 2026-09-25 · Rs.126 to Rs.134
   Fundamentals: 70.5 (48% assessed)   Demand: None (14% assessed)
-  groq: listing 65, long-term 55, confidence low
-  nvidia: listing 78, long-term 45, confidence medium
+  groq: listing 75, long-term 60, confidence medium
+  nvidia: listing 85, long-term 40, confidence medium
+  !! models disagree on longterm_view by 20.0 points
+  !! models disagree on governance by 20.0 points
 
 ArMee Infotech Limited
-  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> APPLY SELECTIVELY
+  CALL: applying -> APPLY SELECTIVELY   |   holding -> APPLY SELECTIVELY
   mainboard · 2026-09-23 to 2026-09-25 · Rs.350 to Rs.375
   Fundamentals: 67.8 (52% assessed)   Demand: None (14% assessed)
-  groq: listing 25, long-term 40, confidence medium
-  nvidia: listing 38, long-term 42, confidence low
+  groq: listing 30, long-term 45, confidence low
+  nvidia: listing 42, long-term 40, confidence low
   * priced far below its stated peer group: 19.57× against 70.63× — a 72% discount
   * owes more this year than it expects to collect: current ratio 0.14
 
@@ -97,7 +98,7 @@ Axiom Gas Engineering Limited
 
 Bench Mark Infotech Services Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
-  sme · 2026-09-25 to 2026-09-29 · Rs.104 to Rs.110
+  sme · 2026-09-25 to 2026-09-29 · band not announced
   Fundamentals: None (0% assessed)   Demand: None (0% assessed)
 
 Coreintegra Consulting Services Limited
@@ -114,8 +115,9 @@ German Green Steel and Power Limited
   CALL: applying -> WAIT FOR LISTING   |   holding -> APPLY SELECTIVELY
   mainboard · 2026-09-25 to 2026-09-29 · Rs.132 to Rs.139
   Fundamentals: 61.6 (34% assessed)   Demand: None (0% assessed)
-  groq: listing 45, long-term 65, confidence low
-  nvidia: listing 38, long-term 56, confidence medium
+  groq: listing 15, long-term 65, confidence low
+  nvidia: listing 42, long-term 56, confidence low
+  !! models disagree on listing_view by 27.0 points
   * owes more this year than it expects to collect: current ratio 0.97
 
 Glass Wall Systems (India) Limited
@@ -142,7 +144,7 @@ Hero Motors Limited
 
 Himalayan Solar Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
-  sme · 2026-09-25 to 2026-09-29 · Rs.98 to Rs.103
+  sme · 2026-09-25 to 2026-09-29 · band not announced
   Fundamentals: None (0% assessed)   Demand: None (0% assessed)
 
 Jindal Supreme (India) Limited
@@ -200,8 +202,8 @@ Moneyview Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
   mainboard · 2026-09-24 to 2026-09-28 · Rs.32 to Rs.34
   Fundamentals: None (10% assessed)   Demand: None (14% assessed)
-  groq: listing 35, long-term 45, confidence low
-  nvidia: listing 48, long-term 45, confidence low
+  groq: listing 35, long-term 40, confidence low
+  nvidia: listing 45, long-term 48, confidence low
 
 National Stock Exchange of India Limited
   CALL: applying -> WAIT FOR LISTING   |   holding -> NOT ENOUGH INFORMATION
@@ -211,11 +213,12 @@ National Stock Exchange of India Limited
   nvidia: listing 38, long-term 55, confidence low
 
 Orient Cables (India) Limited
-  CALL: applying -> APPLY   |   holding -> APPLY
+  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> STRONG APPLY
   mainboard · 2026-09-25 to 2026-09-29 · Rs.258 to Rs.272
   Fundamentals: 88.9 (38% assessed)   Demand: None (0% assessed)
-  groq: listing 35, long-term 40, confidence low
-  nvidia: listing 45, long-term 40, confidence low
+  groq: listing 15, long-term 45, confidence low
+  nvidia: listing 42, long-term 45, confidence low
+  !! models disagree on listing_view by 27.0 points
   * priced far below its stated peer group: 51.61× against 128.11× — a 60% discount
 
 Pooja Logistics Limited
@@ -256,12 +259,11 @@ Rentomojo Limited
   * mostly an exit for existing holders: only 17% of the money reaches the company
 
 Runwal Enterprises Limited
-  CALL: applying -> APPLY SELECTIVELY   |   holding -> WAIT FOR LISTING
+  CALL: applying -> WAIT FOR LISTING   |   holding -> WAIT FOR LISTING
   mainboard · 2026-09-25 to 2026-09-29 · Rs.290 to Rs.302
   Fundamentals: 50.3 (78% assessed)   Demand: None (0% assessed)
-  groq: listing 35, long-term 40, confidence low
-  nvidia: listing 72, long-term 34, confidence low
-  !! models disagree on listing_view by 37.0 points
+  groq: listing 15, long-term 30, confidence low
+  nvidia: listing 30, long-term 32, confidence medium
   * growth concentrated in the year before the IPO: sales moved -58% then 79% — the good year is the one just before listing
   * cash was consumed every year: operating cash flow [-1807.13, -1981.36, -5494.82]
   * heavily indebted: debt is 3.29× the owners' stake
@@ -313,20 +315,24 @@ Steamhouse India Limited
   * owes more this year than it expects to collect: current ratio 0.36
 
 Swastika Infra Limited
-  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> WAIT FOR LISTING
+  CALL: applying -> APPLY SELECTIVELY   |   holding -> WAIT FOR LISTING
   mainboard · 2026-09-23 to 2026-09-25 · Rs.175 to Rs.185
   Fundamentals: 66.3 (60% assessed)   Demand: None (14% assessed)
   groq: listing 35, long-term 40, confidence low
-  nvidia: listing 38, long-term 32, confidence medium
+  nvidia: listing 55, long-term 38, confidence medium
+  !! models disagree on listing_view by 20.0 points
   * very high revenue growth: 60.96% a year — scored just below the band beneath it, because a pre-IPO surge is as often a reason for the timing as a sign of quality
   * cash was consumed every year: operating cash flow [-965.21, -7653.52, -334.25]
 
 Varmora Granito Limited
-  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> APPLY
+  CALL: applying -> AVOID   |   holding -> APPLY
   mainboard · 2026-09-22 to 2026-09-24 · Rs.140 to Rs.148
-  Fundamentals: 69.2 (88% assessed)   Demand: None (14% assessed)
-  groq: listing 15, long-term 40, confidence medium
-  nvidia: listing 28, long-term 35, confidence medium
+  Fundamentals: 69.2 (88% assessed)   Demand: 15.2 (40% assessed)
+  groq: listing 15, long-term 45, confidence high
+  nvidia: listing 32, long-term 38, confidence medium
+  !! models disagree on listing_view by 17.0 points
+  !! models disagree on governance by 20.0 points
+  * under-subscribed: closed at 0.9725319359857693× — the issue did not fill
 
 Veegaland Developers Limited
   CALL: applying -> APPLY SELECTIVELY   |   holding -> APPLY SELECTIVELY

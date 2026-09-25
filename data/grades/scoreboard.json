@@ -1,28 +1,28 @@
 {
- "built_at": "2026-09-24T18:03:48+00:00",
- "listed_ipos": 15,
- "base_rate_pct": 67,
- "average_listing_gain_pct": 14.1,
+ "built_at": "2026-09-25T08:16:32+00:00",
+ "listed_ipos": 16,
+ "base_rate_pct": 69,
+ "average_listing_gain_pct": 13.4,
  "predictors": {
   "Our call (rules + both AIs)": {
-   "listing_graded": 15,
+   "listing_graded": 16,
    "listing_right": 12,
    "no_view": 0,
    "avg_gain_when_yes": 17.2,
-   "avg_gain_when_no": -6.2,
+   "avg_gain_when_no": -3.0,
    "holding_graded": 0,
    "holding_right": 0,
-   "listing_hit_rate_pct": 80
+   "listing_hit_rate_pct": 75
   },
   "Groq": {
-   "listing_graded": 11,
+   "listing_graded": 12,
    "listing_right": 8,
    "no_view": 3,
    "avg_gain_when_yes": 16.6,
-   "avg_gain_when_no": 4.5,
+   "avg_gain_when_no": 4.3,
    "holding_graded": 0,
    "holding_right": 0,
-   "listing_hit_rate_pct": 73
+   "listing_hit_rate_pct": 67
   },
   "Groq — unsuitable models (labelled, kept)": {
    "listing_graded": 1,
@@ -35,24 +35,24 @@
    "listing_hit_rate_pct": 100
   },
   "NVIDIA (Kimi K3)": {
-   "listing_graded": 3,
+   "listing_graded": 4,
    "listing_right": 2,
    "no_view": 0,
    "avg_gain_when_yes": 24.6,
-   "avg_gain_when_no": null,
+   "avg_gain_when_no": 3.3,
    "holding_graded": 0,
    "holding_right": 0,
-   "listing_hit_rate_pct": 67
+   "listing_hit_rate_pct": 50
   },
   "Gemini (retired)": {
-   "listing_graded": 15,
+   "listing_graded": 16,
    "listing_right": 12,
    "no_view": 0,
    "avg_gain_when_yes": 19.6,
-   "avg_gain_when_no": -1.2,
+   "avg_gain_when_no": -0.3,
    "holding_graded": 0,
    "holding_right": 0,
-   "listing_hit_rate_pct": 80
+   "listing_hit_rate_pct": 75
   }
  },
  "long_term_note": "graded 3 months after listing, against the Nifty 50",
@@ -213,8 +213,8 @@
   {
    "ipo_id": "2026-09-kheria-autocomp",
    "name": "Kheria Autocomp Limited",
-   "status": "not listed yet",
-   "listed_on": null,
+   "status": "listed, but no issue price to measure against",
+   "listed_on": "2026-09-24",
    "listing_gain_pct": null,
    "our_listing_call": null,
    "right": null
@@ -231,17 +231,17 @@
   {
    "ipo_id": "2026-09-sonaselection",
    "name": "Sonaselection India Limited",
-   "status": "not listed yet",
-   "listed_on": null,
-   "listing_gain_pct": null,
-   "our_listing_call": null,
-   "right": null
+   "status": "listed",
+   "listed_on": "2026-09-24",
+   "listing_gain_pct": 3.34,
+   "our_listing_call": "WAIT FOR LISTING",
+   "right": false
   },
   {
    "ipo_id": "2026-09-spectraa-technology-solutions",
    "name": "SpectraA Technology Solutions Limited",
-   "status": "not listed yet",
-   "listed_on": null,
+   "status": "listed, but no issue price to measure against",
+   "listed_on": "2026-09-24",
    "listing_gain_pct": null,
    "our_listing_call": null,
    "right": null
@@ -258,7 +258,7 @@
   {
    "ipo_id": "2026-09-varmora-granito",
    "name": "Varmora Granito Limited",
-   "status": "issue still open",
+   "status": "not listed yet",
    "listed_on": null,
    "listing_gain_pct": null,
    "our_listing_call": null,

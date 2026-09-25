@@ -8,7 +8,7 @@
   "name": "AceVector Limited",
   "symbol": "ACEVECTOR",
   "type": "mainboard",
-  "status": "upcoming",
+  "status": "open",
   "dates": {
     "open": "2026-09-25",
     "close": "2026-09-29",
@@ -18,15 +18,15 @@
   "price_band": "Rs.30 to Rs.32",
   "issue_size_shares": 74229166.0,
   "subscription": {
-    "times": null,
-    "shares_offered": null,
-    "shares_bid": null
+    "times": 0.04727338577399617,
+    "shares_offered": 74229166.0,
+    "shares_bid": 3509064.0
   },
   "also_on_bse": false,
   "sources": {
     "calendar": "nse",
-    "fetched_at": "2026-09-24T17:55:32+00:00"
+    "fetched_at": "2026-09-25T08:04:35+00:00"
   },
   "missing": [],
-  "rebuilt_at": "2026-09-24T17:55:32+00:00"
+  "rebuilt_at": "2026-09-25T08:04:35+00:00"
 }

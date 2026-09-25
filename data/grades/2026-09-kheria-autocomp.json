@@ -2,6 +2,11 @@
  "ipo_id": "2026-09-kheria-autocomp",
  "name": "Kheria Autocomp Limited",
  "symbol": "KHERIAAUTO",
- "graded_at": "2026-09-24T18:03:48+00:00",
- "status": "not listed yet"
+ "graded_at": "2026-09-25T08:16:32+00:00",
+ "status": "listed, but no issue price to measure against",
+ "listed_on": "2026-09-24",
+ "issue_price": null,
+ "issue_price_note": "top of the price band — the price nearly every Indian IPO is finally set at",
+ "listing_open": 104.9,
+ "listing_close": 103.05
 }

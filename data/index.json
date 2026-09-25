@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T17:55:32+00:00",
+  "generated_at": "2026-09-25T08:04:35+00:00",
   "count": 40,
   "ipos": [
     {
@@ -20,7 +20,7 @@
       "id": "2026-09-acevector",
       "name": "AceVector Limited",
       "type": "mainboard",
-      "status": "upcoming",
+      "status": "open",
       "dates": {
         "open": "2026-09-25",
         "close": "2026-09-29",
@@ -90,14 +90,14 @@
       "id": "2026-09-bench-mark-infotech-services",
       "name": "Bench Mark Infotech Services Limited",
       "type": "sme",
-      "status": "upcoming",
+      "status": "open",
       "dates": {
         "open": "2026-09-25",
         "close": "2026-09-29",
         "open_as_given": "25-Sep-2026",
         "close_as_given": "29-Sep-2026"
       },
-      "price_band": "Rs.104 to Rs.110",
+      "price_band": null,
       "missing": []
     },
     {
@@ -132,7 +132,7 @@
       "id": "2026-09-german-green-steel-and-power",
       "name": "German Green Steel and Power Limited",
       "type": "mainboard",
-      "status": "upcoming",
+      "status": "open",
       "dates": {
         "open": "2026-09-25",
         "close": "2026-09-29",
@@ -188,14 +188,14 @@
       "id": "2026-09-himalayan-solar",
       "name": "Himalayan Solar Limited",
       "type": "sme",
-      "status": "upcoming",
+      "status": "open",
       "dates": {
         "open": "2026-09-25",
         "close": "2026-09-29",
         "open_as_given": "25-Sep-2026",
         "close_as_given": "29-Sep-2026"
       },
-      "price_band": "Rs.98 to Rs.103",
+      "price_band": null,
       "missing": []
     },
     {
@@ -328,7 +328,7 @@
       "id": "2026-09-orient-cables",
       "name": "Orient Cables (India) Limited",
       "type": "mainboard",
-      "status": "upcoming",
+      "status": "open",
       "dates": {
         "open": "2026-09-25",
         "close": "2026-09-29",
@@ -412,7 +412,7 @@
       "id": "2026-09-runwal-enterprises",
       "name": "Runwal Enterprises Limited",
       "type": "mainboard",
-      "status": "upcoming",
+      "status": "open",
       "dates": {
         "open": "2026-09-25",
         "close": "2026-09-29",
@@ -465,6 +465,20 @@
       "missing": []
     },
     {
+      "id": "2026-09-srit",
+      "name": "Srit India Limited",
+      "type": "mainboard",
+      "status": "upcoming",
+      "dates": {
+        "open": "2026-09-28",
+        "close": "2026-09-30",
+        "open_as_given": "28-Sep-2026",
+        "close_as_given": "30-Sep-2026"
+      },
+      "price_band": "Rs.123 to Rs.130",
+      "missing": []
+    },
+    {
       "id": "2026-09-ss-retail",
       "name": "SS Retail Limited",
       "type": "mainboard",
@@ -510,7 +524,7 @@
       "id": "2026-09-varmora-granito",
       "name": "Varmora Granito Limited",
       "type": "mainboard",
-      "status": "open",
+      "status": "upcoming",
       "dates": {
         "open": "2026-09-22",
         "close": "2026-09-24",
@@ -546,20 +560,6 @@
         "close_as_given": "11-Sep-2026"
       },
       "price_band": null,
-      "missing": []
-    },
-    {
-      "id": "2026-09-srit",
-      "name": "Srit India Limited",
-      "type": "mainboard",
-      "status": "upcoming",
-      "dates": {
-        "open": "2026-09-28",
-        "close": "2026-09-30",
-        "open_as_given": "28-Sep-2026",
-        "close_as_given": "30-Sep-2026"
-      },
-      "price_band": "Rs.123 to Rs.130",
       "missing": []
     }
   ]

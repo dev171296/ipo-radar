@@ -2,7 +2,7 @@
  "ipo_id": "2026-09-karamtara-engineering",
  "name": "Karamtara Engineering Limited",
  "symbol": "KARAMTARA",
- "graded_at": "2026-09-24T18:03:48+00:00",
+ "graded_at": "2026-09-25T08:16:32+00:00",
  "status": "listed",
  "listed_on": "2026-09-17",
  "issue_price": 254.0,
@@ -13,7 +13,11 @@
  "listing_day_close_pct": 38.58,
  "checkpoints": {
   "1 week": {
-   "due": "2026-09-24"
+   "date": "2026-09-24",
+   "close": 369.05,
+   "return_pct": 45.3,
+   "nifty_pct": -0.89,
+   "vs_nifty_pct": 46.19
   },
   "1 month": {
    "due": "2026-10-17"

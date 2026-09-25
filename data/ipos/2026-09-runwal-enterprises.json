@@ -8,7 +8,7 @@
   "name": "Runwal Enterprises Limited",
   "symbol": "RUNWALENTR",
   "type": "mainboard",
-  "status": "upcoming",
+  "status": "open",
   "dates": {
     "open": "2026-09-25",
     "close": "2026-09-29",
@@ -18,15 +18,15 @@
   "price_band": "Rs.290 to Rs.302",
   "issue_size_shares": 12111294.0,
   "subscription": {
-    "times": null,
-    "shares_offered": null,
-    "shares_bid": null
+    "times": 0.18810591172173674,
+    "shares_offered": 12111294.0,
+    "shares_bid": 2278206.0
   },
   "also_on_bse": false,
   "sources": {
     "calendar": "nse",
-    "fetched_at": "2026-09-24T17:55:32+00:00"
+    "fetched_at": "2026-09-25T08:04:35+00:00"
   },
   "missing": [],
-  "rebuilt_at": "2026-09-24T17:55:32+00:00"
+  "rebuilt_at": "2026-09-25T08:04:35+00:00"
 }
