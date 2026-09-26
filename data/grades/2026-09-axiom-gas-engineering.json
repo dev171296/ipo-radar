@@ -2,6 +2,11 @@
  "ipo_id": "2026-09-axiom-gas-engineering",
  "name": "Axiom Gas Engineering Limited",
  "symbol": "AXIOMGAS",
- "graded_at": "2026-09-25T18:03:34+00:00",
- "status": "not listed yet"
+ "graded_at": "2026-09-26T07:59:03+00:00",
+ "status": "listed, but no issue price to measure against",
+ "listed_on": "2026-09-25",
+ "issue_price": null,
+ "issue_price_note": "top of the price band — the price nearly every Indian IPO is finally set at",
+ "listing_open": 54.75,
+ "listing_close": 54.05
 }

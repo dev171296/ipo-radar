@@ -1,16 +1,10 @@
-IPO RADAR — generated 2026-09-25 18:03 UTC
+IPO RADAR — generated 2026-09-26 07:59 UTC
 ============================================================
 Full dashboard: https://dev171296.github.io/ipo-radar/
 
 AT A GLANCE
 ------------------------------------------------------------
 Company                           Closes      Applying          Holding
-Swastika Infra Limited            2026-09-25  not enough info   WAIT FOR LISTING
-Adroit Industries (India) Limite  2026-09-25  not enough info   APPLY
-ArMee Infotech Limited            2026-09-25  not enough info   APPLY SELECTIVELY
-Coreintegra Consulting Services   2026-09-25  not enough info   not enough info
-Elevate Campuses Limited          2026-09-25  not enough info   not enough info
-Pooja Logistics Limited           2026-09-25  not enough info   not enough info
 A-One Steels India Limited        2026-09-28  not enough info   WAIT FOR LISTING
 Green Asia Impex Limited          2026-09-28  not enough info   not enough info
 Moneyview Limited                 2026-09-28  not enough info   not enough info
@@ -22,6 +16,7 @@ Bench Mark Infotech Services Lim  2026-09-29  not enough info   not enough info
 Himalayan Solar Limited           2026-09-29  not enough info   not enough info
 Shah Investor's Home Limited      2026-09-30  not enough info   WAIT FOR LISTING
 Srit India Limited                2026-09-30  not enough info   not enough info
+Swastika Infra Limited            2026-09-25  APPLY SELECTIVELY WAIT FOR LISTING
 Sonaselection India Limited       2026-09-21  WAIT FOR LISTING  WAIT FOR LISTING
 Kanohar Electricals Limited       2026-09-10  APPLY             STRONG APPLY
 SS Retail Limited                 2026-09-18  APPLY             APPLY
@@ -30,18 +25,23 @@ Karamtara Engineering Limited     2026-09-11  APPLY             APPLY
 Manipal Payment and Identity Sol  2026-09-11  AVOID             APPLY
 Rentomojo Limited                 2026-09-11  APPLY             APPLY SELECTIVELY
 Asset Reconstruction Company (In  2026-09-11  APPLY SELECTIVELY APPLY
+Adroit Industries (India) Limite  2026-09-25  APPLY             APPLY SELECTIVELY
 Steamhouse India Limited          2026-09-11  APPLY             APPLY SELECTIVELY
 Varmora Granito Limited           2026-09-24  AVOID             APPLY
+ArMee Infotech Limited            2026-09-25  WAIT FOR LISTING  APPLY SELECTIVELY
 Glass Wall Systems (India) Limit  2026-09-10  APPLY             APPLY
 Prasol Chemicals Limited          2026-09-10  WAIT FOR LISTING  APPLY SELECTIVELY
 Pranav Constructions Limited      2026-09-09  APPLY             APPLY SELECTIVELY
 Hero Motors Limited               2026-09-18  APPLY SELECTIVELY APPLY SELECTIVELY
 Veegaland Developers Limited      2026-09-15  APPLY SELECTIVELY APPLY SELECTIVELY
 Axiom Gas Engineering Limited     2026-09-22  WAIT FOR LISTING  not enough info
+Coreintegra Consulting Services   2026-09-25  AVOID             not enough info
+Elevate Campuses Limited          2026-09-25  AVOID             not enough info
 Jindal Supreme (India) Limited    2026-09-18  APPLY             not enough info
 Kheria Autocomp Limited           2026-09-21  WAIT FOR LISTING  not enough info
 Manika Plastech Limited           2026-09-16  APPLY             not enough info
 National Stock Exchange of India  2026-09-21  WAIT FOR LISTING  not enough info
+Pooja Logistics Limited           2026-09-25  WAIT FOR LISTING  not enough info
 Qualiance International Limited   2026-09-08  APPLY             not enough info
 SpectraA Technology Solutions Li  2026-09-21  APPLY             not enough info
 Vinod Texworld Limited            2026-09-11  AVOID             not enough info
@@ -66,18 +66,18 @@ AceVector Limited
   nvidia: listing 25, long-term 35, confidence low
 
 Adroit Industries (India) Limited
-  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> APPLY
+  CALL: applying -> APPLY   |   holding -> APPLY SELECTIVELY
   mainboard · 2026-09-23 to 2026-09-25 · Rs.126 to Rs.134
-  Fundamentals: 70.5 (48% assessed)   Demand: None (14% assessed)
+  Fundamentals: 70.5 (48% assessed)   Demand: 73.8 (40% assessed)
   groq: listing 85, long-term 45, confidence medium
-  nvidia: listing 85, long-term 45, confidence medium
+  nvidia: listing 82, long-term 48, confidence medium
 
 ArMee Infotech Limited
-  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> APPLY SELECTIVELY
+  CALL: applying -> WAIT FOR LISTING   |   holding -> APPLY SELECTIVELY
   mainboard · 2026-09-23 to 2026-09-25 · Rs.350 to Rs.375
-  Fundamentals: 67.8 (52% assessed)   Demand: None (14% assessed)
-  groq: listing 25, long-term 30, confidence medium
-  nvidia: listing 38, long-term 40, confidence low
+  Fundamentals: 67.8 (52% assessed)   Demand: 37.0 (40% assessed)
+  groq: listing 35, long-term 40, confidence low
+  nvidia: listing 38, long-term 34, confidence low
   * priced far below its stated peer group: 19.57× against 70.63× — a 72% discount
   * owes more this year than it expects to collect: current ratio 0.14
 
@@ -100,14 +100,14 @@ Bench Mark Infotech Services Limited
   Fundamentals: None (0% assessed)   Demand: None (14% assessed)
 
 Coreintegra Consulting Services Limited
-  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
+  CALL: applying -> AVOID   |   holding -> NOT ENOUGH INFORMATION
   sme · 2026-09-23 to 2026-09-25 · band not announced
-  Fundamentals: None (0% assessed)   Demand: None (14% assessed)
+  Fundamentals: None (0% assessed)   Demand: 28.3 (40% assessed)
 
 Elevate Campuses Limited
-  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
+  CALL: applying -> AVOID   |   holding -> NOT ENOUGH INFORMATION
   mainboard · 2026-09-23 to 2026-09-25 · Rs.343 to Rs.362
-  Fundamentals: None (0% assessed)   Demand: None (14% assessed)
+  Fundamentals: None (0% assessed)   Demand: 28.3 (40% assessed)
 
 German Green Steel and Power Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> APPLY SELECTIVELY
@@ -218,9 +218,9 @@ Orient Cables (India) Limited
   * priced far below its stated peer group: 51.61× against 128.11× — a 60% discount
 
 Pooja Logistics Limited
-  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
+  CALL: applying -> WAIT FOR LISTING   |   holding -> NOT ENOUGH INFORMATION
   sme · 2026-09-23 to 2026-09-25 · band not announced
-  Fundamentals: None (0% assessed)   Demand: None (14% assessed)
+  Fundamentals: None (0% assessed)   Demand: 41.2 (40% assessed)
 
 Pranav Constructions Limited
   CALL: applying -> APPLY   |   holding -> APPLY SELECTIVELY
@@ -311,11 +311,12 @@ Steamhouse India Limited
   * owes more this year than it expects to collect: current ratio 0.36
 
 Swastika Infra Limited
-  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> WAIT FOR LISTING
+  CALL: applying -> APPLY SELECTIVELY   |   holding -> WAIT FOR LISTING
   mainboard · 2026-09-23 to 2026-09-25 · Rs.175 to Rs.185
-  Fundamentals: 66.3 (60% assessed)   Demand: None (14% assessed)
+  Fundamentals: 66.3 (60% assessed)   Demand: 57.5 (40% assessed)
   groq: listing 35, long-term 40, confidence low
-  nvidia: listing 68, long-term 33, confidence medium
+  nvidia: listing 55, long-term 32, confidence medium
+  !! models disagree on listing_view by 20.0 points
   * very high revenue growth: 60.96% a year — scored just below the band beneath it, because a pre-IPO surge is as often a reason for the timing as a sign of quality
   * cash was consumed every year: operating cash flow [-965.21, -7653.52, -334.25]
 

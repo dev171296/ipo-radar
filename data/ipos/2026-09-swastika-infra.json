@@ -8,7 +8,7 @@
   "name": "Swastika Infra Limited",
   "symbol": "SWASTIKAIN",
   "type": "mainboard",
-  "status": "open",
+  "status": "upcoming",
   "dates": {
     "open": "2026-09-23",
     "close": "2026-09-25",
@@ -18,15 +18,15 @@
   "price_band": "Rs.175 to Rs.185",
   "issue_size_shares": 6335001.0,
   "subscription": {
-    "times": 5.859898364656927,
-    "shares_offered": 6335001.0,
-    "shares_bid": 37122462.0
+    "times": null,
+    "shares_offered": null,
+    "shares_bid": null
   },
   "also_on_bse": false,
   "sources": {
     "calendar": "nse",
-    "fetched_at": "2026-09-25T18:02:17+00:00"
+    "fetched_at": "2026-09-26T07:55:21+00:00"
   },
   "missing": [],
-  "rebuilt_at": "2026-09-25T18:02:17+00:00"
+  "rebuilt_at": "2026-09-26T07:55:21+00:00"
 }
