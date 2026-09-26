@@ -1,4 +1,4 @@
-IPO RADAR — generated 2026-09-26 07:59 UTC
+IPO RADAR — generated 2026-09-26 10:06 UTC
 ============================================================
 Full dashboard: https://dev171296.github.io/ipo-radar/
 
@@ -25,7 +25,7 @@ Karamtara Engineering Limited     2026-09-11  APPLY             APPLY
 Manipal Payment and Identity Sol  2026-09-11  AVOID             APPLY
 Rentomojo Limited                 2026-09-11  APPLY             APPLY SELECTIVELY
 Asset Reconstruction Company (In  2026-09-11  APPLY SELECTIVELY APPLY
-Adroit Industries (India) Limite  2026-09-25  APPLY             APPLY SELECTIVELY
+Adroit Industries (India) Limite  2026-09-25  APPLY             APPLY
 Steamhouse India Limited          2026-09-11  APPLY             APPLY SELECTIVELY
 Varmora Granito Limited           2026-09-24  AVOID             APPLY
 ArMee Infotech Limited            2026-09-25  WAIT FOR LISTING  APPLY SELECTIVELY
@@ -66,7 +66,7 @@ AceVector Limited
   nvidia: listing 25, long-term 35, confidence low
 
 Adroit Industries (India) Limited
-  CALL: applying -> APPLY   |   holding -> APPLY SELECTIVELY
+  CALL: applying -> APPLY   |   holding -> APPLY
   mainboard · 2026-09-23 to 2026-09-25 · Rs.126 to Rs.134
   Fundamentals: 70.5 (48% assessed)   Demand: 73.8 (40% assessed)
   groq: listing 85, long-term 45, confidence medium
@@ -316,7 +316,6 @@ Swastika Infra Limited
   Fundamentals: 66.3 (60% assessed)   Demand: 57.5 (40% assessed)
   groq: listing 35, long-term 40, confidence low
   nvidia: listing 55, long-term 32, confidence medium
-  !! models disagree on listing_view by 20.0 points
   * very high revenue growth: 60.96% a year — scored just below the band beneath it, because a pre-IPO surge is as often a reason for the timing as a sign of quality
   * cash was consumed every year: operating cash flow [-965.21, -7653.52, -334.25]
 
