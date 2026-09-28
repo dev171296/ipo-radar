@@ -1,0 +1,62 @@
+{
+ "ok": true,
+ "model": "google/gemma-4-31b-it (fallback: kimi-k3 timed out)",
+ "answered_at": "2026-09-28T12:11:20+00:00",
+ "evidence_fingerprint": "c900b67e1b0cd2d5",
+ "prompt_chars": 8695,
+ "passages_supplied": {
+  "litigation": 8,
+  "governance": 8,
+  "business_quality": 8,
+  "risks": 4
+ },
+ "answer": {
+  "listing_view": {
+   "score": 40.0,
+   "reasoning": "Subscription is currently below 1x (0.697), indicating weak initial demand. While the PE of 13.73 is below the benchmark of 18.31, the lack of investor appetite suggests a cautious listing."
+  },
+  "longterm_view": {
+   "score": 45.0,
+   "reasoning": "Revenue growth is strong (28.84% CAGR), but cash flow is alarming; the latest year shows negative operating cash flow despite high PAT. ROCE is in a clear downward trend (47.52% to 28.79%), suggesting diminishing returns on capital."
+  },
+  "governance": {
+   "score": 50.0,
+   "reasoning": "Evidence is thin. There is a show cause notice from tax authorities [litigation, page 445] and personal guarantees for bank facilities [promoters, page 358]."
+  },
+  "key_risks": [
+   {
+    "risk": "Cash Flow Divergence",
+    "why_it_matters": "The company reports profits but is burning cash from operations (-121.01 million latest), indicating poor earnings quality.",
+    "citation": "VERIFIED FIGURES",
+    "citation_verified": false
+   },
+   {
+    "risk": "Project Overruns",
+    "why_it_matters": "Inability to recover expenses or manage time overruns could hurt financials.",
+    "citation": "[business, page 289]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Procurement Uncertainty",
+    "why_it_matters": "Future business procurement is described as uncertain, which may adversely affect the business.",
+    "citation": "[business, page 275]",
+    "citation_verified": true
+   }
+  ],
+  "answers": [
+   {
+    "question": "where did the money go — receivables, inventory, or both?",
+    "answer": "The money did not go into receivables; receivable days have actually improved significantly from 94.0 to 19.5 days. The provided data does not include inventory figures, so it cannot be determined if it went to inventory.",
+    "citation": "VERIFIED FIGURES",
+    "citation_verified": false
+   }
+  ],
+  "confidence": "medium",
+  "what_would_change_my_mind": "Evidence of a turnaround in operating cash flow or a detailed breakdown of the balance sheet to explain the discrepancy between reported and calculated debt-to-equity.",
+  "citation_check": {
+   "claims_checked": 4,
+   "citations_verified": 2,
+   "citations_not_matching_what_we_sent": 2
+  }
+ }
+}

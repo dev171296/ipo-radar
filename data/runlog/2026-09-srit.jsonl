@@ -13,3 +13,5 @@
 {"at": "2026-09-27T14:12:06+00:00", "event": "prospectus_not_found", "ok": false, "source": "sebi"}
 {"at": "2026-09-27T17:54:31+00:00", "event": "prospectus_not_found", "ok": false, "source": "sebi"}
 {"at": "2026-09-28T08:52:21+00:00", "event": "prospectus_not_found", "ok": false, "source": "sebi"}
+{"at": "2026-09-28T11:54:13+00:00", "event": "abridged_read", "ok": true, "detail": "11 pages, 9 parts", "source": "sebi"}
+{"at": "2026-09-28T11:54:44+00:00", "event": "full_read", "ok": true, "detail": "540 pages, 6 parts", "source": "sebi"}

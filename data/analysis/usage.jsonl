@@ -669,3 +669,19 @@
 {"at": "2026-09-28T09:07:48+00:00", "family": "nvidia", "model": "google/gemma-4-31b-it (fallback: kimi-k3 timed out)", "ipo_id": "2026-09-runwal-enterprises"}
 {"at": "2026-09-28T09:07:51+00:00", "family": "groq", "model": "qwen/qwen3.8-27b", "ipo_id": "2026-09-shah-investor-s-home"}
 {"at": "2026-09-28T09:10:21+00:00", "family": "nvidia", "model": "google/gemma-4-31b-it (fallback: kimi-k3 timed out)", "ipo_id": "2026-09-shah-investor-s-home"}
+{"at": "2026-09-28T11:54:56+00:00", "family": "groq", "model": "qwen/qwen3.8-27b", "ipo_id": "2026-09-a-one-steels"}
+{"at": "2026-09-28T11:56:49+00:00", "family": "nvidia", "model": "google/gemma-4-31b-it (fallback: kimi-k3 timed out)", "ipo_id": "2026-09-a-one-steels"}
+{"at": "2026-09-28T11:56:52+00:00", "family": "groq", "model": "qwen/qwen3.8-27b", "ipo_id": "2026-09-moneyview"}
+{"at": "2026-09-28T11:58:43+00:00", "family": "nvidia", "model": "google/gemma-4-31b-it (fallback: kimi-k3 timed out)", "ipo_id": "2026-09-moneyview"}
+{"at": "2026-09-28T11:58:45+00:00", "family": "groq", "model": "qwen/qwen3.8-27b", "ipo_id": "2026-09-acevector"}
+{"at": "2026-09-28T12:00:53+00:00", "family": "nvidia", "model": "google/gemma-4-31b-it (fallback: kimi-k3 timed out)", "ipo_id": "2026-09-acevector"}
+{"at": "2026-09-28T12:00:55+00:00", "family": "groq", "model": "qwen/qwen3.8-27b", "ipo_id": "2026-09-german-green-steel-and-power"}
+{"at": "2026-09-28T12:02:47+00:00", "family": "nvidia", "model": "google/gemma-4-31b-it (fallback: kimi-k3 timed out)", "ipo_id": "2026-09-german-green-steel-and-power"}
+{"at": "2026-09-28T12:02:51+00:00", "family": "groq", "model": "qwen/qwen3.8-27b", "ipo_id": "2026-09-orient-cables"}
+{"at": "2026-09-28T12:04:45+00:00", "family": "nvidia", "model": "google/gemma-4-31b-it (fallback: kimi-k3 timed out)", "ipo_id": "2026-09-orient-cables"}
+{"at": "2026-09-28T12:04:48+00:00", "family": "groq", "model": "qwen/qwen3.8-27b", "ipo_id": "2026-09-runwal-enterprises"}
+{"at": "2026-09-28T12:06:58+00:00", "family": "nvidia", "model": "google/gemma-4-31b-it (fallback: kimi-k3 timed out)", "ipo_id": "2026-09-runwal-enterprises"}
+{"at": "2026-09-28T12:07:01+00:00", "family": "groq", "model": "qwen/qwen3.8-27b", "ipo_id": "2026-09-shah-investor-s-home"}
+{"at": "2026-09-28T12:08:54+00:00", "family": "nvidia", "model": "google/gemma-4-31b-it (fallback: kimi-k3 timed out)", "ipo_id": "2026-09-shah-investor-s-home"}
+{"at": "2026-09-28T12:08:57+00:00", "family": "groq", "model": "qwen/qwen3.8-27b", "ipo_id": "2026-09-srit"}
+{"at": "2026-09-28T12:11:20+00:00", "family": "nvidia", "model": "google/gemma-4-31b-it (fallback: kimi-k3 timed out)", "ipo_id": "2026-09-srit"}
