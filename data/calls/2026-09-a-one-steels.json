@@ -1,12 +1,13 @@
 {
  "listing": {
-  "call": "NOT ENOUGH INFORMATION",
-  "colour": "#6b6862",
-  "score": 48.5,
-  "confidence": "none",
-  "why": "only 25% of what decides the listing call is available — no call is better than a guess dressed as one",
+  "call": "APPLY SELECTIVELY",
+  "colour": "#a86400",
+  "score": 54.5,
+  "confidence": "medium",
+  "why": "built from our fundamentals, market demand — 75% of the deciding weight",
   "based_on": [
-   "our fundamentals"
+   "our fundamentals",
+   "market demand"
   ]
  },
  "longterm": {

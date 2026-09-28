@@ -689,3 +689,7 @@
 {"at": "2026-09-28T16:57:40+00:00", "family": "nvidia", "model": "google/gemma-4-31b-it (fallback: kimi-k3 timed out)", "ipo_id": "2026-09-a-one-steels"}
 {"at": "2026-09-28T16:57:42+00:00", "family": "groq", "model": "qwen/qwen3.8-27b", "ipo_id": "2026-09-moneyview"}
 {"at": "2026-09-28T16:59:50+00:00", "family": "nvidia", "model": "google/gemma-4-31b-it (fallback: kimi-k3 timed out)", "ipo_id": "2026-09-moneyview"}
+{"at": "2026-09-28T20:12:39+00:00", "family": "groq", "model": "qwen/qwen3.8-27b", "ipo_id": "2026-09-a-one-steels"}
+{"at": "2026-09-28T20:15:00+00:00", "family": "nvidia", "model": "google/gemma-4-31b-it (fallback: kimi-k3 timed out)", "ipo_id": "2026-09-a-one-steels"}
+{"at": "2026-09-28T20:15:02+00:00", "family": "groq", "model": "qwen/qwen3.8-27b", "ipo_id": "2026-09-moneyview"}
+{"at": "2026-09-28T20:17:49+00:00", "family": "nvidia", "model": "google/gemma-4-31b-it (fallback: kimi-k3 timed out)", "ipo_id": "2026-09-moneyview"}

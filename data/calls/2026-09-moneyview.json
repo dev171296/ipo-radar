@@ -1,11 +1,12 @@
 {
  "listing": {
-  "call": "NOT ENOUGH INFORMATION",
-  "colour": "#6b6862",
-  "score": 85.0,
-  "confidence": "none",
-  "why": "only 25% of what decides the listing call is available — no call is better than a guess dressed as one",
+  "call": "APPLY",
+  "colour": "#2f7d32",
+  "score": 77.5,
+  "confidence": "medium",
+  "why": "built from market demand, the two AI readings — 75% of the deciding weight",
   "based_on": [
+   "market demand",
    "the two AI readings"
   ]
  },
