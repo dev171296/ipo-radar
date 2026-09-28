@@ -1,21 +1,22 @@
-IPO RADAR — generated 2026-09-28 12:11 UTC
+IPO RADAR — generated 2026-09-28 17:00 UTC
 ============================================================
 Full dashboard: https://dev171296.github.io/ipo-radar/
 
 AT A GLANCE
 ------------------------------------------------------------
 Company                           Closes      Applying          Holding
-German Green Steel and Power Lim  2026-09-29  APPLY SELECTIVELY APPLY SELECTIVELY
-Runwal Enterprises Limited        2026-09-29  AVOID             WAIT FOR LISTING
-Shah Investor's Home Limited      2026-09-30  AVOID             WAIT FOR LISTING
 A-One Steels India Limited        2026-09-28  not enough info   WAIT FOR LISTING
 Moneyview Limited                 2026-09-28  not enough info   not enough info
+Runwal Enterprises Limited        2026-09-29  not enough info   WAIT FOR LISTING
 Orient Cables (India) Limited     2026-09-29  not enough info   STRONG APPLY
+German Green Steel and Power Lim  2026-09-29  not enough info   APPLY SELECTIVELY
 AceVector Limited                 2026-09-29  not enough info   not enough info
 Bench Mark Infotech Services Lim  2026-09-29  not enough info   not enough info
 Himalayan Solar Limited           2026-09-29  not enough info   not enough info
 Srit India Limited                2026-09-30  not enough info   APPLY SELECTIVELY
+Shah Investor's Home Limited      2026-09-30  not enough info   WAIT FOR LISTING
 Green Asia Impex Limited          2026-10-01  not enough info   not enough info
+Papadmalji Agro Foods Limited     2026-10-01  not enough info   not enough info
 Eventions Limited                 2026-10-05  not enough info   not enough info
 Vishal Nirmiti Limited            2026-10-05  not enough info   not enough info
 Swastika Infra Limited            2026-09-25  APPLY SELECTIVELY WAIT FOR LISTING
@@ -55,9 +56,8 @@ A-One Steels India Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> WAIT FOR LISTING
   mainboard · 2026-09-24 to 2026-09-28 · Rs.385 to Rs.405
   Fundamentals: 48.5 (78% assessed)   Demand: None (14% assessed)
-  groq: listing 45, long-term 55, confidence low
+  groq: listing 65, long-term 45, confidence low
   nvidia: listing 65, long-term 40, confidence medium
-  !! models disagree on listing_view by 20.0 points
   * priced far below its stated peer group: 21.93× against 45.2× — a 52% discount
   * profit is not turning into cash: only 21% of EBITDA came through as cash
 
@@ -118,12 +118,11 @@ Eventions Limited
   Fundamentals: None (0% assessed)   Demand: None (0% assessed)
 
 German Green Steel and Power Limited
-  CALL: applying -> APPLY SELECTIVELY   |   holding -> APPLY SELECTIVELY
+  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> APPLY SELECTIVELY
   mainboard · 2026-09-25 to 2026-09-29 · Rs.132 to Rs.139
   Fundamentals: 61.6 (34% assessed)   Demand: None (14% assessed)
   groq: listing 45, long-term 60, confidence low
   nvidia: listing 65, long-term 55, confidence low
-  !! models disagree on listing_view by 20.0 points
   * owes more this year than it expects to collect: current ratio 0.97
 
 Glass Wall Systems (India) Limited
@@ -208,7 +207,7 @@ Moneyview Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
   mainboard · 2026-09-24 to 2026-09-28 · Rs.32 to Rs.34
   Fundamentals: None (10% assessed)   Demand: None (14% assessed)
-  groq: listing 85, long-term 45, confidence low
+  groq: listing 85, long-term 45, confidence medium
   nvidia: listing 85, long-term 40, confidence low
 
 National Stock Exchange of India Limited
@@ -224,8 +223,12 @@ Orient Cables (India) Limited
   Fundamentals: 88.9 (38% assessed)   Demand: None (14% assessed)
   groq: listing 45, long-term 40, confidence low
   nvidia: listing 65, long-term 35, confidence low
-  !! models disagree on listing_view by 20.0 points
   * priced far below its stated peer group: 51.61× against 128.11× — a 60% discount
+
+Papadmalji Agro Foods Limited
+  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
+  sme · 2026-09-29 to 2026-10-01 · Rs.69 to Rs.72
+  Fundamentals: None (0% assessed)   Demand: None (0% assessed)
 
 Pooja Logistics Limited
   CALL: applying -> WAIT FOR LISTING   |   holding -> NOT ENOUGH INFORMATION
@@ -265,7 +268,7 @@ Rentomojo Limited
   * mostly an exit for existing holders: only 17% of the money reaches the company
 
 Runwal Enterprises Limited
-  CALL: applying -> AVOID   |   holding -> WAIT FOR LISTING
+  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> WAIT FOR LISTING
   mainboard · 2026-09-25 to 2026-09-29 · Rs.290 to Rs.302
   Fundamentals: 50.3 (78% assessed)   Demand: None (14% assessed)
   groq: listing 15, long-term 25, confidence low
@@ -275,7 +278,7 @@ Runwal Enterprises Limited
   * heavily indebted: debt is 3.29× the owners' stake
 
 Shah Investor's Home Limited
-  CALL: applying -> AVOID   |   holding -> WAIT FOR LISTING
+  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> WAIT FOR LISTING
   mainboard · 2026-09-28 to 2026-09-30 · Rs.159 to Rs.167
   Fundamentals: 42.8 (60% assessed)   Demand: None (0% assessed)
   groq: listing 15, long-term 25, confidence medium

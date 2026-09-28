@@ -1,5 +1,5 @@
 {
- "built_at": "2026-09-28T12:11:28+00:00",
+ "built_at": "2026-09-28T17:00:07+00:00",
  "listed_ipos": 16,
  "base_rate_pct": 69,
  "average_listing_gain_pct": 13.4,
@@ -411,6 +411,15 @@
   {
    "ipo_id": "2026-09-green-asia-impex",
    "name": "Green Asia Impex Limited",
+   "status": "issue still open",
+   "listed_on": null,
+   "listing_gain_pct": null,
+   "our_listing_call": null,
+   "right": null
+  },
+  {
+   "ipo_id": "2026-09-papadmalji-agro-foods",
+   "name": "Papadmalji Agro Foods Limited",
    "status": "issue still open",
    "listed_on": null,
    "listing_gain_pct": null,
