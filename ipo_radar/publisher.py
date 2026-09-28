@@ -552,10 +552,33 @@ def _in_days(days):
 
 # ------------------------------------------------------------ the message
 
+def still_open(entry) -> bool:
+    """
+    Is this IPO still one you could act on?
+
+    An issue whose closing date has passed is history: you can no longer apply,
+    so its call is no longer a decision, just a record. Those belong on the
+    dashboard and in the track record once they list — not in a digest you read
+    to decide what to do today.
+
+    NSE's own `status` field is unreliable (it still said "upcoming" for issues
+    that had closed a week earlier), so we go by the closing DATE. An IPO with
+    no closing date at all is kept, on the principle that we do not hide
+    something just because a field is missing.
+    """
+    close = (entry["ipo"].get("dates") or {}).get("close")
+    if not close:
+        return True
+    return close >= _in_days(0)
+
+
 def build(companies, dashboard_url=None, scoreboard=None) -> tuple:
     """Returns (subject, html, plain_text)."""
     when = storage.now()[:16].replace("T", " ")
-    live = [c for c in companies if c["ipo"].get("status") != "closed"]
+    everything = companies
+    companies = [c for c in companies if still_open(c)]
+    finished = len(everything) - len(companies)
+    live = companies
     # The subject carries the calls themselves. "IPO Radar — 5 tracked" tells
     # you nothing from a phone's lock screen; "Kanohar: Apply" does.
     headline = []
@@ -569,7 +592,9 @@ def build(companies, dashboard_url=None, scoreboard=None) -> tuple:
                 headline.append(f"{short}: {prefix}{body.title()}")
                 break
     subject = ("IPO Radar — " + "; ".join(headline[:3])
-               if headline else f"IPO Radar — {len(companies)} tracked")
+               if headline else
+               (f"IPO Radar — {len(companies)} open or upcoming"
+                if companies else "IPO Radar — nothing open right now"))
 
     overview = _overview(companies, dashboard_url)
 
@@ -612,8 +637,10 @@ def build(companies, dashboard_url=None, scoreboard=None) -> tuple:
               border-radius:10px;">
 <tr><td style="padding:26px 26px 30px;">
   <h1 style="margin:0;font-family:{FONT};font-size:22px;color:{INK};">IPO Radar</h1>
-  {_para(f"{len(companies)} IPOs tracked · {len(live)} still open or upcoming · "
-         f"generated {e(when)} UTC", color=MUTED, size=13, top=4)}
+  {_para(f"{len(companies)} open or upcoming · generated {e(when)} UTC"
+         + (f" · {finished} closed issue(s) left out — they are on the dashboard, "
+            f"and in the track record once they list" if finished else ""),
+         color=MUTED, size=13, top=4)}
   {_para("<b>Read the coverage before the score.</b> Each score is worked out only "
          "over the parts that could be assessed from the filed documents. Anything "
          "missing is reported as missing, never counted as zero. The two AI readings "
@@ -644,12 +671,16 @@ def build(companies, dashboard_url=None, scoreboard=None) -> tuple:
                                   "client may cut it short. Open the dashboard "
                                   "for the complete picture.", color=BAD, size=13)
                             + "</td></tr></table>\n</td></tr></table>", 1)
-    return subject, body, plain_text(companies, when, dashboard_url)
+    return subject, body, plain_text(companies, when, dashboard_url, finished)
 
 
-def plain_text(companies, when, dashboard_url=None) -> str:
+def plain_text(companies, when, dashboard_url=None, finished=0) -> str:
     """The text-only version. Sent alongside, always."""
-    lines = [f"IPO RADAR — generated {when} UTC", "=" * 60]
+    lines = [f"IPO RADAR — generated {when} UTC",
+             f"{len(companies)} open or upcoming"
+             + (f"; {finished} closed issue(s) left out — see the dashboard"
+                if finished else ""),
+             "=" * 60]
     if dashboard_url:
         lines.append(f"Full dashboard: {dashboard_url}")
     lines += ["", "AT A GLANCE", "-" * 60,
