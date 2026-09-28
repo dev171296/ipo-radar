@@ -8,7 +8,7 @@
   "name": "Shah Investor's Home Limited",
   "symbol": "SHAHINVEST",
   "type": "mainboard",
-  "status": "upcoming",
+  "status": "open",
   "dates": {
     "open": "2026-09-28",
     "close": "2026-09-30",
@@ -18,15 +18,15 @@
   "price_band": "Rs.159 to Rs.167",
   "issue_size_shares": 3779440.0,
   "subscription": {
-    "times": null,
-    "shares_offered": null,
-    "shares_bid": null
+    "times": 0.17805415617128464,
+    "shares_offered": 3779440.0,
+    "shares_bid": 672945.0
   },
   "also_on_bse": false,
   "sources": {
     "calendar": "nse",
-    "fetched_at": "2026-09-27T17:54:29+00:00"
+    "fetched_at": "2026-09-28T08:52:18+00:00"
   },
   "missing": [],
-  "rebuilt_at": "2026-09-27T17:54:29+00:00"
+  "rebuilt_at": "2026-09-28T08:52:18+00:00"
 }
