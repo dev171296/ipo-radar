@@ -1,5 +1,5 @@
 {
- "built_at": "2026-09-28T20:18:06+00:00",
+ "built_at": "2026-09-29T08:57:27+00:00",
  "listed_ipos": 16,
  "base_rate_pct": 69,
  "average_listing_gain_pct": 13.4,
@@ -321,7 +321,7 @@
   {
    "ipo_id": "2026-09-a-one-steels",
    "name": "A-One Steels India Limited",
-   "status": "issue still open",
+   "status": "not listed yet",
    "listed_on": null,
    "listing_gain_pct": null,
    "our_listing_call": null,
@@ -330,7 +330,7 @@
   {
    "ipo_id": "2026-09-moneyview",
    "name": "Moneyview Limited",
-   "status": "issue still open",
+   "status": "not listed yet",
    "listed_on": null,
    "listing_gain_pct": null,
    "our_listing_call": null,
@@ -429,6 +429,15 @@
   {
    "ipo_id": "2026-09-eventions",
    "name": "Eventions Limited",
+   "status": "issue still open",
+   "listed_on": null,
+   "listing_gain_pct": null,
+   "our_listing_call": null,
+   "right": null
+  },
+  {
+   "ipo_id": "2026-09-nityas-gems-and-jewellery",
+   "name": "Nityas Gems and Jewellery Limited",
    "status": "issue still open",
    "listed_on": null,
    "listing_gain_pct": null,
