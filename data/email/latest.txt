@@ -1,4 +1,4 @@
-IPO RADAR — generated 2026-09-29 15:06 UTC
+IPO RADAR — generated 2026-09-29 18:54 UTC
 13 open or upcoming; 31 closed issue(s) left out — see the dashboard
 ============================================================
 Full dashboard: https://dev171296.github.io/ipo-radar/
@@ -6,12 +6,12 @@ Full dashboard: https://dev171296.github.io/ipo-radar/
 AT A GLANCE
 ------------------------------------------------------------
 Company                           Closes      Applying          Holding
+Orient Cables (India) Limited     2026-09-29  APPLY             APPLY
 German Green Steel and Power Lim  2026-09-29  APPLY             APPLY SELECTIVELY
 Runwal Enterprises Limited        2026-09-29  WAIT FOR LISTING  WAIT FOR LISTING
-Orient Cables (India) Limited     2026-09-29  not enough info   STRONG APPLY
-AceVector Limited                 2026-09-29  not enough info   not enough info
-Bench Mark Infotech Services Lim  2026-09-29  not enough info   not enough info
-Himalayan Solar Limited           2026-09-29  not enough info   not enough info
+AceVector Limited                 2026-09-29  WAIT FOR LISTING  not enough info
+Bench Mark Infotech Services Lim  2026-09-29  APPLY             not enough info
+Himalayan Solar Limited           2026-09-29  WAIT FOR LISTING  not enough info
 Srit India Limited                2026-09-30  not enough info   APPLY SELECTIVELY
 Shah Investor's Home Limited      2026-09-30  not enough info   WAIT FOR LISTING
 Green Asia Impex Limited          2026-10-01  not enough info   not enough info
@@ -24,27 +24,26 @@ THE DETAIL
 ------------------------------------------------------------
 
 AceVector Limited
-  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
+  CALL: applying -> WAIT FOR LISTING   |   holding -> NOT ENOUGH INFORMATION
   mainboard · 2026-09-25 to 2026-09-29 · Rs.30 to Rs.32
-  Fundamentals: None (24% assessed)   Demand: None (14% assessed)
+  Fundamentals: None (24% assessed)   Demand: 41.2 (40% assessed)
   groq: listing 35, long-term 40, confidence low
-  nvidia: listing 55, long-term 38, confidence medium
-  !! models disagree on listing_view by 20.0 points
+  nvidia: listing 48, long-term 42, confidence low
 
 Bench Mark Infotech Services Limited
-  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
+  CALL: applying -> APPLY   |   holding -> NOT ENOUGH INFORMATION
   sme · 2026-09-25 to 2026-09-29 · band not announced
-  Fundamentals: None (0% assessed)   Demand: None (14% assessed)
+  Fundamentals: None (0% assessed)   Demand: 73.8 (40% assessed)
 
 Eventions Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
-  sme · 2026-09-30 to 2026-10-05 · Rs.112 to Rs.118
+  sme · 2026-09-30 to 2026-10-05 · band not announced
   Fundamentals: None (0% assessed)   Demand: None (0% assessed)
 
 German Green Steel and Power Limited
   CALL: applying -> APPLY   |   holding -> APPLY SELECTIVELY
   mainboard · 2026-09-25 to 2026-09-29 · Rs.132 to Rs.139
-  Fundamentals: 61.6 (34% assessed)   Demand: None (14% assessed)
+  Fundamentals: 61.6 (34% assessed)   Demand: 67.2 (40% assessed)
   groq: listing 65, long-term 55, confidence low
   nvidia: listing 82, long-term 55, confidence low
   !! models disagree on listing_view by 17.0 points
@@ -56,9 +55,9 @@ Green Asia Impex Limited
   Fundamentals: None (0% assessed)   Demand: None (14% assessed)
 
 Himalayan Solar Limited
-  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
+  CALL: applying -> WAIT FOR LISTING   |   holding -> NOT ENOUGH INFORMATION
   sme · 2026-09-25 to 2026-09-29 · band not announced
-  Fundamentals: None (0% assessed)   Demand: None (14% assessed)
+  Fundamentals: None (0% assessed)   Demand: 37.0 (40% assessed)
 
 Nityas Gems and Jewellery Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
@@ -66,11 +65,12 @@ Nityas Gems and Jewellery Limited
   Fundamentals: None (0% assessed)   Demand: None (0% assessed)
 
 Orient Cables (India) Limited
-  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> STRONG APPLY
+  CALL: applying -> APPLY   |   holding -> APPLY
   mainboard · 2026-09-25 to 2026-09-29 · Rs.258 to Rs.272
-  Fundamentals: 88.9 (38% assessed)   Demand: None (14% assessed)
-  groq: listing 85, long-term 40, confidence low
-  nvidia: listing 78, long-term 38, confidence low
+  Fundamentals: 88.9 (38% assessed)   Demand: 73.8 (40% assessed)
+  groq: listing 85, long-term 45, confidence low
+  nvidia: listing 25, long-term 42, confidence low
+  !! models disagree on listing_view by 60.0 points
   * priced far below its stated peer group: 51.61× against 128.11× — a 60% discount
 
 Papadmalji Agro Foods Limited
@@ -81,9 +81,10 @@ Papadmalji Agro Foods Limited
 Runwal Enterprises Limited
   CALL: applying -> WAIT FOR LISTING   |   holding -> WAIT FOR LISTING
   mainboard · 2026-09-25 to 2026-09-29 · Rs.290 to Rs.302
-  Fundamentals: 50.3 (78% assessed)   Demand: None (14% assessed)
-  groq: listing 25, long-term 20, confidence low
-  nvidia: listing 38, long-term 30, confidence medium
+  Fundamentals: 50.3 (78% assessed)   Demand: 37.0 (40% assessed)
+  groq: listing 35, long-term 40, confidence low
+  nvidia: listing 38, long-term 35, confidence low
+  !! models disagree on governance by 20.0 points
   * growth concentrated in the year before the IPO: sales moved -58% then 79% — the good year is the one just before listing
   * cash was consumed every year: operating cash flow [-1807.13, -1981.36, -5494.82]
   * heavily indebted: debt is 3.29× the owners' stake

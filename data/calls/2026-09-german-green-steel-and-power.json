@@ -2,11 +2,12 @@
  "listing": {
   "call": "APPLY",
   "colour": "#2f7d32",
-  "score": 67.5,
+  "score": 69.5,
   "confidence": "low",
-  "why": "built from our fundamentals, the two AI readings — 50% of the deciding weight; the two models disagree, which lowers confidence",
+  "why": "built from our fundamentals, market demand, the two AI readings; the two models disagree, which lowers confidence",
   "based_on": [
    "our fundamentals",
+   "market demand",
    "the two AI readings"
   ]
  },

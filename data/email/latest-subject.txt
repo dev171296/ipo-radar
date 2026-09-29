@@ -1,1 +1,1 @@
-IPO Radar — GERMAN: Apply; ORIENTCABL: hold Strong Apply; RUNWALENTR: Wait For Listing
+IPO Radar — ACEVECTOR: Wait For Listing; BMISL: Apply; GERMAN: Apply
