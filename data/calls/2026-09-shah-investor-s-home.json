@@ -1,10 +1,10 @@
 {
  "listing": {
-  "call": "WAIT FOR LISTING",
-  "colour": "#b25b1a",
-  "score": 38.9,
+  "call": "AVOID",
+  "colour": "#a32d22",
+  "score": 32.6,
   "confidence": "low",
-  "why": "built from our fundamentals, the two AI readings — 50% of the deciding weight; the two models disagree, which lowers confidence",
+  "why": "built from our fundamentals, the two AI readings — 50% of the deciding weight",
   "based_on": [
    "our fundamentals",
    "the two AI readings"
@@ -13,9 +13,9 @@
  "longterm": {
   "call": "WAIT FOR LISTING",
   "colour": "#b25b1a",
-  "score": 38.5,
-  "confidence": "low",
-  "why": "built from our fundamentals, the two AI readings — 90% of the deciding weight; the two models disagree, which lowers confidence",
+  "score": 36.5,
+  "confidence": "medium",
+  "why": "built from our fundamentals, the two AI readings — 90% of the deciding weight",
   "based_on": [
    "our fundamentals",
    "the two AI readings"
@@ -25,5 +25,5 @@
  "serious_findings": [
   "the business consumed cash in its latest year"
  ],
- "models_disagree": true
+ "models_disagree": false
 }
