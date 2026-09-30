@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T15:07:21+00:00",
+  "generated_at": "2026-09-30T18:31:51+00:00",
   "count": 44,
   "ipos": [
     {
@@ -468,7 +468,7 @@
       "id": "2026-09-shah-investor-s-home",
       "name": "Shah Investor's Home Limited",
       "type": "mainboard",
-      "status": "open",
+      "status": "upcoming",
       "dates": {
         "open": "2026-09-28",
         "close": "2026-09-30",
@@ -510,7 +510,7 @@
       "id": "2026-09-srit",
       "name": "Srit India Limited",
       "type": "mainboard",
-      "status": "open",
+      "status": "upcoming",
       "dates": {
         "open": "2026-09-28",
         "close": "2026-09-30",

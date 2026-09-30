@@ -1,4 +1,4 @@
-IPO RADAR — generated 2026-09-30 15:10 UTC
+IPO RADAR — generated 2026-09-30 18:37 UTC
 7 open or upcoming; 37 closed issue(s) left out — see the dashboard
 ============================================================
 Full dashboard: https://dev171296.github.io/ipo-radar/
@@ -40,19 +40,20 @@ Papadmalji Agro Foods Limited
 Shah Investor's Home Limited
   CALL: applying -> APPLY SELECTIVELY   |   holding -> WAIT FOR LISTING
   mainboard · 2026-09-28 to 2026-09-30 · Rs.159 to Rs.167
-  Fundamentals: 42.8 (60% assessed)   Demand: None (14% assessed)
+  Fundamentals: 42.8 (60% assessed)   Demand: 67.2 (40% assessed)
   groq: listing 75, long-term 25, confidence medium
-  nvidia: listing 78, long-term 30, confidence medium
+  nvidia: listing 75, long-term 30, confidence medium
   * the business consumed cash in its latest year: operating cash flow -1970.37 against a reported profit
   * customers are slow to pay: 137 days of sales sit uncollected
 
 Srit India Limited
   CALL: applying -> APPLY   |   holding -> APPLY SELECTIVELY
   mainboard · 2026-09-28 to 2026-09-30 · Rs.123 to Rs.130
-  Fundamentals: 59.7 (78% assessed)   Demand: None (14% assessed)
-  groq: listing 85, long-term 45, confidence medium
-  nvidia: listing 85, long-term 48, confidence medium
-  !! models disagree on governance by 20.0 points
+  Fundamentals: 59.7 (78% assessed)   Demand: 73.8 (40% assessed)
+  groq: listing 85, long-term 45, confidence low
+  nvidia: listing 58, long-term 62, confidence low
+  !! models disagree on listing_view by 27.0 points
+  !! models disagree on longterm_view by 17.0 points
   * the business consumed cash in its latest year: operating cash flow -121.01 against a reported profit
 
 Vishal Nirmiti Limited
