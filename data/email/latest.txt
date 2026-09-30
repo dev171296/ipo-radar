@@ -1,4 +1,4 @@
-IPO RADAR — generated 2026-09-30 11:20 UTC
+IPO RADAR — generated 2026-09-30 15:10 UTC
 7 open or upcoming; 37 closed issue(s) left out — see the dashboard
 ============================================================
 Full dashboard: https://dev171296.github.io/ipo-radar/
@@ -41,8 +41,8 @@ Shah Investor's Home Limited
   CALL: applying -> APPLY SELECTIVELY   |   holding -> WAIT FOR LISTING
   mainboard · 2026-09-28 to 2026-09-30 · Rs.159 to Rs.167
   Fundamentals: 42.8 (60% assessed)   Demand: None (14% assessed)
-  groq: listing 70, long-term 30, confidence medium
-  nvidia: listing 72, long-term 28, confidence low
+  groq: listing 75, long-term 25, confidence medium
+  nvidia: listing 78, long-term 30, confidence medium
   * the business consumed cash in its latest year: operating cash flow -1970.37 against a reported profit
   * customers are slow to pay: 137 days of sales sit uncollected
 
@@ -51,8 +51,8 @@ Srit India Limited
   mainboard · 2026-09-28 to 2026-09-30 · Rs.123 to Rs.130
   Fundamentals: 59.7 (78% assessed)   Demand: None (14% assessed)
   groq: listing 85, long-term 45, confidence medium
-  nvidia: listing 80, long-term 38, confidence medium
-  !! models disagree on governance by 18.0 points
+  nvidia: listing 85, long-term 48, confidence medium
+  !! models disagree on governance by 20.0 points
   * the business consumed cash in its latest year: operating cash flow -121.01 against a reported profit
 
 Vishal Nirmiti Limited
