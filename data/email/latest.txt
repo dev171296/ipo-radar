@@ -1,4 +1,4 @@
-IPO RADAR — generated 2026-09-30 08:57 UTC
+IPO RADAR — generated 2026-09-30 11:20 UTC
 7 open or upcoming; 37 closed issue(s) left out — see the dashboard
 ============================================================
 Full dashboard: https://dev171296.github.io/ipo-radar/
@@ -30,7 +30,7 @@ Green Asia Impex Limited
 Nityas Gems and Jewellery Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
   mainboard · 2026-09-30 to 2026-10-05 · Rs.70 to Rs.75
-  Fundamentals: None (0% assessed)   Demand: None (0% assessed)
+  Fundamentals: None (0% assessed)   Demand: None (14% assessed)
 
 Papadmalji Agro Foods Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
@@ -41,8 +41,8 @@ Shah Investor's Home Limited
   CALL: applying -> APPLY SELECTIVELY   |   holding -> WAIT FOR LISTING
   mainboard · 2026-09-28 to 2026-09-30 · Rs.159 to Rs.167
   Fundamentals: 42.8 (60% assessed)   Demand: None (14% assessed)
-  groq: listing 70, long-term 35, confidence low
-  nvidia: listing 62, long-term 28, confidence medium
+  groq: listing 70, long-term 30, confidence medium
+  nvidia: listing 72, long-term 28, confidence low
   * the business consumed cash in its latest year: operating cash flow -1970.37 against a reported profit
   * customers are slow to pay: 137 days of sales sit uncollected
 
@@ -50,14 +50,15 @@ Srit India Limited
   CALL: applying -> APPLY   |   holding -> APPLY SELECTIVELY
   mainboard · 2026-09-28 to 2026-09-30 · Rs.123 to Rs.130
   Fundamentals: 59.7 (78% assessed)   Demand: None (14% assessed)
-  groq: listing 85, long-term 60, confidence medium
-  nvidia: listing 72, long-term 55, confidence medium
+  groq: listing 85, long-term 45, confidence medium
+  nvidia: listing 80, long-term 38, confidence medium
+  !! models disagree on governance by 18.0 points
   * the business consumed cash in its latest year: operating cash flow -121.01 against a reported profit
 
 Vishal Nirmiti Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
   mainboard · 2026-09-30 to 2026-10-05 · Rs.208 to Rs.220
-  Fundamentals: None (0% assessed)   Demand: None (0% assessed)
+  Fundamentals: None (0% assessed)   Demand: None (14% assessed)
 
 Dashboard: https://dev171296.github.io/ipo-radar/
 Not investment advice.
