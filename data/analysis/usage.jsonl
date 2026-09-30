@@ -737,3 +737,7 @@
 {"at": "2026-09-29T18:52:47+00:00", "family": "nvidia", "model": "moonshotai/kimi-k3", "ipo_id": "2026-09-orient-cables"}
 {"at": "2026-09-29T18:52:50+00:00", "family": "groq", "model": "qwen/qwen3.8-27b", "ipo_id": "2026-09-runwal-enterprises"}
 {"at": "2026-09-29T18:53:58+00:00", "family": "nvidia", "model": "moonshotai/kimi-k3", "ipo_id": "2026-09-runwal-enterprises"}
+{"at": "2026-09-30T08:53:16+00:00", "family": "groq", "model": "openai/gpt-oss-120b", "ipo_id": "2026-09-shah-investor-s-home"}
+{"at": "2026-09-30T08:54:45+00:00", "family": "nvidia", "model": "moonshotai/kimi-k3", "ipo_id": "2026-09-shah-investor-s-home"}
+{"at": "2026-09-30T08:55:08+00:00", "family": "groq", "model": "qwen/qwen3.8-27b", "ipo_id": "2026-09-srit"}
+{"at": "2026-09-30T08:56:46+00:00", "family": "nvidia", "model": "moonshotai/kimi-k3", "ipo_id": "2026-09-srit"}

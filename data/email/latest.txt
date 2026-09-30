@@ -1,19 +1,13 @@
-IPO RADAR — generated 2026-09-29 18:54 UTC
-13 open or upcoming; 31 closed issue(s) left out — see the dashboard
+IPO RADAR — generated 2026-09-30 08:57 UTC
+7 open or upcoming; 37 closed issue(s) left out — see the dashboard
 ============================================================
 Full dashboard: https://dev171296.github.io/ipo-radar/
 
 AT A GLANCE
 ------------------------------------------------------------
 Company                           Closes      Applying          Holding
-Orient Cables (India) Limited     2026-09-29  APPLY             APPLY
-German Green Steel and Power Lim  2026-09-29  APPLY             APPLY SELECTIVELY
-Runwal Enterprises Limited        2026-09-29  WAIT FOR LISTING  WAIT FOR LISTING
-AceVector Limited                 2026-09-29  WAIT FOR LISTING  not enough info
-Bench Mark Infotech Services Lim  2026-09-29  APPLY             not enough info
-Himalayan Solar Limited           2026-09-29  WAIT FOR LISTING  not enough info
-Srit India Limited                2026-09-30  not enough info   APPLY SELECTIVELY
-Shah Investor's Home Limited      2026-09-30  not enough info   WAIT FOR LISTING
+Srit India Limited                2026-09-30  APPLY             APPLY SELECTIVELY
+Shah Investor's Home Limited      2026-09-30  APPLY SELECTIVELY WAIT FOR LISTING
 Green Asia Impex Limited          2026-10-01  not enough info   not enough info
 Papadmalji Agro Foods Limited     2026-10-01  not enough info   not enough info
 Eventions Limited                 2026-10-05  not enough info   not enough info
@@ -23,87 +17,41 @@ Vishal Nirmiti Limited            2026-10-05  not enough info   not enough info
 THE DETAIL
 ------------------------------------------------------------
 
-AceVector Limited
-  CALL: applying -> WAIT FOR LISTING   |   holding -> NOT ENOUGH INFORMATION
-  mainboard · 2026-09-25 to 2026-09-29 · Rs.30 to Rs.32
-  Fundamentals: None (24% assessed)   Demand: 41.2 (40% assessed)
-  groq: listing 35, long-term 40, confidence low
-  nvidia: listing 48, long-term 42, confidence low
-
-Bench Mark Infotech Services Limited
-  CALL: applying -> APPLY   |   holding -> NOT ENOUGH INFORMATION
-  sme · 2026-09-25 to 2026-09-29 · band not announced
-  Fundamentals: None (0% assessed)   Demand: 73.8 (40% assessed)
-
 Eventions Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
   sme · 2026-09-30 to 2026-10-05 · band not announced
   Fundamentals: None (0% assessed)   Demand: None (0% assessed)
-
-German Green Steel and Power Limited
-  CALL: applying -> APPLY   |   holding -> APPLY SELECTIVELY
-  mainboard · 2026-09-25 to 2026-09-29 · Rs.132 to Rs.139
-  Fundamentals: 61.6 (34% assessed)   Demand: 67.2 (40% assessed)
-  groq: listing 65, long-term 55, confidence low
-  nvidia: listing 82, long-term 55, confidence low
-  !! models disagree on listing_view by 17.0 points
-  * owes more this year than it expects to collect: current ratio 0.97
 
 Green Asia Impex Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
   sme · 2026-09-24 to 2026-10-01 · band not announced
   Fundamentals: None (0% assessed)   Demand: None (14% assessed)
 
-Himalayan Solar Limited
-  CALL: applying -> WAIT FOR LISTING   |   holding -> NOT ENOUGH INFORMATION
-  sme · 2026-09-25 to 2026-09-29 · band not announced
-  Fundamentals: None (0% assessed)   Demand: 37.0 (40% assessed)
-
 Nityas Gems and Jewellery Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
   mainboard · 2026-09-30 to 2026-10-05 · Rs.70 to Rs.75
   Fundamentals: None (0% assessed)   Demand: None (0% assessed)
 
-Orient Cables (India) Limited
-  CALL: applying -> APPLY   |   holding -> APPLY
-  mainboard · 2026-09-25 to 2026-09-29 · Rs.258 to Rs.272
-  Fundamentals: 88.9 (38% assessed)   Demand: 73.8 (40% assessed)
-  groq: listing 85, long-term 45, confidence low
-  nvidia: listing 25, long-term 42, confidence low
-  !! models disagree on listing_view by 60.0 points
-  * priced far below its stated peer group: 51.61× against 128.11× — a 60% discount
-
 Papadmalji Agro Foods Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
   sme · 2026-09-29 to 2026-10-01 · band not announced
-  Fundamentals: None (0% assessed)   Demand: None (0% assessed)
-
-Runwal Enterprises Limited
-  CALL: applying -> WAIT FOR LISTING   |   holding -> WAIT FOR LISTING
-  mainboard · 2026-09-25 to 2026-09-29 · Rs.290 to Rs.302
-  Fundamentals: 50.3 (78% assessed)   Demand: 37.0 (40% assessed)
-  groq: listing 35, long-term 40, confidence low
-  nvidia: listing 38, long-term 35, confidence low
-  !! models disagree on governance by 20.0 points
-  * growth concentrated in the year before the IPO: sales moved -58% then 79% — the good year is the one just before listing
-  * cash was consumed every year: operating cash flow [-1807.13, -1981.36, -5494.82]
-  * heavily indebted: debt is 3.29× the owners' stake
+  Fundamentals: None (0% assessed)   Demand: None (14% assessed)
 
 Shah Investor's Home Limited
-  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> WAIT FOR LISTING
+  CALL: applying -> APPLY SELECTIVELY   |   holding -> WAIT FOR LISTING
   mainboard · 2026-09-28 to 2026-09-30 · Rs.159 to Rs.167
   Fundamentals: 42.8 (60% assessed)   Demand: None (14% assessed)
-  groq: listing 15, long-term 20, confidence medium
-  nvidia: listing 25, long-term 30, confidence medium
+  groq: listing 70, long-term 35, confidence low
+  nvidia: listing 62, long-term 28, confidence medium
   * the business consumed cash in its latest year: operating cash flow -1970.37 against a reported profit
   * customers are slow to pay: 137 days of sales sit uncollected
 
 Srit India Limited
-  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> APPLY SELECTIVELY
+  CALL: applying -> APPLY   |   holding -> APPLY SELECTIVELY
   mainboard · 2026-09-28 to 2026-09-30 · Rs.123 to Rs.130
   Fundamentals: 59.7 (78% assessed)   Demand: None (14% assessed)
-  groq: listing 45, long-term 60, confidence medium
-  nvidia: listing 60, long-term 62, confidence medium
+  groq: listing 85, long-term 60, confidence medium
+  nvidia: listing 72, long-term 55, confidence medium
   * the business consumed cash in its latest year: operating cash flow -121.01 against a reported profit
 
 Vishal Nirmiti Limited

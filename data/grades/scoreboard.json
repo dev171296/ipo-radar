@@ -1,28 +1,28 @@
 {
- "built_at": "2026-09-29T18:54:10+00:00",
- "listed_ipos": 16,
- "base_rate_pct": 69,
- "average_listing_gain_pct": 13.4,
+ "built_at": "2026-09-30T08:57:04+00:00",
+ "listed_ipos": 17,
+ "base_rate_pct": 71,
+ "average_listing_gain_pct": 12.9,
  "predictors": {
   "Our call (rules + both AIs)": {
-   "listing_graded": 16,
+   "listing_graded": 17,
    "listing_right": 12,
    "no_view": 0,
    "avg_gain_when_yes": 17.2,
-   "avg_gain_when_no": -3.0,
+   "avg_gain_when_no": -1.1,
    "holding_graded": 0,
    "holding_right": 0,
-   "listing_hit_rate_pct": 75
+   "listing_hit_rate_pct": 71
   },
   "Groq": {
-   "listing_graded": 12,
+   "listing_graded": 13,
    "listing_right": 8,
    "no_view": 3,
    "avg_gain_when_yes": 16.6,
-   "avg_gain_when_no": 4.3,
+   "avg_gain_when_no": 4.4,
    "holding_graded": 0,
    "holding_right": 0,
-   "listing_hit_rate_pct": 67
+   "listing_hit_rate_pct": 62
   },
   "Groq — unsuitable models (labelled, kept)": {
    "listing_graded": 1,
@@ -35,14 +35,14 @@
    "listing_hit_rate_pct": 100
   },
   "NVIDIA (Kimi K3)": {
-   "listing_graded": 4,
+   "listing_graded": 5,
    "listing_right": 2,
    "no_view": 0,
    "avg_gain_when_yes": 24.6,
-   "avg_gain_when_no": 3.3,
+   "avg_gain_when_no": 4.0,
    "holding_graded": 0,
    "holding_right": 0,
-   "listing_hit_rate_pct": 50
+   "listing_hit_rate_pct": 40
   },
   "Gemini (retired)": {
    "listing_graded": 16,
@@ -258,11 +258,11 @@
   {
    "ipo_id": "2026-09-varmora-granito",
    "name": "Varmora Granito Limited",
-   "status": "not listed yet",
-   "listed_on": null,
-   "listing_gain_pct": null,
-   "our_listing_call": null,
-   "right": null
+   "status": "listed",
+   "listed_on": "2026-09-29",
+   "listing_gain_pct": 4.73,
+   "our_listing_call": "AVOID",
+   "right": false
   },
   {
    "ipo_id": "2026-09-adroit-industries",
@@ -339,7 +339,7 @@
   {
    "ipo_id": "2026-09-acevector",
    "name": "AceVector Limited",
-   "status": "issue still open",
+   "status": "not listed yet",
    "listed_on": null,
    "listing_gain_pct": null,
    "our_listing_call": null,
@@ -348,7 +348,7 @@
   {
    "ipo_id": "2026-09-bench-mark-infotech-services",
    "name": "Bench Mark Infotech Services Limited",
-   "status": "issue still open",
+   "status": "not listed yet",
    "listed_on": null,
    "listing_gain_pct": null,
    "our_listing_call": null,
@@ -357,7 +357,7 @@
   {
    "ipo_id": "2026-09-german-green-steel-and-power",
    "name": "German Green Steel and Power Limited",
-   "status": "issue still open",
+   "status": "not listed yet",
    "listed_on": null,
    "listing_gain_pct": null,
    "our_listing_call": null,
@@ -366,7 +366,7 @@
   {
    "ipo_id": "2026-09-himalayan-solar",
    "name": "Himalayan Solar Limited",
-   "status": "issue still open",
+   "status": "not listed yet",
    "listed_on": null,
    "listing_gain_pct": null,
    "our_listing_call": null,
@@ -375,7 +375,7 @@
   {
    "ipo_id": "2026-09-orient-cables",
    "name": "Orient Cables (India) Limited",
-   "status": "issue still open",
+   "status": "not listed yet",
    "listed_on": null,
    "listing_gain_pct": null,
    "our_listing_call": null,
@@ -384,7 +384,7 @@
   {
    "ipo_id": "2026-09-runwal-enterprises",
    "name": "Runwal Enterprises Limited",
-   "status": "issue still open",
+   "status": "not listed yet",
    "listed_on": null,
    "listing_gain_pct": null,
    "our_listing_call": null,
