@@ -1,25 +1,25 @@
 {
- "built_at": "2026-09-30T18:37:44+00:00",
- "listed_ipos": 17,
- "base_rate_pct": 71,
- "average_listing_gain_pct": 12.9,
+ "built_at": "2026-10-01T09:16:28+00:00",
+ "listed_ipos": 21,
+ "base_rate_pct": 67,
+ "average_listing_gain_pct": 14.3,
  "predictors": {
   "Our call (rules + both AIs)": {
-   "listing_graded": 17,
-   "listing_right": 12,
+   "listing_graded": 21,
+   "listing_right": 16,
    "no_view": 0,
-   "avg_gain_when_yes": 17.2,
-   "avg_gain_when_no": -1.1,
+   "avg_gain_when_yes": 20.5,
+   "avg_gain_when_no": -1.0,
    "holding_graded": 0,
    "holding_right": 0,
-   "listing_hit_rate_pct": 71
+   "listing_hit_rate_pct": 76
   },
   "Groq": {
-   "listing_graded": 13,
-   "listing_right": 8,
+   "listing_graded": 16,
+   "listing_right": 10,
    "no_view": 3,
-   "avg_gain_when_yes": 16.6,
-   "avg_gain_when_no": 4.4,
+   "avg_gain_when_yes": 25.0,
+   "avg_gain_when_no": 4.3,
    "holding_graded": 0,
    "holding_right": 0,
    "listing_hit_rate_pct": 62
@@ -35,24 +35,24 @@
    "listing_hit_rate_pct": 100
   },
   "NVIDIA (Kimi K3)": {
-   "listing_graded": 5,
-   "listing_right": 2,
+   "listing_graded": 8,
+   "listing_right": 5,
    "no_view": 0,
-   "avg_gain_when_yes": 24.6,
-   "avg_gain_when_no": 4.0,
+   "avg_gain_when_yes": 31.5,
+   "avg_gain_when_no": 2.7,
    "holding_graded": 0,
    "holding_right": 0,
-   "listing_hit_rate_pct": 40
+   "listing_hit_rate_pct": 62
   },
   "Gemini (retired)": {
-   "listing_graded": 16,
+   "listing_graded": 17,
    "listing_right": 12,
-   "no_view": 0,
+   "no_view": 1,
    "avg_gain_when_yes": 19.6,
-   "avg_gain_when_no": -0.3,
+   "avg_gain_when_no": 1.1,
    "holding_graded": 0,
    "holding_right": 0,
-   "listing_hit_rate_pct": 75
+   "listing_hit_rate_pct": 71
   }
  },
  "long_term_note": "graded 3 months after listing, against the Nifty 50",
@@ -267,26 +267,26 @@
   {
    "ipo_id": "2026-09-adroit-industries",
    "name": "Adroit Industries (India) Limited",
-   "status": "not listed yet",
-   "listed_on": null,
-   "listing_gain_pct": null,
-   "our_listing_call": null,
-   "right": null
+   "status": "listed",
+   "listed_on": "2026-09-30",
+   "listing_gain_pct": 75.37,
+   "our_listing_call": "APPLY",
+   "right": true
   },
   {
    "ipo_id": "2026-09-armee-infotech",
    "name": "ArMee Infotech Limited",
-   "status": "not listed yet",
-   "listed_on": null,
-   "listing_gain_pct": null,
-   "our_listing_call": null,
-   "right": null
+   "status": "listed",
+   "listed_on": "2026-09-30",
+   "listing_gain_pct": 0.0,
+   "our_listing_call": "WAIT FOR LISTING",
+   "right": true
   },
   {
    "ipo_id": "2026-09-coreintegra-consulting-services",
    "name": "Coreintegra Consulting Services Limited",
-   "status": "not listed yet",
-   "listed_on": null,
+   "status": "listed, but no issue price to measure against",
+   "listed_on": "2026-09-30",
    "listing_gain_pct": null,
    "our_listing_call": null,
    "right": null
@@ -294,17 +294,17 @@
   {
    "ipo_id": "2026-09-elevate-campuses",
    "name": "Elevate Campuses Limited",
-   "status": "not listed yet",
-   "listed_on": null,
-   "listing_gain_pct": null,
-   "our_listing_call": null,
-   "right": null
+   "status": "listed",
+   "listed_on": "2026-09-30",
+   "listing_gain_pct": -1.91,
+   "our_listing_call": "AVOID",
+   "right": true
   },
   {
    "ipo_id": "2026-09-pooja-logistics",
    "name": "Pooja Logistics Limited",
-   "status": "not listed yet",
-   "listed_on": null,
+   "status": "listed, but no issue price to measure against",
+   "listed_on": "2026-09-30",
    "listing_gain_pct": null,
    "our_listing_call": null,
    "right": null
@@ -312,11 +312,11 @@
   {
    "ipo_id": "2026-09-swastika-infra",
    "name": "Swastika Infra Limited",
-   "status": "not listed yet",
-   "listed_on": null,
-   "listing_gain_pct": null,
-   "our_listing_call": null,
-   "right": null
+   "status": "listed",
+   "listed_on": "2026-09-30",
+   "listing_gain_pct": 8.11,
+   "our_listing_call": "APPLY SELECTIVELY",
+   "right": true
   },
   {
    "ipo_id": "2026-09-a-one-steels",
@@ -393,7 +393,7 @@
   {
    "ipo_id": "2026-09-shah-investor-s-home",
    "name": "Shah Investor's Home Limited",
-   "status": "issue still open",
+   "status": "not listed yet",
    "listed_on": null,
    "listing_gain_pct": null,
    "our_listing_call": null,
@@ -402,7 +402,7 @@
   {
    "ipo_id": "2026-09-srit",
    "name": "Srit India Limited",
-   "status": "issue still open",
+   "status": "not listed yet",
    "listed_on": null,
    "listing_gain_pct": null,
    "our_listing_call": null,
@@ -447,6 +447,15 @@
   {
    "ipo_id": "2026-09-vishal-nirmiti",
    "name": "Vishal Nirmiti Limited",
+   "status": "issue still open",
+   "listed_on": null,
+   "listing_gain_pct": null,
+   "our_listing_call": null,
+   "right": null
+  },
+  {
+   "ipo_id": "2026-10-r-k-fashion-accessories",
+   "name": "R.K. Fashion Accessories Limited",
    "status": "issue still open",
    "listed_on": null,
    "listing_gain_pct": null,

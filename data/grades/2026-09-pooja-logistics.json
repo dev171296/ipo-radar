@@ -2,6 +2,11 @@
  "ipo_id": "2026-09-pooja-logistics",
  "name": "Pooja Logistics Limited",
  "symbol": "POOJALOGIS",
- "graded_at": "2026-09-30T18:37:44+00:00",
- "status": "not listed yet"
+ "graded_at": "2026-10-01T09:16:28+00:00",
+ "status": "listed, but no issue price to measure against",
+ "listed_on": "2026-09-30",
+ "issue_price": null,
+ "issue_price_note": "top of the price band — the price nearly every Indian IPO is finally set at",
+ "listing_open": 118.0,
+ "listing_close": 123.9
 }

@@ -3,8 +3,8 @@
   "call": "APPLY",
   "colour": "#2f7d32",
   "score": 69.1,
-  "confidence": "low",
-  "why": "built from our fundamentals, market demand — 75% of the deciding weight; the two models disagree, which lowers confidence",
+  "confidence": "medium",
+  "why": "built from our fundamentals, market demand — 75% of the deciding weight",
   "based_on": [
    "our fundamentals",
    "market demand"
@@ -15,7 +15,7 @@
   "colour": "#a86400",
   "score": 59.7,
   "confidence": "low",
-  "why": "built from our fundamentals — 60% of the deciding weight; the two models disagree, which lowers confidence",
+  "why": "built from our fundamentals — 60% of the deciding weight",
   "based_on": [
    "our fundamentals"
   ]
@@ -24,5 +24,5 @@
  "serious_findings": [
   "the business consumed cash in its latest year"
  ],
- "models_disagree": true
+ "models_disagree": false
 }

@@ -2,6 +2,137 @@
  "ipo_id": "2026-09-swastika-infra",
  "name": "Swastika Infra Limited",
  "symbol": "SWASTIKAIN",
- "graded_at": "2026-09-30T18:37:44+00:00",
- "status": "not listed yet"
+ "graded_at": "2026-10-01T09:16:28+00:00",
+ "status": "listed",
+ "listed_on": "2026-09-30",
+ "issue_price": 185.0,
+ "issue_price_note": "top of the price band — the price nearly every Indian IPO is finally set at",
+ "listing_open": 200.0,
+ "listing_close": 210.0,
+ "listing_gain_pct": 8.11,
+ "listing_day_close_pct": 13.51,
+ "checkpoints": {
+  "1 week": {
+   "due": "2026-10-07"
+  },
+  "1 month": {
+   "due": "2026-10-30"
+  },
+  "3 months": {
+   "due": "2026-12-30"
+  },
+  "6 months": {
+   "due": "2027-03-31"
+  },
+  "12 months": {
+   "due": "2027-09-30"
+  }
+ },
+ "predictions": {
+  "cutoff_utc": "20260930034500",
+  "score_taken_at": "20260929184918",
+  "fundamentals": 66.3,
+  "call": {
+   "listing": {
+    "call": "APPLY SELECTIVELY",
+    "colour": "#a86400",
+    "score": 60.4,
+    "confidence": "medium",
+    "why": "built from our fundamentals, market demand — 75% of the deciding weight",
+    "based_on": [
+     "our fundamentals",
+     "market demand"
+    ]
+   },
+   "longterm": {
+    "call": "WAIT FOR LISTING",
+    "colour": "#b25b1a",
+    "score": 45,
+    "confidence": "low",
+    "why": "built from our fundamentals — 60% of the deciding weight; capped at 45 by a hard stop: negative operating cash flow in all three years",
+    "based_on": [
+     "our fundamentals"
+    ]
+   },
+   "hard_stops": [
+    "negative operating cash flow in all three years"
+   ],
+   "serious_findings": [
+    "cash was consumed every year"
+   ],
+   "models_disagree": false
+  },
+  "models": {
+   "groq": {
+    "model": "qwen/qwen3.8-27b",
+    "answered_at": "20260926075901",
+    "listing_view": 35.0,
+    "longterm_view": 40.0,
+    "unsuitable_model": false
+   },
+   "nvidia": {
+    "model": "moonshotai/kimi-k3",
+    "answered_at": "20260926075901",
+    "listing_view": 55.0,
+    "longterm_view": 32.0,
+    "unsuitable_model": false
+   },
+   "gemini": {
+    "model": "gemini-flash-lite-latest",
+    "answered_at": "20260921110045",
+    "listing_view": 35.0,
+    "longterm_view": 25.0,
+    "unsuitable_model": false
+   }
+  }
+ },
+ "marks": {
+  "our_call": {
+   "listing": {
+    "said": "APPLY SELECTIVELY",
+    "right": true
+   },
+   "holding": {
+    "said": "WAIT FOR LISTING",
+    "right": null,
+    "due": "2026-12-30"
+   }
+  },
+  "groq": {
+   "model": "qwen/qwen3.8-27b",
+   "unsuitable_model": false,
+   "listing": {
+    "said": 35.0,
+    "right": false
+   },
+   "holding": {
+    "said": 40.0,
+    "right": null
+   }
+  },
+  "nvidia": {
+   "model": "moonshotai/kimi-k3",
+   "unsuitable_model": false,
+   "listing": {
+    "said": 55.0,
+    "right": true
+   },
+   "holding": {
+    "said": 32.0,
+    "right": null
+   }
+  },
+  "gemini": {
+   "model": "gemini-flash-lite-latest",
+   "unsuitable_model": false,
+   "listing": {
+    "said": 35.0,
+    "right": false
+   },
+   "holding": {
+    "said": 25.0,
+    "right": null
+   }
+  }
+ }
 }

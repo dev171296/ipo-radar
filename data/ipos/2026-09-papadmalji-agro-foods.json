@@ -18,15 +18,15 @@
   "price_band": null,
   "issue_size_shares": null,
   "subscription": {
-    "times": 1.66,
+    "times": 2.23,
     "shares_offered": 2803200.0,
-    "shares_bid": 4640000.0
+    "shares_bid": 6256000.0
   },
   "also_on_bse": true,
   "sources": {
     "calendar": "nse",
-    "fetched_at": "2026-09-30T18:31:51+00:00"
+    "fetched_at": "2026-10-01T09:16:06+00:00"
   },
   "missing": [],
-  "rebuilt_at": "2026-09-30T18:31:51+00:00"
+  "rebuilt_at": "2026-10-01T09:16:06+00:00"
 }
