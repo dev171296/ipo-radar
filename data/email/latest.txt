@@ -1,5 +1,5 @@
-IPO RADAR — generated 2026-10-01 09:16 UTC
-6 open or upcoming; 39 closed issue(s) left out — see the dashboard
+IPO RADAR — generated 2026-10-01 11:45 UTC
+7 open or upcoming; 39 closed issue(s) left out — see the dashboard
 ============================================================
 Full dashboard: https://dev171296.github.io/ipo-radar/
 
@@ -12,6 +12,7 @@ Eventions Limited                 2026-10-05  not enough info   not enough info
 Nityas Gems and Jewellery Limite  2026-10-05  not enough info   not enough info
 Vishal Nirmiti Limited            2026-10-05  not enough info   not enough info
 R.K. Fashion Accessories Limited  2026-10-07  not enough info   not enough info
+SMC Global Securities Limited     2026-10-16  not enough info   not enough info
 
 THE DETAIL
 ------------------------------------------------------------
@@ -44,6 +45,11 @@ Vishal Nirmiti Limited
 R.K. Fashion Accessories Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
   sme · 2026-10-05 to 2026-10-07 · Rs.77 to Rs.82
+  Fundamentals: None (0% assessed)   Demand: None (0% assessed)
+
+SMC Global Securities Limited
+  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
+  mainboard · 2026-10-05 to 2026-10-16 · Rs.1000
   Fundamentals: None (0% assessed)   Demand: None (0% assessed)
 
 Dashboard: https://dev171296.github.io/ipo-radar/

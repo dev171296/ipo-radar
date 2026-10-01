@@ -1,0 +1,72 @@
+{
+ "ipo_id": "2026-10-smc-global-securities",
+ "built_at": "2026-10-01T11:45:24+00:00",
+ "name": "SMC Global Securities Limited",
+ "symbol": "SMCG04",
+ "type": "mainboard",
+ "status": "upcoming",
+ "offer": {
+  "issue_size_shares": {
+   "value": 750000.0,
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "open_date": {
+   "value": "2026-10-05",
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "close_date": {
+   "value": "2026-10-16",
+   "source": "nse_calendar",
+   "confidence": "high"
+  }
+ },
+ "financials": {},
+ "valuation": {},
+ "cash": {},
+ "balance_sheet": {},
+ "derived": {},
+ "demand": {},
+ "documents": {},
+ "missing": [
+  {
+   "what": "price band",
+   "why": "not announced yet"
+  },
+  {
+   "what": "three-year financials",
+   "why": "no abridged prospectus on file yet"
+  },
+  {
+   "what": "subscription",
+   "why": "the issue has not opened yet"
+  },
+  {
+   "what": "grey market premium",
+   "why": "no free source built yet"
+  },
+  {
+   "what": "anchor investor allotment",
+   "why": "not collected yet"
+  },
+  {
+   "what": "broker conviction",
+   "why": "not collected yet"
+  },
+  {
+   "what": "media coverage",
+   "why": "not collected yet"
+  },
+  {
+   "what": "retail attention",
+   "why": "not collected yet"
+  },
+  {
+   "what": "full prospectus",
+   "why": "not downloaded yet — will retry next run"
+  }
+ ],
+ "conflicts": [],
+ "observations": []
+}

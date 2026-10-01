@@ -1,5 +1,5 @@
 {
- "built_at": "2026-10-01T09:16:28+00:00",
+ "built_at": "2026-10-01T11:45:38+00:00",
  "listed_ipos": 21,
  "base_rate_pct": 67,
  "average_listing_gain_pct": 14.3,
@@ -456,6 +456,15 @@
   {
    "ipo_id": "2026-10-r-k-fashion-accessories",
    "name": "R.K. Fashion Accessories Limited",
+   "status": "issue still open",
+   "listed_on": null,
+   "listing_gain_pct": null,
+   "our_listing_call": null,
+   "right": null
+  },
+  {
+   "ipo_id": "2026-10-smc-global-securities",
+   "name": "SMC Global Securities Limited",
    "status": "issue still open",
    "listed_on": null,
    "listing_gain_pct": null,
