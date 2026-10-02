@@ -1,28 +1,28 @@
 {
- "built_at": "2026-10-01T18:59:41+00:00",
- "listed_ipos": 21,
- "base_rate_pct": 67,
- "average_listing_gain_pct": 14.3,
+ "built_at": "2026-10-02T08:49:34+00:00",
+ "listed_ipos": 23,
+ "base_rate_pct": 70,
+ "average_listing_gain_pct": 16.3,
  "predictors": {
   "Our call (rules + both AIs)": {
-   "listing_graded": 21,
-   "listing_right": 16,
+   "listing_graded": 23,
+   "listing_right": 18,
    "no_view": 0,
-   "avg_gain_when_yes": 20.5,
+   "avg_gain_when_yes": 22.4,
    "avg_gain_when_no": -1.0,
    "holding_graded": 0,
    "holding_right": 0,
-   "listing_hit_rate_pct": 76
+   "listing_hit_rate_pct": 78
   },
   "Groq": {
-   "listing_graded": 16,
-   "listing_right": 10,
+   "listing_graded": 18,
+   "listing_right": 12,
    "no_view": 3,
-   "avg_gain_when_yes": 25.0,
+   "avg_gain_when_yes": 27.7,
    "avg_gain_when_no": 4.3,
    "holding_graded": 0,
    "holding_right": 0,
-   "listing_hit_rate_pct": 62
+   "listing_hit_rate_pct": 67
   },
   "Groq — unsuitable models (labelled, kept)": {
    "listing_graded": 1,
@@ -35,14 +35,14 @@
    "listing_hit_rate_pct": 100
   },
   "NVIDIA (Kimi K3)": {
-   "listing_graded": 8,
-   "listing_right": 5,
+   "listing_graded": 10,
+   "listing_right": 7,
    "no_view": 0,
-   "avg_gain_when_yes": 31.5,
+   "avg_gain_when_yes": 33.1,
    "avg_gain_when_no": 2.7,
    "holding_graded": 0,
    "holding_right": 0,
-   "listing_hit_rate_pct": 62
+   "listing_hit_rate_pct": 70
   },
   "Gemini (retired)": {
    "listing_graded": 17,
@@ -222,7 +222,7 @@
   {
    "ipo_id": "2026-09-national-stock-exchange-of",
    "name": "National Stock Exchange of India Limited",
-   "status": "not listed yet",
+   "status": "no listing found in the price files",
    "listed_on": null,
    "listing_gain_pct": null,
    "our_listing_call": null,
@@ -321,20 +321,20 @@
   {
    "ipo_id": "2026-09-a-one-steels",
    "name": "A-One Steels India Limited",
-   "status": "not listed yet",
-   "listed_on": null,
-   "listing_gain_pct": null,
-   "our_listing_call": null,
-   "right": null
+   "status": "listed",
+   "listed_on": "2026-10-01",
+   "listing_gain_pct": 12.35,
+   "our_listing_call": "APPLY SELECTIVELY",
+   "right": true
   },
   {
    "ipo_id": "2026-09-moneyview",
    "name": "Moneyview Limited",
-   "status": "not listed yet",
-   "listed_on": null,
-   "listing_gain_pct": null,
-   "our_listing_call": null,
-   "right": null
+   "status": "listed",
+   "listed_on": "2026-10-01",
+   "listing_gain_pct": 61.76,
+   "our_listing_call": "APPLY",
+   "right": true
   },
   {
    "ipo_id": "2026-09-acevector",
@@ -411,7 +411,7 @@
   {
    "ipo_id": "2026-09-green-asia-impex",
    "name": "Green Asia Impex Limited",
-   "status": "issue still open",
+   "status": "not listed yet",
    "listed_on": null,
    "listing_gain_pct": null,
    "our_listing_call": null,
@@ -420,7 +420,7 @@
   {
    "ipo_id": "2026-09-papadmalji-agro-foods",
    "name": "Papadmalji Agro Foods Limited",
-   "status": "issue still open",
+   "status": "not listed yet",
    "listed_on": null,
    "listing_gain_pct": null,
    "our_listing_call": null,

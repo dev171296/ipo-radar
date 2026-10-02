@@ -2,6 +2,114 @@
  "ipo_id": "2026-09-a-one-steels",
  "name": "A-One Steels India Limited",
  "symbol": "AONESTEELS",
- "graded_at": "2026-10-01T18:59:41+00:00",
- "status": "not listed yet"
+ "graded_at": "2026-10-02T08:49:34+00:00",
+ "status": "listed",
+ "listed_on": "2026-10-01",
+ "issue_price": 405.0,
+ "issue_price_note": "top of the price band — the price nearly every Indian IPO is finally set at",
+ "listing_open": 455.0,
+ "listing_close": 416.55,
+ "listing_gain_pct": 12.35,
+ "listing_day_close_pct": 2.85,
+ "checkpoints": {
+  "1 week": {
+   "due": "2026-10-08"
+  },
+  "1 month": {
+   "due": "2026-10-31"
+  },
+  "3 months": {
+   "due": "2026-12-31"
+  },
+  "6 months": {
+   "due": "2027-04-01"
+  },
+  "12 months": {
+   "due": "2027-10-01"
+  }
+ },
+ "predictions": {
+  "cutoff_utc": "20261001034500",
+  "score_taken_at": "20260930183153",
+  "fundamentals": 48.5,
+  "call": {
+   "listing": {
+    "call": "APPLY SELECTIVELY",
+    "colour": "#a86400",
+    "score": 54.5,
+    "confidence": "medium",
+    "why": "built from our fundamentals, market demand — 75% of the deciding weight",
+    "based_on": [
+     "our fundamentals",
+     "market demand"
+    ]
+   },
+   "longterm": {
+    "call": "WAIT FOR LISTING",
+    "colour": "#b25b1a",
+    "score": 48.5,
+    "confidence": "low",
+    "why": "built from our fundamentals — 60% of the deciding weight",
+    "based_on": [
+     "our fundamentals"
+    ]
+   },
+   "hard_stops": [],
+   "serious_findings": [],
+   "models_disagree": false
+  },
+  "models": {
+   "groq": {
+    "model": "qwen/qwen3.8-27b",
+    "answered_at": "20260928201500",
+    "listing_view": 65.0,
+    "longterm_view": 55.0,
+    "unsuitable_model": false
+   },
+   "nvidia": {
+    "model": "google/gemma-4-31b-it (fallback: kimi-k3 timed out)",
+    "answered_at": "20260928201500",
+    "listing_view": 65.0,
+    "longterm_view": 40.0,
+    "unsuitable_model": false
+   }
+  }
+ },
+ "marks": {
+  "our_call": {
+   "listing": {
+    "said": "APPLY SELECTIVELY",
+    "right": true
+   },
+   "holding": {
+    "said": "WAIT FOR LISTING",
+    "right": null,
+    "due": "2026-12-31"
+   }
+  },
+  "groq": {
+   "model": "qwen/qwen3.8-27b",
+   "unsuitable_model": false,
+   "listing": {
+    "said": 65.0,
+    "right": true
+   },
+   "holding": {
+    "said": 55.0,
+    "right": null
+   }
+  },
+  "nvidia": {
+   "model": "google/gemma-4-31b-it (fallback: kimi-k3 timed out)",
+   "unsuitable_model": false,
+   "listing": {
+    "said": 65.0,
+    "right": true
+   },
+   "holding": {
+    "said": 40.0,
+    "right": null
+   }
+  }
+ }
 }

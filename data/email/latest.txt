@@ -1,13 +1,11 @@
-IPO RADAR — generated 2026-10-01 18:59 UTC
-7 open or upcoming; 39 closed issue(s) left out — see the dashboard
+IPO RADAR — generated 2026-10-02 08:49 UTC
+5 open or upcoming; 41 closed issue(s) left out — see the dashboard
 ============================================================
 Full dashboard: https://dev171296.github.io/ipo-radar/
 
 AT A GLANCE
 ------------------------------------------------------------
 Company                           Closes      Applying          Holding
-Green Asia Impex Limited          2026-10-01  AVOID             not enough info
-Papadmalji Agro Foods Limited     2026-10-01  APPLY SELECTIVELY not enough info
 Eventions Limited                 2026-10-05  not enough info   not enough info
 Nityas Gems and Jewellery Limite  2026-10-05  not enough info   not enough info
 Vishal Nirmiti Limited            2026-10-05  not enough info   not enough info
@@ -22,21 +20,10 @@ Eventions Limited
   sme · 2026-09-30 to 2026-10-05 · band not announced
   Fundamentals: None (0% assessed)   Demand: None (14% assessed)
 
-Green Asia Impex Limited
-  CALL: applying -> AVOID   |   holding -> NOT ENOUGH INFORMATION
-  sme · 2026-09-24 to 2026-10-01 · band not announced
-  Fundamentals: None (0% assessed)   Demand: 15.2 (40% assessed)
-  * under-subscribed: closed at 0.98× — the issue did not fill
-
 Nityas Gems and Jewellery Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
   mainboard · 2026-09-30 to 2026-10-05 · Rs.70 to Rs.75
   Fundamentals: None (0% assessed)   Demand: None (14% assessed)
-
-Papadmalji Agro Foods Limited
-  CALL: applying -> APPLY SELECTIVELY   |   holding -> NOT ENOUGH INFORMATION
-  sme · 2026-09-29 to 2026-10-01 · band not announced
-  Fundamentals: None (0% assessed)   Demand: 60.5 (40% assessed)
 
 Vishal Nirmiti Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
