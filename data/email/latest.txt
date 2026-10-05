@@ -1,4 +1,4 @@
-IPO RADAR — generated 2026-10-05 12:31 UTC
+IPO RADAR — generated 2026-10-05 17:21 UTC
 5 open or upcoming; 41 closed issue(s) left out — see the dashboard
 ============================================================
 Full dashboard: https://dev171296.github.io/ipo-radar/
@@ -6,8 +6,8 @@ Full dashboard: https://dev171296.github.io/ipo-radar/
 AT A GLANCE
 ------------------------------------------------------------
 Company                           Closes      Applying          Holding
+Nityas Gems and Jewellery Limite  2026-10-05  APPLY SELECTIVELY WAIT FOR LISTING
 Eventions Limited                 2026-10-05  not enough info   not enough info
-Nityas Gems and Jewellery Limite  2026-10-05  not enough info   not enough info
 Vishal Nirmiti Limited            2026-10-05  not enough info   not enough info
 R.K. Fashion Accessories Limited  2026-10-07  not enough info   not enough info
 SMC Global Securities Limited     2026-10-16  not enough info   not enough info
@@ -21,9 +21,13 @@ Eventions Limited
   Fundamentals: None (0% assessed)   Demand: None (14% assessed)
 
 Nityas Gems and Jewellery Limited
-  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
+  CALL: applying -> APPLY SELECTIVELY   |   holding -> WAIT FOR LISTING
   mainboard · 2026-09-30 to 2026-10-05 · Rs.70 to Rs.75
-  Fundamentals: None (0% assessed)   Demand: None (14% assessed)
+  Fundamentals: 52.2 (34% assessed)   Demand: None (14% assessed)
+  groq: listing 35, long-term 45, confidence low
+  nvidia: listing 72, long-term 38, confidence medium
+  !! models disagree on listing_view by 37.0 points
+  * the business consumed cash in its latest year: operating cash flow -147.32 against a reported profit
 
 Vishal Nirmiti Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
