@@ -1,4 +1,4 @@
-IPO RADAR — generated 2026-10-04 17:47 UTC
+IPO RADAR — generated 2026-10-05 09:27 UTC
 5 open or upcoming; 41 closed issue(s) left out — see the dashboard
 ============================================================
 Full dashboard: https://dev171296.github.io/ipo-radar/
@@ -32,7 +32,7 @@ Vishal Nirmiti Limited
 
 R.K. Fashion Accessories Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
-  sme · 2026-10-05 to 2026-10-07 · Rs.77 to Rs.82
+  sme · 2026-10-05 to 2026-10-07 · band not announced
   Fundamentals: None (0% assessed)   Demand: None (0% assessed)
 
 SMC Global Securities Limited
