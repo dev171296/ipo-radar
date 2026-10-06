@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-06T09:12:56+00:00",
+  "generated_at": "2026-10-06T12:11:03+00:00",
   "count": 47,
   "ipos": [
     {
@@ -619,6 +619,20 @@
       "missing": []
     },
     {
+      "id": "2026-10-grace-cancer-foundation-zczp",
+      "name": "Grace Cancer Foundation - ZCZP",
+      "type": "mainboard",
+      "status": "upcoming",
+      "dates": {
+        "open": "2026-10-07",
+        "close": "2026-10-09",
+        "open_as_given": "07-Oct-2026",
+        "close_as_given": "09-Oct-2026"
+      },
+      "price_band": "Rs.10",
+      "missing": []
+    },
+    {
       "id": "2026-10-r-k-fashion-accessories",
       "name": "R.K. Fashion Accessories Limited",
       "type": "sme",
@@ -644,20 +658,6 @@
         "close_as_given": "16-Oct-2026"
       },
       "price_band": "Rs.1000",
-      "missing": []
-    },
-    {
-      "id": "2026-10-grace-cancer-foundation-zczp",
-      "name": "Grace Cancer Foundation - ZCZP",
-      "type": "mainboard",
-      "status": "upcoming",
-      "dates": {
-        "open": "2026-10-07",
-        "close": "2026-10-09",
-        "open_as_given": "07-Oct-2026",
-        "close_as_given": "09-Oct-2026"
-      },
-      "price_band": "Rs.10",
       "missing": []
     }
   ]
