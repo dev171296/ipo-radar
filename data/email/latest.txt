@@ -1,43 +1,27 @@
-IPO RADAR — generated 2026-10-05 21:19 UTC
-5 open or upcoming; 41 closed issue(s) left out — see the dashboard
+IPO RADAR — generated 2026-10-06 09:13 UTC
+3 open or upcoming; 44 closed issue(s) left out — see the dashboard
 ============================================================
 Full dashboard: https://dev171296.github.io/ipo-radar/
 
 AT A GLANCE
 ------------------------------------------------------------
 Company                           Closes      Applying          Holding
-Nityas Gems and Jewellery Limite  2026-10-05  WAIT FOR LISTING  WAIT FOR LISTING
-Eventions Limited                 2026-10-05  APPLY SELECTIVELY not enough info
-Vishal Nirmiti Limited            2026-10-05  AVOID             not enough info
 R.K. Fashion Accessories Limited  2026-10-07  not enough info   not enough info
+Grace Cancer Foundation - ZCZP    2026-10-09  not enough info   not enough info
 SMC Global Securities Limited     2026-10-16  not enough info   not enough info
 
 THE DETAIL
 ------------------------------------------------------------
 
-Eventions Limited
-  CALL: applying -> APPLY SELECTIVELY   |   holding -> NOT ENOUGH INFORMATION
-  sme · 2026-09-30 to 2026-10-05 · band not announced
-  Fundamentals: None (0% assessed)   Demand: 60.5 (40% assessed)
-
-Nityas Gems and Jewellery Limited
-  CALL: applying -> WAIT FOR LISTING   |   holding -> WAIT FOR LISTING
-  mainboard · 2026-09-30 to 2026-10-05 · Rs.70 to Rs.75
-  Fundamentals: 52.2 (34% assessed)   Demand: 28.3 (40% assessed)
-  groq: listing 35, long-term 40, confidence low
-  nvidia: listing 55, long-term 35, confidence low
-  !! models disagree on listing_view by 20.0 points
-  * the business consumed cash in its latest year: operating cash flow -147.32 against a reported profit
-
-Vishal Nirmiti Limited
-  CALL: applying -> AVOID   |   holding -> NOT ENOUGH INFORMATION
-  mainboard · 2026-09-30 to 2026-10-05 · Rs.208 to Rs.220
-  Fundamentals: None (0% assessed)   Demand: 28.3 (40% assessed)
+Grace Cancer Foundation - ZCZP
+  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
+  mainboard · 2026-10-07 to 2026-10-09 · Rs.10
+  Fundamentals: None (0% assessed)   Demand: None (0% assessed)
 
 R.K. Fashion Accessories Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
   sme · 2026-10-05 to 2026-10-07 · band not announced
-  Fundamentals: None (0% assessed)   Demand: None (0% assessed)
+  Fundamentals: None (0% assessed)   Demand: None (14% assessed)
 
 SMC Global Securities Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION

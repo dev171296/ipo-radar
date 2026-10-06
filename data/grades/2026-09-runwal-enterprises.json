@@ -2,6 +2,119 @@
  "ipo_id": "2026-09-runwal-enterprises",
  "name": "Runwal Enterprises Limited",
  "symbol": "RUNWALENTR",
- "graded_at": "2026-10-05T21:19:02+00:00",
- "status": "not listed yet"
+ "graded_at": "2026-10-06T09:13:31+00:00",
+ "status": "listed",
+ "listed_on": "2026-10-05",
+ "issue_price": 302.0,
+ "issue_price_note": "top of the price band — the price nearly every Indian IPO is finally set at",
+ "listing_open": 305.0,
+ "listing_close": 301.45,
+ "listing_gain_pct": 0.99,
+ "listing_day_close_pct": -0.18,
+ "checkpoints": {
+  "1 week": {
+   "due": "2026-10-12"
+  },
+  "1 month": {
+   "due": "2026-11-04"
+  },
+  "3 months": {
+   "due": "2027-01-04"
+  },
+  "6 months": {
+   "due": "2027-04-05"
+  },
+  "12 months": {
+   "due": "2027-10-05"
+  }
+ },
+ "predictions": {
+  "cutoff_utc": "20261005034500",
+  "score_taken_at": "20261004174659",
+  "fundamentals": 50.3,
+  "call": {
+   "listing": {
+    "call": "WAIT FOR LISTING",
+    "colour": "#b25b1a",
+    "score": 41.4,
+    "confidence": "medium",
+    "why": "built from our fundamentals, market demand — 75% of the deciding weight",
+    "based_on": [
+     "our fundamentals",
+     "market demand"
+    ]
+   },
+   "longterm": {
+    "call": "WAIT FOR LISTING",
+    "colour": "#b25b1a",
+    "score": 45,
+    "confidence": "low",
+    "why": "built from our fundamentals — 60% of the deciding weight; capped at 45 by a hard stop: negative operating cash flow in all three years",
+    "based_on": [
+     "our fundamentals"
+    ]
+   },
+   "hard_stops": [
+    "negative operating cash flow in all three years"
+   ],
+   "serious_findings": [
+    "cash was consumed every year",
+    "heavily indebted"
+   ],
+   "models_disagree": false
+  },
+  "models": {
+   "groq": {
+    "model": "qwen/qwen3.8-27b",
+    "answered_at": "20260929185358",
+    "listing_view": 35.0,
+    "longterm_view": 40.0,
+    "unsuitable_model": false
+   },
+   "nvidia": {
+    "model": "moonshotai/kimi-k3",
+    "answered_at": "20260929185358",
+    "listing_view": 38.0,
+    "longterm_view": 35.0,
+    "unsuitable_model": false
+   }
+  }
+ },
+ "marks": {
+  "our_call": {
+   "listing": {
+    "said": "WAIT FOR LISTING",
+    "right": false
+   },
+   "holding": {
+    "said": "WAIT FOR LISTING",
+    "right": null,
+    "due": "2027-01-04"
+   }
+  },
+  "groq": {
+   "model": "qwen/qwen3.8-27b",
+   "unsuitable_model": false,
+   "listing": {
+    "said": 35.0,
+    "right": false
+   },
+   "holding": {
+    "said": 40.0,
+    "right": null
+   }
+  },
+  "nvidia": {
+   "model": "moonshotai/kimi-k3",
+   "unsuitable_model": false,
+   "listing": {
+    "said": 38.0,
+    "right": false
+   },
+   "holding": {
+    "said": 35.0,
+    "right": null
+   }
+  }
+ }
 }

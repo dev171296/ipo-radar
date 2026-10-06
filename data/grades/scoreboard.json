@@ -1,28 +1,28 @@
 {
- "built_at": "2026-10-05T21:19:02+00:00",
- "listed_ipos": 23,
+ "built_at": "2026-10-06T09:13:31+00:00",
+ "listed_ipos": 27,
  "base_rate_pct": 70,
- "average_listing_gain_pct": 16.3,
+ "average_listing_gain_pct": 16.0,
  "predictors": {
   "Our call (rules + both AIs)": {
-   "listing_graded": 23,
-   "listing_right": 18,
+   "listing_graded": 27,
+   "listing_right": 21,
    "no_view": 0,
-   "avg_gain_when_yes": 22.4,
-   "avg_gain_when_no": -1.0,
+   "avg_gain_when_yes": 23.6,
+   "avg_gain_when_no": -2.1,
    "holding_graded": 0,
    "holding_right": 0,
    "listing_hit_rate_pct": 78
   },
   "Groq": {
-   "listing_graded": 18,
-   "listing_right": 12,
+   "listing_graded": 22,
+   "listing_right": 15,
    "no_view": 3,
-   "avg_gain_when_yes": 27.7,
-   "avg_gain_when_no": 4.3,
+   "avg_gain_when_yes": 28.8,
+   "avg_gain_when_no": 2.6,
    "holding_graded": 0,
    "holding_right": 0,
-   "listing_hit_rate_pct": 67
+   "listing_hit_rate_pct": 68
   },
   "Groq — unsuitable models (labelled, kept)": {
    "listing_graded": 1,
@@ -35,14 +35,14 @@
    "listing_hit_rate_pct": 100
   },
   "NVIDIA (Kimi K3)": {
-   "listing_graded": 10,
-   "listing_right": 7,
-   "no_view": 0,
-   "avg_gain_when_yes": 33.1,
-   "avg_gain_when_no": 2.7,
+   "listing_graded": 13,
+   "listing_right": 8,
+   "no_view": 1,
+   "avg_gain_when_yes": 29.2,
+   "avg_gain_when_no": 14.9,
    "holding_graded": 0,
    "holding_right": 0,
-   "listing_hit_rate_pct": 70
+   "listing_hit_rate_pct": 62
   },
   "Gemini (retired)": {
    "listing_graded": 17,
@@ -339,17 +339,17 @@
   {
    "ipo_id": "2026-09-acevector",
    "name": "AceVector Limited",
-   "status": "not listed yet",
-   "listed_on": null,
-   "listing_gain_pct": null,
-   "our_listing_call": null,
-   "right": null
+   "status": "listed",
+   "listed_on": "2026-10-05",
+   "listing_gain_pct": -11.5,
+   "our_listing_call": "WAIT FOR LISTING",
+   "right": true
   },
   {
    "ipo_id": "2026-09-bench-mark-infotech-services",
    "name": "Bench Mark Infotech Services Limited",
-   "status": "not listed yet",
-   "listed_on": null,
+   "status": "listed, but no issue price to measure against",
+   "listed_on": "2026-10-05",
    "listing_gain_pct": null,
    "our_listing_call": null,
    "right": null
@@ -357,17 +357,17 @@
   {
    "ipo_id": "2026-09-german-green-steel-and-power",
    "name": "German Green Steel and Power Limited",
-   "status": "not listed yet",
-   "listed_on": null,
-   "listing_gain_pct": null,
-   "our_listing_call": null,
-   "right": null
+   "status": "listed",
+   "listed_on": "2026-10-05",
+   "listing_gain_pct": 2.16,
+   "our_listing_call": "APPLY",
+   "right": true
   },
   {
    "ipo_id": "2026-09-himalayan-solar",
    "name": "Himalayan Solar Limited",
-   "status": "not listed yet",
-   "listed_on": null,
+   "status": "listed, but no issue price to measure against",
+   "listed_on": "2026-10-05",
    "listing_gain_pct": null,
    "our_listing_call": null,
    "right": null
@@ -375,20 +375,20 @@
   {
    "ipo_id": "2026-09-orient-cables",
    "name": "Orient Cables (India) Limited",
-   "status": "not listed yet",
-   "listed_on": null,
-   "listing_gain_pct": null,
-   "our_listing_call": null,
-   "right": null
+   "status": "listed",
+   "listed_on": "2026-10-05",
+   "listing_gain_pct": 65.44,
+   "our_listing_call": "APPLY",
+   "right": true
   },
   {
    "ipo_id": "2026-09-runwal-enterprises",
    "name": "Runwal Enterprises Limited",
-   "status": "not listed yet",
-   "listed_on": null,
-   "listing_gain_pct": null,
-   "our_listing_call": null,
-   "right": null
+   "status": "listed",
+   "listed_on": "2026-10-05",
+   "listing_gain_pct": 0.99,
+   "our_listing_call": "WAIT FOR LISTING",
+   "right": false
   },
   {
    "ipo_id": "2026-09-shah-investor-s-home",
@@ -429,7 +429,7 @@
   {
    "ipo_id": "2026-09-eventions",
    "name": "Eventions Limited",
-   "status": "issue still open",
+   "status": "not listed yet",
    "listed_on": null,
    "listing_gain_pct": null,
    "our_listing_call": null,
@@ -438,7 +438,7 @@
   {
    "ipo_id": "2026-09-nityas-gems-and-jewellery",
    "name": "Nityas Gems and Jewellery Limited",
-   "status": "issue still open",
+   "status": "not listed yet",
    "listed_on": null,
    "listing_gain_pct": null,
    "our_listing_call": null,
@@ -447,7 +447,7 @@
   {
    "ipo_id": "2026-09-vishal-nirmiti",
    "name": "Vishal Nirmiti Limited",
-   "status": "issue still open",
+   "status": "not listed yet",
    "listed_on": null,
    "listing_gain_pct": null,
    "our_listing_call": null,
@@ -456,6 +456,15 @@
   {
    "ipo_id": "2026-10-r-k-fashion-accessories",
    "name": "R.K. Fashion Accessories Limited",
+   "status": "issue still open",
+   "listed_on": null,
+   "listing_gain_pct": null,
+   "our_listing_call": null,
+   "right": null
+  },
+  {
+   "ipo_id": "2026-10-grace-cancer-foundation-zczp",
+   "name": "Grace Cancer Foundation - ZCZP",
    "status": "issue still open",
    "listed_on": null,
    "listing_gain_pct": null,

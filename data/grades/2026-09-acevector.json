@@ -2,6 +2,113 @@
  "ipo_id": "2026-09-acevector",
  "name": "AceVector Limited",
  "symbol": "ACEVECTOR",
- "graded_at": "2026-10-05T21:19:02+00:00",
- "status": "not listed yet"
+ "graded_at": "2026-10-06T09:13:29+00:00",
+ "status": "listed",
+ "listed_on": "2026-10-05",
+ "issue_price": 32.0,
+ "issue_price_note": "top of the price band — the price nearly every Indian IPO is finally set at",
+ "listing_open": 28.32,
+ "listing_close": 26.08,
+ "listing_gain_pct": -11.5,
+ "listing_day_close_pct": -18.5,
+ "checkpoints": {
+  "1 week": {
+   "due": "2026-10-12"
+  },
+  "1 month": {
+   "due": "2026-11-04"
+  },
+  "3 months": {
+   "due": "2027-01-04"
+  },
+  "6 months": {
+   "due": "2027-04-05"
+  },
+  "12 months": {
+   "due": "2027-10-05"
+  }
+ },
+ "predictions": {
+  "cutoff_utc": "20261005034500",
+  "score_taken_at": "20261004174651",
+  "fundamentals": null,
+  "call": {
+   "listing": {
+    "call": "WAIT FOR LISTING",
+    "colour": "#b25b1a",
+    "score": 41.2,
+    "confidence": "low",
+    "why": "built from market demand — 50% of the deciding weight",
+    "based_on": [
+     "market demand"
+    ]
+   },
+   "longterm": {
+    "call": "NOT ENOUGH INFORMATION",
+    "colour": "#6b6862",
+    "score": null,
+    "confidence": "none",
+    "why": "only 0% of what decides the long-term call is available — no call is better than a guess dressed as one",
+    "based_on": []
+   },
+   "hard_stops": [
+    "negative operating cash flow in all three years"
+   ],
+   "serious_findings": [],
+   "models_disagree": false
+  },
+  "models": {
+   "groq": {
+    "model": "qwen/qwen3.8-27b",
+    "answered_at": "20260929185007",
+    "listing_view": 35.0,
+    "longterm_view": 40.0,
+    "unsuitable_model": false
+   },
+   "nvidia": {
+    "model": "moonshotai/kimi-k3",
+    "answered_at": "20260929185007",
+    "listing_view": 48.0,
+    "longterm_view": 42.0,
+    "unsuitable_model": false
+   }
+  }
+ },
+ "marks": {
+  "our_call": {
+   "listing": {
+    "said": "WAIT FOR LISTING",
+    "right": true
+   },
+   "holding": {
+    "said": "NOT ENOUGH INFORMATION",
+    "right": null,
+    "due": "2027-01-04"
+   }
+  },
+  "groq": {
+   "model": "qwen/qwen3.8-27b",
+   "unsuitable_model": false,
+   "listing": {
+    "said": 35.0,
+    "right": true
+   },
+   "holding": {
+    "said": 40.0,
+    "right": null
+   }
+  },
+  "nvidia": {
+   "model": "moonshotai/kimi-k3",
+   "unsuitable_model": false,
+   "listing": {
+    "said": 48.0,
+    "right": null
+   },
+   "holding": {
+    "said": 42.0,
+    "right": null
+   }
+  }
+ }
 }
