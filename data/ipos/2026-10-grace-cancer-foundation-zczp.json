@@ -8,7 +8,7 @@
   "name": "Grace Cancer Foundation - ZCZP",
   "symbol": "GCFZCZP",
   "type": "mainboard",
-  "status": "upcoming",
+  "status": "open",
   "dates": {
     "open": "2026-10-07",
     "close": "2026-10-09",
@@ -25,8 +25,8 @@
   "also_on_bse": false,
   "sources": {
     "calendar": "nse",
-    "fetched_at": "2026-10-06T15:22:39+00:00"
+    "fetched_at": "2026-10-06T19:00:15+00:00"
   },
   "missing": [],
-  "rebuilt_at": "2026-10-06T15:22:39+00:00"
+  "rebuilt_at": "2026-10-06T19:00:15+00:00"
 }

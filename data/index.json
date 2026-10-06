@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-06T15:22:39+00:00",
+  "generated_at": "2026-10-06T19:00:15+00:00",
   "count": 47,
   "ipos": [
     {
@@ -622,7 +622,7 @@
       "id": "2026-10-grace-cancer-foundation-zczp",
       "name": "Grace Cancer Foundation - ZCZP",
       "type": "mainboard",
-      "status": "upcoming",
+      "status": "open",
       "dates": {
         "open": "2026-10-07",
         "close": "2026-10-09",
