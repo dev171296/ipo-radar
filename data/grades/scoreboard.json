@@ -1,28 +1,28 @@
 {
- "built_at": "2026-10-06T19:00:48+00:00",
- "listed_ipos": 27,
- "base_rate_pct": 70,
- "average_listing_gain_pct": 16.0,
+ "built_at": "2026-10-07T09:04:21+00:00",
+ "listed_ipos": 29,
+ "base_rate_pct": 72,
+ "average_listing_gain_pct": 15.5,
  "predictors": {
   "Our call (rules + both AIs)": {
-   "listing_graded": 27,
-   "listing_right": 21,
+   "listing_graded": 29,
+   "listing_right": 23,
    "no_view": 0,
-   "avg_gain_when_yes": 23.6,
+   "avg_gain_when_yes": 22.1,
    "avg_gain_when_no": -2.1,
    "holding_graded": 0,
    "holding_right": 0,
-   "listing_hit_rate_pct": 78
+   "listing_hit_rate_pct": 79
   },
   "Groq": {
-   "listing_graded": 22,
-   "listing_right": 15,
+   "listing_graded": 24,
+   "listing_right": 17,
    "no_view": 3,
-   "avg_gain_when_yes": 28.8,
+   "avg_gain_when_yes": 25.6,
    "avg_gain_when_no": 2.6,
    "holding_graded": 0,
    "holding_right": 0,
-   "listing_hit_rate_pct": 68
+   "listing_hit_rate_pct": 71
   },
   "Groq — unsuitable models (labelled, kept)": {
    "listing_graded": 1,
@@ -35,14 +35,14 @@
    "listing_hit_rate_pct": 100
   },
   "NVIDIA (Kimi K3)": {
-   "listing_graded": 13,
-   "listing_right": 8,
+   "listing_graded": 15,
+   "listing_right": 10,
    "no_view": 1,
-   "avg_gain_when_yes": 29.2,
+   "avg_gain_when_yes": 25.0,
    "avg_gain_when_no": 14.9,
    "holding_graded": 0,
    "holding_right": 0,
-   "listing_hit_rate_pct": 62
+   "listing_hit_rate_pct": 67
   },
   "Gemini (retired)": {
    "listing_graded": 17,
@@ -393,20 +393,20 @@
   {
    "ipo_id": "2026-09-shah-investor-s-home",
    "name": "Shah Investor's Home Limited",
-   "status": "not listed yet",
-   "listed_on": null,
-   "listing_gain_pct": null,
-   "our_listing_call": null,
-   "right": null
+   "status": "listed",
+   "listed_on": "2026-10-06",
+   "listing_gain_pct": 2.4,
+   "our_listing_call": "APPLY SELECTIVELY",
+   "right": true
   },
   {
    "ipo_id": "2026-09-srit",
    "name": "Srit India Limited",
-   "status": "not listed yet",
-   "listed_on": null,
-   "listing_gain_pct": null,
-   "our_listing_call": null,
-   "right": null
+   "status": "listed",
+   "listed_on": "2026-10-06",
+   "listing_gain_pct": 13.85,
+   "our_listing_call": "APPLY",
+   "right": true
   },
   {
    "ipo_id": "2026-09-green-asia-impex",

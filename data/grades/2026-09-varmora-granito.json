@@ -2,7 +2,7 @@
  "ipo_id": "2026-09-varmora-granito",
  "name": "Varmora Granito Limited",
  "symbol": "VARMORA",
- "graded_at": "2026-10-06T19:00:47+00:00",
+ "graded_at": "2026-10-07T09:04:19+00:00",
  "status": "listed",
  "listed_on": "2026-09-29",
  "issue_price": 148.0,
@@ -13,7 +13,11 @@
  "listing_day_close_pct": 2.83,
  "checkpoints": {
   "1 week": {
-   "due": "2026-10-06"
+   "date": "2026-10-06",
+   "close": 132.84,
+   "return_pct": -10.24,
+   "nifty_pct": 0.26,
+   "vs_nifty_pct": -10.51
   },
   "1 month": {
    "due": "2026-10-29"

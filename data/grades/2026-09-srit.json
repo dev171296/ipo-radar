@@ -2,6 +2,116 @@
  "ipo_id": "2026-09-srit",
  "name": "Srit India Limited",
  "symbol": "SRIT",
- "graded_at": "2026-10-06T19:00:48+00:00",
- "status": "not listed yet"
+ "graded_at": "2026-10-07T09:04:21+00:00",
+ "status": "listed",
+ "listed_on": "2026-10-06",
+ "issue_price": 130.0,
+ "issue_price_note": "top of the price band — the price nearly every Indian IPO is finally set at",
+ "listing_open": 148.0,
+ "listing_close": 155.09,
+ "listing_gain_pct": 13.85,
+ "listing_day_close_pct": 19.3,
+ "checkpoints": {
+  "1 week": {
+   "due": "2026-10-13"
+  },
+  "1 month": {
+   "due": "2026-11-05"
+  },
+  "3 months": {
+   "due": "2027-01-05"
+  },
+  "6 months": {
+   "due": "2027-04-06"
+  },
+  "12 months": {
+   "due": "2027-10-06"
+  }
+ },
+ "predictions": {
+  "cutoff_utc": "20261006034500",
+  "score_taken_at": "20261005211752",
+  "fundamentals": 59.7,
+  "call": {
+   "listing": {
+    "call": "APPLY",
+    "colour": "#2f7d32",
+    "score": 69.1,
+    "confidence": "medium",
+    "why": "built from our fundamentals, market demand — 75% of the deciding weight",
+    "based_on": [
+     "our fundamentals",
+     "market demand"
+    ]
+   },
+   "longterm": {
+    "call": "APPLY SELECTIVELY",
+    "colour": "#a86400",
+    "score": 59.7,
+    "confidence": "low",
+    "why": "built from our fundamentals — 60% of the deciding weight",
+    "based_on": [
+     "our fundamentals"
+    ]
+   },
+   "hard_stops": [],
+   "serious_findings": [
+    "the business consumed cash in its latest year"
+   ],
+   "models_disagree": false
+  },
+  "models": {
+   "groq": {
+    "model": "qwen/qwen3.8-27b",
+    "answered_at": "20260930183735",
+    "listing_view": 85.0,
+    "longterm_view": 45.0,
+    "unsuitable_model": false
+   },
+   "nvidia": {
+    "model": "moonshotai/kimi-k3",
+    "answered_at": "20260930183735",
+    "listing_view": 58.0,
+    "longterm_view": 62.0,
+    "unsuitable_model": false
+   }
+  }
+ },
+ "marks": {
+  "our_call": {
+   "listing": {
+    "said": "APPLY",
+    "right": true
+   },
+   "holding": {
+    "said": "APPLY SELECTIVELY",
+    "right": null,
+    "due": "2027-01-05"
+   }
+  },
+  "groq": {
+   "model": "qwen/qwen3.8-27b",
+   "unsuitable_model": false,
+   "listing": {
+    "said": 85.0,
+    "right": true
+   },
+   "holding": {
+    "said": 45.0,
+    "right": null
+   }
+  },
+  "nvidia": {
+   "model": "moonshotai/kimi-k3",
+   "unsuitable_model": false,
+   "listing": {
+    "said": 58.0,
+    "right": true
+   },
+   "holding": {
+    "said": 62.0,
+    "right": null
+   }
+  }
+ }
 }
