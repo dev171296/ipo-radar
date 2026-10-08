@@ -1,5 +1,5 @@
 {
- "built_at": "2026-10-08T09:19:27+00:00",
+ "built_at": "2026-10-08T12:16:52+00:00",
  "listed_ipos": 29,
  "base_rate_pct": 72,
  "average_listing_gain_pct": 15.5,
@@ -465,6 +465,24 @@
   {
    "ipo_id": "2026-10-grace-cancer-foundation-zczp",
    "name": "Grace Cancer Foundation - ZCZP",
+   "status": "issue still open",
+   "listed_on": null,
+   "listing_gain_pct": null,
+   "our_listing_call": null,
+   "right": null
+  },
+  {
+   "ipo_id": "2026-10-hd-fire-protect",
+   "name": "HD Fire Protect Limited",
+   "status": "issue still open",
+   "listed_on": null,
+   "listing_gain_pct": null,
+   "our_listing_call": null,
+   "right": null
+  },
+  {
+   "ipo_id": "2026-10-ravita-engineering-services",
+   "name": "Ravita Engineering Services Limited",
    "status": "issue still open",
    "listed_on": null,
    "listing_gain_pct": null,

@@ -1,0 +1,32 @@
+{
+  "id": "2026-10-ravita-engineering-services",
+  "aliases": [
+    "Ravita Engineering Services Limited"
+  ],
+  "first_seen": "2026-10-08T12:10:58+00:00",
+  "normalised_name": "ravita engineering services",
+  "name": "Ravita Engineering Services Limited",
+  "symbol": "RAVITA",
+  "type": "sme",
+  "status": "upcoming",
+  "dates": {
+    "open": "2026-10-13",
+    "close": "2026-10-15",
+    "open_as_given": "13-Oct-2026",
+    "close_as_given": "15-Oct-2026"
+  },
+  "price_band": "Rs.105 to Rs.112",
+  "issue_size_shares": 10362000.0,
+  "subscription": {
+    "times": null,
+    "shares_offered": null,
+    "shares_bid": null
+  },
+  "also_on_bse": false,
+  "sources": {
+    "calendar": "nse",
+    "fetched_at": "2026-10-08T12:10:58+00:00"
+  },
+  "missing": [],
+  "rebuilt_at": "2026-10-08T12:10:58+00:00"
+}
