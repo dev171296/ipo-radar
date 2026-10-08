@@ -2,7 +2,7 @@
  "ipo_id": "2026-09-elevate-campuses",
  "name": "Elevate Campuses Limited",
  "symbol": "ELEVATE",
- "graded_at": "2026-10-07T19:28:39+00:00",
+ "graded_at": "2026-10-08T09:19:27+00:00",
  "status": "listed",
  "listed_on": "2026-09-30",
  "issue_price": 362.0,
@@ -13,7 +13,11 @@
  "listing_day_close_pct": -10.79,
  "checkpoints": {
   "1 week": {
-   "due": "2026-10-07"
+   "date": "2026-10-07",
+   "close": 350.0,
+   "return_pct": -3.31,
+   "nifty_pct": -0.08,
+   "vs_nifty_pct": -3.24
   },
   "1 month": {
    "due": "2026-10-30"

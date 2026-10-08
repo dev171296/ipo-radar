@@ -2,6 +2,11 @@
  "ipo_id": "2026-09-green-asia-impex",
  "name": "Green Asia Impex Limited",
  "symbol": "GREENASIA",
- "graded_at": "2026-10-07T19:28:39+00:00",
- "status": "not listed yet"
+ "graded_at": "2026-10-08T09:19:27+00:00",
+ "status": "listed, but no issue price to measure against",
+ "listed_on": "2026-10-07",
+ "issue_price": null,
+ "issue_price_note": "top of the price band — the price nearly every Indian IPO is finally set at",
+ "listing_open": 89.0,
+ "listing_close": 84.55
 }

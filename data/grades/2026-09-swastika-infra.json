@@ -2,7 +2,7 @@
  "ipo_id": "2026-09-swastika-infra",
  "name": "Swastika Infra Limited",
  "symbol": "SWASTIKAIN",
- "graded_at": "2026-10-07T19:28:39+00:00",
+ "graded_at": "2026-10-08T09:19:27+00:00",
  "status": "listed",
  "listed_on": "2026-09-30",
  "issue_price": 185.0,
@@ -13,7 +13,11 @@
  "listing_day_close_pct": 13.51,
  "checkpoints": {
   "1 week": {
-   "due": "2026-10-07"
+   "date": "2026-10-07",
+   "close": 210.13,
+   "return_pct": 13.58,
+   "nifty_pct": -0.08,
+   "vs_nifty_pct": 13.66
   },
   "1 month": {
    "due": "2026-10-30"

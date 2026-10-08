@@ -1,5 +1,5 @@
 {
- "built_at": "2026-10-07T19:28:39+00:00",
+ "built_at": "2026-10-08T09:19:27+00:00",
  "listed_ipos": 29,
  "base_rate_pct": 72,
  "average_listing_gain_pct": 15.5,
@@ -411,8 +411,8 @@
   {
    "ipo_id": "2026-09-green-asia-impex",
    "name": "Green Asia Impex Limited",
-   "status": "not listed yet",
-   "listed_on": null,
+   "status": "listed, but no issue price to measure against",
+   "listed_on": "2026-10-07",
    "listing_gain_pct": null,
    "our_listing_call": null,
    "right": null
@@ -420,8 +420,8 @@
   {
    "ipo_id": "2026-09-papadmalji-agro-foods",
    "name": "Papadmalji Agro Foods Limited",
-   "status": "not listed yet",
-   "listed_on": null,
+   "status": "listed, but no issue price to measure against",
+   "listed_on": "2026-10-07",
    "listing_gain_pct": null,
    "our_listing_call": null,
    "right": null
@@ -456,7 +456,7 @@
   {
    "ipo_id": "2026-10-r-k-fashion-accessories",
    "name": "R.K. Fashion Accessories Limited",
-   "status": "issue still open",
+   "status": "not listed yet",
    "listed_on": null,
    "listing_gain_pct": null,
    "our_listing_call": null,

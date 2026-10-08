@@ -2,7 +2,7 @@
  "ipo_id": "2026-09-adroit-industries",
  "name": "Adroit Industries (India) Limited",
  "symbol": "ADROITIND",
- "graded_at": "2026-10-07T19:28:39+00:00",
+ "graded_at": "2026-10-08T09:19:26+00:00",
  "status": "listed",
  "listed_on": "2026-09-30",
  "issue_price": 134.0,
@@ -13,7 +13,11 @@
  "listing_day_close_pct": 85.37,
  "checkpoints": {
   "1 week": {
-   "due": "2026-10-07"
+   "date": "2026-10-07",
+   "close": 223.63,
+   "return_pct": 66.89,
+   "nifty_pct": -0.08,
+   "vs_nifty_pct": 66.96
   },
   "1 month": {
    "due": "2026-10-30"

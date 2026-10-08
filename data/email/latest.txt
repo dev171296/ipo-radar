@@ -1,12 +1,11 @@
-IPO RADAR — generated 2026-10-07 19:28 UTC
-3 open or upcoming; 44 closed issue(s) left out — see the dashboard
+IPO RADAR — generated 2026-10-08 09:19 UTC
+2 open or upcoming; 45 closed issue(s) left out — see the dashboard
 ============================================================
 Full dashboard: https://dev171296.github.io/ipo-radar/
 
 AT A GLANCE
 ------------------------------------------------------------
 Company                           Closes      Applying          Holding
-R.K. Fashion Accessories Limited  2026-10-07  WAIT FOR LISTING  not enough info
 Grace Cancer Foundation - ZCZP    2026-10-09  not enough info   not enough info
 SMC Global Securities Limited     2026-10-16  not enough info   not enough info
 
@@ -16,12 +15,7 @@ THE DETAIL
 Grace Cancer Foundation - ZCZP
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
   mainboard · 2026-10-07 to 2026-10-09 · Rs.10
-  Fundamentals: None (0% assessed)   Demand: None (0% assessed)
-
-R.K. Fashion Accessories Limited
-  CALL: applying -> WAIT FOR LISTING   |   holding -> NOT ENOUGH INFORMATION
-  sme · 2026-10-05 to 2026-10-07 · band not announced
-  Fundamentals: None (0% assessed)   Demand: 41.2 (40% assessed)
+  Fundamentals: None (0% assessed)   Demand: None (14% assessed)
 
 SMC Global Securities Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
