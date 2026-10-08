@@ -1,4 +1,4 @@
-IPO RADAR — generated 2026-10-08 12:16 UTC
+IPO RADAR — generated 2026-10-08 15:47 UTC
 4 open or upcoming; 45 closed issue(s) left out — see the dashboard
 ============================================================
 Full dashboard: https://dev171296.github.io/ipo-radar/
@@ -7,9 +7,9 @@ AT A GLANCE
 ------------------------------------------------------------
 Company                           Closes      Applying          Holding
 Grace Cancer Foundation - ZCZP    2026-10-09  not enough info   not enough info
+SMC Global Securities Limited     2026-10-09  not enough info   not enough info
 HD Fire Protect Limited           2026-10-15  not enough info   not enough info
 Ravita Engineering Services Limi  2026-10-15  not enough info   not enough info
-SMC Global Securities Limited     2026-10-16  not enough info   not enough info
 
 THE DETAIL
 ------------------------------------------------------------
@@ -33,7 +33,7 @@ Ravita Engineering Services Limited
 
 SMC Global Securities Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
-  mainboard · 2026-10-05 to 2026-10-16 · Rs.1000
+  mainboard · 2026-10-05 to 2026-10-09 · Rs.1000
   Fundamentals: None (0% assessed)   Demand: None (0% assessed)
 
 Dashboard: https://dev171296.github.io/ipo-radar/

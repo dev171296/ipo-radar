@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T12:10:58+00:00",
+  "generated_at": "2026-10-08T15:47:21+00:00",
   "count": 49,
   "ipos": [
     {
@@ -633,34 +633,6 @@
       "missing": []
     },
     {
-      "id": "2026-10-r-k-fashion-accessories",
-      "name": "R.K. Fashion Accessories Limited",
-      "type": "sme",
-      "status": "open",
-      "dates": {
-        "open": "2026-10-05",
-        "close": "2026-10-07",
-        "open_as_given": "05-Oct-2026",
-        "close_as_given": "07-Oct-2026"
-      },
-      "price_band": null,
-      "missing": []
-    },
-    {
-      "id": "2026-10-smc-global-securities",
-      "name": "SMC Global Securities Limited",
-      "type": "mainboard",
-      "status": "open",
-      "dates": {
-        "open": "2026-10-05",
-        "close": "2026-10-16",
-        "open_as_given": "05-Oct-2026",
-        "close_as_given": "16-Oct-2026"
-      },
-      "price_band": "Rs.1000",
-      "missing": []
-    },
-    {
       "id": "2026-10-hd-fire-protect",
       "name": "HD Fire Protect Limited",
       "type": "mainboard",
@@ -675,6 +647,20 @@
       "missing": []
     },
     {
+      "id": "2026-10-r-k-fashion-accessories",
+      "name": "R.K. Fashion Accessories Limited",
+      "type": "sme",
+      "status": "open",
+      "dates": {
+        "open": "2026-10-05",
+        "close": "2026-10-07",
+        "open_as_given": "05-Oct-2026",
+        "close_as_given": "07-Oct-2026"
+      },
+      "price_band": null,
+      "missing": []
+    },
+    {
       "id": "2026-10-ravita-engineering-services",
       "name": "Ravita Engineering Services Limited",
       "type": "sme",
@@ -686,6 +672,20 @@
         "close_as_given": "15-Oct-2026"
       },
       "price_band": "Rs.105 to Rs.112",
+      "missing": []
+    },
+    {
+      "id": "2026-10-smc-global-securities",
+      "name": "SMC Global Securities Limited",
+      "type": "mainboard",
+      "status": "open",
+      "dates": {
+        "open": "2026-10-05",
+        "close": "2026-10-09",
+        "open_as_given": "05-Oct-2026",
+        "close_as_given": "09-Oct-2026"
+      },
+      "price_band": "Rs.1000",
       "missing": []
     }
   ]
