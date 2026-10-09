@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T15:29:12+00:00",
+  "generated_at": "2026-10-09T18:56:51+00:00",
   "count": 50,
   "ipos": [
     {
@@ -678,7 +678,7 @@
       "id": "2026-10-smc-global-securities",
       "name": "SMC Global Securities Limited",
       "type": "mainboard",
-      "status": "open",
+      "status": "upcoming",
       "dates": {
         "open": "2026-10-05",
         "close": "2026-10-09",

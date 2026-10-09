@@ -8,7 +8,7 @@
   "name": "SMC Global Securities Limited",
   "symbol": "SMCG04",
   "type": "mainboard",
-  "status": "open",
+  "status": "upcoming",
   "dates": {
     "open": "2026-10-05",
     "close": "2026-10-09",
@@ -18,15 +18,15 @@
   "price_band": "Rs.1000",
   "issue_size_shares": 750000.0,
   "subscription": {
-    "times": 0.01,
-    "shares_offered": 750000.0,
-    "shares_bid": 8282.0
+    "times": null,
+    "shares_offered": null,
+    "shares_bid": null
   },
   "also_on_bse": false,
   "sources": {
     "calendar": "nse",
-    "fetched_at": "2026-10-09T15:29:12+00:00"
+    "fetched_at": "2026-10-09T18:56:51+00:00"
   },
   "missing": [],
-  "rebuilt_at": "2026-10-09T15:29:12+00:00"
+  "rebuilt_at": "2026-10-09T18:56:51+00:00"
 }
