@@ -1,4 +1,4 @@
-IPO RADAR — generated 2026-10-09 12:02 UTC
+IPO RADAR — generated 2026-10-09 15:29 UTC
 5 open or upcoming; 45 closed issue(s) left out — see the dashboard
 ============================================================
 Full dashboard: https://dev171296.github.io/ipo-radar/
