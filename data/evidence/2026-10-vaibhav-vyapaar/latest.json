@@ -1,0 +1,86 @@
+{
+ "ipo_id": "2026-10-vaibhav-vyapaar",
+ "built_at": "2026-10-09T09:26:22+00:00",
+ "name": "Vaibhav Vyapaar Limited",
+ "symbol": "LOANFRONT",
+ "type": "sme",
+ "status": "upcoming",
+ "offer": {
+  "price_low": {
+   "value": 51.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.51 to Rs.54"
+  },
+  "price_high": {
+   "value": 54.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.51 to Rs.54"
+  },
+  "issue_size_shares": {
+   "value": 7796000.0,
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "issue_size_rs_million": {
+   "value": 420.98,
+   "source": "computed",
+   "confidence": "high",
+   "note": "shares × top of the price band"
+  },
+  "open_date": {
+   "value": "2026-10-13",
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "close_date": {
+   "value": "2026-10-15",
+   "source": "nse_calendar",
+   "confidence": "high"
+  }
+ },
+ "financials": {},
+ "valuation": {},
+ "cash": {},
+ "balance_sheet": {},
+ "derived": {},
+ "demand": {},
+ "documents": {},
+ "missing": [
+  {
+   "what": "three-year financials",
+   "why": "no abridged prospectus on file yet"
+  },
+  {
+   "what": "subscription",
+   "why": "the issue has not opened yet"
+  },
+  {
+   "what": "grey market premium",
+   "why": "no free source built yet"
+  },
+  {
+   "what": "anchor investor allotment",
+   "why": "not collected yet"
+  },
+  {
+   "what": "broker conviction",
+   "why": "not collected yet"
+  },
+  {
+   "what": "media coverage",
+   "why": "not collected yet"
+  },
+  {
+   "what": "retail attention",
+   "why": "not collected yet"
+  },
+  {
+   "what": "full prospectus",
+   "why": "not downloaded yet — will retry next run"
+  }
+ ],
+ "conflicts": [],
+ "observations": []
+}

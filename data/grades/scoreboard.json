@@ -1,28 +1,28 @@
 {
- "built_at": "2026-10-08T19:23:20+00:00",
- "listed_ipos": 29,
- "base_rate_pct": 72,
- "average_listing_gain_pct": 15.5,
+ "built_at": "2026-10-09T09:26:34+00:00",
+ "listed_ipos": 31,
+ "base_rate_pct": 71,
+ "average_listing_gain_pct": 14.6,
  "predictors": {
   "Our call (rules + both AIs)": {
-   "listing_graded": 29,
-   "listing_right": 23,
+   "listing_graded": 31,
+   "listing_right": 24,
    "no_view": 0,
    "avg_gain_when_yes": 22.1,
-   "avg_gain_when_no": -2.1,
+   "avg_gain_when_no": -1.2,
    "holding_graded": 0,
    "holding_right": 0,
-   "listing_hit_rate_pct": 79
+   "listing_hit_rate_pct": 77
   },
   "Groq": {
-   "listing_graded": 24,
+   "listing_graded": 25,
    "listing_right": 17,
    "no_view": 3,
    "avg_gain_when_yes": 25.6,
-   "avg_gain_when_no": 2.6,
+   "avg_gain_when_no": 2.9,
    "holding_graded": 0,
    "holding_right": 0,
-   "listing_hit_rate_pct": 71
+   "listing_hit_rate_pct": 68
   },
   "Groq — unsuitable models (labelled, kept)": {
    "listing_graded": 1,
@@ -35,14 +35,14 @@
    "listing_hit_rate_pct": 100
   },
   "NVIDIA (Kimi K3)": {
-   "listing_graded": 15,
-   "listing_right": 10,
+   "listing_graded": 16,
+   "listing_right": 11,
    "no_view": 1,
-   "avg_gain_when_yes": 25.0,
+   "avg_gain_when_yes": 23.3,
    "avg_gain_when_no": 14.9,
    "holding_graded": 0,
    "holding_right": 0,
-   "listing_hit_rate_pct": 67
+   "listing_hit_rate_pct": 69
   },
   "Gemini (retired)": {
    "listing_graded": 17,
@@ -429,8 +429,8 @@
   {
    "ipo_id": "2026-09-eventions",
    "name": "Eventions Limited",
-   "status": "not listed yet",
-   "listed_on": null,
+   "status": "listed, but no issue price to measure against",
+   "listed_on": "2026-10-08",
    "listing_gain_pct": null,
    "our_listing_call": null,
    "right": null
@@ -438,20 +438,20 @@
   {
    "ipo_id": "2026-09-nityas-gems-and-jewellery",
    "name": "Nityas Gems and Jewellery Limited",
-   "status": "not listed yet",
-   "listed_on": null,
-   "listing_gain_pct": null,
-   "our_listing_call": null,
-   "right": null
+   "status": "listed",
+   "listed_on": "2026-10-08",
+   "listing_gain_pct": 6.67,
+   "our_listing_call": "WAIT FOR LISTING",
+   "right": false
   },
   {
    "ipo_id": "2026-09-vishal-nirmiti",
    "name": "Vishal Nirmiti Limited",
-   "status": "not listed yet",
-   "listed_on": null,
-   "listing_gain_pct": null,
-   "our_listing_call": null,
-   "right": null
+   "status": "listed",
+   "listed_on": "2026-10-08",
+   "listing_gain_pct": -2.27,
+   "our_listing_call": "AVOID",
+   "right": true
   },
   {
    "ipo_id": "2026-10-r-k-fashion-accessories",
@@ -492,6 +492,15 @@
   {
    "ipo_id": "2026-10-ravita-engineering-services",
    "name": "Ravita Engineering Services Limited",
+   "status": "issue still open",
+   "listed_on": null,
+   "listing_gain_pct": null,
+   "our_listing_call": null,
+   "right": null
+  },
+  {
+   "ipo_id": "2026-10-vaibhav-vyapaar",
+   "name": "Vaibhav Vyapaar Limited",
    "status": "issue still open",
    "listed_on": null,
    "listing_gain_pct": null,
