@@ -1,0 +1,134 @@
+{
+ "ipo_id": "2026-09-srit",
+ "name": "Srit India Limited",
+ "scored_at": "2026-10-10T17:57:14+00:00",
+ "built_from_bundle": "2026-10-10T17:57:13+00:00",
+ "fundamentals": {
+  "score": 59.7,
+  "withheld": null,
+  "points_earned": 46.59,
+  "points_assessed": 78,
+  "coverage_pct": 78,
+  "components": [
+   {
+    "component": "valuation_vs_peers",
+    "weight": 18,
+    "points": 12.15,
+    "basis": "13.73× earnings vs 18.31×, against the document's stated average (unverified)"
+   },
+   {
+    "component": "growth_quality",
+    "weight": 14,
+    "points": 11.2,
+    "basis": "revenue CAGR 28.84% a year"
+   },
+   {
+    "component": "cash_flow_quality",
+    "weight": 14,
+    "points": 0.0,
+    "basis": "cash conversion -0.19× of EBITDA"
+   },
+   {
+    "component": "profitability",
+    "weight": 12,
+    "points": 6.24,
+    "basis": "latest profit margin 9.62%, narrowing"
+   },
+   {
+    "component": "balance_sheet",
+    "weight": 10,
+    "points": 8.5,
+    "basis": "debt-to-equity 0.23; current ratio 1.45"
+   },
+   {
+    "component": "filing_hygiene",
+    "weight": 10,
+    "points": 8.5,
+    "basis": "summary form read; 540-page prospectus read; no contradictions"
+   }
+  ],
+  "not_assessed": [
+   {
+    "component": "promoter_governance",
+    "weight": 12,
+    "why": "not built yet"
+   },
+   {
+    "component": "issue_structure",
+    "weight": 10,
+    "why": "fresh issue and total size not both readable"
+   }
+  ]
+ },
+ "demand": {
+  "score": 73.8,
+  "withheld": null,
+  "points_earned": 29.5,
+  "points_assessed": 40,
+  "coverage_pct": 40,
+  "components": [
+   {
+    "component": "subscription_level",
+    "weight": 26,
+    "points": 26.0,
+    "basis": "closed subscribed 88.83468367346939×"
+   },
+   {
+    "component": "subscription_velocity",
+    "weight": 14,
+    "points": 3.5,
+    "basis": "0% of final demand was already in at the first reading"
+   }
+  ],
+  "not_assessed": [
+   {
+    "component": "gmp_level",
+    "weight": 12,
+    "why": "not built yet"
+   },
+   {
+    "component": "gmp_trend",
+    "weight": 10,
+    "why": "not built yet"
+   },
+   {
+    "component": "anchor_quality",
+    "weight": 12,
+    "why": "not built yet"
+   },
+   {
+    "component": "broker_conviction",
+    "weight": 10,
+    "why": "not built yet"
+   },
+   {
+    "component": "media_coverage",
+    "weight": 8,
+    "why": "not built yet"
+   },
+   {
+    "component": "retail_attention",
+    "weight": 8,
+    "why": "not built yet"
+   }
+  ]
+ },
+ "flags": [
+  {
+   "flag": "the business consumed cash in its latest year",
+   "detail": "operating cash flow -121.01 against a reported profit",
+   "for_ai": "where did the money go — receivables, inventory, or both?"
+  }
+ ],
+ "vetoes": {
+  "triggered": [],
+  "not_tested": [
+   "qualified or adverse audit opinion — needs the prospectus chapters read",
+   "SEBI or criminal proceedings against the promoters — needs the prospectus chapters read",
+   "more than half of revenue from one related party — needs the prospectus chapters read"
+  ]
+ },
+ "listing_score_quant_only": 69.1,
+ "longterm_score_quant_only": 59.7,
+ "status": "quant only — the AI block has not been built, so these are not final verdicts"
+}
