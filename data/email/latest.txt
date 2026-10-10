@@ -1,25 +1,17 @@
-IPO RADAR — generated 2026-10-09 18:57 UTC
-5 open or upcoming; 45 closed issue(s) left out — see the dashboard
+IPO RADAR — generated 2026-10-10 08:48 UTC
+3 open or upcoming; 47 closed issue(s) left out — see the dashboard
 ============================================================
 Full dashboard: https://dev171296.github.io/ipo-radar/
 
 AT A GLANCE
 ------------------------------------------------------------
 Company                           Closes      Applying          Holding
-Grace Cancer Foundation - ZCZP    2026-10-09  AVOID             not enough info
-SMC Global Securities Limited     2026-10-09  AVOID             not enough info
 HD Fire Protect Limited           2026-10-15  not enough info   not enough info
 Ravita Engineering Services Limi  2026-10-15  not enough info   not enough info
 Vaibhav Vyapaar Limited           2026-10-15  not enough info   not enough info
 
 THE DETAIL
 ------------------------------------------------------------
-
-Grace Cancer Foundation - ZCZP
-  CALL: applying -> AVOID   |   holding -> NOT ENOUGH INFORMATION
-  mainboard · 2026-10-07 to 2026-10-09 · Rs.10
-  Fundamentals: None (0% assessed)   Demand: 15.2 (40% assessed)
-  * under-subscribed: closed at 0.07× — the issue did not fill
 
 HD Fire Protect Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
@@ -32,12 +24,6 @@ Ravita Engineering Services Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
   sme · 2026-10-13 to 2026-10-15 · Rs.105 to Rs.112
   Fundamentals: None (0% assessed)   Demand: None (0% assessed)
-
-SMC Global Securities Limited
-  CALL: applying -> AVOID   |   holding -> NOT ENOUGH INFORMATION
-  mainboard · 2026-10-05 to 2026-10-09 · Rs.1000
-  Fundamentals: None (0% assessed)   Demand: 10.0 (26% assessed)
-  * under-subscribed: closed at 0.01× — the issue did not fill
 
 Vaibhav Vyapaar Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION

@@ -1,5 +1,5 @@
 {
- "built_at": "2026-10-09T18:57:16+00:00",
+ "built_at": "2026-10-10T08:48:13+00:00",
  "listed_ipos": 31,
  "base_rate_pct": 71,
  "average_listing_gain_pct": 14.6,
@@ -465,7 +465,7 @@
   {
    "ipo_id": "2026-10-grace-cancer-foundation-zczp",
    "name": "Grace Cancer Foundation - ZCZP",
-   "status": "issue still open",
+   "status": "not listed yet",
    "listed_on": null,
    "listing_gain_pct": null,
    "our_listing_call": null,
@@ -474,7 +474,7 @@
   {
    "ipo_id": "2026-10-smc-global-securities",
    "name": "SMC Global Securities Limited",
-   "status": "issue still open",
+   "status": "not listed yet",
    "listed_on": null,
    "listing_gain_pct": null,
    "our_listing_call": null,
