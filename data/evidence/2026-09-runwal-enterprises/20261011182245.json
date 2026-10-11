@@ -1,0 +1,411 @@
+{
+ "ipo_id": "2026-09-runwal-enterprises",
+ "built_at": "2026-10-11T18:22:45+00:00",
+ "name": "Runwal Enterprises Limited",
+ "symbol": "RUNWALENTR",
+ "type": "mainboard",
+ "status": "upcoming",
+ "offer": {
+  "price_low": {
+   "value": 290.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.290 to Rs.302"
+  },
+  "price_high": {
+   "value": 302.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.290 to Rs.302"
+  },
+  "issue_size_shares": {
+   "value": 12111294.0,
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "issue_size_rs_million": {
+   "value": 3657.61,
+   "source": "computed",
+   "confidence": "high",
+   "note": "shares × top of the price band"
+  },
+  "open_date": {
+   "value": "2026-09-25",
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "close_date": {
+   "value": "2026-09-29",
+   "source": "nse_calendar",
+   "confidence": "high"
+  }
+ },
+ "financials": {
+  "revenue": {
+   "value": [
+    17989.49,
+    10077.66,
+    24088.65
+   ],
+   "source": "abridged prospectus",
+   "confidence": "high",
+   "page": 6,
+   "raw": "Revenue from operations 17,989.49 10,077.66 24,088.65"
+  },
+  "ebitda": {
+   "value": [
+    3498.05,
+    1801.1,
+    2017.34
+   ],
+   "source": "abridged prospectus",
+   "confidence": "high",
+   "page": 6,
+   "raw": "EBITDA(2) 3,498.05 1,801.10 2,017.34"
+  },
+  "pat": {
+   "value": [
+    1857.63,
+    556.48,
+    937.0
+   ],
+   "source": "abridged prospectus",
+   "confidence": "high",
+   "page": 6,
+   "raw": "Profit after tax for the year 1,857.63 556.48 937.00"
+  }
+ },
+ "valuation": {
+  "eps_basic_latest": {
+   "value": 16.74,
+   "source": "full prospectus",
+   "confidence": "high",
+   "page": 117,
+   "raw": "fiscal 2026",
+   "note": "checked: our rows reproduce the document's own weighted average of 11.46"
+  },
+  "eps_weighted_average": {
+   "value": 11.46,
+   "source": "full prospectus",
+   "confidence": "high",
+   "page": 117
+  },
+  "pe_at_cap_price": {
+   "value": 18.04,
+   "source": "computed",
+   "confidence": "high",
+   "page": 117,
+   "note": "top of the NSE price band divided by the latest basic EPS — the document itself leaves this blank, because the band was not fixed when it was filed"
+  },
+  "benchmark_pe": {
+   "value": 33.42,
+   "source": "full prospectus",
+   "confidence": "high",
+   "page": 117,
+   "note": "median of the verified peer table"
+  },
+  "vs_benchmark": {
+   "value": 0.54,
+   "source": "computed",
+   "confidence": "high",
+   "page": 117,
+   "raw": "asking 18.04× earnings against 33.42× (median of the verified peer table) — a 46% discount"
+  },
+  "peers_verified": {
+   "value": 7,
+   "source": "full prospectus",
+   "confidence": "high",
+   "page": 117,
+   "note": "7 peer row(s) parsed"
+  },
+  "peer_companies": {
+   "value": [
+    "Oberoi Realty Limited (P/E 25.88)",
+    "Lodha Developers Limited (P/E 33.42)",
+    "Godrej Properties Limited (P/E 27.53)",
+    "Sunteck Realty Limited (P/E 21.09)",
+    "Keystone Realtors Limited (P/E 56.96)",
+    "Prestige Estates Projects Limited (P/E 51.7)",
+    "Kalpataru Limited (P/E 57.66)"
+   ],
+   "source": "full prospectus",
+   "confidence": "high",
+   "page": 117,
+   "note": "the companies the seller chose to compare itself to"
+  }
+ },
+ "cash": {
+  "operating_cash_flow": {
+   "value": [
+    -1807.13,
+    -1981.36,
+    -5494.82
+   ],
+   "source": "full prospectus (financials chapter)",
+   "confidence": "high",
+   "page": 288,
+   "raw": "Net cash flows from operating activities (1,807.13) (1,981.36) (5,494.82)",
+   "note": "newest year first"
+  },
+  "conversion_vs_ebitda": {
+   "value": -0.517,
+   "source": "computed",
+   "confidence": "high",
+   "note": "1.0 means the reported profit arrived as cash"
+  },
+  "conversion_vs_pat": {
+   "value": -0.973,
+   "source": "computed",
+   "confidence": "high",
+   "note": "1.0 means the reported profit arrived as cash"
+  },
+  "free_cash_flow": {
+   "value": [
+    -4123.34,
+    -2732.45,
+    -6778.14
+   ],
+   "source": "computed",
+   "confidence": "high",
+   "note": "operating cash flow after paying for equipment"
+  },
+  "negative_in_all_years": {
+   "value": true,
+   "source": "computed",
+   "confidence": "high"
+  },
+  "negative_in_latest_year": {
+   "value": true,
+   "source": "computed",
+   "confidence": "high"
+  }
+ },
+ "balance_sheet": {
+  "debt_to_equity": {
+   "value": [
+    3.29,
+    4.64,
+    3.62
+   ],
+   "source": "full prospectus (business, financials)",
+   "confidence": "high",
+   "page": 187,
+   "note": "borrowings ÷ what the owners have in it — printed in the document"
+  },
+  "current_ratio": {
+   "value": [
+    1.22,
+    1.29,
+    1.27
+   ],
+   "source": "full prospectus (business, financials)",
+   "confidence": "high",
+   "page": 187,
+   "note": "money due in within a year ÷ money due out — computed from current assets ÷ liabilities"
+  },
+  "total_debt": {
+   "value": [
+    252.4,
+    827.4,
+    1.75
+   ],
+   "source": "full prospectus (business, financials)",
+   "confidence": "high",
+   "page": 187,
+   "note": "borrowings, newest year first"
+  },
+  "net_worth": {
+   "value": [
+    8448.16,
+    4850.75,
+    4510.81
+   ],
+   "source": "full prospectus (business, financials)",
+   "confidence": "high",
+   "page": 187,
+   "note": "the owners' stake, newest year first"
+  }
+ },
+ "derived": {
+  "revenue_cagr_2y_pct": {
+   "value": -13.58,
+   "source": "computed",
+   "confidence": "high",
+   "note": "two years of compounding, newest over oldest"
+  },
+  "revenue_growth_latest_pct": {
+   "value": 78.51,
+   "source": "computed",
+   "confidence": "high"
+  },
+  "pat_cagr_2y_pct": {
+   "value": 40.8,
+   "source": "computed",
+   "confidence": "high"
+  },
+  "pat_margin_pct": {
+   "value": [
+    10.33,
+    5.52,
+    3.89
+   ],
+   "source": "computed",
+   "confidence": "high",
+   "note": "profit as a share of sales, newest first"
+  },
+  "ebitda_margin_pct": {
+   "value": [
+    19.44,
+    17.87,
+    8.37
+   ],
+   "source": "computed",
+   "confidence": "high"
+  }
+ },
+ "demand": {
+  "subscription_times": {
+   "value": 1.2773432797519406,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "note": "as at 2026-09-29T14:58:22+00:00"
+  },
+  "subscription_history": {
+   "value": [
+    {
+     "at": "2026-09-25T08:04:35+00:00",
+     "times": 0.18810591172173674
+    },
+    {
+     "at": "2026-09-25T10:26:25+00:00",
+     "times": 0.2274756933487041
+    },
+    {
+     "at": "2026-09-25T14:03:59+00:00",
+     "times": 0.24159152605823953
+    },
+    {
+     "at": "2026-09-28T08:52:18+00:00",
+     "times": 0.339156245402019
+    },
+    {
+     "at": "2026-09-28T11:54:08+00:00",
+     "times": 0.45769849200258866
+    },
+    {
+     "at": "2026-09-29T08:51:48+00:00",
+     "times": 0.7873147163300634
+    },
+    {
+     "at": "2026-09-29T11:29:53+00:00",
+     "times": 1.275850375690657
+    },
+    {
+     "at": "2026-09-29T14:58:22+00:00",
+     "times": 1.2773432797519406
+    }
+   ],
+   "source": "nse_calendar",
+   "confidence": "high",
+   "note": "every change we recorded"
+  }
+ },
+ "documents": {
+  "abridged": {
+   "pages": 10,
+   "url": "https://www.sebi.gov.in/sebi_data/commondocs/sep-2026/Runwal%20Enterprises%20Limited%20-%20Abridged%20Prospectus_p.pdf",
+   "fields": [
+    "cin",
+    "financials",
+    "lead_managers",
+    "objects",
+    "price_band",
+    "promoters",
+    "registrar",
+    "reservation",
+    "risk_factors"
+   ],
+   "read_at": "2026-09-24T07:44:29+00:00"
+  },
+  "full": {
+   "pages": 611,
+   "url": "https://www.sebi.gov.in/sebi_data/attachdocs/sep-2026/1790230747174.pdf",
+   "chapters": {
+    "capital_structure": [
+     91,
+     103
+    ],
+    "objects": [
+     104,
+     116
+    ],
+    "basis_for_price": [
+     117,
+     186
+    ],
+    "business": [
+     187,
+     281
+    ],
+    "promoters": [
+     282,
+     287
+    ],
+    "financials": [
+     288,
+     483
+    ],
+    "litigation": [
+     484,
+     611
+    ]
+   },
+   "read_at": "2026-09-24T07:45:33+00:00"
+  }
+ },
+ "missing": [
+  {
+   "what": "fresh issue vs offer for sale split",
+   "why": "could not be read from the offer details table"
+  },
+  {
+   "what": "ROE",
+   "why": "this document does not print it"
+  },
+  {
+   "what": "ROCE",
+   "why": "this document does not print it"
+  },
+  {
+   "what": "valuation comparison",
+   "why": "the highest and lowest industry P/E are the same figure — the company compares itself to a single peer, so this is one opinion, not a market"
+  },
+  {
+   "what": "grey market premium",
+   "why": "no free source built yet"
+  },
+  {
+   "what": "anchor investor allotment",
+   "why": "not collected yet"
+  },
+  {
+   "what": "broker conviction",
+   "why": "not collected yet"
+  },
+  {
+   "what": "media coverage",
+   "why": "not collected yet"
+  },
+  {
+   "what": "retail attention",
+   "why": "not collected yet"
+  }
+ ],
+ "conflicts": [],
+ "observations": [
+  {
+   "from": "balance sheet",
+   "says": "our own sum gives a debt-to-equity of 0.03 where the document prints 3.29 — using the document's figure"
+  }
+ ]
+}
