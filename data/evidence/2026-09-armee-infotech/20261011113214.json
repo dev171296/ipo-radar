@@ -1,0 +1,323 @@
+{
+ "ipo_id": "2026-09-armee-infotech",
+ "built_at": "2026-10-11T11:32:14+00:00",
+ "name": "ArMee Infotech Limited",
+ "symbol": "ARMEE",
+ "type": "mainboard",
+ "status": "upcoming",
+ "offer": {
+  "price_low": {
+   "value": 350.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.350 to Rs.375"
+  },
+  "price_high": {
+   "value": 375.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.350 to Rs.375"
+  },
+  "issue_size_shares": {
+   "value": 7430356.0,
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "issue_size_rs_million": {
+   "value": 2786.38,
+   "source": "computed",
+   "confidence": "high",
+   "note": "shares × top of the price band"
+  },
+  "open_date": {
+   "value": "2026-09-23",
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "close_date": {
+   "value": "2026-09-25",
+   "source": "nse_calendar",
+   "confidence": "high"
+  }
+ },
+ "financials": {
+  "revenue": {
+   "value": [
+    139662.61,
+    131331.37,
+    102057.47
+   ],
+   "source": "abridged prospectus",
+   "confidence": "high",
+   "page": 6,
+   "raw": "Revenue from Operations(1) 1,39,662.61 1,31,331.37 1,02,057.47"
+  },
+  "ebitda": {
+   "value": [
+    7563.77,
+    5864.26,
+    7157.58
+   ],
+   "source": "abridged prospectus",
+   "confidence": "high",
+   "page": 6,
+   "raw": "EBITDA (5) 7,563.77 5,864.26 7,157.58"
+  }
+ },
+ "valuation": {
+  "eps_basic_latest": {
+   "value": 19.16,
+   "source": "full prospectus",
+   "confidence": "high",
+   "page": 118,
+   "raw": "fiscal 2026",
+   "note": "checked: our rows reproduce the document's own weighted average of 18.95"
+  },
+  "eps_weighted_average": {
+   "value": 18.95,
+   "source": "full prospectus",
+   "confidence": "high",
+   "page": 118
+  },
+  "pe_at_cap_price": {
+   "value": 19.57,
+   "source": "computed",
+   "confidence": "high",
+   "page": 118,
+   "note": "top of the NSE price band divided by the latest basic EPS — the document itself leaves this blank, because the band was not fixed when it was filed"
+  },
+  "benchmark_pe": {
+   "value": 70.63,
+   "source": "full prospectus",
+   "confidence": "low",
+   "page": 118,
+   "note": "the average stated in the document"
+  },
+  "vs_benchmark": {
+   "value": 0.277,
+   "source": "computed",
+   "confidence": "high",
+   "page": 118,
+   "raw": "asking 19.57× earnings against 70.63× (the average stated in the document) — a 72% discount"
+  },
+  "peers_verified": {
+   "value": 0,
+   "source": "full prospectus",
+   "confidence": "high",
+   "page": 118,
+   "note": "0 peer row(s) parsed"
+  }
+ },
+ "cash": {},
+ "balance_sheet": {
+  "debt_to_equity": {
+   "value": [
+    0.96,
+    0.35,
+    0.29
+   ],
+   "source": "full prospectus (business, litigation, objects, promoters)",
+   "confidence": "high",
+   "page": 288,
+   "note": "borrowings ÷ what the owners have in it — printed in the document"
+  },
+  "current_ratio": {
+   "value": [
+    0.14,
+    0.1,
+    0.12
+   ],
+   "source": "full prospectus (business, litigation, objects, promoters)",
+   "confidence": "high",
+   "page": 288,
+   "note": "money due in within a year ÷ money due out — computed from current assets ÷ liabilities"
+  },
+  "total_debt": {
+   "value": [
+    17436.07,
+    4810.12,
+    2725.65
+   ],
+   "source": "full prospectus (business, litigation, objects, promoters)",
+   "confidence": "high",
+   "page": 288,
+   "note": "borrowings, newest year first"
+  },
+  "net_worth": {
+   "value": [
+    18218.2,
+    13666.73,
+    9517.62
+   ],
+   "source": "full prospectus (business, litigation, objects, promoters)",
+   "confidence": "high",
+   "page": 288,
+   "note": "the owners' stake, newest year first"
+  }
+ },
+ "derived": {
+  "revenue_cagr_2y_pct": {
+   "value": 16.98,
+   "source": "computed",
+   "confidence": "high",
+   "note": "two years of compounding, newest over oldest"
+  },
+  "revenue_growth_latest_pct": {
+   "value": 6.34,
+   "source": "computed",
+   "confidence": "high"
+  },
+  "ebitda_margin_pct": {
+   "value": [
+    5.42,
+    4.47,
+    7.01
+   ],
+   "source": "computed",
+   "confidence": "high"
+  }
+ },
+ "demand": {
+  "subscription_times": {
+   "value": 1.3801922815003749,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "note": "as at 2026-09-25T14:03:59+00:00"
+  },
+  "subscription_history": {
+   "value": [
+    {
+     "at": "2026-09-23T07:53:57+00:00",
+     "times": 0.2757660601995382
+    },
+    {
+     "at": "2026-09-23T10:13:14+00:00",
+     "times": 0.35274756687297354
+    },
+    {
+     "at": "2026-09-23T13:47:02+00:00",
+     "times": 0.3879652603455339
+    },
+    {
+     "at": "2026-09-24T07:44:17+00:00",
+     "times": 0.623383321068331
+    },
+    {
+     "at": "2026-09-24T10:22:45+00:00",
+     "times": 0.7251711761859055
+    },
+    {
+     "at": "2026-09-24T13:42:31+00:00",
+     "times": 0.7831011057882018
+    },
+    {
+     "at": "2026-09-25T08:04:35+00:00",
+     "times": 1.126793924813293
+    },
+    {
+     "at": "2026-09-25T10:26:25+00:00",
+     "times": 1.350438660004985
+    },
+    {
+     "at": "2026-09-25T14:03:59+00:00",
+     "times": 1.3801922815003749
+    }
+   ],
+   "source": "nse_calendar",
+   "confidence": "high",
+   "note": "every change we recorded"
+  }
+ },
+ "documents": {
+  "abridged": {
+   "pages": 9,
+   "url": "https://www.sebi.gov.in/sebi_data/commondocs/sep-2026/ArMee%20Infotech%20Limited%20-%20Abridged%20Prospectus_p.pdf",
+   "fields": [
+    "cin",
+    "financials",
+    "lead_managers",
+    "objects",
+    "price_band",
+    "promoters",
+    "registrar",
+    "risk_factors"
+   ],
+   "read_at": "2026-09-23T07:54:51+00:00"
+  },
+  "full": {
+   "pages": 464,
+   "url": "https://www.sebi.gov.in/sebi_data/attachdocs/sep-2026/1790144363465.pdf",
+   "chapters": {
+    "capital_structure": [
+     85,
+     99
+    ],
+    "objects": [
+     100,
+     117
+    ],
+    "basis_for_price": [
+     118,
+     213
+    ],
+    "business": [
+     214,
+     287
+    ],
+    "promoters": [
+     288,
+     380
+    ],
+    "related_party": [
+     381,
+     386
+    ],
+    "litigation": [
+     387,
+     464
+    ]
+   },
+   "read_at": "2026-09-23T07:56:39+00:00"
+  }
+ },
+ "missing": [
+  {
+   "what": "fresh issue vs offer for sale split",
+   "why": "could not be read from the offer details table"
+  },
+  {
+   "what": "ROE",
+   "why": "this document does not print it"
+  },
+  {
+   "what": "ROCE",
+   "why": "this document does not print it"
+  },
+  {
+   "what": "cash flow",
+   "why": "no cash flow statement found in the chapters we hold"
+  },
+  {
+   "what": "grey market premium",
+   "why": "no free source built yet"
+  },
+  {
+   "what": "anchor investor allotment",
+   "why": "not collected yet"
+  },
+  {
+   "what": "broker conviction",
+   "why": "not collected yet"
+  },
+  {
+   "what": "media coverage",
+   "why": "not collected yet"
+  },
+  {
+   "what": "retail attention",
+   "why": "not collected yet"
+  }
+ ],
+ "conflicts": [],
+ "observations": []
+}
