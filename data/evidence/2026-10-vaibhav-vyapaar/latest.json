@@ -1,6 +1,6 @@
 {
  "ipo_id": "2026-10-vaibhav-vyapaar",
- "built_at": "2026-10-12T09:35:04+00:00",
+ "built_at": "2026-10-12T13:25:05+00:00",
  "name": "Vaibhav Vyapaar Limited",
  "symbol": "LOANFRONT",
  "type": "sme",
@@ -19,12 +19,12 @@
    "raw": "Rs.51 to Rs.54"
   },
   "issue_size_shares": {
-   "value": 7796000.0,
+   "value": 5596000.0,
    "source": "nse_calendar",
    "confidence": "high"
   },
   "issue_size_rs_million": {
-   "value": 420.98,
+   "value": 302.18,
    "source": "computed",
    "confidence": "high",
    "note": "shares × top of the price band"
