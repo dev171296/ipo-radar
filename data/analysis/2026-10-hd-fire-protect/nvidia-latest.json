@@ -1,9 +1,9 @@
 {
  "ok": true,
- "model": "google/gemma-4-31b-it (fallback: kimi-k3 timed out)",
- "answered_at": "2026-10-08T12:16:34+00:00",
- "evidence_fingerprint": "2a5a1e0edb08e408",
- "prompt_chars": 6911,
+ "model": "moonshotai/kimi-k3",
+ "answered_at": "2026-10-12T18:08:20+00:00",
+ "evidence_fingerprint": "492dc7751af49fa9",
+ "prompt_chars": 6912,
  "passages_supplied": {
   "litigation": 8,
   "governance": 8,
@@ -13,36 +13,49 @@
  "answer": {
   "listing_view": {
    "score": 50.0,
-   "reasoning": "There is no valuation basis, peer comparison, or subscription data provided to determine if the price band is attractive or overpriced. The mood cannot be gauged without grey market or anchor data."
+   "reasoning": "There is no subscription data, anchor book, grey-market signal, or basis-for-price chapter in what I was given, so there is genuinely nothing to form a listing-day view on. Indian mainboard IPOs are often priced for the seller, and with no valuation anchor I default to no view."
   },
   "longterm_view": {
-   "score": 60.0,
-   "reasoning": "The company shows positive and growing free cash flow and a rising order book [business, page 212]. However, the lack of ROE, ROCE, and debt figures makes it impossible to assess capital efficiency or solvency."
+   "score": 62.0,
+   "reasoning": "The underlying business looks real: revenue grew from ₹3,729 million to ₹4,892 million across FY2024–FY2026, the order book roughly doubled to ₹1,586 million, free cash flow is positive and rising, and the top-10 customers are only ~24–28% of revenue, which limits concentration risk [business, page 212][business, page 216]. The score is capped because I have no ROE, ROCE, margins, or balance-sheet debt figures, so I cannot tell whether this is a high-quality business or a capital-hungry low-return one at a seller-friendly price."
   },
   "governance": {
-   "score": 50.0,
-   "reasoning": "The prospectus claims no conflict of interest with suppliers [promoters, page 279], but the provided extracts do not detail the actual nature or scale of related party transactions."
+   "score": 60.0,
+   "reasoning": "No material SEBI or regulatory inspection findings are disclosed [litigation, page 366], and related-party dealings appear confined to disclosed director remuneration and shareholding [promoters, page 278]. This is only a modest positive because the prospectus is the seller's own document and I have no detail on the scale of related-party transactions."
   },
   "key_risks": [
    {
-    "risk": "Premises Dependency",
-    "why_it_matters": "Inability to operate from current premises, including the corporate office, could adversely affect operations.",
+    "risk": "Valuation unknowable",
+    "why_it_matters": "No basis-for-price chapter or ROE/ROCE was extractable, so the ₹258–271 band cannot be tested against any return metric; overpaying is the single biggest IPO risk.",
+    "citation": "[business, page 212]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Leased premises including corporate office",
+    "why_it_matters": "Operations including the corporate office run from third-party premises, so loss of those leases could disrupt the business that justifies the valuation.",
     "citation": "[business, page 245]",
     "citation_verified": true
    },
    {
-    "risk": "Intellectual Property",
-    "why_it_matters": "Failure to protect rights may adversely affect the business.",
-    "citation": "[business, page 244]",
+    "risk": "Order book conversion",
+    "why_it_matters": "The growth story rests partly on an order book that nearly doubled to ₹1,586 million; if margins or execution lag, the FY2026 revenue plateau (₹4,890m vs ₹4,328m) looks weaker than the headline.",
+    "citation": "[business, page 212]",
     "citation_verified": true
    }
   ],
-  "answers": [],
+  "answers": [
+   {
+    "question": "Assess this Indian IPO for listing and long-term",
+    "answer": "Business fundamentals are decent (growing revenue, doubling order book, positive and rising free cash flow, diversified customer base per [business, page 212][business, page 216]), but with no valuation chapter, no returns ratios, and no subscription/anchor data, I cannot say whether the ₹258–271 price is fair or how listing day will go.",
+    "citation": "[business, page 212]",
+    "citation_verified": true
+   }
+  ],
   "confidence": "low",
-  "what_would_change_my_mind": "Access to the 'Basis for Price' chapter to evaluate valuation and the full Balance Sheet to assess debt levels and return ratios.",
+  "what_would_change_my_mind": "A basis-for-price section with ROE/ROCE and peer multiples, plus the fresh issue vs offer-for-sale split — a large OFS would push my long-term score down; demonstrably high returns on capital and a primarily fresh issue would push it up.",
   "citation_check": {
-   "claims_checked": 2,
-   "citations_verified": 2,
+   "claims_checked": 4,
+   "citations_verified": 4,
    "citations_not_matching_what_we_sent": 0
   }
  }

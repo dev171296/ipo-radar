@@ -1,0 +1,74 @@
+{
+ "ok": true,
+ "model": "qwen/qwen3.8-27b",
+ "answered_at": "2026-10-12T18:07:42+00:00",
+ "evidence_fingerprint": "492dc7751af49fa9",
+ "prompt_chars": 6912,
+ "passages_supplied": {
+  "litigation": 8,
+  "governance": 8,
+  "business_quality": 8,
+  "risks": 2
+ },
+ "answer": {
+  "listing_view": {
+   "score": 45.0,
+   "reasoning": "The evidence for listing demand is effectively zero because the issue has not opened, subscription data is absent, and there is no grey market premium or anchor investor information. Without a basis-for-price chapter or valuation comparison, it is impossible to assess if the price band is attractive relative to peers, making any prediction on first-day trading purely speculative."
+  },
+  "longterm_view": {
+   "score": 62.0,
+   "reasoning": "The business shows strong operational momentum with a significant order book increase to ₹1,586.01 million and consistent positive free cash flow generation. However, the absence of three-year financials, ROE/ROCE metrics, and balance sheet details prevents a full assessment of capital efficiency and financial health, limiting the confidence in the long-term sustainability of this growth."
+  },
+  "governance": {
+   "score": 55.0,
+   "reasoning": "The prospectus states there are no material regulatory findings and no conflicts of interest with suppliers, which is a positive baseline. However, the lack of detailed related-party transaction analysis beyond standard disclosures and the absence of specific promoter shareholding breakdowns in the provided extracts make it difficult to assess the depth of governance controls."
+  },
+  "key_risks": [
+   {
+    "risk": "Operational Premises Dependency",
+    "why_it_matters": "The company relies on third-party facilities for its corporate office and operations, creating a vulnerability if these arrangements are not renewed or if costs increase.",
+    "citation": "[business, page 245]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Customer Concentration",
+    "why_it_matters": "While described as 'healthy,' the top 10 customers account for over 23% of revenue, meaning the loss of a major client could materially impact cash flows.",
+    "citation": "[business, page 216]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Data Opacity",
+    "why_it_matters": "The inability to verify three-year financials, debt levels, or valuation metrics from the provided extracts prevents a robust risk assessment of the company's financial leverage and growth trajectory.",
+    "citation": "not answerable from what I was given",
+    "citation_verified": false
+   }
+  ],
+  "answers": [
+   {
+    "question": "Is the IPO priced fairly?",
+    "answer": "I cannot tell from this, as no basis-for-price chapter or valuation comparison was found in the provided extracts.",
+    "citation": "not answerable from what I was given",
+    "citation_verified": false
+   },
+   {
+    "question": "What is the split between fresh issue and offer for sale?",
+    "answer": "I cannot tell from this, as the split could not be read from the offer details table provided.",
+    "citation": "not answerable from what I was given",
+    "citation_verified": false
+   },
+   {
+    "question": "How is the company's customer concentration?",
+    "answer": "The top 10 customers account for 27.57% and 23.69% of revenue in the most recent periods, which the company characterizes as healthy.",
+    "citation": "[business, page 216]",
+    "citation_verified": true
+   }
+  ],
+  "confidence": "low",
+  "what_would_change_my_mind": "Providing the three-year financial statements, the basis-for-price chapter, and the specific split between fresh issue and offer for sale would allow for a meaningful assessment of valuation and financial health.",
+  "citation_check": {
+   "claims_checked": 6,
+   "citations_verified": 3,
+   "citations_not_matching_what_we_sent": 0
+  }
+ }
+}
