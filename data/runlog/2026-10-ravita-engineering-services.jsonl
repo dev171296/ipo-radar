@@ -18,3 +18,4 @@
 {"at": "2026-10-12T13:24:53+00:00", "event": "prospectus_not_found", "ok": false, "source": "sebi"}
 {"at": "2026-10-12T18:07:23+00:00", "event": "discovered", "ok": true, "detail": "Ravita Engineering Services Limited", "source": "nse"}
 {"at": "2026-10-12T18:07:25+00:00", "event": "prospectus_not_found", "ok": false, "source": "sebi"}
+{"at": "2026-10-12T21:49:53+00:00", "event": "prospectus_not_found", "ok": false, "source": "sebi"}

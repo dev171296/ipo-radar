@@ -1,0 +1,74 @@
+{
+ "ok": true,
+ "model": "qwen/qwen3.8-27b",
+ "answered_at": "2026-10-12T21:50:10+00:00",
+ "evidence_fingerprint": "4aa327b966eae612",
+ "prompt_chars": 7074,
+ "passages_supplied": {
+  "litigation": 8,
+  "governance": 8,
+  "business_quality": 8,
+  "risks": 2
+ },
+ "answer": {
+  "listing_view": {
+   "score": 15.0,
+   "reasoning": "The recorded subscription of 0.0x at the close of the first day indicates a complete lack of initial demand, which is a severe negative signal for listing day performance. Without evidence of anchor investor participation or a grey market premium, the prospectus offers no counter-narrative to this weak opening."
+  },
+  "longterm_view": {
+   "score": 65.0,
+   "reasoning": "The business demonstrates strong operational momentum with a growing order book and positive free cash flow, suggesting a healthy underlying enterprise. However, the absence of valuation metrics, ROE/ROCE data, and balance sheet details prevents a definitive assessment of whether the current price reflects this quality."
+  },
+  "governance": {
+   "score": 50.0,
+   "reasoning": "The prospectus contains standard regulatory language regarding related party transactions and promoter interests, but provides no specific details on board independence or unique governance structures to differentiate it from the average issuer."
+  },
+  "key_risks": [
+   {
+    "risk": "Zero initial subscription",
+    "why_it_matters": "A 0.0x subscription at the end of the first day suggests the issue is unattractive to the market at the offered price band, risking a listing below the issue price.",
+    "citation": "[DEMAND, 2026-10-12T21:49:52+00:00]",
+    "citation_verified": false
+   },
+   {
+    "risk": "Lack of valuation context",
+    "why_it_matters": "The absence of a basis-for-price chapter and key profitability ratios makes it impossible to verify if the IPO is priced fairly relative to the company's cash generation.",
+    "citation": "[WHAT WE COULD NOT ESTABLISH, n/a]",
+    "citation_verified": false
+   },
+   {
+    "risk": "Operational dependency on leased premises",
+    "why_it_matters": "Reliance on third-party facilities for corporate and operational functions creates a continuity risk if lease agreements are not renewed or terms become unfavorable.",
+    "citation": "[business, page 245]",
+    "citation_verified": true
+   }
+  ],
+  "answers": [
+   {
+    "question": "What is the current subscription status?",
+    "answer": "The subscription stands at 0.0 times as of the recorded timestamp on October 12, 2026.",
+    "citation": "[DEMAND, 2026-10-12T21:49:52+00:00]",
+    "citation_verified": false
+   },
+   {
+    "question": "Is the company profitable?",
+    "answer": "The company is generating positive free cash flow, but specific net profit or ROE figures are not provided in the available extracts.",
+    "citation": "[CASH, n/a]",
+    "citation_verified": false
+   },
+   {
+    "question": "What is the customer concentration?",
+    "answer": "The top 10 customers account for approximately 23.69% to 27.57% of revenue, which is considered a healthy level of diversification.",
+    "citation": "[business, page 216]",
+    "citation_verified": true
+   }
+  ],
+  "confidence": "low",
+  "what_would_change_my_mind": "Evidence of a significant grey market premium or a sudden surge in subscription times in the final days of the IPO would contradict the current negative listing view. Additionally, disclosure of a high ROCE or a premium valuation multiple in a full prospectus would strengthen the long-term view.",
+  "citation_check": {
+   "claims_checked": 6,
+   "citations_verified": 2,
+   "citations_not_matching_what_we_sent": 4
+  }
+ }
+}

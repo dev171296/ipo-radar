@@ -1,8 +1,8 @@
 {
  "ipo_id": "2026-10-hd-fire-protect",
  "name": "HD Fire Protect Limited",
- "scored_at": "2026-10-12T18:07:39+00:00",
- "built_from_bundle": "2026-10-12T18:07:39+00:00",
+ "scored_at": "2026-10-12T21:50:08+00:00",
+ "built_from_bundle": "2026-10-12T21:50:07+00:00",
  "fundamentals": {
   "score": null,
   "withheld": "only 10% of this block could be assessed — below the 25% floor, so no score is given",
@@ -66,7 +66,7 @@
    {
     "component": "subscription_level",
     "weight": 26,
-    "why": "no subscription figure yet"
+    "why": "the issue is still open (closes 2026-10-15) and stands at 0.0× — most demand arrives on the last day, so this is not scored yet"
    },
    {
     "component": "subscription_velocity",

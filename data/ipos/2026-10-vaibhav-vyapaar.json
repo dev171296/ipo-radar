@@ -8,25 +8,25 @@
   "name": "Vaibhav Vyapaar Limited",
   "symbol": "LOANFRONT",
   "type": "sme",
-  "status": "upcoming",
+  "status": "open",
   "dates": {
     "open": "2026-10-13",
     "close": "2026-10-15",
     "open_as_given": "13-Oct-2026",
     "close_as_given": "15-Oct-2026"
   },
-  "price_band": "Rs.51 to Rs.54",
-  "issue_size_shares": 5596000.0,
+  "price_band": null,
+  "issue_size_shares": null,
   "subscription": {
     "times": null,
-    "shares_offered": null,
+    "shares_offered": 5596000.0,
     "shares_bid": null
   },
-  "also_on_bse": false,
+  "also_on_bse": true,
   "sources": {
     "calendar": "nse",
-    "fetched_at": "2026-10-12T18:07:23+00:00"
+    "fetched_at": "2026-10-12T21:49:52+00:00"
   },
   "missing": [],
-  "rebuilt_at": "2026-10-12T18:07:23+00:00"
+  "rebuilt_at": "2026-10-12T21:49:52+00:00"
 }

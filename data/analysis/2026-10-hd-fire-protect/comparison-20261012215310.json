@@ -1,0 +1,33 @@
+{
+ "scores": {
+  "listing_view": {
+   "groq": 15.0
+  },
+  "longterm_view": {
+   "groq": 65.0
+  },
+  "governance": {
+   "groq": 50.0
+  }
+ },
+ "reliability": {
+  "groq": {
+   "share": 0.33,
+   "trusted": false,
+   "why": "2 of 6 citations matched the pages we sent, and 4 pointed at pages we never sent"
+  },
+  "nvidia": {
+   "share": null,
+   "trusted": true,
+   "why": "too few claims to judge"
+  }
+ },
+ "disagreements": [],
+ "ai_block": {},
+ "excluded": [
+  {
+   "model": "groq",
+   "why": "2 of 6 citations matched the pages we sent, and 4 pointed at pages we never sent"
+  }
+ ]
+}

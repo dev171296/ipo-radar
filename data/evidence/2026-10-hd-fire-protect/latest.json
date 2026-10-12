@@ -1,10 +1,10 @@
 {
  "ipo_id": "2026-10-hd-fire-protect",
- "built_at": "2026-10-12T18:07:39+00:00",
+ "built_at": "2026-10-12T21:50:07+00:00",
  "name": "HD Fire Protect Limited",
  "symbol": "HDFIRE",
  "type": "mainboard",
- "status": "upcoming",
+ "status": "open",
  "offer": {
   "price_low": {
    "value": 258.0,
@@ -78,7 +78,25 @@
  },
  "balance_sheet": {},
  "derived": {},
- "demand": {},
+ "demand": {
+  "subscription_times": {
+   "value": 0.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "note": "as at 2026-10-12T21:49:52+00:00"
+  },
+  "subscription_history": {
+   "value": [
+    {
+     "at": "2026-10-12T21:49:52+00:00",
+     "times": 0.0
+    }
+   ],
+   "source": "nse_calendar",
+   "confidence": "high",
+   "note": "every change we recorded"
+  }
+ },
  "documents": {
   "abridged": {
    "pages": 11,
@@ -149,10 +167,6 @@
   {
    "what": "balance sheet",
    "why": "found the chapter but could not read a debt or liquidity figure from it"
-  },
-  {
-   "what": "subscription",
-   "why": "the issue has not opened yet"
   },
   {
    "what": "grey market premium",
