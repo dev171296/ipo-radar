@@ -1,5 +1,5 @@
 {
- "built_at": "2026-10-13T12:54:48+00:00",
+ "built_at": "2026-10-13T16:16:31+00:00",
  "listed_ipos": 31,
  "base_rate_pct": 71,
  "average_listing_gain_pct": 14.6,
@@ -537,6 +537,15 @@
   {
    "ipo_id": "2026-10-tonbo-imaging",
    "name": "Tonbo Imaging India Limited",
+   "status": "issue still open",
+   "listed_on": null,
+   "listing_gain_pct": null,
+   "our_listing_call": null,
+   "right": null
+  },
+  {
+   "ipo_id": "2026-10-zetwerk-manufacturing-businesses",
+   "name": "Zetwerk Manufacturing Businesses Limited",
    "status": "issue still open",
    "listed_on": null,
    "listing_gain_pct": null,

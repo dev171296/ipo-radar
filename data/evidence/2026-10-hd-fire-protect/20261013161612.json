@@ -1,0 +1,202 @@
+{
+ "ipo_id": "2026-10-hd-fire-protect",
+ "built_at": "2026-10-13T16:16:12+00:00",
+ "name": "HD Fire Protect Limited",
+ "symbol": "HDFIRE",
+ "type": "mainboard",
+ "status": "open",
+ "offer": {
+  "price_low": {
+   "value": 258.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.258 to Rs.271"
+  },
+  "price_high": {
+   "value": 271.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.258 to Rs.271"
+  },
+  "issue_size_shares": {
+   "value": 18420492.0,
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "issue_size_rs_million": {
+   "value": 4991.95,
+   "source": "computed",
+   "confidence": "high",
+   "note": "shares × top of the price band"
+  },
+  "open_date": {
+   "value": "2026-10-13",
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "close_date": {
+   "value": "2026-10-15",
+   "source": "nse_calendar",
+   "confidence": "high"
+  }
+ },
+ "financials": {},
+ "valuation": {},
+ "cash": {
+  "operating_cash_flow": {
+   "value": [
+    471.95,
+    924.92,
+    983.0
+   ],
+   "source": "full prospectus (promoters chapter)",
+   "confidence": "high",
+   "page": 280,
+   "raw": "Net Cash Generated from Operating Activities (A) 471.95 924.92 983",
+   "note": "newest year first"
+  },
+  "free_cash_flow": {
+   "value": [
+    471.69,
+    883.43,
+    1142.9
+   ],
+   "source": "computed",
+   "confidence": "high",
+   "note": "operating cash flow after paying for equipment"
+  },
+  "negative_in_all_years": {
+   "value": false,
+   "source": "computed",
+   "confidence": "high"
+  },
+  "negative_in_latest_year": {
+   "value": false,
+   "source": "computed",
+   "confidence": "high"
+  }
+ },
+ "balance_sheet": {},
+ "derived": {},
+ "demand": {
+  "subscription_times": {
+   "value": 3.310666729205713,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "note": "as at 2026-10-13T12:53:19+00:00"
+  },
+  "subscription_history": {
+   "value": [
+    {
+     "at": "2026-10-12T21:49:52+00:00",
+     "times": 0.0
+    },
+    {
+     "at": "2026-10-13T09:38:48+00:00",
+     "times": 2.6934052575794394
+    },
+    {
+     "at": "2026-10-13T12:53:19+00:00",
+     "times": 3.310666729205713
+    }
+   ],
+   "source": "nse_calendar",
+   "confidence": "high",
+   "note": "every change we recorded"
+  }
+ },
+ "documents": {
+  "abridged": {
+   "pages": 11,
+   "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/HD%20Fire%20Protect%20Limited-Abridged%20Prospectus_p.pdf",
+   "fields": [
+    "cin",
+    "financials",
+    "lead_managers",
+    "objects",
+    "offer_details",
+    "price_band",
+    "promoters",
+    "registrar",
+    "reservation",
+    "risk_factors"
+   ],
+   "read_at": "2026-10-08T12:11:07+00:00"
+  },
+  "full": {
+   "pages": 460,
+   "url": "https://www.sebi.gov.in/sebi_data/attachdocs/oct-2026/1791346877090.pdf",
+   "chapters": {
+    "capital_structure": [
+     99,
+     122
+    ],
+    "objects": [
+     123,
+     213
+    ],
+    "business": [
+     214,
+     279
+    ],
+    "promoters": [
+     280,
+     363
+    ],
+    "litigation": [
+     364,
+     460
+    ]
+   },
+   "read_at": "2026-10-08T12:12:18+00:00"
+  }
+ },
+ "missing": [
+  {
+   "what": "fresh issue vs offer for sale split",
+   "why": "could not be read from the offer details table"
+  },
+  {
+   "what": "three-year financials",
+   "why": "abridged prospectus read, but no three-figure rows matched"
+  },
+  {
+   "what": "ROE",
+   "why": "this document does not print it"
+  },
+  {
+   "what": "ROCE",
+   "why": "this document does not print it"
+  },
+  {
+   "what": "valuation comparison",
+   "why": "no basis-for-price chapter found in the prospectus"
+  },
+  {
+   "what": "balance sheet",
+   "why": "found the chapter but could not read a debt or liquidity figure from it"
+  },
+  {
+   "what": "grey market premium",
+   "why": "no free source built yet"
+  },
+  {
+   "what": "anchor investor allotment",
+   "why": "not collected yet"
+  },
+  {
+   "what": "broker conviction",
+   "why": "not collected yet"
+  },
+  {
+   "what": "media coverage",
+   "why": "not collected yet"
+  },
+  {
+   "what": "retail attention",
+   "why": "not collected yet"
+  }
+ ],
+ "conflicts": [],
+ "observations": []
+}

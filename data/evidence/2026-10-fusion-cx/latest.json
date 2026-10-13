@@ -1,6 +1,6 @@
 {
  "ipo_id": "2026-10-fusion-cx",
- "built_at": "2026-10-13T12:53:41+00:00",
+ "built_at": "2026-10-13T16:16:12+00:00",
  "name": "Fusion CX Limited",
  "symbol": "FUSIONCX",
  "type": "mainboard",
@@ -19,12 +19,12 @@
    "raw": "Rs.275 to Rs.289"
   },
   "issue_size_shares": {
-   "value": 25527272.0,
+   "value": 14040000.0,
    "source": "nse_calendar",
    "confidence": "high"
   },
   "issue_size_rs_million": {
-   "value": 7377.38,
+   "value": 4057.56,
    "source": "computed",
    "confidence": "high",
    "note": "shares × top of the price band"
