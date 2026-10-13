@@ -1,5 +1,5 @@
-IPO RADAR — generated 2026-10-12 21:53 UTC
-4 open or upcoming; 47 closed issue(s) left out — see the dashboard
+IPO RADAR — generated 2026-10-13 09:43 UTC
+6 open or upcoming; 47 closed issue(s) left out — see the dashboard
 ============================================================
 Full dashboard: https://dev171296.github.io/ipo-radar/
 
@@ -10,9 +10,16 @@ HD Fire Protect Limited           2026-10-15  not enough info   not enough info
 Vaibhav Vyapaar Limited           2026-10-15  not enough info   not enough info
 Fusion CX Limited                 2026-10-16  not enough info   not enough info
 Ravita Engineering Services Limi  2026-10-16  not enough info   not enough info
+Bonfiglioli Transmissions Limite  2026-10-19  not enough info   not enough info
+Tonbo Imaging India Limited       2026-10-19  not enough info   not enough info
 
 THE DETAIL
 ------------------------------------------------------------
+
+Bonfiglioli Transmissions Limited
+  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
+  mainboard · 2026-10-15 to 2026-10-19 · Rs.558 to Rs.586
+  Fundamentals: None (0% assessed)   Demand: None (0% assessed)
 
 Fusion CX Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
@@ -23,13 +30,18 @@ HD Fire Protect Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
   mainboard · 2026-10-13 to 2026-10-15 · Rs.258 to Rs.271
   Fundamentals: None (10% assessed)   Demand: None (0% assessed)
-  groq: listing 15, long-term 65, confidence low
-  nvidia: listing 50, long-term 62, confidence low
+  groq: listing 68, long-term 57, confidence medium
+  nvidia: listing 74, long-term 67, confidence low
 
 Ravita Engineering Services Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
   sme · 2026-10-14 to 2026-10-16 · Rs.105 to Rs.112
   Fundamentals: None (0% assessed)   Demand: None (0% assessed)
+
+Tonbo Imaging India Limited
+  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
+  mainboard · 2026-10-15 to 2026-10-19 · Rs.665 to Rs.700
+  Fundamentals: None (10% assessed)   Demand: None (0% assessed)
 
 Vaibhav Vyapaar Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION

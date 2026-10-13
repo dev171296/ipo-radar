@@ -1,9 +1,9 @@
 {
  "ok": true,
- "model": "qwen/qwen3.8-27b",
- "answered_at": "2026-10-12T21:50:10+00:00",
- "evidence_fingerprint": "4aa327b966eae612",
- "prompt_chars": 7074,
+ "model": "openai/gpt-oss-120b",
+ "answered_at": "2026-10-13T09:39:51+00:00",
+ "evidence_fingerprint": "ab66273f7bcc2ae0",
+ "prompt_chars": 7155,
  "passages_supplied": {
   "litigation": 8,
   "governance": 8,
@@ -12,63 +12,44 @@
  },
  "answer": {
   "listing_view": {
-   "score": 15.0,
-   "reasoning": "The recorded subscription of 0.0x at the close of the first day indicates a complete lack of initial demand, which is a severe negative signal for listing day performance. Without evidence of anchor investor participation or a grey market premium, the prospectus offers no counter-narrative to this weak opening."
+   "score": 68.0,
+   "reasoning": "The subscription multiple of 2.69× indicates the IPO was oversubscribed, suggesting solid short‑term demand. However, the narrow price band (₹258‑₹271) and the seller‑focused pricing typical of Indian IPOs temper enthusiasm."
   },
   "longterm_view": {
-   "score": 65.0,
-   "reasoning": "The business demonstrates strong operational momentum with a growing order book and positive free cash flow, suggesting a healthy underlying enterprise. However, the absence of valuation metrics, ROE/ROCE data, and balance sheet details prevents a definitive assessment of whether the current price reflects this quality."
+   "score": 57.0,
+   "reasoning": "Free cash flow has been positive and rising (₹471.69 m → ₹883.43 m → ₹1,142.9 m) and the order book has grown to over ₹1.5 bn, supporting a growth narrative. Yet the prospectus lacks debt, profitability ratios and detailed margin trends, leaving the sustainability of earnings uncertain."
   },
   "governance": {
-   "score": 50.0,
-   "reasoning": "The prospectus contains standard regulatory language regarding related party transactions and promoter interests, but provides no specific details on board independence or unique governance structures to differentiate it from the average issuer."
+   "score": 62.0,
+   "reasoning": "The prospectus discloses related‑party transactions and states no conflict of interest with raw‑material suppliers [promoters, page 279], indicating basic compliance, but it provides limited detail on board independence or remuneration policies."
   },
   "key_risks": [
    {
-    "risk": "Zero initial subscription",
-    "why_it_matters": "A 0.0x subscription at the end of the first day suggests the issue is unattractive to the market at the offered price band, risking a listing below the issue price.",
-    "citation": "[DEMAND, 2026-10-12T21:49:52+00:00]",
-    "citation_verified": false
-   },
-   {
-    "risk": "Lack of valuation context",
-    "why_it_matters": "The absence of a basis-for-price chapter and key profitability ratios makes it impossible to verify if the IPO is priced fairly relative to the company's cash generation.",
-    "citation": "[WHAT WE COULD NOT ESTABLISH, n/a]",
-    "citation_verified": false
-   },
-   {
-    "risk": "Operational dependency on leased premises",
-    "why_it_matters": "Reliance on third-party facilities for corporate and operational functions creates a continuity risk if lease agreements are not renewed or terms become unfavorable.",
+    "risk": "Premises / third‑party facility risk",
+    "why_it_matters": "Loss of access to key premises could disrupt production and revenue.",
     "citation": "[business, page 245]",
     "citation_verified": true
-   }
-  ],
-  "answers": [
-   {
-    "question": "What is the current subscription status?",
-    "answer": "The subscription stands at 0.0 times as of the recorded timestamp on October 12, 2026.",
-    "citation": "[DEMAND, 2026-10-12T21:49:52+00:00]",
-    "citation_verified": false
    },
    {
-    "question": "Is the company profitable?",
-    "answer": "The company is generating positive free cash flow, but specific net profit or ROE figures are not provided in the available extracts.",
-    "citation": "[CASH, n/a]",
-    "citation_verified": false
-   },
-   {
-    "question": "What is the customer concentration?",
-    "answer": "The top 10 customers account for approximately 23.69% to 27.57% of revenue, which is considered a healthy level of diversification.",
+    "risk": "Customer concentration",
+    "why_it_matters": "Top 10 customers account for ~27% of revenue, exposing the firm to demand swings from a few buyers.",
     "citation": "[business, page 216]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Regulatory uncertainty",
+    "why_it_matters": "While no material SEBI findings are reported, future regulatory actions could affect operations.",
+    "citation": "[litigation, page 366]",
     "citation_verified": true
    }
   ],
-  "confidence": "low",
-  "what_would_change_my_mind": "Evidence of a significant grey market premium or a sudden surge in subscription times in the final days of the IPO would contradict the current negative listing view. Additionally, disclosure of a high ROCE or a premium valuation multiple in a full prospectus would strengthen the long-term view.",
+  "answers": [],
+  "confidence": "medium",
+  "what_would_change_my_mind": "Discovery of high leverage or deteriorating margins in the balance sheet, or evidence that the order book is not recurring, would lower both the listing and long‑term scores.",
   "citation_check": {
-   "claims_checked": 6,
-   "citations_verified": 2,
-   "citations_not_matching_what_we_sent": 4
+   "claims_checked": 3,
+   "citations_verified": 3,
+   "citations_not_matching_what_we_sent": 0
   }
  }
 }

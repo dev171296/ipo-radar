@@ -1,0 +1,35 @@
+{
+ "scores": {
+  "listing_view": {
+   "groq": 68.0,
+   "nvidia": 74.0
+  },
+  "longterm_view": {
+   "groq": 57.0,
+   "nvidia": 67.0
+  },
+  "governance": {
+   "groq": 62.0,
+   "nvidia": 58.0
+  }
+ },
+ "reliability": {
+  "groq": {
+   "share": 1.0,
+   "trusted": true,
+   "why": "3 of 3 citations matched the pages we sent"
+  },
+  "nvidia": {
+   "share": 0.62,
+   "trusted": true,
+   "why": "5 of 8 citations matched the pages we sent"
+  }
+ },
+ "disagreements": [],
+ "ai_block": {
+  "listing_view": 71.0,
+  "longterm_view": 62.0,
+  "governance": 60.0
+ },
+ "excluded": []
+}
