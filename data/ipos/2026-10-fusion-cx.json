@@ -8,7 +8,7 @@
   "name": "Fusion CX Limited",
   "symbol": "FUSIONCX",
   "type": "mainboard",
-  "status": "upcoming",
+  "status": "open",
   "dates": {
     "open": "2026-10-14",
     "close": "2026-10-16",
@@ -18,15 +18,15 @@
   "price_band": "Rs.275 to Rs.289",
   "issue_size_shares": 14040000.0,
   "subscription": {
-    "times": null,
-    "shares_offered": null,
-    "shares_bid": null
+    "times": 0.0,
+    "shares_offered": 0.0,
+    "shares_bid": 0.0
   },
   "also_on_bse": false,
   "sources": {
     "calendar": "nse",
-    "fetched_at": "2026-10-13T16:15:44+00:00"
+    "fetched_at": "2026-10-13T19:56:14+00:00"
   },
   "missing": [],
-  "rebuilt_at": "2026-10-13T16:15:44+00:00"
+  "rebuilt_at": "2026-10-13T19:56:14+00:00"
 }

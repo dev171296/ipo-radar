@@ -1,8 +1,8 @@
 {
  "ipo_id": "2026-10-fusion-cx",
  "name": "Fusion CX Limited",
- "scored_at": "2026-10-13T16:16:12+00:00",
- "built_from_bundle": "2026-10-13T16:16:12+00:00",
+ "scored_at": "2026-10-13T19:56:41+00:00",
+ "built_from_bundle": "2026-10-13T19:56:41+00:00",
  "fundamentals": {
   "score": null,
   "withheld": null,
@@ -64,7 +64,7 @@
    {
     "component": "subscription_level",
     "weight": 26,
-    "why": "no subscription figure yet"
+    "why": "the issue is still open (closes 2026-10-16) and stands at 0.0× — most demand arrives on the last day, so this is not scored yet"
    },
    {
     "component": "subscription_velocity",

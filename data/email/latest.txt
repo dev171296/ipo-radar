@@ -1,4 +1,4 @@
-IPO RADAR — generated 2026-10-13 16:16 UTC
+IPO RADAR — generated 2026-10-13 19:57 UTC
 8 open or upcoming; 47 closed issue(s) left out — see the dashboard
 ============================================================
 Full dashboard: https://dev171296.github.io/ipo-radar/
@@ -37,7 +37,7 @@ HD Fire Protect Limited
 
 Ravita Engineering Services Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
-  sme · 2026-10-14 to 2026-10-16 · Rs.105 to Rs.112
+  sme · 2026-10-14 to 2026-10-16 · band not announced
   Fundamentals: None (0% assessed)   Demand: None (0% assessed)
 
 Sahajanand Medical Technologies Limited

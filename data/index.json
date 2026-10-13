@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T16:15:44+00:00",
+  "generated_at": "2026-10-13T19:56:14+00:00",
   "count": 55,
   "ipos": [
     {
@@ -636,7 +636,7 @@
       "id": "2026-10-fusion-cx",
       "name": "Fusion CX Limited",
       "type": "mainboard",
-      "status": "upcoming",
+      "status": "open",
       "dates": {
         "open": "2026-10-14",
         "close": "2026-10-16",
@@ -692,14 +692,14 @@
       "id": "2026-10-ravita-engineering-services",
       "name": "Ravita Engineering Services Limited",
       "type": "sme",
-      "status": "upcoming",
+      "status": "open",
       "dates": {
         "open": "2026-10-14",
         "close": "2026-10-16",
         "open_as_given": "14-Oct-2026",
         "close_as_given": "16-Oct-2026"
       },
-      "price_band": "Rs.105 to Rs.112",
+      "price_band": null,
       "missing": []
     },
     {
