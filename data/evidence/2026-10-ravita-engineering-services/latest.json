@@ -1,6 +1,6 @@
 {
  "ipo_id": "2026-10-ravita-engineering-services",
- "built_at": "2026-10-13T09:39:09+00:00",
+ "built_at": "2026-10-13T12:53:41+00:00",
  "name": "Ravita Engineering Services Limited",
  "symbol": "RAVITA",
  "type": "sme",
@@ -19,12 +19,12 @@
    "raw": "Rs.105 to Rs.112"
   },
   "issue_size_shares": {
-   "value": 10362000.0,
+   "value": 7413600.0,
    "source": "nse_calendar",
    "confidence": "high"
   },
   "issue_size_rs_million": {
-   "value": 1160.54,
+   "value": 830.32,
    "source": "computed",
    "confidence": "high",
    "note": "shares × top of the price band"

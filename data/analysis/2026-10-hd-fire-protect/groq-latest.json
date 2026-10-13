@@ -1,9 +1,9 @@
 {
  "ok": true,
- "model": "openai/gpt-oss-120b",
- "answered_at": "2026-10-13T09:39:51+00:00",
- "evidence_fingerprint": "ab66273f7bcc2ae0",
- "prompt_chars": 7155,
+ "model": "qwen/qwen3.8-27b",
+ "answered_at": "2026-10-13T12:53:43+00:00",
+ "evidence_fingerprint": "6a7ca6e0187657f0",
+ "prompt_chars": 7219,
  "passages_supplied": {
   "litigation": 8,
   "governance": 8,
@@ -12,44 +12,63 @@
  },
  "answer": {
   "listing_view": {
-   "score": 68.0,
-   "reasoning": "The subscription multiple of 2.69× indicates the IPO was oversubscribed, suggesting solid short‑term demand. However, the narrow price band (₹258‑₹271) and the seller‑focused pricing typical of Indian IPOs temper enthusiasm."
+   "score": 35.0,
+   "reasoning": "The subscription of 3.31x is weak for a mainboard IPO, suggesting limited retail or institutional enthusiasm at the current price band. Without a basis-for-price chapter or GMP data, the pricing appears arbitrary and potentially high relative to the demand shown."
   },
   "longterm_view": {
-   "score": 57.0,
-   "reasoning": "Free cash flow has been positive and rising (₹471.69 m → ₹883.43 m → ₹1,142.9 m) and the order book has grown to over ₹1.5 bn, supporting a growth narrative. Yet the prospectus lacks debt, profitability ratios and detailed margin trends, leaving the sustainability of earnings uncertain."
+   "score": 65.0,
+   "reasoning": "The company demonstrates strong operational momentum with a 125% increase in order book and consistent positive free cash flow generation. However, the lack of visible profitability metrics (ROE/ROCE) and the absence of a clear valuation anchor prevent a higher conviction score."
   },
   "governance": {
-   "score": 62.0,
-   "reasoning": "The prospectus discloses related‑party transactions and states no conflict of interest with raw‑material suppliers [promoters, page 279], indicating basic compliance, but it provides limited detail on board independence or remuneration policies."
+   "score": 50.0,
+   "reasoning": "The prospectus contains standard regulatory language regarding related party transactions and promoter interests, but provides no specific details on board independence or unique governance safeguards beyond statutory compliance."
   },
   "key_risks": [
    {
-    "risk": "Premises / third‑party facility risk",
-    "why_it_matters": "Loss of access to key premises could disrupt production and revenue.",
-    "citation": "[business, page 245]",
-    "citation_verified": true
+    "risk": "Weak IPO Demand",
+    "why_it_matters": "A 3.31x subscription indicates the market may not value the company at the offered price, risking a post-listing discount.",
+    "citation": "[DEMAND, subscription_times]",
+    "citation_verified": false
    },
    {
-    "risk": "Customer concentration",
-    "why_it_matters": "Top 10 customers account for ~27% of revenue, exposing the firm to demand swings from a few buyers.",
+    "risk": "Valuation Opacity",
+    "why_it_matters": "The absence of a 'basis for price' chapter prevents investors from verifying if the price band is justified by fundamentals.",
+    "citation": "[WHAT WE COULD NOT ESTABLISH, valuation comparison]",
+    "citation_verified": false
+   },
+   {
+    "risk": "Customer Concentration",
+    "why_it_matters": "Top 10 customers account for ~24-28% of revenue, creating dependency risk on a few large accounts.",
     "citation": "[business, page 216]",
-    "citation_verified": true
-   },
-   {
-    "risk": "Regulatory uncertainty",
-    "why_it_matters": "While no material SEBI findings are reported, future regulatory actions could affect operations.",
-    "citation": "[litigation, page 366]",
     "citation_verified": true
    }
   ],
-  "answers": [],
-  "confidence": "medium",
-  "what_would_change_my_mind": "Discovery of high leverage or deteriorating margins in the balance sheet, or evidence that the order book is not recurring, would lower both the listing and long‑term scores.",
+  "answers": [
+   {
+    "question": "Is the IPO fully subscribed?",
+    "answer": "No, it is currently 3.31 times subscribed as of the last recorded timestamp.",
+    "citation": "[DEMAND, subscription_times]",
+    "citation_verified": false
+   },
+   {
+    "question": "What is the company's profitability?",
+    "answer": "Not answerable from what I was given, as ROE and ROCE are not printed in the provided extracts.",
+    "citation": "not answerable from what I was given",
+    "citation_verified": false
+   },
+   {
+    "question": "Is the company cash flow positive?",
+    "answer": "Yes, free cash flow has been positive in all three reported years, ranging from ₹471.69 million to ₹1,142.9 million.",
+    "citation": "[CASH, free_cash_flow]",
+    "citation_verified": false
+   }
+  ],
+  "confidence": "low",
+  "what_would_change_my_mind": "Evidence of strong institutional anchor investor participation or a significant grey market premium would validate the pricing despite the low overall subscription. Conversely, a drop in subscription below 1x would confirm the pricing is unsupportable.",
   "citation_check": {
-   "claims_checked": 3,
-   "citations_verified": 3,
-   "citations_not_matching_what_we_sent": 0
+   "claims_checked": 6,
+   "citations_verified": 1,
+   "citations_not_matching_what_we_sent": 4
   }
  }
 }

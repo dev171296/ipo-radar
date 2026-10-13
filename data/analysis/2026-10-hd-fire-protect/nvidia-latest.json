@@ -1,9 +1,9 @@
 {
  "ok": true,
  "model": "moonshotai/kimi-k3",
- "answered_at": "2026-10-13T09:42:54+00:00",
- "evidence_fingerprint": "ab66273f7bcc2ae0",
- "prompt_chars": 7155,
+ "answered_at": "2026-10-13T12:54:30+00:00",
+ "evidence_fingerprint": "6a7ca6e0187657f0",
+ "prompt_chars": 7219,
  "passages_supplied": {
   "litigation": 8,
   "governance": 8,
@@ -12,74 +12,56 @@
  },
  "answer": {
   "listing_view": {
-   "score": 74.0,
-   "reasoning": "The issue has attracted immediate demand rather than merely drifting toward full subscription, which is favourable for the first days of trading. However, this is only an early aggregate signal; without allocation by investor category, anchor participation, grey-market pricing or a valuation benchmark, the evidence does not justify assuming a sustained listing premium."
+   "score": 60.0,
+   "reasoning": "Subscription reached only ~3.3x by midday day 2 of 3 (0x at open), which is decent but far from the frenzied demand that drives big listing pops; with no GMP, anchor, or broker data, I can only say demand is positive but unexceptional. Score stays near the middle because the strongest listing indicators simply were not collected."
   },
   "longterm_view": {
-   "score": 67.0,
-   "reasoning": "The fundamental evidence is more encouraging than the average speculative IPO: the reported order-book trajectory has strengthened, revenue has expanded across the supplied fiscal periods, and the customer base appears neither narrowly dependent on one buyer nor deteriorating sharply [business, page 212], [business, page 216]. The company also presents itself as a leader and major exporter in its niche, and the supplied cash-flow figures suggest real cash generation rather than purely accounting profits [business, page 219]. A materially higher score is impossible without margins, returns on capital, debt, working-capital detail and the issue-price rationale."
+   "score": 62.0,
+   "reasoning": "Revenue grew from ₹3,729.53M (FY2024) to ₹4,892.81M (FY2026) and the order book more than doubled to ₹1,586.01M, with free cash flow consistently positive and rising to ~₹1,143M — a genuinely improving operating picture [business, page 212]. I cannot verify returns (no ROE/ROCE), leverage, or valuation, so I cannot justify a higher score."
   },
   "governance": {
-   "score": 58.0,
-   "reasoning": "The prospectus discloses no materially adverse regulatory inspection findings and explicitly denies promoter conflicts with raw-material suppliers [litigation, page 366], [promoters, page 279]. These are useful but still seller-side statements, and the extracts provide no independent evidence sufficient for a strong governance score."
+   "score": 55.0,
+   "reasoning": "The prospectus reports no material adverse SEBI/regulatory findings [litigation, page 366] and claims no promoter–supplier conflicts [promoters, page 279], but these are self-attestations in the seller's document and I have no related-party transaction detail to test them."
   },
   "key_risks": [
    {
-    "risk": "Premises dependency",
-    "why_it_matters": "The company operates its corporate office and some facilities on premises provided by third parties, so loss of those arrangements could disrupt operations or increase costs.",
+    "risk": "Order book fell sharply in latest reading",
+    "why_it_matters": "Order book more than halved from ₹4,327.99M–₹4,892.81M revenue-scale FY2026 but the sequence shows a dip to ₹703.45M before recovering to ₹1,586.01M, and a fire equipment maker's growth story depends on order inflow holding up.",
+    "citation": "[business, page 212]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Leased occupancy of key premises including corporate office",
+    "why_it_matters": "The company operates from third-party premises and concedes inability to continue operating from them could hurt the business.",
     "citation": "[business, page 245]",
     "citation_verified": true
    },
    {
-    "risk": "Customer concentration",
-    "why_it_matters": "Although described as healthy, the ten largest customers still account for a meaningful share of revenue, making future growth vulnerable to the loss or renegotiation of a major account.",
-    "citation": "[business, page 216]",
+    "risk": "Q1 FY2027 annualises below FY2026 revenue",
+    "why_it_matters": "June 2026 quarter revenue of ₹1,090.52M annualises to ~₹4.36bn, below FY2026's ₹4,892.81M, implying either seasonality or a slowdown the extracts do not explain.",
+    "citation": "[business, page 212]",
     "citation_verified": true
    },
    {
-    "risk": "Governance evidence is thin",
-    "why_it_matters": "The available governance comfort rests mainly on company assertions and standard related-party disclosures, which are not the same as independent evidence that conflicts cannot emerge.",
-    "citation": "[promoters, page 279]",
+    "risk": "No visibility on offer structure or valuation",
+    "why_it_matters": "Fresh issue vs OFS split could not be established, so I cannot tell whether ~₹4,992M raised funds the business or cashes out sellers — a critical unknown in an Indian IPO.",
+    "citation": "[business, page 212]",
     "citation_verified": true
-   },
-   {
-    "risk": "Unverifiable pricing",
-    "why_it_matters": "No basis-for-price chapter was available, so there is no supplied prospectus evidence against which to test whether the offer price leaves anything for incoming public shareholders.",
-    "citation": "not answerable from what I was given",
-    "citation_verified": false
    }
   ],
   "answers": [
    {
-    "question": "Does current demand imply a successful listing?",
-    "answer": "It points to favourable listing momentum, not a reliable prediction of aftermarket performance. The available signal is early and aggregated, so it cannot reveal whether demand is concentrated, price-insensitive or likely to continue through the close.",
-    "citation": "not answerable from what I was given",
-    "citation_verified": false
-   },
-   {
-    "question": "Is there evidence of durable business quality?",
-    "answer": "Yes, but it is incomplete. A strengthening order book, expanding revenue and comparatively broad customer exposure support the franchise, while the company's claimed leadership and export position suggest genuine market presence; however, profitability, capital efficiency and balance-sheet resilience remain unestablished from the supplied material.",
-    "citation": "[business, page 212], [business, page 216], [business, page 219]",
-    "citation_verified": true
-   },
-   {
-    "question": "Do the governance extracts justify high trust?",
-    "answer": "No. The absence of disclosed material regulatory findings and the stated lack of promoter-supplier conflicts are positive indicators, but they are narrow, self-reported and do not disclose the substance or severity of related-party transactions.",
-    "citation": "[litigation, page 366], [promoters, page 279], [promoters, page 324]",
-    "citation_verified": true
-   },
-   {
-    "question": "Is the offer attractively priced?",
-    "answer": "Cannot be determined. The supplied material contains no valuation chapter, peer comparison, margin history, ROE, ROCE or leverage data, all of which are needed to judge whether the price band is conservative or seller-friendly.",
+    "question": "No explicit questions were asked in the prompt beyond the listing/longterm/governance assessment.",
+    "answer": "Assessments provided above; several key inputs (valuation basis, ROE/ROCE, balance sheet leverage, OFS split, GMP, anchor allotment) were not available in the supplied material.",
     "citation": "not answerable from what I was given",
     "citation_verified": false
    }
   ],
   "confidence": "low",
-  "what_would_change_my_mind": "For the listing view, sustained broad-based subscription, credible anchor participation, category-level demand and evidence of aftermarket appetite would strengthen the case; weak institutional or non-retail demand would undermine it. For the long-term view, audited margins, debt, working capital, ROE/ROCE and a transparent comparison of the offer valuation with peers would be decisive.",
+  "what_would_change_my_mind": "Knowing the fresh-issue/OFS split, the basis-for-price/peer PE comparison, and balance-sheet debt would let me judge whether ₹4,992M is pricing in the improving cash flows or extracting value from buyers. Anchor book quality and final subscription (especially QIB) would move the listing view decisively.",
   "citation_check": {
-   "claims_checked": 8,
-   "citations_verified": 5,
+   "claims_checked": 5,
+   "citations_verified": 4,
    "citations_not_matching_what_we_sent": 0
   }
  }

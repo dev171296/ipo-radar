@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-13T09:38:48+00:00",
-  "count": 53,
+  "generated_at": "2026-10-13T12:53:19+00:00",
+  "count": 54,
   "ipos": [
     {
       "id": "2026-09-a-one-steels",
@@ -619,6 +619,20 @@
       "missing": []
     },
     {
+      "id": "2026-10-bonfiglioli-transmissions",
+      "name": "Bonfiglioli Transmissions Limited",
+      "type": "mainboard",
+      "status": "upcoming",
+      "dates": {
+        "open": "2026-10-15",
+        "close": "2026-10-19",
+        "open_as_given": "15-Oct-2026",
+        "close_as_given": "19-Oct-2026"
+      },
+      "price_band": "Rs.558 to Rs.586",
+      "missing": []
+    },
+    {
       "id": "2026-10-fusion-cx",
       "name": "Fusion CX Limited",
       "type": "mainboard",
@@ -703,6 +717,20 @@
       "missing": []
     },
     {
+      "id": "2026-10-tonbo-imaging",
+      "name": "Tonbo Imaging India Limited",
+      "type": "mainboard",
+      "status": "upcoming",
+      "dates": {
+        "open": "2026-10-15",
+        "close": "2026-10-19",
+        "open_as_given": "15-Oct-2026",
+        "close_as_given": "19-Oct-2026"
+      },
+      "price_band": "Rs.665 to Rs.700",
+      "missing": []
+    },
+    {
       "id": "2026-10-vaibhav-vyapaar",
       "name": "Vaibhav Vyapaar Limited",
       "type": "sme",
@@ -717,8 +745,8 @@
       "missing": []
     },
     {
-      "id": "2026-10-bonfiglioli-transmissions",
-      "name": "Bonfiglioli Transmissions Limited",
+      "id": "2026-10-sahajanand-medical-technologies",
+      "name": "Sahajanand Medical Technologies Limited",
       "type": "mainboard",
       "status": "upcoming",
       "dates": {
@@ -727,21 +755,7 @@
         "open_as_given": "15-Oct-2026",
         "close_as_given": "19-Oct-2026"
       },
-      "price_band": "Rs.558 to Rs.586",
-      "missing": []
-    },
-    {
-      "id": "2026-10-tonbo-imaging",
-      "name": "Tonbo Imaging India Limited",
-      "type": "mainboard",
-      "status": "upcoming",
-      "dates": {
-        "open": "2026-10-15",
-        "close": "2026-10-19",
-        "open_as_given": "15-Oct-2026",
-        "close_as_given": "19-Oct-2026"
-      },
-      "price_band": "Rs.665 to Rs.700",
+      "price_band": "Rs.327 to Rs.344",
       "missing": []
     }
   ]
