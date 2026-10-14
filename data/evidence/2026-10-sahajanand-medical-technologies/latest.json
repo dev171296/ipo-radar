@@ -1,6 +1,6 @@
 {
  "ipo_id": "2026-10-sahajanand-medical-technologies",
- "built_at": "2026-10-14T13:56:41+00:00",
+ "built_at": "2026-10-14T18:08:48+00:00",
  "name": "Sahajanand Medical Technologies Limited",
  "symbol": "SMT",
  "type": "mainboard",
@@ -19,12 +19,12 @@
    "raw": "Rs.327 to Rs.344"
   },
   "issue_size_shares": {
-   "value": 13822116.0,
+   "value": 9750482.0,
    "source": "nse_calendar",
    "confidence": "high"
   },
   "issue_size_rs_million": {
-   "value": 4754.81,
+   "value": 3354.17,
    "source": "computed",
    "confidence": "high",
    "note": "shares × top of the price band"

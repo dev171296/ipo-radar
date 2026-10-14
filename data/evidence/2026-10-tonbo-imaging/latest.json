@@ -1,6 +1,6 @@
 {
  "ipo_id": "2026-10-tonbo-imaging",
- "built_at": "2026-10-14T13:56:41+00:00",
+ "built_at": "2026-10-14T18:08:48+00:00",
  "name": "Tonbo Imaging India Limited",
  "symbol": "TONBO",
  "type": "mainboard",
@@ -19,12 +19,12 @@
    "raw": "Rs.665 to Rs.700"
   },
   "issue_size_shares": {
-   "value": 12174046.0,
+   "value": 8526033.0,
    "source": "nse_calendar",
    "confidence": "high"
   },
   "issue_size_rs_million": {
-   "value": 8521.83,
+   "value": 5968.22,
    "source": "computed",
    "confidence": "high",
    "note": "shares × top of the price band"

@@ -1,6 +1,6 @@
 {
  "ipo_id": "2026-10-bonfiglioli-transmissions",
- "built_at": "2026-10-14T13:56:41+00:00",
+ "built_at": "2026-10-14T18:08:47+00:00",
  "name": "Bonfiglioli Transmissions Limited",
  "symbol": "BONFIG",
  "type": "mainboard",
@@ -19,12 +19,12 @@
    "raw": "Rs.558 to Rs.586"
   },
   "issue_size_shares": {
-   "value": 43239042.0,
+   "value": 30282330.0,
    "source": "nse_calendar",
    "confidence": "high"
   },
   "issue_size_rs_million": {
-   "value": 25338.08,
+   "value": 17745.45,
    "source": "computed",
    "confidence": "high",
    "note": "shares × top of the price band"

@@ -1,6 +1,6 @@
 {
  "ipo_id": "2026-10-zetwerk-manufacturing-businesses",
- "built_at": "2026-10-14T13:56:41+00:00",
+ "built_at": "2026-10-14T18:08:48+00:00",
  "name": "Zetwerk Manufacturing Businesses Limited",
  "symbol": "ZETWERK",
  "type": "mainboard",
@@ -19,12 +19,12 @@
    "raw": "Rs.143 to Rs.151"
   },
   "issue_size_shares": {
-   "value": 342495665.0,
+   "value": 185066845.0,
    "source": "nse_calendar",
    "confidence": "high"
   },
   "issue_size_rs_million": {
-   "value": 51716.85,
+   "value": 27945.09,
    "source": "computed",
    "confidence": "high",
    "note": "shares × top of the price band"

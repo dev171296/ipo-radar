@@ -1,20 +1,20 @@
 {
  "ipo_id": "2026-10-zetwerk-manufacturing-businesses",
  "name": "Zetwerk Manufacturing Businesses Limited",
- "scored_at": "2026-10-14T13:56:41+00:00",
- "built_from_bundle": "2026-10-14T13:56:41+00:00",
+ "scored_at": "2026-10-14T18:08:48+00:00",
+ "built_from_bundle": "2026-10-14T18:08:48+00:00",
  "fundamentals": {
   "score": null,
   "withheld": "only 20% of this block could be assessed — below the 25% floor, so no score is given",
-  "points_earned": 13.0,
+  "points_earned": 15.0,
   "points_assessed": 20,
   "coverage_pct": 20,
   "components": [
    {
     "component": "issue_structure",
     "weight": 10,
-    "points": 8.0,
-    "basis": "55% of the issue is fresh money to the company"
+    "points": 10.0,
+    "basis": "101% of the issue is fresh money to the company"
    },
    {
     "component": "filing_hygiene",
