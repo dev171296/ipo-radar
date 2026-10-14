@@ -1,0 +1,119 @@
+{
+ "ipo_id": "2026-10-zetwerk-manufacturing-businesses",
+ "built_at": "2026-10-14T13:56:41+00:00",
+ "name": "Zetwerk Manufacturing Businesses Limited",
+ "symbol": "ZETWERK",
+ "type": "mainboard",
+ "status": "upcoming",
+ "offer": {
+  "price_low": {
+   "value": 143.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.143 to Rs.151"
+  },
+  "price_high": {
+   "value": 151.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.143 to Rs.151"
+  },
+  "issue_size_shares": {
+   "value": 342495665.0,
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "issue_size_rs_million": {
+   "value": 51716.85,
+   "source": "computed",
+   "confidence": "high",
+   "note": "shares × top of the price band"
+  },
+  "open_date": {
+   "value": "2026-10-15",
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "close_date": {
+   "value": "2026-10-19",
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "fresh_issue_rs_million": {
+   "value": 28300.0,
+   "source": "abridged prospectus",
+   "confidence": "low",
+   "page": 1,
+   "raw": "fresh issue size offer for sale size total offer size eligibility and reservation fresh issue and offer for sale up to [●] equity shares of face value of ₹1 each aggregating up to ₹28,300.00 million",
+   "note": "read from a table flattened to text — verify before relying on it"
+  }
+ },
+ "financials": {},
+ "valuation": {},
+ "cash": {},
+ "balance_sheet": {},
+ "derived": {},
+ "demand": {},
+ "documents": {
+  "abridged": {
+   "pages": 15,
+   "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/Zetwerk%20Manufacturing%20Businesses%20Limited_AP_p.pdf",
+   "fields": [
+    "cin",
+    "financials",
+    "lead_managers",
+    "objects",
+    "offer_details",
+    "price_band",
+    "promoters",
+    "registrar",
+    "risk_factors"
+   ],
+   "read_at": "2026-10-13T16:15:57+00:00"
+  }
+ },
+ "missing": [
+  {
+   "what": "three-year financials",
+   "why": "abridged prospectus read, but no three-figure rows matched"
+  },
+  {
+   "what": "ROE",
+   "why": "this document does not print it"
+  },
+  {
+   "what": "ROCE",
+   "why": "this document does not print it"
+  },
+  {
+   "what": "subscription",
+   "why": "the issue has not opened yet"
+  },
+  {
+   "what": "grey market premium",
+   "why": "no free source built yet"
+  },
+  {
+   "what": "anchor investor allotment",
+   "why": "not collected yet"
+  },
+  {
+   "what": "broker conviction",
+   "why": "not collected yet"
+  },
+  {
+   "what": "media coverage",
+   "why": "not collected yet"
+  },
+  {
+   "what": "retail attention",
+   "why": "not collected yet"
+  },
+  {
+   "what": "full prospectus",
+   "why": "not downloaded yet — will retry next run"
+  }
+ ],
+ "conflicts": [],
+ "observations": []
+}

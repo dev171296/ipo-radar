@@ -1,4 +1,4 @@
-IPO RADAR — generated 2026-10-14 10:30 UTC
+IPO RADAR — generated 2026-10-14 13:57 UTC
 8 open or upcoming; 47 closed issue(s) left out — see the dashboard
 ============================================================
 Full dashboard: https://dev171296.github.io/ipo-radar/
@@ -26,19 +26,19 @@ Bonfiglioli Transmissions Limited
 Fusion CX Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
   mainboard · 2026-10-14 to 2026-10-16 · Rs.275 to Rs.289
-  Fundamentals: None (0% assessed)   Demand: None (14% assessed)
+  Fundamentals: None (10% assessed)   Demand: None (14% assessed)
 
 HD Fire Protect Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
   mainboard · 2026-10-13 to 2026-10-15 · Rs.258 to Rs.271
   Fundamentals: None (10% assessed)   Demand: None (14% assessed)
   groq: listing 65, long-term 55, confidence low
-  nvidia: listing 75, long-term 58, confidence medium
+  nvidia: listing 68, long-term 55, confidence low
 
 Ravita Engineering Services Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
   sme · 2026-10-14 to 2026-10-16 · band not announced
-  Fundamentals: None (0% assessed)   Demand: None (0% assessed)
+  Fundamentals: None (0% assessed)   Demand: None (14% assessed)
 
 Sahajanand Medical Technologies Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION

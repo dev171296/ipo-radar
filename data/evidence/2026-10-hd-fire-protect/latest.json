@@ -1,6 +1,6 @@
 {
  "ipo_id": "2026-10-hd-fire-protect",
- "built_at": "2026-10-14T10:28:50+00:00",
+ "built_at": "2026-10-14T13:56:41+00:00",
  "name": "HD Fire Protect Limited",
  "symbol": "HDFIRE",
  "type": "mainboard",
@@ -80,10 +80,10 @@
  "derived": {},
  "demand": {
   "subscription_times": {
-   "value": 10.229183346460019,
+   "value": 11.009213000391085,
    "source": "nse_calendar",
    "confidence": "high",
-   "note": "as at 2026-10-14T10:28:26+00:00"
+   "note": "as at 2026-10-14T13:56:17+00:00"
   },
   "subscription_history": {
    "value": [
@@ -106,6 +106,10 @@
     {
      "at": "2026-10-14T10:28:26+00:00",
      "times": 10.229183346460019
+    },
+    {
+     "at": "2026-10-14T13:56:17+00:00",
+     "times": 11.009213000391085
     }
    ],
    "source": "nse_calendar",

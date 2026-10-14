@@ -1,15 +1,22 @@
 {
  "ipo_id": "2026-10-fusion-cx",
  "name": "Fusion CX Limited",
- "scored_at": "2026-10-14T10:28:50+00:00",
- "built_from_bundle": "2026-10-14T10:28:50+00:00",
+ "scored_at": "2026-10-14T13:56:41+00:00",
+ "built_from_bundle": "2026-10-14T13:56:41+00:00",
  "fundamentals": {
   "score": null,
-  "withheld": null,
-  "points_earned": 0.0,
-  "points_assessed": 0,
-  "coverage_pct": 0,
-  "components": [],
+  "withheld": "only 10% of this block could be assessed — below the 25% floor, so no score is given",
+  "points_earned": 1.0,
+  "points_assessed": 10,
+  "coverage_pct": 10,
+  "components": [
+   {
+    "component": "filing_hygiene",
+    "weight": 10,
+    "points": 1.0,
+    "basis": "summary form read; 1 contradiction(s)"
+   }
+  ],
   "not_assessed": [
    {
     "component": "valuation_vs_peers",
@@ -44,12 +51,7 @@
    {
     "component": "issue_structure",
     "weight": 10,
-    "why": "fresh issue and total size not both readable"
-   },
-   {
-    "component": "filing_hygiene",
-    "weight": 10,
-    "why": "no documents on file — nothing to judge the paperwork by"
+    "why": "the two sources disagree about the size of the issue"
    }
   ]
  },
@@ -71,7 +73,7 @@
    {
     "component": "subscription_level",
     "weight": 26,
-    "why": "the issue is still open (closes 2026-10-16) and stands at 0.23552991452991454× — most demand arrives on the last day, so this is not scored yet"
+    "why": "the issue is still open (closes 2026-10-16) and stands at 0.29716944444444443× — most demand arrives on the last day, so this is not scored yet"
    },
    {
     "component": "gmp_level",
