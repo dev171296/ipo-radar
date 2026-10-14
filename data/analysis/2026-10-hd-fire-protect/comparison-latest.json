@@ -1,45 +1,43 @@
 {
  "scores": {
   "listing_view": {
-   "groq": 45.0,
-   "nvidia": 68.0
+   "groq": 65.0,
+   "nvidia": 75.0
   },
   "longterm_view": {
-   "groq": 60.0,
-   "nvidia": 62.0
+   "groq": 55.0,
+   "nvidia": 58.0
   },
   "governance": {
-   "groq": 55.0,
-   "nvidia": 55.0
+   "groq": 50.0,
+   "nvidia": 60.0
   }
  },
  "reliability": {
   "groq": {
-   "share": 0.5,
+   "share": 1.0,
    "trusted": true,
-   "why": "3 of 6 citations matched the pages we sent"
+   "why": "6 of 6 citations matched the pages we sent"
   },
   "nvidia": {
-   "share": 0.5,
-   "trusted": true,
-   "why": "4 of 8 citations matched the pages we sent"
+   "share": 0.44,
+   "trusted": false,
+   "why": "4 of 9 citations matched the pages we sent, and 1 pointed at pages we never sent"
   }
  },
- "disagreements": [
-  {
-   "on": "listing_view",
-   "gap": 23.0,
-   "scores": {
-    "groq": 45.0,
-    "nvidia": 68.0
-   },
-   "means": "the models read the same evidence differently — treat this verdict as uncertain, and read both reasonings rather than the average"
-  }
- ],
+ "disagreements": [],
  "ai_block": {
-  "listing_view": 56.5,
-  "longterm_view": 61.0,
-  "governance": 55.0
+  "listing_view": 65.0,
+  "listing_view_note": "one model was left out of this average — its citations did not check out",
+  "longterm_view": 55.0,
+  "longterm_view_note": "one model was left out of this average — its citations did not check out",
+  "governance": 50.0,
+  "governance_note": "one model was left out of this average — its citations did not check out"
  },
- "excluded": []
+ "excluded": [
+  {
+   "model": "nvidia",
+   "why": "4 of 9 citations matched the pages we sent, and 1 pointed at pages we never sent"
+  }
+ ]
 }
