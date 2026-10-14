@@ -1,9 +1,9 @@
 {
  "ok": true,
  "model": "qwen/qwen3.8-27b",
- "answered_at": "2026-10-13T12:53:43+00:00",
- "evidence_fingerprint": "6a7ca6e0187657f0",
- "prompt_chars": 7219,
+ "answered_at": "2026-10-14T07:54:27+00:00",
+ "evidence_fingerprint": "ddcad4b1889d74ca",
+ "prompt_chars": 7284,
  "passages_supplied": {
   "litigation": 8,
   "governance": 8,
@@ -12,63 +12,63 @@
  },
  "answer": {
   "listing_view": {
-   "score": 35.0,
-   "reasoning": "The subscription of 3.31x is weak for a mainboard IPO, suggesting limited retail or institutional enthusiasm at the current price band. Without a basis-for-price chapter or GMP data, the pricing appears arbitrary and potentially high relative to the demand shown."
+   "score": 45.0,
+   "reasoning": "The subscription of ~7.5x is moderate for a mainboard IPO, suggesting decent but not exceptional retail/institutional appetite. However, the absence of a 'Basis for Price' chapter and the inability to determine the fresh issue vs. OFS split creates significant uncertainty about whether the price is justified by fundamentals or simply set to maximize seller proceeds."
   },
   "longterm_view": {
-   "score": 65.0,
-   "reasoning": "The company demonstrates strong operational momentum with a 125% increase in order book and consistent positive free cash flow generation. However, the lack of visible profitability metrics (ROE/ROCE) and the absence of a clear valuation anchor prevent a higher conviction score."
+   "score": 60.0,
+   "reasoning": "The company claims market leadership in fire protection systems and shows strong order book growth (from ₹703M to ₹1,586M) and positive free cash flow. However, the lack of visible ROE/ROCE metrics and the inability to verify balance sheet health from the provided extracts limits confidence in the sustainability of this performance."
   },
   "governance": {
-   "score": 50.0,
-   "reasoning": "The prospectus contains standard regulatory language regarding related party transactions and promoter interests, but provides no specific details on board independence or unique governance safeguards beyond statutory compliance."
+   "score": 55.0,
+   "reasoning": "The prospectus states there are no material regulatory findings and no conflicts of interest with suppliers, which is a positive baseline. However, the specific details of related party transactions are referenced but not fully detailed in the provided excerpts, leaving some opacity."
   },
   "key_risks": [
    {
-    "risk": "Weak IPO Demand",
-    "why_it_matters": "A 3.31x subscription indicates the market may not value the company at the offered price, risking a post-listing discount.",
-    "citation": "[DEMAND, subscription_times]",
-    "citation_verified": false
+    "risk": "Valuation Opacity",
+    "why_it_matters": "Without a 'Basis for Price' chapter, investors cannot independently verify if the ₹258-271 price band is fair relative to peers or intrinsic value.",
+    "citation": "[business, page 212]",
+    "citation_verified": true
    },
    {
-    "risk": "Valuation Opacity",
-    "why_it_matters": "The absence of a 'basis for price' chapter prevents investors from verifying if the price band is justified by fundamentals.",
-    "citation": "[WHAT WE COULD NOT ESTABLISH, valuation comparison]",
-    "citation_verified": false
+    "risk": "Offer Structure Uncertainty",
+    "why_it_matters": "The inability to distinguish between fresh issue and offer for sale means it is unclear if the capital is being used for growth or if it is a promoter exit, affecting long-term value creation.",
+    "citation": "[business, page 212]",
+    "citation_verified": true
    },
    {
     "risk": "Customer Concentration",
-    "why_it_matters": "Top 10 customers account for ~24-28% of revenue, creating dependency risk on a few large accounts.",
+    "why_it_matters": "Top 10 customers account for ~24-28% of revenue, creating dependency risk if a major client reduces orders.",
     "citation": "[business, page 216]",
     "citation_verified": true
    }
   ],
   "answers": [
    {
-    "question": "Is the IPO fully subscribed?",
-    "answer": "No, it is currently 3.31 times subscribed as of the last recorded timestamp.",
-    "citation": "[DEMAND, subscription_times]",
-    "citation_verified": false
-   },
-   {
-    "question": "What is the company's profitability?",
-    "answer": "Not answerable from what I was given, as ROE and ROCE are not printed in the provided extracts.",
+    "question": "Is the IPO priced fairly?",
+    "answer": "Not answerable from what I was given",
     "citation": "not answerable from what I was given",
     "citation_verified": false
    },
    {
-    "question": "Is the company cash flow positive?",
-    "answer": "Yes, free cash flow has been positive in all three reported years, ranging from ₹471.69 million to ₹1,142.9 million.",
-    "citation": "[CASH, free_cash_flow]",
+    "question": "What is the split between fresh issue and OFS?",
+    "answer": "Not answerable from what I was given",
+    "citation": "not answerable from what I was given",
+    "citation_verified": false
+   },
+   {
+    "question": "What is the company's ROE?",
+    "answer": "Not answerable from what I was given",
+    "citation": "not answerable from what I was given",
     "citation_verified": false
    }
   ],
   "confidence": "low",
-  "what_would_change_my_mind": "Evidence of strong institutional anchor investor participation or a significant grey market premium would validate the pricing despite the low overall subscription. Conversely, a drop in subscription below 1x would confirm the pricing is unsupportable.",
+  "what_would_change_my_mind": "Providing the 'Basis for Price' chapter and the specific split between fresh issue and OFS would allow for a proper valuation assessment. Additionally, clear balance sheet figures for debt and liquidity would clarify financial health.",
   "citation_check": {
    "claims_checked": 6,
-   "citations_verified": 1,
-   "citations_not_matching_what_we_sent": 4
+   "citations_verified": 3,
+   "citations_not_matching_what_we_sent": 0
   }
  }
 }

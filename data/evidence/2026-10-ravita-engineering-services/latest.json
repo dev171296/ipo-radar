@@ -1,6 +1,6 @@
 {
  "ipo_id": "2026-10-ravita-engineering-services",
- "built_at": "2026-10-13T19:56:41+00:00",
+ "built_at": "2026-10-14T07:54:25+00:00",
  "name": "Ravita Engineering Services Limited",
  "symbol": "RAVITA",
  "type": "sme",
@@ -22,7 +22,25 @@
  "cash": {},
  "balance_sheet": {},
  "derived": {},
- "demand": {},
+ "demand": {
+  "subscription_times": {
+   "value": 0.37,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "note": "as at 2026-10-14T07:53:58+00:00"
+  },
+  "subscription_history": {
+   "value": [
+    {
+     "at": "2026-10-14T07:53:58+00:00",
+     "times": 0.37
+    }
+   ],
+   "source": "nse_calendar",
+   "confidence": "high",
+   "note": "every change we recorded"
+  }
+ },
  "documents": {},
  "missing": [
   {
@@ -36,10 +54,6 @@
   {
    "what": "three-year financials",
    "why": "no abridged prospectus on file yet"
-  },
-  {
-   "what": "subscription",
-   "why": "NSE reported no subscription figure"
   },
   {
    "what": "grey market premium",

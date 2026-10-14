@@ -1,9 +1,9 @@
 {
  "ok": true,
  "model": "moonshotai/kimi-k3",
- "answered_at": "2026-10-13T12:54:30+00:00",
- "evidence_fingerprint": "6a7ca6e0187657f0",
- "prompt_chars": 7219,
+ "answered_at": "2026-10-14T07:55:18+00:00",
+ "evidence_fingerprint": "ddcad4b1889d74ca",
+ "prompt_chars": 7284,
  "passages_supplied": {
   "litigation": 8,
   "governance": 8,
@@ -12,55 +12,73 @@
  },
  "answer": {
   "listing_view": {
-   "score": 60.0,
-   "reasoning": "Subscription reached only ~3.3x by midday day 2 of 3 (0x at open), which is decent but far from the frenzied demand that drives big listing pops; with no GMP, anchor, or broker data, I can only say demand is positive but unexceptional. Score stays near the middle because the strongest listing indicators simply were not collected."
+   "score": 68.0,
+   "reasoning": "Subscription ramped from 0x to ~7.5x by the morning of day 2 of 3, which indicates genuine demand building rather than a thin book; a ~₹5,000 million mainboard issue with positive three-year free cash flow tends to find aftermarket support. However, I have no anchor book, no grey market premium, and no basis-for-price chapter, so I cannot judge whether the ₹258-271 band is priced for the seller; that caps conviction below a strong buy signal."
   },
   "longterm_view": {
    "score": 62.0,
-   "reasoning": "Revenue grew from ₹3,729.53M (FY2024) to ₹4,892.81M (FY2026) and the order book more than doubled to ₹1,586.01M, with free cash flow consistently positive and rising to ~₹1,143M — a genuinely improving operating picture [business, page 212]. I cannot verify returns (no ROE/ROCE), leverage, or valuation, so I cannot justify a higher score."
+   "reasoning": "The fundamentals shown are genuinely decent: operating cash flow of ₹471.9m, ₹924.9m and ₹983.0m with free cash flow positive and rising across three years, revenue of ~₹4,893m in the latest full year, and an order book that has grown from ~₹703m to ₹1,586m, implying forward revenue visibility [business, page 212]. The company claims to be the largest in its category in India by operating income in Fiscal 2025 and the largest exporter by value [business, page 219], but that is the seller's own claim, I have no ROE, ROCE, margin or leverage data, and the first-quarter revenue of ₹1,090m annualises below the FY2026 level, which could signal a slowdown or just seasonality."
   },
   "governance": {
    "score": 55.0,
-   "reasoning": "The prospectus reports no material adverse SEBI/regulatory findings [litigation, page 366] and claims no promoter–supplier conflicts [promoters, page 279], but these are self-attestations in the seller's document and I have no related-party transaction detail to test them."
+   "reasoning": "On paper it looks clean: no material adverse findings from SEBI or other regulator inspections [litigation, page 366] and an asserted absence of promoter conflict of interest with suppliers beyond disclosed related-party dealings [promoters, page 279]. But these are the company's own assertions, related-party transactions exist and are only pointed to a disclosure note I was not given, and I could not determine the fresh-issue vs offer-for-sale split, so promoter monetisation intent is unknown."
   },
   "key_risks": [
    {
-    "risk": "Order book fell sharply in latest reading",
-    "why_it_matters": "Order book more than halved from ₹4,327.99M–₹4,892.81M revenue-scale FY2026 but the sequence shows a dip to ₹703.45M before recovering to ₹1,586.01M, and a fire equipment maker's growth story depends on order inflow holding up.",
-    "citation": "[business, page 212]",
-    "citation_verified": true
-   },
-   {
-    "risk": "Leased occupancy of key premises including corporate office",
-    "why_it_matters": "The company operates from third-party premises and concedes inability to continue operating from them could hurt the business.",
+    "risk": "Leased-premises dependence including the corporate office",
+    "why_it_matters": "A manufacturing business whose operations sit on third-party premises faces disruption risk that could halt production of fire-protection systems, and the prospectus itself flags this as a business risk [business, page 245].",
     "citation": "[business, page 245]",
     "citation_verified": true
    },
    {
-    "risk": "Q1 FY2027 annualises below FY2026 revenue",
-    "why_it_matters": "June 2026 quarter revenue of ₹1,090.52M annualises to ~₹4.36bn, below FY2026's ₹4,892.81M, implying either seasonality or a slowdown the extracts do not explain.",
+    "risk": "Offer structure unknown (fresh issue vs OFS)",
+    "why_it_matters": "If this is largely an offer for sale, the IPO is an exit for existing holders rather than growth capital, which materially changes the investment case, and I could not establish the split.",
+    "citation": "not answerable from what I was given",
+    "citation_verified": false
+   },
+   {
+    "risk": "Possible revenue stall",
+    "why_it_matters": "Q1 FY2027 revenue of ₹1,090.5m annualises to roughly ₹4,360m, below the ₹4,892.8m of the latest full year; if that is not pure seasonality, the growth story weakens at exactly the valuation moment [business, page 212].",
     "citation": "[business, page 212]",
     "citation_verified": true
    },
    {
-    "risk": "No visibility on offer structure or valuation",
-    "why_it_matters": "Fresh issue vs OFS split could not be established, so I cannot tell whether ~₹4,992M raised funds the business or cashes out sellers — a critical unknown in an Indian IPO.",
-    "citation": "[business, page 212]",
-    "citation_verified": true
-   }
-  ],
-  "answers": [
-   {
-    "question": "No explicit questions were asked in the prompt beyond the listing/longterm/governance assessment.",
-    "answer": "Assessments provided above; several key inputs (valuation basis, ROE/ROCE, balance sheet leverage, OFS split, GMP, anchor allotment) were not available in the supplied material.",
+    "risk": "No profitability-quality metrics disclosed in what I was given",
+    "why_it_matters": "Without ROE, ROCE, margins or debt figures, cash flow positivity alone cannot distinguish a quality compounder from a working-capital-hungry manufacturer.",
     "citation": "not answerable from what I was given",
     "citation_verified": false
    }
   ],
-  "confidence": "low",
-  "what_would_change_my_mind": "Knowing the fresh-issue/OFS split, the basis-for-price/peer PE comparison, and balance-sheet debt would let me judge whether ₹4,992M is pricing in the improving cash flows or extracting value from buyers. Anchor book quality and final subscription (especially QIB) would move the listing view decisively.",
+  "answers": [
+   {
+    "question": "Is demand for the IPO strong?",
+    "answer": "Yes, on the evidence available: subscription went from 0x to ~7.5x across the first day and into day 2 morning, with one session still to run. That is solid but not the frenzied 20x+ oversubscription of historically hyped issues.",
+    "citation": "not answerable from what I was given",
+    "citation_verified": false
+   },
+   {
+    "question": "Does the business generate real cash?",
+    "answer": "Yes: operating cash flow is positive in all three years and free cash flow after equipment spending is positive and rising from ₹471.7m to ₹1,142.9m; reported order book more than doubled over the period shown, consistent with a functioning business rather than accounting-only profits [business, page 212].",
+    "citation": "[business, page 212]",
+    "citation_verified": true
+   },
+   {
+    "question": "Is the valuation reasonable?",
+    "answer": "I cannot tell. No basis-for-price chapter was found, no peer comparison was provided, and without earnings or book value figures the price band cannot be anchored to anything.",
+    "citation": "not answerable from what I was given",
+    "citation_verified": false
+   },
+   {
+    "question": "Are there governance red flags?",
+    "answer": "None visible in the extracts: no material adverse regulatory findings and a stated absence of supplier conflicts of interest, though related-party transactions exist and are only referenced to a note I was not shown [litigation, page 366].",
+    "citation": "[litigation, page 366]",
+    "citation_verified": true
+   }
+  ],
+  "confidence": "medium",
+  "what_would_change_my_mind": "The fresh issue vs OFS split and any anchor investor list would move the listing view sharply either way; for the long term, seeing the related-party note (Annexure VI Note 36), leverage figures and ROCE would either confirm a quality franchise or reveal that the clean cash flows mask related-party leakage.",
   "citation_check": {
-   "claims_checked": 5,
+   "claims_checked": 8,
    "citations_verified": 4,
    "citations_not_matching_what_we_sent": 0
   }
