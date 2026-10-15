@@ -1,6 +1,6 @@
 {
  "ipo_id": "2026-10-ravita-engineering-services",
- "built_at": "2026-10-14T18:08:48+00:00",
+ "built_at": "2026-10-15T07:39:22+00:00",
  "name": "Ravita Engineering Services Limited",
  "symbol": "RAVITA",
  "type": "sme",
@@ -24,10 +24,10 @@
  "derived": {},
  "demand": {
   "subscription_times": {
-   "value": 1.05,
+   "value": 1.37,
    "source": "nse_calendar",
    "confidence": "high",
-   "note": "as at 2026-10-14T13:56:17+00:00"
+   "note": "as at 2026-10-15T07:38:53+00:00"
   },
   "subscription_history": {
    "value": [
@@ -42,6 +42,10 @@
     {
      "at": "2026-10-14T13:56:17+00:00",
      "times": 1.05
+    },
+    {
+     "at": "2026-10-15T07:38:53+00:00",
+     "times": 1.37
     }
    ],
    "source": "nse_calendar",

@@ -1,0 +1,282 @@
+{
+ "ipo_id": "2026-09-nityas-gems-and-jewellery",
+ "built_at": "2026-10-15T07:39:18+00:00",
+ "name": "Nityas Gems and Jewellery Limited",
+ "symbol": "NITYAS",
+ "type": "mainboard",
+ "status": "upcoming",
+ "offer": {
+  "price_low": {
+   "value": 70.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.70 to Rs.75"
+  },
+  "price_high": {
+   "value": 75.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.70 to Rs.75"
+  },
+  "issue_size_shares": {
+   "value": 14456000.0,
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "issue_size_rs_million": {
+   "value": 1084.2,
+   "source": "computed",
+   "confidence": "high",
+   "note": "shares × top of the price band"
+  },
+  "open_date": {
+   "value": "2026-09-30",
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "close_date": {
+   "value": "2026-10-05",
+   "source": "nse_calendar",
+   "confidence": "high"
+  }
+ },
+ "financials": {
+  "ebitda": {
+   "value": [
+    309.74,
+    129.01,
+    54.76
+   ],
+   "source": "abridged prospectus",
+   "confidence": "high",
+   "page": 6,
+   "raw": "EBITDA 309.74 129.01 54.76"
+  }
+ },
+ "valuation": {},
+ "cash": {
+  "operating_cash_flow": {
+   "value": [
+    -147.32,
+    -100.52,
+    10.51
+   ],
+   "source": "full prospectus (financials chapter)",
+   "confidence": "high",
+   "page": 288,
+   "raw": "Net cash flow generated from/ (utilized in) operating activities (A) (147.32) (100.52) (10.51",
+   "note": "newest year first"
+  },
+  "conversion_vs_ebitda": {
+   "value": -0.476,
+   "source": "computed",
+   "confidence": "high",
+   "note": "1.0 means the reported profit arrived as cash"
+  },
+  "negative_in_all_years": {
+   "value": false,
+   "source": "computed",
+   "confidence": "high"
+  },
+  "negative_in_latest_year": {
+   "value": true,
+   "source": "computed",
+   "confidence": "high"
+  }
+ },
+ "balance_sheet": {
+  "debt_to_equity": {
+   "value": [
+    0.29,
+    0.34,
+    0.69
+   ],
+   "source": "full prospectus (financials, litigation, objects)",
+   "confidence": "high",
+   "page": 288,
+   "note": "borrowings ÷ what the owners have in it — printed in the document"
+  },
+  "current_ratio": {
+   "value": [
+    4.41,
+    3.61,
+    3.58
+   ],
+   "source": "full prospectus (financials, litigation, objects)",
+   "confidence": "high",
+   "page": 288,
+   "note": "money due in within a year ÷ money due out — computed from current assets ÷ liabilities"
+  },
+  "total_debt": {
+   "value": [
+    13.01,
+    42.2,
+    20.71
+   ],
+   "source": "full prospectus (financials, litigation, objects)",
+   "confidence": "high",
+   "page": 288,
+   "note": "borrowings, newest year first"
+  },
+  "net_worth": {
+   "value": [
+    617.52,
+    213.39,
+    52.77
+   ],
+   "source": "full prospectus (financials, litigation, objects)",
+   "confidence": "high",
+   "page": 288,
+   "note": "the owners' stake, newest year first"
+  }
+ },
+ "derived": {},
+ "demand": {
+  "subscription_times": {
+   "value": 1.3731737686773657,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "note": "as at 2026-10-05T17:18:03+00:00"
+  },
+  "subscription_history": {
+   "value": [
+    {
+     "at": "2026-09-29T18:49:06+00:00",
+     "times": 0.0
+    },
+    {
+     "at": "2026-09-30T08:52:16+00:00",
+     "times": 0.08410348644161594
+    },
+    {
+     "at": "2026-09-30T11:17:46+00:00",
+     "times": 0.10564471499723298
+    },
+    {
+     "at": "2026-09-30T15:07:21+00:00",
+     "times": 0.1093940232429441
+    },
+    {
+     "at": "2026-10-01T09:16:06+00:00",
+     "times": 0.24276425013835085
+    },
+    {
+     "at": "2026-10-01T11:45:13+00:00",
+     "times": 0.4291228555617045
+    },
+    {
+     "at": "2026-10-05T09:27:21+00:00",
+     "times": 1.0936912008854456
+    },
+    {
+     "at": "2026-10-05T12:31:03+00:00",
+     "times": 1.3729800774764804
+    },
+    {
+     "at": "2026-10-05T17:18:03+00:00",
+     "times": 1.3731737686773657
+    }
+   ],
+   "source": "nse_calendar",
+   "confidence": "high",
+   "note": "every change we recorded"
+  }
+ },
+ "documents": {
+  "abridged": {
+   "pages": 11,
+   "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/Nityas_Abridged%20Prospectus_p.pdf",
+   "fields": [
+    "cin",
+    "financials",
+    "lead_managers",
+    "objects",
+    "price_band",
+    "promoters",
+    "registrar",
+    "risk_factors"
+   ],
+   "read_at": "2026-10-05T17:18:09+00:00"
+  },
+  "full": {
+   "pages": 537,
+   "url": "https://www.sebi.gov.in/sebi_data/attachdocs/oct-2026/1791203854275.pdf",
+   "chapters": {
+    "capital_structure": [
+     128,
+     144
+    ],
+    "objects": [
+     145,
+     211
+    ],
+    "business": [
+     212,
+     278
+    ],
+    "promoters": [
+     279,
+     287
+    ],
+    "financials": [
+     288,
+     452
+    ],
+    "litigation": [
+     453,
+     537
+    ]
+   },
+   "read_at": "2026-10-05T17:19:11+00:00"
+  }
+ },
+ "missing": [
+  {
+   "what": "fresh issue vs offer for sale split",
+   "why": "could not be read from the offer details table"
+  },
+  {
+   "what": "ROE",
+   "why": "this document does not print it"
+  },
+  {
+   "what": "ROCE",
+   "why": "this document does not print it"
+  },
+  {
+   "what": "valuation comparison",
+   "why": "no basis-for-price chapter found in the prospectus"
+  },
+  {
+   "what": "grey market premium",
+   "why": "no free source built yet"
+  },
+  {
+   "what": "anchor investor allotment",
+   "why": "not collected yet"
+  },
+  {
+   "what": "broker conviction",
+   "why": "not collected yet"
+  },
+  {
+   "what": "media coverage",
+   "why": "not collected yet"
+  },
+  {
+   "what": "retail attention",
+   "why": "not collected yet"
+  }
+ ],
+ "conflicts": [],
+ "observations": [
+  {
+   "from": "balance sheet",
+   "says": "borrowings changed sharply over the three years — debt-to-equity went 0.392 to 0.021"
+  },
+  {
+   "from": "balance sheet",
+   "says": "our own sum gives a debt-to-equity of 0.021 where the document prints 0.29 — using the document's figure"
+  }
+ ]
+}

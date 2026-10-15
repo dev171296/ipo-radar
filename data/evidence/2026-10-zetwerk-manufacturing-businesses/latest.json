@@ -1,10 +1,10 @@
 {
  "ipo_id": "2026-10-zetwerk-manufacturing-businesses",
- "built_at": "2026-10-14T18:08:48+00:00",
+ "built_at": "2026-10-15T07:39:22+00:00",
  "name": "Zetwerk Manufacturing Businesses Limited",
  "symbol": "ZETWERK",
  "type": "mainboard",
- "status": "upcoming",
+ "status": "open",
  "offer": {
   "price_low": {
    "value": 143.0,
@@ -53,7 +53,25 @@
  "cash": {},
  "balance_sheet": {},
  "derived": {},
- "demand": {},
+ "demand": {
+  "subscription_times": {
+   "value": 0.021511081577037745,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "note": "as at 2026-10-15T07:38:53+00:00"
+  },
+  "subscription_history": {
+   "value": [
+    {
+     "at": "2026-10-15T07:38:53+00:00",
+     "times": 0.021511081577037745
+    }
+   ],
+   "source": "nse_calendar",
+   "confidence": "high",
+   "note": "every change we recorded"
+  }
+ },
  "documents": {
   "abridged": {
    "pages": 15,
@@ -84,10 +102,6 @@
   {
    "what": "ROCE",
    "why": "this document does not print it"
-  },
-  {
-   "what": "subscription",
-   "why": "the issue has not opened yet"
   },
   {
    "what": "grey market premium",

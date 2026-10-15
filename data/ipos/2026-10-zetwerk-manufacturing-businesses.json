@@ -8,7 +8,7 @@
   "name": "Zetwerk Manufacturing Businesses Limited",
   "symbol": "ZETWERK",
   "type": "mainboard",
-  "status": "upcoming",
+  "status": "open",
   "dates": {
     "open": "2026-10-15",
     "close": "2026-10-19",
@@ -18,15 +18,15 @@
   "price_band": "Rs.143 to Rs.151",
   "issue_size_shares": 185066845.0,
   "subscription": {
-    "times": null,
-    "shares_offered": null,
-    "shares_bid": null
+    "times": 0.021511081577037745,
+    "shares_offered": 185066845.0,
+    "shares_bid": 3980988.0
   },
   "also_on_bse": false,
   "sources": {
     "calendar": "nse",
-    "fetched_at": "2026-10-14T18:08:20+00:00"
+    "fetched_at": "2026-10-15T07:38:53+00:00"
   },
   "missing": [],
-  "rebuilt_at": "2026-10-14T18:08:20+00:00"
+  "rebuilt_at": "2026-10-15T07:38:53+00:00"
 }

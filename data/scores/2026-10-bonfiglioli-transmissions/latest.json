@@ -1,8 +1,8 @@
 {
  "ipo_id": "2026-10-bonfiglioli-transmissions",
  "name": "Bonfiglioli Transmissions Limited",
- "scored_at": "2026-10-14T18:08:47+00:00",
- "built_from_bundle": "2026-10-14T18:08:47+00:00",
+ "scored_at": "2026-10-15T07:39:22+00:00",
+ "built_from_bundle": "2026-10-15T07:39:22+00:00",
  "fundamentals": {
   "score": null,
   "withheld": null,
@@ -64,7 +64,7 @@
    {
     "component": "subscription_level",
     "weight": 26,
-    "why": "no subscription figure yet"
+    "why": "the issue is still open (closes 2026-10-19) and stands at 0.15990513279526378× — most demand arrives on the last day, so this is not scored yet"
    },
    {
     "component": "subscription_velocity",

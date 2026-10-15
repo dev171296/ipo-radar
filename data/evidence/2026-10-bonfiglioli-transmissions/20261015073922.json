@@ -1,0 +1,100 @@
+{
+ "ipo_id": "2026-10-bonfiglioli-transmissions",
+ "built_at": "2026-10-15T07:39:22+00:00",
+ "name": "Bonfiglioli Transmissions Limited",
+ "symbol": "BONFIG",
+ "type": "mainboard",
+ "status": "open",
+ "offer": {
+  "price_low": {
+   "value": 558.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.558 to Rs.586"
+  },
+  "price_high": {
+   "value": 586.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.558 to Rs.586"
+  },
+  "issue_size_shares": {
+   "value": 30282330.0,
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "issue_size_rs_million": {
+   "value": 17745.45,
+   "source": "computed",
+   "confidence": "high",
+   "note": "shares × top of the price band"
+  },
+  "open_date": {
+   "value": "2026-10-15",
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "close_date": {
+   "value": "2026-10-19",
+   "source": "nse_calendar",
+   "confidence": "high"
+  }
+ },
+ "financials": {},
+ "valuation": {},
+ "cash": {},
+ "balance_sheet": {},
+ "derived": {},
+ "demand": {
+  "subscription_times": {
+   "value": 0.15990513279526378,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "note": "as at 2026-10-15T07:38:53+00:00"
+  },
+  "subscription_history": {
+   "value": [
+    {
+     "at": "2026-10-15T07:38:53+00:00",
+     "times": 0.15990513279526378
+    }
+   ],
+   "source": "nse_calendar",
+   "confidence": "high",
+   "note": "every change we recorded"
+  }
+ },
+ "documents": {},
+ "missing": [
+  {
+   "what": "three-year financials",
+   "why": "no abridged prospectus on file yet"
+  },
+  {
+   "what": "grey market premium",
+   "why": "no free source built yet"
+  },
+  {
+   "what": "anchor investor allotment",
+   "why": "not collected yet"
+  },
+  {
+   "what": "broker conviction",
+   "why": "not collected yet"
+  },
+  {
+   "what": "media coverage",
+   "why": "not collected yet"
+  },
+  {
+   "what": "retail attention",
+   "why": "not collected yet"
+  },
+  {
+   "what": "full prospectus",
+   "why": "not downloaded yet — will retry next run"
+  }
+ ],
+ "conflicts": [],
+ "observations": []
+}

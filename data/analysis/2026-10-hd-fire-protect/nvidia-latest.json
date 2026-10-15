@@ -1,9 +1,9 @@
 {
  "ok": true,
  "model": "moonshotai/kimi-k3",
- "answered_at": "2026-10-14T13:57:38+00:00",
- "evidence_fingerprint": "39eb8299ca071168",
- "prompt_chars": 7417,
+ "answered_at": "2026-10-15T07:40:33+00:00",
+ "evidence_fingerprint": "00d8ea2f8a938402",
+ "prompt_chars": 7481,
  "passages_supplied": {
   "litigation": 8,
   "governance": 8,
@@ -12,63 +12,69 @@
  },
  "answer": {
   "listing_view": {
-   "score": 68.0,
-   "reasoning": "Subscription of ~11x with a day and a half remaining [subscription_history, verified figures] indicates solid demand, and the company can credibly market itself as India's largest fire protection systems maker by Fiscal 2025 revenue and largest exporter [business, page 219]. However, with no basis-for-price chapter, no anchor data and no OFS/fresh-issue split readable, I cannot see whether the pricing is seller-favourable, so I cannot go higher."
+   "score": 78.0,
+   "reasoning": "Subscription ramped to ~25x by the morning of the final day, after accelerating from ~2.7x on day one, which signals strong late demand momentum into allotment [verified figures: subscription_history]. Only a final-day collapse or a heavily distressed broader market would prevent a positive debut on this demand profile."
   },
   "longterm_view": {
    "score": 55.0,
-   "reasoning": "The fundamentals shown are genuinely good: revenue grew from ₹3,729.53 million to ₹4,892.81 million over Fiscal 2024-2026, free cash flow is positive in all three years and rising, and the order book nearly doubled from ₹752.92 million in Fiscal 2024 to ₹1,586.01 million [business, page 212]. But the prospectus gives me no ROE, ROCE, margin trajectory, debt levels or valuation anchor, so the score reflects a decent-looking business that I cannot actually underwrite at ₹271 a share."
+   "reasoning": "The business converts profit into cash: free cash flow has been positive and growing across all three reported years, and the order book nearly doubled to ₹1,586 million, providing forward revenue visibility [business, page 212]. The company also claims leadership in its niche as India's largest exporter by value in its category [business, page 219]. I cannot score higher because the prospectus extracts given to me contain no ROE, ROCE, debt figures, margin trend, or fresh-issue/OFS split, so capital efficiency and dilution risk are unverifiable."
   },
   "governance": {
-   "score": 52.0,
-   "reasoning": "The only governance-relevant extracts are boilerplate assertions: no material adverse regulatory findings [litigation, page 366] and a claimed absence of promoter-supplier conflicts of interest [promoters, page 279]. Related-party transactions exist and are disclosed under Accounting Standard 24 [promoters, page 324]; absence of red flags in excerpts is not the same as evidence of good governance."
+   "score": 60.0,
+   "reasoning": "No material adverse regulator findings are disclosed [litigation, page 366], and promoters declare no conflict of interest with suppliers [promoters, page 279]. Related-party transactions exist and are disclosed, which is neither damning nor comforting without the detail behind Note 36 [promoters, page 278]."
   },
   "key_risks": [
    {
-    "risk": "No valuation basis disclosed in provided material",
-    "why_it_matters": "Without the basis-for-price chapter or peer multiples, the ₹258-271 band cannot be tested against earnings or book value, and Indian mainboard IPOs are typically priced for the seller.",
-    "citation": "[verified figures: valuation comparison not found]",
-    "citation_verified": false
-   },
-   {
-    "risk": "Leased premises dependency",
-    "why_it_matters": "The company operates from premises owned by third parties, including its corporate office, and explicitly flags business disruption if it cannot continue in them.",
+    "risk": "Rented/leased premises dependency",
+    "why_it_matters": "The Corporate Office and facilities are on third-party premises, so loss of occupation rights could disrupt operations.",
     "citation": "[business, page 245]",
     "citation_verified": true
    },
    {
-    "risk": "Revenue concentration caveat is soft, not absent",
-    "why_it_matters": "Top 10 customers at 27.57% of a recent-period revenue is 'healthy' by the seller's own framing, which is the seller grading its own homework.",
-    "citation": "[business, page 216]",
+    "risk": "Unverifiable capital efficiency",
+    "why_it_matters": "No ROE or ROCE is printed in the document provided, so I cannot judge whether growth is being generated cheaply or expensively.",
+    "citation": "[business, page 212]",
     "citation_verified": true
    },
    {
-    "risk": "Intellectual property risk flagged but unread",
-    "why_it_matters": "A cross-reference to an IP risk factor on page 37 exists but the substance was not provided, so a potentially material risk is unquantified.",
-    "citation": "[business, page 244]",
+    "risk": "Unknown fresh issue vs OFS split",
+    "why_it_matters": "If a large share of the ₹4,992 million issue is an offer for sale, proceeds exit with promoters rather than fund the business.",
+    "citation": "[litigation, page 382]",
+    "citation_verified": true
+   },
+   {
+    "risk": "Disclosed related-party transactions",
+    "why_it_matters": "Related-party dealings exist and are only referenced, not quantified in the extracts, leaving transaction quality unassessed.",
+    "citation": "[promoters, page 278]",
     "citation_verified": true
    }
   ],
   "answers": [
    {
-    "question": "How should the offer size and recent financial trajectory be read together?",
-    "answer": "The offer seeks ~₹4,992 million against a business producing ~₹1,143 million of free cash flow in the latest year, so the raise is roughly 4.4x annual FCF; without the fresh issue/OFS split I cannot tell whether that money funds growth or an exit.",
+    "question": "Is listing-day demand strong enough for a positive debut?",
+    "answer": "Yes — demand built from ~2.7x on day one to ~25x by the morning of the final day, with the steepest acceleration in the last 24 hours, which is the typical signature of an oversubscribed mainboard listing.",
+    "citation": "[litigation, page 392]",
+    "citation_verified": true
+   },
+   {
+    "question": "Is the business fundamentally sound over the long term?",
+    "answer": "Tentatively yes: revenue grew from ₹3,729 million to ₹4,893 million over two years [business, page 212], the order book roughly doubled to ₹1,586 million [business, page 212], and free cash flow is positive and growing [verified figures: free_cash_flow]. But without ROE, margins, debt, or the issue split, I cannot confirm it is priced attractively or capital-efficient.",
     "citation": "[business, page 212]",
     "citation_verified": true
    },
    {
-    "question": "What does the demand data mean for listing?",
-    "answer": "Subscription built from 2.69x on day one morning to 11x by midday on day two, which normally signals strong retail/institutional appetite heading into close, but without GMP or anchor data the pop is not underwritable.",
-    "citation": "[subscription_history, verified figures]",
-    "citation_verified": false
+    "question": "Are there governance red flags?",
+    "answer": "Nothing disqualifying is disclosed: no material SEBI/regulator findings and a promoter declaration of no supplier conflicts, though related-party transactions exist and are not quantified in the extracts I received.",
+    "citation": "[litigation, page 366]",
+    "citation_verified": true
    }
   ],
-  "confidence": "low",
-  "what_would_change_my_mind": "A readable basis-for-price chapter with earnings and peer multiples, plus the fresh issue vs OFS split, would let me actually price this rather than infer from growth alone. Conversely, if the offer turns out to be mostly offer-for-sale, my long-term scores drop sharply.",
+  "confidence": "medium",
+  "what_would_change_my_mind": "The fresh issue vs OFS split and the basis-for-price/valuation chapter — if most proceeds leave with sellers or the implied multiple is rich versus peers, my long-term score drops materially. A debt/contingent-liability read from the balance sheet chapter is the other gap that could cut either way.",
   "citation_check": {
-   "claims_checked": 6,
-   "citations_verified": 4,
-   "citations_not_matching_what_we_sent": 2
+   "claims_checked": 7,
+   "citations_verified": 7,
+   "citations_not_matching_what_we_sent": 0
   }
  }
 }

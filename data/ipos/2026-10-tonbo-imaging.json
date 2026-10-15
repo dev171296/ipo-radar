@@ -8,7 +8,7 @@
   "name": "Tonbo Imaging India Limited",
   "symbol": "TONBO",
   "type": "mainboard",
-  "status": "upcoming",
+  "status": "open",
   "dates": {
     "open": "2026-10-15",
     "close": "2026-10-19",
@@ -18,15 +18,15 @@
   "price_band": "Rs.665 to Rs.700",
   "issue_size_shares": 8526033.0,
   "subscription": {
-    "times": null,
-    "shares_offered": null,
-    "shares_bid": null
+    "times": 1.0051192623814615,
+    "shares_offered": 8526033.0,
+    "shares_bid": 8569680.0
   },
   "also_on_bse": false,
   "sources": {
     "calendar": "nse",
-    "fetched_at": "2026-10-14T18:08:20+00:00"
+    "fetched_at": "2026-10-15T07:38:53+00:00"
   },
   "missing": [],
-  "rebuilt_at": "2026-10-14T18:08:20+00:00"
+  "rebuilt_at": "2026-10-15T07:38:53+00:00"
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-14T18:08:20+00:00",
+  "generated_at": "2026-10-15T07:38:53+00:00",
   "count": 55,
   "ipos": [
     {
@@ -622,7 +622,7 @@
       "id": "2026-10-bonfiglioli-transmissions",
       "name": "Bonfiglioli Transmissions Limited",
       "type": "mainboard",
-      "status": "upcoming",
+      "status": "open",
       "dates": {
         "open": "2026-10-15",
         "close": "2026-10-19",
@@ -706,7 +706,7 @@
       "id": "2026-10-sahajanand-medical-technologies",
       "name": "Sahajanand Medical Technologies Limited",
       "type": "mainboard",
-      "status": "upcoming",
+      "status": "open",
       "dates": {
         "open": "2026-10-15",
         "close": "2026-10-19",
@@ -734,7 +734,7 @@
       "id": "2026-10-tonbo-imaging",
       "name": "Tonbo Imaging India Limited",
       "type": "mainboard",
-      "status": "upcoming",
+      "status": "open",
       "dates": {
         "open": "2026-10-15",
         "close": "2026-10-19",
@@ -762,7 +762,7 @@
       "id": "2026-10-zetwerk-manufacturing-businesses",
       "name": "Zetwerk Manufacturing Businesses Limited",
       "type": "mainboard",
-      "status": "upcoming",
+      "status": "open",
       "dates": {
         "open": "2026-10-15",
         "close": "2026-10-19",
