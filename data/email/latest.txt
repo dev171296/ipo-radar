@@ -1,5 +1,5 @@
-IPO RADAR — generated 2026-10-15 13:37 UTC
-8 open or upcoming; 47 closed issue(s) left out — see the dashboard
+IPO RADAR — generated 2026-10-15 17:51 UTC
+9 open or upcoming; 47 closed issue(s) left out — see the dashboard
 ============================================================
 Full dashboard: https://dev171296.github.io/ipo-radar/
 
@@ -14,6 +14,7 @@ Bonfiglioli Transmissions Limite  2026-10-19  not enough info   not enough info
 Sahajanand Medical Technologies   2026-10-19  not enough info   not enough info
 Tonbo Imaging India Limited       2026-10-19  not enough info   not enough info
 Zetwerk Manufacturing Businesses  2026-10-19  not enough info   not enough info
+Jio Platforms Limited             2026-10-23  not enough info   not enough info
 
 THE DETAIL
 ------------------------------------------------------------
@@ -34,6 +35,11 @@ HD Fire Protect Limited
   Fundamentals: None (10% assessed)   Demand: None (14% assessed)
   groq: listing 85, long-term 65, confidence low
   nvidia: listing 90, long-term 65, confidence low
+
+Jio Platforms Limited
+  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
+  mainboard · 2026-10-21 to 2026-10-23 · Rs.1065 to Rs.1119
+  Fundamentals: None (10% assessed)   Demand: None (0% assessed)
 
 Ravita Engineering Services Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
