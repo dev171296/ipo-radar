@@ -1,9 +1,9 @@
 {
  "ok": true,
  "model": "qwen/qwen3.8-27b",
- "answered_at": "2026-10-15T07:39:24+00:00",
- "evidence_fingerprint": "00d8ea2f8a938402",
- "prompt_chars": 7481,
+ "answered_at": "2026-10-15T10:13:11+00:00",
+ "evidence_fingerprint": "4806ac8cfdab1036",
+ "prompt_chars": 7546,
  "passages_supplied": {
   "litigation": 8,
   "governance": 8,
@@ -12,69 +12,63 @@
  },
  "answer": {
   "listing_view": {
-   "score": 65.0,
-   "reasoning": "The subscription of ~25x with a steep acceleration in the final day suggests strong retail demand, but the absence of anchor investor data and GMP prevents a definitive assessment of institutional conviction. The price band is narrow, indicating limited pricing flexibility, which is typical for mid-caps seeking certainty over upside."
+   "score": 85.0,
+   "reasoning": "The subscription data shows a dramatic acceleration from 2.69x on the first day to 81.39x by the close of the second day, indicating strong retail and institutional demand that likely supports a listing pop. However, the absence of GMP data and the fact that the price band is relatively narrow (258-271) suggests the pricing is not excessively aggressive, but the high subscription multiple is the primary driver for a positive short-term view."
   },
   "longterm_view": {
-   "score": 55.0,
-   "reasoning": "The business shows strong operational momentum with a 120% increase in order book and consistent positive free cash flow, supporting a solid fundamental base. However, the lack of valuation metrics (P/E, ROE) and balance sheet details in the provided extracts makes it impossible to judge if the current price offers a margin of safety for long-term holding."
+   "score": 60.0,
+   "reasoning": "The company demonstrates strong operational momentum with an order book of ₹1,586.01 million and revenue growth from ₹3,729.53 million to ₹4,892.81 million, supported by positive free cash flow. However, the evidence is thin on profitability metrics (no ROE/ROCE provided) and the business appears to be in a niche industrial sector (fire protection/sand casting) where long-term sustainability depends on capital intensity and customer retention, which are not fully detailed in the provided extracts."
   },
   "governance": {
-   "score": 60.0,
-   "reasoning": "The prospectus explicitly states there are no material regulatory findings and no conflicts of interest with suppliers, which is a positive baseline. However, the governance assessment is limited by the absence of detailed board composition or independent director metrics in the provided text."
+   "score": 70.0,
+   "reasoning": "The prospectus explicitly states there are no material regulatory findings or conflicts of interest between promoters and suppliers, and related party transactions are disclosed per accounting standards. While this is a standard compliance statement, the lack of specific governance red flags in the provided text supports a neutral-to-positive assessment, though the depth of promoter control is not fully quantified."
   },
   "key_risks": [
    {
-    "risk": "Valuation Opacity",
-    "why_it_matters": "Without a basis-for-price chapter or ROE/ROCE figures, investors cannot verify if the issue price is justified by earnings power.",
-    "citation": "[business, page 212]",
-    "citation_verified": true
-   },
-   {
     "risk": "Customer Concentration",
-    "why_it_matters": "Top 10 customers account for ~24-27% of revenue, creating dependency risk on a small number of clients.",
+    "why_it_matters": "Top 10 customers account for 27.57% of revenue, meaning a loss of a major client could significantly impact cash flows.",
     "citation": "[business, page 216]",
     "citation_verified": true
    },
    {
-    "risk": "Premises Dependency",
-    "why_it_matters": "Reliance on third-party facilities for operations poses a continuity risk if leases are not renewed or facilities are lost.",
+    "risk": "Operational Premises Dependency",
+    "why_it_matters": "The company relies on specific corporate and operational premises, and any inability to continue operating from these locations could adversely affect the business.",
     "citation": "[business, page 245]",
     "citation_verified": true
+   },
+   {
+    "risk": "Lack of Profitability Metrics",
+    "why_it_matters": "The absence of ROE and ROCE figures in the provided extracts prevents a full assessment of capital efficiency and long-term shareholder returns.",
+    "citation": "not answerable from what I was given",
+    "citation_verified": false
    }
   ],
   "answers": [
    {
-    "question": "What is the fresh issue vs OFS split?",
-    "answer": "Not answerable from what I was given",
-    "citation": "not answerable from what I was given",
+    "question": "What is the current subscription status?",
+    "answer": "The IPO is 81.39x subscribed as of 2026-10-15T10:12:34+00:00, showing a sharp increase from 2.69x on the first day.",
+    "citation": "subscription_history",
     "citation_verified": false
    },
    {
-    "question": "What is the company's ROE?",
-    "answer": "Not answerable from what I was given",
-    "citation": "not answerable from what I was given",
-    "citation_verified": false
-   },
-   {
-    "question": "What is the order book trend?",
-    "answer": "The order book has grown significantly, rising from ₹703.45 million in FY2024 to ₹1,586.01 million in FY2026, indicating strong future revenue visibility.",
+    "question": "What is the company's order book status?",
+    "answer": "The order book stood at ₹1,586.01 million as of the most recent period mentioned, indicating strong future revenue visibility.",
     "citation": "[business, page 212]",
     "citation_verified": true
    },
    {
-    "question": "Is the company cash flow positive?",
-    "answer": "Yes, the company has generated positive free cash flow in all three reported years, with the latest year showing ₹1,142.9 million.",
-    "citation": "[business, page 212]",
+    "question": "Are there any material regulatory issues?",
+    "answer": "No, the prospectus states there are no material findings or observations from SEBI or other regulators.",
+    "citation": "[litigation, page 366]",
     "citation_verified": true
    }
   ],
-  "confidence": "low",
-  "what_would_change_my_mind": "Providing the basis-for-price chapter with P/E and ROE comparisons would allow for a proper valuation judgment. Disclosure of the anchor investor allotment would clarify institutional interest versus retail hype.",
+  "confidence": "medium",
+  "what_would_change_my_mind": "If the GMP were negative or if the anchor investor allotment revealed significant selling pressure, the listing view would drop. If the related party transactions were found to be non-arm's length or if the order book was for low-margin projects, the long-term view would be revised downward.",
   "citation_check": {
-   "claims_checked": 7,
-   "citations_verified": 5,
-   "citations_not_matching_what_we_sent": 0
+   "claims_checked": 6,
+   "citations_verified": 4,
+   "citations_not_matching_what_we_sent": 1
   }
  }
 }

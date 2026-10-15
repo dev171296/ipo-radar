@@ -1,9 +1,9 @@
 {
  "ok": true,
- "model": "moonshotai/kimi-k3",
- "answered_at": "2026-10-15T07:40:33+00:00",
- "evidence_fingerprint": "00d8ea2f8a938402",
- "prompt_chars": 7481,
+ "model": "google/gemma-4-31b-it (fallback: kimi-k3 failed)",
+ "answered_at": "2026-10-15T10:13:31+00:00",
+ "evidence_fingerprint": "4806ac8cfdab1036",
+ "prompt_chars": 7546,
  "passages_supplied": {
   "litigation": 8,
   "governance": 8,
@@ -12,68 +12,37 @@
  },
  "answer": {
   "listing_view": {
-   "score": 78.0,
-   "reasoning": "Subscription ramped to ~25x by the morning of the final day, after accelerating from ~2.7x on day one, which signals strong late demand momentum into allotment [verified figures: subscription_history]. Only a final-day collapse or a heavily distressed broader market would prevent a positive debut on this demand profile."
+   "score": 85.0,
+   "reasoning": "Subscription levels show extreme momentum, accelerating from 11x to over 81x on the final day. This indicates high retail or institutional demand that typically drives a listing pop."
   },
   "longterm_view": {
-   "score": 55.0,
-   "reasoning": "The business converts profit into cash: free cash flow has been positive and growing across all three reported years, and the order book nearly doubled to ₹1,586 million, providing forward revenue visibility [business, page 212]. The company also claims leadership in its niche as India's largest exporter by value in its category [business, page 219]. I cannot score higher because the prospectus extracts given to me contain no ROE, ROCE, debt figures, margin trend, or fresh-issue/OFS split, so capital efficiency and dilution risk are unverifiable."
+   "score": 60.0,
+   "reasoning": "The company shows positive and growing free cash flow and a rising order book [business, page 212]. However, the lack of valuation data and balance sheet details makes it impossible to determine if the business is being sold at a sustainable price."
   },
   "governance": {
-   "score": 60.0,
-   "reasoning": "No material adverse regulator findings are disclosed [litigation, page 366], and promoters declare no conflict of interest with suppliers [promoters, page 279]. Related-party transactions exist and are disclosed, which is neither damning nor comforting without the detail behind Note 36 [promoters, page 278]."
+   "score": 50.0,
+   "reasoning": "The prospectus claims no conflicts of interest with suppliers [promoters, page 279], but the evidence is thin as it relies on internal disclosures."
   },
   "key_risks": [
    {
-    "risk": "Rented/leased premises dependency",
-    "why_it_matters": "The Corporate Office and facilities are on third-party premises, so loss of occupation rights could disrupt operations.",
+    "risk": "Premises Dependency",
+    "why_it_matters": "Inability to operate from current premises, including the corporate office, could disrupt business",
     "citation": "[business, page 245]",
     "citation_verified": true
    },
    {
-    "risk": "Unverifiable capital efficiency",
-    "why_it_matters": "No ROE or ROCE is printed in the document provided, so I cannot judge whether growth is being generated cheaply or expensively.",
-    "citation": "[business, page 212]",
-    "citation_verified": true
-   },
-   {
-    "risk": "Unknown fresh issue vs OFS split",
-    "why_it_matters": "If a large share of the ₹4,992 million issue is an offer for sale, proceeds exit with promoters rather than fund the business.",
-    "citation": "[litigation, page 382]",
-    "citation_verified": true
-   },
-   {
-    "risk": "Disclosed related-party transactions",
-    "why_it_matters": "Related-party dealings exist and are only referenced, not quantified in the extracts, leaving transaction quality unassessed.",
-    "citation": "[promoters, page 278]",
+    "risk": "Intellectual Property",
+    "why_it_matters": "Failure to protect rights may adversely affect the business",
+    "citation": "[business, page 244]",
     "citation_verified": true
    }
   ],
-  "answers": [
-   {
-    "question": "Is listing-day demand strong enough for a positive debut?",
-    "answer": "Yes — demand built from ~2.7x on day one to ~25x by the morning of the final day, with the steepest acceleration in the last 24 hours, which is the typical signature of an oversubscribed mainboard listing.",
-    "citation": "[litigation, page 392]",
-    "citation_verified": true
-   },
-   {
-    "question": "Is the business fundamentally sound over the long term?",
-    "answer": "Tentatively yes: revenue grew from ₹3,729 million to ₹4,893 million over two years [business, page 212], the order book roughly doubled to ₹1,586 million [business, page 212], and free cash flow is positive and growing [verified figures: free_cash_flow]. But without ROE, margins, debt, or the issue split, I cannot confirm it is priced attractively or capital-efficient.",
-    "citation": "[business, page 212]",
-    "citation_verified": true
-   },
-   {
-    "question": "Are there governance red flags?",
-    "answer": "Nothing disqualifying is disclosed: no material SEBI/regulator findings and a promoter declaration of no supplier conflicts, though related-party transactions exist and are not quantified in the extracts I received.",
-    "citation": "[litigation, page 366]",
-    "citation_verified": true
-   }
-  ],
-  "confidence": "medium",
-  "what_would_change_my_mind": "The fresh issue vs OFS split and the basis-for-price/valuation chapter — if most proceeds leave with sellers or the implied multiple is rich versus peers, my long-term score drops materially. A debt/contingent-liability read from the balance sheet chapter is the other gap that could cut either way.",
+  "answers": [],
+  "confidence": "low",
+  "what_would_change_my_mind": "Access to the 'basis for price' chapter to evaluate valuation and the balance sheet to assess debt levels.",
   "citation_check": {
-   "claims_checked": 7,
-   "citations_verified": 7,
+   "claims_checked": 2,
+   "citations_verified": 2,
    "citations_not_matching_what_we_sent": 0
   }
  }

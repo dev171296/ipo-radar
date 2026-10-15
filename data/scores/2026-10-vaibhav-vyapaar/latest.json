@@ -1,8 +1,8 @@
 {
  "ipo_id": "2026-10-vaibhav-vyapaar",
  "name": "Vaibhav Vyapaar Limited",
- "scored_at": "2026-10-15T07:39:22+00:00",
- "built_from_bundle": "2026-10-15T07:39:22+00:00",
+ "scored_at": "2026-10-15T10:13:08+00:00",
+ "built_from_bundle": "2026-10-15T10:13:08+00:00",
  "fundamentals": {
   "score": null,
   "withheld": null,
@@ -64,14 +64,14 @@
     "component": "subscription_velocity",
     "weight": 14,
     "points": 3.5,
-    "basis": "7% of final demand was already in at the first reading"
+    "basis": "3% of final demand was already in at the first reading"
    }
   ],
   "not_assessed": [
    {
     "component": "subscription_level",
     "weight": 26,
-    "why": "the issue is still open (closes 2026-10-15) and stands at 1.28× — most demand arrives on the last day, so this is not scored yet"
+    "why": "the issue is still open (closes 2026-10-15) and stands at 2.79× — most demand arrives on the last day, so this is not scored yet"
    },
    {
     "component": "gmp_level",

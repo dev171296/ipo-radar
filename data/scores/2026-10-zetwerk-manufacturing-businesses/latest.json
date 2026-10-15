@@ -1,8 +1,8 @@
 {
  "ipo_id": "2026-10-zetwerk-manufacturing-businesses",
  "name": "Zetwerk Manufacturing Businesses Limited",
- "scored_at": "2026-10-15T07:39:22+00:00",
- "built_from_bundle": "2026-10-15T07:39:22+00:00",
+ "scored_at": "2026-10-15T10:13:08+00:00",
+ "built_from_bundle": "2026-10-15T10:13:08+00:00",
  "fundamentals": {
   "score": null,
   "withheld": "only 20% of this block could be assessed — below the 25% floor, so no score is given",
@@ -67,12 +67,12 @@
    {
     "component": "subscription_level",
     "weight": 26,
-    "why": "the issue is still open (closes 2026-10-19) and stands at 0.021511081577037745× — most demand arrives on the last day, so this is not scored yet"
+    "why": "the issue is still open (closes 2026-10-19) and stands at 0.03721429951431873× — most demand arrives on the last day, so this is not scored yet"
    },
    {
     "component": "subscription_velocity",
     "weight": 14,
-    "why": "need at least two readings to see a rate"
+    "why": "only 2 readings so far — too few to call the pace"
    },
    {
     "component": "gmp_level",
