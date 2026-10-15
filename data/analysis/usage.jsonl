@@ -776,3 +776,5 @@
 {"at": "2026-10-15T07:40:33+00:00", "family": "nvidia", "model": "moonshotai/kimi-k3", "ipo_id": "2026-10-hd-fire-protect"}
 {"at": "2026-10-15T10:13:11+00:00", "family": "groq", "model": "qwen/qwen3.8-27b", "ipo_id": "2026-10-hd-fire-protect"}
 {"at": "2026-10-15T10:13:31+00:00", "family": "nvidia", "model": "google/gemma-4-31b-it (fallback: kimi-k3 failed)", "ipo_id": "2026-10-hd-fire-protect"}
+{"at": "2026-10-15T13:37:17+00:00", "family": "groq", "model": "qwen/qwen3.8-27b", "ipo_id": "2026-10-hd-fire-protect"}
+{"at": "2026-10-15T13:37:31+00:00", "family": "nvidia", "model": "google/gemma-4-31b-it (fallback: kimi-k3 failed)", "ipo_id": "2026-10-hd-fire-protect"}

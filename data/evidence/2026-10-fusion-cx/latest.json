@@ -1,6 +1,6 @@
 {
  "ipo_id": "2026-10-fusion-cx",
- "built_at": "2026-10-15T10:13:08+00:00",
+ "built_at": "2026-10-15T13:37:14+00:00",
  "name": "Fusion CX Limited",
  "symbol": "FUSIONCX",
  "type": "mainboard",
@@ -55,10 +55,10 @@
  "derived": {},
  "demand": {
   "subscription_times": {
-   "value": 0.7293181623931624,
+   "value": 0.8071004273504273,
    "source": "nse_calendar",
    "confidence": "high",
-   "note": "as at 2026-10-15T10:12:34+00:00"
+   "note": "as at 2026-10-15T13:36:49+00:00"
   },
   "subscription_history": {
    "value": [
@@ -85,6 +85,10 @@
     {
      "at": "2026-10-15T10:12:34+00:00",
      "times": 0.7293181623931624
+    },
+    {
+     "at": "2026-10-15T13:36:49+00:00",
+     "times": 0.8071004273504273
     }
    ],
    "source": "nse_calendar",
