@@ -1,8 +1,8 @@
 {
  "ipo_id": "2026-10-sahajanand-medical-technologies",
  "name": "Sahajanand Medical Technologies Limited",
- "scored_at": "2026-10-16T10:03:41+00:00",
- "built_from_bundle": "2026-10-16T10:03:41+00:00",
+ "scored_at": "2026-10-16T13:27:26+00:00",
+ "built_from_bundle": "2026-10-16T13:27:26+00:00",
  "fundamentals": {
   "score": null,
   "withheld": "only 10% of this block could be assessed — below the 25% floor, so no score is given",
@@ -58,22 +58,22 @@
  "demand": {
   "score": null,
   "withheld": "only 14% of this block could be assessed — below the 25% floor, so no score is given",
-  "points_earned": 11.2,
+  "points_earned": 7.0,
   "points_assessed": 14,
   "coverage_pct": 14,
   "components": [
    {
     "component": "subscription_velocity",
     "weight": 14,
-    "points": 11.2,
-    "basis": "27% of final demand was already in at the first reading"
+    "points": 7.0,
+    "basis": "23% of final demand was already in at the first reading"
    }
   ],
   "not_assessed": [
    {
     "component": "subscription_level",
     "weight": 26,
-    "why": "the issue is still open (closes 2026-10-19) and stands at 0.23938129417602125× — most demand arrives on the last day, so this is not scored yet"
+    "why": "the issue is still open (closes 2026-10-19) and stands at 0.2817176627781068× — most demand arrives on the last day, so this is not scored yet"
    },
    {
     "component": "gmp_level",
