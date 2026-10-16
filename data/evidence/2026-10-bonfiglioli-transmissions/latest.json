@@ -1,6 +1,6 @@
 {
  "ipo_id": "2026-10-bonfiglioli-transmissions",
- "built_at": "2026-10-15T17:51:40+00:00",
+ "built_at": "2026-10-16T07:26:15+00:00",
  "name": "Bonfiglioli Transmissions Limited",
  "symbol": "BONFIG",
  "type": "mainboard",
@@ -47,10 +47,10 @@
  "derived": {},
  "demand": {
   "subscription_times": {
-   "value": 0.34321748029296295,
+   "value": 0.5029880461642152,
    "source": "nse_calendar",
    "confidence": "high",
-   "note": "as at 2026-10-15T13:36:49+00:00"
+   "note": "as at 2026-10-16T07:25:40+00:00"
   },
   "subscription_history": {
    "value": [
@@ -65,6 +65,10 @@
     {
      "at": "2026-10-15T13:36:49+00:00",
      "times": 0.34321748029296295
+    },
+    {
+     "at": "2026-10-16T07:25:40+00:00",
+     "times": 0.5029880461642152
     }
    ],
    "source": "nse_calendar",

@@ -1,8 +1,8 @@
 {
  "ipo_id": "2026-10-ravita-engineering-services",
  "name": "Ravita Engineering Services Limited",
- "scored_at": "2026-10-15T17:51:41+00:00",
- "built_from_bundle": "2026-10-15T17:51:41+00:00",
+ "scored_at": "2026-10-16T07:26:16+00:00",
+ "built_from_bundle": "2026-10-16T07:26:16+00:00",
  "fundamentals": {
   "score": null,
   "withheld": null,
@@ -64,14 +64,14 @@
     "component": "subscription_velocity",
     "weight": 14,
     "points": 7.0,
-    "basis": "23% of final demand was already in at the first reading"
+    "basis": "14% of final demand was already in at the first reading"
    }
   ],
   "not_assessed": [
    {
     "component": "subscription_level",
     "weight": 26,
-    "why": "the issue is still open (closes 2026-10-16) and stands at 1.62× — most demand arrives on the last day, so this is not scored yet"
+    "why": "the issue is still open (closes 2026-10-16) and stands at 2.59× — most demand arrives on the last day, so this is not scored yet"
    },
    {
     "component": "gmp_level",

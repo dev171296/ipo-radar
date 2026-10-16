@@ -1,9 +1,9 @@
 {
  "ok": true,
  "model": "qwen/qwen3.8-27b",
- "answered_at": "2026-10-15T13:37:17+00:00",
- "evidence_fingerprint": "2e6eb76e50c80723",
- "prompt_chars": 7611,
+ "answered_at": "2026-10-16T07:27:03+00:00",
+ "evidence_fingerprint": "1c1c3b039aa74fa6",
+ "prompt_chars": 7615,
  "passages_supplied": {
   "litigation": 8,
   "governance": 8,
@@ -13,55 +13,55 @@
  "answer": {
   "listing_view": {
    "score": 85.0,
-   "reasoning": "The subscription surge to 82.4x in the final hours indicates strong retail demand and likely listing-day pop, typical of well-received Indian mainboard IPOs. However, without GMP data or anchor investor details, this is purely a sentiment read rather than a fundamental valuation confirmation."
+   "reasoning": "The subscription data shows a massive acceleration from 2.69x to 82.41x in the final day, indicating strong retail and institutional demand that typically supports a positive listing pop. The price band is narrow (258-271), suggesting the issuer is confident in the valuation, and the high subscription multiple reduces the risk of a weak opening price."
   },
   "longterm_view": {
    "score": 65.0,
-   "reasoning": "The company demonstrates strong operational momentum with a 121% increase in order book and consistent positive free cash flow, suggesting a healthy business model. However, the absence of a 'Basis for Price' chapter and key profitability metrics (ROE/ROCE) in the provided extracts makes it impossible to assess if the current valuation is justified for long-term holding."
+   "reasoning": "The business shows strong operational momentum with an order book (₹1,586.01 million) significantly exceeding the latest quarterly revenue (₹1,090.52 million), implying high visibility for future earnings. However, the lack of balance sheet data, ROE/ROCE figures, and the absence of a 'basis for price' chapter in the provided extracts make it impossible to verify if the current valuation is justified by long-term cash generation or if it is purely sentiment-driven."
   },
   "governance": {
    "score": 50.0,
-   "reasoning": "The prospectus contains standard regulatory language regarding related party disclosures and promoter conflicts, but the specific extracts provided do not reveal any red flags or specific governance mechanisms beyond boilerplate compliance statements."
+   "reasoning": "The prospectus contains standard boilerplate regarding related party transactions and promoter conflicts, but the provided extracts do not reveal specific governance red flags or unique structural protections. Without detailed promoter shareholding percentages or board composition details, a definitive governance assessment cannot be made."
   },
   "key_risks": [
    {
     "risk": "Valuation Opacity",
-    "why_it_matters": "The absence of a 'Basis for Price' chapter prevents an objective assessment of whether the IPO price is fair relative to peers or intrinsic value.",
+    "why_it_matters": "The absence of a 'basis for price' chapter and ROE/ROCE metrics prevents investors from verifying if the ₹271 price point is supported by fundamental earnings power or is inflated for the seller.",
     "citation": "not answerable from what I was given",
     "citation_verified": false
    },
    {
-    "risk": "Premises Dependency",
-    "why_it_matters": "The company relies on third-party facilities for its corporate office, creating a potential operational disruption risk if these arrangements fail.",
-    "citation": "[business, page 245]",
-    "citation_verified": true
+    "risk": "Liquidity/Debt Unknown",
+    "why_it_matters": "While operating cash flow is positive, the inability to read debt or liquidity figures from the balance sheet chapter means the company's leverage and financial flexibility are unverified.",
+    "citation": "not answerable from what I was given",
+    "citation_verified": false
    },
    {
-    "risk": "Intellectual Property",
-    "why_it_matters": "The company explicitly notes that its business may be adversely affected if it fails to protect its intellectual property rights.",
-    "citation": "[business, page 244]",
+    "risk": "Customer Concentration",
+    "why_it_matters": "Top 10 customers account for ~24-28% of revenue, which is moderate but could pose a risk if a major client shifts to a competitor, though the company claims these levels are 'healthy'.",
+    "citation": "[business, page 216]",
     "citation_verified": true
    }
   ],
   "answers": [
    {
-    "question": "Is the IPO priced fairly?",
-    "answer": "Cannot be determined from the provided extracts as the 'Basis for Price' chapter is missing and no valuation multiples are provided.",
+    "question": "Is the IPO priced for the seller?",
+    "answer": "Likely yes, or at least priced optimistically, because the prospectus lacks a 'basis for price' chapter and key profitability metrics (ROE/ROCE) are absent, preventing independent verification of the valuation's fairness to the buyer. The high subscription (82x) suggests the market is accepting the price, but this is a demand-side signal, not a fundamental validation.",
     "citation": "not answerable from what I was given",
     "citation_verified": false
    },
    {
-    "question": "What is the company's financial health?",
-    "answer": "The company generates consistent positive free cash flow and has a growing order book, indicating operational strength, though profitability metrics are not available in the extracts.",
-    "citation": "[business, page 212]",
+    "question": "What is the quality of the business?",
+    "answer": "The business appears operationally strong with a growing order book (₹1,586.01 million) that is roughly 1.45x the latest quarterly revenue, and it claims to be the largest exporter by value in its segment. However, the quality of earnings and capital efficiency cannot be assessed due to missing financial ratios.",
+    "citation": "[business, page 212], [business, page 219]",
     "citation_verified": true
    }
   ],
   "confidence": "low",
-  "what_would_change_my_mind": "Providing the 'Basis for Price' chapter and the three-year financial statements with ROE/ROCE figures would allow for a definitive valuation assessment. Additionally, confirming the split between fresh issue and offer for sale would clarify the dilution impact on existing shareholders.",
+  "what_would_change_my_mind": "Providing the 'Basis for Price' chapter and the full balance sheet (debt/liquidity) would allow me to verify if the 82x subscription is backed by fundamental value or just speculative demand. Seeing the ROE/ROCE trends would clarify if the high valuation is sustainable.",
   "citation_check": {
    "claims_checked": 5,
-   "citations_verified": 3,
+   "citations_verified": 2,
    "citations_not_matching_what_we_sent": 0
   }
  }

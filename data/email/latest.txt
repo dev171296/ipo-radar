@@ -1,13 +1,11 @@
-IPO RADAR — generated 2026-10-15 17:51 UTC
-9 open or upcoming; 47 closed issue(s) left out — see the dashboard
+IPO RADAR — generated 2026-10-16 07:28 UTC
+7 open or upcoming; 49 closed issue(s) left out — see the dashboard
 ============================================================
 Full dashboard: https://dev171296.github.io/ipo-radar/
 
 AT A GLANCE
 ------------------------------------------------------------
 Company                           Closes      Applying          Holding
-HD Fire Protect Limited           2026-10-15  not enough info   not enough info
-Vaibhav Vyapaar Limited           2026-10-15  not enough info   not enough info
 Fusion CX Limited                 2026-10-16  not enough info   not enough info
 Ravita Engineering Services Limi  2026-10-16  not enough info   not enough info
 Bonfiglioli Transmissions Limite  2026-10-19  not enough info   not enough info
@@ -29,13 +27,6 @@ Fusion CX Limited
   mainboard · 2026-10-14 to 2026-10-16 · Rs.275 to Rs.289
   Fundamentals: None (10% assessed)   Demand: None (14% assessed)
 
-HD Fire Protect Limited
-  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
-  mainboard · 2026-10-13 to 2026-10-15 · Rs.258 to Rs.271
-  Fundamentals: None (10% assessed)   Demand: None (14% assessed)
-  groq: listing 85, long-term 65, confidence low
-  nvidia: listing 90, long-term 65, confidence low
-
 Jio Platforms Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
   mainboard · 2026-10-21 to 2026-10-23 · Rs.1065 to Rs.1119
@@ -55,11 +46,6 @@ Tonbo Imaging India Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
   mainboard · 2026-10-15 to 2026-10-19 · Rs.665 to Rs.700
   Fundamentals: None (10% assessed)   Demand: None (14% assessed)
-
-Vaibhav Vyapaar Limited
-  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
-  sme · 2026-10-13 to 2026-10-15 · band not announced
-  Fundamentals: None (0% assessed)   Demand: None (14% assessed)
 
 Zetwerk Manufacturing Businesses Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
