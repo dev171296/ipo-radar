@@ -1,20 +1,10 @@
 {
- "scores": {
-  "listing_view": {
-   "groq": 85.0
-  },
-  "longterm_view": {
-   "groq": 65.0
-  },
-  "governance": {
-   "groq": 50.0
-  }
- },
+ "scores": {},
  "reliability": {
   "groq": {
-   "share": 0.4,
-   "trusted": false,
-   "why": "2 of 5 citations matched the pages we sent"
+   "share": null,
+   "trusted": true,
+   "why": "too few claims to judge"
   },
   "nvidia": {
    "share": null,
@@ -24,10 +14,5 @@
  },
  "disagreements": [],
  "ai_block": {},
- "excluded": [
-  {
-   "model": "groq",
-   "why": "2 of 5 citations matched the pages we sent"
-  }
- ]
+ "excluded": []
 }

@@ -1,5 +1,5 @@
 {
- "built_at": "2026-10-16T07:28:46+00:00",
+ "built_at": "2026-10-16T10:05:29+00:00",
  "listed_ipos": 31,
  "base_rate_pct": 71,
  "average_listing_gain_pct": 14.6,
@@ -555,6 +555,15 @@
   {
    "ipo_id": "2026-10-jio-platforms",
    "name": "Jio Platforms Limited",
+   "status": "issue still open",
+   "listed_on": null,
+   "listing_gain_pct": null,
+   "our_listing_call": null,
+   "right": null
+  },
+  {
+   "ipo_id": "2026-10-paras-healthcare",
+   "name": "Paras Healthcare Limited",
    "status": "issue still open",
    "listed_on": null,
    "listing_gain_pct": null,
