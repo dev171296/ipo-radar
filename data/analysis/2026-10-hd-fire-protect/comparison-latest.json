@@ -1,5 +1,15 @@
 {
- "scores": {},
+ "scores": {
+  "listing_view": {
+   "nvidia": 90.0
+  },
+  "longterm_view": {
+   "nvidia": 65.0
+  },
+  "governance": {
+   "nvidia": 50.0
+  }
+ },
  "reliability": {
   "groq": {
    "share": null,
@@ -7,12 +17,16 @@
    "why": "too few claims to judge"
   },
   "nvidia": {
-   "share": null,
+   "share": 1.0,
    "trusted": true,
-   "why": "too few claims to judge"
+   "why": "2 of 2 citations matched the pages we sent"
   }
  },
  "disagreements": [],
- "ai_block": {},
+ "ai_block": {
+  "listing_view": 90.0,
+  "longterm_view": 65.0,
+  "governance": 50.0
+ },
  "excluded": []
 }
