@@ -2,7 +2,7 @@
  "ipo_id": "2026-09-prasol-chemicals",
  "name": "Prasol Chemicals Limited",
  "symbol": "PRASOLCHEM",
- "graded_at": "2026-10-16T17:40:30+00:00",
+ "graded_at": "2026-10-17T07:07:38+00:00",
  "status": "listed",
  "listed_on": "2026-09-16",
  "issue_price": 676.0,
@@ -20,7 +20,11 @@
    "vs_nifty_pct": 8.61
   },
   "1 month": {
-   "due": "2026-10-16"
+   "date": "2026-10-16",
+   "close": 756.25,
+   "return_pct": 11.87,
+   "nifty_pct": -0.31,
+   "vs_nifty_pct": 12.18
   },
   "3 months": {
    "due": "2026-12-16"

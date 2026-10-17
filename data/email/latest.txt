@@ -1,13 +1,11 @@
-IPO RADAR — generated 2026-10-16 17:40 UTC
-8 open or upcoming; 49 closed issue(s) left out — see the dashboard
+IPO RADAR — generated 2026-10-17 07:07 UTC
+6 open or upcoming; 51 closed issue(s) left out — see the dashboard
 ============================================================
 Full dashboard: https://dev171296.github.io/ipo-radar/
 
 AT A GLANCE
 ------------------------------------------------------------
 Company                           Closes      Applying          Holding
-Fusion CX Limited                 2026-10-16  not enough info   not enough info
-Ravita Engineering Services Limi  2026-10-16  not enough info   not enough info
 Bonfiglioli Transmissions Limite  2026-10-19  not enough info   not enough info
 Sahajanand Medical Technologies   2026-10-19  not enough info   not enough info
 Tonbo Imaging India Limited       2026-10-19  not enough info   not enough info
@@ -23,11 +21,6 @@ Bonfiglioli Transmissions Limited
   mainboard · 2026-10-15 to 2026-10-19 · Rs.558 to Rs.586
   Fundamentals: None (0% assessed)   Demand: None (14% assessed)
 
-Fusion CX Limited
-  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
-  mainboard · 2026-10-14 to 2026-10-16 · Rs.275 to Rs.289
-  Fundamentals: None (10% assessed)   Demand: None (14% assessed)
-
 Jio Platforms Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
   mainboard · 2026-10-21 to 2026-10-23 · Rs.1065 to Rs.1119
@@ -37,11 +30,6 @@ Paras Healthcare Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
   mainboard · 2026-10-21 to 2026-10-23 · Rs.660 to Rs.693
   Fundamentals: None (20% assessed)   Demand: None (0% assessed)
-
-Ravita Engineering Services Limited
-  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
-  sme · 2026-10-14 to 2026-10-16 · band not announced
-  Fundamentals: None (0% assessed)   Demand: None (14% assessed)
 
 Sahajanand Medical Technologies Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION

@@ -1,5 +1,5 @@
 {
- "built_at": "2026-10-16T17:40:30+00:00",
+ "built_at": "2026-10-17T07:07:38+00:00",
  "listed_ipos": 31,
  "base_rate_pct": 71,
  "average_listing_gain_pct": 14.6,
@@ -501,7 +501,7 @@
   {
    "ipo_id": "2026-10-fusion-cx",
    "name": "Fusion CX Limited",
-   "status": "issue still open",
+   "status": "not listed yet",
    "listed_on": null,
    "listing_gain_pct": null,
    "our_listing_call": null,
@@ -510,7 +510,7 @@
   {
    "ipo_id": "2026-10-ravita-engineering-services",
    "name": "Ravita Engineering Services Limited",
-   "status": "issue still open",
+   "status": "not listed yet",
    "listed_on": null,
    "listing_gain_pct": null,
    "our_listing_call": null,

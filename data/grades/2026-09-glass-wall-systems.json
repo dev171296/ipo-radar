@@ -2,7 +2,7 @@
  "ipo_id": "2026-09-glass-wall-systems",
  "name": "Glass Wall Systems (India) Limited",
  "symbol": "GLASSWALL",
- "graded_at": "2026-10-16T17:40:30+00:00",
+ "graded_at": "2026-10-17T07:07:37+00:00",
  "status": "listed",
  "listed_on": "2026-09-16",
  "issue_price": 182.0,
@@ -20,7 +20,11 @@
    "vs_nifty_pct": 56.38
   },
   "1 month": {
-   "due": "2026-10-16"
+   "date": "2026-10-16",
+   "close": 242.6,
+   "return_pct": 33.3,
+   "nifty_pct": -0.31,
+   "vs_nifty_pct": 33.6
   },
   "3 months": {
    "due": "2026-12-16"
