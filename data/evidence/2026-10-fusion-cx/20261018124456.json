@@ -1,0 +1,180 @@
+{
+ "ipo_id": "2026-10-fusion-cx",
+ "built_at": "2026-10-18T12:44:56+00:00",
+ "name": "Fusion CX Limited",
+ "symbol": "FUSIONCX",
+ "type": "mainboard",
+ "status": "open",
+ "offer": {
+  "price_low": {
+   "value": 275.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.275 to Rs.289"
+  },
+  "price_high": {
+   "value": 289.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.275 to Rs.289"
+  },
+  "issue_size_shares": {
+   "value": 14040000.0,
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "issue_size_rs_million": {
+   "value": 4057.56,
+   "source": "computed",
+   "confidence": "high",
+   "note": "shares × top of the price band"
+  },
+  "open_date": {
+   "value": "2026-10-14",
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "close_date": {
+   "value": "2026-10-16",
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "fresh_issue_rs_million": {
+   "value": 5000.0,
+   "source": "abridged prospectus",
+   "confidence": "contradicted",
+   "page": 1,
+   "raw": "fresh issue size offer for sale size total offer size^^ eligibility and reservations fresh issue and offer for sale up to [●] equity shares of face value ₹ 1 each aggregating up to ₹ 5,000.00 million",
+   "note": "read from a table flattened to text — verify before relying on it"
+  }
+ },
+ "financials": {},
+ "valuation": {},
+ "cash": {},
+ "balance_sheet": {},
+ "derived": {},
+ "demand": {
+  "subscription_times": {
+   "value": 3.3267982905982905,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "note": "as at 2026-10-16T17:38:58+00:00"
+  },
+  "subscription_history": {
+   "value": [
+    {
+     "at": "2026-10-13T19:56:14+00:00",
+     "times": 0.0
+    },
+    {
+     "at": "2026-10-14T07:53:58+00:00",
+     "times": 0.15232799145299145
+    },
+    {
+     "at": "2026-10-14T10:28:26+00:00",
+     "times": 0.23552991452991454
+    },
+    {
+     "at": "2026-10-14T13:56:17+00:00",
+     "times": 0.29716944444444443
+    },
+    {
+     "at": "2026-10-15T07:38:53+00:00",
+     "times": 0.565340811965812
+    },
+    {
+     "at": "2026-10-15T10:12:34+00:00",
+     "times": 0.7293181623931624
+    },
+    {
+     "at": "2026-10-15T13:36:49+00:00",
+     "times": 0.8071004273504273
+    },
+    {
+     "at": "2026-10-16T07:25:40+00:00",
+     "times": 1.2657626068376069
+    },
+    {
+     "at": "2026-10-16T10:03:02+00:00",
+     "times": 3.2448858974358976
+    },
+    {
+     "at": "2026-10-16T13:26:55+00:00",
+     "times": 3.3267764957264956
+    },
+    {
+     "at": "2026-10-16T17:38:58+00:00",
+     "times": 3.3267982905982905
+    }
+   ],
+   "source": "nse_calendar",
+   "confidence": "high",
+   "note": "every change we recorded"
+  }
+ },
+ "documents": {
+  "abridged": {
+   "pages": 12,
+   "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/Fusion%20CX%20Limited%20%7C%20Red%20Herring%20Prospectus_p.pdf",
+   "fields": [
+    "cin",
+    "financials",
+    "lead_managers",
+    "objects",
+    "offer_details",
+    "price_band",
+    "promoters",
+    "registrar",
+    "risk_factors"
+   ],
+   "read_at": "2026-10-14T13:56:22+00:00"
+  }
+ },
+ "missing": [
+  {
+   "what": "three-year financials",
+   "why": "abridged prospectus read, but no three-figure rows matched"
+  },
+  {
+   "what": "ROE",
+   "why": "this document does not print it"
+  },
+  {
+   "what": "ROCE",
+   "why": "this document does not print it"
+  },
+  {
+   "what": "grey market premium",
+   "why": "no free source built yet"
+  },
+  {
+   "what": "anchor investor allotment",
+   "why": "not collected yet"
+  },
+  {
+   "what": "broker conviction",
+   "why": "not collected yet"
+  },
+  {
+   "what": "media coverage",
+   "why": "not collected yet"
+  },
+  {
+   "what": "retail attention",
+   "why": "not collected yet"
+  },
+  {
+   "what": "full prospectus",
+   "why": "not downloaded yet — will retry next run"
+  }
+ ],
+ "conflicts": [
+  {
+   "what": "fresh issue is larger than the whole offer",
+   "fresh_issue_rs_million": 5000.0,
+   "issue_size_rs_million": 4057.56,
+   "means": "NSE's share count and the prospectus table do not agree; treat the offer split as unknown until checked by hand"
+  }
+ ],
+ "observations": []
+}
