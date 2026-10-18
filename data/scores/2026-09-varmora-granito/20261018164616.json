@@ -1,0 +1,135 @@
+{
+ "ipo_id": "2026-09-varmora-granito",
+ "name": "Varmora Granito Limited",
+ "scored_at": "2026-10-18T16:46:16+00:00",
+ "built_from_bundle": "2026-10-18T16:46:16+00:00",
+ "fundamentals": {
+  "score": 69.2,
+  "withheld": null,
+  "points_earned": 60.93,
+  "points_assessed": 88,
+  "coverage_pct": 88,
+  "components": [
+   {
+    "component": "valuation_vs_peers",
+    "weight": 18,
+    "points": 9.0,
+    "basis": "48.05× earnings vs 47.12×, against the document's stated average (unverified)"
+   },
+   {
+    "component": "growth_quality",
+    "weight": 14,
+    "points": 4.2,
+    "basis": "revenue CAGR 2.65% a year"
+   },
+   {
+    "component": "cash_flow_quality",
+    "weight": 14,
+    "points": 14.0,
+    "basis": "cash conversion 4.25× of profit after tax"
+   },
+   {
+    "component": "profitability",
+    "weight": 12,
+    "points": 6.48,
+    "basis": "latest profit margin 3.64%, widening"
+   },
+   {
+    "component": "balance_sheet",
+    "weight": 10,
+    "points": 9.25,
+    "basis": "debt-to-equity 0.442; current ratio 1.67"
+   },
+   {
+    "component": "issue_structure",
+    "weight": 10,
+    "points": 8.0,
+    "basis": "64% of the issue is fresh money to the company"
+   },
+   {
+    "component": "filing_hygiene",
+    "weight": 10,
+    "points": 10.0,
+    "basis": "summary form read; 591-page prospectus read; all key fields found; no contradictions"
+   }
+  ],
+  "not_assessed": [
+   {
+    "component": "promoter_governance",
+    "weight": 12,
+    "why": "not built yet"
+   }
+  ]
+ },
+ "demand": {
+  "score": 15.2,
+  "withheld": null,
+  "points_earned": 6.1,
+  "points_assessed": 40,
+  "coverage_pct": 40,
+  "components": [
+   {
+    "component": "subscription_level",
+    "weight": 26,
+    "points": 2.6,
+    "basis": "closed subscribed 0.9725319359857693×"
+   },
+   {
+    "component": "subscription_velocity",
+    "weight": 14,
+    "points": 3.5,
+    "basis": "0% of final demand was already in at the first reading"
+   }
+  ],
+  "not_assessed": [
+   {
+    "component": "gmp_level",
+    "weight": 12,
+    "why": "not built yet"
+   },
+   {
+    "component": "gmp_trend",
+    "weight": 10,
+    "why": "not built yet"
+   },
+   {
+    "component": "anchor_quality",
+    "weight": 12,
+    "why": "not built yet"
+   },
+   {
+    "component": "broker_conviction",
+    "weight": 10,
+    "why": "not built yet"
+   },
+   {
+    "component": "media_coverage",
+    "weight": 8,
+    "why": "not built yet"
+   },
+   {
+    "component": "retail_attention",
+    "weight": 8,
+    "why": "not built yet"
+   }
+  ]
+ },
+ "flags": [
+  {
+   "flag": "under-subscribed",
+   "detail": "closed at 0.9725319359857693× — the issue did not fill",
+   "for_ai": "this usually overrides a good fundamental story"
+  }
+ ],
+ "vetoes": {
+  "triggered": [],
+  "not_tested": [
+   "qualified or adverse audit opinion — needs the prospectus chapters read",
+   "SEBI or criminal proceedings against the promoters — needs the prospectus chapters read",
+   "more than half of revenue from one related party — needs the prospectus chapters read"
+  ]
+ },
+ "listing_score_quant_only": 33.2,
+ "longterm_score_quant_only": 69.2,
+ "status": "quant only — the AI block has not been built, so these are not final verdicts"
+}
