@@ -1,6 +1,6 @@
 {
  "ipo_id": "2026-10-paras-healthcare",
- "built_at": "2026-10-19T15:48:40+00:00",
+ "built_at": "2026-10-19T19:26:45+00:00",
  "name": "Paras Healthcare Limited",
  "symbol": "PARASHLTH",
  "type": "mainboard",
@@ -19,12 +19,12 @@
    "raw": "Rs.660 to Rs.693"
   },
   "issue_size_shares": {
-   "value": 21969695.0,
+   "value": 12083331.0,
    "source": "nse_calendar",
    "confidence": "high"
   },
   "issue_size_rs_million": {
-   "value": 15225.0,
+   "value": 8373.75,
    "source": "computed",
    "confidence": "high",
    "note": "shares × top of the price band"

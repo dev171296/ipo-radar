@@ -1,4 +1,4 @@
-IPO RADAR — generated 2026-10-19 15:49 UTC
+IPO RADAR — generated 2026-10-19 19:27 UTC
 6 open or upcoming; 51 closed issue(s) left out — see the dashboard
 ============================================================
 Full dashboard: https://dev171296.github.io/ipo-radar/
@@ -6,10 +6,10 @@ Full dashboard: https://dev171296.github.io/ipo-radar/
 AT A GLANCE
 ------------------------------------------------------------
 Company                           Closes      Applying          Holding
-Bonfiglioli Transmissions Limite  2026-10-19  not enough info   not enough info
-Sahajanand Medical Technologies   2026-10-19  not enough info   not enough info
-Tonbo Imaging India Limited       2026-10-19  not enough info   not enough info
-Zetwerk Manufacturing Businesses  2026-10-19  not enough info   not enough info
+Bonfiglioli Transmissions Limite  2026-10-19  APPLY             not enough info
+Sahajanand Medical Technologies   2026-10-19  WAIT FOR LISTING  not enough info
+Tonbo Imaging India Limited       2026-10-19  APPLY             not enough info
+Zetwerk Manufacturing Businesses  2026-10-19  AVOID             not enough info
 Jio Platforms Limited             2026-10-23  not enough info   not enough info
 Paras Healthcare Limited          2026-10-23  not enough info   not enough info
 
@@ -17,9 +17,9 @@ THE DETAIL
 ------------------------------------------------------------
 
 Bonfiglioli Transmissions Limited
-  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
+  CALL: applying -> APPLY   |   holding -> NOT ENOUGH INFORMATION
   mainboard · 2026-10-15 to 2026-10-19 · Rs.558 to Rs.586
-  Fundamentals: None (0% assessed)   Demand: None (14% assessed)
+  Fundamentals: None (0% assessed)   Demand: 67.2 (40% assessed)
 
 Jio Platforms Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
@@ -32,19 +32,19 @@ Paras Healthcare Limited
   Fundamentals: None (20% assessed)   Demand: None (0% assessed)
 
 Sahajanand Medical Technologies Limited
-  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
+  CALL: applying -> WAIT FOR LISTING   |   holding -> NOT ENOUGH INFORMATION
   mainboard · 2026-10-15 to 2026-10-19 · Rs.327 to Rs.344
-  Fundamentals: None (10% assessed)   Demand: None (14% assessed)
+  Fundamentals: None (10% assessed)   Demand: 41.2 (40% assessed)
 
 Tonbo Imaging India Limited
-  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
+  CALL: applying -> APPLY   |   holding -> NOT ENOUGH INFORMATION
   mainboard · 2026-10-15 to 2026-10-19 · Rs.665 to Rs.700
-  Fundamentals: None (10% assessed)   Demand: None (14% assessed)
+  Fundamentals: None (10% assessed)   Demand: 73.8 (40% assessed)
 
 Zetwerk Manufacturing Businesses Limited
-  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
+  CALL: applying -> AVOID   |   holding -> NOT ENOUGH INFORMATION
   mainboard · 2026-10-15 to 2026-10-19 · Rs.143 to Rs.151
-  Fundamentals: None (20% assessed)   Demand: None (14% assessed)
+  Fundamentals: None (20% assessed)   Demand: 28.3 (40% assessed)
 
 Dashboard: https://dev171296.github.io/ipo-radar/
 Not investment advice.

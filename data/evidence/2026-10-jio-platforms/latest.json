@@ -1,6 +1,6 @@
 {
  "ipo_id": "2026-10-jio-platforms",
- "built_at": "2026-10-19T15:48:40+00:00",
+ "built_at": "2026-10-19T19:26:45+00:00",
  "name": "Jio Platforms Limited",
  "symbol": "JPL",
  "type": "mainboard",
@@ -19,12 +19,12 @@
    "raw": "Rs.1065 to Rs.1119"
   },
   "issue_size_shares": {
-   "value": 270000000.0,
+   "value": 197525934.0,
    "source": "nse_calendar",
    "confidence": "high"
   },
   "issue_size_rs_million": {
-   "value": 302130.0,
+   "value": 221031.52,
    "source": "computed",
    "confidence": "high",
    "note": "shares × top of the price band"
