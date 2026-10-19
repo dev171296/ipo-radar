@@ -1,6 +1,6 @@
 {
  "ipo_id": "2026-10-zetwerk-manufacturing-businesses",
- "built_at": "2026-10-19T11:05:56+00:00",
+ "built_at": "2026-10-19T15:48:40+00:00",
  "name": "Zetwerk Manufacturing Businesses Limited",
  "symbol": "ZETWERK",
  "type": "mainboard",
@@ -55,10 +55,10 @@
  "derived": {},
  "demand": {
   "subscription_times": {
-   "value": 1.3692457122722332,
+   "value": 1.3724419898118434,
    "source": "nse_calendar",
    "confidence": "high",
-   "note": "as at 2026-10-19T11:05:19+00:00"
+   "note": "as at 2026-10-19T15:48:03+00:00"
   },
   "subscription_history": {
    "value": [
@@ -93,6 +93,10 @@
     {
      "at": "2026-10-19T11:05:19+00:00",
      "times": 1.3692457122722332
+    },
+    {
+     "at": "2026-10-19T15:48:03+00:00",
+     "times": 1.3724419898118434
     }
    ],
    "source": "nse_calendar",
