@@ -2,7 +2,7 @@
  "ipo_id": "2026-09-veegaland-developers",
  "name": "Veegaland Developers Limited",
  "symbol": "VEEGALAND",
- "graded_at": "2026-10-18T16:46:27+00:00",
+ "graded_at": "2026-10-19T08:00:50+00:00",
  "status": "listed",
  "listed_on": "2026-09-18",
  "issue_price": 140.0,
@@ -20,7 +20,9 @@
    "vs_nifty_pct": 1.71
   },
   "1 month": {
-   "due": "2026-10-18"
+   "date": "2026-10-18",
+   "close": 129.63,
+   "return_pct": -7.41
   },
   "3 months": {
    "due": "2026-12-18"
