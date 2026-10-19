@@ -1,6 +1,6 @@
 {
  "ipo_id": "2026-10-tonbo-imaging",
- "built_at": "2026-10-19T08:00:37+00:00",
+ "built_at": "2026-10-19T11:05:56+00:00",
  "name": "Tonbo Imaging India Limited",
  "symbol": "TONBO",
  "type": "mainboard",
@@ -47,10 +47,10 @@
  "derived": {},
  "demand": {
   "subscription_times": {
-   "value": 30.945419634195645,
+   "value": 96.66243128545244,
    "source": "nse_calendar",
    "confidence": "high",
-   "note": "as at 2026-10-19T08:00:06+00:00"
+   "note": "as at 2026-10-19T11:05:19+00:00"
   },
   "subscription_history": {
    "value": [
@@ -81,6 +81,10 @@
     {
      "at": "2026-10-19T08:00:06+00:00",
      "times": 30.945419634195645
+    },
+    {
+     "at": "2026-10-19T11:05:19+00:00",
+     "times": 96.66243128545244
     }
    ],
    "source": "nse_calendar",
