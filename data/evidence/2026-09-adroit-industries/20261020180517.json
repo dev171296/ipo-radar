@@ -1,0 +1,327 @@
+{
+ "ipo_id": "2026-09-adroit-industries",
+ "built_at": "2026-10-20T18:05:17+00:00",
+ "name": "Adroit Industries (India) Limited",
+ "symbol": "ADROITIND",
+ "type": "mainboard",
+ "status": "upcoming",
+ "offer": {
+  "price_low": {
+   "value": 126.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.126 to Rs.134"
+  },
+  "price_high": {
+   "value": 134.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.126 to Rs.134"
+  },
+  "issue_size_shares": {
+   "value": 7872900.0,
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "issue_size_rs_million": {
+   "value": 1054.97,
+   "source": "computed",
+   "confidence": "high",
+   "note": "shares × top of the price band"
+  },
+  "open_date": {
+   "value": "2026-09-23",
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "close_date": {
+   "value": "2026-09-25",
+   "source": "nse_calendar",
+   "confidence": "high"
+  }
+ },
+ "financials": {
+  "ebitda": {
+   "value": [
+    387.1,
+    310.19,
+    296.85
+   ],
+   "source": "abridged prospectus",
+   "confidence": "high",
+   "page": 8,
+   "raw": "EBITDA(3) 387.10 310.19 296.85"
+  },
+  "revenue": {
+   "value": [
+    1399.43,
+    1338.94,
+    1245.28
+   ],
+   "source": "abridged prospectus",
+   "confidence": "high",
+   "page": 9,
+   "raw": "Revenue from operations(1) ₹ in million 1,399.43 1,338.94 1,245.28"
+  }
+ },
+ "valuation": {},
+ "cash": {
+  "operating_cash_flow": {
+   "value": [
+    294.06,
+    203.1,
+    199.36
+   ],
+   "source": "full prospectus (promoters chapter)",
+   "confidence": "high",
+   "page": 387,
+   "raw": "Net Cash flow from / (used in) Operating Activities 294.06 203.10 199.36",
+   "note": "newest year first"
+  },
+  "conversion_vs_ebitda": {
+   "value": 0.76,
+   "source": "computed",
+   "confidence": "high",
+   "note": "1.0 means the reported profit arrived as cash"
+  },
+  "free_cash_flow": {
+   "value": [
+    217.17,
+    113.52,
+    196.5
+   ],
+   "source": "computed",
+   "confidence": "high",
+   "note": "operating cash flow after paying for equipment"
+  },
+  "negative_in_all_years": {
+   "value": false,
+   "source": "computed",
+   "confidence": "high"
+  },
+  "negative_in_latest_year": {
+   "value": false,
+   "source": "computed",
+   "confidence": "high"
+  }
+ },
+ "balance_sheet": {
+  "debt_to_equity": {
+   "value": [
+    0.407,
+    0.626,
+    0.932
+   ],
+   "source": "full prospectus (basis_for_price, promoters)",
+   "confidence": "high",
+   "page": 215,
+   "note": "borrowings ÷ what the owners have in it — computed from total debt ÷ net worth"
+  },
+  "current_ratio": {
+   "value": [
+    1.53,
+    1.44,
+    1.18
+   ],
+   "source": "full prospectus (basis_for_price, promoters)",
+   "confidence": "high",
+   "page": 215,
+   "note": "money due in within a year ÷ money due out — printed in the document"
+  },
+  "receivable_days": {
+   "value": [
+    118.1,
+    108.7,
+    94.0
+   ],
+   "source": "full prospectus (basis_for_price, promoters)",
+   "confidence": "high",
+   "page": 215,
+   "note": "how long customers take to pay"
+  },
+  "total_debt": {
+   "value": [
+    524.0,
+    647.77,
+    818.55
+   ],
+   "source": "full prospectus (basis_for_price, promoters)",
+   "confidence": "high",
+   "page": 215,
+   "note": "borrowings, newest year first"
+  },
+  "net_worth": {
+   "value": [
+    1286.27,
+    1035.28,
+    878.22
+   ],
+   "source": "full prospectus (basis_for_price, promoters)",
+   "confidence": "high",
+   "page": 215,
+   "note": "the owners' stake, newest year first"
+  }
+ },
+ "derived": {
+  "revenue_cagr_2y_pct": {
+   "value": 6.01,
+   "source": "computed",
+   "confidence": "high",
+   "note": "two years of compounding, newest over oldest"
+  },
+  "revenue_growth_latest_pct": {
+   "value": 4.52,
+   "source": "computed",
+   "confidence": "high"
+  },
+  "ebitda_margin_pct": {
+   "value": [
+    27.66,
+    23.17,
+    23.84
+   ],
+   "source": "computed",
+   "confidence": "high"
+  }
+ },
+ "demand": {
+  "subscription_times": {
+   "value": 121.54356895172046,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "note": "as at 2026-09-25T14:03:59+00:00"
+  },
+  "subscription_history": {
+   "value": [
+    {
+     "at": "2026-09-23T07:53:57+00:00",
+     "times": 1.5283736615478414
+    },
+    {
+     "at": "2026-09-23T10:13:14+00:00",
+     "times": 2.4513504553595244
+    },
+    {
+     "at": "2026-09-23T13:47:02+00:00",
+     "times": 3.0569447090652746
+    },
+    {
+     "at": "2026-09-24T07:44:17+00:00",
+     "times": 6.725010478984872
+    },
+    {
+     "at": "2026-09-24T10:22:45+00:00",
+     "times": 9.447315474602751
+    },
+    {
+     "at": "2026-09-24T13:42:31+00:00",
+     "times": 10.899498151888123
+    },
+    {
+     "at": "2026-09-25T08:04:35+00:00",
+     "times": 49.65623328125596
+    },
+    {
+     "at": "2026-09-25T10:26:25+00:00",
+     "times": 118.71838356895172
+    },
+    {
+     "at": "2026-09-25T14:03:59+00:00",
+     "times": 121.54356895172046
+    }
+   ],
+   "source": "nse_calendar",
+   "confidence": "high",
+   "note": "every change we recorded"
+  }
+ },
+ "documents": {
+  "abridged": {
+   "pages": 14,
+   "url": "https://www.sebi.gov.in/sebi_data/commondocs/sep-2026/Adroit%20Industries_p.pdf",
+   "fields": [
+    "cin",
+    "financials",
+    "lead_managers",
+    "objects",
+    "offer_details",
+    "price_band",
+    "promoters",
+    "registrar",
+    "risk_factors"
+   ],
+   "read_at": "2026-09-21T15:16:06+00:00"
+  },
+  "full": {
+   "pages": 600,
+   "url": "https://www.sebi.gov.in/sebi_data/attachdocs/sep-2026/1789986760331.pdf",
+   "chapters": {
+    "capital_structure": [
+     138,
+     187
+    ],
+    "objects": [
+     188,
+     214
+    ],
+    "basis_for_price": [
+     215,
+     305
+    ],
+    "business": [
+     306,
+     386
+    ],
+    "promoters": [
+     387,
+     490
+    ],
+    "litigation": [
+     491,
+     600
+    ]
+   },
+   "read_at": "2026-09-21T15:17:12+00:00"
+  }
+ },
+ "missing": [
+  {
+   "what": "fresh issue vs offer for sale split",
+   "why": "could not be read from the offer details table"
+  },
+  {
+   "what": "ROE",
+   "why": "this document does not print it"
+  },
+  {
+   "what": "ROCE",
+   "why": "this document does not print it"
+  },
+  {
+   "what": "valuation comparison",
+   "why": "no earnings-per-share rows found"
+  },
+  {
+   "what": "grey market premium",
+   "why": "no free source built yet"
+  },
+  {
+   "what": "anchor investor allotment",
+   "why": "not collected yet"
+  },
+  {
+   "what": "broker conviction",
+   "why": "not collected yet"
+  },
+  {
+   "what": "media coverage",
+   "why": "not collected yet"
+  },
+  {
+   "what": "retail attention",
+   "why": "not collected yet"
+  }
+ ],
+ "conflicts": [],
+ "observations": []
+}
