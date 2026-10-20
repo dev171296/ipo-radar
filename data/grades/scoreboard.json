@@ -1,5 +1,5 @@
 {
- "built_at": "2026-10-19T19:27:01+00:00",
+ "built_at": "2026-10-20T07:50:50+00:00",
  "listed_ipos": 31,
  "base_rate_pct": 71,
  "average_listing_gain_pct": 14.6,
@@ -465,7 +465,7 @@
   {
    "ipo_id": "2026-10-grace-cancer-foundation-zczp",
    "name": "Grace Cancer Foundation - ZCZP",
-   "status": "not listed yet",
+   "status": "no listing found in the price files",
    "listed_on": null,
    "listing_gain_pct": null,
    "our_listing_call": null,
@@ -474,7 +474,7 @@
   {
    "ipo_id": "2026-10-smc-global-securities",
    "name": "SMC Global Securities Limited",
-   "status": "not listed yet",
+   "status": "no listing found in the price files",
    "listed_on": null,
    "listing_gain_pct": null,
    "our_listing_call": null,
@@ -519,7 +519,7 @@
   {
    "ipo_id": "2026-10-bonfiglioli-transmissions",
    "name": "Bonfiglioli Transmissions Limited",
-   "status": "issue still open",
+   "status": "not listed yet",
    "listed_on": null,
    "listing_gain_pct": null,
    "our_listing_call": null,
@@ -528,7 +528,7 @@
   {
    "ipo_id": "2026-10-sahajanand-medical-technologies",
    "name": "Sahajanand Medical Technologies Limited",
-   "status": "issue still open",
+   "status": "not listed yet",
    "listed_on": null,
    "listing_gain_pct": null,
    "our_listing_call": null,
@@ -537,7 +537,7 @@
   {
    "ipo_id": "2026-10-tonbo-imaging",
    "name": "Tonbo Imaging India Limited",
-   "status": "issue still open",
+   "status": "not listed yet",
    "listed_on": null,
    "listing_gain_pct": null,
    "our_listing_call": null,
@@ -546,7 +546,7 @@
   {
    "ipo_id": "2026-10-zetwerk-manufacturing-businesses",
    "name": "Zetwerk Manufacturing Businesses Limited",
-   "status": "issue still open",
+   "status": "not listed yet",
    "listed_on": null,
    "listing_gain_pct": null,
    "our_listing_call": null,
