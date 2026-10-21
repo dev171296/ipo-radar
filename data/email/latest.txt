@@ -1,4 +1,4 @@
-IPO RADAR — generated 2026-10-21 10:29 UTC
+IPO RADAR — generated 2026-10-21 14:02 UTC
 2 open or upcoming; 55 closed issue(s) left out — see the dashboard
 ============================================================
 Full dashboard: https://dev171296.github.io/ipo-radar/
@@ -15,12 +15,12 @@ THE DETAIL
 Jio Platforms Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
   mainboard · 2026-10-21 to 2026-10-23 · Rs.1065 to Rs.1119
-  Fundamentals: None (10% assessed)   Demand: None (0% assessed)
+  Fundamentals: None (10% assessed)   Demand: None (14% assessed)
 
 Paras Healthcare Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
   mainboard · 2026-10-21 to 2026-10-23 · Rs.660 to Rs.693
-  Fundamentals: None (20% assessed)   Demand: None (0% assessed)
+  Fundamentals: None (20% assessed)   Demand: None (14% assessed)
 
 Dashboard: https://dev171296.github.io/ipo-radar/
 Not investment advice.

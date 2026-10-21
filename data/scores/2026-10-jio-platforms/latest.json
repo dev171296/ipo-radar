@@ -1,8 +1,8 @@
 {
  "ipo_id": "2026-10-jio-platforms",
  "name": "Jio Platforms Limited",
- "scored_at": "2026-10-21T10:29:25+00:00",
- "built_from_bundle": "2026-10-21T10:29:25+00:00",
+ "scored_at": "2026-10-21T14:02:36+00:00",
+ "built_from_bundle": "2026-10-21T14:02:36+00:00",
  "fundamentals": {
   "score": null,
   "withheld": "only 10% of this block could be assessed — below the 25% floor, so no score is given",
@@ -57,21 +57,23 @@
  },
  "demand": {
   "score": null,
-  "withheld": null,
-  "points_earned": 0.0,
-  "points_assessed": 0,
-  "coverage_pct": 0,
-  "components": [],
+  "withheld": "only 14% of this block could be assessed — below the 25% floor, so no score is given",
+  "points_earned": 14.0,
+  "points_assessed": 14,
+  "coverage_pct": 14,
+  "components": [
+   {
+    "component": "subscription_velocity",
+    "weight": 14,
+    "points": 14.0,
+    "basis": "51% of final demand was already in at the first reading"
+   }
+  ],
   "not_assessed": [
    {
     "component": "subscription_level",
     "weight": 26,
-    "why": "the issue is still open (closes 2026-10-23) and stands at 1.4613398765146455× — most demand arrives on the last day, so this is not scored yet"
-   },
-   {
-    "component": "subscription_velocity",
-    "weight": 14,
-    "why": "only 2 readings so far — too few to call the pace"
+    "why": "the issue is still open (closes 2026-10-23) and stands at 1.7373277576806698× — most demand arrives on the last day, so this is not scored yet"
    },
    {
     "component": "gmp_level",
