@@ -1,6 +1,6 @@
 {
  "ipo_id": "2026-10-paras-healthcare",
- "built_at": "2026-10-21T07:54:41+00:00",
+ "built_at": "2026-10-21T10:29:25+00:00",
  "name": "Paras Healthcare Limited",
  "symbol": "PARASHLTH",
  "type": "mainboard",
@@ -55,16 +55,20 @@
  "derived": {},
  "demand": {
   "subscription_times": {
-   "value": 0.06246299137216385,
+   "value": 0.08233623658906637,
    "source": "nse_calendar",
    "confidence": "high",
-   "note": "as at 2026-10-21T07:54:06+00:00"
+   "note": "as at 2026-10-21T10:28:48+00:00"
   },
   "subscription_history": {
    "value": [
     {
      "at": "2026-10-21T07:54:06+00:00",
      "times": 0.06246299137216385
+    },
+    {
+     "at": "2026-10-21T10:28:48+00:00",
+     "times": 0.08233623658906637
     }
    ],
    "source": "nse_calendar",
