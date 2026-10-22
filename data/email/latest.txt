@@ -1,5 +1,5 @@
-IPO RADAR — generated 2026-10-22 07:51 UTC
-2 open or upcoming; 55 closed issue(s) left out — see the dashboard
+IPO RADAR — generated 2026-10-22 10:29 UTC
+4 open or upcoming; 55 closed issue(s) left out — see the dashboard
 ============================================================
 Full dashboard: https://dev171296.github.io/ipo-radar/
 
@@ -8,9 +8,16 @@ AT A GLANCE
 Company                           Closes      Applying          Holding
 Jio Platforms Limited             2026-10-23  not enough info   not enough info
 Paras Healthcare Limited          2026-10-23  not enough info   not enough info
+EAAA India Alternatives Limited   2026-10-28  not enough info   not enough info
+SFC Environmental Technologies L  2026-10-29  not enough info   not enough info
 
 THE DETAIL
 ------------------------------------------------------------
+
+EAAA India Alternatives Limited
+  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
+  mainboard · 2026-10-26 to 2026-10-28 · Rs.1585 to Rs.1665
+  Fundamentals: None (0% assessed)   Demand: None (0% assessed)
 
 Jio Platforms Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
@@ -21,6 +28,11 @@ Paras Healthcare Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
   mainboard · 2026-10-21 to 2026-10-23 · Rs.660 to Rs.693
   Fundamentals: None (20% assessed)   Demand: None (14% assessed)
+
+SFC Environmental Technologies Limited
+  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
+  mainboard · 2026-10-27 to 2026-10-29 · Rs.313 to Rs.330
+  Fundamentals: None (0% assessed)   Demand: None (0% assessed)
 
 Dashboard: https://dev171296.github.io/ipo-radar/
 Not investment advice.

@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-22T07:50:16+00:00",
-  "count": 57,
+  "generated_at": "2026-10-22T10:28:32+00:00",
+  "count": 59,
   "ipos": [
     {
       "id": "2026-09-a-one-steels",
@@ -798,6 +798,34 @@
         "close_as_given": "19-Oct-2026"
       },
       "price_band": "Rs.143 to Rs.151",
+      "missing": []
+    },
+    {
+      "id": "2026-10-sfc-environmental-technologies",
+      "name": "SFC Environmental Technologies Limited",
+      "type": "mainboard",
+      "status": "upcoming",
+      "dates": {
+        "open": "2026-10-27",
+        "close": "2026-10-29",
+        "open_as_given": "27-Oct-2026",
+        "close_as_given": "29-Oct-2026"
+      },
+      "price_band": "Rs.313 to Rs.330",
+      "missing": []
+    },
+    {
+      "id": "2026-10-eaaa-alternatives",
+      "name": "EAAA India Alternatives Limited",
+      "type": "mainboard",
+      "status": "upcoming",
+      "dates": {
+        "open": "2026-10-26",
+        "close": "2026-10-28",
+        "open_as_given": "26-Oct-2026",
+        "close_as_given": "28-Oct-2026"
+      },
+      "price_band": "Rs.1585 to Rs.1665",
       "missing": []
     }
   ]
