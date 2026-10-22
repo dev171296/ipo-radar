@@ -1,5 +1,5 @@
 {
- "built_at": "2026-10-22T10:29:27+00:00",
+ "built_at": "2026-10-22T14:01:17+00:00",
  "listed_ipos": 32,
  "base_rate_pct": 72,
  "average_listing_gain_pct": 14.9,
@@ -573,6 +573,15 @@
   {
    "ipo_id": "2026-10-eaaa-alternatives",
    "name": "EAAA India Alternatives Limited",
+   "status": "issue still open",
+   "listed_on": null,
+   "listing_gain_pct": null,
+   "our_listing_call": null,
+   "right": null
+  },
+  {
+   "ipo_id": "2026-10-bls-polymers",
+   "name": "BLS Polymers Limited",
    "status": "issue still open",
    "listed_on": null,
    "listing_gain_pct": null,

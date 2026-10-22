@@ -1,6 +1,6 @@
 {
  "ipo_id": "2026-10-sfc-environmental-technologies",
- "built_at": "2026-10-22T10:29:09+00:00",
+ "built_at": "2026-10-22T14:00:59+00:00",
  "name": "SFC Environmental Technologies Limited",
  "symbol": "SFCTECH",
  "type": "mainboard",
@@ -46,11 +46,41 @@
  "balance_sheet": {},
  "derived": {},
  "demand": {},
- "documents": {},
+ "documents": {
+  "abridged": {
+   "pages": 14,
+   "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/SFC%20Environmental%20Technologies%20Ltd.%20%20-%20Abridged%20Prospectus_p.pdf",
+   "fields": [
+    "cin",
+    "financials",
+    "lead_managers",
+    "objects",
+    "offer_details",
+    "price_band",
+    "promoters",
+    "registrar",
+    "risk_factors",
+    "selling_shareholders"
+   ],
+   "read_at": "2026-10-22T14:00:37+00:00"
+  }
+ },
  "missing": [
   {
+   "what": "fresh issue vs offer for sale split",
+   "why": "could not be read from the offer details table"
+  },
+  {
    "what": "three-year financials",
-   "why": "no abridged prospectus on file yet"
+   "why": "abridged prospectus read, but no three-figure rows matched"
+  },
+  {
+   "what": "ROE",
+   "why": "this document does not print it"
+  },
+  {
+   "what": "ROCE",
+   "why": "this document does not print it"
   },
   {
    "what": "subscription",

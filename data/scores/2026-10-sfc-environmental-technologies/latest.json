@@ -1,15 +1,22 @@
 {
  "ipo_id": "2026-10-sfc-environmental-technologies",
  "name": "SFC Environmental Technologies Limited",
- "scored_at": "2026-10-22T10:29:09+00:00",
- "built_from_bundle": "2026-10-22T10:29:09+00:00",
+ "scored_at": "2026-10-22T14:00:59+00:00",
+ "built_from_bundle": "2026-10-22T14:00:59+00:00",
  "fundamentals": {
   "score": null,
-  "withheld": null,
-  "points_earned": 0.0,
-  "points_assessed": 0,
-  "coverage_pct": 0,
-  "components": [],
+  "withheld": "only 10% of this block could be assessed — below the 25% floor, so no score is given",
+  "points_earned": 6.5,
+  "points_assessed": 10,
+  "coverage_pct": 10,
+  "components": [
+   {
+    "component": "filing_hygiene",
+    "weight": 10,
+    "points": 6.5,
+    "basis": "summary form read; all key fields found; no contradictions"
+   }
+  ],
   "not_assessed": [
    {
     "component": "valuation_vs_peers",
@@ -45,11 +52,6 @@
     "component": "issue_structure",
     "weight": 10,
     "why": "fresh issue and total size not both readable"
-   },
-   {
-    "component": "filing_hygiene",
-    "weight": 10,
-    "why": "no documents on file — nothing to judge the paperwork by"
    }
   ]
  },
