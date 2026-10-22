@@ -1,28 +1,28 @@
 {
- "built_at": "2026-10-21T18:13:48+00:00",
- "listed_ipos": 31,
- "base_rate_pct": 71,
- "average_listing_gain_pct": 14.6,
+ "built_at": "2026-10-22T07:51:13+00:00",
+ "listed_ipos": 32,
+ "base_rate_pct": 72,
+ "average_listing_gain_pct": 14.9,
  "predictors": {
   "Our call (rules + both AIs)": {
-   "listing_graded": 31,
-   "listing_right": 24,
+   "listing_graded": 32,
+   "listing_right": 25,
    "no_view": 0,
-   "avg_gain_when_yes": 22.1,
+   "avg_gain_when_yes": 22.2,
    "avg_gain_when_no": -1.2,
    "holding_graded": 0,
    "holding_right": 0,
-   "listing_hit_rate_pct": 77
+   "listing_hit_rate_pct": 78
   },
   "Groq": {
-   "listing_graded": 25,
-   "listing_right": 17,
+   "listing_graded": 26,
+   "listing_right": 18,
    "no_view": 3,
-   "avg_gain_when_yes": 25.6,
+   "avg_gain_when_yes": 25.5,
    "avg_gain_when_no": 2.9,
    "holding_graded": 0,
    "holding_right": 0,
-   "listing_hit_rate_pct": 68
+   "listing_hit_rate_pct": 69
   },
   "Groq — unsuitable models (labelled, kept)": {
    "listing_graded": 1,
@@ -35,14 +35,14 @@
    "listing_hit_rate_pct": 100
   },
   "NVIDIA (Kimi K3)": {
-   "listing_graded": 16,
-   "listing_right": 11,
+   "listing_graded": 17,
+   "listing_right": 12,
    "no_view": 1,
    "avg_gain_when_yes": 23.3,
    "avg_gain_when_no": 14.9,
    "holding_graded": 0,
    "holding_right": 0,
-   "listing_hit_rate_pct": 69
+   "listing_hit_rate_pct": 71
   },
   "Gemini (retired)": {
    "listing_graded": 17,
@@ -483,17 +483,17 @@
   {
    "ipo_id": "2026-10-hd-fire-protect",
    "name": "HD Fire Protect Limited",
-   "status": "not listed yet",
-   "listed_on": null,
-   "listing_gain_pct": null,
-   "our_listing_call": null,
-   "right": null
+   "status": "listed",
+   "listed_on": "2026-10-21",
+   "listing_gain_pct": 23.62,
+   "our_listing_call": "APPLY",
+   "right": true
   },
   {
    "ipo_id": "2026-10-vaibhav-vyapaar",
    "name": "Vaibhav Vyapaar Limited",
-   "status": "not listed yet",
-   "listed_on": null,
+   "status": "listed, but no issue price to measure against",
+   "listed_on": "2026-10-21",
    "listing_gain_pct": null,
    "our_listing_call": null,
    "right": null

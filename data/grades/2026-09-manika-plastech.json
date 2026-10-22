@@ -2,7 +2,7 @@
  "ipo_id": "2026-09-manika-plastech",
  "name": "Manika Plastech Limited",
  "symbol": "MANIKA",
- "graded_at": "2026-10-21T18:13:48+00:00",
+ "graded_at": "2026-10-22T07:51:12+00:00",
  "status": "listed",
  "listed_on": "2026-09-21",
  "issue_price": 43.0,
@@ -20,7 +20,11 @@
    "vs_nifty_pct": -1.08
   },
   "1 month": {
-   "due": "2026-10-21"
+   "date": "2026-10-21",
+   "close": 46.17,
+   "return_pct": 7.37,
+   "nifty_pct": -2.58,
+   "vs_nifty_pct": 9.95
   },
   "3 months": {
    "due": "2026-12-21"
