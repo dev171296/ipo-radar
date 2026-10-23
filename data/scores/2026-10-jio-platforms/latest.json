@@ -1,8 +1,8 @@
 {
  "ipo_id": "2026-10-jio-platforms",
  "name": "Jio Platforms Limited",
- "scored_at": "2026-10-23T07:50:05+00:00",
- "built_from_bundle": "2026-10-23T07:50:05+00:00",
+ "scored_at": "2026-10-23T10:25:19+00:00",
+ "built_from_bundle": "2026-10-23T10:25:19+00:00",
  "fundamentals": {
   "score": null,
   "withheld": "only 10% of this block could be assessed — below the 25% floor, so no score is given",
@@ -66,14 +66,14 @@
     "component": "subscription_velocity",
     "weight": 14,
     "points": 7.0,
-    "basis": "20% of final demand was already in at the first reading"
+    "basis": "11% of final demand was already in at the first reading"
    }
   ],
   "not_assessed": [
    {
     "component": "subscription_level",
     "weight": 26,
-    "why": "the issue is still open (closes 2026-10-23) and stands at 4.467776408539852× — most demand arrives on the last day, so this is not scored yet"
+    "why": "the issue is still open (closes 2026-10-23) and stands at 8.325979514163441× — most demand arrives on the last day, so this is not scored yet"
    },
    {
     "component": "gmp_level",
