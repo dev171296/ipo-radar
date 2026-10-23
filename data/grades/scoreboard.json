@@ -1,18 +1,18 @@
 {
- "built_at": "2026-10-22T18:08:44+00:00",
- "listed_ipos": 32,
- "base_rate_pct": 72,
- "average_listing_gain_pct": 14.9,
+ "built_at": "2026-10-23T07:50:24+00:00",
+ "listed_ipos": 33,
+ "base_rate_pct": 73,
+ "average_listing_gain_pct": 14.6,
  "predictors": {
   "Our call (rules + both AIs)": {
-   "listing_graded": 32,
+   "listing_graded": 33,
    "listing_right": 25,
    "no_view": 0,
    "avg_gain_when_yes": 22.2,
-   "avg_gain_when_no": -1.2,
+   "avg_gain_when_no": -0.6,
    "holding_graded": 0,
    "holding_right": 0,
-   "listing_hit_rate_pct": 78
+   "listing_hit_rate_pct": 76
   },
   "Groq": {
    "listing_graded": 26,
@@ -501,17 +501,17 @@
   {
    "ipo_id": "2026-10-fusion-cx",
    "name": "Fusion CX Limited",
-   "status": "not listed yet",
-   "listed_on": null,
-   "listing_gain_pct": null,
-   "our_listing_call": null,
-   "right": null
+   "status": "listed",
+   "listed_on": "2026-10-22",
+   "listing_gain_pct": 5.54,
+   "our_listing_call": "WAIT FOR LISTING",
+   "right": false
   },
   {
    "ipo_id": "2026-10-ravita-engineering-services",
    "name": "Ravita Engineering Services Limited",
-   "status": "not listed yet",
-   "listed_on": null,
+   "status": "listed, but no issue price to measure against",
+   "listed_on": "2026-10-22",
    "listing_gain_pct": null,
    "our_listing_call": null,
    "right": null
