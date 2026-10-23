@@ -1,5 +1,5 @@
-IPO RADAR — generated 2026-10-23 10:25 UTC
-5 open or upcoming; 55 closed issue(s) left out — see the dashboard
+IPO RADAR — generated 2026-10-23 13:43 UTC
+6 open or upcoming; 55 closed issue(s) left out — see the dashboard
 ============================================================
 Full dashboard: https://dev171296.github.io/ipo-radar/
 
@@ -11,6 +11,7 @@ Paras Healthcare Limited          2026-10-23  not enough info   not enough info
 EAAA India Alternatives Limited   2026-10-28  not enough info   not enough info
 BLS Polymers Limited              2026-10-29  not enough info   not enough info
 SFC Environmental Technologies L  2026-10-29  not enough info   not enough info
+M. K. Sons Fine Jewels Limited    2026-10-30  not enough info   not enough info
 
 THE DETAIL
 ------------------------------------------------------------
@@ -29,6 +30,11 @@ Jio Platforms Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
   mainboard · 2026-10-21 to 2026-10-23 · Rs.1065 to Rs.1119
   Fundamentals: None (10% assessed)   Demand: None (14% assessed)
+
+M. K. Sons Fine Jewels Limited
+  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
+  mainboard · 2026-10-28 to 2026-10-30 · Rs.153 to Rs.162
+  Fundamentals: None (0% assessed)   Demand: None (0% assessed)
 
 Paras Healthcare Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION

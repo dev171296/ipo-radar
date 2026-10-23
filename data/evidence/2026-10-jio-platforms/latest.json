@@ -1,6 +1,6 @@
 {
  "ipo_id": "2026-10-jio-platforms",
- "built_at": "2026-10-23T10:25:19+00:00",
+ "built_at": "2026-10-23T13:43:29+00:00",
  "name": "Jio Platforms Limited",
  "symbol": "JPL",
  "type": "mainboard",
@@ -47,10 +47,10 @@
  "derived": {},
  "demand": {
   "subscription_times": {
-   "value": 8.325979514163441,
+   "value": 12.453477992413898,
    "source": "nse_calendar",
    "confidence": "high",
-   "note": "as at 2026-10-23T10:24:42+00:00"
+   "note": "as at 2026-10-23T13:42:42+00:00"
   },
   "subscription_history": {
    "value": [
@@ -85,6 +85,10 @@
     {
      "at": "2026-10-23T10:24:42+00:00",
      "times": 8.325979514163441
+    },
+    {
+     "at": "2026-10-23T13:42:42+00:00",
+     "times": 12.453477992413898
     }
    ],
    "source": "nse_calendar",

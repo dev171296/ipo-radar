@@ -1,0 +1,116 @@
+{
+ "ipo_id": "2026-10-sfc-environmental-technologies",
+ "built_at": "2026-10-23T13:43:29+00:00",
+ "name": "SFC Environmental Technologies Limited",
+ "symbol": "SFCTECH",
+ "type": "mainboard",
+ "status": "upcoming",
+ "offer": {
+  "price_low": {
+   "value": 313.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.313 to Rs.330"
+  },
+  "price_high": {
+   "value": 330.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.313 to Rs.330"
+  },
+  "issue_size_shares": {
+   "value": 20475082.0,
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "issue_size_rs_million": {
+   "value": 6756.78,
+   "source": "computed",
+   "confidence": "high",
+   "note": "shares × top of the price band"
+  },
+  "open_date": {
+   "value": "2026-10-27",
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "close_date": {
+   "value": "2026-10-29",
+   "source": "nse_calendar",
+   "confidence": "high"
+  }
+ },
+ "financials": {},
+ "valuation": {},
+ "cash": {},
+ "balance_sheet": {},
+ "derived": {},
+ "demand": {},
+ "documents": {
+  "abridged": {
+   "pages": 14,
+   "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/SFC%20Environmental%20Technologies%20Ltd.%20%20-%20Abridged%20Prospectus_p.pdf",
+   "fields": [
+    "cin",
+    "financials",
+    "lead_managers",
+    "objects",
+    "offer_details",
+    "price_band",
+    "promoters",
+    "registrar",
+    "risk_factors",
+    "selling_shareholders"
+   ],
+   "read_at": "2026-10-22T14:00:37+00:00"
+  }
+ },
+ "missing": [
+  {
+   "what": "fresh issue vs offer for sale split",
+   "why": "could not be read from the offer details table"
+  },
+  {
+   "what": "three-year financials",
+   "why": "abridged prospectus read, but no three-figure rows matched"
+  },
+  {
+   "what": "ROE",
+   "why": "this document does not print it"
+  },
+  {
+   "what": "ROCE",
+   "why": "this document does not print it"
+  },
+  {
+   "what": "subscription",
+   "why": "the issue has not opened yet"
+  },
+  {
+   "what": "grey market premium",
+   "why": "no free source built yet"
+  },
+  {
+   "what": "anchor investor allotment",
+   "why": "not collected yet"
+  },
+  {
+   "what": "broker conviction",
+   "why": "not collected yet"
+  },
+  {
+   "what": "media coverage",
+   "why": "not collected yet"
+  },
+  {
+   "what": "retail attention",
+   "why": "not collected yet"
+  },
+  {
+   "what": "full prospectus",
+   "why": "not downloaded yet — will retry next run"
+  }
+ ],
+ "conflicts": [],
+ "observations": []
+}

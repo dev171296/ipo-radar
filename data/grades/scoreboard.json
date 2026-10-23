@@ -1,5 +1,5 @@
 {
- "built_at": "2026-10-23T10:25:30+00:00",
+ "built_at": "2026-10-23T13:43:47+00:00",
  "listed_ipos": 33,
  "base_rate_pct": 73,
  "average_listing_gain_pct": 14.6,
@@ -591,6 +591,15 @@
   {
    "ipo_id": "2026-10-sfc-environmental-technologies",
    "name": "SFC Environmental Technologies Limited",
+   "status": "issue still open",
+   "listed_on": null,
+   "listing_gain_pct": null,
+   "our_listing_call": null,
+   "right": null
+  },
+  {
+   "ipo_id": "2026-10-m-k-sons-fine-jewels",
+   "name": "M. K. Sons Fine Jewels Limited",
    "status": "issue still open",
    "listed_on": null,
    "listing_gain_pct": null,
