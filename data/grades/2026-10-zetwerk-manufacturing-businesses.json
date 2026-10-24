@@ -2,6 +2,72 @@
  "ipo_id": "2026-10-zetwerk-manufacturing-businesses",
  "name": "Zetwerk Manufacturing Businesses Limited",
  "symbol": "ZETWERK",
- "graded_at": "2026-10-23T17:57:17+00:00",
- "status": "not listed yet"
+ "graded_at": "2026-10-24T07:32:03+00:00",
+ "status": "listed",
+ "listed_on": "2026-10-23",
+ "issue_price": 151.0,
+ "issue_price_note": "top of the price band — the price nearly every Indian IPO is finally set at",
+ "listing_open": 159.25,
+ "listing_close": 138.25,
+ "listing_gain_pct": 5.46,
+ "listing_day_close_pct": -8.44,
+ "checkpoints": {
+  "1 week": {
+   "due": "2026-10-30"
+  },
+  "1 month": {
+   "due": "2026-11-22"
+  },
+  "3 months": {
+   "due": "2027-01-22"
+  },
+  "6 months": {
+   "due": "2027-04-23"
+  },
+  "12 months": {
+   "due": "2027-10-23"
+  }
+ },
+ "predictions": {
+  "cutoff_utc": "20261023034500",
+  "score_taken_at": "20261022180826",
+  "fundamentals": null,
+  "call": {
+   "listing": {
+    "call": "AVOID",
+    "colour": "#a32d22",
+    "score": 28.3,
+    "confidence": "low",
+    "why": "built from market demand — 50% of the deciding weight",
+    "based_on": [
+     "market demand"
+    ]
+   },
+   "longterm": {
+    "call": "NOT ENOUGH INFORMATION",
+    "colour": "#6b6862",
+    "score": null,
+    "confidence": "none",
+    "why": "only 0% of what decides the long-term call is available — no call is better than a guess dressed as one",
+    "based_on": []
+   },
+   "hard_stops": [],
+   "serious_findings": [],
+   "models_disagree": false
+  },
+  "models": {}
+ },
+ "marks": {
+  "our_call": {
+   "listing": {
+    "said": "AVOID",
+    "right": false
+   },
+   "holding": {
+    "said": "NOT ENOUGH INFORMATION",
+    "right": null,
+    "due": "2027-01-22"
+   }
+  }
+ }
 }

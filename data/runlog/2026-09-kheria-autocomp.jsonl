@@ -157,3 +157,4 @@
 {"at": "2026-10-23T10:24:44+00:00", "event": "prospectus_not_found", "ok": false, "source": "sebi"}
 {"at": "2026-10-23T13:42:44+00:00", "event": "prospectus_not_found", "ok": false, "source": "sebi"}
 {"at": "2026-10-23T17:56:18+00:00", "event": "prospectus_not_found", "ok": false, "source": "sebi"}
+{"at": "2026-10-24T07:31:07+00:00", "event": "prospectus_not_found", "ok": false, "source": "sebi"}
