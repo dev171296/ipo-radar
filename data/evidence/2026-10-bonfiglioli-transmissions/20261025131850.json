@@ -1,0 +1,132 @@
+{
+ "ipo_id": "2026-10-bonfiglioli-transmissions",
+ "built_at": "2026-10-25T13:18:50+00:00",
+ "name": "Bonfiglioli Transmissions Limited",
+ "symbol": "BONFIG",
+ "type": "mainboard",
+ "status": "open",
+ "offer": {
+  "price_low": {
+   "value": 558.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.558 to Rs.586"
+  },
+  "price_high": {
+   "value": 586.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.558 to Rs.586"
+  },
+  "issue_size_shares": {
+   "value": 30282330.0,
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "issue_size_rs_million": {
+   "value": 17745.45,
+   "source": "computed",
+   "confidence": "high",
+   "note": "shares × top of the price band"
+  },
+  "open_date": {
+   "value": "2026-10-15",
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "close_date": {
+   "value": "2026-10-19",
+   "source": "nse_calendar",
+   "confidence": "high"
+  }
+ },
+ "financials": {},
+ "valuation": {},
+ "cash": {},
+ "balance_sheet": {},
+ "derived": {},
+ "demand": {
+  "subscription_times": {
+   "value": 31.76523900241494,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "note": "as at 2026-10-19T15:48:03+00:00"
+  },
+  "subscription_history": {
+   "value": [
+    {
+     "at": "2026-10-15T07:38:53+00:00",
+     "times": 0.15990513279526378
+    },
+    {
+     "at": "2026-10-15T10:12:34+00:00",
+     "times": 0.29795345998805245
+    },
+    {
+     "at": "2026-10-15T13:36:49+00:00",
+     "times": 0.34321748029296295
+    },
+    {
+     "at": "2026-10-16T07:25:40+00:00",
+     "times": 0.5029880461642152
+    },
+    {
+     "at": "2026-10-16T10:03:02+00:00",
+     "times": 0.6205822009072618
+    },
+    {
+     "at": "2026-10-16T13:26:55+00:00",
+     "times": 0.7071277210175043
+    },
+    {
+     "at": "2026-10-19T08:00:06+00:00",
+     "times": 6.62763978201149
+    },
+    {
+     "at": "2026-10-19T11:05:19+00:00",
+     "times": 31.69766576746241
+    },
+    {
+     "at": "2026-10-19T15:48:03+00:00",
+     "times": 31.76523900241494
+    }
+   ],
+   "source": "nse_calendar",
+   "confidence": "high",
+   "note": "every change we recorded"
+  }
+ },
+ "documents": {},
+ "missing": [
+  {
+   "what": "three-year financials",
+   "why": "no abridged prospectus on file yet"
+  },
+  {
+   "what": "grey market premium",
+   "why": "no free source built yet"
+  },
+  {
+   "what": "anchor investor allotment",
+   "why": "not collected yet"
+  },
+  {
+   "what": "broker conviction",
+   "why": "not collected yet"
+  },
+  {
+   "what": "media coverage",
+   "why": "not collected yet"
+  },
+  {
+   "what": "retail attention",
+   "why": "not collected yet"
+  },
+  {
+   "what": "full prospectus",
+   "why": "not downloaded yet — will retry next run"
+  }
+ ],
+ "conflicts": [],
+ "observations": []
+}
