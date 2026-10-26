@@ -2,7 +2,7 @@
  "ipo_id": "2026-09-sonaselection",
  "name": "Sonaselection India Limited",
  "symbol": "SONA",
- "graded_at": "2026-10-25T17:12:02+00:00",
+ "graded_at": "2026-10-26T08:01:30+00:00",
  "status": "listed",
  "listed_on": "2026-09-24",
  "issue_price": 99.0,
@@ -20,8 +20,9 @@
    "vs_nifty_pct": -3.82
   },
   "1 month": {
-   "due": "2026-10-24",
-   "note": "no price found"
+   "date": "2026-10-25",
+   "close": 94.37,
+   "return_pct": -4.68
   },
   "3 months": {
    "due": "2026-12-24"

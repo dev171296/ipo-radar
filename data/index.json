@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T17:11:03+00:00",
+  "generated_at": "2026-10-26T08:00:20+00:00",
   "count": 61,
   "ipos": [
     {
@@ -650,7 +650,7 @@
       "id": "2026-10-eaaa-alternatives",
       "name": "EAAA India Alternatives Limited",
       "type": "mainboard",
-      "status": "upcoming",
+      "status": "open",
       "dates": {
         "open": "2026-10-26",
         "close": "2026-10-28",

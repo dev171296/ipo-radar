@@ -1,8 +1,8 @@
 {
  "ipo_id": "2026-10-eaaa-alternatives",
  "name": "EAAA India Alternatives Limited",
- "scored_at": "2026-10-25T17:11:44+00:00",
- "built_from_bundle": "2026-10-25T17:11:44+00:00",
+ "scored_at": "2026-10-26T08:01:11+00:00",
+ "built_from_bundle": "2026-10-26T08:01:11+00:00",
  "fundamentals": {
   "score": null,
   "withheld": null,
@@ -64,7 +64,7 @@
    {
     "component": "subscription_level",
     "weight": 26,
-    "why": "no subscription figure yet"
+    "why": "the issue is still open (closes 2026-10-28) and stands at 0.049039338949265654× — most demand arrives on the last day, so this is not scored yet"
    },
    {
     "component": "subscription_velocity",

@@ -8,7 +8,7 @@
   "name": "EAAA India Alternatives Limited",
   "symbol": "EDELALTS",
   "type": "mainboard",
-  "status": "upcoming",
+  "status": "open",
   "dates": {
     "open": "2026-10-26",
     "close": "2026-10-28",
@@ -18,15 +18,15 @@
   "price_band": "Rs.1585 to Rs.1665",
   "issue_size_shares": 5299684.0,
   "subscription": {
-    "times": null,
-    "shares_offered": null,
-    "shares_bid": null
+    "times": 0.049039338949265654,
+    "shares_offered": 5299684.0,
+    "shares_bid": 259893.0
   },
   "also_on_bse": false,
   "sources": {
     "calendar": "nse",
-    "fetched_at": "2026-10-25T17:11:03+00:00"
+    "fetched_at": "2026-10-26T08:00:20+00:00"
   },
   "missing": [],
-  "rebuilt_at": "2026-10-25T17:11:03+00:00"
+  "rebuilt_at": "2026-10-26T08:00:20+00:00"
 }
