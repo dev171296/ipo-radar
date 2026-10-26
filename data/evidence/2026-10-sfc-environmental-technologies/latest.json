@@ -1,6 +1,6 @@
 {
  "ipo_id": "2026-10-sfc-environmental-technologies",
- "built_at": "2026-10-26T11:25:50+00:00",
+ "built_at": "2026-10-26T15:23:39+00:00",
  "name": "SFC Environmental Technologies Limited",
  "symbol": "SFCTECH",
  "type": "mainboard",
@@ -19,12 +19,12 @@
    "raw": "Rs.313 to Rs.330"
   },
   "issue_size_shares": {
-   "value": 20475082.0,
+   "value": 14159744.0,
    "source": "nse_calendar",
    "confidence": "high"
   },
   "issue_size_rs_million": {
-   "value": 6756.78,
+   "value": 4672.72,
    "source": "computed",
    "confidence": "high",
    "note": "shares × top of the price band"

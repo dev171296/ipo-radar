@@ -1,6 +1,6 @@
 {
  "ipo_id": "2026-10-bls-polymers",
- "built_at": "2026-10-26T11:25:50+00:00",
+ "built_at": "2026-10-26T15:23:39+00:00",
  "name": "BLS Polymers Limited",
  "symbol": "BLSPOLY",
  "type": "mainboard",
@@ -19,12 +19,12 @@
    "raw": "Rs.142 to Rs.150"
   },
   "issue_size_shares": {
-   "value": 17000000.0,
+   "value": 11900000.0,
    "source": "nse_calendar",
    "confidence": "high"
   },
   "issue_size_rs_million": {
-   "value": 2550.0,
+   "value": 1785.0,
    "source": "computed",
    "confidence": "high",
    "note": "shares × top of the price band"

@@ -1,0 +1,133 @@
+{
+ "ipo_id": "2026-09-orient-cables",
+ "name": "Orient Cables (India) Limited",
+ "scored_at": "2026-10-26T15:23:36+00:00",
+ "built_from_bundle": "2026-10-26T15:23:36+00:00",
+ "fundamentals": {
+  "score": 88.9,
+  "withheld": null,
+  "points_earned": 33.8,
+  "points_assessed": 38,
+  "coverage_pct": 38,
+  "components": [
+   {
+    "component": "valuation_vs_peers",
+    "weight": 18,
+    "points": 15.3,
+    "basis": "51.61× earnings vs 128.11×, against the document's stated average (unverified)"
+   },
+   {
+    "component": "issue_structure",
+    "weight": 10,
+    "points": 10.0,
+    "basis": "79% of the issue is fresh money to the company"
+   },
+   {
+    "component": "filing_hygiene",
+    "weight": 10,
+    "points": 8.5,
+    "basis": "summary form read; 491-page prospectus read; no contradictions"
+   }
+  ],
+  "not_assessed": [
+   {
+    "component": "growth_quality",
+    "weight": 14,
+    "why": "no three-year revenue on file"
+   },
+   {
+    "component": "cash_flow_quality",
+    "weight": 14,
+    "why": "no cash flow statement read"
+   },
+   {
+    "component": "profitability",
+    "weight": 12,
+    "why": "no profit and revenue pair on file"
+   },
+   {
+    "component": "promoter_governance",
+    "weight": 12,
+    "why": "not built yet"
+   },
+   {
+    "component": "balance_sheet",
+    "weight": 10,
+    "why": "no debt or liquidity figure read"
+   }
+  ]
+ },
+ "demand": {
+  "score": 73.8,
+  "withheld": null,
+  "points_earned": 29.5,
+  "points_assessed": 40,
+  "coverage_pct": 40,
+  "components": [
+   {
+    "component": "subscription_level",
+    "weight": 26,
+    "points": 26.0,
+    "basis": "closed subscribed 61.86422575322285×"
+   },
+   {
+    "component": "subscription_velocity",
+    "weight": 14,
+    "points": 3.5,
+    "basis": "1% of final demand was already in at the first reading"
+   }
+  ],
+  "not_assessed": [
+   {
+    "component": "gmp_level",
+    "weight": 12,
+    "why": "not built yet"
+   },
+   {
+    "component": "gmp_trend",
+    "weight": 10,
+    "why": "not built yet"
+   },
+   {
+    "component": "anchor_quality",
+    "weight": 12,
+    "why": "not built yet"
+   },
+   {
+    "component": "broker_conviction",
+    "weight": 10,
+    "why": "not built yet"
+   },
+   {
+    "component": "media_coverage",
+    "weight": 8,
+    "why": "not built yet"
+   },
+   {
+    "component": "retail_attention",
+    "weight": 8,
+    "why": "not built yet"
+   }
+  ]
+ },
+ "flags": [
+  {
+   "flag": "priced far below its stated peer group",
+   "detail": "51.61× against 128.11× — a 60% discount",
+   "for_ai": "is the peer set fairly chosen, and are the peers themselves expensive rather than this being cheap?"
+  }
+ ],
+ "vetoes": {
+  "triggered": [],
+  "not_tested": [
+   "three years of profit not on file",
+   "three years of revenue not on file",
+   "qualified or adverse audit opinion — needs the prospectus chapters read",
+   "SEBI or criminal proceedings against the promoters — needs the prospectus chapters read",
+   "more than half of revenue from one related party — needs the prospectus chapters read"
+  ]
+ },
+ "listing_score_quant_only": 78.8,
+ "longterm_score_quant_only": 88.9,
+ "status": "quant only — the AI block has not been built, so these are not final verdicts"
+}

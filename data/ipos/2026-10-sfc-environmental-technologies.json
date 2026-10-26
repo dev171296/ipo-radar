@@ -16,7 +16,7 @@
     "close_as_given": "29-Oct-2026"
   },
   "price_band": "Rs.313 to Rs.330",
-  "issue_size_shares": 20475082.0,
+  "issue_size_shares": 14159744.0,
   "subscription": {
     "times": null,
     "shares_offered": null,
@@ -25,8 +25,8 @@
   "also_on_bse": false,
   "sources": {
     "calendar": "nse",
-    "fetched_at": "2026-10-26T11:24:33+00:00"
+    "fetched_at": "2026-10-26T15:22:19+00:00"
   },
   "missing": [],
-  "rebuilt_at": "2026-10-26T11:24:33+00:00"
+  "rebuilt_at": "2026-10-26T15:22:19+00:00"
 }

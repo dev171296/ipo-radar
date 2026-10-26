@@ -1,5 +1,5 @@
 {
- "built_at": "2026-10-26T11:26:07+00:00",
+ "built_at": "2026-10-26T15:23:49+00:00",
  "listed_ipos": 37,
  "base_rate_pct": 73,
  "average_listing_gain_pct": 15.2,
@@ -600,6 +600,15 @@
   {
    "ipo_id": "2026-10-m-k-sons-fine-jewels",
    "name": "M. K. Sons Fine Jewels Limited",
+   "status": "issue still open",
+   "listed_on": null,
+   "listing_gain_pct": null,
+   "our_listing_call": null,
+   "right": null
+  },
+  {
+   "ipo_id": "2026-10-bombay-coated-and-special-steels",
+   "name": "Bombay Coated and Special Steels Limited",
    "status": "issue still open",
    "listed_on": null,
    "listing_gain_pct": null,

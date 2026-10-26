@@ -1,5 +1,5 @@
-IPO RADAR — generated 2026-10-26 11:26 UTC
-4 open or upcoming; 57 closed issue(s) left out — see the dashboard
+IPO RADAR — generated 2026-10-26 15:23 UTC
+5 open or upcoming; 57 closed issue(s) left out — see the dashboard
 ============================================================
 Full dashboard: https://dev171296.github.io/ipo-radar/
 
@@ -10,6 +10,7 @@ EAAA India Alternatives Limited   2026-10-28  not enough info   not enough info
 BLS Polymers Limited              2026-10-29  not enough info   not enough info
 SFC Environmental Technologies L  2026-10-29  not enough info   not enough info
 M. K. Sons Fine Jewels Limited    2026-10-30  not enough info   not enough info
+Bombay Coated and Special Steels  2026-11-02  not enough info   not enough info
 
 THE DETAIL
 ------------------------------------------------------------
@@ -19,10 +20,15 @@ BLS Polymers Limited
   mainboard · 2026-10-27 to 2026-10-29 · Rs.142 to Rs.150
   Fundamentals: None (10% assessed)   Demand: None (0% assessed)
 
+Bombay Coated and Special Steels Limited
+  CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
+  mainboard · 2026-10-29 to 2026-11-02 · Rs.78 to Rs.82
+  Fundamentals: None (0% assessed)   Demand: None (0% assessed)
+
 EAAA India Alternatives Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
   mainboard · 2026-10-26 to 2026-10-28 · Rs.1585 to Rs.1665
-  Fundamentals: None (0% assessed)   Demand: None (0% assessed)
+  Fundamentals: None (0% assessed)   Demand: None (14% assessed)
 
 M. K. Sons Fine Jewels Limited
   CALL: applying -> NOT ENOUGH INFORMATION   |   holding -> NOT ENOUGH INFORMATION
