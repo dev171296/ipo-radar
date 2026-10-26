@@ -1,0 +1,165 @@
+{
+ "ipo_id": "2026-10-jio-platforms",
+ "built_at": "2026-10-26T11:25:50+00:00",
+ "name": "Jio Platforms Limited",
+ "symbol": "JPL",
+ "type": "mainboard",
+ "status": "open",
+ "offer": {
+  "price_low": {
+   "value": 1065.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.1065 to Rs.1119"
+  },
+  "price_high": {
+   "value": 1119.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.1065 to Rs.1119"
+  },
+  "issue_size_shares": {
+   "value": 197525934.0,
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "issue_size_rs_million": {
+   "value": 221031.52,
+   "source": "computed",
+   "confidence": "high",
+   "note": "shares × top of the price band"
+  },
+  "open_date": {
+   "value": "2026-10-21",
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "close_date": {
+   "value": "2026-10-23",
+   "source": "nse_calendar",
+   "confidence": "high"
+  }
+ },
+ "financials": {},
+ "valuation": {},
+ "cash": {},
+ "balance_sheet": {},
+ "derived": {},
+ "demand": {
+  "subscription_times": {
+   "value": 12.453487105141344,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "note": "as at 2026-10-23T17:56:16+00:00"
+  },
+  "subscription_history": {
+   "value": [
+    {
+     "at": "2026-10-21T07:54:06+00:00",
+     "times": 0.8846579305378706
+    },
+    {
+     "at": "2026-10-21T10:28:48+00:00",
+     "times": 1.4613398765146455
+    },
+    {
+     "at": "2026-10-21T14:01:54+00:00",
+     "times": 1.7373277576806698
+    },
+    {
+     "at": "2026-10-22T07:50:16+00:00",
+     "times": 2.2635360681296666
+    },
+    {
+     "at": "2026-10-22T10:28:32+00:00",
+     "times": 2.620856864294083
+    },
+    {
+     "at": "2026-10-22T14:00:16+00:00",
+     "times": 3.129715817468303
+    },
+    {
+     "at": "2026-10-23T07:49:21+00:00",
+     "times": 4.467776408539852
+    },
+    {
+     "at": "2026-10-23T10:24:42+00:00",
+     "times": 8.325979514163441
+    },
+    {
+     "at": "2026-10-23T13:42:42+00:00",
+     "times": 12.453477992413898
+    },
+    {
+     "at": "2026-10-23T17:56:16+00:00",
+     "times": 12.453487105141344
+    }
+   ],
+   "source": "nse_calendar",
+   "confidence": "high",
+   "note": "every change we recorded"
+  }
+ },
+ "documents": {
+  "abridged": {
+   "pages": 17,
+   "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/Jio%20Platforms%20Limited%20-%20Red%20Herring%20Prospectus%20and%20Abridged%20Prospectus_p.pdf",
+   "fields": [
+    "cin",
+    "financials",
+    "lead_managers",
+    "objects",
+    "price_band",
+    "promoters",
+    "registrar",
+    "reservation",
+    "risk_factors"
+   ],
+   "read_at": "2026-10-15T17:51:23+00:00"
+  }
+ },
+ "missing": [
+  {
+   "what": "fresh issue vs offer for sale split",
+   "why": "could not be read from the offer details table"
+  },
+  {
+   "what": "three-year financials",
+   "why": "abridged prospectus read, but no three-figure rows matched"
+  },
+  {
+   "what": "ROE",
+   "why": "this document does not print it"
+  },
+  {
+   "what": "ROCE",
+   "why": "this document does not print it"
+  },
+  {
+   "what": "grey market premium",
+   "why": "no free source built yet"
+  },
+  {
+   "what": "anchor investor allotment",
+   "why": "not collected yet"
+  },
+  {
+   "what": "broker conviction",
+   "why": "not collected yet"
+  },
+  {
+   "what": "media coverage",
+   "why": "not collected yet"
+  },
+  {
+   "what": "retail attention",
+   "why": "not collected yet"
+  },
+  {
+   "what": "full prospectus",
+   "why": "not downloaded yet — will retry next run"
+  }
+ ],
+ "conflicts": [],
+ "observations": []
+}
