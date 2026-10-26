@@ -8,7 +8,7 @@
   "name": "BLS Polymers Limited",
   "symbol": "BLSPOLY",
   "type": "mainboard",
-  "status": "upcoming",
+  "status": "open",
   "dates": {
     "open": "2026-10-27",
     "close": "2026-10-29",
@@ -18,15 +18,15 @@
   "price_band": "Rs.142 to Rs.150",
   "issue_size_shares": 11900000.0,
   "subscription": {
-    "times": null,
-    "shares_offered": null,
-    "shares_bid": null
+    "times": 0.0,
+    "shares_offered": 0.0,
+    "shares_bid": 0.0
   },
   "also_on_bse": false,
   "sources": {
     "calendar": "nse",
-    "fetched_at": "2026-10-26T15:22:19+00:00"
+    "fetched_at": "2026-10-26T19:30:13+00:00"
   },
   "missing": [],
-  "rebuilt_at": "2026-10-26T15:22:19+00:00"
+  "rebuilt_at": "2026-10-26T19:30:13+00:00"
 }
