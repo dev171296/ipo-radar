@@ -1,0 +1,120 @@
+{
+ "ipo_id": "2026-10-eaaa-alternatives",
+ "built_at": "2026-10-27T14:50:19+00:00",
+ "name": "EAAA India Alternatives Limited",
+ "symbol": "EDELALTS",
+ "type": "mainboard",
+ "status": "open",
+ "offer": {
+  "price_low": {
+   "value": 1585.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.1585 to Rs.1665"
+  },
+  "price_high": {
+   "value": 1665.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.1585 to Rs.1665"
+  },
+  "issue_size_shares": {
+   "value": 5299684.0,
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "issue_size_rs_million": {
+   "value": 8823.97,
+   "source": "computed",
+   "confidence": "high",
+   "note": "shares × top of the price band"
+  },
+  "open_date": {
+   "value": "2026-10-26",
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "close_date": {
+   "value": "2026-10-28",
+   "source": "nse_calendar",
+   "confidence": "high"
+  }
+ },
+ "financials": {},
+ "valuation": {},
+ "cash": {},
+ "balance_sheet": {},
+ "derived": {},
+ "demand": {
+  "subscription_times": {
+   "value": 0.18424098493419608,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "note": "as at 2026-10-27T14:48:55+00:00"
+  },
+  "subscription_history": {
+   "value": [
+    {
+     "at": "2026-10-26T08:00:20+00:00",
+     "times": 0.049039338949265654
+    },
+    {
+     "at": "2026-10-26T11:24:33+00:00",
+     "times": 0.09520699724738305
+    },
+    {
+     "at": "2026-10-26T15:22:19+00:00",
+     "times": 0.09536323297766433
+    },
+    {
+     "at": "2026-10-27T08:12:18+00:00",
+     "times": 0.11289729727281853
+    },
+    {
+     "at": "2026-10-27T10:48:22+00:00",
+     "times": 0.12936488288735706
+    },
+    {
+     "at": "2026-10-27T14:48:55+00:00",
+     "times": 0.18424098493419608
+    }
+   ],
+   "source": "nse_calendar",
+   "confidence": "high",
+   "note": "every change we recorded"
+  }
+ },
+ "documents": {},
+ "missing": [
+  {
+   "what": "three-year financials",
+   "why": "no abridged prospectus on file yet"
+  },
+  {
+   "what": "grey market premium",
+   "why": "no free source built yet"
+  },
+  {
+   "what": "anchor investor allotment",
+   "why": "not collected yet"
+  },
+  {
+   "what": "broker conviction",
+   "why": "not collected yet"
+  },
+  {
+   "what": "media coverage",
+   "why": "not collected yet"
+  },
+  {
+   "what": "retail attention",
+   "why": "not collected yet"
+  },
+  {
+   "what": "full prospectus",
+   "why": "not downloaded yet — will retry next run"
+  }
+ ],
+ "conflicts": [],
+ "observations": []
+}

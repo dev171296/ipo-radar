@@ -1,6 +1,6 @@
 {
  "ipo_id": "2026-10-m-k-sons-fine-jewels",
- "built_at": "2026-10-27T10:49:48+00:00",
+ "built_at": "2026-10-27T14:50:19+00:00",
  "name": "M. K. Sons Fine Jewels Limited",
  "symbol": "MKSONS",
  "type": "mainboard",
@@ -19,12 +19,12 @@
    "raw": "Rs.153 to Rs.162"
   },
   "issue_size_shares": {
-   "value": 17000000.0,
+   "value": 11900000.0,
    "source": "nse_calendar",
    "confidence": "high"
   },
   "issue_size_rs_million": {
-   "value": 2754.0,
+   "value": 1927.8,
    "source": "computed",
    "confidence": "high",
    "note": "shares × top of the price band"

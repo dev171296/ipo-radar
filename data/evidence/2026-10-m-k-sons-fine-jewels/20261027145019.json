@@ -1,0 +1,86 @@
+{
+ "ipo_id": "2026-10-m-k-sons-fine-jewels",
+ "built_at": "2026-10-27T14:50:19+00:00",
+ "name": "M. K. Sons Fine Jewels Limited",
+ "symbol": "MKSONS",
+ "type": "mainboard",
+ "status": "upcoming",
+ "offer": {
+  "price_low": {
+   "value": 153.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.153 to Rs.162"
+  },
+  "price_high": {
+   "value": 162.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.153 to Rs.162"
+  },
+  "issue_size_shares": {
+   "value": 11900000.0,
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "issue_size_rs_million": {
+   "value": 1927.8,
+   "source": "computed",
+   "confidence": "high",
+   "note": "shares × top of the price band"
+  },
+  "open_date": {
+   "value": "2026-10-28",
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "close_date": {
+   "value": "2026-10-30",
+   "source": "nse_calendar",
+   "confidence": "high"
+  }
+ },
+ "financials": {},
+ "valuation": {},
+ "cash": {},
+ "balance_sheet": {},
+ "derived": {},
+ "demand": {},
+ "documents": {},
+ "missing": [
+  {
+   "what": "three-year financials",
+   "why": "no abridged prospectus on file yet"
+  },
+  {
+   "what": "subscription",
+   "why": "the issue has not opened yet"
+  },
+  {
+   "what": "grey market premium",
+   "why": "no free source built yet"
+  },
+  {
+   "what": "anchor investor allotment",
+   "why": "not collected yet"
+  },
+  {
+   "what": "broker conviction",
+   "why": "not collected yet"
+  },
+  {
+   "what": "media coverage",
+   "why": "not collected yet"
+  },
+  {
+   "what": "retail attention",
+   "why": "not collected yet"
+  },
+  {
+   "what": "full prospectus",
+   "why": "not downloaded yet — will retry next run"
+  }
+ ],
+ "conflicts": [],
+ "observations": []
+}
