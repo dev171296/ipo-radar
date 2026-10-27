@@ -1,6 +1,6 @@
 {
  "ipo_id": "2026-10-bls-polymers",
- "built_at": "2026-10-26T19:31:33+00:00",
+ "built_at": "2026-10-27T08:13:39+00:00",
  "name": "BLS Polymers Limited",
  "symbol": "BLSPOLY",
  "type": "mainboard",
@@ -47,16 +47,20 @@
  "derived": {},
  "demand": {
   "subscription_times": {
-   "value": 0.0,
+   "value": 3.1035126050420168,
    "source": "nse_calendar",
    "confidence": "high",
-   "note": "as at 2026-10-26T19:30:13+00:00"
+   "note": "as at 2026-10-27T08:12:18+00:00"
   },
   "subscription_history": {
    "value": [
     {
      "at": "2026-10-26T19:30:13+00:00",
      "times": 0.0
+    },
+    {
+     "at": "2026-10-27T08:12:18+00:00",
+     "times": 3.1035126050420168
     }
    ],
    "source": "nse_calendar",

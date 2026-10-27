@@ -1,6 +1,6 @@
 {
  "ipo_id": "2026-10-sfc-environmental-technologies",
- "built_at": "2026-10-26T19:31:34+00:00",
+ "built_at": "2026-10-27T08:13:39+00:00",
  "name": "SFC Environmental Technologies Limited",
  "symbol": "SFCTECH",
  "type": "mainboard",
@@ -47,16 +47,20 @@
  "derived": {},
  "demand": {
   "subscription_times": {
-   "value": 0.0,
+   "value": 0.039277193146994745,
    "source": "nse_calendar",
    "confidence": "high",
-   "note": "as at 2026-10-26T19:30:13+00:00"
+   "note": "as at 2026-10-27T08:12:18+00:00"
   },
   "subscription_history": {
    "value": [
     {
      "at": "2026-10-26T19:30:13+00:00",
      "times": 0.0
+    },
+    {
+     "at": "2026-10-27T08:12:18+00:00",
+     "times": 0.039277193146994745
     }
    ],
    "source": "nse_calendar",

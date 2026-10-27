@@ -1,6 +1,6 @@
 {
  "ipo_id": "2026-10-bombay-coated-and-special-steels",
- "built_at": "2026-10-26T19:31:33+00:00",
+ "built_at": "2026-10-27T08:13:39+00:00",
  "name": "Bombay Coated and Special Steels Limited",
  "symbol": "BCSSL",
  "type": "mainboard",
@@ -46,11 +46,39 @@
  "balance_sheet": {},
  "derived": {},
  "demand": {},
- "documents": {},
+ "documents": {
+  "abridged": {
+   "pages": 8,
+   "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/BOMBAY%20COATED%20AND%20SPECIAL%20STEELS%20LIMITED%20_Abridged%20Prospectus_p.pdf",
+   "fields": [
+    "cin",
+    "financials",
+    "lead_managers",
+    "objects",
+    "price_band",
+    "promoters",
+    "registrar",
+    "risk_factors"
+   ],
+   "read_at": "2026-10-27T08:12:31+00:00"
+  }
+ },
  "missing": [
   {
+   "what": "fresh issue vs offer for sale split",
+   "why": "could not be read from the offer details table"
+  },
+  {
    "what": "three-year financials",
-   "why": "no abridged prospectus on file yet"
+   "why": "abridged prospectus read, but no three-figure rows matched"
+  },
+  {
+   "what": "ROE",
+   "why": "this document does not print it"
+  },
+  {
+   "what": "ROCE",
+   "why": "this document does not print it"
   },
   {
    "what": "subscription",
