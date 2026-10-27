@@ -1,0 +1,114 @@
+{
+ "ipo_id": "2026-10-bombay-coated-and-special-steels",
+ "built_at": "2026-10-27T10:49:48+00:00",
+ "name": "Bombay Coated and Special Steels Limited",
+ "symbol": "BCSSL",
+ "type": "mainboard",
+ "status": "upcoming",
+ "offer": {
+  "price_low": {
+   "value": 78.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.78 to Rs.82"
+  },
+  "price_high": {
+   "value": 82.0,
+   "source": "nse_calendar",
+   "confidence": "high",
+   "raw": "Rs.78 to Rs.82"
+  },
+  "issue_size_shares": {
+   "value": 23468846.0,
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "issue_size_rs_million": {
+   "value": 1924.45,
+   "source": "computed",
+   "confidence": "high",
+   "note": "shares × top of the price band"
+  },
+  "open_date": {
+   "value": "2026-10-29",
+   "source": "nse_calendar",
+   "confidence": "high"
+  },
+  "close_date": {
+   "value": "2026-11-02",
+   "source": "nse_calendar",
+   "confidence": "high"
+  }
+ },
+ "financials": {},
+ "valuation": {},
+ "cash": {},
+ "balance_sheet": {},
+ "derived": {},
+ "demand": {},
+ "documents": {
+  "abridged": {
+   "pages": 8,
+   "url": "https://www.sebi.gov.in/sebi_data/commondocs/oct-2026/BOMBAY%20COATED%20AND%20SPECIAL%20STEELS%20LIMITED%20_Abridged%20Prospectus_p.pdf",
+   "fields": [
+    "cin",
+    "financials",
+    "lead_managers",
+    "objects",
+    "price_band",
+    "promoters",
+    "registrar",
+    "risk_factors"
+   ],
+   "read_at": "2026-10-27T08:12:31+00:00"
+  }
+ },
+ "missing": [
+  {
+   "what": "fresh issue vs offer for sale split",
+   "why": "could not be read from the offer details table"
+  },
+  {
+   "what": "three-year financials",
+   "why": "abridged prospectus read, but no three-figure rows matched"
+  },
+  {
+   "what": "ROE",
+   "why": "this document does not print it"
+  },
+  {
+   "what": "ROCE",
+   "why": "this document does not print it"
+  },
+  {
+   "what": "subscription",
+   "why": "the issue has not opened yet"
+  },
+  {
+   "what": "grey market premium",
+   "why": "no free source built yet"
+  },
+  {
+   "what": "anchor investor allotment",
+   "why": "not collected yet"
+  },
+  {
+   "what": "broker conviction",
+   "why": "not collected yet"
+  },
+  {
+   "what": "media coverage",
+   "why": "not collected yet"
+  },
+  {
+   "what": "retail attention",
+   "why": "not collected yet"
+  },
+  {
+   "what": "full prospectus",
+   "why": "not downloaded yet — will retry next run"
+  }
+ ],
+ "conflicts": [],
+ "observations": []
+}
